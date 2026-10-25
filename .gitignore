@@ -1,0 +1,23 @@
+# Python virtual environment
+.venv/
+venv/
+ENV/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Scratch test files & temporary logs
+scratch/
+*.log
+/tmp/
+
+# Raw phone photos (200MB uncompressed camera archives)
+ürünler/
+
+# System files
+.DS_Store
+Thumbs.db

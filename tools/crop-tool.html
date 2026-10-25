@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eczane Pro — Akıllı Ürün Fotoğrafı & Kırpma Stüdyosu</title>
+<style>
+  :root {
+    --bg: #0b0f19;
+    --surface: #111827;
+    --surface2: #1f2937;
+    --surface3: #374151;
+    --accent: #6366f1;
+    --accent-hover: #4f46e5;
+    --accent2: #818cf8;
+    --emerald: #10b981;
+    --rose: #f43f5e;
+    --amber: #f59e0b;
+    --cyan: #06b6d4;
+    --text: #f9fafb;
+    --text-muted: #9ca3af;
+    --radius: 12px;
+    --radius-sm: 8px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  header {
+    background: var(--surface);
+    padding: 0.85rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .brand-area {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .brand-logo {
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(135deg, var(--accent), var(--cyan));
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+  }
+
+  .brand-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .nav-link-btn {
+    background: var(--surface2);
+    color: var(--text);
+    text-decoration: none;
+    padding: 0.45rem 0.9rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.2s;
+  }
+
+  .nav-link-btn:hover {
+    background: var(--surface3);
+    border-color: var(--accent);
+  }
+
+  /* ─── Ana Düzen ─── */
+  .main-layout {
+    display: flex;
+    flex: 1;
+    height: calc(100vh - 58px);
+    overflow: hidden;
+  }
+
+  /* Sol: Canvas Alanı */
+  .canvas-panel {
+    flex: 1;
+    position: relative;
+    background: #060911;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    padding: 1rem;
+  }
+
+  .drop-zone {
+    text-align: center;
+    padding: 3.5rem 2rem;
+    border: 2px dashed rgba(99, 102, 241, 0.35);
+    border-radius: var(--radius);
+    background: rgba(17, 24, 39, 0.6);
+    cursor: pointer;
+    transition: all 0.25s ease;
+    max-width: 480px;
+  }
+
+  .drop-zone:hover, .drop-zone.drag-over {
+    border-color: var(--accent);
+    background: rgba(99, 102, 241, 0.08);
+    transform: translateY(-2px);
+  }
+
+  .drop-zone-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .drop-zone h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #fff;
+  }
+
+  .drop-zone p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+
+  #canvasContainer {
+    position: relative;
+    display: inline-block;
+    cursor: crosshair;
+    user-select: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  #mainImage {
+    max-width: 100%;
+    max-height: calc(100vh - 90px);
+    display: block;
+  }
+
+  .selection-box {
+    position: absolute;
+    border: 2px solid var(--accent);
+    background: rgba(99, 102, 241, 0.2);
+    pointer-events: none;
+  }
+
+  .crop-overlay {
+    position: absolute;
+    border: 2px solid var(--emerald);
+    background: rgba(16, 185, 129, 0.15);
+    transition: border-color 0.15s;
+  }
+
+  .crop-overlay:hover {
+    border-color: var(--amber);
+  }
+
+  .crop-overlay .crop-tag {
+    position: absolute;
+    top: -24px;
+    left: 0;
+    background: var(--emerald);
+    color: #000;
+    font-size: 0.7rem;
+    font-weight: 800;
+    padding: 2px 7px;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+
+  .crop-overlay .crop-del {
+    position: absolute;
+    top: -24px;
+    right: 0;
+    background: var(--rose);
+    color: #fff;
+    border: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.75rem;
+    font-weight: 800;
+  }
+
+  /* Sağ: Kontrol Paneli */
+  .sidebar-panel {
+    width: 420px;
+    background: var(--surface);
+    border-left: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .sidebar-header {
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .sidebar-header h2 {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .count-badge {
+    background: var(--accent);
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+
+  .quick-brands {
+    padding: 0.75rem 1.25rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .brand-pill {
+    background: var(--surface2);
+    color: var(--text-muted);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.25rem 0.6rem;
+    border-radius: 15px;
+    font-size: 0.72rem;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+
+  .brand-pill:hover {
+    color: #fff;
+    border-color: var(--accent);
+    background: rgba(99, 102, 241, 0.15);
+  }
+
+  .crops-scroll {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .crop-item-card {
+    background: var(--surface2);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius-sm);
+    padding: 0.85rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    transition: border-color 0.2s;
+  }
+
+  .crop-item-card:hover {
+    border-color: var(--accent);
+  }
+
+  .crop-card-top {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .crop-card-top img {
+    width: 52px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: #000;
+  }
+
+  .crop-card-meta {
+    flex: 1;
+  }
+
+  .crop-card-meta .title {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--text);
+  }
+
+  .crop-card-meta .dims {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+  }
+
+  .form-row {
+    display: flex;
+    gap: 0.4rem;
+  }
+
+  .form-row input {
+    background: var(--bg);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text);
+    padding: 0.45rem 0.65rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    outline: none;
+    flex: 1;
+  }
+
+  .form-row input:focus {
+    border-color: var(--accent);
+  }
+
+  .btn-item-process {
+    background: linear-gradient(135deg, var(--emerald), #059669);
+    color: #fff;
+    border: none;
+    padding: 0.45rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+  }
+
+  .btn-item-process:hover { opacity: 0.9; }
+  .btn-item-process:disabled { opacity: 0.5; cursor: not-allowed; }
+
+  /* Alt Kontroller */
+  .sidebar-bottom {
+    padding: 1rem 1.25rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    background: rgba(17, 24, 39, 0.95);
+  }
+
+  .btn-studio-primary {
+    background: linear-gradient(135deg, var(--accent), var(--accent-hover));
+    color: #fff;
+    border: none;
+    padding: 0.85rem 1rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: all 0.2s;
+  }
+
+  .btn-studio-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.35);
+  }
+
+  .btn-studio-primary:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+  }
+
+  .btn-sub-action {
+    background: var(--surface2);
+    color: var(--text);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.55rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .btn-sub-action:hover {
+    background: var(--surface3);
+    border-color: var(--accent);
+  }
+
+  /* Tekli Fotoğraf Modu Banner */
+  .single-mode-card {
+    background: rgba(99, 102, 241, 0.1);
+    border: 1px solid rgba(99, 102, 241, 0.25);
+    border-radius: var(--radius-sm);
+    padding: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .single-mode-card h4 {
+    font-size: 0.85rem;
+    color: var(--accent2);
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  /* Toast & Bildirim */
+  .toast {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    background: var(--emerald);
+    color: #fff;
+    padding: 0.8rem 1.6rem;
+    border-radius: var(--radius);
+    font-size: 0.88rem;
+    font-weight: 600;
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 9999;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  }
+
+  .toast.show {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+
+  .toast.error {
+    background: var(--rose);
+  }
+
+  /* Empty state */
+  .empty-box {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: var(--text-muted);
+  }
+
+  .empty-box .icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+    opacity: 0.6;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand-area">
+    <div class="brand-logo">📸</div>
+    <div class="brand-title">Eczane Pro — Akıllı Ürün Fotoğraf Stüdyosu</div>
+  </div>
+  <div class="header-actions">
+    <a href="../app/index.html" class="nav-link-btn">← Ana Uygulamaya Dön</a>
+  </div>
+</header>
+
+<div class="main-layout">
+  <!-- Sol Panel: Fotoğraf ve Kırpma Alanı -->
+  <div class="canvas-panel" id="canvasPanel">
+    <div class="drop-zone" id="dropZone">
+      <div class="drop-zone-icon">📷</div>
+      <h3>Fotoğrafı Buraya Bırak</h3>
+      <p>Tekli ürün veya toplu eczane rafı fotoğrafı yükleyin.<br>Sürükle bırak yapabilir veya tıklayarak seçebilirsiniz.</p>
+      <p style="margin-top: 0.75rem; font-size: 0.78rem; color: var(--accent2);">JPG, PNG, WebP desteklenir</p>
+    </div>
+    <input type="file" id="fileInput" accept="image/*" style="display: none;">
+  </div>
+
+  <!-- Sağ Panel: Kırpım ve Ürün Bilgisi -->
+  <div class="sidebar-panel">
+    <div class="sidebar-header">
+      <h2>📦 Ürün Listesi</h2>
+      <span class="count-badge" id="cropCount">0</span>
+    </div>
+
+    <!-- Hızlı Marka Seçiciler -->
+    <div class="quick-brands">
+      <span class="brand-pill" onclick="applyQuickBrand('CeraVe')">CeraVe</span>
+      <span class="brand-pill" onclick="applyQuickBrand('Mustela')">Mustela</span>
+      <span class="brand-pill" onclick="applyQuickBrand('Bioderma')">Bioderma</span>
+      <span class="brand-pill" onclick="applyQuickBrand('Ocean')">Ocean</span>
+      <span class="brand-pill" onclick="applyQuickBrand('La Roche-Posay')">La Roche</span>
+      <span class="brand-pill" onclick="applyQuickBrand('Sensodyne')">Sensodyne</span>
+    </div>
+
+    <div class="crops-scroll" id="cropsScroll">
+      <!-- Tekli mod kartı (varsayılan) -->
+      <div class="single-mode-card" id="singleModeCard" style="display: none;">
+        <h4><span>✨</span> Tekli Ürün Hızlı Modu</h4>
+        <p style="font-size: 0.76rem; color: var(--text-muted);">
+          Kırpma yapmadan doğrudan bu fotoğrafı stüdyo çekimine çevirebilirsiniz:
+        </p>
+        <div class="form-row">
+          <input type="text" id="singleBrand" placeholder="Marka (Örn: Mustela)">
+          <input type="text" id="singleSize" placeholder="Boyut (Örn: 30ml)" style="max-width: 100px;">
+        </div>
+        <div class="form-row">
+          <input type="text" id="singleName" placeholder="Ürün Adı (Örn: Stelatopia Intense)">
+        </div>
+        <button class="btn-item-process" id="btnProcessSingle" style="padding: 0.65rem;">
+          ⚡ Bu Fotoğrafı Stüdyoya Çevir & Kaydet
+        </button>
+      </div>
+
+      <div class="empty-box" id="emptyState">
+        <div class="icon">✂️</div>
+        <p>Raf fotoğrafı yükledikten sonra üzerinde fare ile dikdörtgen çizerek ürünleri seçin.</p>
+      </div>
+    </div>
+
+    <div class="sidebar-bottom">
+      <button class="btn-studio-primary" id="btnProcessAll" disabled>
+        🚀 Seçilen Tüm Ürünleri Stüdyoya Çevir
+      </button>
+      <button class="btn-sub-action" id="btnCopyCommands">
+        📋 Terminal İşleme Komutlarını Kopyala
+      </button>
+      <button class="btn-sub-action" id="btnClearCrops" style="color: var(--rose);">
+        🗑️ Kırpımları Temizle
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+(function() {
+  'use strict';
+
+  const state = {
+    image: null,
+    imageFile: null,
+    base64Data: '',
+    crops: [],
+    drawing: false,
+    startX: 0,
+    startY: 0,
+    nextId: 1,
+    scale: 1
+  };
+
+  const canvasPanel = document.getElementById('canvasPanel');
+  const dropZone = document.getElementById('dropZone');
+  const fileInput = document.getElementById('fileInput');
+  const cropsScroll = document.getElementById('cropsScroll');
+  const emptyState = document.getElementById('emptyState');
+  const singleModeCard = document.getElementById('singleModeCard');
+  const cropCount = document.getElementById('cropCount');
+  const btnProcessAll = document.getElementById('btnProcessAll');
+  const btnProcessSingle = document.getElementById('btnProcessSingle');
+  const btnCopyCommands = document.getElementById('btnCopyCommands');
+  const btnClearCrops = document.getElementById('btnClearCrops');
+  const toast = document.getElementById('toast');
+
+  // ─── Fotoğraf Yükleme ───
+  canvasPanel.addEventListener('click', (e) => {
+    if (!state.image && !e.target.closest('#canvasContainer')) fileInput.click();
+  });
+
+  fileInput.addEventListener('change', (e) => {
+    if (e.target.files[0]) handleFile(e.target.files[0]);
+  });
+
+  canvasPanel.addEventListener('dragover', (e) => {
+    e.preventDefault();
+    dropZone.classList.add('drag-over');
+  });
+
+  canvasPanel.addEventListener('dragleave', () => dropZone.classList.remove('drag-over'));
+
+  canvasPanel.addEventListener('drop', (e) => {
+    e.preventDefault();
+    dropZone.classList.remove('drag-over');
+    if (e.dataTransfer.files[0]) handleFile(e.dataTransfer.files[0]);
+  });
+
+  function handleFile(file) {
+    state.imageFile = file;
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      state.base64Data = e.target.result;
+      const img = new Image();
+      img.onload = () => {
+        state.image = img;
+        state.crops = [];
+        state.nextId = 1;
+        renderCanvas();
+        singleModeCard.style.display = 'flex';
+        updateCropsUI();
+        showToast('Fotoğraf yüklendi! Tekli veya kırpma modunu kullanabilirsiniz.');
+      };
+      img.src = state.base64Data;
+    };
+    reader.readAsDataURL(file);
+  }
+
+  function renderCanvas() {
+    canvasPanel.innerHTML = '';
+    const container = document.createElement('div');
+    container.id = 'canvasContainer';
+
+    const imgEl = document.createElement('img');
+    imgEl.id = 'mainImage';
+    imgEl.src = state.image.src;
+    container.appendChild(imgEl);
+    canvasPanel.appendChild(container);
+
+    requestAnimationFrame(() => {
+      const displayW = imgEl.clientWidth;
+      const displayH = imgEl.clientHeight;
+      state.scale = state.image.naturalWidth / displayW;
+
+      let selBox = null;
+
+      container.addEventListener('mousedown', (e) => {
+        if (e.target.closest('.crop-overlay') || e.target.closest('.crop-del')) return;
+        e.preventDefault();
+        const rect = container.getBoundingClientRect();
+        state.drawing = true;
+        state.startX = e.clientX - rect.left;
+        state.startY = e.clientY - rect.top;
+
+        selBox = document.createElement('div');
+        selBox.className = 'selection-box';
+        selBox.style.left = state.startX + 'px';
+        selBox.style.top = state.startY + 'px';
+        container.appendChild(selBox);
+      });
+
+      container.addEventListener('mousemove', (e) => {
+        if (!state.drawing || !selBox) return;
+        const rect = container.getBoundingClientRect();
+        const curX = Math.max(0, Math.min(e.clientX - rect.left, displayW));
+        const curY = Math.max(0, Math.min(e.clientY - rect.top, displayH));
+
+        const x = Math.min(state.startX, curX);
+        const y = Math.min(state.startY, curY);
+        const w = Math.abs(curX - state.startX);
+        const h = Math.abs(curY - state.startY);
+
+        selBox.style.left = x + 'px';
+        selBox.style.top = y + 'px';
+        selBox.style.width = w + 'px';
+        selBox.style.height = h + 'px';
+      });
+
+      container.addEventListener('mouseup', (e) => {
+        if (!state.drawing || !selBox) return;
+        state.drawing = false;
+
+        const rect = container.getBoundingClientRect();
+        const curX = Math.max(0, Math.min(e.clientX - rect.left, displayW));
+        const curY = Math.max(0, Math.min(e.clientY - rect.top, displayH));
+
+        const w = Math.abs(curX - state.startX);
+        const h = Math.abs(curY - state.startY);
+
+        if (w < 25 || h < 25) {
+          selBox.remove();
+          return;
+        }
+
+        const x1 = Math.round(Math.min(state.startX, curX) * state.scale);
+        const y1 = Math.round(Math.min(state.startY, curY) * state.scale);
+        const x2 = Math.round(Math.max(state.startX, curX) * state.scale);
+        const y2 = Math.round(Math.max(state.startY, curY) * state.scale);
+
+        const crop = {
+          id: state.nextId++,
+          x1, y1, x2, y2,
+          brand: document.getElementById('singleBrand').value || '',
+          name: '',
+          size: ''
+        };
+
+        state.crops.push(crop);
+        selBox.remove();
+        renderCropOverlay(container, crop);
+        updateCropsUI();
+      });
+    });
+  }
+
+  function renderCropOverlay(container, crop) {
+    const s = state.scale;
+    const overlay = document.createElement('div');
+    overlay.className = 'crop-overlay';
+    overlay.dataset.cropId = crop.id;
+    overlay.style.left = (crop.x1 / s) + 'px';
+    overlay.style.top = (crop.y1 / s) + 'px';
+    overlay.style.width = ((crop.x2 - crop.x1) / s) + 'px';
+    overlay.style.height = ((crop.y2 - crop.y1) / s) + 'px';
+
+    const tag = document.createElement('span');
+    tag.className = 'crop-tag';
+    tag.textContent = `#${crop.id}`;
+    overlay.appendChild(tag);
+
+    const del = document.createElement('button');
+    del.className = 'crop-del';
+    del.textContent = '×';
+    del.onclick = (e) => {
+      e.stopPropagation();
+      removeCrop(crop.id);
+    };
+    overlay.appendChild(del);
+
+    container.appendChild(overlay);
+  }
+
+  function removeCrop(id) {
+    state.crops = state.crops.filter(c => c.id !== id);
+    const el = document.querySelector(`.crop-overlay[data-crop-id="${id}"]`);
+    if (el) el.remove();
+    updateCropsUI();
+  }
+
+  function updateCropsUI() {
+    cropCount.textContent = state.crops.length;
+    btnProcessAll.disabled = state.crops.length === 0;
+
+    // Mevcut kartları temizle (single card hariç)
+    cropsScroll.querySelectorAll('.crop-item-card').forEach(c => c.remove());
+
+    if (state.crops.length === 0) {
+      emptyState.style.display = state.image ? 'none' : 'block';
+      return;
+    }
+
+    emptyState.style.display = 'none';
+
+    state.crops.forEach(crop => {
+      const cw = crop.x2 - crop.x1;
+      const ch = crop.y2 - crop.y1;
+
+      // Küçük önizleme canvas
+      const thumb = document.createElement('canvas');
+      thumb.width = 60;
+      thumb.height = 70;
+      const ctx = thumb.getContext('2d');
+      ctx.drawImage(state.image, crop.x1, crop.y1, cw, ch, 0, 0, 60, 70);
+
+      const card = document.createElement('div');
+      card.className = 'crop-item-card';
+      card.dataset.id = crop.id;
+      card.innerHTML = `
+        <div class="crop-card-top">
+          <img src="${thumb.toDataURL('image/jpeg', 0.8)}" alt="Crop #${crop.id}">
+          <div class="crop-card-meta">
+            <div class="title">Ürün #${crop.id}</div>
+            <div class="dims">${cw}×${ch}px [${crop.x1},${crop.y1}]</div>
+          </div>
+          <button class="crop-del" style="position:static;" onclick="window._delCrop(${crop.id})">✕</button>
+        </div>
+        <div class="form-row">
+          <input type="text" placeholder="Marka (CeraVe...)" value="${crop.brand}"
+                 onchange="window._setCrop(${crop.id}, 'brand', this.value)">
+          <input type="text" placeholder="Boyut (473ml...)" value="${crop.size}" style="max-width: 90px;"
+                 onchange="window._setCrop(${crop.id}, 'size', this.value)">
+        </div>
+        <div class="form-row">
+          <input type="text" placeholder="Ürün Adı (Köpüren Temizleyici...)" value="${crop.name}"
+                 onchange="window._setCrop(${crop.id}, 'name', this.value)">
+        </div>
+        <button class="btn-item-process" id="btnProcessItem_${crop.id}" onclick="window._processOneCrop(${crop.id})">
+          ⚡ Stüdyoya Çevir & Kaydet
+        </button>
+      `;
+      cropsScroll.appendChild(card);
+    });
+  }
+
+  window._delCrop = removeCrop;
+  window._setCrop = (id, field, val) => {
+    const c = state.crops.find(x => x.id === id);
+    if (c) c[field] = val;
+  };
+
+  window.applyQuickBrand = (brand) => {
+    document.getElementById('singleBrand').value = brand;
+    state.crops.forEach(c => {
+      if (!c.brand) c.brand = brand;
+    });
+    updateCropsUI();
+    showToast(`Marka seçildi: ${brand}`);
+  };
+
+  // ─── API İle İşleme ───
+  async function callProcessAPI(payload) {
+    const res = await fetch('/api/process-crop', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    });
+    if (!res.ok) throw new Error(`Sunucu yanıtı: ${res.status}`);
+    return await res.json();
+  }
+
+  // Tekli Fotoğrafı Doğrudan İşle
+  btnProcessSingle.addEventListener('click', async () => {
+    if (!state.image) return;
+    const brand = document.getElementById('singleBrand').value.trim() || 'Genel';
+    const name = document.getElementById('singleName').value.trim() || 'Urun';
+    const size = document.getElementById('singleSize').value.trim();
+
+    btnProcessSingle.disabled = true;
+    btnProcessSingle.textContent = '⏳ AI Arka Plan Siliniyor & Stüdyo Çekimi Yapılıyor...';
+
+    try {
+      const data = await callProcessAPI({
+        image_base64: state.base64Data,
+        brand, name, size
+      });
+      if (data.success) {
+        showToast(`✅ Başarılı! Kaydedildi: ${data.filename} (${data.size_kb} KB)`);
+      } else {
+        showToast(`❌ Hata: ${data.error}`, true);
+      }
+    } catch (err) {
+      showToast(`Sunucuya bağlanılamadı. Python sunucusunun çalıştığından emin olun (process_product_photo.py --serve)`, true);
+    } finally {
+      btnProcessSingle.disabled = false;
+      btnProcessSingle.textContent = '⚡ Bu Fotoğrafı Stüdyoya Çevir & Kaydet';
+    }
+  });
+
+  // Tek Bir Kırpımı İşle
+  window._processOneCrop = async (id) => {
+    const crop = state.crops.find(c => c.id === id);
+    if (!crop) return;
+
+    const brand = crop.brand.trim() || 'Genel';
+    const name = crop.name.trim() || `Urun_${crop.id}`;
+    const size = crop.size.trim();
+
+    const btn = document.getElementById(`btnProcessItem_${crop.id}`);
+    btn.disabled = true;
+    btn.textContent = '⏳ İşleniyor...';
+
+    try {
+      const data = await callProcessAPI({
+        image_base64: state.base64Data,
+        coords: [crop.x1, crop.y1, crop.x2, crop.y2],
+        brand, name, size
+      });
+      if (data.success) {
+        btn.textContent = '✅ Stüdyo Kaydedildi';
+        btn.style.background = '#4b5563';
+        showToast(`✅ ${data.filename} klasöre kaydedildi!`);
+      } else {
+        btn.disabled = false;
+        btn.textContent = '⚡ Tekrar Dene';
+        showToast(`Hata: ${data.error}`, true);
+      }
+    } catch (err) {
+      btn.disabled = false;
+      btn.textContent = '⚡ Tekrar Dene';
+      showToast(`Sunucuya ulaşılamadı (--serve modu açık mı?)`, true);
+    }
+  };
+
+  // Tüm Kırpımları Sırayla İşle
+  btnProcessAll.addEventListener('click', async () => {
+    if (state.crops.length === 0) return;
+    btnProcessAll.disabled = true;
+
+    let successCount = 0;
+    for (let i = 0; i < state.crops.length; i++) {
+      const crop = state.crops[i];
+      btnProcessAll.textContent = `⏳ İşleniyor (${i + 1}/${state.crops.length})...`;
+      try {
+        await window._processOneCrop(crop.id);
+        successCount++;
+      } catch (e) {
+        console.error(e);
+      }
+    }
+
+    btnProcessAll.disabled = false;
+    btnProcessAll.textContent = '🚀 Seçilen Tüm Ürünleri Stüdyoya Çevir';
+    showToast(`🎉 Toplam ${successCount} ürün stüdyo kalitesinde kaydedildi!`);
+  });
+
+  // Terminal Komutlarını Kopyala
+  btnCopyCommands.addEventListener('click', () => {
+    if (state.crops.length === 0) {
+      showToast('Henüz kırpım seçilmedi');
+      return;
+    }
+    const lines = state.crops.map(c => {
+      const brand = c.brand || 'marka';
+      const name = c.name || 'urun';
+      const sizeArg = c.size ? ` --size "${c.size}"` : '';
+      return `.venv/bin/python3 process_product_photo.py --input "${state.imageFile?.name || 'raf.jpg'}" --mode shelf-manual --crops "${c.x1},${c.y1},${c.x2},${c.y2}" --brand "${brand}" --name "${name}"${sizeArg}`;
+    });
+    navigator.clipboard.writeText(lines.join('\n\n')).then(() => {
+      showToast('CLI komutları panoya kopyalandı!');
+    });
+  });
+
+  btnClearCrops.addEventListener('click', () => {
+    if (!state.crops.length) return;
+    state.crops = [];
+    if (state.image) renderCanvas();
+    updateCropsUI();
+    showToast('Kırpımlar temizlendi');
+  });
+
+  function showToast(msg, isErr = false) {
+    toast.textContent = msg;
+    toast.className = 'toast' + (isErr ? ' error' : '') + ' show';
+    setTimeout(() => toast.classList.remove('show'), 3500);
+  }
+
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eczane & Anne-Bebek Ürün Kataloğu (84 Ürün)</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --primary-hover: #0369a1;
+      --border: #e2e8f0;
+      --radius: 12px;
+      --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.07), 0 2px 4px -2px rgb(0 0 0 / 0.07);
+      --shadow-hover: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      padding-bottom: 60px;
+    }
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 30px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    .header-container {
+      max-width: 1300px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #0f172a;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .counter-badge {
+      background: #e0f2fe;
+      color: #0369a1;
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 9999px;
+    }
+    .search-bar {
+      position: relative;
+      width: 100%;
+      max-width: 450px;
+    }
+    .search-input {
+      width: 100%;
+      padding: 10px 16px 10px 38px;
+      border-radius: 9999px;
+      border: 1px solid var(--border);
+      font-size: 0.95rem;
+      outline: none;
+      transition: all 0.2s;
+      background: #f1f5f9;
+    }
+    .search-input:focus {
+      background: #fff;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+    }
+    .search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #94a3b8;
+      pointer-events: none;
+    }
+    .categories-bar {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+      scrollbar-width: thin;
+    }
+    .cat-btn {
+      padding: 6px 14px;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      font-weight: 500;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.2s;
+    }
+    .cat-btn:hover {
+      background: #f8fafc;
+      color: var(--text);
+    }
+    .cat-btn.active {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+    .container {
+      max-width: 1300px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 22px;
+    }
+    .card {
+      background: var(--surface);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s, box-shadow 0.2s;
+      position: relative;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-hover);
+    }
+    .card-img-wrapper {
+      width: 100%;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 14px;
+      cursor: pointer;
+      position: relative;
+    }
+    .card-img {
+      max-width: 90%;
+      max-height: 90%;
+      object-fit: contain;
+      transition: transform 0.3s ease;
+    }
+    .card:hover .card-img {
+      transform: scale(1.05);
+    }
+    .badge {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      border-radius: 6px;
+      background: #f1f5f9;
+      color: #475569;
+      margin-bottom: 8px;
+      width: fit-content;
+    }
+    .card-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #1e293b;
+      margin-bottom: 6px;
+      line-height: 1.35;
+    }
+    .card-details {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-top: auto;
+      line-height: 1.4;
+      padding-top: 8px;
+      border-top: 1px solid #f1f5f9;
+    }
+    .card-index {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      font-size: 0.75rem;
+      color: #94a3b8;
+      font-weight: 600;
+    }
+    /* Modal / Lightbox */
+    .modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.75);
+      backdrop-filter: blur(4px);
+      z-index: 100;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .modal.open {
+      display: flex;
+    }
+    .modal-content {
+      background: #fff;
+      border-radius: 16px;
+      max-width: 600px;
+      width: 100%;
+      padding: 24px;
+      position: relative;
+      text-align: center;
+      box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    }
+    .modal-close {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: #f1f5f9;
+      border: none;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      font-size: 1.2rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #475569;
+    }
+    .modal-img {
+      max-width: 100%;
+      max-height: 420px;
+      object-fit: contain;
+      margin: 15px 0;
+    }
+    .modal-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .modal-subtitle {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="header-top">
+        <h1>
+          <span>💊</span> Eczane & Anne-Bebek Ürün Kataloğu
+          <span class="counter-badge" id="productCount">84 Ürün</span>
+        </h1>
+        <div class="search-bar">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="searchInput" class="search-input" placeholder="Ürün adı, form veya kategori ara...">
+        </div>
+      </div>
+      <div class="categories-bar" id="categoryBar">
+        <button class="cat-btn active" data-cat="all">Tümü (84)</button>
+        <button class="cat-btn" data-cat="1">1. Mustela Bebek & Çocuk (32)</button>
+        <button class="cat-btn" data-cat="2">2. Mustela Maternité (4)</button>
+        <button class="cat-btn" data-cat="3">3. Dermoskin BabyCare (8)</button>
+        <button class="cat-btn" data-cat="4">4. Biobaby & Diğerleri (12)</button>
+        <button class="cat-btn" data-cat="5">5. Bebek Gaz & Destek Damlaları (8)</button>
+        <button class="cat-btn" data-cat="6">6. Anne Çatlak & Göğüs Bakımı (5)</button>
+        <button class="cat-btn" data-cat="7">7. Hamilelik & Takviyeler (15)</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="grid" id="productGrid">
+      <!-- Cards rendered via JS -->
+    </div>
+  </div>
+
+  <div class="modal" id="imageModal" onclick="closeModal(event)">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal()">&times;</button>
+      <img id="modalImg" class="modal-img" src="" alt="">
+      <h3 id="modalTitle" class="modal-title"></h3>
+      <p id="modalDetails" class="modal-subtitle"></p>
+    </div>
+  </div>
+
+  <script>
+    const products = [{"index": 1, "section": "1. Mustela Bebek & Çocuk Bakım Ürünleri", "subsection": "Saç & Banyo Bakımı", "raw": "**Mustela Gentle Shampoo*200 ml (Normal Saçlar İçin Papatya Özlü Nazik Bebek Şampuanı)", "filename": "01_mustela_gentle_shampoo_200_ml_normal_saclar_i.webp", "imagePath": "images/01_mustela_gentle_shampoo_200_ml_normal_saclar_i.webp", "sizeKB": 43.5, "rawClean": "**Mustela Gentle Shampoo** 200 ml (Normal Saçlar İçin Papatya Özlü Nazik Bebek Şampuanı)", "title": "Mustela Gentle Shampoo", "details": "200 ml (Normal Saçlar İçin Papatya Özlü Nazik Bebek Şampuanı)"}, {"index": 2, "section": "1. Mustela Bebek & Çocuk Bakım Ürünleri", "subsection": "Saç & Banyo Bakımı", "raw": "**Mustela Gentle Shampoo*500 ml (Normal Saçlar İçin Nazik Bebek Şampuanı)", "filename": "02_mustela_gentle_shampoo_500_ml_normal_saclar_i.webp", "imagePath": "images/02_mustela_gentle_shampoo_500_ml_normal_saclar_i.webp", "sizeKB": 43.5, "rawClean": "**Mustela Gentle Shampoo** 500 ml (Normal Saçlar İçin Nazik Bebek Şampuanı)", "title": "Mustela Gentle Shampoo", "details": "500 ml (Normal Saçlar İçin Nazik Bebek Şampuanı)"}, {"index": 3, "section": "1. Mustela Bebek & Çocuk Bakım Ürünleri", "subsection": "Saç & Banyo Bakımı", "raw": "**Mustela Gentle Cleansing Gel*200 ml (Normal Ciltler İçin Saç ve Vücut Şampuanı)", "filename": "03_mustela_gentle_cleansing_gel_200_ml_normal_ci.png", "imagePath": "images/03_mustela_gentle_cleansing_gel_200_ml_normal_ci.png", "sizeKB": 135.1, "rawClean": "**Mustela Gentle Cleansing Gel** 200 ml (Normal Ciltler İçin Saç ve Vücut Şampuanı)", "title": "Mustela Gentle Cleansing Gel", "details": "200 ml (Normal Ciltler İçin Saç ve Vücut Şampuanı)"}, {"index": 4, "section": "1. Mustela Bebek & Çocuk Bakım Ürünleri", "subsection": "Saç & Banyo Bakımı", "raw": "**Mustela Gentle Cleansing Gel*500 ml (Normal Ciltler İçin Saç ve Vücut Şampuanı)", "filename": "04_mustela_gentle_cleansing_gel_500_ml_normal_ci.png", "imagePath": "images/04_mustela_gentle_cleansing_gel_500_ml_normal_ci.png", "sizeKB": 135.1, "rawClean": "**Mustela Gentle Cleansing Gel** 500 ml (Normal Ciltler İçin Saç ve Vücut Şampuanı)", "title": "Mustela Gentle Cleansing Gel", "details": "500 ml (Normal Ciltler İçin Saç ve Vücut Şampuanı)"}, {"index": 5, "section": "1. Mustela Bebek & Çocuk Bakım Ürünleri", "subsection": "Saç & Banyo Bakımı", "raw": "**Mustela Foam Shampoo for Newborns*150 ml (Yenidoğan Köpük Şampuan - Konak Önleyici)", "filename": "05_mustela_foam_shampoo_for_newborns_150_ml_yeni.jpg", "imagePath": "images/05_mustela_foam_shampoo_for_newborns_150_ml_yeni.jpg", "sizeKB": 36.8, "rawClean": "**Mustela Foam Shampoo for Newborns** 150 ml (Yenidoğan Köpük Şampuan - Konak Önleyici)", "title": "Mustela Foam Shampoo for Newborns", "details": "150 ml (Yenidoğan Köpük Şampuan - Konak Önleyici)"}, {"index": 6, "section": "1. Mustela Bebek & Çocuk Bakım Ürünleri", "subsection": "Saç & Banyo Bakımı", "raw": "**Mustela Detangling and Nourishing Cream Shampoo*200 ml (Dolaşık ve Kuru Saçlar İçin Şampuan Krem)", "filename": "06_mustela_detangling_and_nourishing_cream_shamp.jpg", "imagePath": "images/06_mustela_detangling_and_nourishing_cream_shamp.jpg", "sizeKB": 56.7, "rawClean": "**Mustela Detangling and Nourishing Cream Shampoo** 200 ml (Dolaşık ve Kuru Saçlar İçin Şampuan Krem)", "title": "Mustela Detangling and Nourishing Cream Shampoo", "details": "200 ml (Dolaşık ve Kuru Saçlar İçin Şampuan Krem)"}, {"index": 7, "section": "1. Mustela Bebek & Çocuk Bakım Ürünleri", "subsection": "Saç & Banyo Bakımı", "raw": "**Mustela Solid Shampoo & Body Cleansing Bar*75 g (Katı Şampuan ve Vücut Sabunu)", "filename": "07_mustela_solid_shampoo_body_cleansing_bar_75_g.webp", "imagePath": "images/07_mustela_solid_shampoo_body_cleansing_bar_75_g.webp", "sizeKB": 37.1, "rawClean": "**Mustela Solid Shampoo & Body Cleansing Bar** 75 g (Katı Şampuan ve Vücut Sabunu)", "title": "Mustela Solid Shampoo & Body Cleansing Bar", "details": "75 g (Katı Şampuan ve Vücut Sabunu)"}, {"index": 8, "section": "1. Mustela Bebek & Çocuk Bakım Ürünleri", "subsection": "Cilt Temizleme & Bakım Suları", "raw": "**Mustela Hair Styler and Skin Freshener*200 ml (Ferahlatıcı ve Saç Açıcı Bakım Suyu)", "filename": "08_mustela_hair_styler_and_skin_freshener_200_ml.jpg", "imagePath": "images/08_mustela_hair_styler_and_skin_freshener_200_ml.jpg", "sizeKB": 35.5, "rawClean": "**Mustela Hair Styler and Skin Freshener** 200 ml (Ferahlatıcı ve Saç Açıcı Bakım Suyu)", "title": "Mustela Hair Styler and Skin Freshener", "details": "200 ml (Ferahlatıcı ve Saç Açıcı Bakım Suyu)"}, {"index": 9, "section": "1. Mustela Bebek & Çocuk Bakım Ürünleri", "subsection": "Cilt Temizleme & Bakım Suları", "raw": "**Mustela No-Rinse Cleansing Water*300 ml (Durulanmayan Yüz ve Bez Bölgesi Temizleme Suyu)", "filename": "09_mustela_no_rinse_cleansing_water_300_ml_durul.jpg", "imagePath": "images/09_mustela_no_rinse_cleansing_water_300_ml_durul.jpg", "sizeKB": 42.7, "rawClean": "**Mustela No-Rinse Cleansing Water** 300 ml (Durulanmayan Yüz ve Bez Bölgesi Temizleme Suyu)", "title": "Mustela No-Rinse Cleansing Water", "details": "300 ml (Durulanmayan Yüz ve Bez Bölgesi Temizleme Suyu)"}, {"index": 10, "section": "1. Mustela Bebek & Çocuk Bakım Ürünleri", "subsection": "Cilt Temizleme & Bakım Suları", "raw": "**Mustela Soothing Cleansing Water*300 ml (Çok Hassas Ciltler İçin Yatıştırıcı Temizleme Suyu)", "filename": "10_mustela_soothing_cleansing_water_300_ml_cok_h.png", "imagePath": "images/10_mustela_soothing_cleansing_water_300_ml_cok_h.png", "sizeKB": 150.9, "rawClean": "**Mustela Soothing Cleansing Water** 300 ml (Çok Hassas Ciltler İçin Yatıştırıcı Temizleme Suyu)", "title": "Mustela Soothing Cleansing Water", "details": "300 ml (Çok Hassas Ciltler İçin Yatıştırıcı Temizleme Suyu)"}, {"index": 11, "section": "1. Mustela Bebek & Çocuk Bakım Ürünleri", "subsection": "Kuru & Çok Hassas Cilt Bakımı", "raw": "**Mustela Nourishing Cleansing Gel with Cold Cream*300 ml (Cold Cream İçeren Besleyici Temizleme Jeli)", "filename": "11_mustela_nourishing_cleansing_gel_with_cold_cr.jpg", "imagePath": "images/11_mustela_nourishing_cleansing_gel_with_cold_cr.jpg", "sizeKB": 45.8, "rawClean": "**Mustela Nourishing Cleansing Gel with Cold Cream** 300 ml (Cold Cream İçeren Besleyici Temizleme Jeli)", "title": "Mustela Nourishing Cleansing Gel with Cold Cream", "details": "300 ml (Cold Cream İçeren Besleyici Temizleme Jeli)"}, {"index": 12, "section": "1. Mustela Bebek & Çocuk Bakım Ürünleri", "subsection": "Kuru & Çok Hassas Cilt Bakımı", "raw": "**Mustela Nourishing Lotion with Cold Cream*200 ml (Cold Cream İçeren Besleyici Vücut Losyonu)", "filename": "12_mustela_nourishing_lotion_with_cold_cream_200.jpg", "imagePath": "images/12_mustela_nourishing_lotion_with_cold_cream_200.jpg", "sizeKB": 37.1, "rawClean": "**Mustela Nourishing Lotion with Cold Cream** 200 ml (Cold Cream İçeren Besleyici Vücut Losyonu)", "title": "Mustela Nourishing Lotion with Cold Cream", "details": "200 ml (Cold Cream İçeren Besleyici Vücut Losyonu)"}, {"index": 13, "section": "1. Mustela Bebek & Çocuk Bakım Ürünleri", "subsection": "Kuru & Çok Hassas Cilt Bakımı", "raw": "**Mustela Nourishing Cream with Cold Cream*40 ml (Cold Cream İçeren Besleyici Yüz Kremi)", "filename": "13_mustela_nourishing_cream_with_cold_cream_40_m.jpg", "imagePath": "images/13_mustela_nourishing_cream_with_cold_cream_40_m.jpg", "sizeKB": 44.1, "rawClean": "**Mustela Nourishing Cream with Cold Cream** 40 ml (Cold Cream İçeren Besleyici Yüz Kremi)", "title": "Mustela Nourishing Cream with Cold Cream", "details": "40 ml (Cold Cream İçeren Besleyici Yüz Kremi)"}, {"index": 14, "section": "1. Mustela Bebek & Çocuk Bakım Ürünleri", "subsection": "Kuru & Çok Hassas Cilt Bakımı", "raw": "**Mustela Gentle Soap with Cold Cream*100 g (Cold Cream İçeren Katı Bebek Sabunu)", "filename": "14_mustela_gentle_soap_with_cold_cream_100_g_col.jpg", "imagePath": "images/14_mustela_gentle_soap_with_cold_cream_100_g_col.jpg", "sizeKB": 63.9, "rawClean": "**Mustela Gentle Soap with Cold Cream** 100 g (Cold Cream İçeren Katı Bebek Sabunu)", "title": "Mustela Gentle Soap with Cold Cream", "details": "100 g (Cold Cream İçeren Katı Bebek Sabunu)"}, {"index": 15, "section": "1. Mustela Bebek & Çocuk Bakım Ürünleri", "subsection": "Kuru & Çok Hassas Cilt Bakımı", "raw": "**Mustela Soothing Cleansing Gel*300 ml (Çok Hassas Ciltler İçin Yatıştırıcı Temizleme Jeli)", "filename": "15_mustela_soothing_cleansing_gel_300_ml_cok_has.png", "imagePath": "images/15_mustela_soothing_cleansing_gel_300_ml_cok_has.png", "sizeKB": 148.0, "rawClean": "**Mustela Soothing Cleansing Gel** 300 ml (Çok Hassas Ciltler İçin Yatıştırıcı Temizleme Jeli)", "title": "Mustela Soothing Cleansing Gel", "details": "300 ml (Çok Hassas Ciltler İçin Yatıştırıcı Temizleme Jeli)"}, {"index": 16, "section": "1. Mustela Bebek & Çocuk Bakım Ürünleri", "subsection": "Kuru & Çok Hassas Cilt Bakımı", "raw": "**Mustela Soothing Moisturizing Lotion*200 ml (Çok Hassas Ciltler İçin Yatıştırıcı Vücut Losyonu)", "filename": "16_mustela_soothing_moisturizing_lotion_200_ml_c.png", "imagePath": "images/16_mustela_soothing_moisturizing_lotion_200_ml_c.png", "sizeKB": 131.7, "rawClean": "**Mustela Soothing Moisturizing Lotion** 200 ml (Çok Hassas Ciltler İçin Yatıştırıcı Vücut Losyonu)", "title": "Mustela Soothing Moisturizing Lotion", "details": "200 ml (Çok Hassas Ciltler İçin Yatıştırıcı Vücut Losyonu)"}, {"index": 17, "section": "1. Mustela Bebek & Çocuk Bakım Ürünleri", "subsection": "Kuru & Çok Hassas Cilt Bakımı", "raw": "**Mustela Soothing Moisturizing Cream Face*40 ml (Çok Hassas Ciltler İçin Yatıştırıcı Yüz Kremi)", "filename": "17_mustela_soothing_moisturizing_cream_face_40_m.png", "imagePath": "images/17_mustela_soothing_moisturizing_cream_face_40_m.png", "sizeKB": 134.0, "rawClean": "**Mustela Soothing Moisturizing Cream Face** 40 ml (Çok Hassas Ciltler İçin Yatıştırıcı Yüz Kremi)", "title": "Mustela Soothing Moisturizing Cream Face", "details": "40 ml (Çok Hassas Ciltler İçin Yatıştırıcı Yüz Kremi)"}, {"index": 18, "section": "1. Mustela Bebek & Çocuk Bakım Ürünleri", "subsection": "Normal Cilt Nemlendirme & Masaj", "raw": "**Mustela Hydra Bebe Body Lotion*300 ml (Normal Ciltler İçin Nemlendirici Vücut Losyonu)", "filename": "18_mustela_hydra_bebe_body_lotion_300_ml_normal_.jpg", "imagePath": "images/18_mustela_hydra_bebe_body_lotion_300_ml_normal_.jpg", "sizeKB": 40.9, "rawClean": "**Mustela Hydra Bebe Body Lotion** 300 ml (Normal Ciltler İçin Nemlendirici Vücut Losyonu)", "title": "Mustela Hydra Bebe Body Lotion", "details": "300 ml (Normal Ciltler İçin Nemlendirici Vücut Losyonu)"}, {"index": 19, "section": "1. Mustela Bebek & Çocuk Bakım Ürünleri", "subsection": "Normal Cilt Nemlendirme & Masaj", "raw": "**Mustela Hydra Bebe Face Cream*40 ml (Normal Ciltler İçin Nemlendirici Yüz Kremi)", "filename": "19_mustela_hydra_bebe_face_cream_40_ml_normal_ci.jpg", "imagePath": "images/19_mustela_hydra_bebe_face_cream_40_ml_normal_ci.jpg", "sizeKB": 45.0, "rawClean": "**Mustela Hydra Bebe Face Cream** 40 ml (Normal Ciltler İçin Nemlendirici Yüz Kremi)", "title": "Mustela Hydra Bebe Face Cream", "details": "40 ml (Normal Ciltler İçin Nemlendirici Yüz Kremi)"}, {"index": 20, "section": "1. Mustela Bebek & Çocuk Bakım Ürünleri", "subsection": "Normal Cilt Nemlendirme & Masaj", "raw": "**Mustela Baby Oil*100 ml (Bebek Masaj Yağı)", "filename": "20_mustela_baby_oil_100_ml_bebek_masaj_yagi.jpg", "imagePath": "images/20_mustela_baby_oil_100_ml_bebek_masaj_yagi.jpg", "sizeKB": 35.9, "rawClean": "**Mustela Baby Oil** 100 ml (Bebek Masaj Yağı)", "title": "Mustela Baby Oil", "details": "100 ml (Bebek Masaj Yağı)"}, {"index": 21, "section": "1. Mustela Bebek & Çocuk Bakım Ürünleri", "subsection": "Atopik / Egzamaya Eğilimli Cilt Serisi (Stelatopia)", "raw": "**Mustela Stelatopia Cleansing Gel*200 ml (Atopik Ciltler İçin Temizleme Jeli)", "filename": "21_mustela_stelatopia_cleansing_gel_200_ml_atopi.jpg", "imagePath": "images/21_mustela_stelatopia_cleansing_gel_200_ml_atopi.jpg", "sizeKB": 38.8, "rawClean": "**Mustela Stelatopia Cleansing Gel** 200 ml (Atopik Ciltler İçin Temizleme Jeli)", "title": "Mustela Stelatopia Cleansing Gel", "details": "200 ml (Atopik Ciltler İçin Temizleme Jeli)"}, {"index": 22, "section": "1. Mustela Bebek & Çocuk Bakım Ürünleri", "subsection": "Atopik / Egzamaya Eğilimli Cilt Serisi (Stelatopia)", "raw": "**Mustela Stelatopia Cleansing Oil*500 ml (Atopik Ciltler İçin Banyo ve Temizleme Yağı)", "filename": "22_mustela_stelatopia_cleansing_oil_500_ml_atopi.jpg", "imagePath": "images/22_mustela_stelatopia_cleansing_oil_500_ml_atopi.jpg", "sizeKB": 40.3, "rawClean": "**Mustela Stelatopia Cleansing Oil** 500 ml (Atopik Ciltler İçin Banyo ve Temizleme Yağı)", "title": "Mustela Stelatopia Cleansing Oil", "details": "500 ml (Atopik Ciltler İçin Banyo ve Temizleme Yağı)"}, {"index": 23, "section": "1. Mustela Bebek & Çocuk Bakım Ürünleri", "subsection": "Atopik / Egzamaya Eğilimli Cilt Serisi (Stelatopia)", "raw": "**Mustela Stelatopia+ Lipid-Replenishing Cream*150 ml (Tüp - Lipid Yenileyici Krem)", "filename": "23_mustela_stelatopia_lipid_replenishing_cream_1.jpg", "imagePath": "images/23_mustela_stelatopia_lipid_replenishing_cream_1.jpg", "sizeKB": 39.2, "rawClean": "**Mustela Stelatopia+ Lipid-Replenishing Cream** 150 ml (Tüp - Lipid Yenileyici Krem)", "title": "Mustela Stelatopia+ Lipid-Replenishing Cream", "details": "150 ml (Tüp - Lipid Yenileyici Krem)"}, {"index": 24, "section": "1. Mustela Bebek & Çocuk Bakım Ürünleri", "subsection": "Atopik / Egzamaya Eğilimli Cilt Serisi (Stelatopia)", "raw": "**Mustela Stelatopia+ Lipid-Replenishing Cream*300 ml (Pompalı - Lipid Yenileyici Krem)", "filename": "24_mustela_stelatopia_lipid_replenishing_cream_3.jpg", "imagePath": "images/24_mustela_stelatopia_lipid_replenishing_cream_3.jpg", "sizeKB": 39.2, "rawClean": "**Mustela Stelatopia+ Lipid-Replenishing Cream** 300 ml (Pompalı - Lipid Yenileyici Krem)", "title": "Mustela Stelatopia+ Lipid-Replenishing Cream", "details": "300 ml (Pompalı - Lipid Yenileyici Krem)"}, {"index": 25, "section": "1. Mustela Bebek & Çocuk Bakım Ürünleri", "subsection": "Atopik / Egzamaya Eğilimli Cilt Serisi (Stelatopia)", "raw": "**Mustela Stelatopia Emollient Face Cream*40 ml (Atopik Ciltler İçin Yüz Kremi)", "filename": "25_mustela_stelatopia_emollient_face_cream_40_ml.jpg", "imagePath": "images/25_mustela_stelatopia_emollient_face_cream_40_ml.jpg", "sizeKB": 28.5, "rawClean": "**Mustela Stelatopia Emollient Face Cream** 40 ml (Atopik Ciltler İçin Yüz Kremi)", "title": "Mustela Stelatopia Emollient Face Cream", "details": "40 ml (Atopik Ciltler İçin Yüz Kremi)"}, {"index": 26, "section": "1. Mustela Bebek & Çocuk Bakım Ürünleri", "subsection": "Atopik / Egzamaya Eğilimli Cilt Serisi (Stelatopia)", "raw": "**Mustela Stelatopia Intense*30 ml (Kızarıklık ve Kaşıntı Karşıtı Yatıştırıcı Krem)", "filename": "26_mustela_stelatopia_intense_30_ml_kizariklik_v.jpg", "imagePath": "images/26_mustela_stelatopia_intense_30_ml_kizariklik_v.jpg", "sizeKB": 24.4, "rawClean": "**Mustela Stelatopia Intense** 30 ml (Kızarıklık ve Kaşıntı Karşıtı Yatıştırıcı Krem)", "title": "Mustela Stelatopia Intense", "details": "30 ml (Kızarıklık ve Kaşıntı Karşıtı Yatıştırıcı Krem)"}, {"index": 27, "section": "1. Mustela Bebek & Çocuk Bakım Ürünleri", "subsection": "Özel Bakım, İlk Yardım & Pişik", "raw": "**Mustela Cradle Cap Cream*40 ml (Konak Önleyici ve Giderici Bakım Kremi)", "filename": "27_mustela_cradle_cap_cream_40_ml_konak_onleyici.jpg", "imagePath": "images/27_mustela_cradle_cap_cream_40_ml_konak_onleyici.jpg", "sizeKB": 41.2, "rawClean": "**Mustela Cradle Cap Cream** 40 ml (Konak Önleyici ve Giderici Bakım Kremi)", "title": "Mustela Cradle Cap Cream", "details": "40 ml (Konak Önleyici ve Giderici Bakım Kremi)"}, {"index": 28, "section": "1. Mustela Bebek & Çocuk Bakım Ürünleri", "subsection": "Özel Bakım, İlk Yardım & Pişik", "raw": "**Mustela Cicastela Moisture Recovery Cream*40 ml (Onarıcı Bakım Kremi)", "filename": "28_mustela_cicastela_moisture_recovery_cream_40_.jpg", "imagePath": "images/28_mustela_cicastela_moisture_recovery_cream_40_.jpg", "sizeKB": 35.6, "rawClean": "**Mustela Cicastela Moisture Recovery Cream** 40 ml (Onarıcı Bakım Kremi)", "title": "Mustela Cicastela Moisture Recovery Cream", "details": "40 ml (Onarıcı Bakım Kremi)"}, {"index": 29, "section": "1. Mustela Bebek & Çocuk Bakım Ürünleri", "subsection": "Özel Bakım, İlk Yardım & Pişik", "raw": "**Mustela Gel Arnica & Calendula BIO*100 ml (Organik Arnika ve Aynısafa Jeli)", "filename": "29_mustela_gel_arnica_calendula_bio_100_ml_organ.jpg", "imagePath": "images/29_mustela_gel_arnica_calendula_bio_100_ml_organ.jpg", "sizeKB": 32.0, "rawClean": "**Mustela Gel Arnica & Calendula BIO** 100 ml (Organik Arnika ve Aynısafa Jeli)", "title": "Mustela Gel Arnica & Calendula BIO", "details": "100 ml (Organik Arnika ve Aynısafa Jeli)"}, {"index": 30, "section": "1. Mustela Bebek & Çocuk Bakım Ürünleri", "subsection": "Özel Bakım, İlk Yardım & Pişik", "raw": "**Mustela Vitamin Barrier Cream 1-2-3*(Pişik Önleyici Krem)", "filename": "30_mustela_vitamin_barrier_cream_1_2_3_pisik_onl.jpg", "imagePath": "images/30_mustela_vitamin_barrier_cream_1_2_3_pisik_onl.jpg", "sizeKB": 126.3, "rawClean": "**Mustela Vitamin Barrier Cream 1-2-3** (Pişik Önleyici Krem)", "title": "Mustela Vitamin Barrier Cream 1-2-3", "details": "(Pişik Önleyici Krem)"}, {"index": 31, "section": "1. Mustela Bebek & Çocuk Bakım Ürünleri", "subsection": "Özel Bakım, İlk Yardım & Pişik", "raw": "**Mustela Vitamin Barrier Cream 1-2-3 Set*(100 ml + 50 ml Çanta Boy Hediyeli Pişik Kremi Seti)", "filename": "31_mustela_vitamin_barrier_cream_1_2_3_set_100_m.jpg", "imagePath": "images/31_mustela_vitamin_barrier_cream_1_2_3_set_100_m.jpg", "sizeKB": 126.3, "rawClean": "**Mustela Vitamin Barrier Cream 1-2-3 Set** (100 ml + 50 ml Çanta Boy Hediyeli Pişik Kremi Seti)", "title": "Mustela Vitamin Barrier Cream 1-2-3 Set", "details": "(100 ml + 50 ml Çanta Boy Hediyeli Pişik Kremi Seti)"}, {"index": 32, "section": "1. Mustela Bebek & Çocuk Bakım Ürünleri", "subsection": "Özel Bakım, İlk Yardım & Pişik", "raw": "**Musti Eau de Soin Delicate Fragrance*50 ml (Alkolsuz Bebek Parfümü)", "filename": "32_musti_eau_de_soin_delicate_fragrance_50_ml_al.jpg", "imagePath": "images/32_musti_eau_de_soin_delicate_fragrance_50_ml_al.jpg", "sizeKB": 244.5, "rawClean": "**Musti Eau de Soin Delicate Fragrance** 50 ml (Alkolsuz Bebek Parfümü)", "title": "Musti Eau de Soin Delicate Fragrance", "details": "50 ml (Alkolsuz Bebek Parfümü)"}, {"index": 33, "section": "2. Mustela Maternité (Anne Bakım Serisi)", "subsection": "", "raw": "**Mustela Maternite Stretch Marks Cream*(Çatlak Bakım Kremi)", "filename": "33_mustela_maternite_stretch_marks_cream_catlak_.webp", "imagePath": "images/33_mustela_maternite_stretch_marks_cream_catlak_.webp", "sizeKB": 37.6, "rawClean": "**Mustela Maternite Stretch Marks Cream** (Çatlak Bakım Kremi)", "title": "Mustela Maternite Stretch Marks Cream", "details": "(Çatlak Bakım Kremi)"}, {"index": 34, "section": "2. Mustela Maternité (Anne Bakım Serisi)", "subsection": "", "raw": "**Mustela Maternite Stretch Marks Oil BIO*105 ml (Organik Çatlak Bakım Yağı)", "filename": "34_mustela_maternite_stretch_marks_oil_bio_105_m.jpg", "imagePath": "images/34_mustela_maternite_stretch_marks_oil_bio_105_m.jpg", "sizeKB": 45.2, "rawClean": "**Mustela Maternite Stretch Marks Oil BIO** 105 ml (Organik Çatlak Bakım Yağı)", "title": "Mustela Maternite Stretch Marks Oil BIO", "details": "105 ml (Organik Çatlak Bakım Yağı)"}, {"index": 35, "section": "2. Mustela Maternité (Anne Bakım Serisi)", "subsection": "", "raw": "**Mustela Maternite Stretch Marks Serum BIO*(Organik Çatlak Bakım Serumu)", "filename": "35_mustela_maternite_stretch_marks_serum_bio_org.jpg", "imagePath": "images/35_mustela_maternite_stretch_marks_serum_bio_org.jpg", "sizeKB": 88.0, "rawClean": "**Mustela Maternite Stretch Marks Serum BIO** (Organik Çatlak Bakım Serumu)", "title": "Mustela Maternite Stretch Marks Serum BIO", "details": "(Organik Çatlak Bakım Serumu)"}, {"index": 36, "section": "2. Mustela Maternité (Anne Bakım Serisi)", "subsection": "", "raw": "**Mustela Maternite Nursing Comfort Balm BIO*(Organik Göğüs Ucu Bakım Kremi)", "filename": "36_mustela_maternite_nursing_comfort_balm_bio_or.jpg", "imagePath": "images/36_mustela_maternite_nursing_comfort_balm_bio_or.jpg", "sizeKB": 45.9, "rawClean": "**Mustela Maternite Nursing Comfort Balm BIO** (Organik Göğüs Ucu Bakım Kremi)", "title": "Mustela Maternite Nursing Comfort Balm BIO", "details": "(Organik Göğüs Ucu Bakım Kremi)"}, {"index": 37, "section": "3. Dermoskin BabyCare Serisi", "subsection": "", "raw": "**Dermoskin BabyCare Saç & Vücut Şampuanı**", "filename": "37_dermoskin_babycare_sac_vucut_sampuani.jpg", "imagePath": "images/37_dermoskin_babycare_sac_vucut_sampuani.jpg", "sizeKB": 203.3, "rawClean": "**Dermoskin BabyCare Saç & Vücut Şampuanı** ", "title": "Dermoskin BabyCare Saç & Vücut Şampuanı", "details": ""}, {"index": 38, "section": "3. Dermoskin BabyCare Serisi", "subsection": "", "raw": "**Dermoskin BabyCare Yeni Doğan Köpük Şampuanı**", "filename": "38_dermoskin_babycare_yeni_dogan_kopuk_sampuani.jpg", "imagePath": "images/38_dermoskin_babycare_yeni_dogan_kopuk_sampuani.jpg", "sizeKB": 226.3, "rawClean": "**Dermoskin BabyCare Yeni Doğan Köpük Şampuanı** ", "title": "Dermoskin BabyCare Yeni Doğan Köpük Şampuanı", "details": ""}, {"index": 39, "section": "3. Dermoskin BabyCare Serisi", "subsection": "", "raw": "**Dermoskin BabyCare Nemlendirici Vücut Losyonu**", "filename": "39_dermoskin_babycare_nemlendirici_vucut_losyonu.jpg", "imagePath": "images/39_dermoskin_babycare_nemlendirici_vucut_losyonu.jpg", "sizeKB": 225.6, "rawClean": "**Dermoskin BabyCare Nemlendirici Vücut Losyonu** ", "title": "Dermoskin BabyCare Nemlendirici Vücut Losyonu", "details": ""}, {"index": 40, "section": "3. Dermoskin BabyCare Serisi", "subsection": "", "raw": "**Dermoskin BabyCare Pişik Kremi**", "filename": "40_dermoskin_babycare_pisik_kremi.jpg", "imagePath": "images/40_dermoskin_babycare_pisik_kremi.jpg", "sizeKB": 214.7, "rawClean": "**Dermoskin BabyCare Pişik Kremi** ", "title": "Dermoskin BabyCare Pişik Kremi", "details": ""}, {"index": 41, "section": "3. Dermoskin BabyCare Serisi", "subsection": "", "raw": "**Dermoskin BabyCare Bebek Yağı**", "filename": "41_dermoskin_babycare_bebek_yagi.jpg", "imagePath": "images/41_dermoskin_babycare_bebek_yagi.jpg", "sizeKB": 193.5, "rawClean": "**Dermoskin BabyCare Bebek Yağı** ", "title": "Dermoskin BabyCare Bebek Yağı", "details": ""}, {"index": 42, "section": "3. Dermoskin BabyCare Serisi", "subsection": "", "raw": "**Dermoskin BabyCare Prebiyotik Pişik Kremi & Yüz Kremi**", "filename": "42_dermoskin_babycare_prebiyotik_pisik_kremi_yuz.jpg", "imagePath": "images/42_dermoskin_babycare_prebiyotik_pisik_kremi_yuz.jpg", "sizeKB": 183.0, "rawClean": "**Dermoskin BabyCare Prebiyotik Pişik Kremi & Yüz Kremi** ", "title": "Dermoskin BabyCare Prebiyotik Pişik Kremi & Yüz Kremi", "details": ""}, {"index": 43, "section": "3. Dermoskin BabyCare Serisi", "subsection": "", "raw": "**Dermoskin BabyCare Konak Önleyici Saç Bakım Kremi**", "filename": "43_dermoskin_babycare_konak_onleyici_sac_bakim_k.jpg", "imagePath": "images/43_dermoskin_babycare_konak_onleyici_sac_bakim_k.jpg", "sizeKB": 141.1, "rawClean": "**Dermoskin BabyCare Konak Önleyici Saç Bakım Kremi** ", "title": "Dermoskin BabyCare Konak Önleyici Saç Bakım Kremi", "details": ""}, {"index": 44, "section": "3. Dermoskin BabyCare Serisi", "subsection": "", "raw": "**Dermoskin BabyCare Bebek ve Çocuk Güneş Koruyucu Krem SPF 50+**", "filename": "44_dermoskin_babycare_bebek_ve_cocuk_gunes_koruy.jpg", "imagePath": "images/44_dermoskin_babycare_bebek_ve_cocuk_gunes_koruy.jpg", "sizeKB": 255.6, "rawClean": "**Dermoskin BabyCare Bebek ve Çocuk Güneş Koruyucu Krem SPF 50+** ", "title": "Dermoskin BabyCare Bebek ve Çocuk Güneş Koruyucu Krem SPF 50+", "details": ""}, {"index": 45, "section": "4. Biobaby & Diğer Bebek Bakım Ürünleri", "subsection": "", "raw": "**Biobaby Atocare Çok Kuru Ciltler İçin Krem*100 ml", "filename": "45_biobaby_atocare_cok_kuru_ciltler_i_cin_krem_1.jpg", "imagePath": "images/45_biobaby_atocare_cok_kuru_ciltler_i_cin_krem_1.jpg", "sizeKB": 51.8, "rawClean": "**Biobaby Atocare Çok Kuru Ciltler İçin Krem** 100 ml", "title": "Biobaby Atocare Çok Kuru Ciltler İçin Krem", "details": "100 ml"}, {"index": 46, "section": "4. Biobaby & Diğer Bebek Bakım Ürünleri", "subsection": "", "raw": "**Biobaby Atocare Çok Kuru Ciltler İçin Saç ve Vücut Şampuanı*300 ml", "filename": "46_biobaby_atocare_cok_kuru_ciltler_i_cin_sac_ve.png", "imagePath": "images/46_biobaby_atocare_cok_kuru_ciltler_i_cin_sac_ve.png", "sizeKB": 110.8, "rawClean": "**Biobaby Atocare Çok Kuru Ciltler İçin Saç ve Vücut Şampuanı** 300 ml", "title": "Biobaby Atocare Çok Kuru Ciltler İçin Saç ve Vücut Şampuanı", "details": "300 ml"}, {"index": 47, "section": "4. Biobaby & Diğer Bebek Bakım Ürünleri", "subsection": "", "raw": "**Biobaby Yenidoğan Saç ve Vücut Şampuanı*200 ml", "filename": "47_biobaby_yenidogan_sac_ve_vucut_sampuani_200_ml.webp", "imagePath": "images/47_biobaby_yenidogan_sac_ve_vucut_sampuani_200_ml.webp", "sizeKB": 32.1, "rawClean": "**Biobaby Yenidoğan Saç ve Vücut Şampuanı** 200 ml", "title": "Biobaby Yenidoğan Saç ve Vücut Şampuanı", "details": "200 ml"}, {"index": 48, "section": "4. Biobaby & Diğer Bebek Bakım Ürünleri", "subsection": "", "raw": "**Biobaby Pişik Kremi*75 ml", "filename": "48_biobaby_pisik_kremi_75_ml.jpg", "imagePath": "images/48_biobaby_pisik_kremi_75_ml.jpg", "sizeKB": 94.4, "rawClean": "**Biobaby Pişik Kremi** 75 ml", "title": "Biobaby Pişik Kremi", "details": "75 ml"}, {"index": 49, "section": "4. Biobaby & Diğer Bebek Bakım Ürünleri", "subsection": "", "raw": "**Biabalm Plus Barrier Cream*30 ml", "filename": "49_biabalm_plus_barrier_cream_30_ml.jpg", "imagePath": "images/49_biabalm_plus_barrier_cream_30_ml.jpg", "sizeKB": 12.7, "rawClean": "**Biabalm Plus Barrier Cream** 30 ml", "title": "Biabalm Plus Barrier Cream", "details": "30 ml"}, {"index": 50, "section": "4. Biobaby & Diğer Bebek Bakım Ürünleri", "subsection": "", "raw": "**ReCream Bebek Bakım Kremi**", "filename": "50_recream_bebek_bakim_kremi.jpg", "imagePath": "images/50_recream_bebek_bakim_kremi.jpg", "sizeKB": 13.4, "rawClean": "**ReCream Bebek Bakım Kremi** ", "title": "ReCream Bebek Bakım Kremi", "details": ""}, {"index": 51, "section": "4. Biobaby & Diğer Bebek Bakım Ürünleri", "subsection": "", "raw": "**Sudocrem Bebek Bakım Kremi*(Kavanoz)", "filename": "51_sudocrem_bebek_bakim_kremi_kavanoz.jpg", "imagePath": "images/51_sudocrem_bebek_bakim_kremi_kavanoz.jpg", "sizeKB": 98.5, "rawClean": "**Sudocrem Bebek Bakım Kremi** (Kavanoz)", "title": "Sudocrem Bebek Bakım Kremi", "details": "(Kavanoz)"}, {"index": 52, "section": "4. Biobaby & Diğer Bebek Bakım Ürünleri", "subsection": "", "raw": "**Sebamed Clear Face Temizleme Köpüğü**", "filename": "52_sebamed_clear_face_temizleme_kopugu.jpg", "imagePath": "images/52_sebamed_clear_face_temizleme_kopugu.jpg", "sizeKB": 23.7, "rawClean": "**Sebamed Clear Face Temizleme Köpüğü** ", "title": "Sebamed Clear Face Temizleme Köpüğü", "details": ""}, {"index": 53, "section": "4. Biobaby & Diğer Bebek Bakım Ürünleri", "subsection": "", "raw": "**Sebamed Sun Care Multi Protect Sun Lotion SPF 50+**", "filename": "53_sebamed_sun_care_multi_protect_sun_lotion_spf.jpg", "imagePath": "images/53_sebamed_sun_care_multi_protect_sun_lotion_spf.jpg", "sizeKB": 25.0, "rawClean": "**Sebamed Sun Care Multi Protect Sun Lotion SPF 50+** ", "title": "Sebamed Sun Care Multi Protect Sun Lotion SPF 50+", "details": ""}, {"index": 54, "section": "4. Biobaby & Diğer Bebek Bakım Ürünleri", "subsection": "", "raw": "**Sebamed Baby Nappy Cream (Pişik Önleyici Krem)**", "filename": "54_sebamed_baby_nappy_cream_pisik_onleyici_krem.jpg", "imagePath": "images/54_sebamed_baby_nappy_cream_pisik_onleyici_krem.jpg", "sizeKB": 159.6, "rawClean": "**Sebamed Baby Nappy Cream (Pişik Önleyici Krem)** ", "title": "Sebamed Baby Nappy Cream (Pişik Önleyici Krem)", "details": ""}, {"index": 55, "section": "4. Biobaby & Diğer Bebek Bakım Ürünleri", "subsection": "", "raw": "**Utalk Pudra*100 g", "filename": "55_utalk_pudra_100_g.jpg", "imagePath": "images/55_utalk_pudra_100_g.jpg", "sizeKB": 54.9, "rawClean": "**Utalk Pudra** 100 g", "title": "Utalk Pudra", "details": "100 g"}, {"index": 56, "section": "4. Biobaby & Diğer Bebek Bakım Ürünleri", "subsection": "", "raw": "**Undotalk Pudra**", "filename": "56_undotalk_pudra.jpg", "imagePath": "images/56_undotalk_pudra.jpg", "sizeKB": 15.7, "rawClean": "**Undotalk Pudra** ", "title": "Undotalk Pudra", "details": ""}, {"index": 57, "section": "5. Bebek Gaz, Sindirim & Destek Damlaları / Şuruplar", "subsection": "", "raw": "**Bestlak Damla**", "filename": "57_bestlak_damla.webp", "imagePath": "images/57_bestlak_damla.webp", "sizeKB": 124.9, "rawClean": "**Bestlak Damla** ", "title": "Bestlak Damla", "details": ""}, {"index": 58, "section": "5. Bebek Gaz, Sindirim & Destek Damlaları / Şuruplar", "subsection": "", "raw": "**Nurse Harvey's GG Damla**", "filename": "58_nurse_harvey_s_gg_damla.jpg", "imagePath": "images/58_nurse_harvey_s_gg_damla.jpg", "sizeKB": 18.0, "rawClean": "**Nurse Harvey's GG Damla** ", "title": "Nurse Harvey's GG Damla", "details": ""}, {"index": 59, "section": "5. Bebek Gaz, Sindirim & Destek Damlaları / Şuruplar", "subsection": "", "raw": "**Nurse Harvey's Colex Bitkisel Şurup**", "filename": "59_nurse_harvey_s_colex_bitkisel_surup.jpg", "imagePath": "images/59_nurse_harvey_s_colex_bitkisel_surup.jpg", "sizeKB": 33.8, "rawClean": "**Nurse Harvey's Colex Bitkisel Şurup** ", "title": "Nurse Harvey's Colex Bitkisel Şurup", "details": ""}, {"index": 60, "section": "5. Bebek Gaz, Sindirim & Destek Damlaları / Şuruplar", "subsection": "", "raw": "**Relactaz Damla**", "filename": "60_relactaz_damla.jpg", "imagePath": "images/60_relactaz_damla.jpg", "sizeKB": 104.9, "rawClean": "**Relactaz Damla** ", "title": "Relactaz Damla", "details": ""}, {"index": 61, "section": "5. Bebek Gaz, Sindirim & Destek Damlaları / Şuruplar", "subsection": "", "raw": "**Sab Simplex Damla*30 ml", "filename": "61_sab_simplex_damla_30_ml.jpg", "imagePath": "images/61_sab_simplex_damla_30_ml.jpg", "sizeKB": 22.0, "rawClean": "**Sab Simplex Damla** 30 ml", "title": "Sab Simplex Damla", "details": "30 ml"}, {"index": 62, "section": "5. Bebek Gaz, Sindirim & Destek Damlaları / Şuruplar", "subsection": "", "raw": "**Bugiya Damla**", "filename": "62_bugiya_damla.jpg", "imagePath": "images/62_bugiya_damla.jpg", "sizeKB": 13.9, "rawClean": "**Bugiya Damla** ", "title": "Bugiya Damla", "details": ""}, {"index": 63, "section": "5. Bebek Gaz, Sindirim & Destek Damlaları / Şuruplar", "subsection": "", "raw": "**BayBay Gece Damlası*50 ml", "filename": "63_baybay_gece_damlasi_50_ml.jpg", "imagePath": "images/63_baybay_gece_damlasi_50_ml.jpg", "sizeKB": 32.0, "rawClean": "**BayBay Gece Damlası** 50 ml", "title": "BayBay Gece Damlası", "details": "50 ml"}, {"index": 64, "section": "5. Bebek Gaz, Sindirim & Destek Damlaları / Şuruplar", "subsection": "", "raw": "**Hünnap Karadut Şurubu**", "filename": "64_hunnap_karadut_surubu.jpg", "imagePath": "images/64_hunnap_karadut_surubu.jpg", "sizeKB": 22.3, "rawClean": "**Hünnap Karadut Şurubu** ", "title": "Hünnap Karadut Şurubu", "details": ""}, {"index": 65, "section": "6. Anne Çatlak & Göğüs Bakımı", "subsection": "", "raw": "**Bio-Oil Cilt Bakım Yağı*125 ml", "filename": "65_bio_oil_cilt_bakim_yagi_125_ml.webp", "imagePath": "images/65_bio_oil_cilt_bakim_yagi_125_ml.webp", "sizeKB": 84.9, "rawClean": "**Bio-Oil Cilt Bakım Yağı** 125 ml", "title": "Bio-Oil Cilt Bakım Yağı", "details": "125 ml"}, {"index": 66, "section": "6. Anne Çatlak & Göğüs Bakımı", "subsection": "", "raw": "**Striacare Çatlak Bakım Kremi**", "filename": "66_striacare_catlak_bakim_kremi.jpg", "imagePath": "images/66_striacare_catlak_bakim_kremi.jpg", "sizeKB": 11.7, "rawClean": "**Striacare Çatlak Bakım Kremi** ", "title": "Striacare Çatlak Bakım Kremi", "details": ""}, {"index": 67, "section": "6. Anne Çatlak & Göğüs Bakımı", "subsection": "", "raw": "**Lierac Phytolastil Solute Çatlak Karşıtı Serum*75 ml", "filename": "67_lierac_phytolastil_solute_catlak_karsiti_seru.jpg", "imagePath": "images/67_lierac_phytolastil_solute_catlak_karsiti_seru.jpg", "sizeKB": 71.9, "rawClean": "**Lierac Phytolastil Solute Çatlak Karşıtı Serum** 75 ml", "title": "Lierac Phytolastil Solute Çatlak Karşıtı Serum", "details": "75 ml"}, {"index": 68, "section": "6. Anne Çatlak & Göğüs Bakımı", "subsection": "", "raw": "**Lierac Phytolastil Gel Çatlak Önleyici Jel*200 ml", "filename": "68_lierac_phytolastil_gel_catlak_onleyici_jel_20.jpg", "imagePath": "images/68_lierac_phytolastil_gel_catlak_onleyici_jel_20.jpg", "sizeKB": 61.2, "rawClean": "**Lierac Phytolastil Gel Çatlak Önleyici Jel** 200 ml", "title": "Lierac Phytolastil Gel Çatlak Önleyici Jel", "details": "200 ml"}, {"index": 69, "section": "6. Anne Çatlak & Göğüs Bakımı", "subsection": "", "raw": "**Lansinoh HPA Lanolin Göğüs Ucu Kremi**", "filename": "69_lansinoh_hpa_lanolin_gogus_ucu_kremi.jpg", "imagePath": "images/69_lansinoh_hpa_lanolin_gogus_ucu_kremi.jpg", "sizeKB": 89.2, "rawClean": "**Lansinoh HPA Lanolin Göğüs Ucu Kremi** ", "title": "Lansinoh HPA Lanolin Göğüs Ucu Kremi", "details": ""}, {"index": 70, "section": "7. Hamilelik, Emzirme & Multivitamin Takviyeleri", "subsection": "", "raw": "**New Life EFA-MOM*30 Kapsül", "filename": "70_new_life_efa_mom_30_kapsul.jpg", "imagePath": "images/70_new_life_efa_mom_30_kapsul.jpg", "sizeKB": 119.0, "rawClean": "**New Life EFA-MOM** 30 Kapsül", "title": "New Life EFA-MOM", "details": "30 Kapsül"}, {"index": 71, "section": "7. Hamilelik, Emzirme & Multivitamin Takviyeleri", "subsection": "", "raw": "**Aktif Folic-1 Tablet*30 Tablet", "filename": "71_aktif_folic_1_tablet_30_tablet.jpg", "imagePath": "images/71_aktif_folic_1_tablet_30_tablet.jpg", "sizeKB": 19.3, "rawClean": "**Aktif Folic-1 Tablet** 30 Tablet", "title": "Aktif Folic-1 Tablet", "details": "30 Tablet"}, {"index": 72, "section": "7. Hamilelik, Emzirme & Multivitamin Takviyeleri", "subsection": "", "raw": "**Aktif Folic-iod 12 Tablet*30 Tablet", "filename": "72_aktif_folic_iod_12_tablet_30_tablet.jpg", "imagePath": "images/72_aktif_folic_iod_12_tablet_30_tablet.jpg", "sizeKB": 7.9, "rawClean": "**Aktif Folic-iod 12 Tablet** 30 Tablet", "title": "Aktif Folic-iod 12 Tablet", "details": "30 Tablet"}, {"index": 73, "section": "7. Hamilelik, Emzirme & Multivitamin Takviyeleri", "subsection": "", "raw": "**Folipol Tablet*(Folik Asit & Vitamin B12)", "filename": "73_folipol_tablet_folik_asit_vitamin_b12.jpg", "imagePath": "images/73_folipol_tablet_folik_asit_vitamin_b12.jpg", "sizeKB": 10.0, "rawClean": "**Folipol Tablet** (Folik Asit & Vitamin B12)", "title": "Folipol Tablet", "details": "(Folik Asit & Vitamin B12)"}, {"index": 74, "section": "7. Hamilelik, Emzirme & Multivitamin Takviyeleri", "subsection": "", "raw": "**Vifolic Kapsül / Tablet**", "filename": "74_vifolic_kapsul_tablet.jpg", "imagePath": "images/74_vifolic_kapsul_tablet.jpg", "sizeKB": 12.6, "rawClean": "**Vifolic Kapsül / Tablet** ", "title": "Vifolic Kapsül / Tablet", "details": ""}, {"index": 75, "section": "7. Hamilelik, Emzirme & Multivitamin Takviyeleri", "subsection": "", "raw": "**iMom Primo*30 Yumuşak Kapsül", "filename": "75_imom_primo_30_yumusak_kapsul.jpg", "imagePath": "images/75_imom_primo_30_yumusak_kapsul.jpg", "sizeKB": 94.4, "rawClean": "**iMom Primo** 30 Yumuşak Kapsül", "title": "iMom Primo", "details": "30 Yumuşak Kapsül"}, {"index": 76, "section": "7. Hamilelik, Emzirme & Multivitamin Takviyeleri", "subsection": "", "raw": "**iMom Latte*60 Yumuşak Kapsül", "filename": "76_imom_latte_60_yumusak_kapsul.jpg", "imagePath": "images/76_imom_latte_60_yumusak_kapsul.jpg", "sizeKB": 63.6, "rawClean": "**iMom Latte** 60 Yumuşak Kapsül", "title": "iMom Latte", "details": "60 Yumuşak Kapsül"}, {"index": 77, "section": "7. Hamilelik, Emzirme & Multivitamin Takviyeleri", "subsection": "", "raw": "**Regenesis Max Plus*30 Kapsül", "filename": "77_regenesis_max_plus_30_kapsul.jpg", "imagePath": "images/77_regenesis_max_plus_30_kapsul.jpg", "sizeKB": 157.9, "rawClean": "**Regenesis Max Plus** 30 Kapsül", "title": "Regenesis Max Plus", "details": "30 Kapsül"}, {"index": 78, "section": "7. Hamilelik, Emzirme & Multivitamin Takviyeleri", "subsection": "", "raw": "**Elenatal 1 (Hamilelik Öncesi & 1. Trimester)*30 Tablet", "filename": "78_elenatal_1_hamilelik_oncesi_1_trimester_30_ta.jpg", "imagePath": "images/78_elenatal_1_hamilelik_oncesi_1_trimester_30_ta.jpg", "sizeKB": 17.1, "rawClean": "**Elenatal 1 (Hamilelik Öncesi & 1. Trimester)** 30 Tablet", "title": "Elenatal 1 (Hamilelik Öncesi & 1. Trimester)", "details": "30 Tablet"}, {"index": 79, "section": "7. Hamilelik, Emzirme & Multivitamin Takviyeleri", "subsection": "", "raw": "**Elenatal 2 (Hamilelik Dönemi)*30 Kapsül", "filename": "79_elenatal_2_hamilelik_donemi_30_kapsul.jpg", "imagePath": "images/79_elenatal_2_hamilelik_donemi_30_kapsul.jpg", "sizeKB": 27.1, "rawClean": "**Elenatal 2 (Hamilelik Dönemi)** 30 Kapsül", "title": "Elenatal 2 (Hamilelik Dönemi)", "details": "30 Kapsül"}, {"index": 80, "section": "7. Hamilelik, Emzirme & Multivitamin Takviyeleri", "subsection": "", "raw": "**Elenatal 3 (Doğum Sonrası & Emzirme Dönemi)*30 Kapsül", "filename": "80_elenatal_3_dogum_sonrasi_emzirme_donemi_30_ka.jpg", "imagePath": "images/80_elenatal_3_dogum_sonrasi_emzirme_donemi_30_ka.jpg", "sizeKB": 17.0, "rawClean": "**Elenatal 3 (Doğum Sonrası & Emzirme Dönemi)** 30 Kapsül", "title": "Elenatal 3 (Doğum Sonrası & Emzirme Dönemi)", "details": "30 Kapsül"}, {"index": 81, "section": "7. Hamilelik, Emzirme & Multivitamin Takviyeleri", "subsection": "", "raw": "**Vimesa Kapsül**", "filename": "81_vimesa_kapsul.jpg", "imagePath": "images/81_vimesa_kapsul.jpg", "sizeKB": 8.1, "rawClean": "**Vimesa Kapsül** ", "title": "Vimesa Kapsül", "details": ""}, {"index": 82, "section": "7. Hamilelik, Emzirme & Multivitamin Takviyeleri", "subsection": "", "raw": "**Femival Vita*30 Kapsül", "filename": "82_femival_vita_30_kapsul.jpg", "imagePath": "images/82_femival_vita_30_kapsul.jpg", "sizeKB": 11.8, "rawClean": "**Femival Vita** 30 Kapsül", "title": "Femival Vita", "details": "30 Kapsül"}, {"index": 83, "section": "7. Hamilelik, Emzirme & Multivitamin Takviyeleri", "subsection": "", "raw": "**Vinalac*30 Tablet", "filename": "83_vinalac_30_tablet.jpg", "imagePath": "images/83_vinalac_30_tablet.jpg", "sizeKB": 17.6, "rawClean": "**Vinalac** 30 Tablet", "title": "Vinalac", "details": "30 Tablet"}, {"index": 84, "section": "7. Hamilelik, Emzirme & Multivitamin Takviyeleri", "subsection": "", "raw": "**Ocean Mummy (Orzax)*30 Kapsül", "filename": "84_ocean_mummy_orzax_30_kapsul.jpg", "imagePath": "images/84_ocean_mummy_orzax_30_kapsul.jpg", "sizeKB": 112.7, "rawClean": "**Ocean Mummy (Orzax)** 30 Kapsül", "title": "Ocean Mummy (Orzax)", "details": "30 Kapsül"}];
+
+    const grid = document.getElementById('productGrid');
+    const searchInput = document.getElementById('searchInput');
+    const catButtons = document.querySelectorAll('.cat-btn');
+    const counterBadge = document.getElementById('productCount');
+    let activeCategory = 'all';
+
+    function renderCards(items) {
+      grid.innerHTML = items.map(p => `
+        <div class="card" data-sec="${p.section.slice(0, 1)}">
+          <span class="card-index">#${p.index}</span>
+          <div class="card-img-wrapper" onclick="openModal('${p.imagePath}', '${escapeQuotes(p.title)}', '${escapeQuotes(p.details)}')">
+            <img class="card-img" src="${p.imagePath}" alt="${p.title}" loading="lazy">
+          </div>
+          <span class="badge">${p.subsection || p.section.split('.')[1]?.trim() || p.section}</span>
+          <h3 class="card-title">${p.title}</h3>
+          <p class="card-details">${p.details || 'Orijinal Ambalaj'}</p>
+        </div>
+      `).join('');
+      counterBadge.textContent = `${items.length} Ürün`;
+    }
+
+    function escapeQuotes(str) {
+      return (str || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
+    }
+
+    function filterProducts() {
+      const query = searchInput.value.trim().toLocaleLowerCase('tr-TR');
+      const filtered = products.filter(p => {
+        const matchCat = (activeCategory === 'all') || (p.section.startsWith(activeCategory));
+        const fullText = (p.title + ' ' + p.details + ' ' + p.section + ' ' + (p.subsection || '')).toLocaleLowerCase('tr-TR');
+        const matchSearch = query === '' || fullText.includes(query);
+        return matchCat && matchSearch;
+      });
+      renderCards(filtered);
+    }
+
+    searchInput.addEventListener('input', filterProducts);
+
+    catButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        catButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        activeCategory = btn.getAttribute('data-cat');
+        filterProducts();
+      });
+    });
+
+    function openModal(imgSrc, title, details) {
+      document.getElementById('modalImg').src = imgSrc;
+      document.getElementById('modalTitle').textContent = title;
+      document.getElementById('modalDetails').textContent = details;
+      document.getElementById('imageModal').classList.add('open');
+    }
+
+    function closeModal(e) {
+      document.getElementById('imageModal').classList.remove('open');
+    }
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeModal();
+    });
+
+    renderCards(products);
+  </script>
+</body>
+</html>
