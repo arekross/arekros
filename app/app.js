@@ -1,6 +1,6 @@
 /**
- * Emre Ege Eczanesi — Klinik Dermokozmetik Portalı & Stüdyo
- * Modern, Yüksek Hızlı Vanilla JavaScript Mantığı
+ * arekros — Klinik Dermokozmetik & Danışmanlık Konsolu
+ * Modern, Yüksek Hızlı Cyber-Clinical Workstation ve Ambalaj Stüdyosu
  */
 
 (function () {
@@ -10,6 +10,10 @@
   const state = {
     products: [],
     customProducts: [],
+    currentMode: 'workstation', // 'workstation' | 'grid'
+    selectedIndex: 0,
+    filteredProducts: [],
+
     activeBrand: 'all',
     activeRoutine: 'all',
     searchQuery: '',
@@ -149,32 +153,16 @@
         ciltTipleri = ['Yağlı Ciltler', 'Akneye Eğilimli Ciltler', 'Pürüzlü Ciltler'];
         yasKriterleri.yas_aciklama_detay = '12 yaş ve üzeri ergenler ile yetişkinlerin kullanımına uygundur.';
         hastaSikayeti.hasta_cumlesi = 'Yüzümde sürekli sivilce ve siyah noktalar çıkıyor, gün içinde çok yağlanıp parlıyor.';
-        hastaSikayeti.eczaci_sorusu = 'Sivilceleriniz iltihaplı kistik mi yoksa yüzeysel siyah nokta/komedon şeklinde mi?';
         hastaSikayeti.secim_nedeni = '%2 Salisilik Asit gözenek içindeki sebumu eritir; hektonit kili fazla yağı çeker, seramidler bariyeri dengeler.';
-        hastaSikayeti.arama_etiketleri = ['akne', 'sivilce', 'siyah nokta', 'salisilik asit', 'gözenek', 'yağlanma', 'parlama'];
         formulasyon.aktif_bilesenler = ['%2 Salisilik Asit (BHA)', 'Hektonit Kili', 'Niasinamid (B3 Vitamini)', '3 Temel Seramid'];
-        formulasyon.rozetler = ['Salisilik Asit %2', 'Gözenek Arındırıcı Kil', 'Komedojenik Değildir', 'Parfümsüz'];
-        formulasyon.doku = 'Ferahlatıcı, köpüren jel doku.';
         muadilRehberi.en_yakin_muadil = 'La Roche-Posay Effaclar Jel / Bioderma Sébium Gel Actif';
-        muadilRehberi.alternatif_fark_notu = 'Effaclar kurutabilirken, CeraVe 3 temel seramid sayesinde cilt bariyerini sıyırmadan arındırır.';
       } else if (nameLower.includes('nemlendiren') || nameLower.includes('hydrating')) {
         ciltTipleri = ['Kuru Ciltler', 'Çok Kuru Ciltler', 'Normal Ciltler', 'Hassas Ciltler'];
         yasKriterleri.bebek_uygun_mu = true;
-        yasKriterleri.yas_aciklama_detay = 'Bebeklerden geriatrik döneme kadar tüm yaş gruplarında güvenle kullanılabilir.';
         hastaSikayeti.hasta_cumlesi = 'Yüzümü suyla bile yıkasam hemen geriliyor, pul pul dökülüyor ve kuruluktan kaşınıyor.';
         hastaSikayeti.secim_nedeni = 'Köpüksüz kremsi jel teknolojisi hidrolipidik tabakayı korur; Hyalüronik asit ve MVE ile yıkarken nemlendirir.';
         formulasyon.aktif_bilesenler = ['3 Temel Seramid (1, 3, 6-II)', 'Hyalüronik Asit', 'MVE Teknolojisi', 'Gliserin'];
-        formulasyon.doku = 'Kremsi, köpürmeyen ipeksi losyon kıvamı.';
         muadilRehberi.en_yakin_muadil = 'Cetaphil Nazik Cilt Temizleyici / Avene Tolerance Temizleme Losyonu';
-        muadilRehberi.alternatif_fark_notu = 'MVE teknolojisi aktif nemlendirici ajanların gün boyu kademeli salınmasını sağlar.';
-      } else if (nameLower.includes('retinol')) {
-        ciltTipleri = ['Akne İzi Olan Ciltler', 'Geniş Gözenekli Ciltler', 'Cilt Tonu Eşitsizliği'];
-        hastaSikayeti.hasta_cumlesi = 'Sivilcelerim geçti ama kırmızı-kahverengi lekeleri kaldı, gözeneklerim çok belirgin.';
-        hastaSikayeti.secim_nedeni = 'Kapsüllenmiş Retinol cildi soymadan hücre yenilenmesini hızlandırır; Meyan Kökü özü lekeleri açar.';
-        formulasyon.aktif_bilesenler = ['Kapsüllenmiş Retinol', 'Meyan Kökü Ekstresi', 'Niasinamid', '3 Temel Seramid'];
-        kullanimProtokolu.zaman_ve_siklik = 'Günde 1 kez (Sadece akşamları)';
-        kombinasyonlar.yasakli_cakismalar = ['Aynı akşamda AHA/BHA asitli serumlar ve C vitamini.'];
-        muadilRehberi.en_yakin_muadil = 'La Roche-Posay Retinol B3 Serum';
       }
     }
 
@@ -184,49 +172,16 @@
         ciltTipleri = ['Tüm Cilt Tipleri', 'Hassas Ciltler', 'Aşırı Reaktif Ciltler', 'Güneş Yanığı Olan Ciltler'];
         yasKriterleri.yenidogan_uygun_mu = true;
         yasKriterleri.bebek_uygun_mu = true;
-        yasKriterleri.yas_aciklama_detay = 'Yenidoğandan itibaren tüm aile fertlerinde ve en hassas ciltlerde %100 güvenlidir.';
         hastaSikayeti.hasta_cumlesi = 'Yüzümde ani kızarma, yanma ve batma hissi var; güneşten yandım ve tıraş/lazer sonrası cildim alev alev.';
         hastaSikayeti.secim_nedeni = 'Doğrudan kaynaktan steril ambalajlanan Avène Termal Suyu mikroflora dengesini korur, reaktiviteyi %64 azaltır.';
         formulasyon.aktif_bilesenler = ['%100 Saf Avène Termal Kaynak Suyu', 'Düşük Mineral İçeriği (266 mg/L)', 'Kalsiyum/Magnezyum 2:1 Dengesi'];
-        formulasyon.rozetler = ['Saf Termal Su', 'Steril Ambalaj', '0 Koruyucu', 'Hipoalerjenik'];
-        formulasyon.doku = 'Mikro damlacıklar halinde cildi saran yatıştırıcı su sisi.';
         muadilRehberi.en_yakin_muadil = 'La Roche-Posay Thermal Spring Water / Uriage Termal Su';
       } else if (nameLower.includes('rosamed') || nameLower.includes('antirougeurs')) {
         ciltTipleri = ['Kızarıklığa Eğilimli Ciltler', 'Rozasea (Gül Hastalığı)', 'Kılcal Damar Belirgin Ciltler'];
         hastaSikayeti.hasta_cumlesi = 'Yanaklarım ve burnum sürekli kırmızı, sıcak basınca hemen kızarıp alev alev yanıyor.';
         hastaSikayeti.secim_nedeni = 'Angiopause™ %1.8 etken maddesi ile kılcal damar genişlemesini ve kızarıklık nükslerini hedefler.';
         formulasyon.aktif_bilesenler = ['Angiopause™ %1.8', 'Avène Termal Kaynak Suyu', 'Dekstran Sülfat'];
-        formulasyon.doku = 'Hafif, ferahlatıcı yağsız jel-krem kıvamı.';
         muadilRehberi.en_yakin_muadil = 'Bioderma Sensibio AR / La Roche-Posay Rosaliac AR';
-      } else if (nameLower.includes('tolerance') || nameLower.includes('tolérance')) {
-        ciltTipleri = ['Aşırı Hassas Ciltler', 'Alerjik Ciltler', 'Reaktif Ciltler'];
-        yasKriterleri.bebek_uygun_mu = true;
-        hastaSikayeti.hasta_cumlesi = 'Sürdüğüm her krem cildimde yanma, kızarıklık ve alerji yapıyor; hiçbir ürünü tolere edemiyorum.';
-        hastaSikayeti.secim_nedeni = 'Steril Kozmetik® teknolojisi: 0 koruyucu, 0 parfüm ve %100 biyomimetik doğal nemlendirme.';
-        formulasyon.aktif_bilesenler = ['Avène Termal Suyu (%60+)', 'Saf Hyalüronik Asit', 'Doğal Bitkisel Trigliseritler'];
-        formulasyon.rozetler = ['Steril Kozmetik®', '0 Koruyucu Madde', '0 Parfüm', 'Mikrobiyom Dostu'];
-        muadilRehberi.en_yakin_muadil = 'La Roche-Posay Toleriane Dermallergo Krem';
-      }
-    }
-
-    // ─── MUSTELA ÖZEL KURALLARI ───
-    if (brandLower.includes('mustela') || nameLower.includes('mustela')) {
-      yasKriterleri.yenidogan_uygun_mu = true;
-      yasKriterleri.bebek_uygun_mu = true;
-      yasKriterleri.yas_aciklama_detay = 'Doğumdan itibaren (yenidoğan yoğun bakım ünitesi hariç) bebek ve çocuklarda güvenlidir.';
-      formulasyon.rozetler = ['Pediatrik Onaylı', '%95+ Doğal İçerik', 'Avokado Perseose®', 'Hipoalerjenik'];
-      if (nameLower.includes('stelatopia')) {
-        ciltTipleri = ['Atopik Ciltler', 'Egzamaya Eğilimli Bebek Cildi', 'Aşırı Kuru Ciltler'];
-        hastaSikayeti.hasta_cumlesi = 'Bebeğimin cildi pütür pütür, kızarık ve gece kaşıntıdan uyuyamıyor.';
-        hastaSikayeti.secim_nedeni = 'Organik Ayçiçeği Oleodistilatı ve Prebiyotik Bioécolia ile lipit sentezini tetikler, kaşıntıyı ilk günden keser.';
-        formulasyon.aktif_bilesenler = ['Ayçiçeği Yağı Oleodistilatı', 'Bioécolia® Prebiyotik', 'Avokado Perseose®'];
-        muadilRehberi.en_yakin_muadil = 'La Roche-Posay Lipikar Baume AP+M / Bioderma Atoderm Intensive Baume';
-      } else if (nameLower.includes('pisik') || nameLower.includes('barrier')) {
-        ciltTipleri = ['Pişik Oluşmuş Ciltler', 'Kızarık Bebek Bezi Bölgesi'];
-        hastaSikayeti.hasta_cumlesi = 'Bebeğimin poposu idrar temasından çok kızardı ve yanıyor.';
-        hastaSikayeti.secim_nedeni = '%10 Çinko Oksit bariyer oluşturur, Oxeoline of Alcacea ile tahrişi 1 günde yatıştırır.';
-        formulasyon.aktif_bilesenler = ['%10 Çinko Oksit', 'Avokado Perseose®', 'Ayçiçeği Oleodistilatı'];
-        muadilRehberi.en_yakin_muadil = 'Sudocrem / Bepanthol Baby Pişik Merhemi';
       }
     }
 
@@ -257,7 +212,7 @@
         cilt_tipleri: ciltTipleri,
         yas_grubu: yasKriterleri.yas_aciklama_detay,
         oncelikli_hedef: subcat || 'Hedefe Yönelik Klinik Bakım',
-        yas_kriterleri: yasKriterleri
+        yasKriterleri: yasKriterleri
       },
       guvenlik_filtresi: guvenlik,
       hasta_sikayeti: hastaSikayeti,
@@ -270,33 +225,51 @@
   }
 
   // =========================================================================
-  // BÖLÜM 2: KATALOG RENDER & ANLIK FİLTRELEME
+  // BÖLÜM 2: ŞABLON MODLARI (WORKSTATION vs GRID VITRIN)
   // =========================================================================
-  function renderCatalog() {
-    const gridEl = document.getElementById('catalogProductGrid');
-    const countPill = document.getElementById('catalogCountPill');
-    const filterInfo = document.getElementById('catalogFilterInfo');
-    if (!gridEl) return;
+  function setViewMode(mode) {
+    state.currentMode = mode;
 
+    const btnWs = document.getElementById('btnModeWorkstation');
+    const btnGrid = document.getElementById('btnModeGrid');
+    const viewWs = document.getElementById('viewWorkstation');
+    const viewGrid = document.getElementById('viewGrid');
+
+    if (btnWs) btnWs.classList.toggle('active', mode === 'workstation');
+    if (btnGrid) btnGrid.classList.toggle('active', mode === 'grid');
+
+    if (viewWs) viewWs.style.display = mode === 'workstation' ? 'grid' : 'none';
+    if (viewGrid) viewGrid.style.display = mode === 'grid' ? 'flex' : 'none';
+
+    if (mode === 'grid') {
+      renderGrid();
+    } else {
+      renderWorkstationSidebar();
+      if (state.filteredProducts.length > 0) {
+        loadStageProduct(state.selectedIndex);
+      }
+    }
+  }
+
+  // =========================================================================
+  // BÖLÜM 3: ŞABLON 1 — KLİNİK ÇALIŞMA MASASI (SPLIT WORKSTATION)
+  // =========================================================================
+  function getFilteredProducts() {
     state.products = getEffectiveProducts();
+    let list = state.products;
 
-    let filtered = state.products;
-
-    // 1. Marka Filtresi
     if (state.activeBrand && state.activeBrand !== 'all') {
       const bTarget = state.activeBrand.toLowerCase();
-      filtered = filtered.filter(p => (p.brand || '').toLowerCase().includes(bTarget));
+      list = list.filter(p => (p.brand || '').toLowerCase().includes(bTarget));
     }
 
-    // 2. Rutin / Ürün Tipi Filtresi
     if (state.activeRoutine && state.activeRoutine !== 'all') {
-      filtered = filtered.filter(p => p.urun_tipi === state.activeRoutine);
+      list = list.filter(p => p.urun_tipi === state.activeRoutine);
     }
 
-    // 3. Canlı Arama Filtresi (Debounced)
     const q = (state.searchQuery || '').trim().toLowerCase();
     if (q) {
-      filtered = filtered.filter(p => {
+      list = list.filter(p => {
         const sik = p.hasta_sikayeti || {};
         const form = p.formulasyon || {};
         const muad = p.muadil_rehberi || {};
@@ -318,61 +291,247 @@
       });
     }
 
-    // Sayaç güncellemesi
+    return list;
+  }
+
+  function renderWorkstationSidebar() {
+    const listEl = document.getElementById('wsProductList');
+    const badgeEl = document.getElementById('wsCountBadge');
+    if (!listEl) return;
+
+    state.filteredProducts = getFilteredProducts();
+
+    if (badgeEl) {
+      badgeEl.textContent = `${state.filteredProducts.length} Ürün Hazır`;
+    }
+
+    if (state.filteredProducts.length === 0) {
+      listEl.innerHTML = `<div style="text-align:center; padding:2rem 1rem; color:var(--text-muted); font-size:0.8rem;">🔍 Eşleşen ürün bulunamadı.</div>`;
+      return;
+    }
+
+    // Ensure selectedIndex is within bounds
+    if (state.selectedIndex >= state.filteredProducts.length) {
+      state.selectedIndex = 0;
+    }
+
+    listEl.innerHTML = state.filteredProducts.map((p, idx) => {
+      const isSelected = idx === state.selectedIndex;
+      const imgSrc = p.image || 'images/placeholder.png';
+      return `
+        <div class="ws-list-item ${isSelected ? 'active' : ''}" data-idx="${idx}" data-id="${escapeHtml(p.id)}">
+          <div class="ws-item-thumb">
+            <img src="${escapeHtml(imgSrc)}" alt="${escapeHtml(p.name)}" loading="lazy" onerror="this.src='images/placeholder.png';">
+          </div>
+          <div class="ws-item-info">
+            <div class="ws-item-title" title="${escapeHtml(p.name)}">${escapeHtml(p.name)}</div>
+            <div class="ws-item-meta">
+              <span>${escapeHtml(p.brand || 'Dermo')}</span>
+              <span>•</span>
+              <span class="ws-item-badge">${escapeHtml(p.size || '')}</span>
+            </div>
+          </div>
+        </div>
+      `;
+    }).join('');
+  }
+
+  function loadStageProduct(indexOrProduct) {
+    let p = null;
+    let idx = 0;
+
+    if (typeof indexOrProduct === 'number') {
+      idx = Math.max(0, Math.min(indexOrProduct, state.filteredProducts.length - 1));
+      p = state.filteredProducts[idx];
+      state.selectedIndex = idx;
+    } else if (indexOrProduct && typeof indexOrProduct === 'object') {
+      p = indexOrProduct;
+      idx = state.filteredProducts.findIndex(x => x.id === p.id);
+      if (idx !== -1) state.selectedIndex = idx;
+    }
+
+    if (!p) return;
+    state.selectedProduct = p;
+
+    // Sidebar active item güncelle
+    document.querySelectorAll('.ws-list-item').forEach((item, i) => {
+      item.classList.toggle('active', i === state.selectedIndex);
+    });
+
+    // Başlık ve Rozetler
+    setText('stageProdTitle', p.name);
+    setText('stageBrandBadge', p.brand || 'Klinik');
+    setText('stageTypeBadge', `${p.urun_tipi_icon || '🏷️'} ${p.urun_tipi || 'Dermokozmetik'}`);
+    setText('stageSubcatBadge', p.sub_category || 'Özel Bakım');
+    setText('stageSizeBadge', `📦 ${p.size || p.form || 'Orijinal Ambalaj'}`);
+
+    // Görsel
+    const imgEl = document.getElementById('stageProductImg');
+    if (imgEl) {
+      imgEl.src = p.image || 'images/placeholder.png';
+      imgEl.alt = p.name;
+    }
+    setText('stageImageBadge', `${p.brand || 'Resmi'} 4K Stüdyo Ambalajı`);
+
+    // BLOK 1: KİME UYGUN? & YAŞ MATRİSİ
+    const skinTypes = (p.kime_uygun && p.kime_uygun.cilt_tipleri) || p.cilt_tipleri || [];
+    const ciltEl = document.getElementById('stageCiltTipleri');
+    if (ciltEl) {
+      ciltEl.innerHTML = skinTypes.length > 0
+        ? skinTypes.map(c => `<span class="pill-item">✓ ${escapeHtml(c)}</span>`).join('')
+        : '<span class="pill-item">Tüm Cilt Tipleri</span>';
+    }
+
+    const yk = (p.kime_uygun && p.kime_uygun.yasKriterleri) || (p.kime_uygun && p.kime_uygun.yas_kriterleri) || {};
+    const yasMatrisiEl = document.getElementById('stageYasMatrisi');
+    if (yasMatrisiEl) {
+      const matrix = [
+        { label: '👶 Yenidoğan (0-28 Gün)', ok: yk.yenidogan_uygun_mu },
+        { label: '🍼 Bebek (1-24 Ay)', ok: yk.bebek_uygun_mu },
+        { label: '🧒 Çocuk (2-12 Yaş)', ok: yk.cocuk_uygun_mu },
+        { label: '🧑 Ergen (12-18 Yaş)', ok: yk.ergen_uygun_mu },
+        { label: '👤 Yetişkin (18-65)', ok: yk.yetiskin_uygun_mu },
+        { label: '🧓 Geriatri (65+)', ok: yk.geriatri_uygun_mu },
+        { label: '🤰 Gebelik', ok: yk.gebelik_guvenli_mi, warn: !yk.gebelik_guvenli_mi },
+        { label: '🤱 Emzirme', ok: yk.emzirme_guvenli_mi, warn: !yk.emzirme_guvenli_mi }
+      ];
+      yasMatrisiEl.innerHTML = matrix.map(m => `
+        <div class="age-matrix-pill ${m.ok ? 'suitable' : (m.warn ? 'caution' : 'not-suitable')}">
+          <span class="amp-title">${m.label}</span>
+          <span class="amp-status">${m.ok ? '✓ UYGUN' : (m.warn ? '⚠️ DİKKAT' : '✗ UYGUN DEĞİL')}</span>
+        </div>
+      `).join('');
+    }
+
+    const yasAciklamaEl = document.getElementById('stageYasAciklama');
+    if (yasAciklamaEl) {
+      yasAciklamaEl.textContent = yk.yas_aciklama_detay || p.yas_grubu || 'Özel bir yaş sınırlaması bulunmamaktadır.';
+    }
+
+    // BLOK 2: GÜVENLİK FİLTRESİ
+    const sec = p.guvenlik_filtresi || {};
+    setText('stageKontrendikasyon', sec.kontrendikasyonlar || p.kimler_kullanamaz || 'Açık yaralara ve sızıntılı enfekte dokulara doğrudan uygulanmaz.');
+    setText('stageGozCevresi', sec.goz_cevresi_temas || 'Göz mukozası ile doğrudan temastan kaçınınız. Temas halinde bol su ile yıkayınız.');
+    setText('stageDoktoraYonlendir', sec.doktora_yonlendirme || '2 haftayı aşan, şiddetli yanma veya kabarma görülen durumlarda hekime yönlendiriniz.');
+
+    // BLOK 3: HASTA ŞİKAYETİ
+    const sik = p.hasta_sikayeti || {};
+    const hastaCumle = sik.hasta_cumlesi || (p.hangi_sikayetle_gelene_verilir && p.hangi_sikayetle_gelene_verilir[0]) || 'Cilt sağlığımı destekleyecek ve günlük bakımımı sağlayacak güvenilir bir ürün arıyorum.';
+    setText('stageHastaSikayeti', `💬 “${hastaCumle}”`);
+    setText('stageEczaciSorusu', `🩺 Eczacı Sorusu: ${sik.eczaci_sorusu || 'Şikayetinizin ne zamandır devam ettiğini ve mevcut hekim tedavilerinizi sorgulayınız.'}`);
+    setText('stageSecimNedeni', `💡 Neden Bu Ürün?: ${sik.secim_nedeni || 'Cilt florasını bozmadan bariyeri onaran yüksek toleranslı dermokozmetik formülasyon.'}`);
+
+    // BLOK 4: FORMÜLASYON & AKTİFLER
+    const form = p.formulasyon || {};
+    const aktiflerEl = document.getElementById('stageAktifBilesenler');
+    if (aktiflerEl) {
+      const actives = form.aktif_bilesenler || p.etken_maddeler || [];
+      aktiflerEl.innerHTML = actives.length > 0
+        ? actives.map(a => `<span class="active-pill">🔬 ${escapeHtml(a)}</span>`).join('')
+        : '<span class="active-pill">Dermokozmetik Kompleks</span>';
+    }
+
+    const rozetlerEl = document.getElementById('stageKlinikRozetler');
+    if (rozetlerEl) {
+      const badges = form.rozetler || ['Dermatolojik Olarak Test Edildi', 'Hipoalerjenik', 'Parfümsüz'];
+      rozetlerEl.innerHTML = badges.map(b => `<span class="badge-rozet">${escapeHtml(b)}</span>`).join('');
+    }
+
+    setText('stageDoku', `🧴 Doku: ${form.doku || 'Hafif, yapışkan his bırakmayan doku'}`);
+    setText('stagePh', `⚖️ pH: ${form.fizyolojik_ph || '5.5'}`);
+
+    // BLOK 5: PROTOKOL
+    const proto = p.kullanim_protokolu || {};
+    setText('stageRutinSira', proto.rutin_siralamasi || p.rutin_adimi || 'Temel Cilt Bakım Protokolü');
+    setText('stageZamanSiklik', `⏱️ Zaman & Sıklık: ${proto.zaman_ve_siklik || 'Günde 2 kez (Sabah - Akşam)'} • Miktar: ${proto.miktar || 'Yeterli miktar'}`);
+    setText('stageUygulamaSekli', `✋ Uygulama: ${proto.uygulama_sekli || p.nasil_kullanilir || 'Temiz cilde dairesel masajla uygulanır.'}\n📈 Beklenen Sonuç: ${proto.beklenen_sonuc || 'İlk kullanımda rahatlama, düzenli kullanımda güçlü bariyer.'}`);
+
+    // BLOK 6: KOMBİNASYONLAR
+    const komb = p.kombinasyonlar || {};
+    const tamamEl = document.getElementById('stageTamamlayici');
+    if (tamamEl) {
+      const comps = komb.tamamlayici_kombinler || [];
+      tamamEl.innerHTML = comps.length > 0
+        ? comps.map(c => `<span class="comp-pill-link">🔗 ${escapeHtml(c)}</span>`).join('')
+        : '<span style="font-size:0.75rem; color:var(--text-muted);">Temel günlük rutin ürünleriyle güvenle kombine edilebilir.</span>';
+    }
+
+    const cakismaEl = document.getElementById('stageYasakliCakisma');
+    if (cakismaEl) {
+      const confs = komb.yasakli_cakismalar || [];
+      cakismaEl.innerHTML = confs.length > 0
+        ? confs.map(c => `<span class="pill-item danger">⚠️ ${escapeHtml(c)}</span>`).join('')
+        : '<span style="font-size:0.75rem; color:var(--emerald);">✓ Bilinen kritik bir kimyasal çakışması bulunmuyor.</span>';
+    }
+
+    // BLOK 7: MUADİL REHBERİ
+    const muad = p.muadil_rehberi || {};
+    setText('stageEnYakinMuadil', `🎯 En Yakın Alternatif: ${muad.en_yakin_muadil || 'Benzer dermokozmetik formülasyonlar değerlendirilebilir.'}`);
+    setText('stageMuadilFark', `⚖️ Klinik Fark: ${muad.alternatif_fark_notu || 'Doku ve tolerans profiline göre danışana uygun olanı tercih ediniz.'}`);
+  }
+
+  function nextStageProduct() {
+    if (state.filteredProducts.length === 0) return;
+    const nextIdx = (state.selectedIndex + 1) % state.filteredProducts.length;
+    loadStageProduct(nextIdx);
+  }
+
+  function prevStageProduct() {
+    if (state.filteredProducts.length === 0) return;
+    const prevIdx = (state.selectedIndex - 1 + state.filteredProducts.length) % state.filteredProducts.length;
+    loadStageProduct(prevIdx);
+  }
+
+  function copyCurrentPatientNote() {
+    const p = state.selectedProduct;
+    if (!p) return;
+
+    const yk = (p.kime_uygun && p.kime_uygun.yas_kriterleri) || {};
+    const sec = p.guvenlik_filtresi || {};
+    const sik = p.hasta_sikayeti || {};
+    const proto = p.kullanim_protokolu || {};
+    const muad = p.muadil_rehberi || {};
+
+    const text = `📋 ${p.name} (${p.size || ''})\n` +
+      `═══════════════════════════════════════════\n` +
+      `🎯 KİME UYGUN: ${(p.kime_uygun?.cilt_tipleri || p.cilt_tipleri || []).join(', ')}\n` +
+      `👶 YAŞ GRUBU: ${yk.yas_aciklama_detay || p.yas_grubu || 'Tüm Yaşlar'}\n` +
+      `⚠️ GÜVENLİK: ${sec.kontrendikasyonlar || p.kimler_kullanamaz || 'Açık yaralara sürülmez'}\n` +
+      `💬 DANIŞAN ŞİKAYETİ: "${sik.hasta_cumlesi || ''}"\n` +
+      `⏱️ NASIL KULLANILIR: ${proto.uygulama_sekli || p.nasil_kullanilir || ''} (${proto.zaman_ve_siklik || 'Günde 2 kez'})\n` +
+      `⚖️ EN YAKIN MUADİL: ${muad.en_yakin_muadil || 'Eşdeğer dermo formülasyon'}\n` +
+      `═══════════════════════════════════════════\n` +
+      `[arekros — Klinik Danışmanlık Konsolu]`;
+
+    navigator.clipboard.writeText(text).then(() => {
+      showToast('✓ Danışan klinik notu panoya kopyalandı!');
+    });
+  }
+
+  // =========================================================================
+  // BÖLÜM 4: ŞABLON 2 — VİTRİN KATALOĞU (GRID VIEW)
+  // =========================================================================
+  function renderGrid() {
+    const gridEl = document.getElementById('catalogProductGrid');
+    const countPill = document.getElementById('catalogCountPill');
+    if (!gridEl) return;
+
+    const filtered = getFilteredProducts();
+
     if (countPill) {
-      if (q || state.activeBrand !== 'all' || state.activeRoutine !== 'all') {
-        countPill.textContent = `${filtered.length} Ürün Bulundu (${state.products.length} Toplam)`;
-      } else {
-        countPill.textContent = `${filtered.length} Ürün Hazır`;
-      }
+      countPill.textContent = `${filtered.length} Ürün Hazır`;
     }
 
-    // Filtre Bilgi Şeridi
-    if (filterInfo) {
-      const activeTags = [];
-      if (state.activeBrand !== 'all') activeTags.push(`Marka: ${state.activeBrand}`);
-      if (state.activeRoutine !== 'all') activeTags.push(`Rutin: ${state.activeRoutine}`);
-      if (q) activeTags.push(`Arama: "${q}"`);
-
-      if (activeTags.length > 0) {
-        filterInfo.innerHTML = `
-          <span style="color:var(--text-muted); font-size:0.75rem;">Filtreler:</span>
-          ${activeTags.map(t => `<span class="badge-age-tag">${escapeHtml(t)}</span>`).join(' ')}
-          <button type="button" id="btnResetFilters" style="background:transparent; border:none; color:var(--cyan); font-size:0.75rem; cursor:pointer; font-weight:700; text-decoration:underline;">Sıfırla</button>
-        `;
-        const resetBtn = document.getElementById('btnResetFilters');
-        if (resetBtn) {
-          resetBtn.onclick = () => {
-            state.activeBrand = 'all';
-            state.activeRoutine = 'all';
-            state.searchQuery = '';
-            const searchInput = document.getElementById('catalogSearchInput');
-            if (searchInput) searchInput.value = '';
-            document.querySelectorAll('#brandFilterRow .filter-chip').forEach(c => c.classList.toggle('active', c.dataset.brand === 'all'));
-            document.querySelectorAll('#routineFilterRow .routine-pill').forEach(c => c.classList.toggle('active', c.dataset.type === 'all'));
-            const btnClear = document.getElementById('btnClearSearch');
-            if (btnClear) btnClear.style.display = 'none';
-            renderCatalog();
-          };
-        }
-      } else {
-        filterInfo.innerHTML = '';
-      }
-    }
-
-    // Boş Durum
     if (filtered.length === 0) {
       gridEl.innerHTML = `
         <div style="grid-column: 1 / -1; text-align: center; padding: 4rem 1rem; color: var(--text-muted);">
           <div style="font-size: 2rem; margin-bottom: 0.5rem;">🔍</div>
           <h3 style="color:#ffffff; margin-bottom: 0.35rem;">Kriterlere Uygun Ürün Bulunamadı</h3>
-          <p style="font-size:0.85rem;">Farklı bir kelimeyle arayabilir veya yeni ürün stüdyosundan ekleyebilirsiniz.</p>
         </div>
       `;
       return;
     }
 
-    // Kartlar
     gridEl.innerHTML = filtered.map(p => {
       const imgSrc = p.image || 'images/placeholder.png';
       const typeBadge = p.urun_tipi ? `<div class="card-type-pill">${p.urun_tipi_icon || '🏷️'} ${escapeHtml(p.urun_tipi)}</div>` : '';
@@ -395,146 +554,7 @@
   }
 
   // =========================================================================
-  // BÖLÜM 3: 7 BLOKLU KLİNİK DETAY MODALI
-  // =========================================================================
-  function openProductDetail(productId) {
-    const p = state.products.find(x => x.id === productId);
-    if (!p) return;
-    state.selectedProduct = p;
-
-    setText('detailProductName', p.name);
-    setText('detailCatBadge', p.category_name || (p.category === 'dermo' ? 'Dermokozmetik' : (p.category === 'vitamin' ? 'Besin Takviyesi' : 'Ağız & Diş')));
-
-    const urunTipiBadge = document.getElementById('detailUrunTipiBadge');
-    if (urunTipiBadge) {
-      urunTipiBadge.textContent = `${p.urun_tipi_icon || '🏷️'} ${p.urun_tipi || 'Dermokozmetik'}`;
-      urunTipiBadge.style.display = p.urun_tipi ? 'inline-block' : 'none';
-    }
-    setText('detailSubcatBadge', p.sub_category || 'Özel Bakım');
-    setText('detailBrandBadge', p.brand || 'Klinik');
-
-    // BLOK 1: KİME UYGUN? & YAŞ MATRİSİ
-    const skinTypes = (p.kime_uygun && p.kime_uygun.cilt_tipleri) || p.cilt_tipleri || [];
-    const ciltEl = document.getElementById('detailCiltTipleri');
-    if (ciltEl) {
-      ciltEl.innerHTML = skinTypes.length > 0
-        ? skinTypes.map(c => `<span class="pill-item">✓ ${escapeHtml(c)}</span>`).join('')
-        : '<span class="pill-item">Tüm Cilt Tipleri</span>';
-    }
-
-    const yk = (p.kime_uygun && p.kime_uygun.yas_kriterleri) || {};
-    const yasMatrisiEl = document.getElementById('detailYasMatrisi');
-    if (yasMatrisiEl) {
-      const matrix = [
-        { label: '👶 Yenidoğan (0-28 Gün)', ok: yk.yenidogan_uygun_mu },
-        { label: '🍼 Bebek (1-24 Ay)', ok: yk.bebek_uygun_mu },
-        { label: '🧒 Çocuk (2-12 Yaş)', ok: yk.cocuk_uygun_mu },
-        { label: '🧑 Ergen (12-18 Yaş)', ok: yk.ergen_uygun_mu },
-        { label: '👤 Yetişkin (18-65)', ok: yk.yetiskin_uygun_mu },
-        { label: '🧓 Geriatri (65+)', ok: yk.geriatri_uygun_mu },
-        { label: '🤰 Gebelik', ok: yk.gebelik_guvenli_mi, warn: !yk.gebelik_guvenli_mi },
-        { label: '🤱 Emzirme', ok: yk.emzirme_guvenli_mi, warn: !yk.emzirme_guvenli_mi }
-      ];
-      yasMatrisiEl.innerHTML = matrix.map(m => `
-        <div class="age-matrix-pill ${m.ok ? 'suitable' : (m.warn ? 'caution' : 'not-suitable')}">
-          <span class="amp-title">${m.label}</span>
-          <span class="amp-status">${m.ok ? '✓ UYGUN' : (m.warn ? '⚠️ DİKKAT' : '✗ UYGUN DEĞİL')}</span>
-        </div>
-      `).join('');
-    }
-
-    const yasAciklamaEl = document.getElementById('detailYasAciklama');
-    if (yasAciklamaEl) {
-      yasAciklamaEl.textContent = yk.yas_aciklama_detay || p.yas_grubu || 'Özel bir yaş sınırlaması bulunmamaktadır.';
-    }
-
-    // BLOK 2: GÜVENLİK FİLTRESİ
-    const sec = p.guvenlik_filtresi || {};
-    setText('detailKontrendikasyon', sec.kontrendikasyonlar || p.kimler_kullanamaz || 'Açık yaralara ve sızıntılı enfekte dokulara doğrudan uygulanmaz.');
-    setText('detailGozCevresi', sec.goz_cevresi_temas || 'Göz mukozası ile doğrudan temastan kaçınınız. Temas halinde bol su ile yıkayınız.');
-    setText('detailDoktoraYonlendir', sec.doktora_yonlendirme || '2 haftayı aşan, şiddetli yanma veya kabarma görülen durumlarda hekime yönlendiriniz.');
-
-    // BLOK 3: HASTA ŞİKAYETİ
-    const sik = p.hasta_sikayeti || {};
-    const hastaCumle = sik.hasta_cumlesi || (p.hangi_sikayetle_gelene_verilir && p.hangi_sikayetle_gelene_verilir[0]) || 'Cilt sağlığımı destekleyecek ve günlük bakımımı sağlayacak güvenilir bir ürün arıyorum.';
-    setText('detailHastaSikayeti', `💬 “${hastaCumle}”`);
-    setText('detailEczaciSorusu', `🩺 Eczacı Sorusu: ${sik.eczaci_sorusu || 'Şikayetinizin ne zamandır devam ettiğini ve mevcut hekim tedavilerinizi sorgulayınız.'}`);
-    setText('detailSecimNedeni', `💡 Neden Bu Ürün?: ${sik.secim_nedeni || 'Cilt florasını bozmadan bariyeri onaran yüksek toleranslı dermokozmetik formülasyon.'}`);
-
-    // BLOK 4: FORMÜLASYON & AKTİFLER
-    const form = p.formulasyon || {};
-    const aktiflerEl = document.getElementById('detailAktifBilesenler');
-    if (aktiflerEl) {
-      const actives = form.aktif_bilesenler || p.etken_maddeler || [];
-      aktiflerEl.innerHTML = actives.length > 0
-        ? actives.map(a => `<span class="active-pill">🔬 ${escapeHtml(a)}</span>`).join('')
-        : '<span class="active-pill">Dermokozmetik Kompleks</span>';
-    }
-
-    const rozetlerEl = document.getElementById('detailKlinikRozetler');
-    if (rozetlerEl) {
-      const badges = form.rozetler || ['Dermatolojik Olarak Test Edildi', 'Hipoalerjenik', 'Parfümsüz'];
-      rozetlerEl.innerHTML = badges.map(b => `<span class="badge-rozet">${escapeHtml(b)}</span>`).join('');
-    }
-
-    setText('detailDoku', `🧴 Doku: ${form.doku || 'Hafif, yapışkan his bırakmayan doku'}`);
-    setText('detailPh', `⚖️ pH: ${form.fizyolojik_ph || '5.5'}`);
-
-    // BLOK 5: GÖRSEL & PROTOKOL
-    const imgEl = document.getElementById('detailProductImg');
-    if (imgEl) {
-      imgEl.src = p.image || 'images/placeholder.png';
-      imgEl.alt = p.name;
-    }
-
-    const proto = p.kullanim_protokolu || {};
-    setText('detailRutinSira', proto.rutin_siralamasi || p.rutin_adimi || 'Temel Cilt Bakım Protokolü');
-    setText('detailZamanSiklik', `⏱️ Zaman & Sıklık: ${proto.zaman_ve_siklik || 'Günde 2 kez (Sabah - Akşam)'} • Miktar: ${proto.miktar || 'Yeterli miktar'}`);
-    setText('detailUygulamaSekli', `✋ Uygulama: ${proto.uygulama_sekli || p.nasil_kullanilir || 'Temiz cilde dairesel masajla uygulanır.'}\n📈 Beklenen Sonuç: ${proto.beklenen_sonuc || 'İlk kullanımda rahatlama, düzenli kullanımda güçlü bariyer.'}`);
-
-    // BLOK 6: KOMBİNASYONLAR
-    const komb = p.kombinasyonlar || {};
-    const tamamEl = document.getElementById('detailTamamlayici');
-    if (tamamEl) {
-      const comps = komb.tamamlayici_kombinler || [];
-      tamamEl.innerHTML = comps.length > 0
-        ? comps.map(c => `<span class="comp-pill-link">🔗 ${escapeHtml(c)}</span>`).join('')
-        : '<span style="font-size:0.75rem; color:var(--text-muted);">Temel günlük rutin ürünleriyle güvenle kombine edilebilir.</span>';
-    }
-
-    const cakismaEl = document.getElementById('detailYasakliCakisma');
-    if (cakismaEl) {
-      const confs = komb.yasakli_cakismalar || [];
-      cakismaEl.innerHTML = confs.length > 0
-        ? confs.map(c => `<span class="pill-item danger">⚠️ ${escapeHtml(c)}</span>`).join('')
-        : '<span style="font-size:0.75rem; color:var(--emerald);">✓ Bilinen kritik bir kimyasal çakışması bulunmuyor.</span>';
-    }
-
-    // BLOK 7: MUADİL REHBERİ
-    const muad = p.muadil_rehberi || {};
-    setText('detailEnYakinMuadil', `🎯 En Yakın Alternatif: ${muad.en_yakin_muadil || 'Benzer dermokozmetik formülasyonlar değerlendirilebilir.'}`);
-    setText('detailMuadilFark', `⚖️ Klinik Fark: ${muad.alternatif_fark_notu || 'Doku ve tolerans profiline göre danışana uygun olanı tercih ediniz.'}`);
-
-    // Modalı Aç
-    const modal = document.getElementById('productDetailModal');
-    if (modal) {
-      modal.classList.add('active');
-      modal.setAttribute('aria-hidden', 'false');
-      document.body.style.overflow = 'hidden';
-    }
-  }
-
-  function closeProductDetail() {
-    const modal = document.getElementById('productDetailModal');
-    if (modal) {
-      modal.classList.remove('active');
-      modal.setAttribute('aria-hidden', 'true');
-      document.body.style.overflow = '';
-    }
-  }
-
-  // =========================================================================
-  // BÖLÜM 4: BİRLEŞİK YENİ ÜRÜN STÜDYOSU (RAF & WEBDEN TEKİL EKLEME)
+  // BÖLÜM 5: BİRLEŞİK YENİ ÜRÜN STÜDYOSU (RAF & WEBDEN TEKİL EKLEME)
   // =========================================================================
   function openUnifiedStudio(tab = 'shelf') {
     const modal = document.getElementById('unifiedStudioModal');
@@ -766,8 +786,11 @@
 
       state.customProducts.unshift(fullProduct);
       localStorage.setItem('user_custom_products_v1', JSON.stringify(state.customProducts));
-      state.products = getEffectiveProducts();
-      renderCatalog();
+      
+      // Update lists
+      renderWorkstationSidebar();
+      loadStageProduct(fullProduct);
+      renderGrid();
 
       showToast(`✓ "${item.name}" başarıyla eklendi!`);
 
@@ -777,7 +800,7 @@
         loadWizardProduct(nextIdx);
       } else {
         closeUnifiedStudio();
-        showToast('🌟 Tebrikler! Raftaki tüm ürünler stüdyo fotoğrafları ve 7 blok klinik künyeleriyle sisteme eklendi!');
+        showToast('🌟 Tebrikler! Raftaki tüm ürünler stüdyo fotoğrafları ve 7 blok klinik künyeleriyle arekros sistemine eklendi!');
       }
     } catch (err) {
       showToast('Ürün kaydedilirken bir hata oluştu.');
@@ -845,7 +868,6 @@
     const input = document.getElementById('singleSearchInput');
     const query = input ? input.value.trim() : title;
 
-    // Basit marka & isim ayrıştırma
     let detectedBrand = 'Genel';
     const knownBrands = ['Avène', 'Avene', 'CeraVe', 'Cerave', 'Mustela', 'Bioderma', 'La Roche-Posay', 'Caudalie', 'Ducray', 'Ocean', 'Sensodyne'];
     for (const b of knownBrands) {
@@ -899,12 +921,14 @@
 
       state.customProducts.unshift(newProduct);
       localStorage.setItem('user_custom_products_v1', JSON.stringify(state.customProducts));
-      state.products = getEffectiveProducts();
-      renderCatalog();
-
+      
       closeUnifiedStudio();
-      showToast(`✓ "${cleanName}" başarıyla kataloğa eklendi!`);
-      openProductDetail(newProduct.id);
+      showToast(`✓ "${cleanName}" başarıyla arekros sistemine eklendi!`);
+      
+      setViewMode('workstation');
+      renderWorkstationSidebar();
+      loadStageProduct(newProduct);
+      renderGrid();
     } catch (err) {
       showToast('Ürün kaydedilirken hata oluştu.');
       console.error(err);
@@ -912,7 +936,7 @@
   }
 
   // =========================================================================
-  // BÖLÜM 5: LIGHTBOX BÜYÜTME MODALI
+  // BÖLÜM 6: LIGHTBOX BÜYÜTME MODALI
   // =========================================================================
   function openLightbox(src, caption, onSelect) {
     const modal = document.getElementById('lightboxModal');
@@ -944,7 +968,7 @@
   }
 
   // =========================================================================
-  // BÖLÜM 6: SUNUCU DURUMU & TOGGLE
+  // BÖLÜM 7: SUNUCU DURUMU & TOGGLE
   // =========================================================================
   function updateServerStatusUI(isActive) {
     const toggleBtn = document.getElementById('headerServerToggleBtn');
@@ -998,80 +1022,132 @@
   }
 
   // =========================================================================
-  // BÖLÜM 7: EVENT DİNLEYİCİLERİ
+  // BÖLÜM 8: EVENT DİNLEYİCİLERİ
   // =========================================================================
   function initEventListeners() {
-    // 1. Canlı Arama Çubuğu (Debounced)
-    const searchInput = document.getElementById('catalogSearchInput');
-    const btnClearSearch = document.getElementById('btnClearSearch');
+    // 1. Şablon Değiştirici Butonları
+    const btnModeWs = document.getElementById('btnModeWorkstation');
+    const btnModeGrid = document.getElementById('btnModeGrid');
+
+    if (btnModeWs) btnModeWs.addEventListener('click', () => setViewMode('workstation'));
+    if (btnModeGrid) btnModeGrid.addEventListener('click', () => setViewMode('grid'));
+
+    // 2. Workstation Sidebar Arama & Filtreler
+    const wsSearch = document.getElementById('wsSearchInput');
+    const btnWsClear = document.getElementById('btnWsClearSearch');
     let searchTimer = null;
 
-    if (searchInput) {
-      searchInput.addEventListener('input', () => {
+    if (wsSearch) {
+      wsSearch.addEventListener('input', () => {
         clearTimeout(searchTimer);
-        const val = searchInput.value;
-        if (btnClearSearch) btnClearSearch.style.display = val ? 'block' : 'none';
+        const val = wsSearch.value;
+        if (btnWsClear) btnWsClear.style.display = val ? 'block' : 'none';
 
         searchTimer = setTimeout(() => {
           state.searchQuery = val;
-          renderCatalog();
+          renderWorkstationSidebar();
+          if (state.filteredProducts.length > 0) {
+            loadStageProduct(0);
+          }
+          if (state.currentMode === 'grid') renderGrid();
         }, 120);
       });
 
-      if (btnClearSearch) {
-        btnClearSearch.addEventListener('click', () => {
-          searchInput.value = '';
-          btnClearSearch.style.display = 'none';
+      if (btnWsClear) {
+        btnWsClear.addEventListener('click', () => {
+          wsSearch.value = '';
+          btnWsClear.style.display = 'none';
           state.searchQuery = '';
-          renderCatalog();
-          searchInput.focus();
+          renderWorkstationSidebar();
+          if (state.filteredProducts.length > 0) loadStageProduct(0);
+          if (state.currentMode === 'grid') renderGrid();
+          wsSearch.focus();
         });
       }
     }
 
-    // Ctrl+K Klavye Kısayolu
+    // Workstation Select Filtreleri
+    const wsBrandSel = document.getElementById('wsBrandSelect');
+    if (wsBrandSel) {
+      wsBrandSel.addEventListener('change', (e) => {
+        state.activeBrand = e.target.value;
+        renderWorkstationSidebar();
+        if (state.filteredProducts.length > 0) loadStageProduct(0);
+        if (state.currentMode === 'grid') renderGrid();
+      });
+    }
+
+    const wsRoutineSel = document.getElementById('wsRoutineSelect');
+    if (wsRoutineSel) {
+      wsRoutineSel.addEventListener('change', (e) => {
+        state.activeRoutine = e.target.value;
+        renderWorkstationSidebar();
+        if (state.filteredProducts.length > 0) loadStageProduct(0);
+        if (state.currentMode === 'grid') renderGrid();
+      });
+    }
+
+    // Workstation Sidebar Ürün Tıklamaları
+    const wsList = document.getElementById('wsProductList');
+    if (wsList) {
+      wsList.addEventListener('click', (e) => {
+        const item = e.target.closest('.ws-list-item');
+        if (!item) return;
+        const idx = parseInt(item.dataset.idx, 10);
+        loadStageProduct(idx);
+      });
+    }
+
+    // Workstation Sahne Kontrolleri (Önceki/Sonraki/Kopyala)
+    const btnWsPrev = document.getElementById('btnWsPrev');
+    const btnWsNext = document.getElementById('btnWsNext');
+    if (btnWsPrev) btnWsPrev.addEventListener('click', prevStageProduct);
+    if (btnWsNext) btnWsNext.addEventListener('click', nextStageProduct);
+
+    const btnWsCopy = document.getElementById('btnWsCopyNote');
+    if (btnWsCopy) btnWsCopy.addEventListener('click', copyCurrentPatientNote);
+
+    const btnStageZoom = document.getElementById('btnStageZoom');
+    if (btnStageZoom) {
+      btnStageZoom.addEventListener('click', () => {
+        if (state.selectedProduct) {
+          openLightbox(state.selectedProduct.image, state.selectedProduct.name);
+        }
+      });
+    }
+
+    // Klavye Kısayolları (Ctrl+K, Sol/Sağ/Yukarı/Aşağı Ok)
     document.addEventListener('keydown', (e) => {
       if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
         e.preventDefault();
-        if (searchInput) {
-          searchInput.focus();
-          searchInput.select();
+        if (wsSearch) {
+          wsSearch.focus();
+          wsSearch.select();
         }
+        return;
       }
+
       if (e.key === 'Escape') {
         closeLightbox();
         closeUnifiedStudio();
-        closeProductDetail();
+        return;
+      }
+
+      // Sadece input odaklı değilse ok tuşlarıyla gezin
+      const activeEl = document.activeElement;
+      const isInput = activeEl && (activeEl.tagName === 'INPUT' || activeEl.tagName === 'TEXTAREA' || activeEl.tagName === 'SELECT');
+      if (!isInput && state.currentMode === 'workstation') {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+          e.preventDefault();
+          nextStageProduct();
+        } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+          e.preventDefault();
+          prevStageProduct();
+        }
       }
     });
 
-    // 2. Marka Filtre Çipleri
-    const brandRow = document.getElementById('brandFilterRow');
-    if (brandRow) {
-      brandRow.addEventListener('click', (e) => {
-        const chip = e.target.closest('.filter-chip');
-        if (!chip) return;
-        brandRow.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
-        chip.classList.add('active');
-        state.activeBrand = chip.dataset.brand;
-        renderCatalog();
-      });
-    }
-
-    // 3. Rutin Rolü Filtre Pilleri
-    const routineRow = document.getElementById('routineFilterRow');
-    if (routineRow) {
-      routineRow.addEventListener('click', (e) => {
-        const pill = e.target.closest('.routine-pill');
-        if (!pill) return;
-        routineRow.querySelectorAll('.routine-pill').forEach(p => p.classList.remove('active'));
-        pill.classList.add('active');
-        state.activeRoutine = pill.dataset.type;
-        renderCatalog();
-      });
-    }
-
-    // 4. Katalog Kart Tıklamaları (Detay veya Büyütme)
+    // Grid Modu Kart Tıklamaları (Tıklanan ürünü doğrudan Workstation'da açar)
     const catalogGrid = document.getElementById('catalogProductGrid');
     if (catalogGrid) {
       catalogGrid.addEventListener('click', (e) => {
@@ -1084,12 +1160,46 @@
 
         const card = e.target.closest('.sleek-product-card');
         if (card && card.dataset.id) {
-          openProductDetail(card.dataset.id);
+          const p = state.products.find(x => x.id === card.dataset.id);
+          if (p) {
+            setViewMode('workstation');
+            loadStageProduct(p);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }
         }
       });
     }
 
-    // 5. Birleşik Stüdyo Modal Butonları
+    // Grid Modu Marka ve Rutin Çipleri
+    const brandRow = document.getElementById('brandFilterRow');
+    if (brandRow) {
+      brandRow.addEventListener('click', (e) => {
+        const chip = e.target.closest('.filter-chip');
+        if (!chip) return;
+        brandRow.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+        state.activeBrand = chip.dataset.brand;
+        if (wsBrandSel) wsBrandSel.value = state.activeBrand;
+        renderGrid();
+        renderWorkstationSidebar();
+      });
+    }
+
+    const routineRow = document.getElementById('routineFilterRow');
+    if (routineRow) {
+      routineRow.addEventListener('click', (e) => {
+        const pill = e.target.closest('.routine-pill');
+        if (!pill) return;
+        routineRow.querySelectorAll('.routine-pill').forEach(p => p.classList.remove('active'));
+        pill.classList.add('active');
+        state.activeRoutine = pill.dataset.type;
+        if (wsRoutineSel) wsRoutineSel.value = state.activeRoutine;
+        renderGrid();
+        renderWorkstationSidebar();
+      });
+    }
+
+    // Birleşik Stüdyo Modal Butonları
     const btnOpenStudio = document.getElementById('btnOpenUnifiedStudio');
     if (btnOpenStudio) {
       btnOpenStudio.addEventListener('click', () => openUnifiedStudio('shelf'));
@@ -1107,11 +1217,8 @@
       });
     }
 
-    // Stüdyo Sekmeleri
     document.querySelectorAll('.studio-tab-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        switchStudioTab(btn.dataset.tab);
-      });
+      btn.addEventListener('click', () => switchStudioTab(btn.dataset.tab));
     });
 
     // Sekme 1: Raf Yükleme, Sürükle-Bırak & Hazır Butonlar
@@ -1338,27 +1445,7 @@
       });
     }
 
-    // 6. Detay Modalı Kapatma & Zoom
-    const btnCloseDetail = document.getElementById('btnCloseDetail');
-    if (btnCloseDetail) btnCloseDetail.addEventListener('click', closeProductDetail);
-
-    const detailModal = document.getElementById('productDetailModal');
-    if (detailModal) {
-      detailModal.addEventListener('click', (e) => {
-        if (e.target.id === 'productDetailModal') closeProductDetail();
-      });
-    }
-
-    const detailZoomBtn = document.getElementById('detailZoomBtn');
-    if (detailZoomBtn) {
-      detailZoomBtn.addEventListener('click', () => {
-        if (state.selectedProduct) {
-          openLightbox(state.selectedProduct.image, state.selectedProduct.name);
-        }
-      });
-    }
-
-    // 7. Lightbox Kapatma & Seçim
+    // Lightbox Kapatma & Seçim
     const btnCloseLightbox = document.getElementById('btnCloseLightbox');
     if (btnCloseLightbox) btnCloseLightbox.addEventListener('click', closeLightbox);
 
@@ -1380,7 +1467,7 @@
       });
     }
 
-    // 8. Stüdyo Aç/Kapat Butonu
+    // Stüdyo Aç/Kapat Butonu
     const headerToggleBtn = document.getElementById('headerServerToggleBtn');
     if (headerToggleBtn) headerToggleBtn.addEventListener('click', toggleServerEngine);
   }
@@ -1391,21 +1478,22 @@
   function initApp() {
     loadPersistedData();
     state.products = getEffectiveProducts();
+    state.filteredProducts = [...state.products];
 
-    renderCatalog();
+    // Varsayılan görünüm: Workstation (Klinik Çalışma Masası)
+    setViewMode('workstation');
+    renderWorkstationSidebar();
+    if (state.filteredProducts.length > 0) {
+      loadStageProduct(0);
+    }
+
     initEventListeners();
     startServerHealthCheck();
-
-    // URL Hash yönlendirmesi
-    if (window.location.hash.startsWith('#product=')) {
-      const id = window.location.hash.replace('#product=', '');
-      openProductDetail(id);
-    }
   }
 
-  window.openProductDetail = openProductDetail;
   window.openLightbox = openLightbox;
   window.openUnifiedStudio = openUnifiedStudio;
+  window.setViewMode = setViewMode;
 
   document.addEventListener('DOMContentLoaded', initApp);
 
