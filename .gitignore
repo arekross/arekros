@@ -15,8 +15,9 @@ scratch/
 *.log
 /tmp/
 
-# Raw phone photos (200MB uncompressed camera archives)
+# Raw phone photos (uncompressed camera archives)
 ürünler/
+Tüm stok/
 
 # System files
 .DS_Store

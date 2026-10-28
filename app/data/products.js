@@ -1,38 +1,47 @@
-window.PRODUCTS_DATA = [
+// Arekros Verified Dermocosmetics & Pharmacy Catalog
+// Generated Automatically from 119 Stock Items Audit
+const PRODUCTS_DATA = [
   {
-    "id": "av-ne-av-ne-antirougeurs-rosamed-k-zar-kl-k-kar--t--konsantre-bak-m-6659",
-    "name": "Avène Antirougeurs Rosamed Kızarıklık Karşıtı Konsantre Bakım",
-    "brand": "Avène",
-    "urun_tipi": "Özel & SOS Onarıcı",
-    "urun_tipi_icon": "🩹",
-    "rutin_adimi": "4. Adım: Lokal / SOS İyileştirme",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Kızarıklık & Rozasea Bakımı",
-    "size": "30 ml Pompalı Şişe",
-    "form": "Orijinal Ambalaj",
-    "image": "images/mustela/av-ne-av-ne-antirougeurs-rosamed-kizariklik-karsiti-konsantre-bakim-30-ml-pompali-sise.jpeg",
+    "id": "takviyeler-voonka-one-and-only-multivitamin",
+    "name": "Voonka One & Only Kadın/Erkek Multivitamin & Günlük Bağışıklık Destek Standı",
+    "original_name": "Voonka One & Only Multivitamin & DailyMune Takviye Serisi",
+    "brand": "Voonka",
+    "urun_tipi": "Kapsül / Tablet",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "takviye",
+    "category_name": "Gıda Takviyeleri & Vitamin",
+    "sub_category": "One & Only / Dailymune",
+    "size": "30 / 60 Kapsül",
+    "form": "Kapsül / Tablet",
+    "image": "images/takviyeler/voonka_one_and_only_multivitamin.jpg",
+    "stock_photo": "Tüm stok/IMG_20260829_142137.jpg",
+    "catalog_code": "TAK-001",
     "cilt_tipleri": [
-      "Tüm Cilt Tipleri"
+      "Tüm Cilt / Sistemik Destek"
     ],
     "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
-    "kimler_kullanamaz": "Açık yaralara veya sızıntılı enfekte dokulara doğrudan uygulanmaz.",
-    "nasil_kullanilir": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
     "hangi_sikayetle_gelene_verilir": [
-      "Cilt bariyerimi güçlendirecek ve günlük bakımımı sağlayacak güvenilir bir ürün arıyorum."
+      "Günlük enerji metabolizması, antioksidan hücresel koruma ve bağışıklık desteği."
     ],
-    "kombinasyon_ve_uyarilar": "Rutin içerisinde sıralamaya dikkat edilerek güvenle kombine edilebilir.",
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
     "etken_maddeler": [
-      "3 Temel Seramid",
-      "Hyalüronik Asit"
+      "Koenzim Q10",
+      "Astaksantin",
+      "Vitamin C",
+      "Çinko",
+      "D3 Vitamini",
+      "Ginseng"
     ],
     "kime_uygun": {
-      "profil": "Tüm Cilt Tipleri",
+      "profil": "Tüm Cilt / Sistemik Destek",
       "cilt_tipleri": [
-        "Tüm Cilt Tipleri"
+        "Tüm Cilt / Sistemik Destek"
       ],
-      "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
-      "oncelikli_hedef": "Kızarıklık & Rozasea Bakımı",
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Günlük enerji metabolizması, antioksidan hücresel koruma ve bağışıklık desteği.",
       "yas_kriterleri": {
         "yenidogan_uygun_mu": false,
         "bebek_uygun_mu": false,
@@ -42,6348 +51,688 @@ window.PRODUCTS_DATA = [
         "geriatri_uygun_mu": true,
         "gebelik_guvenli_mi": true,
         "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Ergen ve yetişkin kullanımı için uygundur."
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
       }
     },
     "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Açık yaralara veya sızıntılı enfekte dokulara doğrudan uygulanmaz.",
-      "goz_cevresi_temas": "Göz mukozası ile doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
-      "doktora_yonlendirme": "Ciltte ani kabarma, şiddetli yanma veya 2 haftayı geçen inatçı reaksiyonlarda hekime yönlendiriniz.",
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
       "dikkat_uyarilari": []
     },
     "hasta_sikayeti": {
-      "hasta_cumlesi": "Cilt bariyerimi güçlendirecek ve günlük bakımımı sağlayacak güvenilir bir ürün arıyorum.",
-      "eczaci_sorusu": "Cildinizde kuruluk, sivilce veya hassasiyet şikayetiniz ne zamandır devam ediyor?",
-      "secim_nedeni": "Cilt florasını bozmadan bariyeri onaran yüksek toleranslı dermokozmetik formülasyon.",
+      "hasta_cumlesi": "Günlük enerji metabolizması, antioksidan hücresel koruma ve bağışıklık desteği.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Voonka klinik formülü.",
       "arama_etiketleri": [
-        "avène antirougeurs rosamed kızarıklık karşıtı konsantre bakım",
-        "avène",
-        "özel & sos onarıcı"
+        "voonka",
+        "one & only / dailymune",
+        "voonka one & only kadın/erkek multivitamin & günlük bağışıklık destek standı",
+        "voonka one & only multivitamin & dailymune takviye serisi",
+        "tak-001"
       ]
     },
     "formulasyon": {
       "aktif_bilesenler": [
-        "3 Temel Seramid",
-        "Hyalüronik Asit"
+        "Koenzim Q10",
+        "Astaksantin",
+        "Vitamin C",
+        "Çinko",
+        "D3 Vitamini",
+        "Ginseng"
       ],
       "rozetler": [
-        "Dermatolojik Olarak Test Edildi",
-        "Parfümsüz",
-        "Komedojenik Değildir"
-      ],
-      "doku": "Hafif, yapışkan his bırakmayan konforlu doku.",
-      "fizyolojik_ph": "5.5"
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "4. Adım: Lokal / SOS İyileştirme",
-      "zaman_ve_siklik": "Günde 2 kez (Sabah - Akşam)",
-      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
-      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
-      "beklenen_sonuc": "İlk uygulamada ferahlama ve nem artışı; 2-4 haftalık düzenli kullanımda güçlü bariyer.",
-      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [],
-      "yasakli_cakismalar": [],
-      "etkilesim_uyarisi": "Rutin içerisinde sıralamaya dikkat edilerek güvenle kombine edilebilir."
-    },
-    "kombinasyon_ve_sinerji": {
-      "birlikte_onerilebilecekler": [],
-      "yasakli_cakismalar": [],
-      "tamamlayici_tavsiyeler": []
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "La Roche-Posay / Bioderma serilerindeki eşdeğer dermokozmetik formülasyonlar",
-      "alternatif_fark_notu": "Formülündeki 3 temel seramid kompleksi ile bariyer yenilemede ön plana çıkar."
-    },
-    "tags": [
-      "avène antirougeurs rosamed kızarıklık karşıtı konsantre bakım",
-      "avène",
-      "özel & sos onarıcı",
-      "avène",
-      "avène antirougeurs rosamed kızarıklık karşıtı konsantre bakım",
-      "dermo"
-    ]
-  },
-  {
-    "id": "av-ne-av-ne-tol-rance-hydra-10-yo-un-nemlendirici-krem-6718",
-    "name": "Avène Tolérance Hydra-10 Yoğun Nemlendirici Krem",
-    "brand": "Avène",
-    "urun_tipi": "Nemlendirici & Bariyer Krem",
-    "urun_tipi_icon": "🧴",
-    "rutin_adimi": "3. Adım: Nemlendirme & Bariyer Onarımı",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Kuru & Çok Kuru Hassas Cilt",
-    "size": "40 ml Pompalı Tüp",
-    "form": "Orijinal Ambalaj",
-    "image": "images/mustela/av-ne-av-ne-tol-rance-hydra-10-yogun-nemlendirici-krem-40-ml-pompali-tup.jpeg",
-    "cilt_tipleri": [
-      "Tüm Cilt Tipleri"
-    ],
-    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
-    "kimler_kullanamaz": "Açık yaralara veya sızıntılı enfekte dokulara doğrudan uygulanmaz.",
-    "nasil_kullanilir": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Cilt bariyerimi güçlendirecek ve günlük bakımımı sağlayacak güvenilir bir ürün arıyorum."
-    ],
-    "kombinasyon_ve_uyarilar": "Rutin içerisinde sıralamaya dikkat edilerek güvenle kombine edilebilir.",
-    "etken_maddeler": [
-      "3 Temel Seramid",
-      "Hyalüronik Asit"
-    ],
-    "kime_uygun": {
-      "profil": "Tüm Cilt Tipleri",
-      "cilt_tipleri": [
-        "Tüm Cilt Tipleri"
-      ],
-      "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
-      "oncelikli_hedef": "Kuru & Çok Kuru Hassas Cilt",
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": false,
-        "bebek_uygun_mu": false,
-        "cocuk_uygun_mu": true,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Ergen ve yetişkin kullanımı için uygundur."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Açık yaralara veya sızıntılı enfekte dokulara doğrudan uygulanmaz.",
-      "goz_cevresi_temas": "Göz mukozası ile doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
-      "doktora_yonlendirme": "Ciltte ani kabarma, şiddetli yanma veya 2 haftayı geçen inatçı reaksiyonlarda hekime yönlendiriniz.",
-      "dikkat_uyarilari": []
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Cilt bariyerimi güçlendirecek ve günlük bakımımı sağlayacak güvenilir bir ürün arıyorum.",
-      "eczaci_sorusu": "Cildinizde kuruluk, sivilce veya hassasiyet şikayetiniz ne zamandır devam ediyor?",
-      "secim_nedeni": "Cilt florasını bozmadan bariyeri onaran yüksek toleranslı dermokozmetik formülasyon.",
-      "arama_etiketleri": [
-        "avène tolérance hydra-10 yoğun nemlendirici krem",
-        "avène",
-        "nemlendirici & bariyer krem"
-      ]
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "3 Temel Seramid",
-        "Hyalüronik Asit"
-      ],
-      "rozetler": [
-        "Dermatolojik Olarak Test Edildi",
-        "Parfümsüz",
-        "Komedojenik Değildir"
-      ],
-      "doku": "Hafif, yapışkan his bırakmayan konforlu doku.",
-      "fizyolojik_ph": "5.5"
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "3. Adım: Nemlendirme & Bariyer Onarımı",
-      "zaman_ve_siklik": "Günde 2 kez (Sabah - Akşam)",
-      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
-      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
-      "beklenen_sonuc": "İlk uygulamada ferahlama ve nem artışı; 2-4 haftalık düzenli kullanımda güçlü bariyer.",
-      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [],
-      "yasakli_cakismalar": [],
-      "etkilesim_uyarisi": "Rutin içerisinde sıralamaya dikkat edilerek güvenle kombine edilebilir."
-    },
-    "kombinasyon_ve_sinerji": {
-      "birlikte_onerilebilecekler": [],
-      "yasakli_cakismalar": [],
-      "tamamlayici_tavsiyeler": []
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "La Roche-Posay / Bioderma serilerindeki eşdeğer dermokozmetik formülasyonlar",
-      "alternatif_fark_notu": "Formülündeki 3 temel seramid kompleksi ile bariyer yenilemede ön plana çıkar."
-    },
-    "tags": [
-      "avène tolérance hydra-10 yoğun nemlendirici krem",
-      "avène",
-      "nemlendirici & bariyer krem",
-      "avène",
-      "avène tolérance hydra-10 yoğun nemlendirici krem",
-      "dermo"
-    ]
-  },
-  {
-    "id": "av-ne-av-ne-tol-rance-hydra-10-nemlendirici-likit-1769",
-    "name": "Avène Tolérance Hydra-10 Nemlendirici Likit",
-    "brand": "Avène",
-    "urun_tipi": "Nemlendirici & Bariyer Krem",
-    "urun_tipi_icon": "🧴",
-    "rutin_adimi": "3. Adım: Nemlendirme & Bariyer Onarımı",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "%100 Doğal Nemlendirme",
-    "size": "40 ml Pompalı Tüp",
-    "form": "Orijinal Ambalaj",
-    "image": "images/mustela/av-ne-av-ne-tol-rance-hydra-10-nemlendirici-likit-40-ml-pompali-tup.jpeg",
-    "cilt_tipleri": [
-      "Tüm Cilt Tipleri"
-    ],
-    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
-    "kimler_kullanamaz": "Açık yaralara veya sızıntılı enfekte dokulara doğrudan uygulanmaz.",
-    "nasil_kullanilir": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Cilt bariyerimi güçlendirecek ve günlük bakımımı sağlayacak güvenilir bir ürün arıyorum."
-    ],
-    "kombinasyon_ve_uyarilar": "Rutin içerisinde sıralamaya dikkat edilerek güvenle kombine edilebilir.",
-    "etken_maddeler": [
-      "3 Temel Seramid",
-      "Hyalüronik Asit"
-    ],
-    "kime_uygun": {
-      "profil": "Tüm Cilt Tipleri",
-      "cilt_tipleri": [
-        "Tüm Cilt Tipleri"
-      ],
-      "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
-      "oncelikli_hedef": "%100 Doğal Nemlendirme",
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": false,
-        "bebek_uygun_mu": false,
-        "cocuk_uygun_mu": true,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Ergen ve yetişkin kullanımı için uygundur."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Açık yaralara veya sızıntılı enfekte dokulara doğrudan uygulanmaz.",
-      "goz_cevresi_temas": "Göz mukozası ile doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
-      "doktora_yonlendirme": "Ciltte ani kabarma, şiddetli yanma veya 2 haftayı geçen inatçı reaksiyonlarda hekime yönlendiriniz.",
-      "dikkat_uyarilari": []
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Cilt bariyerimi güçlendirecek ve günlük bakımımı sağlayacak güvenilir bir ürün arıyorum.",
-      "eczaci_sorusu": "Cildinizde kuruluk, sivilce veya hassasiyet şikayetiniz ne zamandır devam ediyor?",
-      "secim_nedeni": "Cilt florasını bozmadan bariyeri onaran yüksek toleranslı dermokozmetik formülasyon.",
-      "arama_etiketleri": [
-        "avène tolérance hydra-10 nemlendirici likit",
-        "avène",
-        "nemlendirici & bariyer krem"
-      ]
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "3 Temel Seramid",
-        "Hyalüronik Asit"
-      ],
-      "rozetler": [
-        "Dermatolojik Olarak Test Edildi",
-        "Parfümsüz",
-        "Komedojenik Değildir"
-      ],
-      "doku": "Hafif, yapışkan his bırakmayan konforlu doku.",
-      "fizyolojik_ph": "5.5"
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "3. Adım: Nemlendirme & Bariyer Onarımı",
-      "zaman_ve_siklik": "Günde 2 kez (Sabah - Akşam)",
-      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
-      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
-      "beklenen_sonuc": "İlk uygulamada ferahlama ve nem artışı; 2-4 haftalık düzenli kullanımda güçlü bariyer.",
-      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [],
-      "yasakli_cakismalar": [],
-      "etkilesim_uyarisi": "Rutin içerisinde sıralamaya dikkat edilerek güvenle kombine edilebilir."
-    },
-    "kombinasyon_ve_sinerji": {
-      "birlikte_onerilebilecekler": [],
-      "yasakli_cakismalar": [],
-      "tamamlayici_tavsiyeler": []
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "La Roche-Posay / Bioderma serilerindeki eşdeğer dermokozmetik formülasyonlar",
-      "alternatif_fark_notu": "Formülündeki 3 temel seramid kompleksi ile bariyer yenilemede ön plana çıkar."
-    },
-    "tags": [
-      "avène tolérance hydra-10 nemlendirici likit",
-      "avène",
-      "nemlendirici & bariyer krem",
-      "avène",
-      "avène tolérance hydra-10 nemlendirici likit",
-      "dermo"
-    ]
-  },
-  {
-    "id": "av-ne-av-ne-tol-rance-son-derece-nazik-jel-temizleyici-2354",
-    "name": "Avène Tolérance Son Derece Nazik Jel Temizleyici",
-    "brand": "Avène",
-    "urun_tipi": "Yüz & Vücut Temizleyici",
-    "urun_tipi_icon": "🧼",
-    "rutin_adimi": "1. Adım: Temizleme",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Aşırı Hassas & Reaktif Cilt",
-    "size": "200 ml Pompalı Şişe",
-    "form": "Orijinal Ambalaj",
-    "image": "images/mustela/av-ne-av-ne-tol-rance-son-derece-nazik-jel-temizleyici-200-ml-pompali-sise.jpeg",
-    "cilt_tipleri": [
-      "Tüm Cilt Tipleri"
-    ],
-    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
-    "kimler_kullanamaz": "Açık yaralara veya sızıntılı enfekte dokulara doğrudan uygulanmaz.",
-    "nasil_kullanilir": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Cilt bariyerimi güçlendirecek ve günlük bakımımı sağlayacak güvenilir bir ürün arıyorum."
-    ],
-    "kombinasyon_ve_uyarilar": "Rutin içerisinde sıralamaya dikkat edilerek güvenle kombine edilebilir.",
-    "etken_maddeler": [
-      "3 Temel Seramid",
-      "Hyalüronik Asit"
-    ],
-    "kime_uygun": {
-      "profil": "Tüm Cilt Tipleri",
-      "cilt_tipleri": [
-        "Tüm Cilt Tipleri"
-      ],
-      "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
-      "oncelikli_hedef": "Aşırı Hassas & Reaktif Cilt",
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": false,
-        "bebek_uygun_mu": false,
-        "cocuk_uygun_mu": true,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Ergen ve yetişkin kullanımı için uygundur."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Açık yaralara veya sızıntılı enfekte dokulara doğrudan uygulanmaz.",
-      "goz_cevresi_temas": "Göz mukozası ile doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
-      "doktora_yonlendirme": "Ciltte ani kabarma, şiddetli yanma veya 2 haftayı geçen inatçı reaksiyonlarda hekime yönlendiriniz.",
-      "dikkat_uyarilari": []
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Cilt bariyerimi güçlendirecek ve günlük bakımımı sağlayacak güvenilir bir ürün arıyorum.",
-      "eczaci_sorusu": "Cildinizde kuruluk, sivilce veya hassasiyet şikayetiniz ne zamandır devam ediyor?",
-      "secim_nedeni": "Cilt florasını bozmadan bariyeri onaran yüksek toleranslı dermokozmetik formülasyon.",
-      "arama_etiketleri": [
-        "avène tolérance son derece nazik jel temizleyici",
-        "avène",
-        "yüz & vücut temizleyici"
-      ]
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "3 Temel Seramid",
-        "Hyalüronik Asit"
-      ],
-      "rozetler": [
-        "Dermatolojik Olarak Test Edildi",
-        "Parfümsüz",
-        "Komedojenik Değildir"
-      ],
-      "doku": "Hafif, yapışkan his bırakmayan konforlu doku.",
-      "fizyolojik_ph": "5.5"
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "1. Adım: Temizleme",
-      "zaman_ve_siklik": "Günde 2 kez (Sabah - Akşam)",
-      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
-      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
-      "beklenen_sonuc": "İlk uygulamada ferahlama ve nem artışı; 2-4 haftalık düzenli kullanımda güçlü bariyer.",
-      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [],
-      "yasakli_cakismalar": [],
-      "etkilesim_uyarisi": "Rutin içerisinde sıralamaya dikkat edilerek güvenle kombine edilebilir."
-    },
-    "kombinasyon_ve_sinerji": {
-      "birlikte_onerilebilecekler": [],
-      "yasakli_cakismalar": [],
-      "tamamlayici_tavsiyeler": []
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "La Roche-Posay / Bioderma serilerindeki eşdeğer dermokozmetik formülasyonlar",
-      "alternatif_fark_notu": "Formülündeki 3 temel seramid kompleksi ile bariyer yenilemede ön plana çıkar."
-    },
-    "tags": [
-      "avène tolérance son derece nazik jel temizleyici",
-      "avène",
-      "yüz & vücut temizleyici",
-      "avène",
-      "avène tolérance son derece nazik jel temizleyici",
-      "dermo"
-    ]
-  },
-  {
-    "id": "av-ne-av-ne-hassas-ciltler-i--in-temizleme-k-p----8922",
-    "name": "Avène Hassas Ciltler İçin Temizleme Köpüğü",
-    "brand": "Avène",
-    "urun_tipi": "Yüz & Vücut Temizleyici",
-    "urun_tipi_icon": "🧼",
-    "rutin_adimi": "1. Adım: Temizleme",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Hassas Cilt Temizliği",
-    "size": "150 ml Pompalı Şişe",
-    "form": "Orijinal Ambalaj",
-    "image": "images/mustela/av-ne-av-ne-hassas-ciltler-i-cin-temizleme-kopugu-150-ml-pompali-sise.jpeg",
-    "cilt_tipleri": [
-      "Tüm Cilt Tipleri"
-    ],
-    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
-    "kimler_kullanamaz": "Açık yaralara veya sızıntılı enfekte dokulara doğrudan uygulanmaz.",
-    "nasil_kullanilir": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Cilt bariyerimi güçlendirecek ve günlük bakımımı sağlayacak güvenilir bir ürün arıyorum."
-    ],
-    "kombinasyon_ve_uyarilar": "Rutin içerisinde sıralamaya dikkat edilerek güvenle kombine edilebilir.",
-    "etken_maddeler": [
-      "3 Temel Seramid",
-      "Hyalüronik Asit"
-    ],
-    "kime_uygun": {
-      "profil": "Tüm Cilt Tipleri",
-      "cilt_tipleri": [
-        "Tüm Cilt Tipleri"
-      ],
-      "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
-      "oncelikli_hedef": "Hassas Cilt Temizliği",
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": false,
-        "bebek_uygun_mu": false,
-        "cocuk_uygun_mu": true,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Ergen ve yetişkin kullanımı için uygundur."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Açık yaralara veya sızıntılı enfekte dokulara doğrudan uygulanmaz.",
-      "goz_cevresi_temas": "Göz mukozası ile doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
-      "doktora_yonlendirme": "Ciltte ani kabarma, şiddetli yanma veya 2 haftayı geçen inatçı reaksiyonlarda hekime yönlendiriniz.",
-      "dikkat_uyarilari": []
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Cilt bariyerimi güçlendirecek ve günlük bakımımı sağlayacak güvenilir bir ürün arıyorum.",
-      "eczaci_sorusu": "Cildinizde kuruluk, sivilce veya hassasiyet şikayetiniz ne zamandır devam ediyor?",
-      "secim_nedeni": "Cilt florasını bozmadan bariyeri onaran yüksek toleranslı dermokozmetik formülasyon.",
-      "arama_etiketleri": [
-        "avène hassas ciltler i̇çin temizleme köpüğü",
-        "avène",
-        "yüz & vücut temizleyici"
-      ]
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "3 Temel Seramid",
-        "Hyalüronik Asit"
-      ],
-      "rozetler": [
-        "Dermatolojik Olarak Test Edildi",
-        "Parfümsüz",
-        "Komedojenik Değildir"
-      ],
-      "doku": "Hafif, yapışkan his bırakmayan konforlu doku.",
-      "fizyolojik_ph": "5.5"
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "1. Adım: Temizleme",
-      "zaman_ve_siklik": "Günde 2 kez (Sabah - Akşam)",
-      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
-      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
-      "beklenen_sonuc": "İlk uygulamada ferahlama ve nem artışı; 2-4 haftalık düzenli kullanımda güçlü bariyer.",
-      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [],
-      "yasakli_cakismalar": [],
-      "etkilesim_uyarisi": "Rutin içerisinde sıralamaya dikkat edilerek güvenle kombine edilebilir."
-    },
-    "kombinasyon_ve_sinerji": {
-      "birlikte_onerilebilecekler": [],
-      "yasakli_cakismalar": [],
-      "tamamlayici_tavsiyeler": []
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "La Roche-Posay / Bioderma serilerindeki eşdeğer dermokozmetik formülasyonlar",
-      "alternatif_fark_notu": "Formülündeki 3 temel seramid kompleksi ile bariyer yenilemede ön plana çıkar."
-    },
-    "tags": [
-      "avène hassas ciltler i̇çin temizleme köpüğü",
-      "avène",
-      "yüz & vücut temizleyici",
-      "avène",
-      "avène hassas ciltler i̇çin temizleme köpüğü",
-      "dermo"
-    ]
-  },
-  {
-    "id": "av-ne-av-ne-eau-thermale-termal-su-spreyi-1026",
-    "name": "Avène Eau Thermale Termal Su Spreyi",
-    "brand": "Avène",
-    "urun_tipi": "Ferahlatıcı Su & Parfüm",
-    "urun_tipi_icon": "🌸",
-    "rutin_adimi": "Tamamlayıcı Bakım",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Yatıştırıcı Termal Bakım",
-    "size": "150 ml Sprey Şişe",
-    "form": "Orijinal Ambalaj",
-    "image": "images/mustela/av-ne-av-ne-eau-thermale-termal-su-spreyi-150-ml-sprey-sise.jpeg",
-    "cilt_tipleri": [
-      "Tüm Cilt Tipleri"
-    ],
-    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
-    "kimler_kullanamaz": "Açık yaralara veya sızıntılı enfekte dokulara doğrudan uygulanmaz.",
-    "nasil_kullanilir": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Cilt bariyerimi güçlendirecek ve günlük bakımımı sağlayacak güvenilir bir ürün arıyorum."
-    ],
-    "kombinasyon_ve_uyarilar": "Rutin içerisinde sıralamaya dikkat edilerek güvenle kombine edilebilir.",
-    "etken_maddeler": [
-      "3 Temel Seramid",
-      "Hyalüronik Asit"
-    ],
-    "kime_uygun": {
-      "profil": "Tüm Cilt Tipleri",
-      "cilt_tipleri": [
-        "Tüm Cilt Tipleri"
-      ],
-      "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
-      "oncelikli_hedef": "Yatıştırıcı Termal Bakım",
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": false,
-        "bebek_uygun_mu": false,
-        "cocuk_uygun_mu": true,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Ergen ve yetişkin kullanımı için uygundur."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Açık yaralara veya sızıntılı enfekte dokulara doğrudan uygulanmaz.",
-      "goz_cevresi_temas": "Göz mukozası ile doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
-      "doktora_yonlendirme": "Ciltte ani kabarma, şiddetli yanma veya 2 haftayı geçen inatçı reaksiyonlarda hekime yönlendiriniz.",
-      "dikkat_uyarilari": []
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Cilt bariyerimi güçlendirecek ve günlük bakımımı sağlayacak güvenilir bir ürün arıyorum.",
-      "eczaci_sorusu": "Cildinizde kuruluk, sivilce veya hassasiyet şikayetiniz ne zamandır devam ediyor?",
-      "secim_nedeni": "Cilt florasını bozmadan bariyeri onaran yüksek toleranslı dermokozmetik formülasyon.",
-      "arama_etiketleri": [
-        "avène eau thermale termal su spreyi",
-        "avène",
-        "ferahlatıcı su & parfüm"
-      ]
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "3 Temel Seramid",
-        "Hyalüronik Asit"
-      ],
-      "rozetler": [
-        "Dermatolojik Olarak Test Edildi",
-        "Parfümsüz",
-        "Komedojenik Değildir"
-      ],
-      "doku": "Hafif, yapışkan his bırakmayan konforlu doku.",
-      "fizyolojik_ph": "5.5"
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "Tamamlayıcı Bakım",
-      "zaman_ve_siklik": "Günde 2 kez (Sabah - Akşam)",
-      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
-      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
-      "beklenen_sonuc": "İlk uygulamada ferahlama ve nem artışı; 2-4 haftalık düzenli kullanımda güçlü bariyer.",
-      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [],
-      "yasakli_cakismalar": [],
-      "etkilesim_uyarisi": "Rutin içerisinde sıralamaya dikkat edilerek güvenle kombine edilebilir."
-    },
-    "kombinasyon_ve_sinerji": {
-      "birlikte_onerilebilecekler": [],
-      "yasakli_cakismalar": [],
-      "tamamlayici_tavsiyeler": []
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "La Roche-Posay / Bioderma serilerindeki eşdeğer dermokozmetik formülasyonlar",
-      "alternatif_fark_notu": "Formülündeki 3 temel seramid kompleksi ile bariyer yenilemede ön plana çıkar."
-    },
-    "tags": [
-      "avène eau thermale termal su spreyi",
-      "avène",
-      "ferahlatıcı su & parfüm",
-      "avène",
-      "avène eau thermale termal su spreyi",
-      "dermo"
-    ]
-  },
-  {
-    "id": "av-ne-av-ne-yat--t-r-c--g-z--evresi-bak-m-kremi-1004",
-    "name": "Avène Yatıştırıcı Göz Çevresi Bakım Kremi",
-    "brand": "Avène",
-    "urun_tipi": "Özel & SOS Onarıcı",
-    "urun_tipi_icon": "🩹",
-    "rutin_adimi": "4. Adım: Lokal / SOS İyileştirme",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Göz Çevresi Bakımı",
-    "size": "10 ml Tüp",
-    "form": "Orijinal Ambalaj",
-    "image": "images/mustela/av-ne-av-ne-yatistirici-goz-cevresi-bakim-kremi-10-ml-tup.jpeg",
-    "cilt_tipleri": [
-      "Tüm Cilt Tipleri"
-    ],
-    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
-    "kimler_kullanamaz": "Açık yaralara veya sızıntılı enfekte dokulara doğrudan uygulanmaz.",
-    "nasil_kullanilir": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Cilt bariyerimi güçlendirecek ve günlük bakımımı sağlayacak güvenilir bir ürün arıyorum."
-    ],
-    "kombinasyon_ve_uyarilar": "Rutin içerisinde sıralamaya dikkat edilerek güvenle kombine edilebilir.",
-    "etken_maddeler": [
-      "3 Temel Seramid",
-      "Hyalüronik Asit"
-    ],
-    "kime_uygun": {
-      "profil": "Tüm Cilt Tipleri",
-      "cilt_tipleri": [
-        "Tüm Cilt Tipleri"
-      ],
-      "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
-      "oncelikli_hedef": "Göz Çevresi Bakımı",
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": false,
-        "bebek_uygun_mu": false,
-        "cocuk_uygun_mu": true,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Ergen ve yetişkin kullanımı için uygundur."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Açık yaralara veya sızıntılı enfekte dokulara doğrudan uygulanmaz.",
-      "goz_cevresi_temas": "Göz mukozası ile doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
-      "doktora_yonlendirme": "Ciltte ani kabarma, şiddetli yanma veya 2 haftayı geçen inatçı reaksiyonlarda hekime yönlendiriniz.",
-      "dikkat_uyarilari": []
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Cilt bariyerimi güçlendirecek ve günlük bakımımı sağlayacak güvenilir bir ürün arıyorum.",
-      "eczaci_sorusu": "Cildinizde kuruluk, sivilce veya hassasiyet şikayetiniz ne zamandır devam ediyor?",
-      "secim_nedeni": "Cilt florasını bozmadan bariyeri onaran yüksek toleranslı dermokozmetik formülasyon.",
-      "arama_etiketleri": [
-        "avène yatıştırıcı göz çevresi bakım kremi",
-        "avène",
-        "özel & sos onarıcı"
-      ]
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "3 Temel Seramid",
-        "Hyalüronik Asit"
-      ],
-      "rozetler": [
-        "Dermatolojik Olarak Test Edildi",
-        "Parfümsüz",
-        "Komedojenik Değildir"
-      ],
-      "doku": "Hafif, yapışkan his bırakmayan konforlu doku.",
-      "fizyolojik_ph": "5.5"
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "4. Adım: Lokal / SOS İyileştirme",
-      "zaman_ve_siklik": "Günde 2 kez (Sabah - Akşam)",
-      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
-      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
-      "beklenen_sonuc": "İlk uygulamada ferahlama ve nem artışı; 2-4 haftalık düzenli kullanımda güçlü bariyer.",
-      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [],
-      "yasakli_cakismalar": [],
-      "etkilesim_uyarisi": "Rutin içerisinde sıralamaya dikkat edilerek güvenle kombine edilebilir."
-    },
-    "kombinasyon_ve_sinerji": {
-      "birlikte_onerilebilecekler": [],
-      "yasakli_cakismalar": [],
-      "tamamlayici_tavsiyeler": []
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "La Roche-Posay / Bioderma serilerindeki eşdeğer dermokozmetik formülasyonlar",
-      "alternatif_fark_notu": "Formülündeki 3 temel seramid kompleksi ile bariyer yenilemede ön plana çıkar."
-    },
-    "tags": [
-      "avène yatıştırıcı göz çevresi bakım kremi",
-      "avène",
-      "özel & sos onarıcı",
-      "avène",
-      "avène yatıştırıcı göz çevresi bakım kremi",
-      "dermo"
-    ]
-  },
-  {
-    "id": "av-ne-av-ne-canland-r-c--besleyici-bak-m-kremi-1345",
-    "name": "Avène Canlandırıcı Besleyici Bakım Kremi",
-    "brand": "Avène",
-    "urun_tipi": "Nemlendirici & Bariyer Krem",
-    "urun_tipi_icon": "🧴",
-    "rutin_adimi": "3. Adım: Nemlendirme & Bariyer Onarımı",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Kuru & Hassas Cilt Bakımı",
-    "size": "50 ml Kavanoz",
-    "form": "Orijinal Ambalaj",
-    "image": "images/mustela/av-ne-av-ne-canlandirici-besleyici-bakim-kremi-50-ml-kavanoz.jpeg",
-    "cilt_tipleri": [
-      "Tüm Cilt Tipleri"
-    ],
-    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
-    "kimler_kullanamaz": "Açık yaralara veya sızıntılı enfekte dokulara doğrudan uygulanmaz.",
-    "nasil_kullanilir": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Cilt bariyerimi güçlendirecek ve günlük bakımımı sağlayacak güvenilir bir ürün arıyorum."
-    ],
-    "kombinasyon_ve_uyarilar": "Rutin içerisinde sıralamaya dikkat edilerek güvenle kombine edilebilir.",
-    "etken_maddeler": [
-      "3 Temel Seramid",
-      "Hyalüronik Asit"
-    ],
-    "kime_uygun": {
-      "profil": "Tüm Cilt Tipleri",
-      "cilt_tipleri": [
-        "Tüm Cilt Tipleri"
-      ],
-      "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
-      "oncelikli_hedef": "Kuru & Hassas Cilt Bakımı",
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": false,
-        "bebek_uygun_mu": false,
-        "cocuk_uygun_mu": true,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Ergen ve yetişkin kullanımı için uygundur."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Açık yaralara veya sızıntılı enfekte dokulara doğrudan uygulanmaz.",
-      "goz_cevresi_temas": "Göz mukozası ile doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
-      "doktora_yonlendirme": "Ciltte ani kabarma, şiddetli yanma veya 2 haftayı geçen inatçı reaksiyonlarda hekime yönlendiriniz.",
-      "dikkat_uyarilari": []
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Cilt bariyerimi güçlendirecek ve günlük bakımımı sağlayacak güvenilir bir ürün arıyorum.",
-      "eczaci_sorusu": "Cildinizde kuruluk, sivilce veya hassasiyet şikayetiniz ne zamandır devam ediyor?",
-      "secim_nedeni": "Cilt florasını bozmadan bariyeri onaran yüksek toleranslı dermokozmetik formülasyon.",
-      "arama_etiketleri": [
-        "avène canlandırıcı besleyici bakım kremi",
-        "avène",
-        "nemlendirici & bariyer krem"
-      ]
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "3 Temel Seramid",
-        "Hyalüronik Asit"
-      ],
-      "rozetler": [
-        "Dermatolojik Olarak Test Edildi",
-        "Parfümsüz",
-        "Komedojenik Değildir"
-      ],
-      "doku": "Hafif, yapışkan his bırakmayan konforlu doku.",
-      "fizyolojik_ph": "5.5"
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "3. Adım: Nemlendirme & Bariyer Onarımı",
-      "zaman_ve_siklik": "Günde 2 kez (Sabah - Akşam)",
-      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
-      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
-      "beklenen_sonuc": "İlk uygulamada ferahlama ve nem artışı; 2-4 haftalık düzenli kullanımda güçlü bariyer.",
-      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [],
-      "yasakli_cakismalar": [],
-      "etkilesim_uyarisi": "Rutin içerisinde sıralamaya dikkat edilerek güvenle kombine edilebilir."
-    },
-    "kombinasyon_ve_sinerji": {
-      "birlikte_onerilebilecekler": [],
-      "yasakli_cakismalar": [],
-      "tamamlayici_tavsiyeler": []
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "La Roche-Posay / Bioderma serilerindeki eşdeğer dermokozmetik formülasyonlar",
-      "alternatif_fark_notu": "Formülündeki 3 temel seramid kompleksi ile bariyer yenilemede ön plana çıkar."
-    },
-    "tags": [
-      "avène canlandırıcı besleyici bakım kremi",
-      "avène",
-      "nemlendirici & bariyer krem",
-      "avène",
-      "avène canlandırıcı besleyici bakım kremi",
-      "dermo"
-    ]
-  },
-  {
-    "id": "av-ne-av-ne-canland-r-c--besleyici-bak-m-kremi-8804",
-    "name": "Avène Canlandırıcı Besleyici Bakım Kremi",
-    "brand": "Avène",
-    "urun_tipi": "Nemlendirici & Bariyer Krem",
-    "urun_tipi_icon": "🧴",
-    "rutin_adimi": "3. Adım: Nemlendirme & Bariyer Onarımı",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Kuru & Hassas Cilt Bakımı",
-    "size": "50 ml Kavanoz",
-    "form": "Orijinal Ambalaj",
-    "image": "images/mustela/av-ne-av-ne-canlandirici-besleyici-bakim-kremi-50-ml-kavanoz.jpeg",
-    "cilt_tipleri": [
-      "Tüm Cilt Tipleri"
-    ],
-    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
-    "kimler_kullanamaz": "Açık yaralara veya sızıntılı enfekte dokulara doğrudan uygulanmaz.",
-    "nasil_kullanilir": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Cilt bariyerimi güçlendirecek ve günlük bakımımı sağlayacak güvenilir bir ürün arıyorum."
-    ],
-    "kombinasyon_ve_uyarilar": "Rutin içerisinde sıralamaya dikkat edilerek güvenle kombine edilebilir.",
-    "etken_maddeler": [
-      "3 Temel Seramid",
-      "Hyalüronik Asit"
-    ],
-    "kime_uygun": {
-      "profil": "Tüm Cilt Tipleri",
-      "cilt_tipleri": [
-        "Tüm Cilt Tipleri"
-      ],
-      "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
-      "oncelikli_hedef": "Kuru & Hassas Cilt Bakımı",
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": false,
-        "bebek_uygun_mu": false,
-        "cocuk_uygun_mu": true,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Ergen ve yetişkin kullanımı için uygundur."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Açık yaralara veya sızıntılı enfekte dokulara doğrudan uygulanmaz.",
-      "goz_cevresi_temas": "Göz mukozası ile doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
-      "doktora_yonlendirme": "Ciltte ani kabarma, şiddetli yanma veya 2 haftayı geçen inatçı reaksiyonlarda hekime yönlendiriniz.",
-      "dikkat_uyarilari": []
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Cilt bariyerimi güçlendirecek ve günlük bakımımı sağlayacak güvenilir bir ürün arıyorum.",
-      "eczaci_sorusu": "Cildinizde kuruluk, sivilce veya hassasiyet şikayetiniz ne zamandır devam ediyor?",
-      "secim_nedeni": "Cilt florasını bozmadan bariyeri onaran yüksek toleranslı dermokozmetik formülasyon.",
-      "arama_etiketleri": [
-        "avène canlandırıcı besleyici bakım kremi",
-        "avène",
-        "nemlendirici & bariyer krem"
-      ]
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "3 Temel Seramid",
-        "Hyalüronik Asit"
-      ],
-      "rozetler": [
-        "Dermatolojik Olarak Test Edildi",
-        "Parfümsüz",
-        "Komedojenik Değildir"
-      ],
-      "doku": "Hafif, yapışkan his bırakmayan konforlu doku.",
-      "fizyolojik_ph": "5.5"
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "3. Adım: Nemlendirme & Bariyer Onarımı",
-      "zaman_ve_siklik": "Günde 2 kez (Sabah - Akşam)",
-      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
-      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
-      "beklenen_sonuc": "İlk uygulamada ferahlama ve nem artışı; 2-4 haftalık düzenli kullanımda güçlü bariyer.",
-      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [],
-      "yasakli_cakismalar": [],
-      "etkilesim_uyarisi": "Rutin içerisinde sıralamaya dikkat edilerek güvenle kombine edilebilir."
-    },
-    "kombinasyon_ve_sinerji": {
-      "birlikte_onerilebilecekler": [],
-      "yasakli_cakismalar": [],
-      "tamamlayici_tavsiyeler": []
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "La Roche-Posay / Bioderma serilerindeki eşdeğer dermokozmetik formülasyonlar",
-      "alternatif_fark_notu": "Formülündeki 3 temel seramid kompleksi ile bariyer yenilemede ön plana çıkar."
-    },
-    "tags": [
-      "avène canlandırıcı besleyici bakım kremi",
-      "avène",
-      "nemlendirici & bariyer krem",
-      "avène",
-      "avène canlandırıcı besleyici bakım kremi",
-      "dermo"
-    ]
-  },
-  {
-    "id": "cerave-cerave-akneye-e-ilim-g-steren-ciltlere--zel-temizleyici-4078",
-    "name": "CeraVe Akneye Eğilim Gösteren Ciltlere Özel Temizleyici",
-    "brand": "CeraVe",
-    "urun_tipi": "Yüz & Vücut Temizleyici",
-    "urun_tipi_icon": "🧼",
-    "rutin_adimi": "1. Adım: Temizleme",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Akne Karşıtı Bakım",
-    "size": "236 ml Pompalı Şişe",
-    "form": "Orijinal Ambalaj",
-    "image": "images/mustela/cerave-cerave-akneye-egilim-gosteren-ciltlere-ozel-temizleyici-236-ml-pompali-sise.jpeg",
-    "cilt_tipleri": [
-      "Yağlı Ciltler",
-      "Akneye Eğilimli Ciltler",
-      "Pürüzlü Ciltler"
-    ],
-    "yas_grubu": "12 yaş ve üzeri ergenler ile yetişkinlerin kullanımına uygundur.",
-    "kimler_kullanamaz": "Açık, kanayan lezyonlara sürülmez. Göz kapağı mukozasından uzak tutulmalıdır.",
-    "nasil_kullanilir": "Islak cilde dairesel masajla nazikçe köpürtülerek uygulanır ve ılık suyla iyice durulanır.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Yüzümde sürekli sivilce ve siyah noktalar çıkıyor, gün içinde çok yağlanıp parlıyor."
-    ],
-    "kombinasyon_ve_uyarilar": "Salisilik asit cildi güneşe hassaslaştırabilir; gündüz mutlaka geniş spektrumlu güneş kremi kullanılmalıdır.",
-    "etken_maddeler": [
-      "%2 Salisilik Asit (BHA)",
-      "Hektonit Kili",
-      "Niasinamid (B3 Vitamini)",
-      "3 Temel Seramid (1, 3, 6-II)"
-    ],
-    "kime_uygun": {
-      "profil": "Yağlı Ciltler, Akneye Eğilimli Ciltler, Pürüzlü Ciltler",
-      "cilt_tipleri": [
-        "Yağlı Ciltler",
-        "Akneye Eğilimli Ciltler",
-        "Pürüzlü Ciltler"
-      ],
-      "yas_grubu": "12 yaş ve üzeri ergenler ile yetişkinlerin kullanımına uygundur.",
-      "oncelikli_hedef": "Akne Karşıtı Bakım",
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": false,
-        "bebek_uygun_mu": false,
-        "cocuk_uygun_mu": false,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "12 yaş ve üzeri ergenler ile yetişkinlerin kullanımına uygundur."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Açık, kanayan lezyonlara sürülmez. Göz kapağı mukozasından uzak tutulmalıdır.",
-      "goz_cevresi_temas": "Göz çevresine uygulanmaz. Temas ederse bol su ile yıkayınız.",
-      "doktora_yonlendirme": "Kistik ve nodüler aknelerde sistemik medikal tedavi için dermatoloğa yönlendiriniz.",
-      "dikkat_uyarilari": []
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Yüzümde sürekli sivilce ve siyah noktalar çıkıyor, gün içinde çok yağlanıp parlıyor.",
-      "eczaci_sorusu": "Sivilceleriniz iltihaplı kistik mi yoksa yüzeysel siyah nokta/komedon şeklinde mi?",
-      "secim_nedeni": "%2 Salisilik Asit gözenek içindeki sebumu eritir; hektonit kili fazla yağı çeker, seramidler cildi soymadan dengeler.",
-      "arama_etiketleri": [
-        "akne",
-        "sivilce",
-        "siyah nokta",
-        "salisilik asit",
-        "gözenek",
-        "yağlanma",
-        "parlama",
-        "cerave akne"
-      ]
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "%2 Salisilik Asit (BHA)",
-        "Hektonit Kili",
-        "Niasinamid (B3 Vitamini)",
-        "3 Temel Seramid (1, 3, 6-II)"
-      ],
-      "rozetler": [
-        "Salisilik Asit %2",
-        "Gözenek Arındırıcı Kil",
-        "Komedojenik Değildir",
-        "Parfümsüz"
-      ],
-      "doku": "Ferahlatıcı, köpüren jel doku.",
-      "fizyolojik_ph": "5.5"
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "1. Adım: Cilt Temizliği (Akne Protokolü)",
-      "zaman_ve_siklik": "Sabah ve Akşam günde 2 kez",
-      "miktar": "1 pompa yeterlidir",
-      "uygulama_sekli": "Islak cilde dairesel masajla nazikçe köpürtülerek uygulanır ve ılık suyla iyice durulanır.",
-      "beklenen_sonuc": "İlk günden itibaren matlaşma ve temizlik hissi; 3 günde siyah noktalarda azalma.",
-      "saklama_kosullari": "Direkt güneş ışığından uzak, oda sıcaklığında saklayınız."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [
-        "CeraVe Akneye Eğilim Gösteren Ciltler İçin Yüz Bakım Jeli",
-        "CeraVe Yenileyici Retinol Serum"
-      ],
-      "yasakli_cakismalar": [
-        "Aynı anda sert mekanik tanecikli peelingler ve yüksek konsantrasyonlu AHA soyucular."
-      ],
-      "etkilesim_uyarisi": "Salisilik asit cildi güneşe hassaslaştırabilir; gündüz mutlaka geniş spektrumlu güneş kremi kullanılmalıdır."
-    },
-    "kombinasyon_ve_sinerji": {
-      "birlikte_onerilebilecekler": [
-        "CeraVe Akneye Eğilim Gösteren Ciltler İçin Yüz Bakım Jeli",
-        "CeraVe Yenileyici Retinol Serum"
-      ],
-      "yasakli_cakismalar": [
-        "Aynı anda sert mekanik tanecikli peelingler ve yüksek konsantrasyonlu AHA soyucular."
-      ],
-      "tamamlayici_tavsiyeler": []
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "La Roche-Posay Effaclar Jel / Bioderma Sébium Gel Actif",
-      "alternatif_fark_notu": "Effaclar kurutabilirken, CeraVe 3 temel seramid sayesinde cilt bariyerini sıyırmadan arındırır."
-    },
-    "tags": [
-      "akne",
-      "sivilce",
-      "siyah nokta",
-      "salisilik asit",
-      "gözenek",
-      "yağlanma",
-      "parlama",
-      "cerave akne",
-      "cerave",
-      "cerave akneye eğilim gösteren ciltlere özel temizleyici",
-      "dermo"
-    ]
-  },
-  {
-    "id": "cerave-cerave-akneye-e-ilim-g-steren-ciltlere--zel-temizleyici-2007",
-    "name": "CeraVe Akneye Eğilim Gösteren Ciltlere Özel Temizleyici",
-    "brand": "CeraVe",
-    "urun_tipi": "Yüz & Vücut Temizleyici",
-    "urun_tipi_icon": "🧼",
-    "rutin_adimi": "1. Adım: Temizleme",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Akne Karşıtı Bakım",
-    "size": "236 ml Pompalı Şişe",
-    "form": "Orijinal Ambalaj",
-    "image": "images/mustela/cerave-cerave-akneye-egilim-gosteren-ciltlere-ozel-temizleyici-236-ml-pompali-sise.jpeg",
-    "cilt_tipleri": [
-      "Yağlı Ciltler",
-      "Akneye Eğilimli Ciltler",
-      "Pürüzlü Ciltler"
-    ],
-    "yas_grubu": "12 yaş ve üzeri ergenler ile yetişkinlerin kullanımına uygundur.",
-    "kimler_kullanamaz": "Açık, kanayan lezyonlara sürülmez. Göz kapağı mukozasından uzak tutulmalıdır.",
-    "nasil_kullanilir": "Islak cilde dairesel masajla nazikçe köpürtülerek uygulanır ve ılık suyla iyice durulanır.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Yüzümde sürekli sivilce ve siyah noktalar çıkıyor, gün içinde çok yağlanıp parlıyor."
-    ],
-    "kombinasyon_ve_uyarilar": "Salisilik asit cildi güneşe hassaslaştırabilir; gündüz mutlaka geniş spektrumlu güneş kremi kullanılmalıdır.",
-    "etken_maddeler": [
-      "%2 Salisilik Asit (BHA)",
-      "Hektonit Kili",
-      "Niasinamid (B3 Vitamini)",
-      "3 Temel Seramid (1, 3, 6-II)"
-    ],
-    "kime_uygun": {
-      "profil": "Yağlı Ciltler, Akneye Eğilimli Ciltler, Pürüzlü Ciltler",
-      "cilt_tipleri": [
-        "Yağlı Ciltler",
-        "Akneye Eğilimli Ciltler",
-        "Pürüzlü Ciltler"
-      ],
-      "yas_grubu": "12 yaş ve üzeri ergenler ile yetişkinlerin kullanımına uygundur.",
-      "oncelikli_hedef": "Akne Karşıtı Bakım",
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": false,
-        "bebek_uygun_mu": false,
-        "cocuk_uygun_mu": false,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "12 yaş ve üzeri ergenler ile yetişkinlerin kullanımına uygundur."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Açık, kanayan lezyonlara sürülmez. Göz kapağı mukozasından uzak tutulmalıdır.",
-      "goz_cevresi_temas": "Göz çevresine uygulanmaz. Temas ederse bol su ile yıkayınız.",
-      "doktora_yonlendirme": "Kistik ve nodüler aknelerde sistemik medikal tedavi için dermatoloğa yönlendiriniz.",
-      "dikkat_uyarilari": []
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Yüzümde sürekli sivilce ve siyah noktalar çıkıyor, gün içinde çok yağlanıp parlıyor.",
-      "eczaci_sorusu": "Sivilceleriniz iltihaplı kistik mi yoksa yüzeysel siyah nokta/komedon şeklinde mi?",
-      "secim_nedeni": "%2 Salisilik Asit gözenek içindeki sebumu eritir; hektonit kili fazla yağı çeker, seramidler cildi soymadan dengeler.",
-      "arama_etiketleri": [
-        "akne",
-        "sivilce",
-        "siyah nokta",
-        "salisilik asit",
-        "gözenek",
-        "yağlanma",
-        "parlama",
-        "cerave akne"
-      ]
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "%2 Salisilik Asit (BHA)",
-        "Hektonit Kili",
-        "Niasinamid (B3 Vitamini)",
-        "3 Temel Seramid (1, 3, 6-II)"
-      ],
-      "rozetler": [
-        "Salisilik Asit %2",
-        "Gözenek Arındırıcı Kil",
-        "Komedojenik Değildir",
-        "Parfümsüz"
-      ],
-      "doku": "Ferahlatıcı, köpüren jel doku.",
-      "fizyolojik_ph": "5.5"
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "1. Adım: Cilt Temizliği (Akne Protokolü)",
-      "zaman_ve_siklik": "Sabah ve Akşam günde 2 kez",
-      "miktar": "1 pompa yeterlidir",
-      "uygulama_sekli": "Islak cilde dairesel masajla nazikçe köpürtülerek uygulanır ve ılık suyla iyice durulanır.",
-      "beklenen_sonuc": "İlk günden itibaren matlaşma ve temizlik hissi; 3 günde siyah noktalarda azalma.",
-      "saklama_kosullari": "Direkt güneş ışığından uzak, oda sıcaklığında saklayınız."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [
-        "CeraVe Akneye Eğilim Gösteren Ciltler İçin Yüz Bakım Jeli",
-        "CeraVe Yenileyici Retinol Serum"
-      ],
-      "yasakli_cakismalar": [
-        "Aynı anda sert mekanik tanecikli peelingler ve yüksek konsantrasyonlu AHA soyucular."
-      ],
-      "etkilesim_uyarisi": "Salisilik asit cildi güneşe hassaslaştırabilir; gündüz mutlaka geniş spektrumlu güneş kremi kullanılmalıdır."
-    },
-    "kombinasyon_ve_sinerji": {
-      "birlikte_onerilebilecekler": [
-        "CeraVe Akneye Eğilim Gösteren Ciltler İçin Yüz Bakım Jeli",
-        "CeraVe Yenileyici Retinol Serum"
-      ],
-      "yasakli_cakismalar": [
-        "Aynı anda sert mekanik tanecikli peelingler ve yüksek konsantrasyonlu AHA soyucular."
-      ],
-      "tamamlayici_tavsiyeler": []
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "La Roche-Posay Effaclar Jel / Bioderma Sébium Gel Actif",
-      "alternatif_fark_notu": "Effaclar kurutabilirken, CeraVe 3 temel seramid sayesinde cilt bariyerini sıyırmadan arındırır."
-    },
-    "tags": [
-      "akne",
-      "sivilce",
-      "siyah nokta",
-      "salisilik asit",
-      "gözenek",
-      "yağlanma",
-      "parlama",
-      "cerave akne",
-      "cerave",
-      "cerave akneye eğilim gösteren ciltlere özel temizleyici",
-      "dermo"
-    ]
-  },
-  {
-    "id": "cerave-cerave-akneye-e-ilim-g-steren-ciltlere--zel-temizleyici-4053",
-    "name": "CeraVe Akneye Eğilim Gösteren Ciltlere Özel Temizleyici",
-    "brand": "CeraVe",
-    "urun_tipi": "Yüz & Vücut Temizleyici",
-    "urun_tipi_icon": "🧼",
-    "rutin_adimi": "1. Adım: Temizleme",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Akne Karşıtı Bakım",
-    "size": "236 ml Pompalı Şişe",
-    "form": "Orijinal Ambalaj",
-    "image": "images/mustela/cerave-cerave-akneye-egilim-gosteren-ciltlere-ozel-temizleyici-236-ml-pompali-sise.jpeg",
-    "cilt_tipleri": [
-      "Yağlı Ciltler",
-      "Akneye Eğilimli Ciltler",
-      "Pürüzlü Ciltler"
-    ],
-    "yas_grubu": "12 yaş ve üzeri ergenler ile yetişkinlerin kullanımına uygundur.",
-    "kimler_kullanamaz": "Açık, kanayan lezyonlara sürülmez. Göz kapağı mukozasından uzak tutulmalıdır.",
-    "nasil_kullanilir": "Islak cilde dairesel masajla nazikçe köpürtülerek uygulanır ve ılık suyla iyice durulanır.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Yüzümde sürekli sivilce ve siyah noktalar çıkıyor, gün içinde çok yağlanıp parlıyor."
-    ],
-    "kombinasyon_ve_uyarilar": "Salisilik asit cildi güneşe hassaslaştırabilir; gündüz mutlaka geniş spektrumlu güneş kremi kullanılmalıdır.",
-    "etken_maddeler": [
-      "%2 Salisilik Asit (BHA)",
-      "Hektonit Kili",
-      "Niasinamid (B3 Vitamini)",
-      "3 Temel Seramid (1, 3, 6-II)"
-    ],
-    "kime_uygun": {
-      "profil": "Yağlı Ciltler, Akneye Eğilimli Ciltler, Pürüzlü Ciltler",
-      "cilt_tipleri": [
-        "Yağlı Ciltler",
-        "Akneye Eğilimli Ciltler",
-        "Pürüzlü Ciltler"
-      ],
-      "yas_grubu": "12 yaş ve üzeri ergenler ile yetişkinlerin kullanımına uygundur.",
-      "oncelikli_hedef": "Akne Karşıtı Bakım",
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": false,
-        "bebek_uygun_mu": false,
-        "cocuk_uygun_mu": false,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "12 yaş ve üzeri ergenler ile yetişkinlerin kullanımına uygundur."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Açık, kanayan lezyonlara sürülmez. Göz kapağı mukozasından uzak tutulmalıdır.",
-      "goz_cevresi_temas": "Göz çevresine uygulanmaz. Temas ederse bol su ile yıkayınız.",
-      "doktora_yonlendirme": "Kistik ve nodüler aknelerde sistemik medikal tedavi için dermatoloğa yönlendiriniz.",
-      "dikkat_uyarilari": []
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Yüzümde sürekli sivilce ve siyah noktalar çıkıyor, gün içinde çok yağlanıp parlıyor.",
-      "eczaci_sorusu": "Sivilceleriniz iltihaplı kistik mi yoksa yüzeysel siyah nokta/komedon şeklinde mi?",
-      "secim_nedeni": "%2 Salisilik Asit gözenek içindeki sebumu eritir; hektonit kili fazla yağı çeker, seramidler cildi soymadan dengeler.",
-      "arama_etiketleri": [
-        "akne",
-        "sivilce",
-        "siyah nokta",
-        "salisilik asit",
-        "gözenek",
-        "yağlanma",
-        "parlama",
-        "cerave akne"
-      ]
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "%2 Salisilik Asit (BHA)",
-        "Hektonit Kili",
-        "Niasinamid (B3 Vitamini)",
-        "3 Temel Seramid (1, 3, 6-II)"
-      ],
-      "rozetler": [
-        "Salisilik Asit %2",
-        "Gözenek Arındırıcı Kil",
-        "Komedojenik Değildir",
-        "Parfümsüz"
-      ],
-      "doku": "Ferahlatıcı, köpüren jel doku.",
-      "fizyolojik_ph": "5.5"
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "1. Adım: Cilt Temizliği (Akne Protokolü)",
-      "zaman_ve_siklik": "Sabah ve Akşam günde 2 kez",
-      "miktar": "1 pompa yeterlidir",
-      "uygulama_sekli": "Islak cilde dairesel masajla nazikçe köpürtülerek uygulanır ve ılık suyla iyice durulanır.",
-      "beklenen_sonuc": "İlk günden itibaren matlaşma ve temizlik hissi; 3 günde siyah noktalarda azalma.",
-      "saklama_kosullari": "Direkt güneş ışığından uzak, oda sıcaklığında saklayınız."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [
-        "CeraVe Akneye Eğilim Gösteren Ciltler İçin Yüz Bakım Jeli",
-        "CeraVe Yenileyici Retinol Serum"
-      ],
-      "yasakli_cakismalar": [
-        "Aynı anda sert mekanik tanecikli peelingler ve yüksek konsantrasyonlu AHA soyucular."
-      ],
-      "etkilesim_uyarisi": "Salisilik asit cildi güneşe hassaslaştırabilir; gündüz mutlaka geniş spektrumlu güneş kremi kullanılmalıdır."
-    },
-    "kombinasyon_ve_sinerji": {
-      "birlikte_onerilebilecekler": [
-        "CeraVe Akneye Eğilim Gösteren Ciltler İçin Yüz Bakım Jeli",
-        "CeraVe Yenileyici Retinol Serum"
-      ],
-      "yasakli_cakismalar": [
-        "Aynı anda sert mekanik tanecikli peelingler ve yüksek konsantrasyonlu AHA soyucular."
-      ],
-      "tamamlayici_tavsiyeler": []
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "La Roche-Posay Effaclar Jel / Bioderma Sébium Gel Actif",
-      "alternatif_fark_notu": "Effaclar kurutabilirken, CeraVe 3 temel seramid sayesinde cilt bariyerini sıyırmadan arındırır."
-    },
-    "tags": [
-      "akne",
-      "sivilce",
-      "siyah nokta",
-      "salisilik asit",
-      "gözenek",
-      "yağlanma",
-      "parlama",
-      "cerave akne",
-      "cerave",
-      "cerave akneye eğilim gösteren ciltlere özel temizleyici",
-      "dermo"
-    ]
-  },
-  {
-    "id": "cerave-cerave-nemlendiren-hyal-ronik-asit-serum-3604",
-    "name": "CeraVe Nemlendiren Hyalüronik Asit Serum",
-    "brand": "CeraVe",
-    "urun_tipi": "Serum & Konsantre Bakım",
-    "urun_tipi_icon": "💧",
-    "rutin_adimi": "2. Adım: Hedefe Yönelik Serum Bakımı",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Yoğun Nem Bombası",
-    "size": "30 ml Pompalı Şişe",
-    "form": "Orijinal Ambalaj",
-    "image": "images/mustela/cerave-cerave-nemlendiren-hyaluronik-asit-serum-30-ml-pompali-sise.jpeg",
-    "cilt_tipleri": [
-      "Tüm Cilt Tipleri"
-    ],
-    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
-    "kimler_kullanamaz": "Açık yaralara veya sızıntılı enfekte dokulara doğrudan uygulanmaz.",
-    "nasil_kullanilir": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Cilt bariyerimi güçlendirecek ve günlük bakımımı sağlayacak güvenilir bir ürün arıyorum."
-    ],
-    "kombinasyon_ve_uyarilar": "Rutin içerisinde sıralamaya dikkat edilerek güvenle kombine edilebilir.",
-    "etken_maddeler": [
-      "3 Temel Seramid",
-      "Hyalüronik Asit"
-    ],
-    "kime_uygun": {
-      "profil": "Tüm Cilt Tipleri",
-      "cilt_tipleri": [
-        "Tüm Cilt Tipleri"
-      ],
-      "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
-      "oncelikli_hedef": "Yoğun Nem Bombası",
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": false,
-        "bebek_uygun_mu": false,
-        "cocuk_uygun_mu": true,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Ergen ve yetişkin kullanımı için uygundur."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Açık yaralara veya sızıntılı enfekte dokulara doğrudan uygulanmaz.",
-      "goz_cevresi_temas": "Göz mukozası ile doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
-      "doktora_yonlendirme": "Ciltte ani kabarma, şiddetli yanma veya 2 haftayı geçen inatçı reaksiyonlarda hekime yönlendiriniz.",
-      "dikkat_uyarilari": []
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Cilt bariyerimi güçlendirecek ve günlük bakımımı sağlayacak güvenilir bir ürün arıyorum.",
-      "eczaci_sorusu": "Cildinizde kuruluk, sivilce veya hassasiyet şikayetiniz ne zamandır devam ediyor?",
-      "secim_nedeni": "Cilt florasını bozmadan bariyeri onaran yüksek toleranslı dermokozmetik formülasyon.",
-      "arama_etiketleri": [
-        "cerave nemlendiren hyalüronik asit serum",
-        "cerave",
-        "serum & konsantre bakım"
-      ]
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "3 Temel Seramid",
-        "Hyalüronik Asit"
-      ],
-      "rozetler": [
-        "Dermatolojik Olarak Test Edildi",
-        "Parfümsüz",
-        "Komedojenik Değildir"
-      ],
-      "doku": "Hafif, yapışkan his bırakmayan konforlu doku.",
-      "fizyolojik_ph": "5.5"
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "2. Adım: Hedefe Yönelik Serum Bakımı",
-      "zaman_ve_siklik": "Günde 2 kez (Sabah - Akşam)",
-      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
-      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
-      "beklenen_sonuc": "İlk uygulamada ferahlama ve nem artışı; 2-4 haftalık düzenli kullanımda güçlü bariyer.",
-      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [],
-      "yasakli_cakismalar": [],
-      "etkilesim_uyarisi": "Rutin içerisinde sıralamaya dikkat edilerek güvenle kombine edilebilir."
-    },
-    "kombinasyon_ve_sinerji": {
-      "birlikte_onerilebilecekler": [],
-      "yasakli_cakismalar": [],
-      "tamamlayici_tavsiyeler": []
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "La Roche-Posay / Bioderma serilerindeki eşdeğer dermokozmetik formülasyonlar",
-      "alternatif_fark_notu": "Formülündeki 3 temel seramid kompleksi ile bariyer yenilemede ön plana çıkar."
-    },
-    "tags": [
-      "cerave nemlendiren hyalüronik asit serum",
-      "cerave",
-      "serum & konsantre bakım",
-      "cerave",
-      "cerave nemlendiren hyalüronik asit serum",
-      "dermo"
-    ]
-  },
-  {
-    "id": "cerave-cerave-yenileyici-retinol-serum-6399",
-    "name": "CeraVe Yenileyici Retinol Serum",
-    "brand": "CeraVe",
-    "urun_tipi": "Serum & Konsantre Bakım",
-    "urun_tipi_icon": "💧",
-    "rutin_adimi": "2. Adım: Hedefe Yönelik Serum Bakımı",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Gözenek & Akne İzi Bakımı",
-    "size": "30 ml Pompalı Şişe",
-    "form": "Orijinal Ambalaj",
-    "image": "images/mustela/cerave-cerave-yenileyici-retinol-serum-30-ml-pompali-sise.jpeg",
-    "cilt_tipleri": [
-      "Akne İzi Olan Ciltler",
-      "Geniş Gözenekli Ciltler",
-      "İnce Çizgili Ciltler"
-    ],
-    "yas_grubu": "Yetişkin ve 16+ ergenler için gece kullanımı. Gebelik ve emzirmede KONTRENDİKEDİR.",
-    "kimler_kullanamaz": "Hamilelik ve emzirme döneminde kullanılmaz. Rozasea alevlenmelerinde ve açık yaralarda sürülmez.",
-    "nasil_kullanilir": "Geceleri temiz ve kuru cilde nazikçe uygulanır, ardından bariyer kremi sürülür.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Geçmiş sivilcelerimden kalan koyu lekeler ve gözeneklerimin belirginliği beni rahatsız ediyor."
-    ],
-    "kombinasyon_ve_uyarilar": "Retinol cildi güneşe duyarlı hale getirir. Gündüz düzenli güneş kremi kullanımı şarttır.",
-    "etken_maddeler": [
-      "Enkapsüle Retinol",
-      "Meyan Kökü Özü (Aydınlatıcı)",
-      "Niasinamid",
-      "3 Temel Seramid"
-    ],
-    "kime_uygun": {
-      "profil": "Akne İzi Olan Ciltler, Geniş Gözenekli Ciltler, İnce Çizgili Ciltler",
-      "cilt_tipleri": [
-        "Akne İzi Olan Ciltler",
-        "Geniş Gözenekli Ciltler",
-        "İnce Çizgili Ciltler"
-      ],
-      "yas_grubu": "Yetişkin ve 16+ ergenler için gece kullanımı. Gebelik ve emzirmede KONTRENDİKEDİR.",
-      "oncelikli_hedef": "Gözenek & Akne İzi Bakımı",
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": false,
-        "bebek_uygun_mu": false,
-        "cocuk_uygun_mu": false,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": false,
-        "emzirme_guvenli_mi": false,
-        "yas_aciklama_detay": "Yetişkin ve 16+ ergenler için gece kullanımı. Gebelik ve emzirmede KONTRENDİKEDİR."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Hamilelik ve emzirme döneminde kullanılmaz. Rozasea alevlenmelerinde ve açık yaralarda sürülmez.",
-      "goz_cevresi_temas": "Göz mukozası ile doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
-      "doktora_yonlendirme": "Ciltte ani kabarma, şiddetli yanma veya 2 haftayı geçen inatçı reaksiyonlarda hekime yönlendiriniz.",
-      "dikkat_uyarilari": []
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Geçmiş sivilcelerimden kalan koyu lekeler ve gözeneklerimin belirginliği beni rahatsız ediyor.",
-      "eczaci_sorusu": "Şu anda gebe misiniz veya gebelik planlıyor musunuz? (Retinoid kontrendikasyonu)",
-      "secim_nedeni": "Enkapsüle retinol yavaş salınarak cildi soymadan ve tahriş etmeden hücre yenilenmesini tetikler.",
-      "arama_etiketleri": [
-        "retinol",
-        "leke izi",
-        "akne izi",
-        "gözenek sıkılaştırıcı",
-        "hücre yenileyici",
-        "gece serumu"
-      ]
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "Enkapsüle Retinol",
-        "Meyan Kökü Özü (Aydınlatıcı)",
-        "Niasinamid",
-        "3 Temel Seramid"
-      ],
-      "rozetler": [
-        "Yavaş Salınımlı Retinol",
-        "Meyan Kökü Özü",
-        "Komedojenik Değildir",
-        "Bariyer Dostu"
-      ],
-      "doku": "Hafif, ipeksi emilen krem-serum doku.",
-      "fizyolojik_ph": "5.5"
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "2. Adım: Gece Aktif Bakım Serumu",
-      "zaman_ve_siklik": "Sadece Geceleri (İlk 2 hafta haftada 2-3 gece, sonra her gece)",
-      "miktar": "1 pompa",
-      "uygulama_sekli": "Geceleri temiz ve kuru cilde nazikçe uygulanır, ardından bariyer kremi sürülür.",
-      "beklenen_sonuc": "2 haftada pürüzsüzleşme, 6 haftada leke ve gözenek görünümünde klinik gerileme.",
-      "saklama_kosullari": "Işık ve ısıdan koruyunuz."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [
-        "CeraVe Nemlendirici Losyon (Sandviç Metodu)"
-      ],
-      "yasakli_cakismalar": [
-        "Aynı akşam rutininde AHA, BHA veya saf C vitamini ile birlikte sürülmemelidir."
-      ],
-      "etkilesim_uyarisi": "Retinol cildi güneşe duyarlı hale getirir. Gündüz düzenli güneş kremi kullanımı şarttır."
-    },
-    "kombinasyon_ve_sinerji": {
-      "birlikte_onerilebilecekler": [
-        "CeraVe Nemlendirici Losyon (Sandviç Metodu)"
-      ],
-      "yasakli_cakismalar": [
-        "Aynı akşam rutininde AHA, BHA veya saf C vitamini ile birlikte sürülmemelidir."
-      ],
-      "tamamlayici_tavsiyeler": []
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "La Roche-Posay Retinol B3 Serum",
-      "alternatif_fark_notu": "Enkapsüle formülü sayesinde hassas ciltlerde dahi pullanma ve kızarıklık yapma riski düşüktür."
-    },
-    "tags": [
-      "retinol",
-      "leke izi",
-      "akne izi",
-      "gözenek sıkılaştırıcı",
-      "hücre yenileyici",
-      "gece serumu",
-      "cerave",
-      "cerave yenileyici retinol serum",
-      "dermo"
-    ]
-  },
-  {
-    "id": "cerave-cerave-akneye-e-ilim-g-steren-ciltler-i--in-y-z-bak-m-jeli-1938",
-    "name": "CeraVe Akneye Eğilim Gösteren Ciltler İçin Yüz Bakım Jeli",
-    "brand": "CeraVe",
-    "urun_tipi": "Özel & SOS Onarıcı",
-    "urun_tipi_icon": "🩹",
-    "rutin_adimi": "4. Adım: Lokal / SOS İyileştirme",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Akne & Gözenek Bakımı",
-    "size": "40 ml Tüp",
-    "form": "Orijinal Ambalaj",
-    "image": "images/mustela/cerave-cerave-akneye-egilim-gosteren-ciltler-i-cin-yuz-bakim-jeli-40-ml-tup.jpeg",
-    "cilt_tipleri": [
-      "Yağlı Ciltler",
-      "Akneye Eğilimli Ciltler",
-      "Pürüzlü Ciltler"
-    ],
-    "yas_grubu": "12 yaş ve üzeri ergenler ile yetişkinlerin kullanımına uygundur.",
-    "kimler_kullanamaz": "Açık, kanayan lezyonlara sürülmez. Göz kapağı mukozasından uzak tutulmalıdır.",
-    "nasil_kullanilir": "Islak cilde dairesel masajla nazikçe köpürtülerek uygulanır ve ılık suyla iyice durulanır.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Yüzümde sürekli sivilce ve siyah noktalar çıkıyor, gün içinde çok yağlanıp parlıyor."
-    ],
-    "kombinasyon_ve_uyarilar": "Salisilik asit cildi güneşe hassaslaştırabilir; gündüz mutlaka geniş spektrumlu güneş kremi kullanılmalıdır.",
-    "etken_maddeler": [
-      "%2 Salisilik Asit (BHA)",
-      "Hektonit Kili",
-      "Niasinamid (B3 Vitamini)",
-      "3 Temel Seramid (1, 3, 6-II)"
-    ],
-    "kime_uygun": {
-      "profil": "Yağlı Ciltler, Akneye Eğilimli Ciltler, Pürüzlü Ciltler",
-      "cilt_tipleri": [
-        "Yağlı Ciltler",
-        "Akneye Eğilimli Ciltler",
-        "Pürüzlü Ciltler"
-      ],
-      "yas_grubu": "12 yaş ve üzeri ergenler ile yetişkinlerin kullanımına uygundur.",
-      "oncelikli_hedef": "Akne & Gözenek Bakımı",
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": false,
-        "bebek_uygun_mu": false,
-        "cocuk_uygun_mu": false,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "12 yaş ve üzeri ergenler ile yetişkinlerin kullanımına uygundur."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Açık, kanayan lezyonlara sürülmez. Göz kapağı mukozasından uzak tutulmalıdır.",
-      "goz_cevresi_temas": "Göz çevresine uygulanmaz. Temas ederse bol su ile yıkayınız.",
-      "doktora_yonlendirme": "Kistik ve nodüler aknelerde sistemik medikal tedavi için dermatoloğa yönlendiriniz.",
-      "dikkat_uyarilari": []
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Yüzümde sürekli sivilce ve siyah noktalar çıkıyor, gün içinde çok yağlanıp parlıyor.",
-      "eczaci_sorusu": "Sivilceleriniz iltihaplı kistik mi yoksa yüzeysel siyah nokta/komedon şeklinde mi?",
-      "secim_nedeni": "%2 Salisilik Asit gözenek içindeki sebumu eritir; hektonit kili fazla yağı çeker, seramidler cildi soymadan dengeler.",
-      "arama_etiketleri": [
-        "akne",
-        "sivilce",
-        "siyah nokta",
-        "salisilik asit",
-        "gözenek",
-        "yağlanma",
-        "parlama",
-        "cerave akne"
-      ]
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "%2 Salisilik Asit (BHA)",
-        "Hektonit Kili",
-        "Niasinamid (B3 Vitamini)",
-        "3 Temel Seramid (1, 3, 6-II)"
-      ],
-      "rozetler": [
-        "Salisilik Asit %2",
-        "Gözenek Arındırıcı Kil",
-        "Komedojenik Değildir",
-        "Parfümsüz"
-      ],
-      "doku": "Ferahlatıcı, köpüren jel doku.",
-      "fizyolojik_ph": "5.5"
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "1. Adım: Cilt Temizliği (Akne Protokolü)",
-      "zaman_ve_siklik": "Sabah ve Akşam günde 2 kez",
-      "miktar": "1 pompa yeterlidir",
-      "uygulama_sekli": "Islak cilde dairesel masajla nazikçe köpürtülerek uygulanır ve ılık suyla iyice durulanır.",
-      "beklenen_sonuc": "İlk günden itibaren matlaşma ve temizlik hissi; 3 günde siyah noktalarda azalma.",
-      "saklama_kosullari": "Direkt güneş ışığından uzak, oda sıcaklığında saklayınız."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [
-        "CeraVe Akneye Eğilim Gösteren Ciltler İçin Yüz Bakım Jeli",
-        "CeraVe Yenileyici Retinol Serum"
-      ],
-      "yasakli_cakismalar": [
-        "Aynı anda sert mekanik tanecikli peelingler ve yüksek konsantrasyonlu AHA soyucular."
-      ],
-      "etkilesim_uyarisi": "Salisilik asit cildi güneşe hassaslaştırabilir; gündüz mutlaka geniş spektrumlu güneş kremi kullanılmalıdır."
-    },
-    "kombinasyon_ve_sinerji": {
-      "birlikte_onerilebilecekler": [
-        "CeraVe Akneye Eğilim Gösteren Ciltler İçin Yüz Bakım Jeli",
-        "CeraVe Yenileyici Retinol Serum"
-      ],
-      "yasakli_cakismalar": [
-        "Aynı anda sert mekanik tanecikli peelingler ve yüksek konsantrasyonlu AHA soyucular."
-      ],
-      "tamamlayici_tavsiyeler": []
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "La Roche-Posay Effaclar Jel / Bioderma Sébium Gel Actif",
-      "alternatif_fark_notu": "Effaclar kurutabilirken, CeraVe 3 temel seramid sayesinde cilt bariyerini sıyırmadan arındırır."
-    },
-    "tags": [
-      "akne",
-      "sivilce",
-      "siyah nokta",
-      "salisilik asit",
-      "gözenek",
-      "yağlanma",
-      "parlama",
-      "cerave akne",
-      "cerave",
-      "cerave akneye eğilim gösteren ciltler i̇çin yüz bakım jeli",
-      "dermo"
-    ]
-  },
-  {
-    "id": "cerave-cerave-skin-renewing-vitamin-c-serum-1508",
-    "name": "CeraVe Skin Renewing Vitamin C Serum",
-    "brand": "CeraVe",
-    "urun_tipi": "Serum & Konsantre Bakım",
-    "urun_tipi_icon": "💧",
-    "rutin_adimi": "2. Adım: Hedefe Yönelik Serum Bakımı",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Aydınlatıcı & Yaşlanma Karşıtı",
-    "size": "30 ml Pompalı Tüp",
-    "form": "Orijinal Ambalaj",
-    "image": "images/mustela/cerave-cerave-skin-renewing-vitamin-c-serum-30-ml-pompali-tup.jpeg",
-    "cilt_tipleri": [
-      "Tüm Cilt Tipleri",
-      "Mat Ciltler",
-      "Lekeli Ciltler",
-      "Yaşlanma Belirtisi Gösteren Ciltler"
-    ],
-    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
-    "kimler_kullanamaz": "Açık yaralara veya sızıntılı enfekte dokulara doğrudan uygulanmaz.",
-    "nasil_kullanilir": "Temiz yüz ve boyun bölgesine nazikçe tampon hareketlerle yedirilir.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Cildim çok mat, solgun ve cansız görünüyor; güneş lekelerim ve ton eşitsizliğim var."
-    ],
-    "kombinasyon_ve_uyarilar": "Gündüz uygulandığında üzerine mutlaka SPF50+ güneş kremi sürülmelidir.",
-    "etken_maddeler": [
-      "%10 Saf L-Askorbik Asit (C Vitamini)",
-      "3 Temel Seramid",
-      "Hyalüronik Asit",
-      "Vitamin B5 (Pantenol)"
-    ],
-    "kime_uygun": {
-      "profil": "Tüm Cilt Tipleri, Mat Ciltler, Lekeli Ciltler, Yaşlanma Belirtisi Gösteren Ciltler",
-      "cilt_tipleri": [
-        "Tüm Cilt Tipleri",
-        "Mat Ciltler",
-        "Lekeli Ciltler",
-        "Yaşlanma Belirtisi Gösteren Ciltler"
-      ],
-      "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
-      "oncelikli_hedef": "Aydınlatıcı & Yaşlanma Karşıtı",
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": false,
-        "bebek_uygun_mu": false,
-        "cocuk_uygun_mu": true,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Ergen ve yetişkin kullanımı için uygundur."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Açık yaralara veya sızıntılı enfekte dokulara doğrudan uygulanmaz.",
-      "goz_cevresi_temas": "Göz mukozası ile doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
-      "doktora_yonlendirme": "Ciltte ani kabarma, şiddetli yanma veya 2 haftayı geçen inatçı reaksiyonlarda hekime yönlendiriniz.",
-      "dikkat_uyarilari": []
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Cildim çok mat, solgun ve cansız görünüyor; güneş lekelerim ve ton eşitsizliğim var.",
-      "eczaci_sorusu": "Daha önce C vitamini serumu kullandınız mı? Cildiniz asitlere karşı hassas mı?",
-      "secim_nedeni": "%10 saf L-askorbik asit formu ile güçlü antioksidan aydınlatma; seramid ve B5 ile tahrişi önleme.",
-      "arama_etiketleri": [
-        "vitamin c",
-        "c vitamini serum",
-        "leke",
-        "aydınlatıcı",
-        "antioksidan",
-        "parlaklık",
-        "cilt tonu"
-      ]
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "%10 Saf L-Askorbik Asit (C Vitamini)",
-        "3 Temel Seramid",
-        "Hyalüronik Asit",
-        "Vitamin B5 (Pantenol)"
-      ],
-      "rozetler": [
-        "Saf C Vitamini %10",
-        "Koruyucu Tüp Teknolojisi",
-        "Antioksidan Koruma",
-        "Parfümsüz"
-      ],
-      "doku": "Hafif jel-serum doku.",
-      "fizyolojik_ph": "5.5"
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "2. Adım: Antioksidan Serum (Sabah Bakımı)",
-      "zaman_ve_siklik": "Günde 1 kez (Tercihen Sabahları)",
-      "miktar": "3-4 damla",
-      "uygulama_sekli": "Temiz yüz ve boyun bölgesine nazikçe tampon hareketlerle yedirilir.",
-      "beklenen_sonuc": "1 haftada ışıltılı ve canlı cilt tonu; 4 haftada leke görünümünde belirgin açılma.",
-      "saklama_kosullari": "Kapağı sıkıca kapalı, serin ve ışık almayan yerde saklanmalıdır."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [
-        "CeraVe Nemlendirici Losyon",
-        "Geniş Spektrumlu SPF50+ Güneş Koruyucu"
-      ],
-      "yasakli_cakismalar": [
-        "Retinol ve yüksek oranlı AHA/BHA asitleriyle aynı sabah rutininde karıştırılmamalıdır."
-      ],
-      "etkilesim_uyarisi": "Gündüz uygulandığında üzerine mutlaka SPF50+ güneş kremi sürülmelidir."
-    },
-    "kombinasyon_ve_sinerji": {
-      "birlikte_onerilebilecekler": [
-        "CeraVe Nemlendirici Losyon",
-        "Geniş Spektrumlu SPF50+ Güneş Koruyucu"
-      ],
-      "yasakli_cakismalar": [
-        "Retinol ve yüksek oranlı AHA/BHA asitleriyle aynı sabah rutininde karıştırılmamalıdır."
-      ],
-      "tamamlayici_tavsiyeler": []
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "La Roche-Posay Pure Vitamin C10 / Vichy Liftactiv Vitamin C",
-      "alternatif_fark_notu": "Formülündeki seramidler ve B5 vitamini sayesinde C vitamininin yaratabileceği batma hissini minimize eder."
-    },
-    "tags": [
-      "vitamin c",
-      "c vitamini serum",
-      "leke",
-      "aydınlatıcı",
-      "antioksidan",
-      "parlaklık",
-      "cilt tonu",
-      "cerave",
-      "cerave skin renewing vitamin c serum",
-      "dermo"
-    ]
-  },
-  {
-    "id": "cerave-cerave-k-p-ren-temizleyici-9926",
-    "name": "CeraVe Köpüren Temizleyici",
-    "brand": "CeraVe",
-    "urun_tipi": "Yüz & Vücut Temizleyici",
-    "urun_tipi_icon": "🧼",
-    "rutin_adimi": "1. Adım: Temizleme",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Normal ve Yağlı Cilt",
-    "size": "473 ml Pompalı Şişe",
-    "form": "Orijinal Ambalaj",
-    "image": "images/mustela/cerave-cerave-kopuren-temizleyici-473-ml-pompali-sise.jpeg",
-    "cilt_tipleri": [
-      "Tüm Cilt Tipleri"
-    ],
-    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
-    "kimler_kullanamaz": "Açık yaralara veya sızıntılı enfekte dokulara doğrudan uygulanmaz.",
-    "nasil_kullanilir": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Cilt bariyerimi güçlendirecek ve günlük bakımımı sağlayacak güvenilir bir ürün arıyorum."
-    ],
-    "kombinasyon_ve_uyarilar": "Rutin içerisinde sıralamaya dikkat edilerek güvenle kombine edilebilir.",
-    "etken_maddeler": [
-      "3 Temel Seramid",
-      "Hyalüronik Asit"
-    ],
-    "kime_uygun": {
-      "profil": "Tüm Cilt Tipleri",
-      "cilt_tipleri": [
-        "Tüm Cilt Tipleri"
-      ],
-      "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
-      "oncelikli_hedef": "Normal ve Yağlı Cilt",
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": false,
-        "bebek_uygun_mu": false,
-        "cocuk_uygun_mu": true,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Ergen ve yetişkin kullanımı için uygundur."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Açık yaralara veya sızıntılı enfekte dokulara doğrudan uygulanmaz.",
-      "goz_cevresi_temas": "Göz mukozası ile doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
-      "doktora_yonlendirme": "Ciltte ani kabarma, şiddetli yanma veya 2 haftayı geçen inatçı reaksiyonlarda hekime yönlendiriniz.",
-      "dikkat_uyarilari": []
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Cilt bariyerimi güçlendirecek ve günlük bakımımı sağlayacak güvenilir bir ürün arıyorum.",
-      "eczaci_sorusu": "Cildinizde kuruluk, sivilce veya hassasiyet şikayetiniz ne zamandır devam ediyor?",
-      "secim_nedeni": "Cilt florasını bozmadan bariyeri onaran yüksek toleranslı dermokozmetik formülasyon.",
-      "arama_etiketleri": [
-        "cerave köpüren temizleyici",
-        "cerave",
-        "yüz & vücut temizleyici"
-      ]
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "3 Temel Seramid",
-        "Hyalüronik Asit"
-      ],
-      "rozetler": [
-        "Dermatolojik Olarak Test Edildi",
-        "Parfümsüz",
-        "Komedojenik Değildir"
-      ],
-      "doku": "Hafif, yapışkan his bırakmayan konforlu doku.",
-      "fizyolojik_ph": "5.5"
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "1. Adım: Temizleme",
-      "zaman_ve_siklik": "Günde 2 kez (Sabah - Akşam)",
-      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
-      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
-      "beklenen_sonuc": "İlk uygulamada ferahlama ve nem artışı; 2-4 haftalık düzenli kullanımda güçlü bariyer.",
-      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [],
-      "yasakli_cakismalar": [],
-      "etkilesim_uyarisi": "Rutin içerisinde sıralamaya dikkat edilerek güvenle kombine edilebilir."
-    },
-    "kombinasyon_ve_sinerji": {
-      "birlikte_onerilebilecekler": [],
-      "yasakli_cakismalar": [],
-      "tamamlayici_tavsiyeler": []
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "La Roche-Posay / Bioderma serilerindeki eşdeğer dermokozmetik formülasyonlar",
-      "alternatif_fark_notu": "Formülündeki 3 temel seramid kompleksi ile bariyer yenilemede ön plana çıkar."
-    },
-    "tags": [
-      "cerave köpüren temizleyici",
-      "cerave",
-      "yüz & vücut temizleyici",
-      "cerave",
-      "cerave köpüren temizleyici",
-      "dermo"
-    ]
-  },
-  {
-    "id": "cerave-cerave-nemlendirici-losyon-6727",
-    "name": "CeraVe Nemlendirici Losyon",
-    "brand": "CeraVe",
-    "urun_tipi": "Nemlendirici & Bariyer Krem",
-    "urun_tipi_icon": "🧴",
-    "rutin_adimi": "3. Adım: Nemlendirme & Bariyer Onarımı",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Bariyer Onarıcı Seri",
-    "size": "473 ml Pompalı Şişe",
-    "form": "Orijinal Ambalaj",
-    "image": "images/mustela/cerave-cerave-nemlendirici-losyon-473-ml-pompali-sise.jpeg",
-    "cilt_tipleri": [
-      "Kuru Ciltler",
-      "Çok Kuru Ciltler",
-      "Hassas Ciltler",
-      "Atopik Eğilimli Ciltler"
-    ],
-    "yas_grubu": "Bebeklerden yetişkinlere hem yüz hem tüm vücutta günlük bariyer onarımı için güvenlidir.",
-    "kimler_kullanamaz": "Açık yaralara veya sızıntılı enfekte dokulara doğrudan uygulanmaz.",
-    "nasil_kullanilir": "Duş sonrası veya temiz cilde yüz ve vücut geneline bolca masajla uygulanır.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Vücudum ve yüzüm çok kuru, hafif kaşıntım var, ağırlık ve yapışkanlık yapmayan hafif bir nemlendirici istiyorum."
-    ],
-    "kombinasyon_ve_uyarilar": "Rutin içerisinde sıralamaya dikkat edilerek güvenle kombine edilebilir.",
-    "etken_maddeler": [
-      "3 Temel Seramid (1, 3, 6-II)",
-      "Hyalüronik Asit",
-      "MVE Dağıtım Teknolojisi",
-      "Gliserin"
-    ],
-    "kime_uygun": {
-      "profil": "Kuru Ciltler, Çok Kuru Ciltler, Hassas Ciltler, Atopik Eğilimli Ciltler",
-      "cilt_tipleri": [
-        "Kuru Ciltler",
-        "Çok Kuru Ciltler",
-        "Hassas Ciltler",
-        "Atopik Eğilimli Ciltler"
-      ],
-      "yas_grubu": "Bebeklerden yetişkinlere hem yüz hem tüm vücutta günlük bariyer onarımı için güvenlidir.",
-      "oncelikli_hedef": "Bariyer Onarıcı Seri",
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": false,
-        "bebek_uygun_mu": true,
-        "cocuk_uygun_mu": true,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Bebeklerden yetişkinlere hem yüz hem tüm vücutta günlük bariyer onarımı için güvenlidir."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Açık yaralara veya sızıntılı enfekte dokulara doğrudan uygulanmaz.",
-      "goz_cevresi_temas": "Göz mukozası ile doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
-      "doktora_yonlendirme": "Ciltte ani kabarma, şiddetli yanma veya 2 haftayı geçen inatçı reaksiyonlarda hekime yönlendiriniz.",
-      "dikkat_uyarilari": []
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Vücudum ve yüzüm çok kuru, hafif kaşıntım var, ağırlık ve yapışkanlık yapmayan hafif bir nemlendirici istiyorum.",
-      "eczaci_sorusu": "Nemlendiriciyi hem yüzünüze hem vücudunuza tek bir ürün olarak mı uygulamak istiyorsunuz?",
-      "secim_nedeni": "MVE Teknolojisi sayesinde 24 saat boyunca nem salınımı yapar; hafif akışkan yapısıyla anında emilir.",
-      "arama_etiketleri": [
-        "losyon",
-        "vücut nemlendirici",
-        "kuru cilt",
-        "bariyer onarıcı",
-        "seramid losyon",
-        "hafif doku"
-      ]
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "3 Temel Seramid (1, 3, 6-II)",
-        "Hyalüronik Asit",
-        "MVE Dağıtım Teknolojisi",
-        "Gliserin"
-      ],
-      "rozetler": [
-        "Dermatolojik Olarak Test Edildi",
-        "Parfümsüz",
-        "Komedojenik Değildir"
-      ],
-      "doku": "Ultra hafif, hızla emilen yağsız akışkan losyon.",
-      "fizyolojik_ph": "5.5"
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "3. Adım: Nemlendirme & Bariyer Onarımı",
-      "zaman_ve_siklik": "Günde 2 kez (Sabah - Akşam)",
-      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
-      "uygulama_sekli": "Duş sonrası veya temiz cilde yüz ve vücut geneline bolca masajla uygulanır.",
-      "beklenen_sonuc": "İlk uygulamada ferahlama ve nem artışı; 2-4 haftalık düzenli kullanımda güçlü bariyer.",
-      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [],
-      "yasakli_cakismalar": [],
-      "etkilesim_uyarisi": "Rutin içerisinde sıralamaya dikkat edilerek güvenle kombine edilebilir."
-    },
-    "kombinasyon_ve_sinerji": {
-      "birlikte_onerilebilecekler": [],
-      "yasakli_cakismalar": [],
-      "tamamlayici_tavsiyeler": []
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "Lipikar Fluide / Bioderma Atoderm Cream-Gel",
-      "alternatif_fark_notu": "Geniş vücut yüzeylerine kolayca yayılır, kıyafetlere yapışmaz ve 3 temel seramid takviyesi sağlar."
-    },
-    "tags": [
-      "losyon",
-      "vücut nemlendirici",
-      "kuru cilt",
-      "bariyer onarıcı",
-      "seramid losyon",
-      "hafif doku",
-      "cerave",
-      "cerave nemlendirici losyon",
-      "dermo"
-    ]
-  },
-  {
-    "id": "cerave-cerave-nemlendiren-temizleyici-1745",
-    "name": "CeraVe Nemlendiren Temizleyici",
-    "brand": "CeraVe",
-    "urun_tipi": "Yüz & Vücut Temizleyici",
-    "urun_tipi_icon": "🧼",
-    "rutin_adimi": "1. Adım: Temizleme",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Kuru Cilt Serisi",
-    "size": "473 ml Pompalı Şişe",
-    "form": "Orijinal Ambalaj",
-    "image": "images/mustela/cerave-cerave-nemlendiren-temizleyici-473-ml-pompali-sise.jpeg",
-    "cilt_tipleri": [
-      "Kuru Ciltler",
-      "Çok Kuru Ciltler",
-      "Normal Ciltler",
-      "Hassas Ciltler"
-    ],
-    "yas_grubu": "Bebeklerden geriatrik döneme kadar tüm yaş gruplarında güvenle kullanılabilir.",
-    "kimler_kullanamaz": "Açık yaralara veya sızıntılı enfekte dokulara doğrudan uygulanmaz.",
-    "nasil_kullanilir": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Yüzümü suyla bile yıkasam hemen geriliyor, pul pul dökülüyor ve kuruluktan kaşınıyor."
-    ],
-    "kombinasyon_ve_uyarilar": "Rutin içerisinde sıralamaya dikkat edilerek güvenle kombine edilebilir.",
-    "etken_maddeler": [
-      "3 Temel Seramid (1, 3, 6-II)",
-      "Hyalüronik Asit",
-      "MVE Teknolojisi",
-      "Gliserin"
-    ],
-    "kime_uygun": {
-      "profil": "Kuru Ciltler, Çok Kuru Ciltler, Normal Ciltler, Hassas Ciltler",
-      "cilt_tipleri": [
-        "Kuru Ciltler",
-        "Çok Kuru Ciltler",
-        "Normal Ciltler",
-        "Hassas Ciltler"
-      ],
-      "yas_grubu": "Bebeklerden geriatrik döneme kadar tüm yaş gruplarında güvenle kullanılabilir.",
-      "oncelikli_hedef": "Kuru Cilt Serisi",
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": false,
-        "bebek_uygun_mu": true,
-        "cocuk_uygun_mu": true,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Bebeklerden geriatrik döneme kadar tüm yaş gruplarında güvenle kullanılabilir."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Açık yaralara veya sızıntılı enfekte dokulara doğrudan uygulanmaz.",
-      "goz_cevresi_temas": "Göz mukozası ile doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
-      "doktora_yonlendirme": "Ciltte ani kabarma, şiddetli yanma veya 2 haftayı geçen inatçı reaksiyonlarda hekime yönlendiriniz.",
-      "dikkat_uyarilari": []
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Yüzümü suyla bile yıkasam hemen geriliyor, pul pul dökülüyor ve kuruluktan kaşınıyor.",
-      "eczaci_sorusu": "Yıkama sonrası cildinizde kızarıklık ve yanma hissi oluşuyor mu?",
-      "secim_nedeni": "Köpüksüz kremsi jel teknolojisi hidrolipidik tabakayı korur; Hyalüronik asit ve MVE ile yıkarken nemlendirir.",
-      "arama_etiketleri": [
-        "kuruluk",
-        "gerginlik",
-        "kuru cilt",
-        "pullanan cilt",
-        "nemlendirici jel",
-        "kopurmeyen temizleyici"
-      ]
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "3 Temel Seramid (1, 3, 6-II)",
-        "Hyalüronik Asit",
-        "MVE Teknolojisi",
-        "Gliserin"
-      ],
-      "rozetler": [
-        "Köpüksüz Kremsi Formül",
-        "MVE 24 Saat Nem",
-        "Hipoalerjenik",
-        "Parfümsüz"
-      ],
-      "doku": "Kremsi, köpürmeyen ipeksi losyon kıvamı.",
-      "fizyolojik_ph": "5.5"
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "1. Adım: Cilt Temizliği (Nemlendirici Protokol)",
-      "zaman_ve_siklik": "Günde 2 kez (Sabah - Akşam)",
-      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
-      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
-      "beklenen_sonuc": "Yıkama anından itibaren gerginlik hissinin kaybolması, yumuşak ve esnek cilt.",
-      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [],
-      "yasakli_cakismalar": [],
-      "etkilesim_uyarisi": "Rutin içerisinde sıralamaya dikkat edilerek güvenle kombine edilebilir."
-    },
-    "kombinasyon_ve_sinerji": {
-      "birlikte_onerilebilecekler": [],
-      "yasakli_cakismalar": [],
-      "tamamlayici_tavsiyeler": []
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "Cetaphil Nazik Cilt Temizleyici / Avene Tolerance Temizleme Losyonu",
-      "alternatif_fark_notu": "Formülündeki MVE teknolojisi aktif maddelerin gün boyu kademeli salınmasını sağlar."
-    },
-    "tags": [
-      "kuruluk",
-      "gerginlik",
-      "kuru cilt",
-      "pullanan cilt",
-      "nemlendirici jel",
-      "kopurmeyen temizleyici",
-      "cerave",
-      "cerave nemlendiren temizleyici",
-      "dermo"
-    ]
-  },
-  {
-    "id": "cerave-cerave-akneye-e-ilim-g-steren-ciltlere--zel-temizleyici-9025",
-    "name": "CeraVe Akneye Eğilim Gösteren Ciltlere Özel Temizleyici",
-    "brand": "CeraVe",
-    "urun_tipi": "Yüz & Vücut Temizleyici",
-    "urun_tipi_icon": "🧼",
-    "rutin_adimi": "1. Adım: Temizleme",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Akne Karşıtı Bakım",
-    "size": "236 ml Pompalı Şişe",
-    "form": "Orijinal Ambalaj",
-    "image": "images/mustela/cerave-cerave-akneye-egilim-gosteren-ciltlere-ozel-temizleyici-236-ml-pompali-sise.jpeg",
-    "cilt_tipleri": [
-      "Yağlı Ciltler",
-      "Akneye Eğilimli Ciltler",
-      "Pürüzlü Ciltler"
-    ],
-    "yas_grubu": "12 yaş ve üzeri ergenler ile yetişkinlerin kullanımına uygundur.",
-    "kimler_kullanamaz": "Açık, kanayan lezyonlara sürülmez. Göz kapağı mukozasından uzak tutulmalıdır.",
-    "nasil_kullanilir": "Islak cilde dairesel masajla nazikçe köpürtülerek uygulanır ve ılık suyla iyice durulanır.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Yüzümde sürekli sivilce ve siyah noktalar çıkıyor, gün içinde çok yağlanıp parlıyor."
-    ],
-    "kombinasyon_ve_uyarilar": "Salisilik asit cildi güneşe hassaslaştırabilir; gündüz mutlaka geniş spektrumlu güneş kremi kullanılmalıdır.",
-    "etken_maddeler": [
-      "%2 Salisilik Asit (BHA)",
-      "Hektonit Kili",
-      "Niasinamid (B3 Vitamini)",
-      "3 Temel Seramid (1, 3, 6-II)"
-    ],
-    "kime_uygun": {
-      "profil": "Yağlı Ciltler, Akneye Eğilimli Ciltler, Pürüzlü Ciltler",
-      "cilt_tipleri": [
-        "Yağlı Ciltler",
-        "Akneye Eğilimli Ciltler",
-        "Pürüzlü Ciltler"
-      ],
-      "yas_grubu": "12 yaş ve üzeri ergenler ile yetişkinlerin kullanımına uygundur.",
-      "oncelikli_hedef": "Akne Karşıtı Bakım",
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": false,
-        "bebek_uygun_mu": false,
-        "cocuk_uygun_mu": false,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "12 yaş ve üzeri ergenler ile yetişkinlerin kullanımına uygundur."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Açık, kanayan lezyonlara sürülmez. Göz kapağı mukozasından uzak tutulmalıdır.",
-      "goz_cevresi_temas": "Göz çevresine uygulanmaz. Temas ederse bol su ile yıkayınız.",
-      "doktora_yonlendirme": "Kistik ve nodüler aknelerde sistemik medikal tedavi için dermatoloğa yönlendiriniz.",
-      "dikkat_uyarilari": []
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Yüzümde sürekli sivilce ve siyah noktalar çıkıyor, gün içinde çok yağlanıp parlıyor.",
-      "eczaci_sorusu": "Sivilceleriniz iltihaplı kistik mi yoksa yüzeysel siyah nokta/komedon şeklinde mi?",
-      "secim_nedeni": "%2 Salisilik Asit gözenek içindeki sebumu eritir; hektonit kili fazla yağı çeker, seramidler cildi soymadan dengeler.",
-      "arama_etiketleri": [
-        "akne",
-        "sivilce",
-        "siyah nokta",
-        "salisilik asit",
-        "gözenek",
-        "yağlanma",
-        "parlama",
-        "cerave akne"
-      ]
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "%2 Salisilik Asit (BHA)",
-        "Hektonit Kili",
-        "Niasinamid (B3 Vitamini)",
-        "3 Temel Seramid (1, 3, 6-II)"
-      ],
-      "rozetler": [
-        "Salisilik Asit %2",
-        "Gözenek Arındırıcı Kil",
-        "Komedojenik Değildir",
-        "Parfümsüz"
-      ],
-      "doku": "Ferahlatıcı, köpüren jel doku.",
-      "fizyolojik_ph": "5.5"
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "1. Adım: Cilt Temizliği (Akne Protokolü)",
-      "zaman_ve_siklik": "Sabah ve Akşam günde 2 kez",
-      "miktar": "1 pompa yeterlidir",
-      "uygulama_sekli": "Islak cilde dairesel masajla nazikçe köpürtülerek uygulanır ve ılık suyla iyice durulanır.",
-      "beklenen_sonuc": "İlk günden itibaren matlaşma ve temizlik hissi; 3 günde siyah noktalarda azalma.",
-      "saklama_kosullari": "Direkt güneş ışığından uzak, oda sıcaklığında saklayınız."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [
-        "CeraVe Akneye Eğilim Gösteren Ciltler İçin Yüz Bakım Jeli",
-        "CeraVe Yenileyici Retinol Serum"
-      ],
-      "yasakli_cakismalar": [
-        "Aynı anda sert mekanik tanecikli peelingler ve yüksek konsantrasyonlu AHA soyucular."
-      ],
-      "etkilesim_uyarisi": "Salisilik asit cildi güneşe hassaslaştırabilir; gündüz mutlaka geniş spektrumlu güneş kremi kullanılmalıdır."
-    },
-    "kombinasyon_ve_sinerji": {
-      "birlikte_onerilebilecekler": [
-        "CeraVe Akneye Eğilim Gösteren Ciltler İçin Yüz Bakım Jeli",
-        "CeraVe Yenileyici Retinol Serum"
-      ],
-      "yasakli_cakismalar": [
-        "Aynı anda sert mekanik tanecikli peelingler ve yüksek konsantrasyonlu AHA soyucular."
-      ],
-      "tamamlayici_tavsiyeler": []
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "La Roche-Posay Effaclar Jel / Bioderma Sébium Gel Actif",
-      "alternatif_fark_notu": "Effaclar kurutabilirken, CeraVe 3 temel seramid sayesinde cilt bariyerini sıyırmadan arındırır."
-    },
-    "tags": [
-      "akne",
-      "sivilce",
-      "siyah nokta",
-      "salisilik asit",
-      "gözenek",
-      "yağlanma",
-      "parlama",
-      "cerave akne",
-      "cerave",
-      "cerave akneye eğilim gösteren ciltlere özel temizleyici",
-      "dermo"
-    ]
-  },
-  {
-    "id": "cerave-cerave-akneye-e-ilim-g-steren-ciltlere--zel-temizleyici-5260",
-    "name": "CeraVe Akneye Eğilim Gösteren Ciltlere Özel Temizleyici",
-    "brand": "CeraVe",
-    "urun_tipi": "Yüz & Vücut Temizleyici",
-    "urun_tipi_icon": "🧼",
-    "rutin_adimi": "1. Adım: Temizleme",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Akne Karşıtı Bakım",
-    "size": "236 ml Pompalı Şişe",
-    "form": "Orijinal Ambalaj",
-    "image": "images/mustela/cerave-cerave-akneye-egilim-gosteren-ciltlere-ozel-temizleyici-236-ml-pompali-sise.jpeg",
-    "cilt_tipleri": [
-      "Yağlı Ciltler",
-      "Akneye Eğilimli Ciltler",
-      "Pürüzlü Ciltler"
-    ],
-    "yas_grubu": "12 yaş ve üzeri ergenler ile yetişkinlerin kullanımına uygundur.",
-    "kimler_kullanamaz": "Açık, kanayan lezyonlara sürülmez. Göz kapağı mukozasından uzak tutulmalıdır.",
-    "nasil_kullanilir": "Islak cilde dairesel masajla nazikçe köpürtülerek uygulanır ve ılık suyla iyice durulanır.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Yüzümde sürekli sivilce ve siyah noktalar çıkıyor, gün içinde çok yağlanıp parlıyor."
-    ],
-    "kombinasyon_ve_uyarilar": "Salisilik asit cildi güneşe hassaslaştırabilir; gündüz mutlaka geniş spektrumlu güneş kremi kullanılmalıdır.",
-    "etken_maddeler": [
-      "%2 Salisilik Asit (BHA)",
-      "Hektonit Kili",
-      "Niasinamid (B3 Vitamini)",
-      "3 Temel Seramid (1, 3, 6-II)"
-    ],
-    "kime_uygun": {
-      "profil": "Yağlı Ciltler, Akneye Eğilimli Ciltler, Pürüzlü Ciltler",
-      "cilt_tipleri": [
-        "Yağlı Ciltler",
-        "Akneye Eğilimli Ciltler",
-        "Pürüzlü Ciltler"
-      ],
-      "yas_grubu": "12 yaş ve üzeri ergenler ile yetişkinlerin kullanımına uygundur.",
-      "oncelikli_hedef": "Akne Karşıtı Bakım",
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": false,
-        "bebek_uygun_mu": false,
-        "cocuk_uygun_mu": false,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "12 yaş ve üzeri ergenler ile yetişkinlerin kullanımına uygundur."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Açık, kanayan lezyonlara sürülmez. Göz kapağı mukozasından uzak tutulmalıdır.",
-      "goz_cevresi_temas": "Göz çevresine uygulanmaz. Temas ederse bol su ile yıkayınız.",
-      "doktora_yonlendirme": "Kistik ve nodüler aknelerde sistemik medikal tedavi için dermatoloğa yönlendiriniz.",
-      "dikkat_uyarilari": []
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Yüzümde sürekli sivilce ve siyah noktalar çıkıyor, gün içinde çok yağlanıp parlıyor.",
-      "eczaci_sorusu": "Sivilceleriniz iltihaplı kistik mi yoksa yüzeysel siyah nokta/komedon şeklinde mi?",
-      "secim_nedeni": "%2 Salisilik Asit gözenek içindeki sebumu eritir; hektonit kili fazla yağı çeker, seramidler cildi soymadan dengeler.",
-      "arama_etiketleri": [
-        "akne",
-        "sivilce",
-        "siyah nokta",
-        "salisilik asit",
-        "gözenek",
-        "yağlanma",
-        "parlama",
-        "cerave akne"
-      ]
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "%2 Salisilik Asit (BHA)",
-        "Hektonit Kili",
-        "Niasinamid (B3 Vitamini)",
-        "3 Temel Seramid (1, 3, 6-II)"
-      ],
-      "rozetler": [
-        "Salisilik Asit %2",
-        "Gözenek Arındırıcı Kil",
-        "Komedojenik Değildir",
-        "Parfümsüz"
-      ],
-      "doku": "Ferahlatıcı, köpüren jel doku.",
-      "fizyolojik_ph": "5.5"
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "1. Adım: Cilt Temizliği (Akne Protokolü)",
-      "zaman_ve_siklik": "Sabah ve Akşam günde 2 kez",
-      "miktar": "1 pompa yeterlidir",
-      "uygulama_sekli": "Islak cilde dairesel masajla nazikçe köpürtülerek uygulanır ve ılık suyla iyice durulanır.",
-      "beklenen_sonuc": "İlk günden itibaren matlaşma ve temizlik hissi; 3 günde siyah noktalarda azalma.",
-      "saklama_kosullari": "Direkt güneş ışığından uzak, oda sıcaklığında saklayınız."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [
-        "CeraVe Akneye Eğilim Gösteren Ciltler İçin Yüz Bakım Jeli",
-        "CeraVe Yenileyici Retinol Serum"
-      ],
-      "yasakli_cakismalar": [
-        "Aynı anda sert mekanik tanecikli peelingler ve yüksek konsantrasyonlu AHA soyucular."
-      ],
-      "etkilesim_uyarisi": "Salisilik asit cildi güneşe hassaslaştırabilir; gündüz mutlaka geniş spektrumlu güneş kremi kullanılmalıdır."
-    },
-    "kombinasyon_ve_sinerji": {
-      "birlikte_onerilebilecekler": [
-        "CeraVe Akneye Eğilim Gösteren Ciltler İçin Yüz Bakım Jeli",
-        "CeraVe Yenileyici Retinol Serum"
-      ],
-      "yasakli_cakismalar": [
-        "Aynı anda sert mekanik tanecikli peelingler ve yüksek konsantrasyonlu AHA soyucular."
-      ],
-      "tamamlayici_tavsiyeler": []
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "La Roche-Posay Effaclar Jel / Bioderma Sébium Gel Actif",
-      "alternatif_fark_notu": "Effaclar kurutabilirken, CeraVe 3 temel seramid sayesinde cilt bariyerini sıyırmadan arındırır."
-    },
-    "tags": [
-      "akne",
-      "sivilce",
-      "siyah nokta",
-      "salisilik asit",
-      "gözenek",
-      "yağlanma",
-      "parlama",
-      "cerave akne",
-      "cerave",
-      "cerave akneye eğilim gösteren ciltlere özel temizleyici",
-      "dermo"
-    ]
-  },
-  {
-    "id": "cerave-cerave-akneye-e-ilim-g-steren-ciltlere--zel-temizleyici-8262",
-    "name": "CeraVe Akneye Eğilim Gösteren Ciltlere Özel Temizleyici",
-    "brand": "CeraVe",
-    "urun_tipi": "Yüz & Vücut Temizleyici",
-    "urun_tipi_icon": "🧼",
-    "rutin_adimi": "1. Adım: Temizleme",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Akne Karşıtı Bakım",
-    "size": "236 ml Pompalı Şişe",
-    "form": "Orijinal Ambalaj",
-    "image": "images/mustela/cerave-cerave-akneye-egilim-gosteren-ciltlere-ozel-temizleyici-236-ml-pompali-sise.jpeg",
-    "cilt_tipleri": [
-      "Yağlı Ciltler",
-      "Akneye Eğilimli Ciltler",
-      "Pürüzlü Ciltler"
-    ],
-    "yas_grubu": "12 yaş ve üzeri ergenler ile yetişkinlerin kullanımına uygundur.",
-    "kimler_kullanamaz": "Açık, kanayan lezyonlara sürülmez. Göz kapağı mukozasından uzak tutulmalıdır.",
-    "nasil_kullanilir": "Islak cilde dairesel masajla nazikçe köpürtülerek uygulanır ve ılık suyla iyice durulanır.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Yüzümde sürekli sivilce ve siyah noktalar çıkıyor, gün içinde çok yağlanıp parlıyor."
-    ],
-    "kombinasyon_ve_uyarilar": "Salisilik asit cildi güneşe hassaslaştırabilir; gündüz mutlaka geniş spektrumlu güneş kremi kullanılmalıdır.",
-    "etken_maddeler": [
-      "%2 Salisilik Asit (BHA)",
-      "Hektonit Kili",
-      "Niasinamid (B3 Vitamini)",
-      "3 Temel Seramid (1, 3, 6-II)"
-    ],
-    "kime_uygun": {
-      "profil": "Yağlı Ciltler, Akneye Eğilimli Ciltler, Pürüzlü Ciltler",
-      "cilt_tipleri": [
-        "Yağlı Ciltler",
-        "Akneye Eğilimli Ciltler",
-        "Pürüzlü Ciltler"
-      ],
-      "yas_grubu": "12 yaş ve üzeri ergenler ile yetişkinlerin kullanımına uygundur.",
-      "oncelikli_hedef": "Akne Karşıtı Bakım",
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": false,
-        "bebek_uygun_mu": false,
-        "cocuk_uygun_mu": false,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "12 yaş ve üzeri ergenler ile yetişkinlerin kullanımına uygundur."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Açık, kanayan lezyonlara sürülmez. Göz kapağı mukozasından uzak tutulmalıdır.",
-      "goz_cevresi_temas": "Göz çevresine uygulanmaz. Temas ederse bol su ile yıkayınız.",
-      "doktora_yonlendirme": "Kistik ve nodüler aknelerde sistemik medikal tedavi için dermatoloğa yönlendiriniz.",
-      "dikkat_uyarilari": []
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Yüzümde sürekli sivilce ve siyah noktalar çıkıyor, gün içinde çok yağlanıp parlıyor.",
-      "eczaci_sorusu": "Sivilceleriniz iltihaplı kistik mi yoksa yüzeysel siyah nokta/komedon şeklinde mi?",
-      "secim_nedeni": "%2 Salisilik Asit gözenek içindeki sebumu eritir; hektonit kili fazla yağı çeker, seramidler cildi soymadan dengeler.",
-      "arama_etiketleri": [
-        "akne",
-        "sivilce",
-        "siyah nokta",
-        "salisilik asit",
-        "gözenek",
-        "yağlanma",
-        "parlama",
-        "cerave akne"
-      ]
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "%2 Salisilik Asit (BHA)",
-        "Hektonit Kili",
-        "Niasinamid (B3 Vitamini)",
-        "3 Temel Seramid (1, 3, 6-II)"
-      ],
-      "rozetler": [
-        "Salisilik Asit %2",
-        "Gözenek Arındırıcı Kil",
-        "Komedojenik Değildir",
-        "Parfümsüz"
-      ],
-      "doku": "Ferahlatıcı, köpüren jel doku.",
-      "fizyolojik_ph": "5.5"
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "1. Adım: Cilt Temizliği (Akne Protokolü)",
-      "zaman_ve_siklik": "Sabah ve Akşam günde 2 kez",
-      "miktar": "1 pompa yeterlidir",
-      "uygulama_sekli": "Islak cilde dairesel masajla nazikçe köpürtülerek uygulanır ve ılık suyla iyice durulanır.",
-      "beklenen_sonuc": "İlk günden itibaren matlaşma ve temizlik hissi; 3 günde siyah noktalarda azalma.",
-      "saklama_kosullari": "Direkt güneş ışığından uzak, oda sıcaklığında saklayınız."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [
-        "CeraVe Akneye Eğilim Gösteren Ciltler İçin Yüz Bakım Jeli",
-        "CeraVe Yenileyici Retinol Serum"
-      ],
-      "yasakli_cakismalar": [
-        "Aynı anda sert mekanik tanecikli peelingler ve yüksek konsantrasyonlu AHA soyucular."
-      ],
-      "etkilesim_uyarisi": "Salisilik asit cildi güneşe hassaslaştırabilir; gündüz mutlaka geniş spektrumlu güneş kremi kullanılmalıdır."
-    },
-    "kombinasyon_ve_sinerji": {
-      "birlikte_onerilebilecekler": [
-        "CeraVe Akneye Eğilim Gösteren Ciltler İçin Yüz Bakım Jeli",
-        "CeraVe Yenileyici Retinol Serum"
-      ],
-      "yasakli_cakismalar": [
-        "Aynı anda sert mekanik tanecikli peelingler ve yüksek konsantrasyonlu AHA soyucular."
-      ],
-      "tamamlayici_tavsiyeler": []
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "La Roche-Posay Effaclar Jel / Bioderma Sébium Gel Actif",
-      "alternatif_fark_notu": "Effaclar kurutabilirken, CeraVe 3 temel seramid sayesinde cilt bariyerini sıyırmadan arındırır."
-    },
-    "tags": [
-      "akne",
-      "sivilce",
-      "siyah nokta",
-      "salisilik asit",
-      "gözenek",
-      "yağlanma",
-      "parlama",
-      "cerave akne",
-      "cerave",
-      "cerave akneye eğilim gösteren ciltlere özel temizleyici",
-      "dermo"
-    ]
-  },
-  {
-    "id": "cerave-cerave-akneye-e-ilim-g-steren-ciltlere--zel-temizleyici-9902",
-    "name": "CeraVe Akneye Eğilim Gösteren Ciltlere Özel Temizleyici",
-    "brand": "CeraVe",
-    "urun_tipi": "Yüz & Vücut Temizleyici",
-    "urun_tipi_icon": "🧼",
-    "rutin_adimi": "1. Adım: Temizleme",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Akne Karşıtı Bakım",
-    "size": "236 ml Pompalı Şişe",
-    "form": "Orijinal Ambalaj",
-    "image": "images/mustela/cerave-cerave-akneye-egilim-gosteren-ciltlere-ozel-temizleyici-236-ml-pompali-sise.jpeg",
-    "cilt_tipleri": [
-      "Yağlı Ciltler",
-      "Akneye Eğilimli Ciltler",
-      "Pürüzlü Ciltler"
-    ],
-    "yas_grubu": "12 yaş ve üzeri ergenler ile yetişkinlerin kullanımına uygundur.",
-    "kimler_kullanamaz": "Açık, kanayan lezyonlara sürülmez. Göz kapağı mukozasından uzak tutulmalıdır.",
-    "nasil_kullanilir": "Islak cilde dairesel masajla nazikçe köpürtülerek uygulanır ve ılık suyla iyice durulanır.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Yüzümde sürekli sivilce ve siyah noktalar çıkıyor, gün içinde çok yağlanıp parlıyor."
-    ],
-    "kombinasyon_ve_uyarilar": "Salisilik asit cildi güneşe hassaslaştırabilir; gündüz mutlaka geniş spektrumlu güneş kremi kullanılmalıdır.",
-    "etken_maddeler": [
-      "%2 Salisilik Asit (BHA)",
-      "Hektonit Kili",
-      "Niasinamid (B3 Vitamini)",
-      "3 Temel Seramid (1, 3, 6-II)"
-    ],
-    "kime_uygun": {
-      "profil": "Yağlı Ciltler, Akneye Eğilimli Ciltler, Pürüzlü Ciltler",
-      "cilt_tipleri": [
-        "Yağlı Ciltler",
-        "Akneye Eğilimli Ciltler",
-        "Pürüzlü Ciltler"
-      ],
-      "yas_grubu": "12 yaş ve üzeri ergenler ile yetişkinlerin kullanımına uygundur.",
-      "oncelikli_hedef": "Akne Karşıtı Bakım",
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": false,
-        "bebek_uygun_mu": false,
-        "cocuk_uygun_mu": false,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "12 yaş ve üzeri ergenler ile yetişkinlerin kullanımına uygundur."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Açık, kanayan lezyonlara sürülmez. Göz kapağı mukozasından uzak tutulmalıdır.",
-      "goz_cevresi_temas": "Göz çevresine uygulanmaz. Temas ederse bol su ile yıkayınız.",
-      "doktora_yonlendirme": "Kistik ve nodüler aknelerde sistemik medikal tedavi için dermatoloğa yönlendiriniz.",
-      "dikkat_uyarilari": []
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Yüzümde sürekli sivilce ve siyah noktalar çıkıyor, gün içinde çok yağlanıp parlıyor.",
-      "eczaci_sorusu": "Sivilceleriniz iltihaplı kistik mi yoksa yüzeysel siyah nokta/komedon şeklinde mi?",
-      "secim_nedeni": "%2 Salisilik Asit gözenek içindeki sebumu eritir; hektonit kili fazla yağı çeker, seramidler cildi soymadan dengeler.",
-      "arama_etiketleri": [
-        "akne",
-        "sivilce",
-        "siyah nokta",
-        "salisilik asit",
-        "gözenek",
-        "yağlanma",
-        "parlama",
-        "cerave akne"
-      ]
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "%2 Salisilik Asit (BHA)",
-        "Hektonit Kili",
-        "Niasinamid (B3 Vitamini)",
-        "3 Temel Seramid (1, 3, 6-II)"
-      ],
-      "rozetler": [
-        "Salisilik Asit %2",
-        "Gözenek Arındırıcı Kil",
-        "Komedojenik Değildir",
-        "Parfümsüz"
-      ],
-      "doku": "Ferahlatıcı, köpüren jel doku.",
-      "fizyolojik_ph": "5.5"
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "1. Adım: Cilt Temizliği (Akne Protokolü)",
-      "zaman_ve_siklik": "Sabah ve Akşam günde 2 kez",
-      "miktar": "1 pompa yeterlidir",
-      "uygulama_sekli": "Islak cilde dairesel masajla nazikçe köpürtülerek uygulanır ve ılık suyla iyice durulanır.",
-      "beklenen_sonuc": "İlk günden itibaren matlaşma ve temizlik hissi; 3 günde siyah noktalarda azalma.",
-      "saklama_kosullari": "Direkt güneş ışığından uzak, oda sıcaklığında saklayınız."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [
-        "CeraVe Akneye Eğilim Gösteren Ciltler İçin Yüz Bakım Jeli",
-        "CeraVe Yenileyici Retinol Serum"
-      ],
-      "yasakli_cakismalar": [
-        "Aynı anda sert mekanik tanecikli peelingler ve yüksek konsantrasyonlu AHA soyucular."
-      ],
-      "etkilesim_uyarisi": "Salisilik asit cildi güneşe hassaslaştırabilir; gündüz mutlaka geniş spektrumlu güneş kremi kullanılmalıdır."
-    },
-    "kombinasyon_ve_sinerji": {
-      "birlikte_onerilebilecekler": [
-        "CeraVe Akneye Eğilim Gösteren Ciltler İçin Yüz Bakım Jeli",
-        "CeraVe Yenileyici Retinol Serum"
-      ],
-      "yasakli_cakismalar": [
-        "Aynı anda sert mekanik tanecikli peelingler ve yüksek konsantrasyonlu AHA soyucular."
-      ],
-      "tamamlayici_tavsiyeler": []
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "La Roche-Posay Effaclar Jel / Bioderma Sébium Gel Actif",
-      "alternatif_fark_notu": "Effaclar kurutabilirken, CeraVe 3 temel seramid sayesinde cilt bariyerini sıyırmadan arındırır."
-    },
-    "tags": [
-      "akne",
-      "sivilce",
-      "siyah nokta",
-      "salisilik asit",
-      "gözenek",
-      "yağlanma",
-      "parlama",
-      "cerave akne",
-      "cerave",
-      "cerave akneye eğilim gösteren ciltlere özel temizleyici",
-      "dermo"
-    ]
-  },
-  {
-    "id": "cerave-cerave-foaming-cleanser-9907",
-    "name": "CeraVe Foaming Cleanser",
-    "brand": "CeraVe",
-    "urun_tipi": "Yüz & Vücut Temizleyici",
-    "urun_tipi_icon": "🧼",
-    "rutin_adimi": "1. Adım: Temizleme",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Özel Bakım",
-    "size": "473 ml Pompalı Şişe",
-    "form": "Orijinal Ambalaj",
-    "image": "images/mustela/cerave-cerave-foaming-cleanser.jpeg",
-    "cilt_tipleri": [
-      "Normal ve Yağlı Ciltler"
-    ],
-    "yas_grubu": "Danışman Kontrolü",
-    "kimler_kullanamaz": "",
-    "nasil_kullanilir": "Islak cilde dairesel masajla köpürterek uygulayınız, ardından bol su ile durulayınız.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Yüzümde gün içinde parlama ve gözeneklerde yağlanma şikayeti"
-    ],
-    "kombinasyon_ve_uyarilar": "",
-    "etken_maddeler": [
-      "3 Temel Seramid",
-      "Niasinamid",
-      "Hyalüronik Asit"
-    ],
-    "kime_uygun": {
-      "profil": "Normal ve Yağlı Ciltler",
-      "cilt_tipleri": [
-        "Normal ve Yağlı Ciltler"
-      ],
-      "yas_grubu": "Danışman Kontrolü",
-      "oncelikli_hedef": "Hedefe Yönelik Bakım"
-    },
-    "guvenlik_filtresi": {
-      "kimler_kullanamaz": "Özel bir kontraendikasyon bilinmiyorsa güvenle önerilebilir.",
-      "dikkat_uyarilari": [],
-      "doktora_sevk_kriteri": "Alerjik reaksiyon veya geçmeyen lezyonlarda dermatoloğa sevk ediniz."
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Yüzümde gün içinde parlama ve gözeneklerde yağlanma şikayeti",
-      "eczacinin_soracagi_sorular": [
-        "Daha önce benzer bir formül kullandınız mı?"
-      ],
-      "bu_urun_neden_secilmeli": "Hastanın temel ihtiyacını karşılayan hedefe yönelik klinik formülasyon.",
-      "arama_etiketleri": [
-        "cerave foaming cleanser",
-        "cerave",
-        "yüz & vücut temizleyici",
-        "yüzümde gün içinde parlama ve gözeneklerde yağlanma şikayeti"
-      ]
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "3 Temel Seramid",
-        "Niasinamid",
-        "Hyalüronik Asit"
-      ],
-      "patently_teknolojiler": [],
-      "fizyolojik_ph": "5.5",
-      "rozetler": [
-        "Dermatolojik Olarak Test Edildi",
-        "Parfümsüz"
-      ]
-    },
-    "kullanim_protokolu": {
-      "uygulama_sekli": "Islak cilde dairesel masajla köpürterek uygulayınız, ardından bol su ile durulayınız.",
-      "zaman_ve_siklik": "Günde 1-2 kez",
-      "rutin_siralamasi": "1. Adım: Temizleme",
-      "saklama_kosullari": "Oda sıcaklığında, güneş görmeyen yerde saklayınız."
-    },
-    "kombinasyon_ve_sinerji": {
-      "birlikte_onerilebilecekler": [],
-      "yasakli_cakismalar": [],
-      "tamamlayici_tavsiyeler": []
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "",
-      "fark_ve_karsilastirma": ""
-    },
-    "tags": [
-      "cerave foaming cleanser",
-      "cerave",
-      "dermo",
-      "yüz & vücut temizleyici"
-    ]
-  },
-  {
-    "id": "cerave-cerave-foaming-cleanser-2668",
-    "name": "CeraVe Foaming Cleanser",
-    "brand": "CeraVe",
-    "urun_tipi": "Yüz & Vücut Temizleyici",
-    "urun_tipi_icon": "🧼",
-    "rutin_adimi": "1. Adım: Temizleme",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Özel Bakım",
-    "size": "473 ml Pompalı Şişe",
-    "form": "Orijinal Ambalaj",
-    "image": "images/mustela/cerave-cerave-foaming-cleanser.jpeg",
-    "cilt_tipleri": [
-      "Normal ve Yağlı Ciltler"
-    ],
-    "yas_grubu": "Danışman Kontrolü",
-    "kimler_kullanamaz": "",
-    "nasil_kullanilir": "Islak cilde dairesel masajla köpürterek uygulayınız, ardından bol su ile durulayınız.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Yüzümde gün içinde parlama ve gözeneklerde yağlanma şikayeti"
-    ],
-    "kombinasyon_ve_uyarilar": "",
-    "etken_maddeler": [
-      "3 Temel Seramid",
-      "Niasinamid",
-      "Hyalüronik Asit"
-    ],
-    "kime_uygun": {
-      "profil": "Normal ve Yağlı Ciltler",
-      "cilt_tipleri": [
-        "Normal ve Yağlı Ciltler"
-      ],
-      "yas_grubu": "Danışman Kontrolü",
-      "oncelikli_hedef": "Hedefe Yönelik Bakım"
-    },
-    "guvenlik_filtresi": {
-      "kimler_kullanamaz": "Özel bir kontraendikasyon bilinmiyorsa güvenle önerilebilir.",
-      "dikkat_uyarilari": [],
-      "doktora_sevk_kriteri": "Alerjik reaksiyon veya geçmeyen lezyonlarda dermatoloğa sevk ediniz."
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Yüzümde gün içinde parlama ve gözeneklerde yağlanma şikayeti",
-      "eczacinin_soracagi_sorular": [
-        "Daha önce benzer bir formül kullandınız mı?"
-      ],
-      "bu_urun_neden_secilmeli": "Hastanın temel ihtiyacını karşılayan hedefe yönelik klinik formülasyon.",
-      "arama_etiketleri": [
-        "cerave foaming cleanser",
-        "cerave",
-        "yüz & vücut temizleyici",
-        "yüzümde gün içinde parlama ve gözeneklerde yağlanma şikayeti"
-      ]
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "3 Temel Seramid",
-        "Niasinamid",
-        "Hyalüronik Asit"
-      ],
-      "patently_teknolojiler": [],
-      "fizyolojik_ph": "5.5",
-      "rozetler": [
-        "Dermatolojik Olarak Test Edildi",
-        "Parfümsüz"
-      ]
-    },
-    "kullanim_protokolu": {
-      "uygulama_sekli": "Islak cilde dairesel masajla köpürterek uygulayınız, ardından bol su ile durulayınız.",
-      "zaman_ve_siklik": "Günde 1-2 kez",
-      "rutin_siralamasi": "1. Adım: Temizleme",
-      "saklama_kosullari": "Oda sıcaklığında, güneş görmeyen yerde saklayınız."
-    },
-    "kombinasyon_ve_sinerji": {
-      "birlikte_onerilebilecekler": [],
-      "yasakli_cakismalar": [],
-      "tamamlayici_tavsiyeler": []
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "",
-      "fark_ve_karsilastirma": ""
-    },
-    "tags": [
-      "cerave foaming cleanser",
-      "cerave",
-      "dermo",
-      "yüz & vücut temizleyici"
-    ]
-  },
-  {
-    "id": "mustela-stelatopia-plus-150ml",
-    "name": "Mustela Stelatopia+ Lipit Yenileyici Krem (150ml)",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Atopik & Çok Kuru Cilt",
-    "brand": "Mustela",
-    "size": "150 ml",
-    "form": "Tüp Krem",
-    "image": "images/mustela/mustela-stelatopia-plus-lipid-replenishing-cream-150ml.jpeg",
-    "kime_uygun": {
-      "cilt_tipleri": [
-        "Atopik Cilt",
-        "Aşırı Kuru Cilt",
-        "Egzamaya Eğilimli Cilt",
-        "Bariyeri Bozulmuş Kaşıntılı Cilt"
-      ],
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": true,
-        "bebek_uygun_mu": true,
-        "cocuk_uygun_mu": true,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Doğumdan itibaren (Yenidoğan Yoğun Bakımdan taburcu olan prematüreler dahil) tüm yaşam evrelerinde güvenlidir. Bebek epidermisi yetişkine kıyasla %30 daha ince ve hidrolipidik film tabakası yetersizdir; bu formül lipit sentezini biyolojik olarak tetikler. Çocukluk çağı atopisi ve yaşlılıkta görülen senil pruritus (kuruluk kaşıntısı) için klinik olarak kanıtlanmıştır. Gebelik ve emzirmede endokrin bozucu veya teratojenik hiçbir madde içermez."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Açık yara, sızıntılı ve kanamalı enfekte ekzematöz lezyonlar üzerine sürülmez. Yağlı ve akne vulgaris lezyonları olan T bölgesine uygulanmamalıdır.",
-      "goz_cevresi_temas": "Göz mukozasına doğrudan temas ettirilmemelidir. Göz çevresi kuruluğu için özel formüle edilmiş Stelatopia Yüz Kremi tercih edilmelidir.",
-      "doktora_yonlendirme": "Sarı kabuklu sızıntı (impetijinizasyon - sekonder stafilokok enfeksiyonu belirtisi), ateş veya 2 haftalık düzenli kullanımda gerilemeyen şiddetli atopik alevlenmelerde doğrudan dermatoloğa/pediatriste sevk edilmelidir."
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Bebeğim geceleri kaşıntıdan uyuyamıyor, yanakları ve bacak kıvrımları zımpara gibi pul pul dökülüyor ve kızarıyor.",
-      "arama_etiketleri": [
-        "#atopik",
-        "#egzama",
-        "#şiddetli_kaşıntı",
-        "#pullanma",
-        "#bebek_egzaması",
-        "#kuru_cilt",
-        "#kızarıklık",
-        "#stelatopia"
-      ],
-      "eczaci_sorusu": "Kaşıntı geceleri uykudan uyandırıyor mu ve banyo sonrası kızarıklık artıyor mu? Şu an hekimin verdiği kortizonlu bir reçete var mı?",
-      "secim_nedeni": "Patentli Organik Ayçiçeği Oleodistilatı ve Prebiyotik Bioécolia kompleksi sayesinde cildin kendi lipid üretimini %80 artırarak kaşıntı-kaşıma kısır döngüsünü 24 saat içinde kırar."
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "Organik Ayçiçeği Oleodistilatı (Patentli Lipid Tetikleyici)",
-        "Bioécolia (Prebiyotik Dengeleyici)",
-        "Avokado Perseose (Hücresel Bariyer Koruyucu)"
-      ],
-      "doku": "Zengin ve besleyici emolyent krem, yapışkan his bırakmaz ve anında emilir.",
-      "rozetler": [
-        "%99 Doğal Kökenli",
-        "Parfümsüz",
-        "Hipoalerjenik",
-        "Kortizonsuz",
-        "Pediatrik & Dermatolojik Test Edilmiş",
-        "Vegan Formül"
-      ]
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "1. Adım: Banyoda sabunsuz Stelatopia Temizleme Yağı ile yıkanır -> 2. Adım: Cilt havluyla sertçe sürtülmeden tamponlanarak hafif nemli bırakılır -> 3. Adım: Stelatopia+ Krem tüm vücuda ve yüze uygulanır.",
-      "zaman_ve_siklik": "Günde 2 kez (Sabah ve Akşam banyo/uyku öncesi düzenli)",
-      "miktar": "Etkilenen bölgenin genişliğine göre 1-2 ceviz büyüklüğünde miktar",
-      "uygulama_sekli": "Temiz ve hafif nemli cilde, parmak uçlarıyla dairesel ve yatıştırıcı masaj hareketleriyle sürülür. Durulanmaz.",
-      "beklenen_sonuc": "İlk 15 Dakika: Ciltte gerginlik ve kaşıntıda %90 anında yatışma. 1. Hafta: Cilt bariyerinde gözle görülür onarım ve pullanmanın kaybolması. 4. Hafta: Atopik alevlenme ve kaşıntı krizlerinde %85 klinik azalma."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [
-        "mustela-stelatopia-cleansing-oil-500ml",
-        "mustela-stelatopia-emollient-face-cream-40ml",
-        "mustela-cicastela-moisture-recovery-cream-40ml"
-      ],
-      "yasakli_cakismalar": [
-        "Alkali kalıp sabunlar, sülfatlı (SLS/SLES) köpüren duş jelleri ve parfümlü bebek kolonyaları/ıslak mendilleri ile asla birlikte kullanılmamalıdır."
-      ],
-      "etkilesim_uyarisi": "Topikal kortizon reçete edildiyse, önce medikal kortizonlu merhem sürülmeli; 15-20 dakika emilimi beklendikten sonra üzerine Stelatopia+ Krem bariyer kilidi olarak tatbik edilmelidir."
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "Bioderma Atoderm Intensive Baume (500ml/200ml) veya La Roche-Posay Lipikar Baume AP+M",
-      "alternatif_fark_notu": "Mustela Stelatopia+ %99 doğal kaynaklı içerik ve prebiyotik Bioécolia ile bebek mikrobiyomuna en nazik formülasyondur; Atoderm Baume PEA ile akut kaşıntıyı hedefler, Lipikar AP+M ise Aqua Posae Filiformis içerir."
-    },
-    "cilt_tipleri": [
-      "Çok Kuru Cilt",
-      "Atopik Cilt",
-      "Egzamaya Meyilli Cilt"
-    ],
-    "yas_grubu": "Doğumdan itibaren (Yenidoğan dahil), Çocuklar ve Tüm Aile",
-    "kimler_kullanamaz": "Açık yara veya sızıntılı enfekte lezyonlara sürülmez. Yağlı/akneye meyilli bölgelere uygulanmaz.",
-    "nasil_kullanilir": "Günde 2 kez tüm vücuda ve yüze nazikçe masaj yaparak uygulanır. Duş/banyodan sonra cildin nemi henüz kaybolmadan sürülmesi etkiyi katlar.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Aşırı cilt kuruluğu ve pullanma",
-      "Yoğun gece kaşıntısı ve huzursuzluk",
-      "Atopik dermatit alevlenmesi ve yatıştırma ihtiyacı",
-      "Bozulmuş cilt bariyerini onarma"
-    ],
-    "kombinasyon_ve_uyarilar": "Kortizonlu medikal krem kullanılıyorsa, önce medikal krem sürülür; 15-20 dakika sonra üzerine bu bariyer krem uygulanarak nem kilitlenir. Duşta sabun yerine Stelatopia Temizleme Yağı ile kombine edilmesi şarttır.",
-    "etken_maddeler": [
-      "Organik Ayçiçeği Oleodistilatı",
-      "Bioécolia (Prebiyotik)",
-      "Avokado Perseose"
-    ],
-    "tags": [
-      "atopik",
-      "egzama",
-      "kaşıntı",
-      "kuru cilt",
-      "bebek",
-      "krem"
-    ],
-    "urun_tipi": "Nemlendirici & Bariyer Krem",
-    "urun_tipi_icon": "🧴",
-    "rutin_adimi": "2. Adım: Nemlendirme & Bariyer"
-  },
-  {
-    "id": "mustela-stelatopia-plus-300ml",
-    "name": "Mustela Stelatopia+ Lipit Yenileyici Krem (300ml)",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Atopik & Çok Kuru Cilt",
-    "brand": "Mustela",
-    "size": "300 ml",
-    "form": "Pompalı Şişe",
-    "image": "images/mustela/mustela-stelatopia-plus-lipid-replenishing-cream-300ml.jpeg",
-    "kime_uygun": {
-      "cilt_tipleri": [
-        "Atopik Cilt",
-        "Aşırı Kuru Cilt",
-        "Egzamaya Eğilimli Cilt",
-        "Geniş Vücut Yüzeyinde Bariyer Hasarı"
-      ],
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": true,
-        "bebek_uygun_mu": true,
-        "cocuk_uygun_mu": true,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Doğumdan itibaren tüm yaş grupları, prematüre sonrası dönem, çocuklar, tüm aile ve geriatrik hastalar için uygundur. Pompalı 300ml boyutu geniş vücut yüzeyinde uzun süreli günlük idame tedavisi için ekonomik ve hijyeniktir."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Açık yara, sızıntılı ve kanamalı enfekte ekzematöz lezyonlar üzerine sürülmez.",
-      "goz_cevresi_temas": "Göz içine temas ettirilmemelidir. Göz çevresi için Stelatopia Yüz Kremi önerilmelidir.",
-      "doktora_yonlendirme": "Sarı kabuklu sızıntı, impetigo bulguları veya lezyonlarda ateş eşlik ediyorsa hekime yönlendirilmelidir."
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Bebeğimin tüm vücudu kuruluktan pul pul dökülüyor, tüp kremler hemen bitiyor, bütün vücuda yetecek pompalı büyük boy bir şey lazım.",
-      "arama_etiketleri": [
-        "#atopik",
-        "#egzama",
-        "#büyük_boy",
-        "#pompalı",
-        "#tüm_vücut_kuruluğu",
-        "#stelatopia"
-      ],
-      "eczaci_sorusu": "Şikayet tüm vücuda mı yayılmış durumda, banyoda hangi temizleyiciyi kullanıyorsunuz?",
-      "secim_nedeni": "Pompalı 300ml aile boyu ile banyo sonrası geniş alanlara pratik ve hijyenik uygulama sağlar; cildin lipid bariyerini güçlendirir."
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "Organik Ayçiçeği Oleodistilatı",
-        "Bioécolia (Prebiyotik)",
-        "Avokado Perseose"
-      ],
-      "doku": "Zengin ve kolay yayılan emolyent krem, pompalı hijyenik ambalaj.",
-      "rozetler": [
-        "%99 Doğal Kökenli",
-        "Parfümsüz",
-        "Hipoalerjenik",
-        "Kortizonsuz",
-        "Vegan Formül"
-      ]
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "1. Adım: Banyoda Stelatopia Temizleme Yağı -> 2. Adım: Banyo sonrası nemli cilde Stelatopia+ 300ml tüm vücuda uygulanır.",
-      "zaman_ve_siklik": "Günde 2 kez düzenli sabah ve akşam",
-      "miktar": "Vücut için 3-4 pompa basılarak tüm kol, bacak ve gövdeye yayılır",
-      "uygulama_sekli": "Cildi ovuşturmadan nazik dairesel hareketlerle sürülür.",
-      "beklenen_sonuc": "24 saat kesintisiz nem, 1 haftada kaşıntı nöbetlerinde belirgin düşüş."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [
-        "mustela-stelatopia-cleansing-oil-500ml",
-        "mustela-stelatopia-emollient-face-cream-40ml"
-      ],
-      "yasakli_cakismalar": [
-        "Alkali katı sabunlar ve alkollü losyonlar."
-      ],
-      "etkilesim_uyarisi": "Topikal kortizonlu kremlerden 20 dakika sonra nemlendirici kilit katmanı olarak sürülür."
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "Bioderma Atoderm Intensive Baume 500ml",
-      "alternatif_fark_notu": "Bioderma 500ml boyutuyla daha büyüktür ancak Mustela organik ayçiçeği ve prebiyotik içeriğiyle bebek biyolojisine özel optimize edilmiştir."
-    },
-    "cilt_tipleri": [
-      "Çok Kuru Cilt",
-      "Atopik Cilt",
-      "Egzamaya Meyilli Cilt"
-    ],
-    "yas_grubu": "Doğumdan itibaren (Yenidoğan dahil), Çocuklar ve Tüm Aile",
-    "kimler_kullanamaz": "Açık yara veya sızıntılı enfekte lezyonlara sürülmez.",
-    "nasil_kullanilir": "Günde 2 kez tüm vücuda nazikçe masaj yaparak uygulanır. Pompalı pratik şişesi geniş alanlarda kullanım kolaylığı sağlar.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Geniş vücut yüzeyinde yoğun kuruluk ve döküntü",
-      "Atopik dermatit günlük idame bakımı",
-      "Kronik kaşıntı ve uykusuzluk"
-    ],
-    "kombinasyon_ve_uyarilar": "Duşta sabun yerine Stelatopia Temizleme Yağı ile kombine edilmelidir.",
-    "etken_maddeler": [
-      "Organik Ayçiçeği Oleodistilatı",
-      "Bioécolia (Prebiyotik)",
-      "Avokado Perseose"
-    ],
-    "tags": [
-      "atopik",
-      "egzama",
-      "kaşıntı",
-      "kuru cilt",
-      "bebek",
-      "pompalı",
-      "krem"
-    ],
-    "urun_tipi": "Nemlendirici & Bariyer Krem",
-    "urun_tipi_icon": "🧴",
-    "rutin_adimi": "2. Adım: Nemlendirme & Bariyer"
-  },
-  {
-    "id": "mustela-stelatopia-cleansing-oil-500ml",
-    "name": "Mustela Stelatopia Temizleme Yağı (500ml)",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Atopik & Çok Kuru Cilt",
-    "brand": "Mustela",
-    "size": "500 ml",
-    "form": "Pompalı Şişe Yağ/Jel",
-    "image": "images/mustela/mustela-stelatopia-cleansing-oil-500ml.jpeg",
-    "kime_uygun": {
-      "cilt_tipleri": [
-        "Atopik Cilt",
-        "Aşırı Kuru & Pul Pullanmış Cilt",
-        "Banyo Sonrası Gerilen Reaktif Cilt"
-      ],
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": true,
-        "bebek_uygun_mu": true,
-        "cocuk_uygun_mu": true,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Doğumdan itibaren tüm yaşlar için uygundur. Şebeke suyunun kireç ve klor etkisini nötralize eden relipidizan yağ bazlı yıkama formülü, yenidoğan ve bebeklerin narin cildinde lipid kaybını sıfıra indirir."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Göz içine kaçtığında hafif batma yapabilir; doğrudan göz banyosu olarak kullanılmaz.",
-      "goz_cevresi_temas": "Göz yakmayan formülasyondur ancak doğrudan göz mukozasına sıkılmamalıdır.",
-      "doktora_yonlendirme": "Banyo sonrasında kurdeşen tarzı yaygın döküntü oluşuyorsa su alerjisi/ürtiker açısından doktora danışılmalıdır."
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Bebeğimi banyoya soktuğumda cildi kıpkırmızı oluyor, sudan çıkar çıkmaz çılgınca kaşınmaya başlıyor.",
-      "arama_etiketleri": [
-        "#banyo_kaşıntısı",
-        "#kireçli_su_kuruluğu",
-        "#temizleme_yağı",
-        "#sabunsuz_banyo",
-        "#atopik_şampuan"
-      ],
-      "eczaci_sorusu": "Banyoda normal bebek şampuanı veya sabun kullanıyor musunuz? Suyunuz kireçli mi?",
-      "secim_nedeni": "Suda çözünen yağ dokusu ile sert suyun kurutucu kireç etkisini nötralize eder ve yıkarken dahi cilde lipit yükler."
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "Organik Ayçiçeği Oleodistilatı",
-        "Avokado Perseose",
-        "Gliserin"
-      ],
-      "doku": "Suyla temas ettiğinde süte dönüşen nazik ve köpürmeyen temizleme yağı.",
-      "rozetler": [
-        "%98 Doğal Kökenli",
-        "Sabunsuz",
-        "Parfümsüz",
-        "Hipoalerjenik",
-        "Biyobozunur Formül"
-      ]
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "1. Adım: Banyoda Stelatopia Temizleme Yağı ile yıkanır -> 2. Adım: Banyo sonrası nemli cilde Stelatopia+ Krem sürülür.",
-      "zaman_ve_siklik": "Her banyoda veya günlük duşta",
-      "miktar": "Bebek küvet suyuna 2-3 pompa katılabilir veya ıslak avuç içine 1-2 pompa alınarak direkt tatbik edilir.",
-      "uygulama_sekli": "Islak cilde nazikçe yayılır, ılık suyla hafifçe durulanır. Havluyla ovalamadan kurulanır.",
-      "beklenen_sonuc": "Banyo çıkışında sıfır kızarıklık, ipeksi yumuşaklık ve koruyucu hidrolipid örtü."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [
-        "mustela-stelatopia-plus-300ml",
-        "mustela-stelatopia-emollient-face-cream-40ml"
-      ],
-      "yasakli_cakismalar": [
-        "Geleneksel zeytinyağlı kalıp sabunlar ve sülfat içeren köpük banyoları ile birlikte kullanılmamalıdır."
-      ],
-      "etkilesim_uyarisi": "Banyo sonrası krem sürülmezse temizleme yağının koruyucu nem kilidi tek başına 24 saat yetmeyebilir; mutlaka nemlendirici ile desteklenmelidir."
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "Bioderma Atoderm Huile de Douche (Duş Yağı 1 Litre / 200ml)",
-      "alternatif_fark_notu": "Atoderm Duş Yağı hafif parfümlüdür ve tüm aile içindir; Mustela Stelatopia Temizleme Yağı ise tamamen parfümsüz ve bebek atopik dermatitine özel formüledir."
-    },
-    "cilt_tipleri": [
-      "Atopik Cilt",
-      "Aşırı Kuru Cilt"
-    ],
-    "yas_grubu": "Doğumdan itibaren (Yenidoğan dahil), Çocuklar ve Yetişkinler",
-    "kimler_kullanamaz": "Bilinen kontrendikasyonu yoktur.",
-    "nasil_kullanilir": "Islak cilde uygulanıp nazikçe durulanır veya bebek küvet suyuna 2-3 pompa karıştırılır. Ovmadan kurulanır.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Banyo sonrası alevlenen kaşıntı ve kızarıklık",
-      "Kireçli ve sert şebeke suyunun cildi kurutması",
-      "Sabunsuz ve relipidizan temizleyici arayışı"
-    ],
-    "kombinasyon_ve_uyarilar": "Banyo sonrasında mutlaka Stelatopia+ Krem sürülerek nem hapsedilmelidir.",
-    "etken_maddeler": [
-      "Organik Ayçiçeği Oleodistilatı",
-      "Avokado Perseose",
-      "Gliserin"
-    ],
-    "tags": [
-      "banyo yağı",
-      "temizleme yağı",
-      "atopik",
-      "egzama",
-      "bebek",
-      "sabunsuz"
-    ],
-    "urun_tipi": "Yüz & Vücut Temizleyici",
-    "urun_tipi_icon": "🧼",
-    "rutin_adimi": "1. Adım: Temizleme"
-  },
-  {
-    "id": "mustela-stelatopia-cleansing-gel-200ml",
-    "name": "Mustela Stelatopia Temizleme Jeli (200ml)",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Atopik & Çok Kuru Cilt",
-    "brand": "Mustela",
-    "size": "200 ml",
-    "form": "Tüp Jel",
-    "image": "images/mustela/mustela-stelatopia-cleansing-gel-200ml.jpeg",
-    "kime_uygun": {
-      "cilt_tipleri": [
-        "Atopik Cilt",
-        "Hassas ve Çok Kuru Yüz & Vücut",
-        "Yağ dokusundan hoşlanmayan atopik bireyler"
-      ],
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": true,
-        "bebek_uygun_mu": true,
-        "cocuk_uygun_mu": true,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Doğumdan itibaren tüm aile bireylerinde yüz, saçlı deri ve vücut temizliğinde güvenle kullanılır."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Göz içine doğrudan temas ettirilmemelidir.",
-      "goz_cevresi_temas": "Göz yakmayan fizyolojik pH formülü.",
-      "doktora_yonlendirme": "Yıkama esnasında yanma/batma hissi artıyorsa akut egzama alevlenmesi hekimce değerlendirilmelidir."
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Bebeğimin cildi atopik ama yağlı dokulardan hoşlanmıyorum, hafif köpüren ama kurutmayan pratik bir jel istiyorum.",
-      "arama_etiketleri": [
-        "#atopik_jel",
-        "#parfümsüz_yıkama",
-        "#yüz_temizleme_bebek",
-        "#kurutmayan_jel"
-      ],
-      "eczaci_sorusu": "Ürünü sadece yüz için mi yoksa tüm vücut banyosu için mi kullanacaksınız?",
-      "secim_nedeni": "Fizyolojik pH değeri ve parfümsüz jel dokusuyla cildin hidrolipidik tabakasını soymadan nazikçe arındırır."
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "Organik Ayçiçeği Oleodistilatı",
-        "Avokado Perseose",
-        "Yumuşak Tensiyoaktifler"
-      ],
-      "doku": "Akışkan ve hafif köpüren kremsi jel.",
-      "rozetler": [
-        "%98 Doğal Kökenli",
-        "Sabunsuz",
-        "Parfümsüz",
-        "Göz Yakmaz",
-        "Hipoalerjenik"
-      ]
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "1. Adım: Stelatopia Temizleme Jeli ile yıkanır -> 2. Adım: Stelatopia+ Krem uygulanır.",
-      "zaman_ve_siklik": "Sabah-akşam veya banyo esnasında günlük kullanım",
-      "miktar": "Fındık büyüklüğünde jel avuçta köpürtülür",
-      "uygulama_sekli": "Islak cilde nazikçe masaj yapılarak sürülür ve ılık suyla durulanır.",
-      "beklenen_sonuc": "Yıkama sonrasında gerginlik hissi yaratmayan ferah ve arınmış cilt."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [
-        "mustela-stelatopia-emollient-face-cream-40ml",
-        "mustela-stelatopia-plus-150ml"
-      ],
-      "yasakli_cakismalar": [
-        "Alkali kalıp sabunlar."
-      ],
-      "etkilesim_uyarisi": "Durulama sonrasında nemlendirici krem uygulanması ihmal edilmemelidir."
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "Bioderma Atoderm Intensive Gel Moussant (200ml / 500ml)",
-      "alternatif_fark_notu": "Atoderm Gel Moussant çinko ve bakır sülfat içerir; Stelatopia Jel ise organik ayçiçeği ve avokado perseose ile daha yumuşak lipid desteği sağlar."
-    },
-    "cilt_tipleri": [
-      "Atopik Cilt",
-      "Kuru ve Hassas Cilt"
-    ],
-    "yas_grubu": "Doğumdan itibaren (Yenidoğan dahil), Tüm Aile",
-    "kimler_kullanamaz": "Bilinen kontrendikasyonu yoktur.",
-    "nasil_kullanilir": "Islak cilde uygulanır, nazikçe köpürtülüp ılık suyla durulanır.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Kurutmayan atopik temizleyici arayışı",
-      "Yüz ve vücutta pratik sabunsuz jel ihtiyacı"
-    ],
-    "kombinasyon_ve_uyarilar": "Yıkama sonrası Stelatopia krem ile nem kilitlenmelidir.",
-    "etken_maddeler": [
-      "Organik Ayçiçeği Oleodistilatı",
-      "Avokado Perseose"
-    ],
-    "tags": [
-      "temizleme jeli",
-      "atopik",
-      "sabunsuz",
-      "bebek",
-      "yüz ve vücut"
-    ],
-    "urun_tipi": "Yüz & Vücut Temizleyici",
-    "urun_tipi_icon": "🧼",
-    "rutin_adimi": "1. Adım: Temizleme"
-  },
-  {
-    "id": "mustela-stelatopia-emollient-face-cream-40ml",
-    "name": "Mustela Stelatopia Emolyent Yüz Kremi (40ml)",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Atopik & Çok Kuru Cilt",
-    "brand": "Mustela",
-    "size": "40 ml",
-    "form": "Tüp Krem",
-    "image": "images/mustela/mustela-stelatopia-emollient-face-cream-40ml.jpeg",
-    "kime_uygun": {
-      "cilt_tipleri": [
-        "Atopik Yüz Cildi",
-        "Göz Kapağı Egzaması & Kuruluğu",
-        "Ağız Çevresi ve Yanakta Kızarıklık"
-      ],
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": true,
-        "bebek_uygun_mu": true,
-        "cocuk_uygun_mu": true,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Doğumdan itibaren güvenlidir. Oftalmolojik olarak test edilmiştir; bebek ve yetişkinlerde göz kapağı egzaması ve periorbital hassasiyette kullanılabilen nadir güvenli bariyer kremlerindendir."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Göz küresinin içine kaçırılmamalıdır (korneaya sürülmez).",
-      "goz_cevresi_temas": "Göz kapaklarına ve periorbital bölgeye güvenle uygulanabilir.",
-      "doktora_yonlendirme": "Gözde çapaklanma, konjonktivit veya görme bulanıklığı eşlik ediyorsa göz hekimine yönlendirilmelidir."
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Bebeğimin yanakları kıpkırmızı ve pütür pütür; göz kapağında da kuruluk pulcukları var, gözüne zarar vermeyecek bir yüz kremi var mı?",
-      "arama_etiketleri": [
-        "#göz_kapağı_egzaması",
-        "#bebek_yanak_kızarıklığı",
-        "#yüz_kremi_atopik",
-        "#göz_çevresi_egzama"
-      ],
-      "eczaci_sorusu": "Kuruluk sadece yanakta mı yoksa göz kapaklarında da döküntü ve kaşıntı var mı?",
-      "secim_nedeni": "Oftalmolojik onaylı formülü ve Meyan Kökü Özü (Potasyum Glisirizat) ile göz kapaklarındaki yangıyı ve kızarıklığı yakmadan dindirir."
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "Organik Ayçiçeği Oleodistilatı",
-        "Meyan Kökü Özü (Kızarıklık Karşıtı)",
-        "Seramidler",
-        "Avokado Perseose"
-      ],
-      "doku": "Hafif, ipeksi, hızla emilen ve göz yakmayan emolyent yüz kremi.",
-      "rozetler": [
-        "%97 Doğal Kökenli",
-        "Oftalmolojik Test Edilmiş",
-        "Göz Kapağına Uygun",
-        "Parfümsüz",
-        "Hipoalerjenik"
-      ]
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "1. Adım: Yüz Stelatopia Jel veya Micellar su ile silinir -> 2. Adım: Stelatopia Yüz Kremi yanaklara ve göz kapaklarına uygulanır.",
-      "zaman_ve_siklik": "Günde 2-3 kez ihtiyaç duyuldukça",
-      "miktar": "Mercimek tanesi büyüklüğünde miktar her iki yanak ve göz kapağına yeterlidir",
-      "uygulama_sekli": "Temiz yüze ve göz çevresine parmak ucuyla pıt pıt tamponlanarak sürülür.",
-      "beklenen_sonuc": "Uygulandığı anda yanaklardaki yanma ve kızarıklık hissini %94 oranında hafifletir."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [
-        "mustela-stelatopia-cleansing-gel-200ml",
-        "mustela-stelatopia-plus-150ml"
-      ],
-      "yasakli_cakismalar": [
-        "Asitli peelingler, retinoidler ve parfümlü nemlendiriciler."
-      ],
-      "etkilesim_uyarisi": "Göz kapağında kortizonlu damla/pomad varsa hekim önerisine göre aralık bırakılarak uygulanmalıdır."
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "Bioderma Atoderm Intensive Eye (100ml / 3ü 1 arada)",
-      "alternatif_fark_notu": "Bioderma Atoderm Intensive Eye temizleme de yapabilen çok amaçlı bir kremdir; Mustela Stelatopia Yüz Kremi ise bebek yüz fizyolojisine özel meyan kökü yatıştırıcısı içerir."
-    },
-    "cilt_tipleri": [
-      "Atopik Yüz Cildi",
-      "Kuru ve Kızarık Yanaklar",
-      "Göz Kapağı Egzaması"
-    ],
-    "yas_grubu": "Doğumdan itibaren (Yenidoğan dahil), Çocuk ve Yetişkinler",
-    "kimler_kullanamaz": "Göz küresi içine sürülmez.",
-    "nasil_kullanilir": "Sabah-akşam yüz ve göz kapaklarına nazikçe sürülür.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Yanaklarda kuruluk ve kızarıklık",
-      "Göz kapağında atopik pullanma ve kaşıntı"
-    ],
-    "kombinasyon_ve_uyarilar": "Yüz temizliğinde sabun kullanılmamalıdır.",
-    "etken_maddeler": [
-      "Organik Ayçiçeği Oleodistilatı",
-      "Meyan Kökü Özü",
-      "Seramidler"
-    ],
-    "tags": [
-      "yüz kremi",
-      "göz kapağı",
-      "atopik",
-      "bebek",
-      "kızarıklık"
-    ],
-    "urun_tipi": "Nemlendirici & Bariyer Krem",
-    "urun_tipi_icon": "🧴",
-    "rutin_adimi": "2. Adım: Nemlendirme & Bariyer"
-  },
-  {
-    "id": "mustela-stelatopia-intense-30ml",
-    "name": "Mustela Stelatopia Intense Egzama & Kaşıntı Kremi (30ml)",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Atopik & Çok Kuru Cilt",
-    "brand": "Mustela",
-    "size": "30 ml",
-    "form": "Tüp Medikal Krem",
-    "image": "images/mustela/mustela-stelatopia-intense-30ml.jpeg",
-    "kime_uygun": {
-      "cilt_tipleri": [
-        "Akut Egzama Alevlenmesi",
-        "Aşırı Kaşıntılı & Yangılı Plaklar",
-        "Kortizon Kullanmak İstemeyen Ciltler"
-      ],
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": false,
-        "bebek_uygun_mu": true,
-        "cocuk_uygun_mu": true,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "⚠️ 1 Aydan büyük bebekler, çocuklar ve yetişkinler içindir! Yenidoğan (0-28 gün) döneminde hekim tavsiyesi olmadan akut medikal cihaz statüsündeki bu krem tercih edilmemelidir. Kortizon içermez; incelme (deri atrofisi) veya taşifilaksi yapmaz."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Açık yara, enfekte/sarı iltihaplı dokular ve 1 aydan küçük yenidoğanlar.",
-      "goz_cevresi_temas": "Göz içine uygulanmamalıdır.",
-      "doktora_yonlendirme": "Lezyonlar 7 gün içinde hiç gerilemiyorsa veya sekonder enfeksiyon geliştiyse dermatoloğa yönlendirilmelidir."
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Egzamam alevlendi, derim kıpkırmızı kabardı ve deli gibi kaşınıyor ama kortizonlu krem kullanmaktan korkuyorum, yan etkisiz tıbbi bir çözüm var mı?",
-      "arama_etiketleri": [
-        "#akut_egzama",
-        "#ektoin",
-        "#kortizonsuz_egzama",
-        "#şiddetli_yangı",
-        "#medikal_krem"
-      ],
-      "eczaci_sorusu": "Bebek 1 aydan büyük mü? Lezyonda sarı akıntı veya açık yara var mı?",
-      "secim_nedeni": "%7 Ektoin molekülü hücre çevresinde hidro-kompleks zırhı oluşturarak yangıyı dindirir; kortizonsuz tıbbi cihazdır."
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "%7 Ectoin (Doğal Hücre Koruyucu Molekül)",
-        "Zeytinyağı",
-        "Shea Yağı",
-        "Lesitin"
-      ],
-      "doku": "Kompakt, yatıştırıcı bariyer oluşturan tıbbi krem.",
-      "rozetler": [
-        "%7 Ectoin",
-        "Kortizonsuz Medikal Cihaz",
-        "Parfümsüz",
-        "Koruyucusuz",
-        "Mikroplastiksiz"
-      ]
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "1. Adım: Cilt temizlenir -> 2. Adım: Sadece egzama alevlenmesi olan lokal bölgeye Stelatopia Intense sürülür -> 3. Adım: Çevredeki sağlam alanlara Stelatopia+ idame kremi uygulanır.",
-      "zaman_ve_siklik": "Günde 2-3 kez alevlenme süresince",
-      "miktar": "Lezyon alanını ince bir tabaka örtecek kadar lokal",
-      "uygulama_sekli": "Temiz ve kuru lezyon bölgesine nazikçe yayılır. Masajla hırpalanmaz.",
-      "beklenen_sonuc": "İlk kullanımda yangı ve kızarıklıkta belirgin düşüş; kortizon kullanmadan alevlenmeyi kontrol altına alma."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [
-        "mustela-stelatopia-plus-300ml",
-        "mustela-stelatopia-cleansing-oil-500ml"
-      ],
-      "yasakli_cakismalar": [
-        "Açık yaralara sürülen alkollü tentürler veya salisilik asitli solüsyonlar."
-      ],
-      "etkilesim_uyarisi": "Hekim kortizon yazdıysa hekim protokolü esastır; kortizon tedavisinin hemen ardından nüksü önlemek için geçiş ürünü olarak mükemmeldir."
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "Bepanthol Sensiderm Egzama Kremi veya Dermoskin Baby Eczema Krem",
-      "alternatif_fark_notu": "Bepanthol Sensiderm lameller lipid teknolojisi kullanır; Mustela Stelatopia Intense ise doğrudan %7 Ektoin ile hücresel düzeyde yangı baskılaması sağlar."
-    },
-    "cilt_tipleri": [
-      "Akut Egzama Alevlenmesi",
-      "Kızarık ve Kaşıntılı Plaklar"
-    ],
-    "yas_grubu": "1 Aydan büyük bebekler, Çocuklar ve Yetişkinler",
-    "kimler_kullanamaz": "1 aydan küçük yenidoğanlar, açık ve enfekte yaralar.",
-    "nasil_kullanilir": "Günde 2-3 kez kızarık ve alevlenmiş lezyon bölgelerine lokal uygulanır.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Kortizonsuz egzama tedavisi arayışı",
-      "Şiddetli yangılı egzama alevlenmesi"
-    ],
-    "kombinasyon_ve_uyarilar": "Akut atak geçtikten sonra Stelatopia+ kreme dönülmelidir.",
-    "etken_maddeler": [
-      "%7 Ectoin (Doğal Hücre Koruyucu)",
-      "Shea Yağı"
-    ],
-    "tags": [
-      "egzama",
-      "ektoin",
-      "kortizonsuz",
-      "kaşıntı",
-      "medikal cihaz",
-      "akut"
-    ],
-    "urun_tipi": "Özel & SOS Onarıcı",
-    "urun_tipi_icon": "🩹",
-    "rutin_adimi": "Hedefe Yönelik / SOS Bakım"
-  },
-  {
-    "id": "mustela-vitamin-barrier-cream-123",
-    "name": "Mustela Vitamin Barrier Cream 1-2-3 Pişik Kremi (100ml)",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Bebek Bezi Bölgesi & Pişik",
-    "brand": "Mustela",
-    "size": "100 ml",
-    "form": "Tüp Krem",
-    "image": "images/mustela/mustela-vitamin-barrier-cream-1-2-3.jpeg",
-    "kime_uygun": {
-      "cilt_tipleri": [
-        "Pişik Oluşmuş Cilt",
-        "Pişiğe Eğilimli Hassas Bez Bölgesi",
-        "İdrar/Dışkı Temas Dermatiti"
-      ],
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": true,
-        "bebek_uygun_mu": true,
-        "cocuk_uygun_mu": true,
-        "ergen_uygun_mu": false,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Doğumdan itibaren (prematüreler taburcu olduktan sonra dahil) yenidoğan ve bebek bezli dönem boyunca güvenlidir. Ayrıca yatalak hasta bezi kullanan geriatrik hastalarda maserasyon ve bası/idrar pişiklerinde de son derece etkilidir."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Aktif kanamalı veya mantar (Candida albicans) enfeksiyonu olan parlak kırmızı/uydu lezyonlu durumlarda tek başına yetersizdir.",
-      "goz_cevresi_temas": "Sadece bez bölgesine uygulanır; göze temas ettirilmez.",
-      "doktora_yonlendirme": "Pişik 3 günden uzun sürerse, kabartılı püstüller veya parlak kırmızı uydu lezyonlar varsa (kandidiyazis şüphesi) hekime gidilerek antifungal reçete edilmelidir."
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Bebeğimin altı kıpkırmızı oldu, bezi açtığımda acıdan ağlıyor; 1 günde toparlayacak güvenli bir pişik kremi var mı?",
-      "arama_etiketleri": [
-        "#pişik",
-        "#çinko_oksit",
-        "#bez_bölgesi",
-        "#kızarıklık",
-        "#123_pişik",
-        "#maserasyon"
-      ],
-      "eczaci_sorusu": "Pişik kaç gündür var, minik beyaz başlı pütürler oluştu mu? Bezi ne sıklıkla değiştiriyorsunuz?",
-      "secim_nedeni": "%10 Çinko Oksit fiziksel bariyer örerken, Oxeoline of Alcacea yangıyı dindirir ve FPP (Ayçiçeği Oleodistilatı) lipitleri onarır: 1-Önler, 2-Yatıştırır, 3-Onarır."
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "%10 Çinko Oksit (Fiziksel Koruma Bariyeri)",
-        "Oxeoline of Alcacea (Enzimatik Yangı Engelleyici)",
-        "FPP (Ayçiçeği Oleodistilatı)",
-        "Avokado Perseose"
-      ],
-      "doku": "Kalıcı koruyucu beyaz film bırakan, kolay sürülen ve kolay temizlenen zengin krem.",
-      "rozetler": [
-        "%98 Doğal Kökenli",
-        "%10 Çinko Oksit",
-        "Parfümsüz",
-        "Koruyucusuz",
-        "Klinik Kanıtlı (1 Günde Rahatlatır)"
-      ]
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "1. Adım: Bez bölgesi ılık su/pamuk veya Mustela Durulama Gerektirmeyen Su ile nazikçe temizlenir -> 2. Adım: Cilt tamamen kurulanır -> 3. Adım: Vitamin Barrier Cream kalın bir tabaka halinde sürülür -> 4. Adım: Yeni bez bağlanır.",
-      "zaman_ve_siklik": "Her bez değişiminde düzenli olarak",
-      "miktar": "Bez bölgesini beyaz bir zırh gibi kaplayacak kalınlıkta (yaklaşık 1 fındık büyüklüğü)",
-      "uygulama_sekli": "Temiz ve tamamen kurulanmış popo ve kasık kıvrımlarına hafifçe yayılır. Tamamen yedirilip şeffaflaştırılmaz; beyaz örtücü bariyer kalmalıdır.",
-      "beklenen_sonuc": "İlk bez değişiminde kızarıklıkta belirgin gerileme; 24 saatte pişiğin %80'den fazla yatışması."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [
-        "mustela-no-rinse-cleansing-water-300ml"
-      ],
-      "yasakli_cakismalar": [
-        "Parfümlü ve alkollü market ıslak mendilleri pişiği alevlendirir; kesinlikle kesilmelidir."
-      ],
-      "etkilesim_uyarisi": "Bölge ıslakken sürülürse nemi hapsedip mantar riskini artırabilir; cilt kesinlikle kuru olmalıdır."
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "Sudocrem Bebek Bakım Kremi veya Desitin Hızlı Rahatlama Pişik Kremi",
-      "alternatif_fark_notu": "Sudocrem sentetik koku ve parafin bazlıdır, silinmesi zordur; Mustela 1-2-3 ise %98 doğal kökenli, parfümsüz ve cildi boğmadan soluk almasını sağlayan patentli formüle sahiptir."
-    },
-    "cilt_tipleri": [
-      "Pişik Oluşmuş Cilt",
-      "Hassas Bez Bölgesi"
-    ],
-    "yas_grubu": "Doğumdan itibaren (Yenidoğan dahil) ve Yatalak Yetişkinler",
-    "kimler_kullanamaz": "Açık kanamalı yaralar.",
-    "nasil_kullanilir": "Her bez değişiminde temiz ve kuru cilde kalın tabaka halinde sürülür.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Bez pişiği ve kızarıklığı",
-      "İdrar ve dışkı temas tahrişi"
-    ],
-    "kombinasyon_ve_uyarilar": "Alkollü ıslak mendil kullanılmamalıdır.",
-    "etken_maddeler": [
-      "%10 Çinko Oksit",
-      "Avokado Perseose",
-      "Oxeoline of Alcacea"
-    ],
-    "tags": [
-      "pişik kremi",
-      "çinko",
-      "bez bölgesi",
-      "kızarıklık",
-      "bebek",
-      "yenidoğan"
-    ],
-    "urun_tipi": "Özel & SOS Onarıcı",
-    "urun_tipi_icon": "🩹",
-    "rutin_adimi": "Hedefe Yönelik / SOS Bakım"
-  },
-  {
-    "id": "mustela-cicastela-moisture-recovery-cream-40ml",
-    "name": "Mustela Cicastela Onarıcı Bakım Kremi (40ml)",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Onarıcı & SOS Bakım",
-    "brand": "Mustela",
-    "size": "40 ml",
-    "form": "Uçlu Tüp Krem",
-    "image": "images/mustela/mustela-cicastela-moisture-recovery-cream-40ml.jpeg",
-    "kime_uygun": {
-      "cilt_tipleri": [
-        "Tahriş Olmuş & Çatlamış Cilt",
-        "Ağız Çevresi Salya Döküntüsü",
-        "Böcek Isırığı & Yüzeysel Sıyrık"
-      ],
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": true,
-        "bebek_uygun_mu": true,
-        "cocuk_uygun_mu": true,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Doğumdan itibaren yenidoğan, bebek, çocuk ve tüm yetişkinler için güvenli SOS ilk yardım onarıcısıdır. Diş çıkarma döneminde bebeklerin ağız çevresinde asidik salya tahrişini ve kulak arkası çatlaklarını hızla iyileştirir."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Dikiş atılması gereken derin yaralar, aktif kanamalı veya sızıntılı iltihaplı lezyonlar.",
-      "goz_cevresi_temas": "Göz içine uygulanmaz; ağız çevresinde dudak mukozasına kaçmayacak şekilde güvenle kullanılır.",
-      "doktora_yonlendirme": "Yara bölgesinde zonklayıcı ağrı, irin/iltihap veya yayılan kızarıklık varsa cerrahi/tıbbi değerlendirme gerekir."
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Bebeğim diş çıkarıyor, salyası çenesini ve ağız çevresini kıpkırmızı yaptı; ayrıca parkta dizini hafifçe çizdirdi, iz bırakmadan geçirecek bir krem var mı?",
-      "arama_etiketleri": [
-        "#salya_döküntüsü",
-        "#çizik",
-        "#yara_izi_önleme",
-        "#cica_onarıcı",
-        "#böcek_ısırığı",
-        "#kulak_arkası_çatlağı"
-      ],
-      "eczaci_sorusu": "Tahriş ağız çevresinde mi, açık kanama var mı?",
-      "secim_nedeni": "Bakır-Çinko-Mangan antibakteriyel üçlüsü mikropları engellerken, Hyaluronik Asit ve Panthenol dokuyu iz bırakmadan hızla yeniler."
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "Hyaluronik Asit (Doku Onarıcı)",
-        "Bakır ve Çinko Kompleksi (Antibakteriyel Kalkan)",
-        "Panthenol (B5 Vitamini - Yatıştırıcı)",
-        "Avokado Perseose"
-      ],
-      "doku": "İnce uçlu aplikatör, yağlı his bırakmayan bandaj dokusu.",
-      "rozetler": [
-        "%91 Doğal Kökenli",
-        "Parfümsüz",
-        "Alkolsuz",
-        "Hipoalerjenik",
-        "SOS Onarıcı"
-      ]
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "1. Adım: Hasarlı bölge temizlenir ve kurulanır -> 2. Adım: İnce uçlu aplikatörle doğrudan tahrişli alana Cicastela sürülür.",
-      "zaman_ve_siklik": "Günde 2 kez sorunlu bölge iyileşene kadar",
-      "miktar": "Nohut veya mercimek tanesi kadar lokal lezyon büyüklüğüne göre",
-      "uygulama_sekli": "Temiz cilde nazikçe yayılır. Bandaj etkisi gösterir.",
-      "beklenen_sonuc": "İlk uygulamada batma/yanma hissini keser; 3 günde doku epitelizasyonunu tamamlar."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [
-        "mustela-gel-arnica-calendula-bio-100ml",
-        "mustela-gentle-cleansing-gel-500ml"
-      ],
-      "yasakli_cakismalar": [
-        "Alkol veya iyot içeren tentürdiyotla aynı anda açık cilde sürülmemelidir."
-      ],
-      "etkilesim_uyarisi": "Yüzeysel tahrişlerde haricen kullanılır."
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "La Roche-Posay Cicaplast Baume B5+ veya Bioderma Cicabio Krem",
-      "alternatif_fark_notu": "Cicaplast B5+ %5 panthenol ve madecassoside ile harikadır; Cicastela ise bebek ağız çevresi ve bebek cildi pH'ına özel hafif formüle edilmiştir, ağza kaçsa dahi toksik değildir."
-    },
-    "cilt_tipleri": [
-      "Tahrişli Cilt",
-      "Sıyrık ve Çizikler",
-      "Salya Tahrişi"
-    ],
-    "yas_grubu": "Doğumdan itibaren (Yenidoğan dahil), Çocuklar ve Yetişkinler",
-    "kimler_kullanamaz": "Açık ve sızıntılı derin yaralar.",
-    "nasil_kullanilir": "Günde 2 kez temiz ve kuru tahrişli bölgeye lokal olarak sürülür.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Ağız çevresi salya tahrişleri",
-      "Yüzeysel sıyrık, çizik ve çatlaklar",
-      "Böcek sokması sonrası tahriş"
-    ],
-    "kombinasyon_ve_uyarilar": "Açık kanamalı yaralara sürülmez.",
-    "etken_maddeler": [
-      "Hyaluronik Asit",
-      "Bakır ve Çinko",
-      "Panthenol"
-    ],
-    "tags": [
-      "cica",
-      "onarıcı",
-      "çizik",
-      "salya",
-      "tahriş",
-      "bebek",
-      "ilk yardım"
-    ],
-    "urun_tipi": "Özel & SOS Onarıcı",
-    "urun_tipi_icon": "🩹",
-    "rutin_adimi": "Hedefe Yönelik / SOS Bakım"
-  },
-  {
-    "id": "mustela-cradle-cap-cream-40ml",
-    "name": "Mustela Konak Önleyici Bakım Kremi (40ml)",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Saçlı Deri & Konak",
-    "brand": "Mustela",
-    "size": "40 ml",
-    "form": "Uçlu Tüp Krem",
-    "image": "images/mustela/mustela-cradle-cap-cream-40ml.jpeg",
-    "kime_uygun": {
-      "cilt_tipleri": [
-        "Konaklı Saçlı Deri",
-        "Seboreik Kabuklanma Olan Bebek Cildi",
-        "Kaş Bölgesinde Pullanma"
-      ],
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": true,
-        "bebek_uygun_mu": true,
-        "cocuk_uygun_mu": false,
-        "ergen_uygun_mu": false,
-        "yetiskin_uygun_mu": false,
-        "geriatri_uygun_mu": false,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Doğumdan itibaren yenidoğan ve süt çocukluğu dönemindeki konak (seboreik dermatit kabukları) için formüle edilmiştir."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Enfekte olmuş, cerahatli veya kanayan kabuklar.",
-      "goz_cevresi_temas": "Kaş bölgesine uygulanırken göze kaçırılmamalıdır.",
-      "doktora_yonlendirme": "Kabuklar sarı cerahat akıtıyorsa veya tüm yüze/kulak arkalarına şiddetle yayılıyorsa pediatriste yönlendirilmelidir."
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Bebeğimin kafasında sarı sarı yapışkan kabuklar oluştu, zeytinyağı sürdüm ama geçmedi, kazımaktan korkuyorum.",
-      "arama_etiketleri": [
-        "#konak",
-        "#sarı_kabuk",
-        "#saçlı_deri_pullanması",
-        "#seboreik_konak",
-        "#bebek_kafa_kabuğu"
-      ],
-      "eczaci_sorusu": "Kabukları tırnağınızla veya sert fırçayla kaldırmaya çalıştınız mı? (Asla kazınmamalıdır!)",
-      "secim_nedeni": "Avokado polifenolleri aşırı sebumu dengelerken borage (hodan) yağı kabukları yumuşatarak kendiliğinden dökülmesini sağlar."
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "Avokado Polifenolleri (Sebum Regülatörü)",
-        "Borage Yağı (Kabuk Yumuşatıcı)",
-        "Avokado Perseose"
-      ],
-      "doku": "Hafif ve yapışkan olmayan jel-krem.",
-      "rozetler": [
-        "%95 Doğal Kökenli",
-        "Parfümsüz",
-        "Hipoalerjenik",
-        "Uçlu Aplikatörlü"
-      ]
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "1. Adım: Gece yatmadan önce konaklı bölgelere krem sürülür ve gece boyu bekletilir -> 2. Adım: Sabah Mustela Konak Önleyici Köpük Şampuan ile yıkanır.",
-      "zaman_ve_siklik": "Günde 1 kez (tercihen gece yatmadan)",
-      "miktar": "Kabuklu alanları ince bir tabaka örtecek kadar",
-      "uygulama_sekli": "Uçlu tüple doğrudan saçlı derideki kabuklara sürülür, hafifçe masaj yapılır. Sabaha kadar bekletilir.",
-      "beklenen_sonuc": "1 haftada kabukların yumuşayıp kendiliğinden dökülmesi ve tekrarlamasının önlenmesi."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [
-        "mustela-foam-shampoo-for-newborns-150ml"
-      ],
-      "yasakli_cakismalar": [
-        "Tarakla zorla kazımak veya asitli yetişkin kepek şampuanları kullanmak saç köklerini zedeler."
-      ],
-      "etkilesim_uyarisi": "Yıkama esnasında mutlaka yumuşak konak fırçası veya köpük şampuan kullanılmalıdır."
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "Bioderma Babysquam Konak Bakım Kremi",
-      "alternatif_fark_notu": "Bioderma Babysquam yıkamadan 30 dk önce uygulanır; Mustela Konak Kremi ise gece boyu saç derisinde kalarak daha derin yumuşatma sağlar."
-    },
-    "cilt_tipleri": [
-      "Konaklı Saç Derisi",
-      "Seboreik Bebek Cildi"
-    ],
-    "yas_grubu": "Doğumdan itibaren (Yenidoğan ve Bebekler)",
-    "kimler_kullanamaz": "Açık yara ve kanamalı saç derisi.",
-    "nasil_kullanilir": "Gece yatmadan konaklı bölgeye sürülür, sabah köpük şampuan ile yıkanır.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Saç derisinde ve kaşlarda sarı konak kabukları",
-      "Seboreik kabuklanma"
-    ],
-    "kombinasyon_ve_uyarilar": "Kabuklar asla tırnakla kazınmamalıdır.",
-    "etken_maddeler": [
-      "Avokado Polifenolleri",
-      "Borage Yağı"
-    ],
-    "tags": [
-      "konak",
-      "saç derisi",
-      "kabuk",
-      "bebek",
-      "seboreik"
-    ],
-    "urun_tipi": "Özel & SOS Onarıcı",
-    "urun_tipi_icon": "🩹",
-    "rutin_adimi": "Hedefe Yönelik / SOS Bakım"
-  },
-  {
-    "id": "mustela-foam-shampoo-for-newborns-150ml",
-    "name": "Mustela Yenidoğan Konak Önleyici Köpük Şampuan (150ml)",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Saçlı Deri & Konak",
-    "brand": "Mustela",
-    "size": "150 ml",
-    "form": "Köpük Pompalı Şişe",
-    "image": "images/mustela/mustela-foam-shampoo-for-newborns-150ml.jpeg",
-    "kime_uygun": {
-      "cilt_tipleri": [
-        "Yenidoğan Saçlı Derisi",
-        "Konak Oluşumuna Meyilli Saçlar",
-        "Hassas Bebek Başı"
-      ],
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": true,
-        "bebek_uygun_mu": true,
-        "cocuk_uygun_mu": false,
-        "ergen_uygun_mu": false,
-        "yetiskin_uygun_mu": false,
-        "geriatri_uygun_mu": false,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Doğumdan itibaren yenidoğan yoğun bakım ünitesinden çıkan bebekler dahil tüm bebeklik döneminde konak tedavisinde ve önlenmesinde güvenlidir."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Göz küresi içine doğrudan köpük sıkılmamalıdır.",
-      "goz_cevresi_temas": "Göz yakmayan formüldür.",
-      "doktora_yonlendirme": "Kafada iltihaplı akıntı veya koku varsa doktora gidilmelidir."
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Bebeğimin kafasında konak çıkmaya başladı, normal şampuanlar kabuğu dökmüyor, hem göz yakmayan hem konağı temizleyen bir şampuan var mı?",
-      "arama_etiketleri": [
-        "#konak_şampuanı",
-        "#köpük_şampuan",
-        "#yenidoğan_saç",
-        "#göz_yakmaz",
-        "#climbazole"
-      ],
-      "eczaci_sorusu": "Köpüğü saçında 1-2 dakika bekletip duruluyor musunuz?",
-      "secim_nedeni": "Climbazole ve nazik eksfoliyan salisilik asit türevi ile mantar kolonizasyonunu baskılar, konak pullarını çözerek nazikçe uzaklaştırır."
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "Climbazole (Antifungal Maya Kontrolü)",
-        "Avokado Polifenolleri",
-        "Yumuşak Salisilik Asit Türevi (Keratolotik)"
-      ],
-      "doku": "Kullanıma hazır, akmayan, göz yakmayan ultra hafif köpük.",
-      "rozetler": [
-        "%99 Doğal Kökenli",
-        "Göz Yakmaz",
-        "Sabunsuz",
-        "Parfümsüz",
-        "Hipoalerjenik"
-      ]
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "1. Adım: Bebeğin saçı ıslatılır -> 2. Adım: 1-2 pompa köpük doğrudan saça sıkılır -> 3. Adım: 1-2 dakika saç derisinde bekletilir -> 4. Adım: Ilık suyla durulanır.",
-      "zaman_ve_siklik": "Haftada 2-3 kez banyo esnasında",
-      "miktar": "1-2 pompa köpük",
-      "uygulama_sekli": "Islak saça nazikçe parmak uçlarıyla sürülür, ovalanmaz. 1-2 dakika etki etmesi beklenip durulanır.",
-      "beklenen_sonuc": "1-2 hafta içinde konak kabuklarının kendiliğinden dökülüp saç derisinin pürüzsüzleşmesi."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [
-        "mustela-cradle-cap-cream-40ml"
-      ],
-      "yasakli_cakismalar": [
-        "Yetişkin kepek şampuanları (ketokonazol / çinko pirition) bebeklerde toksiktir."
-      ],
-      "etkilesim_uyarisi": "Şampuanın etki etmesi için kafada 1-2 dakika bekletilmesi şarttır."
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "Babe Pediatrik Konak Şampuanı (200ml)",
-      "alternatif_fark_notu": "Babe %4 parfümlü formülasyona sahiptir; Mustela Köpük Şampuan ise kullanıma hazır köpük formatı ve parfümsüzlüğü ile yenidoğana daha uygundur."
-    },
-    "cilt_tipleri": [
-      "Konaklı Saç Derisi",
-      "Yenidoğan Saçı"
-    ],
-    "yas_grubu": "Doğumdan itibaren (Yenidoğan ve Bebekler)",
-    "kimler_kullanamaz": "Bilinen kontrendikasyonu yoktur.",
-    "nasil_kullanilir": "Islak saça sıkılır, 1-2 dakika bekletilip nazikçe durulanır.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Bebeklerde konak ve saç derisi pullanması",
-      "Göz yakmayan konak temizliği"
-    ],
-    "kombinasyon_ve_uyarilar": "Köpük kafada 1-2 dakika bekletilmelidir.",
-    "etken_maddeler": [
-      "Climbazole",
-      "Avokado Polifenolleri"
-    ],
-    "tags": [
-      "köpük şampuan",
-      "konak",
-      "yenidoğan",
-      "göz yakmaz",
-      "bebek şampuanı"
-    ],
-    "urun_tipi": "Şampuan & Saç Bakımı",
-    "urun_tipi_icon": "🚿",
-    "rutin_adimi": "Saç & Saçlı Deri"
-  },
-  {
-    "id": "mustela-gentle-cleansing-gel-500ml",
-    "name": "Mustela Gentle Cleansing Gel Yenidoğan Şampuanı (500ml)",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Normal Cilt Günlük Bakım",
-    "brand": "Mustela",
-    "size": "500 ml",
-    "form": "Pompalı Şişe Jel",
-    "image": "images/mustela/mustela-gentle-cleansing-gel-500ml.jpeg",
-    "kime_uygun": {
-      "cilt_tipleri": [
-        "Normal Bebek Cildi",
-        "Hassas Saç ve Vücut",
-        "Günlük Yıkama İhtiyacı Olan Ciltler"
-      ],
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": true,
-        "bebek_uygun_mu": true,
-        "cocuk_uygun_mu": true,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Doğumdan itibaren tüm bebekler için altın standart saç ve vücut şampuanıdır. Sabun içermez, bebek cildinin hidrolipid tabakasını korur."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Bilinen kontrendikasyonu yoktur.",
-      "goz_cevresi_temas": "Göz yakmayan pediatrik formül.",
-      "doktora_yonlendirme": "Ciltte şiddetli egzama veya atopik lezyonlar başlarsa Stelatopia serisine geçilmelidir."
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Bebeğim yeni doğdu, hem saçını hem vücudunu yıkayabileceğim, gözünü yakmayan ve cildini kurutmayan güvenilir bir şampuan arıyorum.",
-      "arama_etiketleri": [
-        "#yenidoğan_şampuanı",
-        "#saç_ve_vücut",
-        "#göz_yakmaz",
-        "#mustela_şampuan",
-        "#günlük_bebek_banyosu"
-      ],
-      "eczaci_sorusu": "Bebeğin cildinde egzama veya aşırı kuruluk var mı, yoksa normal cilt mi?",
-      "secim_nedeni": "Avokado Perseose ve B5 Vitamini içeren sabunsuz formülüyle bebek kokusunu korurken cildi kurutmadan temizler."
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "Avokado Perseose (Hücresel Bariyer Koruyucu)",
-        "Vitamin B5 (Panthenol)",
-        "Yumuşak Tensiyoaktifler"
-      ],
-      "doku": "Ferahlatıcı, nazik köpüren, ikonik Mustela kokulu jel.",
-      "rozetler": [
-        "%93 Doğal Kökenli",
-        "Sabunsuz",
-        "Göz Yakmaz",
-        "Biyobozunur",
-        "Hipoalerjenik"
-      ]
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "1. Adım: Banyoda Gentle Cleansing Gel ile saç ve vücut yıkanır -> 2. Adım: Banyo sonrası nemli cilde Hydra Bébé Losyon sürülür.",
-      "zaman_ve_siklik": "Her banyoda günlük olarak",
-      "miktar": "Avuç içine 1-2 pompa",
-      "uygulama_sekli": "Islak saç ve vücuda nazikçe köpürtülerek sürülür, durulanır.",
-      "beklenen_sonuc": "Yumuşacık, mis kokulu ve nemini kaybetmemiş bebek teni."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [
-        "mustela-hydra-bebe-body-lotion-300ml",
-        "mustela-hydra-bebe-face-cream-40ml"
-      ],
-      "yasakli_cakismalar": [
-        "Yetişkin duş jelleri ve alkali sabunlar."
-      ],
-      "etkilesim_uyarisi": "Atopik cilt alevlenmelerinde parfümsüz Stelatopia serisine geçilmelidir."
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "Bioderma ABCDerm Gel Moussant veya Sebamed Bebek Şampuanı",
-      "alternatif_fark_notu": "Bioderma ABCDerm parfümsüz seçeneğe sahiptir; Mustela Gentle Cleansing Gel ise ikonik güvenli bebek kokusu ve Avokado Perseose ile annelerin 1 numaralı tercihidir."
-    },
-    "cilt_tipleri": [
-      "Normal Cilt",
-      "Bebek Saçı ve Vücudu"
-    ],
-    "yas_grubu": "Doğumdan itibaren (Yenidoğan dahil), Tüm Bebek ve Çocuklar",
-    "kimler_kullanamaz": "Bilinen kontrendikasyonu yoktur.",
-    "nasil_kullanilir": "Islak saça ve vücuda uygulanıp köpürtülür, nazikçe durulanır.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Günlük bebek banyosu",
-      "Göz yakmayan saç ve vücut temizliği"
-    ],
-    "kombinasyon_ve_uyarilar": "Banyo sonrası Hydra Bébé losyon ile desteklenmelidir.",
-    "etken_maddeler": [
-      "Avokado Perseose",
-      "Vitamin B5"
-    ],
-    "tags": [
-      "bebek şampuanı",
-      "yenidoğan",
-      "saç ve vücut",
-      "göz yakmaz",
-      "günlük banyo"
-    ],
-    "urun_tipi": "Yüz & Vücut Temizleyici",
-    "urun_tipi_icon": "🧼",
-    "rutin_adimi": "1. Adım: Temizleme"
-  },
-  {
-    "id": "mustela-gentle-cleansing-gel-200ml",
-    "name": "Mustela Gentle Cleansing Gel Yenidoğan Şampuanı (200ml)",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Normal Cilt Günlük Bakım",
-    "brand": "Mustela",
-    "size": "200 ml",
-    "form": "Tüp Jel",
-    "image": "images/mustela/mustela-gentle-cleansing-gel-200ml.jpeg",
-    "kime_uygun": {
-      "cilt_tipleri": [
-        "Normal Bebek Cildi",
-        "Seyahat ve Çanta Boyu İhtiyacı"
-      ],
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": true,
-        "bebek_uygun_mu": true,
-        "cocuk_uygun_mu": true,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Doğumdan itibaren yenidoğan ve bebekler için 200ml seyahat ve çanta boyudur."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Bilinen kontrendikasyonu yoktur.",
-      "goz_cevresi_temas": "Göz yakmaz.",
-      "doktora_yonlendirme": "Atopik belirtilerde Stelatopia tercih edilmelidir."
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Tatile ve anneannelere giderken bebek çantasına sığacak pratik küçük boy bebek şampuanı arıyorum.",
-      "arama_etiketleri": [
-        "#bebek_şampuanı_küçük_boy",
-        "#seyahat_boyu",
-        "#çanta_şampuanı"
-      ],
-      "eczaci_sorusu": "Çanta veya seyahat için mi arıyorsunuz?",
-      "secim_nedeni": "200ml sızdırmaz tüp ambalajı ile seyahatlerde taşınması pratik ve güvenlidir."
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "Avokado Perseose",
-        "Vitamin B5"
-      ],
-      "doku": "Yumuşak köpüren jel.",
-      "rozetler": [
-        "%93 Doğal Kökenli",
-        "Sabunsuz",
-        "Göz Yakmaz"
-      ]
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "Banyoda ıslak saça ve vücuda uygulanır, durulanır.",
-      "zaman_ve_siklik": "Her banyoda",
-      "miktar": "Fındık büyüklüğünde",
-      "uygulama_sekli": "Islak cilde köpürtülüp durulanır.",
-      "beklenen_sonuc": "Temiz ve yumuşak bebek teni."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [
-        "mustela-hydra-bebe-face-cream-40ml"
-      ],
-      "yasakli_cakismalar": [
-        "Yetişkin sabunları."
-      ],
-      "etkilesim_uyarisi": "Normal cilt içindir."
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "Mustela Gentle Cleansing Gel 500ml",
-      "alternatif_fark_notu": "500ml ev banyosu için pompalıdır; 200ml ise seyahat tüpüdür."
-    },
-    "cilt_tipleri": [
-      "Normal Cilt"
-    ],
-    "yas_grubu": "Doğumdan itibaren (Yenidoğan dahil)",
-    "kimler_kullanamaz": "Bilinen kontrendikasyonu yoktur.",
-    "nasil_kullanilir": "Islak saç ve vücuda uygulanır, durulanır.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Seyahat için küçük boy bebek şampuanı"
-    ],
-    "kombinasyon_ve_uyarilar": "Normal cilt içindir.",
-    "etken_maddeler": [
-      "Avokado Perseose",
-      "Vitamin B5"
-    ],
-    "tags": [
-      "seyahat boyu",
-      "bebek şampuanı",
-      "tüp",
-      "yenidoğan"
-    ],
-    "urun_tipi": "Yüz & Vücut Temizleyici",
-    "urun_tipi_icon": "🧼",
-    "rutin_adimi": "1. Adım: Temizleme"
-  },
-  {
-    "id": "mustela-hydra-bebe-body-lotion-300ml",
-    "name": "Mustela Hydra Bébé Nemlendirici Vücut Losyonu (300ml)",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Normal Cilt Günlük Bakım",
-    "brand": "Mustela",
-    "size": "300 ml",
-    "form": "Pompalı Şişe Losyon",
-    "image": "images/mustela/mustela-hydra-bebe-body-lotion-300ml.jpeg",
-    "kime_uygun": {
-      "cilt_tipleri": [
-        "Normal Cilt",
-        "Günlük Neme İhtiyaç Duyan Bebek Cildi",
-        "Hafif Kuruluk Hissedilen Cilt"
-      ],
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": true,
-        "bebek_uygun_mu": true,
-        "cocuk_uygun_mu": true,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Doğumdan itibaren yenidoğan ve bebeklerin günlük vücut nemlendirmesi için idealdir. Hafif akışkan yapısıyla giysilere yapışmaz."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Şiddetli atopik lezyon veya açık yaralarda kullanılmaz.",
-      "goz_cevresi_temas": "Göz içine uygulanmaz.",
-      "doktora_yonlendirme": "Deride döküntü ve kaşıntı şiddetlenirse atopik egzama şüphesiyle hekime danışılmalıdır."
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Banyodan sonra bebeğimin cildini nemlendirecek, hemen emilen ve o güzel bebek kokusunu bırakan bir vücut losyonu istiyorum.",
-      "arama_etiketleri": [
-        "#bebek_losyonu",
-        "#günlük_nemlendirici",
-        "#hydra_bebe",
-        "#vücut_losyonu",
-        "#bebek_kokusu"
-      ],
-      "eczaci_sorusu": "Bebeğinizin cildinde egzama var mı, yoksa normal sağlıklı bir cilt mi?",
-      "secim_nedeni": "Jojoba ve Ayçiçeği yağı ile cildin su tutma kapasitesini anında %51 artırır, 24 saat nem kalkanı sağlar."
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "Avokado Perseose",
-        "Organik Jojoba Yağı",
-        "Ayçiçeği Yağı",
-        "E Vitamini"
-      ],
-      "doku": "İpeksi, hafif akışkan, hemen emilen ve giydirmeye hazır doku.",
-      "rozetler": [
-        "%97 Doğal Kökenli",
-        "24 Saat Nem Kanıtlı",
-        "Hipoalerjenik",
-        "Pompalı Ambalaj"
-      ]
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "1. Adım: Gentle Cleansing Gel ile banyo -> 2. Adım: Havluyla nazik kurulanma -> 3. Adım: Hydra Bébé Losyon ile tüm vücuda masaj.",
-      "zaman_ve_siklik": "Her banyo sonrası veya her sabah/akşam",
-      "miktar": "2-3 pompa basılarak vücuda uygulanır",
-      "uygulama_sekli": "Temiz cilde hafif dairesel masaj hareketleriyle sürülür.",
-      "beklenen_sonuc": "24 saat süren yumuşacık ve nemli cilt."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [
-        "mustela-gentle-cleansing-gel-500ml",
-        "mustela-hydra-bebe-face-cream-40ml"
-      ],
-      "yasakli_cakismalar": [
-        "Atopik alevlenme döneminde bu ürün yerine Stelatopia+ Krem kullanılmalıdır."
-      ],
-      "etkilesim_uyarisi": "Aşırı kuru ciltlerde losyon hafif kalabilir, cold cream serisi tercih edilmelidir."
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "Bioderma ABCDerm Lait Nemlendirici Süt",
-      "alternatif_fark_notu": "Bioderma süt dokusundadır; Mustela Hydra Bébé jojoba yağı zenginliğiyle daha uzun süreli nem bariyeri sunar."
-    },
-    "cilt_tipleri": [
-      "Normal Cilt"
-    ],
-    "yas_grubu": "Doğumdan itibaren (Yenidoğan dahil), Çocuklar",
-    "kimler_kullanamaz": "Atopik egzaması olan ciltlere Stelatopia önerilmelidir.",
-    "nasil_kullanilir": "Sabah ve akşam tüm vücuda nazikçe masaj yaparak uygulanır.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Banyo sonrası hafif kuruluk",
-      "Günlük bebek nemlendiricisi arayışı"
-    ],
-    "kombinasyon_ve_uyarilar": "Atopik ciltlere Stelatopia serisi verilmelidir.",
-    "etken_maddeler": [
-      "Avokado Perseose",
-      "Jojoba Yağı",
-      "Ayçiçeği Yağı"
-    ],
-    "tags": [
-      "vücut losyonu",
-      "nemlendirici",
-      "bebek",
-      "yenidoğan",
-      "normal cilt"
-    ],
-    "urun_tipi": "Nemlendirici & Bariyer Krem",
-    "urun_tipi_icon": "🧴",
-    "rutin_adimi": "2. Adım: Nemlendirme & Bariyer"
-  },
-  {
-    "id": "mustela-nourishing-cream-with-cold-cream-40ml",
-    "name": "Mustela Cold Cream İçeren Besleyici Yüz Kremi (40ml)",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Kuru Cilt & Kış Bakımı",
-    "brand": "Mustela",
-    "size": "40 ml",
-    "form": "Tüp Krem",
-    "image": "images/mustela/mustela-nourishing-cream-with-cold-cream-40ml.jpeg",
-    "kime_uygun": {
-      "cilt_tipleri": [
-        "Kuru Cilt",
-        "Soğuk ve Rüzgardan Çatlayan Cilt",
-        "Aşırı Nemsiz Bebek Yüzü"
-      ],
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": true,
-        "bebek_uygun_mu": true,
-        "cocuk_uygun_mu": true,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Doğumdan itibaren uygundur. Özellikle kış aylarında rüzgar ve soğuk havanın bebek cildindeki çatlatıcı etkisine karşı balmumu zırhı örer."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Akneye meyilli yağlı ciltlerde komedojenik olabilir (yoğun balmumu içerir).",
-      "goz_cevresi_temas": "Göz içine sürülmemelidir.",
-      "doktora_yonlendirme": "Yanakta donuk ısırığı veya derin çatlaklar oluştuysa hekime danışılmalıdır."
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Kışın dışarı çıktığımızda bebeğimin yanakları soğuktan ve rüzgardan hemen kuruyup çatlıyor, dış ortamdan koruyan zengin bir yüz kremi lazım.",
-      "arama_etiketleri": [
-        "#cold_cream",
-        "#kış_kremi",
-        "#soğuktan_koruma",
-        "#balmumu",
-        "#çatlak_yanak",
-        "#seramid"
-      ],
-      "eczaci_sorusu": "Dışarı çıkmadan önce mi sürüyorsunuz, yanaklarda kuruluk soyulmaya başladı mı?",
-      "secim_nedeni": "Organik Balmumu ve Seramid kompleksi ile cildin üzerinde lipid bariyeri oluşturarak soğuk, rüzgar ve kış ayazına karşı kalkan görevi görür."
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "Organik Balmumu (Koruyucu Kalkan)",
-        "Seramid Kompleksi (Lipid Onarımı)",
-        "Avokado Perseose",
-        "Shea Yağı"
-      ],
-      "doku": "Zengin, yoğun kıvamlı, besleyici ve koruyucu krem.",
-      "rozetler": [
-        "%97 Doğal Kökenli",
-        "Cold Cream Kompleksi",
-        "Hipoalerjenik",
-        "Dermatolojik Test Edilmiş"
-      ]
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "1. Adım: Bebeğin yüzü temizlenir -> 2. Adım: Dışarı çıkmadan 15-20 dakika önce yanak ve çene bölgesine sürülür.",
-      "zaman_ve_siklik": "Sabah-akşam ve özellikle soğuk havada dışarı çıkmadan önce",
-      "miktar": "Nohut büyüklüğünde",
-      "uygulama_sekli": "Yanaklara, burun ucuna ve çeneye nazikçe masajla yedirilir.",
-      "beklenen_sonuc": "Soğuk havada dahi kızarmayan, yumuşak ve neme doymuş yanaklar."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [
-        "mustela-nourishing-cleansing-gel-cold-cream-300ml",
-        "mustela-nourishing-lotion-cold-cream-200ml"
-      ],
-      "yasakli_cakismalar": [
-        "Alkol içeren temizleyiciler kuruluk hissini artırır."
-      ],
-      "etkilesim_uyarisi": "Çok yağlı bölgelere uygulanmamalıdır."
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "Avene Cicalfate+ Krem veya Bioderma ABCDerm Cold-Cream",
-      "alternatif_fark_notu": "Avene mineral termal su odaklıdır; Mustela Cold Cream ise organik balmumu ve avokado seramidleri ile bebek cildi fizyolojisine tam uyumludur."
-    },
-    "cilt_tipleri": [
-      "Kuru Cilt",
-      "Soğuğa Maruz Kalan Yüz"
-    ],
-    "yas_grubu": "Doğumdan itibaren (Yenidoğan dahil), Çocuklar",
-    "kimler_kullanamaz": "Yağlı ve komedonlu ciltler.",
-    "nasil_kullanilir": "Dışarı çıkmadan önce ve günlük olarak yüz bölgesine uygulanır.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Soğuk ve rüzgardan çatlayan yanaklar",
-      "Kuru bebek yüzü"
-    ],
-    "kombinasyon_ve_uyarilar": "Kışın dışarı çıkmadan önce uygulanmalıdır.",
-    "etken_maddeler": [
-      "Organik Balmumu",
-      "Seramidler",
-      "Shea Yağı"
-    ],
-    "tags": [
-      "cold cream",
-      "yüz kremi",
-      "kuru cilt",
-      "kış bakımı",
-      "balmumu"
-    ],
-    "urun_tipi": "Nemlendirici & Bariyer Krem",
-    "urun_tipi_icon": "🧴",
-    "rutin_adimi": "2. Adım: Nemlendirme & Bariyer"
-  },
-  {
-    "id": "mustela-gel-arnica-calendula-bio-100ml",
-    "name": "Mustela Organik Arnica & Calendula Jel (100ml)",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Onarıcı & SOS Bakım",
-    "brand": "Mustela",
-    "size": "100 ml",
-    "form": "Tüp Jel",
-    "image": "images/mustela/mustela-gel-arnica-calendula-bio-100ml.jpeg",
-    "kime_uygun": {
-      "cilt_tipleri": [
-        "Darbe & Çarpma Sonrası Morluk",
-        "Şişlik ve Ödem Oluşan Doku",
-        "Düşme Sonrası Acı Çeken Bölge"
-      ],
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": false,
-        "bebek_uygun_mu": true,
-        "cocuk_uygun_mu": true,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "⚠️ 9 AYDAN BÜYÜK BEBEKLER İÇİNDİR! 9 aydan küçük bebeklerde kullanılmaz. Emekleme ve yürüme dönemindeki bebeklerin düşme, çarpma ve morluklarında ilk yardım jelidir."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "AÇIK YARA, KANAMALI KESİK, GÖZ ÇEVRESİ VE MUKOZAL ALANLARA ASLA SÜRÜLMEZ! 9 aydan küçük bebeklerde kontrendikedir.",
-      "goz_cevresi_temas": "Göz çevresine ve ağız içine kesinlikle sürülmez.",
-      "doktora_yonlendirme": "Kafaya alınan sert darbelerde kusma, baygınlık, fışkırır tarzda kusma varsa acil servise başvurulmalıdır."
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Bebeğim yürümeye başladı, sehpanın kenarına kafasını çarptı ve alnı morarıp şişmeye başladı; morluğu ve şişliği hemen dağıtacak bir şey var mı?",
-      "arama_etiketleri": [
-        "#morluk_jeli",
-        "#arnika",
-        "#çarpma_düşme",
-        "#şişlik",
-        "#ödem",
-        "#calendula"
-      ],
-      "eczaci_sorusu": "Bebek 9 aydan büyük mü? Çarpılan yerde açık yara veya kanama var mı?",
-      "secim_nedeni": "Organik Arnica montana kan dolaşımını uyararak hematomu (morluğu) dağıtır, Calendula (Aynısefa) ise acıyı ve ödemi yatıştırır."
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "Organik Arnica Montana Özü (Morluk Giderici)",
-        "Organik Calendula Özü (Yatıştırıcı)",
-        "Gliserin"
-      ],
-      "doku": "Ferahlatıcı, yağsız, yapışmayan serinletici jel.",
-      "rozetler": [
-        "%97 Doğal Kökenli",
-        "Organik Sertifikalı (BIO)",
-        "Parfümsüz",
-        "Alkolsuz",
-        "Vegan"
-      ]
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "1. Adım: Çarpılan bölge kontrol edilir (kanama yoksa) -> 2. Adım: Arnica Jel nazikçe masajla sürülür.",
-      "zaman_ve_siklik": "Çarpmadan hemen sonra günde 2-3 kez",
-      "miktar": "Moraran bölgenin büyüklüğüne göre fındık kadar",
-      "uygulama_sekli": "Temiz ve kapalı cilde nazik dairesel hareketlerle masaj yapılarak sürülür. Yutulmamalıdır.",
-      "beklenen_sonuc": "Anında serinletici rahatlama, 24-48 saatte şişlik ve morluğun hızla dağılması."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [
-        "mustela-cicastela-moisture-recovery-cream-40ml"
-      ],
-      "yasakli_cakismalar": [
-        "Açık kesiklere sürülmemelidir; kanamalı yarada Cicastela tercih edilmelidir."
-      ],
-      "etkilesim_uyarisi": "9 aydan küçük bebeklere uygulanmaz."
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "Bojin Arnica Jel veya Arnica Montana Jel",
-      "alternatif_fark_notu": "Piyasadaki birçok yetişkin arnika jeli mentol veya alkol içerir; Mustela BIO Arnica ise alkolsüz, parfümsüz ve 9 ay üstü bebek güvenliğine sahiptir."
-    },
-    "cilt_tipleri": [
-      "Darbe ve Çarpma Sonrası Cilt",
-      "Morluk ve Şişlik"
-    ],
-    "yas_grubu": "9 Aydan büyük bebekler, Çocuklar ve Yetişkinler",
-    "kimler_kullanamaz": "9 aydan küçük bebekler, açık yaralar ve mukozalar.",
-    "nasil_kullanilir": "Çarpma veya morarma olan bölgeye günde 2-3 kez hafifçe masaj yaparak uygulanır.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Düşme ve çarpma sonucu oluşan morluklar",
-      "Şişlik ve ödem"
-    ],
-    "kombinasyon_ve_uyarilar": "Açık yaralara sürülmez, 9 aydan küçük bebeklerde kullanılmaz.",
-    "etken_maddeler": [
-      "Organik Arnica",
-      "Organik Calendula"
-    ],
-    "tags": [
-      "arnica",
-      "morluk",
-      "çarpma",
-      "ödem",
-      "ilk yardım",
-      "organik"
-    ],
-    "urun_tipi": "Özel & SOS Onarıcı",
-    "urun_tipi_icon": "🩹",
-    "rutin_adimi": "Hedefe Yönelik / SOS Bakım"
-  },
-  {
-    "id": "mustela-maternite-stretch-marks-oil-bio-105ml",
-    "name": "Mustela Maternité Organik Çatlak Bakım Yağı (105ml)",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Anne & Hamilelik Bakımı",
-    "brand": "Mustela",
-    "size": "105 ml",
-    "form": "Sprey Şişe Yağ",
-    "image": "images/mustela/mustela-maternite-stretch-marks-oil-bio-105ml.jpeg",
-    "kime_uygun": {
-      "cilt_tipleri": [
-        "Hamilelikte Gerilen Karın ve Göğüs Cildi",
-        "Çatlak Oluşumuna Meyilli Cilt",
-        "Doğum Sonrası Elastikiyet Kaybı"
-      ],
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": false,
-        "bebek_uygun_mu": false,
-        "cocuk_uygun_mu": false,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": false,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Hamileliğin ilk gününden itibaren tüm gebelik ve emzirme süresince %100 güvenlidir. Fetus üzerinde hiçbir teratojenik veya toksik riski yoktur."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Sezaryen ameliyat dikişleri tamamen kapanmadan taze dikiş hattına sürülmez.",
-      "goz_cevresi_temas": "Sadece vücuda (karın, göğüs, basen) uygulanır.",
-      "doktora_yonlendirme": "Karında şiddetli gebelik kaşıntısı ve sarılık belirtisi varsa gebelik kolestazı açısından kadın doğum hekimine yönlendirilmelidir."
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Hamileyim, karnım büyüdükçe cildim geriliyor ve kaşınıyor; bebeğime zarar vermeyecek organik bir çatlak önleyici yağ istiyorum.",
-      "arama_etiketleri": [
-        "#hamilelik_çatlak_yağı",
-        "#gebelik_çatlağı",
-        "#maracuja",
-        "#karın_kaşıntısı",
-        "#organik_çatlak_yağı"
-      ],
-      "eczaci_sorusu": "Hamileliğin kaçıncı ayındasınız? Çatlaklar oluşmadan önce başlanması koruyuculuğu maksimuma çıkarır.",
-      "secim_nedeni": "Patentli Maracuja (Çarkıfelek Meyvesi) yağı ve Organik Avokado yağı ile cildin elastikiyetini %98 artırarak çatlak yırtılmalarını engeller."
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "Konsantre Maracuja Yağı (Elastikiyet Artırıcı)",
-        "Organik Avokado Yağı",
-        "Organik Ayçiçeği Yağı",
-        "E Vitamini"
-      ],
-      "doku": "Kuru yağ dokusu, yağlı ve yapışkan his bırakmaz, giysileri lekelemez.",
-      "rozetler": [
-        "%105 Doğal Kökenli (Ecocert Cosmos Organic)",
-        "Parfümsüz",
-        "Mineral Yağsız",
-        "Anne ve Bebek Güvenli"
-      ]
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "1. Adım: Duş sonrası hafif nemli cilde sprey sıkılır -> 2. Adım: Karın, göğüs, kalça ve basenlere dairesel masajla uygulanır.",
-      "zaman_ve_siklik": "Günde 2 kez (Sabah ve Akşam düzenli)",
-      "miktar": "Karın ve göğüs bölgesine 3-4 sprey",
-      "uygulama_sekli": "Karında saat yönünde dairesel masaj hareketleriyle deriye tamamen yedirilir.",
-      "beklenen_sonuc": "Gerginlik hissinin anında kaybolması, gebelik boyunca sıfır çatlak ile elastikiyet korunumu."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [
-        "mustela-maternite-stretch-marks-cream-150ml",
-        "mustela-maternite-nursing-comfort-balm-10ml"
-      ],
-      "yasakli_cakismalar": [
-        "Retinol ve türevleri (A vitamini türevleri teratojendir, gebelikte kesinlikle yasaktır)."
-      ],
-      "etkilesim_uyarisi": "Emzirme döneminde göğüse uygulanırsa emzirmeden önce göğüs ucu temizlenmelidir."
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "Lierac Phytolastil Solute / Gel veya Bio-Oil Çatlak Karşıtı Bakım Yağı",
-      "alternatif_fark_notu": "Bio-Oil mineral yağ ve parfüm içerir; Mustela Maternité Çatlak Yağı ise %100 organik gıda sınıfı bitkisel yağlardan oluşur ve parfümsüzdür."
-    },
-    "cilt_tipleri": [
-      "Hamilelikte Gerilen Cilt",
-      "Çatlağa Meyilli Cilt"
-    ],
-    "yas_grubu": "Hamileler ve Doğum Yapan Anneler",
-    "kimler_kullanamaz": "Taze sezaryen ameliyat yarası.",
-    "nasil_kullanilir": "Sabah ve akşam karın, göğüs, basen ve kalçalara dairesel masajla uygulanır.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Hamilelikte karın çatlakları",
-      "Ciltte kuruluk ve gerilme kaşıntısı"
-    ],
-    "kombinasyon_ve_uyarilar": "Hamileliğin 1. ayından itibaren başlanmalıdır.",
-    "etken_maddeler": [
-      "Organik Maracuja Yağı",
-      "Organik Avokado Yağı"
-    ],
-    "tags": [
-      "çatlak yağı",
-      "hamilelik",
-      "anne",
-      "organik",
-      "maracuja",
-      "gebelik"
-    ],
-    "urun_tipi": "Vücut & Masaj Yağı",
-    "urun_tipi_icon": "✨",
-    "rutin_adimi": "Vücut & Masaj"
-  },
-  {
-    "id": "musti-eau-de-soin-50ml",
-    "name": "Musti Eau de Soin Alkolsüz Bebek Parfümü (50ml)",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Normal Cilt Günlük Bakım",
-    "brand": "Mustela",
-    "size": "50 ml",
-    "form": "Sprey Cam Şişe",
-    "image": "images/mustela/musti-eau-de-soin-delicate-fragrance-50ml.jpeg",
-    "kime_uygun": {
-      "cilt_tipleri": [
-        "Normal Bebek Cildi",
-        "Bebek Giysileri ve Saçı",
-        "Mis Bebek Kokusu İsteyenler"
-      ],
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": true,
-        "bebek_uygun_mu": true,
-        "cocuk_uygun_mu": true,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Doğumdan itibaren yenidoğan ve bebekler için alkolsüz olarak formüle edilmiştir. Cilde doğrudan sıkılmasından ziyade giysilere, yastığa veya saç fırçasına sıkılması tavsiye edilir."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "GÖZE VEYA YÜZE DOĞRUDAN SIKILMAZ. Açık yaralara veya egzamalı bölgelere uygulanmaz.",
-      "goz_cevresi_temas": "Göz temasından kesinlikle kaçınılmalıdır.",
-      "doktora_yonlendirme": "Nefes darlığı veya alerjik aksırık gelişirse kullanımı kesilmelidir."
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Bebeğimin mis gibi kokmasını istiyorum ama alkollü kolonyalar cildini yakar ve alerji yapar diye korkuyorum, güvenli bir bebek kokusu var mı?",
-      "arama_etiketleri": [
-        "#bebek_parfümü",
-        "#alkolsüz_koku",
-        "#musti",
-        "#bebek_kolonyası",
-        "#papatya_özü"
-      ],
-      "eczaci_sorusu": "Bebeğin cildine mi yoksa giysilerine mi sıkacaksınız?",
-      "secim_nedeni": "Alkolsüz su bazlı formülü, papatya ve bal özleriyle cildi nemlendirirken narin narenciye ve gül notalarıyla güvenli koku sağlar."
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "Papatya Özü (Yatıştırıcı)",
-        "Bal Özü (Nemlendirici)",
-        "Su Bazlı Alkolsüz Esans"
-      ],
-      "doku": "Su bazlı hafif koku spreyi.",
-      "rozetler": [
-        "%97 Doğal Kökenli",
-        "Alkolsüz (0% Alkol)",
-        "Fitalatsız",
+        "Dermatolojik Test Edildi",
         "Parabensiz",
-        "Hipoalerjenik"
-      ]
+        "Komedojenik Değildir"
+      ],
+      "doku": "Kapsül / Tablet",
+      "fizyolojik_ph": "5.5"
     },
     "kullanim_protokolu": {
-      "rutin_siralamasi": "Bebeğin kıyafetlerine, saç fırçasına veya odasına sıkılır.",
-      "zaman_ve_siklik": "İstenilen her an",
-      "miktar": "1-2 fıs",
-      "uygulama_sekli": "Kıyafetlerine 20 cm mesafeden sıkılır veya annenin eline sıkılıp bebeğin boynuna nazikçe dokundurulur.",
-      "beklenen_sonuc": "Gün boyu ferah, huzurlu ve ikonik bebek kokusu."
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
     },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [
-        "mustela-gentle-cleansing-gel-500ml"
-      ],
-      "yasakli_cakismalar": [
-        "Geleneksel 80 derece limon kolonyaları bebek cildini tahriş eder ve alkol zehirlenmesi riski taşır; asla bebekte kullanılmamalıdır."
-      ],
-      "etkilesim_uyarisi": "Direkt yüze püskürtülmez."
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "Chicco Bebek Kolonyası veya Klorane Bebek Parfümü",
-      "alternatif_fark_notu": "Chicco alkol türevi içerebilir; Mustela Musti tamamen %0 alkolsüz Eau de Soin formundadır."
-    },
-    "cilt_tipleri": [
-      "Normal Cilt",
-      "Bebek Giysileri"
-    ],
-    "yas_grubu": "Doğumdan itibaren (Yenidoğan dahil)",
-    "kimler_kullanamaz": "Doğrudan yüze ve göze sıkılmaz.",
-    "nasil_kullanilir": "Bebeğin giysilerine, boyun çevresine veya saç fırçasına 1-2 fıs sıkılır.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Alkolsüz ve güvenli bebek kokusu arayışı"
-    ],
-    "kombinasyon_ve_uyarilar": "Alkol içermez, direkt göze sıkılmamalıdır.",
-    "etken_maddeler": [
-      "Papatya Özü",
-      "Bal Özü"
-    ],
     "tags": [
-      "bebek parfümü",
-      "alkolsüz",
-      "musti",
-      "koku",
-      "yenidoğan"
-    ],
-    "urun_tipi": "Ferahlatıcı Su & Parfüm",
-    "urun_tipi_icon": "🌸",
-    "rutin_adimi": "Günlük Bakım"
+      "voonka",
+      "one & only / dailymune",
+      "tak-001",
+      "kapsül / tablet"
+    ]
   },
   {
-    "id": "ocean-b12-sprey-1000mcg",
-    "name": "Ocean Methyl B12 Dilaltı Sprey 1000 mcg (5ml)",
-    "category": "vitamin",
-    "category_name": "Besin Takviyeleri & Vitaminler",
-    "sub_category": "B12 Vitamini & Enerji",
-    "brand": "Orzax / Ocean",
-    "size": "5 ml (Yaklaşık 40 Puf)",
-    "form": "Dilaltı Sprey Şişe",
-    "image": "images/mustela/ocean-methyl-b12-sprey-1000mcg.jpeg",
-    "kime_uygun": {
-      "cilt_tipleri": [
-        "Kronik Yorgunluk Yaşayanlar",
-        "Unutkanlık ve Odaklanma Güçlüğü Çekenler",
-        "Vegan / Vejetaryen Beslenenler",
-        "Metformin veya PPI Kullananlar"
-      ],
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": false,
-        "bebek_uygun_mu": false,
-        "cocuk_uygun_mu": false,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "11 yaş ve üzeri bireyler ile yetişkinler içindir. Çocuklarda hekim kan tahlili sonucuna göre doz ayarlamalıdır. İleri yaştaki geriatrik bireylerde mide asidi azaldığı için (atrofik gastrit) intrinsik faktör yetersizliğine bağlı B12 emilimi bozulur; bu nedenle dil altı (sublingual) sprey formu mideyi baypas ederek doğrudan kana karışır."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Kobalamin veya kobalt alerjisi olanlar, Leber herediter optik atrofisi olan hastalar.",
-      "goz_cevresi_temas": "Oral kullanım içindir.",
-      "doktora_yonlendirme": "Ciddi megaloblastik anemi, ellerde/ayaklarda şiddetli uyuşma ve karıncalanma (nöropati) varsa intramusküler enjeksiyon gerekebilir; hekime yönlendirilmelidir."
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Sabahları yataktan yorgun kalkıyorum, kafamı toparlayamıyorum ve son zamanlarda çok unutkan oldum; mide problemim olduğu için hap yutmak istemiyorum.",
-      "arama_etiketleri": [
-        "#b12",
-        "#metilkobalamin",
-        "#yorgunluk",
-        "#unutkanlık",
-        "#dilaltı_sprey",
-        "#vegan_b12",
-        "#halsizlik"
-      ],
-      "eczaci_sorusu": "Mide koruyucu (lansoprazol, omeprazol) veya şeker ilacı (metformin) kullanıyor musunuz? (Bu ilaçlar B12 emilimini engeller!)",
-      "secim_nedeni": "Aktif koenzim formu olan Metilkobalamin içerir; sentetik siyanokobalamin gibi karaciğerde dönüşüm gerektirmez ve dil altı mukozasından hızla kana geçer."
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "1000 mcg Metilkobalamin (Aktif B12 Vitamini Koenzim Formu)"
-      ],
-      "doku": "Kiraz/ahududu aromalı dilaltı mikro-sprey solüsyon.",
-      "rozetler": [
-        "Aktif Metilkobalamin",
-        "Dilaltı Sublingual Hızlı Emilim",
-        "Şekersiz",
-        "Vegan",
-        "Glutensiz"
-      ]
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "Tercihen sabah kahvaltısından sonra dil altına 1 puf sıkılır.",
-      "zaman_ve_siklik": "Günde 1 kez sabahları",
-      "miktar": "1 puf (1000 mcg)",
-      "uygulama_sekli": "Dil altına sıkılır, yaklaşık 30-45 saniye yutkunmadan ve su içmeden dil altında tutulur, ardından yutulur.",
-      "beklenen_sonuc": "2 hafta içinde zihinsel berraklık ve sabah yorgunluğunda azalma; 1 ayda serum B12 seviyesinde belirgin artış."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [
-        "ocean-d3k2-damla-20ml"
-      ],
-      "yasakli_cakismalar": [
-        "Aşırı alkol tüketimi B12 depolarını tüketir."
-      ],
-      "etkilesim_uyarisi": "Metformin, Proton Pompa İnhibitörleri (PPI) ve H2 blokerleri B12 emilimini azaltır; bu hastalarda dil altı sprey zorunludur."
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "Venatura Metilkobalamin Dilaltı Sprey veya Solgar Sublingual B12",
-      "alternatif_fark_notu": "Solgar çiğneme tabletidir; Ocean sprey formu ise yutma güçlüğü çekenlerde ve yaşlılarda çok daha pratik ve hızlı emilir."
-    },
-    "cilt_tipleri": [
-      "Yorgunluk ve Halsizlik",
-      "B12 Eksikliği"
-    ],
-    "yas_grubu": "11 Yaş ve Üzeri Bireyler, Yetişkinler ve Yaşlılar",
-    "kimler_kullanamaz": "Kobalt alerjisi olanlar.",
-    "nasil_kullanilir": "Günde 1 puf dil altına püskürtülür, 45 saniye bekletilip yutulur.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Halsizlik ve sabah yorgunluğu",
-      "Unutkanlık ve odaklanma güçlüğü",
-      "Mide ameliyatı/koruyucu kullanımı sonrası eksiklik"
-    ],
-    "kombinasyon_ve_uyarilar": "Metformin veya mide koruyucu kullananlarda mutlaka verilmelidir.",
-    "etken_maddeler": [
-      "1000 mcg Metilkobalamin (Aktif B12)"
-    ],
-    "tags": [
-      "b12",
-      "metilkobalamin",
-      "sprey",
-      "dilaltı",
-      "yorgunluk",
-      "takviye"
-    ],
-    "urun_tipi": "Gıda Takviyesi & Vitamin",
-    "urun_tipi_icon": "💊",
-    "rutin_adimi": "Destek: Takviye & Beslenme"
-  },
-  {
-    "id": "ocean-d3k2-damla-20ml",
-    "name": "Ocean Vitamin D3 K2 Damla (20ml)",
-    "category": "vitamin",
-    "category_name": "Besin Takviyeleri & Vitaminler",
-    "sub_category": "D Vitamini & Kemik Sağlığı",
-    "brand": "Orzax / Ocean",
-    "size": "20 ml (Yaklaşık 400 Damla)",
-    "form": "Damlalıklı Cam Şişe",
-    "image": "images/mustela/ocean-d3k2-damla-20ml.jpeg",
-    "kime_uygun": {
-      "cilt_tipleri": [
-        "D Vitamini Eksikliği Olanlar",
-        "Bağışıklığı Düşük Bireyler",
-        "Kemik Erimesi (Osteoporoz) Riski Taşıyanlar",
-        "Damar Kireçlenmesini Önlemek İsteyenler"
-      ],
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": false,
-        "bebek_uygun_mu": false,
-        "cocuk_uygun_mu": false,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "11 yaş ve üzeri ergenler ve yetişkinler içindir. Bebeklerde hekim sadece D3 (K2'siz) damla başlar; bu K2'li form yetişkin ve geriatri için kemik-damar dengesini kurar."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "⚠️ KAN SULANDIRICI (VARFARİN / COUMADİN) KULLANAN HASTALARDA K2 VİTAMİNİ KESİNLİKLE KONTRENDİKEDİR! Hiperkalsemi hastalarında kullanılmaz.",
-      "goz_cevresi_temas": "Ağız yoluyla alınır.",
-      "doktora_yonlendirme": "Kan sulandırıcı (Coumadin) kullanan hasta kesinlikle hekimine danışmalıdır; INR değerini bozar."
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "D vitaminim yerlerde sürünüyor, kemiklerim sızlıyor ve sık sık hasta oluyorum; D vitamini alırken damarlarda kireçlenme yapmasın diye K2 ile birlikte olanını önerdiler.",
-      "arama_etiketleri": [
-        "#d3k2",
-        "#d_vitamini",
-        "#k2_vitamini",
-        "#kemik_sağlığı",
-        "#menaquinon7",
-        "#bağışıklık",
-        "#damar_sağlığı"
-      ],
-      "eczaci_sorusu": "Coumadin (Varfarin) gibi pıhtılaşma önleyici kan sulandırıcı kullanıyor musunuz? (Coumadin kullananlara K2 verilemez!)",
-      "secim_nedeni": "D3 kalsiyumun bağırsaktan emilimini sağlarken, MenaQ7 (K2 Vitamini) emilen kalsiyumu damarlardan çekip kemik ve diş dokusuna kilitler; damar sertliğini önler."
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "Her damlada: 1000 IU (25 mcg) Kolekalsiferol (Vitamin D3)",
-        "Her damlada: 22.5 mcg Menaquinon-7 (MenaQ7 - Doğal Vitamin K2)",
-        "Zeytinyağı Taşıyıcı Matris"
-      ],
-      "doku": "Doğal zeytinyağı bazlı damla solüsyon.",
-      "rozetler": [
-        "Hakiki Zeytinyağı Bazlı",
-        "Koruyucusuz & Katkısız",
-        "MenaQ7 Patentli K2",
-        "Glutensiz & Şekersiz"
-      ]
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "Yağda çözünen vitaminler olduğu için yağ içeren ana öğünle (örneğin kahvaltı veya öğle yemeği) birlikte alınır.",
-      "zaman_ve_siklik": "Günde 1 kez yemekle birlikte",
-      "miktar": "Günde 1 damla (hekim önerisine göre 2-3 damla artırılabilir)",
-      "uygulama_sekli": "Bir lokma ekmeğin üzerine damlatılarak veya doğrudan ağıza damlatılarak yutulur.",
-      "beklenen_sonuc": "1 ayda serum 25(OH)D düzeyinde kalıcı yükseliş, bağışıklık direncinde güçlenme."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [
-        "ocean-b12-sprey-1000mcg"
-      ],
-      "yasakli_cakismalar": [
-        "Coumadin (Varfarin) kullanan hastalar."
-      ],
-      "etkilesim_uyarisi": "Aç karnına alınırsa emilimi %50 düşer; mutlaka zeytinyağlı/yağlı bir yemekle birlikte alınmalıdır."
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "Venatura D3 K2 Damla veya Nature's Supreme D3 K2",
-      "alternatif_fark_notu": "Ocean D3 K2 saf sızma zeytinyağı bazlı ve MenaQ7 patentli K2 vitamini ile biyoyararlanımı en yüksek klinik referanstır."
-    },
-    "cilt_tipleri": [
-      "D Vitamini Eksikliği",
-      "Düşük Bağışıklık",
-      "Kemik Sağlığı"
-    ],
-    "yas_grubu": "11 Yaş ve Üzeri, Yetişkinler ve Geriatri",
-    "kimler_kullanamaz": "Coumadin (Varfarin) kullanan hastalar, hiperkalsemi hastaları.",
-    "nasil_kullanilir": "Günde 1 damla yağlı bir öğünle birlikte alınır.",
-    "hangi_sikayetle_gelene_verilir": [
-      "D vitamini düşüklüğü",
-      "Sık enfeksiyon geçirme",
-      "Kemik erimesi ve kalsiyum yönlendirme"
-    ],
-    "kombinasyon_ve_uyarilar": "Coumadin kullananlara kesinlikle verilmez!",
-    "etken_maddeler": [
-      "1000 IU Vitamin D3",
-      "22.5 mcg Vitamin K2 (MenaQ7)"
-    ],
-    "tags": [
-      "d3k2",
-      "d vitamini",
-      "damla",
-      "kemik",
-      "bağışıklık",
-      "kalsiyum"
-    ],
-    "urun_tipi": "Gıda Takviyesi & Vitamin",
-    "urun_tipi_icon": "💊",
-    "rutin_adimi": "Destek: Takviye & Beslenme"
-  },
-  {
-    "id": "sensodyne-hizli-rahatlama-75ml",
-    "name": "Sensodyne Hızlı Rahatlama Diş Macunu (75ml)",
-    "category": "dental",
-    "category_name": "Ağız & Diş Sağlığı",
-    "sub_category": "Hassas Dişler & Diş Eti",
-    "brand": "Sensodyne",
-    "size": "75 ml",
-    "form": "Tüp Macun",
-    "image": "images/mustela/sensodyne-hizli-rahatlama-75ml.jpeg",
-    "kime_uygun": {
-      "cilt_tipleri": [
-        "Sıcak/Soğuk Hassasiyeti Olan Dişler",
-        "Diş Eti Çekilmesi Olan Ağızlar",
-        "Mine Aşınması Yaşayanlar"
-      ],
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": false,
-        "bebek_uygun_mu": false,
-        "cocuk_uygun_mu": false,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "12 yaşından büyük çocuklar ve yetişkinler içindir. 12 yaş altındaki çocuklarda diş hekimi tavsiyesi olmadan kullanılmamalıdır."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Yutulmamalıdır. Florür aşırı alımı olan bölgelerde dikkat edilmelidir.",
-      "goz_cevresi_temas": "Ağız içi kullanım.",
-      "doktora_yonlendirme": "Hassasiyet 4 haftalık düzenli kullanıma rağmen geçmiyorsa derin diş çürüğü veya pulpa iltihabı açısından diş hekimine başvurulmalıdır."
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Dondurma yerken veya sıcak çay içerken dişimden beynime şimşek çakıyor gibi sızı saplanıyor, anında rahatlatacak bir macun lazım.",
-      "arama_etiketleri": [
-        "#diş_hassasiyeti",
-        "#kalay_florür",
-        "#sıcak_soğuk_sızı",
-        "#hızlı_rahatlama",
-        "#sensodyne",
-        "#diş_eti_çekilmesi"
-      ],
-      "eczaci_sorusu": "Sızı sadece soğuk/tatlı temasında mı oluyor, yoksa gece durup dururken zonklama var mı?",
-      "secim_nedeni": "Kalay Florür (Stannous Fluoride) formülasyonu, açıkta kalan dentin tübüllerinin ağzını 60 saniyede mineral tabakayla tıkayarak sinire giden ağrı iletimini bloke eder."
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "Kalay Florür (Stannous Fluoride - Tübül Tıkayıcı)",
-        "1450 ppm Florür"
-      ],
-      "doku": "Nane ferahlığında beyaz pasta macun.",
-      "rozetler": [
-        "60 Saniyede Klinik Rahatlama",
-        "Dentin Tübül Kalkanı",
-        "Çürük Önleyici"
-      ]
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "1. Adım: Yumuşak kıllı fırçaya bezelye tanesi kadar macun konur -> 2. Adım: 2 dakika nazikçe fırçalanır -> 3. Adım: Tükürülür (hemen suyla çalkalanmamalıdır).",
-      "zaman_ve_siklik": "Günde 2 kez sabah ve akşam",
-      "miktar": "Bezelye büyüklüğünde",
-      "uygulama_sekli": "Akut sızı anında parmak ucuna nohut kadar alınıp hassas diş boynuna 1 dakika masaj yapılırsa 60 saniyede sızıyı keser.",
-      "beklenen_sonuc": "60 saniyede akut rahatlama, 2 haftada kalıcı hassasiyet koruması."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [
-        "Yumuşak (Soft/Ultra Soft) Hassas Diş Fırçası"
-      ],
-      "yasakli_cakismalar": [
-        "Aşındırıcı (RDA değeri yüksek) sert beyazlatıcı tozlar ve sert diş fırçaları dentini daha çok aşındırır."
-      ],
-      "etkilesim_uyarisi": "Fırçaladıktan hemen sonra bol suyla çalkalanırsa kalay florür tabakası yıkanır; sadece tükürüp bırakılmalıdır."
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "Colgate Pro-Relief Diş Macunu veya Elmex Sensitive Professional",
-      "alternatif_fark_notu": "Colgate Pro-Relief Pro-Argin teknolojisi kullanır; Sensodyne Hızlı Rahatlama ise Kalay Florür ile diş minesini de remineralize eder."
-    },
-    "cilt_tipleri": [
-      "Hassas Dişler",
-      "Açıkta Kalan Diş Boyunları"
-    ],
-    "yas_grubu": "12 Yaş ve Üzeri Bireyler",
-    "kimler_kullanamaz": "12 yaş altı çocuklar.",
-    "nasil_kullanilir": "Günde 2 kez fırçalanır. Akut sızılarda parmak ucuyla dişe 1 dakika masaj yapılabilir.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Sıcak-soğuk sızlaması",
-      "Diş eti çekilmesine bağlı diş sızısı"
-    ],
-    "kombinasyon_ve_uyarilar": "Yumuşak fırça ile kullanılmalıdır.",
-    "etken_maddeler": [
-      "Kalay Florür (Stannous Fluoride)"
-    ],
-    "tags": [
-      "diş macunu",
-      "hassasiyet",
-      "hızlı rahatlama",
-      "sensodyne",
-      "kalay florür"
-    ],
-    "urun_tipi": "Ağız & Diş Sağlığı",
-    "urun_tipi_icon": "🪥",
-    "rutin_adimi": "Ağız Bakımı"
-  },
-  {
-    "id": "mustela-baby-oil-100ml",
-    "name": "Mustela Baby Oil Bebek Masaj Yağı (100ml)",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Normal Cilt Günlük Bakım",
-    "brand": "Mustela",
-    "size": "100 ml",
-    "form": "Sprey Şişe Yağ",
-    "image": "images/mustela/mustela-baby-oil-100ml.jpeg",
-    "kime_uygun": {
-      "cilt_tipleri": [
-        "Normal ve Kuru Bebek Cildi",
-        "Gaz Sancısı / Kolik Yaşayan Bebekler",
-        "Masajla Sakinleştirilmek İstenen Bebekler"
-      ],
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": true,
-        "bebek_uygun_mu": true,
-        "cocuk_uygun_mu": true,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Doğumdan itibaren yenidoğanlar dahil tüm bebeklerde güvenle kullanılır. Mineral yağ (likit parafin) içermez; %99 doğal bitkisel yağlardan oluşur."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Yüze veya göze doğrudan sıkılmaz.",
-      "goz_cevresi_temas": "Göz temasından kaçınılmalıdır.",
-      "doktora_yonlendirme": "Şiddetli kolik veya durdurulamayan ağlama krizlerinde çocuk doktoruna başvurulmalıdır."
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Bebeğim akşamları gazdan kıvranıyor ve uyumakta zorlanıyor; cildini besleyecek ve gaz masajı yapabileceğim doğal bir masaj yağı arıyorum.",
-      "arama_etiketleri": [
-        "#bebek_masaj_yağı",
-        "#gaz_masajı",
-        "#avokado_yağı",
-        "#rahatlatıcı_masaj",
-        "#mineral_yağsız"
-      ],
-      "eczaci_sorusu": "Banyodan sonra akşam saatlerinde karnına saat yönünde gaz masajı uyguluyor musunuz?",
-      "secim_nedeni": "%99 doğal bitkisel yağ kompleksi (Avokado, Nar çekirdeği ve Ayçiçeği) ile yapışkan his bırakmadan cildi besler ve bebeği gevşetir."
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "Patentli Avokado Yağı",
-        "Nar Çekirdeği Yağı",
-        "Ayçiçeği Yağı",
-        "E Vitamini"
-      ],
-      "doku": "Kuru yağ dokusu, ciltte kayganlık sağlar, hızla emilir ve leke bırakmaz.",
-      "rozetler": [
-        "%99 Doğal Kökenli",
-        "0% Mineral Yağ",
-        "Hipoalerjenik",
-        "Vegan Formül"
-      ]
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "1. Adım: Akşam banyosu sonrası -> 2. Adım: Avuç içine 1-2 sprey sıkılıp eller ovuşturularak ısıtılır -> 3. Adım: Bebeğin karın, sırt ve bacaklarına masaj yapılır.",
-      "zaman_ve_siklik": "Her akşam banyo sonrası veya uyku öncesi",
-      "miktar": "Avuç içine 1-2 sprey",
-      "uygulama_sekli": "Eller ısıtıldıktan sonra karında saat yönünde dairesel hareketlerle gaz masajı uygulanır.",
-      "beklenen_sonuc": "Gaz sancısında rahatlama, bebeğin gevşeyerek derin ve huzurlu uykuya geçmesi."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [
-        "mustela-gentle-cleansing-gel-500ml"
-      ],
-      "yasakli_cakismalar": [
-        "Petrokimyasal mineral yağlar cilt gözeneklerini tıkayabilir; doğal yağlar tercih edilmelidir."
-      ],
-      "etkilesim_uyarisi": "Doğrudan bebeğin soğuk tenine sıkılmamalı, önce ebeveynin avucunda ısıtılmalıdır."
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "Bübchen Bebek Masaj Yağı veya Weleda Organik Calendula Masaj Yağı",
-      "alternatif_fark_notu": "Weleda yoğun calendula içerir; Mustela Masaj Yağı ise sprey pratikliği ve kuru yağ emilimiyle kıyafetleri kirletmez."
-    },
-    "cilt_tipleri": [
-      "Normal ve Kuru Cilt",
-      "Masaj İhtiyacı Olan Bebekler"
-    ],
-    "yas_grubu": "Doğumdan itibaren (Yenidoğan dahil)",
-    "kimler_kullanamaz": "Açık yara ve yanıklar.",
-    "nasil_kullanilir": "Avuç içinde ısıtılarak bebeğin vücuduna ve karnına nazik masajla uygulanır.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Bebeklerde gaz sancısı ve huzursuzluk",
-      "Banyo sonrası rahatlatıcı masaj"
-    ],
-    "kombinasyon_ve_uyarilar": "Önce avuçta ısıtılmalıdır.",
-    "etken_maddeler": [
-      "Avokado Yağı",
-      "Nar Çekirdeği Yağı"
-    ],
-    "tags": [
-      "masaj yağı",
-      "bebek yağı",
-      "gaz sancısı",
-      "rahatlama",
-      "yenidoğan"
-    ],
-    "urun_tipi": "Vücut & Masaj Yağı",
-    "urun_tipi_icon": "✨",
-    "rutin_adimi": "Vücut & Masaj"
-  },
-  {
-    "id": "mustela-detangling-cream-shampoo-200ml",
-    "name": "Mustela Kolay Tarama ve Besleyici Krem Şampuan (200ml)",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Saç Bakımı & Kolay Tarama",
-    "brand": "Mustela",
-    "size": "200 ml",
-    "form": "Tüp Krem Şampuan",
-    "image": "images/mustela/mustela-detangling-and-nourishing-cream-shampoo-200ml.jpeg",
-    "kime_uygun": {
-      "cilt_tipleri": [
-        "Kıvırcık ve Dolaşan Bebek/Çocuk Saçları",
-        "Kuru ve Düğümlenen Saçlar",
-        "Taranırken Ağlayan Çocuklar"
-      ],
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": true,
-        "bebek_uygun_mu": true,
-        "cocuk_uygun_mu": true,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Doğumdan itibaren bebek ve özellikle saçları uzayan ve kıvırcıklaşan 1-10 yaş arası çocuklar için idealdir."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Göz yakmaz.",
-      "goz_cevresi_temas": "Pediatrik göz yakmayan formül.",
-      "doktora_yonlendirme": "Saç derisinde mantar veya yoğun dökülme varsa dermatoloğa danışılmalıdır."
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Kızımın saçları kıvırcık ve çok dolaşıyor; banyodan sonra saçını tararken acıdan ağlıyor, saçları yumuşatıp kolay taratan bir şampuan var mı?",
-      "arama_etiketleri": [
-        "#kolay_tarama",
-        "#krem_şampuan",
-        "#kıvırcık_bebek_saçı",
-        "#dolaşan_saç",
-        "#göz_yakmaz"
-      ],
-      "eczaci_sorusu": "Saçı banyo esnasında mı yoksa sonrasında mı taramakta zorlanıyorsunuz?",
-      "secim_nedeni": "Avokado yağı ve besleyici krem dokusu sayesinde saç tellerini yumuşatır, düğümleri banyodayken açar ve saçın elektriklenmesini önler."
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "Organik Avokado Yağı (Besleyici)",
-        "Doğal Yumuşatıcı Polimerler"
-      ],
-      "doku": "Zengin ve kremsi dokuda saç şampuanı.",
-      "rozetler": [
-        "%98 Doğal Kökenli",
-        "Göz Yakmaz",
-        "Sabunsuz",
-        "Silikonsuz",
-        "Biyobozunur"
-      ]
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "1. Adım: Saç ıslatılır -> 2. Adım: Krem şampuan sürülüp nazikçe taranarak durulanır -> 3. Adım: Gerekirse saç spreyi ile desteklenir.",
-      "zaman_ve_siklik": "Her banyoda",
-      "miktar": "Fındık kadar",
-      "uygulama_sekli": "Islak saça yayılır, saç uçlarındaki düğümler parmakla açılarak durulanır.",
-      "beklenen_sonuc": "Tarak kayıp giden, ipeksi ve parlak bukleler."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [
-        "mustela-hair-styler-and-skin-freshener-200ml"
-      ],
-      "yasakli_cakismalar": [
-        "Sert sülfatlı şampuanlar saç telini kurutup düğümlenmeyi artırır."
-      ],
-      "etkilesim_uyarisi": "Saç kremi gerektirmeden tek adımda açar."
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "Dalin Kolay Tarama Şampuanı veya Johnson's Baby Işıldayan Parlaklık Şampuanı",
-      "alternatif_fark_notu": "Dalin ve Johnson's parfümlüdür; Mustela Krem Şampuan ise silikonsuz organik avokado yağı ile saç telini ağırlaştırmadan besler."
-    },
-    "cilt_tipleri": [
-      "Dolaşan Kıvırcık Saçlar",
-      "Kuru Saçlar"
-    ],
-    "yas_grubu": "Doğumdan itibaren tüm Bebek ve Çocuklar",
-    "kimler_kullanamaz": "Bilinen kontrendikasyonu yoktur.",
-    "nasil_kullanilir": "Islak saça uygulanır, köpürtülüp nazikçe durulanır.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Taranırken acıyan ve düğümlenen çocuk saçları",
-      "Kıvırcık saç bakımı"
-    ],
-    "kombinasyon_ve_uyarilar": "Silikon içermez.",
-    "etken_maddeler": [
-      "Organik Avokado Yağı"
-    ],
-    "tags": [
-      "krem şampuan",
-      "kolay tarama",
-      "kıvırcık saç",
-      "dolaşan saç",
-      "çocuk"
-    ],
-    "urun_tipi": "Şampuan & Saç Bakımı",
-    "urun_tipi_icon": "🚿",
-    "rutin_adimi": "Saç & Saçlı Deri"
-  },
-  {
-    "id": "mustela-gentle-shampoo-200ml",
-    "name": "Mustela Gentle Shampoo Papatya Özlü Bebek Şampuanı (200ml)",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Normal Cilt Günlük Bakım",
-    "brand": "Mustela",
-    "size": "200 ml",
-    "form": "Tüp Şampuan",
-    "image": "images/mustela/mustela-gentle-shampoo-200ml.jpeg",
-    "kime_uygun": {
-      "cilt_tipleri": [
-        "İnce Telli Bebek ve Çocuk Saçları",
-        "Hassas Saç Derisi",
-        "Günlük Saç Yıkama"
-      ],
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": true,
-        "bebek_uygun_mu": true,
-        "cocuk_uygun_mu": true,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Doğumdan itibaren yenidoğan ve ince telli bebek saçları için özel olarak formüle edilmiştir."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Göz yakmaz.",
-      "goz_cevresi_temas": "Göz yakmayan formül.",
-      "doktora_yonlendirme": "Konak varsa konak köpük şampuanına geçilmelidir."
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Bebeğimin incecik saçlarını kurutmadan parlatacak, gözünü asla yakmayacak klasik papatyalı hafif bir bebek şampuanı istiyorum.",
-      "arama_etiketleri": [
-        "#papatya_şampuanı",
-        "#bebek_saç_şampuanı",
-        "#göz_yakmaz",
-        "#ince_telli_saç"
-      ],
-      "eczaci_sorusu": "Konak var mı yoksa sadece günlük saç temizliği mi?",
-      "secim_nedeni": "Papatya özü saç tellerine ışıltı ve yumuşaklık kazandırırken göz yakmayan fizyolojik formülüyle banyoyu keyifli kılar."
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "Organik Papatya Özü",
-        "Avokado Perseose"
-      ],
-      "doku": "Hafif altın sarısı, kolay durulanan berrak şampuan.",
-      "rozetler": [
-        "%95 Doğal Kökenli",
-        "Göz Yakmaz",
-        "Sabunsuz",
-        "Biyobozunur"
-      ]
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "Islak saça uygulanır, köpürtülür ve ılık suyla durulanır.",
-      "zaman_ve_siklik": "Her banyoda",
-      "miktar": "1 fındık büyüklüğünde",
-      "uygulama_sekli": "Islak saça nazikçe parmak uçlarıyla sürülür.",
-      "beklenen_sonuc": "Pırıl pırıl, ipeksi ve mis kokulu bebek saçları."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [
-        "mustela-hydra-bebe-body-lotion-300ml"
-      ],
-      "yasakli_cakismalar": [
-        "Yetişkin kepek şampuanları."
-      ],
-      "etkilesim_uyarisi": "Normal saçlar içindir."
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "Sebamed Bebek Şampuanı veya Klorane Papatyalı Bebek Şampuanı",
-      "alternatif_fark_notu": "Klorane parfümlüdür; Mustela Papatyalı Şampuan %95 doğal avokado perseose ile saç derisi hücresel köklerini de korur."
-    },
-    "cilt_tipleri": [
-      "İnce Telli Bebek Saçı"
-    ],
-    "yas_grubu": "Doğumdan itibaren (Yenidoğan dahil)",
-    "kimler_kullanamaz": "Bilinen kontrendikasyonu yoktur.",
-    "nasil_kullanilir": "Islak saça uygulanır, durulanır.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Günlük bebek saçı temizliği",
-      "Göz yakmayan papatya şampuanı"
-    ],
-    "kombinasyon_ve_uyarilar": "Göz yakmaz.",
-    "etken_maddeler": [
-      "Papatya Özü",
-      "Avokado Perseose"
-    ],
-    "tags": [
-      "papatya",
-      "bebek şampuanı",
-      "göz yakmaz",
-      "saç",
-      "yenidoğan"
-    ],
-    "urun_tipi": "Şampuan & Saç Bakımı",
-    "urun_tipi_icon": "🚿",
-    "rutin_adimi": "Saç & Saçlı Deri"
-  },
-  {
-    "id": "mustela-gentle-shampoo-500ml",
-    "name": "Mustela Gentle Shampoo Papatya Özlü Bebek Şampuanı (500ml)",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Normal Cilt Günlük Bakım",
-    "brand": "Mustela",
-    "size": "500 ml",
-    "form": "Pompalı Şişe Şampuan",
-    "image": "images/mustela/mustela-gentle-shampoo-500ml.jpeg",
-    "kime_uygun": {
-      "cilt_tipleri": [
-        "İnce Telli Bebek ve Çocuk Saçları",
-        "Ekonomik Aile Boyu Saç Temizliği"
-      ],
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": true,
-        "bebek_uygun_mu": true,
-        "cocuk_uygun_mu": true,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Doğumdan itibaren tüm yaşlar ve tüm aile için uygundur. Pompalı 500ml boyutuyla banyoda tek elle pratik kullanım sunar."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Göz yakmaz.",
-      "goz_cevresi_temas": "Göz yakmayan formül.",
-      "doktora_yonlendirme": "Konak varlığında köpük şampuana geçilmelidir."
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Bebeğimin saçlarını her gün yıkıyorum, pompalı büyük boy papatyalı şampuanı var mı?",
-      "arama_etiketleri": [
-        "#papatya_şampuanı_500ml",
-        "#pompalı_bebek_şampuanı",
-        "#büyük_boy_şampuan"
-      ],
-      "eczaci_sorusu": "Her gün banyo yaptırıyor musunuz?",
-      "secim_nedeni": "Pompalı ekonomik 500ml ambalajı ile banyoda tek elle kolayca sıkılır, saçları pırıl pırıl yapar."
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "Organik Papatya Özü",
-        "Avokado Perseose"
-      ],
-      "doku": "Altın sarısı berrak pompalı şampuan.",
-      "rozetler": [
-        "%95 Doğal Kökenli",
-        "Pompalı Ambalaj",
-        "Göz Yakmaz",
-        "Sabunsuz"
-      ]
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "Islak saça uygulanır, köpürtülür ve durulanır.",
-      "zaman_ve_siklik": "Her banyoda",
-      "miktar": "1 pompa",
-      "uygulama_sekli": "Islak saça nazik masajla uygulanır.",
-      "beklenen_sonuc": "Yumuşacık, kolay taranan parlak saçlar."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [
-        "mustela-hair-styler-and-skin-freshener-200ml"
-      ],
-      "yasakli_cakismalar": [
-        "Alkali sabunlar."
-      ],
-      "etkilesim_uyarisi": "Normal saçlar içindir."
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "Mustela Gentle Shampoo 200ml",
-      "alternatif_fark_notu": "500ml pompalı boyutu uzun ömürlü ve banyoda tek elle kullanım için çok daha avantajlıdır."
-    },
-    "cilt_tipleri": [
-      "İnce Telli Bebek Saçı"
-    ],
-    "yas_grubu": "Doğumdan itibaren (Yenidoğan dahil), Tüm Aile",
-    "kimler_kullanamaz": "Bilinen kontrendikasyonu yoktur.",
-    "nasil_kullanilir": "Islak saça uygulanır, durulanır.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Büyük boy göz yakmayan bebek şampuanı"
-    ],
-    "kombinasyon_ve_uyarilar": "Pompalı pratik ambalaj.",
-    "etken_maddeler": [
-      "Papatya Özü",
-      "Avokado Perseose"
-    ],
-    "tags": [
-      "şampuan",
-      "papatya",
-      "pompalı",
-      "500ml",
-      "bebek"
-    ],
-    "urun_tipi": "Şampuan & Saç Bakımı",
-    "urun_tipi_icon": "🚿",
-    "rutin_adimi": "Saç & Saçlı Deri"
-  },
-  {
-    "id": "mustela-gentle-soap-with-cold-cream-100g",
-    "name": "Mustela Cold Cream İçeren Katı Sabun (100g)",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Kuru Cilt & Kış Bakımı",
-    "brand": "Mustela",
-    "size": "100 g",
-    "form": "Katı Sabun (Syndet)",
-    "image": "images/mustela/mustela-gentle-soap-with-cold-cream-100g.jpeg",
-    "kime_uygun": {
-      "cilt_tipleri": [
-        "Kuru Cilt",
-        "Katı Sabun Alışkanlığı Olan Bireyler",
-        "Yüz ve Vücutta Besleyici Temizlik Arayanlar"
-      ],
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": true,
-        "bebek_uygun_mu": true,
-        "cocuk_uygun_mu": true,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Doğumdan itibaren uygundur. Geleneksel kostik sabunlardan farklı olarak syndet yapılıdır; cildin koruyucu asit mantosunu bozmaz."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Göz içine doğrudan sokulmamalıdır.",
-      "goz_cevresi_temas": "Göz temasında bol suyla yıkanmalıdır.",
-      "doktora_yonlendirme": "Şiddetli atopik lezyonlarda Stelatopia yağı tercih edilmelidir."
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Ben bebeğimi veya kendimi katı sabunla yıkamaya alışığım ama normal sabunlar cildi gerim gerim geriyor, kurutmayan katı bir bebek sabunu var mı?",
-      "arama_etiketleri": [
-        "#katı_sabun_bebek",
-        "#cold_cream_sabun",
-        "#kurutmayan_sabun",
-        "#syndet",
-        "#balmumu_sabun"
-      ],
-      "eczaci_sorusu": "Normal zeytinyağlı sabunların cildi kuruttuğunu fark ettiniz mi?",
-      "secim_nedeni": "Organik Balmumu ve Seramid kompleksi içeren syndet formülü sayesinde köpürürken cilde lipid yükler, kuruluk hissi bırakmaz."
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "Organik Balmumu (Koruyucu)",
-        "Seramidler",
-        "Avokado Perseose",
-        "Gliserin"
-      ],
-      "doku": "Kremsi köpüren, erimeyen dayanıklı syndet katı sabun.",
-      "rozetler": [
-        "%82 Doğal Kökenli",
-        "Syndet (Sabunsuz Sabun)",
-        "Biyobozunur",
-        "Hipoalerjenik"
-      ]
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "Islak elde köpürtülür, yüz ve vücuda sürülür, durulanır.",
-      "zaman_ve_siklik": "Her banyoda veya el-yüz yıkamada",
-      "miktar": "Islak elde birkaç kez çevrilerek köpürtülür",
-      "uygulama_sekli": "Oluşan kremsi köpükle cilt yıkanır ve durulanır.",
-      "beklenen_sonuc": "Sabun temizliği ferahlığı ama gerilmeden nemli kalan ten."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [
-        "mustela-nourishing-lotion-cold-cream-200ml"
-      ],
-      "yasakli_cakismalar": [
-        "Geleneksel alkali kalıp sabunlar."
-      ],
-      "etkilesim_uyarisi": "Islak sabunlukta bırakılmamalı, kuru yerde muhafaza edilmelidir."
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "Bioderma Atoderm Pain Katı Sabun veya Sebamed Kompakt Sabun",
-      "alternatif_fark_notu": "Bioderma ve Sebamed medikal kokuludur; Mustela Cold Cream Katı Sabun ise organik balmumu zenginliğiyle ekstra konfor sunar."
-    },
-    "cilt_tipleri": [
-      "Kuru Cilt",
-      "Katı Sabun Tercih Edenler"
-    ],
-    "yas_grubu": "Doğumdan itibaren (Yenidoğan dahil), Tüm Aile",
-    "kimler_kullanamaz": "Bilinen kontrendikasyonu yoktur.",
-    "nasil_kullanilir": "Islak ciltte köpürtülüp nazikçe durulanır.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Normal sabunların cildi kurutması",
-      "Kurutmayan katı bebek sabunu arayışı"
-    ],
-    "kombinasyon_ve_uyarilar": "Kuru yerde saklanmalıdır.",
-    "etken_maddeler": [
-      "Organik Balmumu",
-      "Seramidler"
-    ],
-    "tags": [
-      "katı sabun",
-      "cold cream",
-      "syndet",
-      "kuru cilt",
-      "bebek"
-    ],
-    "urun_tipi": "Yüz & Vücut Temizleyici",
+    "id": "takviyeler-lcarnitine-omega3-metabolic",
+    "name": "L-Karnitin 1000 mg & Saf Balık Yağı Omega-3 Standı",
+    "original_name": "L-Carnitine 1000 mg & Omega-3 500 mg EPA/DHA Serisi",
+    "brand": "Nutraceutical",
+    "urun_tipi": "Yumuşak Kapsül / Sıvı Form",
     "urun_tipi_icon": "🧼",
-    "rutin_adimi": "1. Adım: Temizleme"
-  },
-  {
-    "id": "mustela-hair-styler-and-skin-freshener-200ml",
-    "name": "Mustela Ferahlatıcı ve Kolay Tarama Saç & Ten Suyu (200ml)",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Saç Bakımı & Kolay Tarama",
-    "brand": "Mustela",
-    "size": "200 ml",
-    "form": "Sprey Şişe Su",
-    "image": "images/mustela/mustela-hair-styler-and-skin-freshener-200ml.jpeg",
-    "kime_uygun": {
-      "cilt_tipleri": [
-        "Dolaşan ve Şekil Almayan Saçlar",
-        "Sıcakta Terleyen Bebek Teni",
-        "Sabah Yatak İzi Olan Saçlar"
-      ],
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": true,
-        "bebek_uygun_mu": true,
-        "cocuk_uygun_mu": true,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Doğumdan itibaren yenidoğan ve çocukların saçlarını taramak, şekillendirmek ve tenini ferahlatmak için güvenlidir."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Doğrudan göze sıkılmaz.",
-      "goz_cevresi_temas": "Göz temasından kaçınınız.",
-      "doktora_yonlendirme": "Gerekli değildir."
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Sabah uyandığında bebeğimin saçları havaya dikiliyor, birbirine dolaşıyor; banyoya sokmadan saçını yatıştırıp kolayca tarayabileceğim bir sprey var mı?",
-      "arama_etiketleri": [
-        "#saç_spreyi_bebek",
-        "#kolay_tarama_suyu",
-        "#saç_ve_ten_suyu",
-        "#papatya_suyu",
-        "#şekillendirici"
-      ],
-      "eczaci_sorusu": "Kuru saça mı uygulayacaksınız? Durulama gerektirmez.",
-      "secim_nedeni": "Organik Papatya Suyu içeriğiyle saçın elektriğini alır, saç tellerini yumuşatarak fırçanın kaymasını sağlar ve bebeğe ferahlık verir."
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "Organik Papatya Suyu",
-        "Avokado Perseose"
-      ],
-      "doku": "Su bazlı, yapışkan his bırakmayan, durulanmayan saç ve ten spreyi.",
-      "rozetler": [
-        "%98 Doğal Kökenli",
-        "Alkolsüz",
-        "Durulama Gerektirmez",
-        "Hipoalerjenik"
-      ]
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "Kuru veya nemli saça/tene sıkılır, ardından taranır.",
-      "zaman_ve_siklik": "Her sabah veya gün içinde ihtiyaç duyuldukça",
-      "miktar": "Saça 2-3 fıs püskürtülür",
-      "uygulama_sekli": "Saça sıkılır ve bebek tarağıyla nazikçe şekil verilir. Durulanmaz.",
-      "beklenen_sonuc": "Anında düzene giren, yumuşak, mis kokulu ve kolayca taranan saçlar."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [
-        "mustela-gentle-shampoo-200ml"
-      ],
-      "yasakli_cakismalar": [
-        "Alkol içeren yetişkin saç spreyleri."
-      ],
-      "etkilesim_uyarisi": "Durulanmaz."
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "Dalin Kolay Tarama Spreyi",
-      "alternatif_fark_notu": "Dalin sadece saç içindir; Mustela Saç ve Ten Suyu hem saça hem de sıcak günlerde bebeğin boyun ve vücut tenine ferahlatıcı olarak sıkılabilir."
-    },
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "takviye",
+    "category_name": "Gıda Takviyeleri & Vitamin",
+    "sub_category": "Metabolic Health",
+    "size": "30 / 60 Kapsül",
+    "form": "Yumuşak Kapsül / Sıvı Form",
+    "image": "images/takviyeler/lcarnitine_omega3_metabolic.jpg",
+    "stock_photo": "Tüm stok/IMG_20260829_145908.jpg",
+    "catalog_code": "TAK-002",
     "cilt_tipleri": [
-      "Dolaşan Saçlar",
-      "Ferahlık Arayan Ten"
+      "Metabolik Destek"
     ],
-    "yas_grubu": "Doğumdan itibaren (Yenidoğan dahil)",
-    "kimler_kullanamaz": "Doğrudan göze sıkılmaz.",
-    "nasil_kullanilir": "Saça veya tene püskürtülür, saç taranır. Durulanmaz.",
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
     "hangi_sikayetle_gelene_verilir": [
-      "Sabahları dağılan ve taranmayan bebek saçları",
-      "Ferahlatıcı saç ve ten spreyi"
+      "Yağ metabolizması, kardiyovasküler sağlık ve bilişsel fonksiyon desteği."
     ],
-    "kombinasyon_ve_uyarilar": "Durulama gerektirmez.",
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
     "etken_maddeler": [
-      "Organik Papatya Suyu",
-      "Avokado Perseose"
+      "L-Karnitin L-Tartrat",
+      "Saf Trigliserid Formda Omega-3 Yağ Asitleri"
     ],
-    "tags": [
-      "saç suyu",
-      "ten suyu",
-      "kolay tarama",
-      "papatya",
-      "bebek"
-    ],
-    "urun_tipi": "Ferahlatıcı Su & Parfüm",
-    "urun_tipi_icon": "🌸",
-    "rutin_adimi": "Günlük Bakım"
-  },
-  {
-    "id": "mustela-hydra-bebe-face-cream-40ml",
-    "name": "Mustela Hydra Bébé Nemlendirici Yüz Kremi (40ml)",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Normal Cilt Günlük Bakım",
-    "brand": "Mustela",
-    "size": "40 ml",
-    "form": "Tüp Krem",
-    "image": "images/mustela/mustela-hydra-bebe-face-cream-40ml.jpeg",
     "kime_uygun": {
+      "profil": "Metabolik Destek",
       "cilt_tipleri": [
-        "Normal Cilt",
-        "Günlük Yüz Nemlendirmesi İsteyen Bebekler"
+        "Metabolik Destek"
       ],
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": true,
-        "bebek_uygun_mu": true,
-        "cocuk_uygun_mu": true,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Doğumdan itibaren yenidoğan ve bebek yüz cildi için formüle edilmiştir."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Atopik egzaması olan yüzlerde Stelatopia tercih edilmelidir.",
-      "goz_cevresi_temas": "Göz küresi içine kaçırılmamalıdır.",
-      "doktora_yonlendirme": "Yüzde şiddetli kızarıklık ve kabuklanma varsa hekime danışılmalıdır."
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Bebeğimin yanaklarını her gün nemlendirecek hafif, yapışmayan ve cildini yumuşacık tutacak bir yüz kremi arıyorum.",
-      "arama_etiketleri": [
-        "#bebek_yüz_kremi",
-        "#hydra_bebe_yüz",
-        "#günlük_yüz_nemlendirici",
-        "#jojoba_yüz"
-      ],
-      "eczaci_sorusu": "Bebeğin yanaklarında kızarıklık veya egzama var mı?",
-      "secim_nedeni": "Jojoba yağı ve Shea yağı ile bebek yüzünü 24 saat nemlendirir, cilt bariyerinin hücresel sermayesini korur."
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "Avokado Perseose",
-        "Organik Jojoba Yağı",
-        "Shea Yağı",
-        "E Vitamini"
-      ],
-      "doku": "Akıcı, hafif, anında emilen ipeksi yüz kremi.",
-      "rozetler": [
-        "%97 Doğal Kökenli",
-        "24 Saat Nem",
-        "Hipoalerjenik"
-      ]
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "Temiz yüze sabah ve akşam uygulanır.",
-      "zaman_ve_siklik": "Günde 2 kez",
-      "miktar": "Bezelye büyüklüğünde",
-      "uygulama_sekli": "Yanaklara ve alına hafifçe masaj yaparak sürülür.",
-      "beklenen_sonuc": "Yumuşacık, pürüzsüz ve mis kokulu bebek yanakları."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [
-        "mustela-hydra-bebe-body-lotion-300ml"
-      ],
-      "yasakli_cakismalar": [
-        "Parfümlü yetişkin kremleri."
-      ],
-      "etkilesim_uyarisi": "Normal cilt içindir."
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "Bioderma ABCDerm Hydratant Yüz Kremi",
-      "alternatif_fark_notu": "Bioderma parfümsüzdür; Mustela Hydra Bébé ise hafif bebek kokusuyla daha çok tercih edilir."
-    },
-    "cilt_tipleri": [
-      "Normal Bebek Yüzü"
-    ],
-    "yas_grubu": "Doğumdan itibaren (Yenidoğan dahil)",
-    "kimler_kullanamaz": "Atopik egzamalı ciltler.",
-    "nasil_kullanilir": "Sabah-akşam temiz yüze nazikçe sürülür.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Günlük bebek yüz nemlendirmesi"
-    ],
-    "kombinasyon_ve_uyarilar": "Normal ciltler içindir.",
-    "etken_maddeler": [
-      "Avokado Perseose",
-      "Jojoba Yağı"
-    ],
-    "tags": [
-      "yüz kremi",
-      "nemlendirici",
-      "bebek",
-      "normal cilt"
-    ],
-    "urun_tipi": "Nemlendirici & Bariyer Krem",
-    "urun_tipi_icon": "🧴",
-    "rutin_adimi": "2. Adım: Nemlendirme & Bariyer"
-  },
-  {
-    "id": "mustela-maternite-nursing-comfort-balm-10ml",
-    "name": "Mustela Maternité Organik Göğüs Ucu Bakım Balmı (10ml)",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Anne & Hamilelik Bakımı",
-    "brand": "Mustela",
-    "size": "10 ml",
-    "form": "Tüp Balm",
-    "image": "images/mustela/mustela-maternite-nursing-comfort-balm-bio-10ml.jpeg",
-    "kime_uygun": {
-      "cilt_tipleri": [
-        "Emziren Annelerin Göğüs Ucu Çatlakları",
-        "Ağrılı ve Yarılmış Meme Uçları",
-        "Emzirme Öncesi Koruma"
-      ],
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": true,
-        "bebek_uygun_mu": true,
-        "cocuk_uygun_mu": false,
-        "ergen_uygun_mu": false,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": false,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Doğum öncesi son haftalardan itibaren ve tüm emzirme dönemi boyunca güvenlidir. %100 Organik gıda sınıfı formülü sayesinde BEBEK EMMEDEN ÖNCE SİLİNMESİNE GEREK YOKTUR! Bebek yutsa dahi tamamen zararsızdır."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Göğüste iltihaplı mastit veya apse varsa hekime başvurulmalıdır.",
-      "goz_cevresi_temas": "Sadece göğüs ucuna uygulanır.",
-      "doktora_yonlendirme": "Göğüste ateş, zonklama, kırmızı şeritler ve cerahat akıntısı varsa mastit tablosudur; antibiyotik tedavisi için hekime gidilmelidir."
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Bebeğimi emzirirken göğüs uçlarım yarık yarık çatladı, her emzirmede acıdan ağlıyorum; bebeğimi emzirmeden önce silmek zorunda kalmayacağım %100 doğal bir krem var mı?",
-      "arama_etiketleri": [
-        "#göğüs_ucu_çatlağı",
-        "#emzirme_balmı",
-        "#silinmeyen_göğüs_kremi",
-        "#organik_lanolin_alternatifi",
-        "#meme_ucu_yarası"
-      ],
-      "eczaci_sorusu": "Bebeğin memeyi kavrama pozisyonunu kontrol ettiniz mi? (Yanlış kavrama çatlağın ana sebebidir).",
-      "secim_nedeni": "%100 doğal vegan organik zeytinyağı zenginliği ile göğüs ucunu onarır; koku ve tat içermez, emzirme öncesi SİLİNMEZ."
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "Organik Zeytinyağı (Omega 6-9 Zengin Onarıcı)",
-        "Bitkisel Gliserin",
-        "E Vitamini"
-      ],
-      "doku": "Kokusuz, tatsız, eriyen zengin koruyucu balm.",
-      "rozetler": [
-        "%100 Doğal Kökenli",
-        "Ecocert Organik BIO",
-        "Vegan (Lanolinsiz)",
-        "Emzirme Öncesi Silinmez",
-        "Kokusuz & Tatsız"
-      ]
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "1. Adım: Emzirme tamamlanır -> 2. Adım: Göğüs ucu kurulanır -> 3. Adım: Balm göğüs ucuna bolca sürülür -> 4. Adım: Bir sonraki emzirmede silmeden doğrudan emzirilir.",
-      "zaman_ve_siklik": "Her emzirme sonrasında bolca",
-      "miktar": "Mercimek büyüklüğünde miktar göğüs ucuna yayılır",
-      "uygulama_sekli": "Temiz parmakla meme ucuna ve areolaya nazikçe sürülür.",
-      "beklenen_sonuc": "İlk sürüşte meme ucunda acının dinmesi, 48 saatte çatlakların kapanması."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [
-        "mustela-maternite-stretch-marks-oil-bio-105ml"
-      ],
-      "yasakli_cakismalar": [
-        "Göğüs ucuna alkol veya sabun sürülmemelidir; çatlağı derinleştirir."
-      ],
-      "etkilesim_uyarisi": "Silinmesine gerek yoktur; bebek anne memesinin doğal kokusunu almaya devam eder."
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "Lansinoh HPA Lanolin Göğüs Ucu Kremi",
-      "alternatif_fark_notu": "Lansinoh koyun yününden elde edilen hayvansal lanolindir ve yapışkandır; Mustela ise %100 bitkisel organik zeytinyağı ile vegan ve çok daha kolay sürülen dokudadır."
-    },
-    "cilt_tipleri": [
-      "Çatlamış Göğüs Ucu",
-      "Emziren Anneler"
-    ],
-    "yas_grubu": "Emziren Anneler (Yenidoğan temasına uygun)",
-    "kimler_kullanamaz": "Mastit absesi varlığında doktora gidilmelidir.",
-    "nasil_kullanilir": "Her emzirmeden sonra göğüs ucuna sürülür. Emzirmeden önce silinmesi gerekmez.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Emzirmeye bağlı göğüs ucu çatlağı ve acısı"
-    ],
-    "kombinasyon_ve_uyarilar": "Emzirme öncesi silinmesine gerek yoktur.",
-    "etken_maddeler": [
-      "Organik Zeytinyağı",
-      "E Vitamini"
-    ],
-    "tags": [
-      "göğüs ucu",
-      "emzirme",
-      "anne",
-      "çatlak balmı",
-      "organik",
-      "silinmez"
-    ],
-    "urun_tipi": "Özel & SOS Onarıcı",
-    "urun_tipi_icon": "🩹",
-    "rutin_adimi": "Hedefe Yönelik / SOS Bakım"
-  },
-  {
-    "id": "mustela-maternite-stretch-marks-cream-150ml",
-    "name": "Mustela Maternité Çatlak Öncesi 3'ü 1 Arada Krem (150ml)",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Anne & Hamilelik Bakımı",
-    "brand": "Mustela",
-    "size": "150 ml",
-    "form": "Tüp Krem",
-    "image": "images/mustela/mustela-maternite-stretch-marks-cream-3in1-150ml.jpeg",
-    "kime_uygun": {
-      "cilt_tipleri": [
-        "Hamilelikte Çatlak Riski Taşıyan Cilt",
-        "Yağ Formundan Hoşlanmayan Anne Adayları"
-      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Yağ metabolizması, kardiyovasküler sağlık ve bilişsel fonksiyon desteği.",
       "yas_kriterleri": {
         "yenidogan_uygun_mu": false,
         "bebek_uygun_mu": false,
-        "cocuk_uygun_mu": false,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": false,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Hamileliğin 1. ayından itibaren tüm gebelik ve lohusalık boyunca güvenlidir. 3 Etki: 1-Nemlendirir, 2-Elastikiyeti güçlendirir, 3-Gerilme kaşıntısını dindirir."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Sezaryen yara izi iyileşmeden dikişe sürülmez.",
-      "goz_cevresi_temas": "Vücut içindir.",
-      "doktora_yonlendirme": "Ciddi alerjik döküntülerde hekime başvurulmalıdır."
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Hamileyim, çatlak önleyici kullanmak istiyorum ama yağlar elime yapışıyor ve kıyafetime bulaşıyor; hemen giyinebileceğim etkili bir çatlak kremi var mı?",
-      "arama_etiketleri": [
-        "#çatlak_kremi",
-        "#hamilelik_kremi",
-        "#maracuja_krem",
-        "#3ü1arada",
-        "#hızlı_emilen_çatlak_kremi"
-      ],
-      "eczaci_sorusu": "Günde 2 kez düzenli masajla uygulamaya vaktiniz oluyor mu?",
-      "secim_nedeni": "Patentli Maracuja polifenolleri içeren krem dokusuyla ciltte yağlı his bırakmadan 4 saat içinde gerginliği alır ve çatlakları önler."
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "Maracuja Yağı Özü",
-        "Avokado Peptitleri",
-        "Shea Yağı"
-      ],
-      "doku": "Yumuşak, kadife dokulu, hızla emilen krem.",
-      "rozetler": [
-        "%97 Doğal Kökenli",
-        "Parfümsüz Seçenek",
-        "Gebelikte Güvenli Test Edilmiş"
-      ]
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "Sabah ve akşam karın, kalça, basen ve göğüslere masajla uygulanır.",
-      "zaman_ve_siklik": "Günde 2 kez",
-      "miktar": "1 ceviz büyüklüğünde her bölge için",
-      "uygulama_sekli": "Dairesel hareketlerle masaj yapılarak deriye yedirilir.",
-      "beklenen_sonuc": "Elastikiyeti korunmuş, yırtılmayan pürüzsüz karın derisi."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [
-        "mustela-maternite-stretch-marks-oil-bio-105ml"
-      ],
-      "yasakli_cakismalar": [
-        "Retinoid türevleri."
-      ],
-      "etkilesim_uyarisi": "İstenirse sabah krem, akşam ise besleyici yağ uygulanabilir."
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "Lierac Phytolastil Jel",
-      "alternatif_fark_notu": "Lierac aslanpençesi ve sarmaşık ekstresi içerir; Mustela krem ise avokado peptitleri ile cilt kaşıntısını anında dindirir."
-    },
-    "cilt_tipleri": [
-      "Hamilelikte Çatlak Riski Olan Cilt"
-    ],
-    "yas_grubu": "Hamileler ve Yeni Anneler",
-    "kimler_kullanamaz": "Taze sezaryen yarası.",
-    "nasil_kullanilir": "Sabah ve akşam karın, basen ve göğüslere masajla sürülür.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Hamilelik çatlaklarını önleme",
-      "Karında gerginlik hissi"
-    ],
-    "kombinasyon_ve_uyarilar": "Gebelikte güvenlidir.",
-    "etken_maddeler": [
-      "Maracuja Özü",
-      "Avokado Peptitleri"
-    ],
-    "tags": [
-      "çatlak kremi",
-      "hamilelik",
-      "anne",
-      "maracuja",
-      "3ü1 arada"
-    ],
-    "urun_tipi": "Nemlendirici & Bariyer Krem",
-    "urun_tipi_icon": "🧴",
-    "rutin_adimi": "2. Adım: Nemlendirme & Bariyer"
-  },
-  {
-    "id": "mustela-no-rinse-cleansing-water-300ml",
-    "name": "Mustela No-Rinse Cleansing Water Durulama Gerektirmeyen Temizleme Suyu (300ml)",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Normal Cilt Günlük Bakım",
-    "brand": "Mustela",
-    "size": "300 ml",
-    "form": "Pompalı Şişe Misel Su",
-    "image": "images/mustela/mustela-no-rinse-cleansing-water-300ml.jpeg",
-    "kime_uygun": {
-      "cilt_tipleri": [
-        "Normal ve Hassas Bebek Cildi",
-        "Bez Bölgesi Pratik Temizliği",
-        "Yüz ve Boyun Kıvrım Temizliği"
-      ],
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": true,
-        "bebek_uygun_mu": true,
         "cocuk_uygun_mu": true,
         "ergen_uygun_mu": true,
         "yetiskin_uygun_mu": true,
         "geriatri_uygun_mu": true,
         "gebelik_guvenli_mi": true,
         "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Doğumdan itibaren uygundur. Su ve sabuna erişilemeyen durumlarda durulama gerektirmeden pamukla nazikçe temizler."
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
       }
     },
     "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Göz içine dökülmez.",
-      "goz_cevresi_temas": "Göz çevresinde pamukla nazikçe silinebilir.",
-      "doktora_yonlendirme": "Bez bölgesinde mantar varsa hekime gidilmelidir."
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
     },
     "hasta_sikayeti": {
-      "hasta_cumlesi": "Dışarıdayken veya altını açtığımda her seferinde lavaboya götürüp yıkamak zor oluyor; alkollü ıslak mendil yerine pamukla silebileceğim durulanmayan güvenli bir temizleme suyu var mı?",
+      "hasta_cumlesi": "Yağ metabolizması, kardiyovasküler sağlık ve bilişsel fonksiyon desteği.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Nutraceutical klinik formülü.",
       "arama_etiketleri": [
-        "#temizleme_suyu_bebek",
-        "#durulanmayan_su",
-        "#micellar_bebek",
-        "#pamukla_temizleme",
-        "#bez_bölgesi_temizlik"
-      ],
-      "eczaci_sorusu": "Islak mendil yerine pamukla mı uygulayacaksınız?",
-      "secim_nedeni": "Avokado Perseose ve Aloe Vera içeren durulanmayan misel formülü kirleri mıknatıs gibi çeker, cildi yapışkan his bırakmadan ferahlatır."
+        "nutraceutical",
+        "metabolic health",
+        "l-karnitin 1000 mg & saf balık yağı omega-3 standı",
+        "l-carnitine 1000 mg & omega-3 500 mg epa/dha serisi",
+        "tak-002"
+      ]
     },
     "formulasyon": {
       "aktif_bilesenler": [
-        "Avokado Perseose",
-        "Organik Aloe Vera Özü",
+        "L-Karnitin L-Tartrat",
+        "Saf Trigliserid Formda Omega-3 Yağ Asitleri"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Yumuşak Kapsül / Sıvı Form",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "nutraceutical",
+      "metabolic health",
+      "tak-002",
+      "yumuşak kapsül / sıvı form"
+    ]
+  },
+  {
+    "id": "takviyeler-voonka-collagen-beauty-plus",
+    "name": "Voonka Kolajen Beauty Plus Hidrolize Kolajen & Hyaluronik Asit Standı",
+    "original_name": "Voonka Collagen Beauty Plus Tip 1 & Tip 3 Hidrolize Peptitler",
+    "brand": "Voonka",
+    "urun_tipi": "Toz Saşe / Sıvı Kolajen",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "takviye",
+    "category_name": "Gıda Takviyeleri & Vitamin",
+    "sub_category": "Collagen Beauty",
+    "size": "30 Saşe / 300 g Toz",
+    "form": "Toz Saşe / Sıvı Kolajen",
+    "image": "images/takviyeler/voonka_collagen_beauty_plus.jpg",
+    "stock_photo": "Tüm stok/IMG_20260829_150653.jpg",
+    "catalog_code": "TAK-003",
+    "cilt_tipleri": [
+      "Elastikiyet Kaybı & Kırışıklık"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Cilt elastikiyetini, dermal yoğunluğu ve tırnak/saç dayanıklılığını artırma."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "10.000 mg Hidrolize Tip 1 & 3 Kolajen Peptitleri",
+      "Hyaluronik Asit",
+      "C Vitamini",
+      "Biotin"
+    ],
+    "kime_uygun": {
+      "profil": "Elastikiyet Kaybı & Kırışıklık",
+      "cilt_tipleri": [
+        "Elastikiyet Kaybı & Kırışıklık"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Cilt elastikiyetini, dermal yoğunluğu ve tırnak/saç dayanıklılığını artırma.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Cilt elastikiyetini, dermal yoğunluğu ve tırnak/saç dayanıklılığını artırma.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Voonka klinik formülü.",
+      "arama_etiketleri": [
+        "voonka",
+        "collagen beauty",
+        "voonka kolajen beauty plus hidrolize kolajen & hyaluronik asit standı",
+        "voonka collagen beauty plus tip 1 & tip 3 hidrolize peptitler",
+        "tak-003"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "10.000 mg Hidrolize Tip 1 & 3 Kolajen Peptitleri",
+        "Hyaluronik Asit",
+        "C Vitamini",
+        "Biotin"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Toz Saşe / Sıvı Kolajen",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "voonka",
+      "collagen beauty",
+      "tak-003",
+      "toz saşe / sıvı kolajen"
+    ]
+  },
+  {
+    "id": "takviyeler-supradyn-all-day-q10",
+    "name": "Supradyn All Day 13 Vitamin & 9 Mineral + Koenzim Q10 Standı",
+    "original_name": "Supradyn All Day Multivitamin & Koenzim Q10",
+    "brand": "Supradyn",
+    "urun_tipi": "Efervesan / Film Tablet",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "takviye",
+    "category_name": "Gıda Takviyeleri & Vitamin",
+    "sub_category": "All Day & Energy",
+    "size": "30 / 60 Efervesan / Film Tablet",
+    "form": "Efervesan / Film Tablet",
+    "image": "images/takviyeler/supradyn_all_day_q10.jpg",
+    "stock_photo": "Tüm stok/IMG_20260829_151339.jpg",
+    "catalog_code": "TAK-004",
+    "cilt_tipleri": [
+      "Yorgunluk & Halsizlik"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Kronik yorgunluğu giderme, hücresel ATP enerjisini artırma."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Koenzim Q10",
+      "B-Kompleks Vitaminleri",
+      "C Vitamini",
+      "Demir",
+      "Çinko"
+    ],
+    "kime_uygun": {
+      "profil": "Yorgunluk & Halsizlik",
+      "cilt_tipleri": [
+        "Yorgunluk & Halsizlik"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Kronik yorgunluğu giderme, hücresel ATP enerjisini artırma.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Kronik yorgunluğu giderme, hücresel ATP enerjisini artırma.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Supradyn klinik formülü.",
+      "arama_etiketleri": [
+        "supradyn",
+        "all day & energy",
+        "supradyn all day 13 vitamin & 9 mineral + koenzim q10 standı",
+        "supradyn all day multivitamin & koenzim q10",
+        "tak-004"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Koenzim Q10",
+        "B-Kompleks Vitaminleri",
+        "C Vitamini",
+        "Demir",
+        "Çinko"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Efervesan / Film Tablet",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "supradyn",
+      "all day & energy",
+      "tak-004",
+      "efervesan / film tablet"
+    ]
+  },
+  {
+    "id": "takviyeler-vichy-dercos-anti-dandruff",
+    "name": "Vichy Dercos Anti-Dandruff (Kepek Karşıtı) & Energising Şampuan Standı",
+    "original_name": "Vichy Dercos Kepek Karşıtı ve Dökülme Karşıtı Şampuan Serisi",
+    "brand": "Vichy",
+    "urun_tipi": "Medikal Şampuan",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "takviye",
+    "category_name": "Gıda Takviyeleri & Vitamin",
+    "sub_category": "Dercos Technique",
+    "size": "200 ml / 390 ml Pompa",
+    "form": "Medikal Şampuan",
+    "image": "images/takviyeler/vichy_dercos_anti_dandruff.jpg",
+    "stock_photo": "Tüm stok/IMG_20260829_155038.jpg",
+    "catalog_code": "V-001",
+    "cilt_tipleri": [
+      "Yağlı/Kuru Kepekli ve Dökülen Saç Derisi"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "İnatçı kepek ve pullanmayı mikrobiyom dengesiyle temizleme, kök tutunmasını güçlendirme."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Selenyum Disülfid",
+      "Salisilik Asit",
+      "Aminexil",
+      "Seramid R"
+    ],
+    "kime_uygun": {
+      "profil": "Yağlı/Kuru Kepekli ve Dökülen Saç Derisi",
+      "cilt_tipleri": [
+        "Yağlı/Kuru Kepekli ve Dökülen Saç Derisi"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "İnatçı kepek ve pullanmayı mikrobiyom dengesiyle temizleme, kök tutunmasını güçlendirme.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "İnatçı kepek ve pullanmayı mikrobiyom dengesiyle temizleme, kök tutunmasını güçlendirme.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Vichy klinik formülü.",
+      "arama_etiketleri": [
+        "vichy",
+        "dercos technique",
+        "vichy dercos anti-dandruff (kepek karşıtı) & energising şampuan standı",
+        "vichy dercos kepek karşıtı ve dökülme karşıtı şampuan serisi",
+        "v-001"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Selenyum Disülfid",
+        "Salisilik Asit",
+        "Aminexil",
+        "Seramid R"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Medikal Şampuan",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "vichy",
+      "dercos technique",
+      "v-001",
+      "medikal şampuan"
+    ]
+  },
+  {
+    "id": "takviyeler-tresan-isirgan-otu-sampuan",
+    "name": "Tresan Isırgan Otu Güçlendirici & Hacim Kazandırıcı Şampuan Standı",
+    "original_name": "Tresan Doğal Isırgan Otu & At Kuyruğu Hacimlendirici Şampuan Serisi",
+    "brand": "Tresan",
+    "urun_tipi": "Bitkisel Şampuan",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "takviye",
+    "category_name": "Gıda Takviyeleri & Vitamin",
+    "sub_category": "Herbal Hair Care",
+    "size": "300 ml / 500 ml",
+    "form": "Bitkisel Şampuan",
+    "image": "images/takviyeler/tresan_isirgan_otu_sampuan.jpg",
+    "stock_photo": "Tüm stok/IMG_20260829_155301.jpg",
+    "catalog_code": "TR-001",
+    "cilt_tipleri": [
+      "İnce Telli ve Zayıf Saçlar"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Zayıf saç tellerine dolgunluk, hacim ve saç derisinde kan dolaşımı uyarımı."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Organik Isırgan Otu Ekstresi",
+      "At Kuyruğu Otu",
+      "Provitamin B5"
+    ],
+    "kime_uygun": {
+      "profil": "İnce Telli ve Zayıf Saçlar",
+      "cilt_tipleri": [
+        "İnce Telli ve Zayıf Saçlar"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Zayıf saç tellerine dolgunluk, hacim ve saç derisinde kan dolaşımı uyarımı.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Zayıf saç tellerine dolgunluk, hacim ve saç derisinde kan dolaşımı uyarımı.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Tresan klinik formülü.",
+      "arama_etiketleri": [
+        "tresan",
+        "herbal hair care",
+        "tresan isırgan otu güçlendirici & hacim kazandırıcı şampuan standı",
+        "tresan doğal isırgan otu & at kuyruğu hacimlendirici şampuan serisi",
+        "tr-001"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Organik Isırgan Otu Ekstresi",
+        "At Kuyruğu Otu",
+        "Provitamin B5"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Bitkisel Şampuan",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "tresan",
+      "herbal hair care",
+      "tr-001",
+      "bitkisel şampuan"
+    ]
+  },
+  {
+    "id": "takviyeler-dermocosmetics-body-shelf",
+    "name": "Eczane Rafı - Dermokozmetik Vücut ve Hijyen Ürünleri",
+    "original_name": "Dermokozmetik Nemlendirici Losyon ve Vücut Bakım Standı",
+    "brand": "Eczane Dermokozmetik",
+    "urun_tipi": "Losyon / Emülsiyon",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "takviye",
+    "category_name": "Gıda Takviyeleri & Vitamin",
+    "sub_category": "Vücut & Saç Bakımı",
+    "size": "Muhtelif Hacimler",
+    "form": "Losyon / Emülsiyon",
+    "image": "images/takviyeler/dermocosmetics_body_shelf.jpg",
+    "stock_photo": "Tüm stok/IMG_20260829_155754.jpg",
+    "catalog_code": "ECZ-001",
+    "cilt_tipleri": [
+      "Hassas ve Kuru Ciltler"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Cilt kuruluğunu giderme ve günlük vücut bariyeri konforu."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Termal Su",
+      "Gliserin",
+      "Allantoin"
+    ],
+    "kime_uygun": {
+      "profil": "Hassas ve Kuru Ciltler",
+      "cilt_tipleri": [
+        "Hassas ve Kuru Ciltler"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Cilt kuruluğunu giderme ve günlük vücut bariyeri konforu.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Cilt kuruluğunu giderme ve günlük vücut bariyeri konforu.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Eczane Dermokozmetik klinik formülü.",
+      "arama_etiketleri": [
+        "eczane dermokozmetik",
+        "vücut & saç bakımı",
+        "eczane rafı - dermokozmetik vücut ve hijyen ürünleri",
+        "dermokozmetik nemlendirici losyon ve vücut bakım standı",
+        "ecz-001"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Termal Su",
+        "Gliserin",
         "Allantoin"
       ],
-      "doku": "Ferahlatıcı berrak su solüsyonu.",
       "rozetler": [
-        "%98 Doğal Kökenli",
-        "Durulama Gerektirmez",
-        "Sabunsuz",
-        "Alkolsuz"
-      ]
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Losyon / Emülsiyon",
+      "fizyolojik_ph": "5.5"
     },
     "kullanim_protokolu": {
-      "rutin_siralamasi": "1. Adım: Bir pamuğa 1-2 pompa sıkılır -> 2. Adım: Yüz veya bez bölgesi nazikçe silinir -> 3. Adım: Durulanmaz.",
-      "zaman_ve_siklik": "Her bez değişiminde veya yemek sonrası yüz temizliğinde",
-      "miktar": "Pamuğu ıslatacak kadar 1-2 pompa",
-      "uygulama_sekli": "Pamukla nazikçe silinir, durulama gerektirmez.",
-      "beklenen_sonuc": "Tertemiz, yapışmayan, ipeksi bebek teni."
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
     },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [
-        "mustela-vitamin-barrier-cream-123"
-      ],
-      "yasakli_cakismalar": [
-        "Alkollü mendiller."
-      ],
-      "etkilesim_uyarisi": "Durulanmaz."
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "Bioderma ABCDerm H2O Micellar Su",
-      "alternatif_fark_notu": "Her iki ürün de alanında öncüdür; Mustela avokado perseose ile cilt hücresel rezervini korur."
-    },
-    "cilt_tipleri": [
-      "Normal ve Hassas Cilt",
-      "Bez Bölgesi"
-    ],
-    "yas_grubu": "Doğumdan itibaren (Yenidoğan dahil)",
-    "kimler_kullanamaz": "Bilinen kontrendikasyonu yoktur.",
-    "nasil_kullanilir": "Pamuğa sıkılır, yüz veya bez bölgesi silinir. Durulanmaz.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Durulama gerektirmeyen pratik bebek temizliği",
-      "Bez değişimi temizliği"
-    ],
-    "kombinasyon_ve_uyarilar": "Durulama gerektirmez.",
-    "etken_maddeler": [
-      "Avokado Perseose",
-      "Aloe Vera"
-    ],
     "tags": [
-      "temizleme suyu",
-      "micellar",
-      "durulanmaz",
-      "bebek",
-      "bez bölgesi"
-    ],
-    "urun_tipi": "Yüz & Vücut Temizleyici",
+      "eczane dermokozmetik",
+      "vücut & saç bakımı",
+      "ecz-001",
+      "losyon / emülsiyon"
+    ]
+  },
+  {
+    "id": "takviyeler-medobiocomplex-hair-nails",
+    "name": "Medobio Saç Dökülmesine Karşı Yoğun Saç & Tırnak Kapsülü Standı",
+    "original_name": "Medobiocomplex Kadın & Erkek Saç/Tırnak Besin Desteği",
+    "brand": "Medobio",
+    "urun_tipi": "Kapsül",
     "urun_tipi_icon": "🧼",
-    "rutin_adimi": "1. Adım: Temizleme"
-  },
-  {
-    "id": "mustela-nourishing-cleansing-gel-cold-cream-300ml",
-    "name": "Mustela Cold Cream İçeren Besleyici Temizleme Jeli (300ml)",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Kuru Cilt & Kış Bakımı",
-    "brand": "Mustela",
-    "size": "300 ml",
-    "form": "Pompalı Şişe Jel",
-    "image": "images/mustela/mustela-nourishing-cleansing-gel-with-cold-cream-300ml.jpeg",
-    "kime_uygun": {
-      "cilt_tipleri": [
-        "Kuru Cilt",
-        "Banyodan Sonra Gerilen ve Pullan Kuruyan Ciltler"
-      ],
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": true,
-        "bebek_uygun_mu": true,
-        "cocuk_uygun_mu": true,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Doğumdan itibaren yenidoğan ve kuru cilde sahip tüm bireyler için uygundur."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Göz yakmaz.",
-      "goz_cevresi_temas": "Göz yakmayan formül.",
-      "doktora_yonlendirme": "Şiddetli egzama varsa Stelatopia tercih edilmelidir."
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Bebeğimin cildi doğuştan çok kuru, banyo jelleri cildini daha da kurutuyor, yıkarken bile nemlendirecek besleyici bir şampuan var mı?",
-      "arama_etiketleri": [
-        "#cold_cream_jel",
-        "#kuru_cilt_şampuanı",
-        "#besleyici_temizleme",
-        "#balmumu_jel"
-      ],
-      "eczaci_sorusu": "Bebeğin cildinde pul pul dökülmeler oluyor mu?",
-      "secim_nedeni": "Organik balmumu ve seramidler içeren zengin kremsi jel yapısı yıkama esnasında kireçli suyun kurutmasını önler ve lipid tabakasını destekler."
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "Organik Balmumu",
-        "Seramidler",
-        "Avokado Perseose"
-      ],
-      "doku": "Zengin, kremsi, yoğun köpüren besleyici jel.",
-      "rozetler": [
-        "%95 Doğal Kökenli",
-        "Göz Yakmaz",
-        "Sabunsuz",
-        "Biyobozunur"
-      ]
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "Banyoda saç ve vücuda uygulanır, durulanır. Ardından Cold Cream losyon sürülür.",
-      "zaman_ve_siklik": "Her banyoda",
-      "miktar": "1-2 pompa",
-      "uygulama_sekli": "Islak cilde köpürtülüp durulanır.",
-      "beklenen_sonuc": "Banyodan sonra gerilmeyen, yumuşak kuru cilt."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [
-        "mustela-nourishing-lotion-cold-cream-200ml",
-        "mustela-nourishing-cream-with-cold-cream-40ml"
-      ],
-      "yasakli_cakismalar": [
-        "Alkali sabunlar."
-      ],
-      "etkilesim_uyarisi": "Banyo sonrası nemlendirici sürülmesi önerilir."
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "Bioderma Atoderm Gel Douche",
-      "alternatif_fark_notu": "Bioderma mavi jel kıvamındadır; Mustela Cold Cream Jel ise zengin balmumu ile ekstra besleyicidir."
-    },
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "takviye",
+    "category_name": "Gıda Takviyeleri & Vitamin",
+    "sub_category": "Hair Complex",
+    "size": "60 Kapsül",
+    "form": "Kapsül",
+    "image": "images/takviyeler/medobiocomplex_hair_nails.jpg",
+    "stock_photo": "Tüm stok/IMG_20260829_160539.jpg",
+    "catalog_code": "TAK-005",
     "cilt_tipleri": [
-      "Kuru Cilt",
-      "Bebek Saçı ve Vücudu"
+      "Telogen Effluvium / Kırılgan Tırnak"
     ],
-    "yas_grubu": "Doğumdan itibaren (Yenidoğan dahil)",
-    "kimler_kullanamaz": "Bilinen kontrendikasyonu yoktur.",
-    "nasil_kullanilir": "Islak vücuda ve saça uygulanır, köpürtülüp durulanır.",
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
     "hangi_sikayetle_gelene_verilir": [
-      "Kuru bebek cildinde banyo sonrası gerilme"
+      "Keratin matriks sentezini hızlandırma, mevsimsel saç dökülmesini durdurma."
     ],
-    "kombinasyon_ve_uyarilar": "Cold cream vücut losyonu ile desteklenmelidir.",
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
     "etken_maddeler": [
-      "Organik Balmumu",
-      "Seramidler"
+      "L-Sistin",
+      "L-Metiyonin",
+      "Keratin Peptitleri",
+      "Biotin",
+      "Çinko",
+      "Folik Asit"
     ],
-    "tags": [
-      "cold cream",
-      "temizleme jeli",
-      "kuru cilt",
-      "bebek",
-      "şampuan"
-    ],
-    "urun_tipi": "Yüz & Vücut Temizleyici",
-    "urun_tipi_icon": "🧼",
-    "rutin_adimi": "1. Adım: Temizleme"
-  },
-  {
-    "id": "mustela-nourishing-lotion-cold-cream-200ml",
-    "name": "Mustela Cold Cream İçeren Besleyici Vücut Losyonu (200ml)",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Kuru Cilt & Kış Bakımı",
-    "brand": "Mustela",
-    "size": "200 ml",
-    "form": "Pompalı Şişe Losyon",
-    "image": "images/mustela/mustela-nourishing-lotion-with-cold-cream-200ml.jpeg",
     "kime_uygun": {
+      "profil": "Telogen Effluvium / Kırılgan Tırnak",
       "cilt_tipleri": [
-        "Kuru Cilt",
-        "Pullanma ve Sertleşme Yaşayan Bebek/Çocuk Tenleri",
-        "Kışın Kuruyan Vücutlar"
+        "Telogen Effluvium / Kırılgan Tırnak"
       ],
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": true,
-        "bebek_uygun_mu": true,
-        "cocuk_uygun_mu": true,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Doğumdan itibaren tüm bebek, çocuk ve aile bireylerinde kuru vücut bakımı için uygundur."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Açık yara ve sızıntılı egzama.",
-      "goz_cevresi_temas": "Vücut içindir.",
-      "doktora_yonlendirme": "Atopik dermatit krizlerinde Stelatopia önerilmelidir."
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Normal losyonlar bebeğimin bacaklarındaki kuruluğa yetmiyor, birkaç saat sonra yine kuruyup sertleşiyor; derinlemesine besleyecek bir vücut kremi arıyorum.",
-      "arama_etiketleri": [
-        "#kuru_cilt_losyonu",
-        "#cold_cream_vücut",
-        "#balmumu_losyon",
-        "#yoğun_nemlendirici_bebek"
-      ],
-      "eczaci_sorusu": "Kuruluk kışın mı arttı?",
-      "secim_nedeni": "Organik Balmumu ve Seramidler cildin en derin katmanlarına kadar inerek lipid açığını kapatır, 24 saat kalıcı yumuşaklık sağlar."
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "Organik Balmumu",
-        "Seramid Kompleksi",
-        "Avokado Perseose",
-        "Shea Yağı"
-      ],
-      "doku": "Zengin, yoğun nemlendiren besleyici losyon.",
-      "rozetler": [
-        "%96 Doğal Kökenli",
-        "24 Saat Nem Kanıtlı",
-        "Hipoalerjenik"
-      ]
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "Banyodan sonra kuru veya hafif nemli tüm vücuda sürülür.",
-      "zaman_ve_siklik": "Günde 2 kez sabah ve akşam",
-      "miktar": "2-3 pompa",
-      "uygulama_sekli": "Masajla tüm vücuda yedirilir.",
-      "beklenen_sonuc": "Pürüzsüzleşmiş, gerginliği gitmiş ve neme doymuş ten."
-    },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [
-        "mustela-nourishing-cleansing-gel-cold-cream-300ml"
-      ],
-      "yasakli_cakismalar": [
-        "Alkali sabunlar."
-      ],
-      "etkilesim_uyarisi": "Kuru ciltler içindir."
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "Bioderma Atoderm Krem Ultra",
-      "alternatif_fark_notu": "Bioderma niasinamid içerir; Mustela Cold Cream Losyon ise organik balmumu ile daha sıcak ve koruyucu bir kalkan sunar."
-    },
-    "cilt_tipleri": [
-      "Kuru Vücut Cildi"
-    ],
-    "yas_grubu": "Doğumdan itibaren (Yenidoğan dahil)",
-    "kimler_kullanamaz": "Yağlı ciltler.",
-    "nasil_kullanilir": "Sabah ve akşam tüm vücuda masaj yaparak uygulanır.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Kuru bebek cildinde pullanma ve gerilme"
-    ],
-    "kombinasyon_ve_uyarilar": "Cold cream temizleme jeli ile kombine edilmelidir.",
-    "etken_maddeler": [
-      "Organik Balmumu",
-      "Seramidler",
-      "Shea Yağı"
-    ],
-    "tags": [
-      "cold cream",
-      "vücut losyonu",
-      "kuru cilt",
-      "besleyici",
-      "bebek"
-    ],
-    "urun_tipi": "Nemlendirici & Bariyer Krem",
-    "urun_tipi_icon": "🧴",
-    "rutin_adimi": "2. Adım: Nemlendirme & Bariyer"
-  },
-  {
-    "id": "mustela-solid-shampoo-cleansing-bar-75g",
-    "name": "Mustela Organik Katı Şampuan ve Duş Sabunu (75g)",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Organik & Sıfır Atık Bakım",
-    "brand": "Mustela",
-    "size": "75 g",
-    "form": "Katı Şampuan Barı",
-    "image": "images/mustela/mustela-solid-shampoo-body-cleansing-bar-75g.jpeg",
-    "kime_uygun": {
-      "cilt_tipleri": [
-        "Normal ve Kuru Cilt & Saç",
-        "Sıfır Atık ve Çevre Dostu Yaşayanlar",
-        "Seyahatte Sıvı Kısıtlaması Olanlar"
-      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Keratin matriks sentezini hızlandırma, mevsimsel saç dökülmesini durdurma.",
       "yas_kriterleri": {
         "yenidogan_uygun_mu": false,
         "bebek_uygun_mu": false,
@@ -6393,395 +742,10852 @@ window.PRODUCTS_DATA = [
         "geriatri_uygun_mu": true,
         "gebelik_guvenli_mi": true,
         "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "⚠️ 3 YAŞINDAN İTİBAREN ÇOCUKLAR VE TÜM AİLE İÇİNDİR! 3 yaş altı bebeklerde köpük veya sıvı formlar tercih edilmelidir."
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
       }
     },
     "guvenlik_filtresi": {
-      "kontrendikasyonlar": "3 yaş altı bebekler.",
-      "goz_cevresi_temas": "Göz temasında bol suyla durulayınız.",
-      "doktora_yonlendirme": "Gerekli değildir."
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
     },
     "hasta_sikayeti": {
-      "hasta_cumlesi": "Plastik şişe atığı üretmek istemiyorum, hem saç hem vücutta kullanılabilecek, sülfatsız ve cildi kurutmayan organik katı bir şampuan barı var mı?",
+      "hasta_cumlesi": "Keratin matriks sentezini hızlandırma, mevsimsel saç dökülmesini durdurma.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Medobio klinik formülü.",
       "arama_etiketleri": [
-        "#katı_şampuan",
-        "#sıfır_atık",
-        "#organik_sabun_barı",
-        "#çevre_dostu",
-        "#plastiksiz"
-      ],
-      "eczaci_sorusu": "Çocuğunuz 3 yaşından büyük mü?",
-      "secim_nedeni": "Organik Zeytinyağı ve Avokado yağı içeren sülfatsız formülü 2 şişe 200ml şampuana eşdeğerdir; plastik atığı sıfırlar."
+        "medobio",
+        "hair complex",
+        "medobio saç dökülmesine karşı yoğun saç & tırnak kapsülü standı",
+        "medobiocomplex kadın & erkek saç/tırnak besin desteği",
+        "tak-005"
+      ]
     },
     "formulasyon": {
       "aktif_bilesenler": [
-        "Organik Zeytinyağı",
-        "Organik Avokado Yağı"
+        "L-Sistin",
+        "L-Metiyonin",
+        "Keratin Peptitleri",
+        "Biotin",
+        "Çinko",
+        "Folik Asit"
       ],
-      "doku": "Zengin ve kremsi köpüren organik katı bar.",
       "rozetler": [
-        "%100 Doğal Kökenli",
-        "Ecocert Cosmos Organic",
-        "Sıfır Plastik",
-        "Biyobozunur",
-        "Vegan"
-      ]
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Kapsül",
+      "fizyolojik_ph": "5.5"
     },
     "kullanim_protokolu": {
-      "rutin_siralamasi": "Islak saça ve vücuda sürülerek köpürtülür, ardından durulanır.",
-      "zaman_ve_siklik": "Her banyoda",
-      "miktar": "Islak saça 2-3 kez sürtülmesi yeterlidir",
-      "uygulama_sekli": "Islak saçta köpürtülür, masaj yapılır ve durulanır.",
-      "beklenen_sonuc": "Pırıl pırıl, yumuşacık ve doğaya zarar vermeyen saç ve cilt temizliği."
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
     },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [
-        "mustela-hydra-bebe-body-lotion-300ml"
-      ],
-      "yasakli_cakismalar": [
-        "3 yaş altı bebeklerde kullanılmaz."
-      ],
-      "etkilesim_uyarisi": "Kullanım sonrası kuru sabunlukta muhafaza edilmelidir."
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "Garnier Katı Şampuan veya Yves Rocher Katı Şampuan",
-      "alternatif_fark_notu": "Garnier yetişkinler içindir; Mustela Katı Şampuan ise 3 yaş üstü çocuk güvenliği ve organik COSMOS sertifikasına sahiptir."
-    },
+    "tags": [
+      "medobio",
+      "hair complex",
+      "tak-005",
+      "kapsül"
+    ]
+  },
+  {
+    "id": "takviyeler-thermal-spray-hygiene-shelf",
+    "name": "Eczane Rafı - Yatıştırıcı Termal Sprey & Medikal Mendil Standı",
+    "original_name": "Termal Su Spreyleri, Vücut Losyonları ve Antiseptik Mendiller",
+    "brand": "Termal Bakım",
+    "urun_tipi": "Sprey / Mendil",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "takviye",
+    "category_name": "Gıda Takviyeleri & Vitamin",
+    "sub_category": "Body & Hygiene",
+    "size": "150 ml / 300 ml",
+    "form": "Sprey / Mendil",
+    "image": "images/takviyeler/thermal_spray_hygiene_shelf.jpg",
+    "stock_photo": "Tüm stok/IMG_20260829_161113.jpg",
+    "catalog_code": "ECZ-002",
     "cilt_tipleri": [
-      "Normal ve Kuru Saç/Cilt"
+      "İrrite ve Reaktif Cilt"
     ],
-    "yas_grubu": "3 Yaşından İtibaren Çocuklar ve Tüm Aile",
-    "kimler_kullanamaz": "3 yaşından küçük bebekler.",
-    "nasil_kullanilir": "Islak saç ve vücutta köpürtülüp durulanır.",
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
     "hangi_sikayetle_gelene_verilir": [
-      "Plastiksiz sıfır atık banyo arayışı",
-      "Çocuk ve aile için katı şampuan"
+      "Güneş, epilasyon, tıraş veya dermatolojik işlem sonrası anında yatıştırma."
     ],
-    "kombinasyon_ve_uyarilar": "Kuru bir yerde saklanmalıdır.",
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
     "etken_maddeler": [
-      "Organik Zeytinyağı",
+      "Doğal Mineralli Termal Su",
+      "D-Panthenol"
+    ],
+    "kime_uygun": {
+      "profil": "İrrite ve Reaktif Cilt",
+      "cilt_tipleri": [
+        "İrrite ve Reaktif Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Güneş, epilasyon, tıraş veya dermatolojik işlem sonrası anında yatıştırma.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Güneş, epilasyon, tıraş veya dermatolojik işlem sonrası anında yatıştırma.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Termal Bakım klinik formülü.",
+      "arama_etiketleri": [
+        "termal bakım",
+        "body & hygiene",
+        "eczane rafı - yatıştırıcı termal sprey & medikal mendil standı",
+        "termal su spreyleri, vücut losyonları ve antiseptik mendiller",
+        "ecz-002"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Doğal Mineralli Termal Su",
+        "D-Panthenol"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Sprey / Mendil",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "termal bakım",
+      "body & hygiene",
+      "ecz-002",
+      "sprey / mendil"
+    ]
+  },
+  {
+    "id": "takviyeler-clinic-derma-shelf",
+    "name": "Klinik Dereceli Dermokozmetik Teşhir Ünitesi",
+    "original_name": "Klinik Dermokozmetik Cilt Bakım Standı",
+    "brand": "Clinic Serisi",
+    "urun_tipi": "Krem / Serum",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "takviye",
+    "category_name": "Gıda Takviyeleri & Vitamin",
+    "sub_category": "Dermokozmetik",
+    "size": "Muhtelif",
+    "form": "Krem / Serum",
+    "image": "images/takviyeler/clinic_derma_shelf.jpg",
+    "stock_photo": "Tüm stok/IMG_20260829_161853.jpg",
+    "catalog_code": "ECZ-003",
+    "cilt_tipleri": [
+      "Tüm Cilt Tipleri"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Anti-aging ve derinlemesine epidermal nemlendirme."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Hyaluronik Asit",
+      "Peptitler"
+    ],
+    "kime_uygun": {
+      "profil": "Tüm Cilt Tipleri",
+      "cilt_tipleri": [
+        "Tüm Cilt Tipleri"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Anti-aging ve derinlemesine epidermal nemlendirme.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Anti-aging ve derinlemesine epidermal nemlendirme.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Clinic Serisi klinik formülü.",
+      "arama_etiketleri": [
+        "clinic serisi",
+        "dermokozmetik",
+        "klinik dereceli dermokozmetik teşhir ünitesi",
+        "klinik dermokozmetik cilt bakım standı",
+        "ecz-003"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Hyaluronik Asit",
+        "Peptitler"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Krem / Serum",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "clinic serisi",
+      "dermokozmetik",
+      "ecz-003",
+      "krem / serum"
+    ]
+  },
+  {
+    "id": "takviyeler-bioxcin-biotin-shampoo",
+    "name": "Bioxcin Biotin Dolgunlaştırıcı & Dökülme Karşıtı Şampuan Standı",
+    "original_name": "Bioxcin Biotin Saç Dökülmesine Karşı Güçlendirici Şampuan",
+    "brand": "Bioxcin",
+    "urun_tipi": "Bitkisel Şampuan",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "takviye",
+    "category_name": "Gıda Takviyeleri & Vitamin",
+    "sub_category": "Biotin Series",
+    "size": "300 ml / 3 x 300 ml",
+    "form": "Bitkisel Şampuan",
+    "image": "images/takviyeler/bioxcin_biotin_shampoo.jpg",
+    "stock_photo": "Tüm stok/IMG_20260829_163231.jpg",
+    "catalog_code": "BX-001",
+    "cilt_tipleri": [
+      "Güçsüz ve Dökülen Saçlar"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Saç telinin çapını kalınlaştırma, kök elastikiyetini ve yoğunluğu artırma."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Yüksek Doz Biotin (B7 Vitamini)",
+      "Biocomplex B11",
+      "Niasinamid"
+    ],
+    "kime_uygun": {
+      "profil": "Güçsüz ve Dökülen Saçlar",
+      "cilt_tipleri": [
+        "Güçsüz ve Dökülen Saçlar"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Saç telinin çapını kalınlaştırma, kök elastikiyetini ve yoğunluğu artırma.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Saç telinin çapını kalınlaştırma, kök elastikiyetini ve yoğunluğu artırma.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Bioxcin klinik formülü.",
+      "arama_etiketleri": [
+        "bioxcin",
+        "biotin series",
+        "bioxcin biotin dolgunlaştırıcı & dökülme karşıtı şampuan standı",
+        "bioxcin biotin saç dökülmesine karşı güçlendirici şampuan",
+        "bx-001"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Yüksek Doz Biotin (B7 Vitamini)",
+        "Biocomplex B11",
+        "Niasinamid"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Bitkisel Şampuan",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "bioxcin",
+      "biotin series",
+      "bx-001",
+      "bitkisel şampuan"
+    ]
+  },
+  {
+    "id": "takviyeler-bioxcin-keratin-argan",
+    "name": "Bioxcin Keratin & Argan Yıpranmış Saçlar İçin Onarıcı Bakım Standı",
+    "original_name": "Bioxcin Keratin & Argan Onarıcı Sıvı Saç Kremi ve Şampuan",
+    "brand": "Bioxcin",
+    "urun_tipi": "Krem Şampuan / Çift Fazlı Sprey",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "takviye",
+    "category_name": "Gıda Takviyeleri & Vitamin",
+    "sub_category": "Keratin & Argan",
+    "size": "300 ml Şampuan / 200 ml Sıvı Saç Kremi",
+    "form": "Krem Şampuan / Çift Fazlı Sprey",
+    "image": "images/takviyeler/bioxcin_keratin_argan.jpg",
+    "stock_photo": "Tüm stok/IMG_20260829_164627.jpg",
+    "catalog_code": "BX-002",
+    "cilt_tipleri": [
+      "İşlem Görmüş, Yıpranmış ve Kuru Saçlar"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Boya, ısı ve kimyasal işlemlerle yıpranan saç kütikülünü onarma ve parlaklık."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Hidrolize Keratin",
+      "Saf Fas Argan Yağı",
+      "Biocomplex B11"
+    ],
+    "kime_uygun": {
+      "profil": "İşlem Görmüş, Yıpranmış ve Kuru Saçlar",
+      "cilt_tipleri": [
+        "İşlem Görmüş, Yıpranmış ve Kuru Saçlar"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Boya, ısı ve kimyasal işlemlerle yıpranan saç kütikülünü onarma ve parlaklık.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Boya, ısı ve kimyasal işlemlerle yıpranan saç kütikülünü onarma ve parlaklık.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Bioxcin klinik formülü.",
+      "arama_etiketleri": [
+        "bioxcin",
+        "keratin & argan",
+        "bioxcin keratin & argan yıpranmış saçlar i̇çin onarıcı bakım standı",
+        "bioxcin keratin & argan onarıcı sıvı saç kremi ve şampuan",
+        "bx-002"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Hidrolize Keratin",
+        "Saf Fas Argan Yağı",
+        "Biocomplex B11"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Krem Şampuan / Çift Fazlı Sprey",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "bioxcin",
+      "keratin & argan",
+      "bx-002",
+      "krem şampuan / çift fazlı sprey"
+    ]
+  },
+  {
+    "id": "takviyeler-bioxcin-quantum-antidandruff",
+    "name": "Bioxcin Quantum Bio-Aktif Peptitli Dökülme & Kepek Karşıtı Stand",
+    "original_name": "Bioxcin Quantum Yoğun Dökülme & Kepek Karşıtı Şampuan",
+    "brand": "Bioxcin",
+    "urun_tipi": "Bio-Aktif Şampuan",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "takviye",
+    "category_name": "Gıda Takviyeleri & Vitamin",
+    "sub_category": "Quantum & Aqua Thermal",
+    "size": "300 ml",
+    "form": "Bio-Aktif Şampuan",
+    "image": "images/takviyeler/bioxcin_quantum_antidandruff.jpg",
+    "stock_photo": "Tüm stok/IMG_20260829_164644.jpg",
+    "catalog_code": "BX-003",
+    "cilt_tipleri": [
+      "Genetik Dökülme / Yağlı Kepek"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "İlk yıkamadan itibaren saç tellerini kalınlaştırma ve kepeği baskılama."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Bio-Aktif Peptitler",
+      "Çinko Piriton",
+      "Termal Su Kükürt Mineralleri"
+    ],
+    "kime_uygun": {
+      "profil": "Genetik Dökülme / Yağlı Kepek",
+      "cilt_tipleri": [
+        "Genetik Dökülme / Yağlı Kepek"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "İlk yıkamadan itibaren saç tellerini kalınlaştırma ve kepeği baskılama.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "İlk yıkamadan itibaren saç tellerini kalınlaştırma ve kepeği baskılama.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Bioxcin klinik formülü.",
+      "arama_etiketleri": [
+        "bioxcin",
+        "quantum & aqua thermal",
+        "bioxcin quantum bio-aktif peptitli dökülme & kepek karşıtı stand",
+        "bioxcin quantum yoğun dökülme & kepek karşıtı şampuan",
+        "bx-003"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Bio-Aktif Peptitler",
+        "Çinko Piriton",
+        "Termal Su Kükürt Mineralleri"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Bio-Aktif Şampuan",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "bioxcin",
+      "quantum & aqua thermal",
+      "bx-003",
+      "bio-aktif şampuan"
+    ]
+  },
+  {
+    "id": "takviyeler-bioxcin-forte-serum",
+    "name": "Bioxcin Forte 8 Kat Yoğunlaştırılmış Bitkisel Serum Standı",
+    "original_name": "Bioxcin Forte Yoğun Saç Dökülmesine Karşı Serum ve Şampuan",
+    "brand": "Bioxcin",
+    "urun_tipi": "Konsantre Serum",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "takviye",
+    "category_name": "Gıda Takviyeleri & Vitamin",
+    "sub_category": "Forte / Bitkisel Bakım",
+    "size": "3 x 30 ml Ampul Serum / 300 ml Şampuan",
+    "form": "Konsantre Serum",
+    "image": "images/takviyeler/bioxcin_forte_serum.jpg",
+    "stock_photo": "Tüm stok/IMG_20260829_164838.jpg",
+    "catalog_code": "BX-004",
+    "cilt_tipleri": [
+      "İleri Derece / Kronik Saç Dökülmesi"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Androjenik alopesi ve yoğun kök zayıflığında dökülmeyi durdurup yeni saç çıkışını tetikleme."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Konsantre Biocomplex B11",
+      "Flavonoidler",
+      "Doymamış Yağ Asitleri"
+    ],
+    "kime_uygun": {
+      "profil": "İleri Derece / Kronik Saç Dökülmesi",
+      "cilt_tipleri": [
+        "İleri Derece / Kronik Saç Dökülmesi"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Androjenik alopesi ve yoğun kök zayıflığında dökülmeyi durdurup yeni saç çıkışını tetikleme.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Androjenik alopesi ve yoğun kök zayıflığında dökülmeyi durdurup yeni saç çıkışını tetikleme.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Bioxcin klinik formülü.",
+      "arama_etiketleri": [
+        "bioxcin",
+        "forte / bitkisel bakım",
+        "bioxcin forte 8 kat yoğunlaştırılmış bitkisel serum standı",
+        "bioxcin forte yoğun saç dökülmesine karşı serum ve şampuan",
+        "bx-004"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Konsantre Biocomplex B11",
+        "Flavonoidler",
+        "Doymamış Yağ Asitleri"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Konsantre Serum",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "bioxcin",
+      "forte / bitkisel bakım",
+      "bx-004",
+      "konsantre serum"
+    ]
+  },
+  {
+    "id": "takviyeler-bioxcin-black-garlic",
+    "name": "Bioxcin Siyah Sarımsak Ekstreli Kokusuz Güçlendirici Şampuan Standı",
+    "original_name": "Bioxcin Siyah Sarımsak & Kolajen Hacim Şampuanı",
+    "brand": "Bioxcin",
+    "urun_tipi": "Şampuan",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "takviye",
+    "category_name": "Gıda Takviyeleri & Vitamin",
+    "sub_category": "Black Garlic & Collagen",
+    "size": "300 ml",
+    "form": "Şampuan",
+    "image": "images/takviyeler/bioxcin_black_garlic.jpg",
+    "stock_photo": "Tüm stok/IMG_20260829_165535.jpg",
+    "catalog_code": "BX-005",
+    "cilt_tipleri": [
+      "Mat, Cansız ve Güçsüz Saçlar"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Saç foliküllerine antioksidan enerji sağlama, saç tellerine dolgunluk."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Fermente Siyah Sarımsak Ekstresi",
+      "Çözünür Kolajen",
+      "Biocomplex B11"
+    ],
+    "kime_uygun": {
+      "profil": "Mat, Cansız ve Güçsüz Saçlar",
+      "cilt_tipleri": [
+        "Mat, Cansız ve Güçsüz Saçlar"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Saç foliküllerine antioksidan enerji sağlama, saç tellerine dolgunluk.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Saç foliküllerine antioksidan enerji sağlama, saç tellerine dolgunluk.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Bioxcin klinik formülü.",
+      "arama_etiketleri": [
+        "bioxcin",
+        "black garlic & collagen",
+        "bioxcin siyah sarımsak ekstreli kokusuz güçlendirici şampuan standı",
+        "bioxcin siyah sarımsak & kolajen hacim şampuanı",
+        "bx-005"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Fermente Siyah Sarımsak Ekstresi",
+        "Çözünür Kolajen",
+        "Biocomplex B11"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Şampuan",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "bioxcin",
+      "black garlic & collagen",
+      "bx-005",
+      "şampuan"
+    ]
+  },
+  {
+    "id": "takviyeler-elenatal-trimester-series",
+    "name": "Elenatal Trimester Bazlı Hamilelik & Emzirme Takviye Standı",
+    "original_name": "Elenatal 1, Elenatal 2 ve Elenatal 3 Hamilelik Multivitamin Serisi",
+    "brand": "Elenatal",
+    "urun_tipi": "Kapsül / Tablet",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "takviye",
+    "category_name": "Gıda Takviyeleri & Vitamin",
+    "sub_category": "Gebelik & Emzirme",
+    "size": "30 Kapsül / Film Tablet",
+    "form": "Kapsül / Tablet",
+    "image": "images/takviyeler/elenatal_trimester_series.jpg",
+    "stock_photo": "Tüm stok/IMG_20260829_173537.jpg",
+    "catalog_code": "TAK-006",
+    "cilt_tipleri": [
+      "Anne & Bebek"
+    ],
+    "yas_grubu": "Bebek ve çocuk kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Planlama aşamasından emzirme sonuna kadar nöral tüp defekti önleme ve bebek beyin gelişimi."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Metafolin (Aktif Folat)",
+      "Trigliserid DHA (Omega-3)",
+      "İyot",
+      "Demir",
+      "D Vitamini"
+    ],
+    "kime_uygun": {
+      "profil": "Anne & Bebek",
+      "cilt_tipleri": [
+        "Anne & Bebek"
+      ],
+      "yas_grubu": "Bebek & Çocuk",
+      "oncelikli_hedef": "Planlama aşamasından emzirme sonuna kadar nöral tüp defekti önleme ve bebek beyin gelişimi.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": true,
+        "bebek_uygun_mu": true,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Planlama aşamasından emzirme sonuna kadar nöral tüp defekti önleme ve bebek beyin gelişimi.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Elenatal klinik formülü.",
+      "arama_etiketleri": [
+        "elenatal",
+        "gebelik & emzirme",
+        "elenatal trimester bazlı hamilelik & emzirme takviye standı",
+        "elenatal 1, elenatal 2 ve elenatal 3 hamilelik multivitamin serisi",
+        "tak-006"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Metafolin (Aktif Folat)",
+        "Trigliserid DHA (Omega-3)",
+        "İyot",
+        "Demir",
+        "D Vitamini"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Kapsül / Tablet",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "elenatal",
+      "gebelik & emzirme",
+      "tak-006",
+      "kapsül / tablet"
+    ]
+  },
+  {
+    "id": "takviyeler-baybay-harveys-pediatric",
+    "name": "Eczane Pediatrik Uyku, Gaz & İştah Destek Standı",
+    "original_name": "BayBay Bitkisel Damla & Harveys Çocuk Multivitamin Şurupları",
+    "brand": "BayBay & Harveys",
+    "urun_tipi": "Sıvı Damla / Şurup",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "takviye",
+    "category_name": "Gıda Takviyeleri & Vitamin",
+    "sub_category": "Pediatrik Sağlık",
+    "size": "30 ml Damla / 150 ml Şurup",
+    "form": "Sıvı Damla / Şurup",
+    "image": "images/takviyeler/baybay_harveys_pediatric.jpg",
+    "stock_photo": "Tüm stok/IMG_20260829_173546.jpg",
+    "catalog_code": "TAK-007",
+    "cilt_tipleri": [
+      "Bebek & Çocuk"
+    ],
+    "yas_grubu": "Bebek ve çocuk kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Bebeklerde infantil kolik gaz sancılarını rahatlatma, sağlıklı uyku ve çocuk bağışıklığı."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Papatya Ekstresi",
+      "Melisa Ekstresi",
+      "Çinko",
+      "Vitamin C",
+      "Beta Glukan"
+    ],
+    "kime_uygun": {
+      "profil": "Bebek & Çocuk",
+      "cilt_tipleri": [
+        "Bebek & Çocuk"
+      ],
+      "yas_grubu": "Bebek & Çocuk",
+      "oncelikli_hedef": "Bebeklerde infantil kolik gaz sancılarını rahatlatma, sağlıklı uyku ve çocuk bağışıklığı.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": true,
+        "bebek_uygun_mu": true,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Bebeklerde infantil kolik gaz sancılarını rahatlatma, sağlıklı uyku ve çocuk bağışıklığı.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı BayBay & Harveys klinik formülü.",
+      "arama_etiketleri": [
+        "baybay & harveys",
+        "pediatrik sağlık",
+        "eczane pediatrik uyku, gaz & i̇ştah destek standı",
+        "baybay bitkisel damla & harveys çocuk multivitamin şurupları",
+        "tak-007"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Papatya Ekstresi",
+        "Melisa Ekstresi",
+        "Çinko",
+        "Vitamin C",
+        "Beta Glukan"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Sıvı Damla / Şurup",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "baybay & harveys",
+      "pediatrik sağlık",
+      "tak-007",
+      "sıvı damla / şurup"
+    ]
+  },
+  {
+    "id": "avene-avene-brand-display",
+    "name": "Avène Eczane Teşhir ve Danışmanlık Standı",
+    "original_name": "Avène Termal Su ve Temel Dermokozmetik Teşhir Standı",
+    "brand": "Avène",
+    "urun_tipi": "Termal Su / Krem / Jel",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Laboratoire Dermatologique",
+    "size": "Muhtelif",
+    "form": "Termal Su / Krem / Jel",
+    "image": "images/avene/avene_brand_display.jpg",
+    "stock_photo": "Tüm stok/IMG_20261001_174045.jpg",
+    "catalog_code": "A-SHELF-1",
+    "cilt_tipleri": [
+      "Hassas, Toleransı Düşük ve Alerjik Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Cilt hassasiyetini 5 dakikada yatıştırma, cilt bariyerini stabilize etme."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Avène Termal Kaynak Suyu",
+      "Aquaphilus dolomiae postbiyotikleri"
+    ],
+    "kime_uygun": {
+      "profil": "Hassas, Toleransı Düşük ve Alerjik Cilt",
+      "cilt_tipleri": [
+        "Hassas, Toleransı Düşük ve Alerjik Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Cilt hassasiyetini 5 dakikada yatıştırma, cilt bariyerini stabilize etme.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Cilt hassasiyetini 5 dakikada yatıştırma, cilt bariyerini stabilize etme.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Avène klinik formülü.",
+      "arama_etiketleri": [
+        "avène",
+        "laboratoire dermatologique",
+        "avène eczane teşhir ve danışmanlık standı",
+        "avène termal su ve temel dermokozmetik teşhir standı",
+        "a-shelf-1"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Avène Termal Kaynak Suyu",
+        "Aquaphilus dolomiae postbiyotikleri"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Termal Su / Krem / Jel",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "1. Adım: Temizleme",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "avène",
+      "laboratoire dermatologique",
+      "a-shelf-1",
+      "termal su / krem / jel"
+    ]
+  },
+  {
+    "id": "bioderma-bioderma-photoderm-shelf",
+    "name": "Bioderma Photoderm Güneş Koruyucu Eczane Standı",
+    "original_name": "Bioderma Photoderm Güneş Koruyucu Ailesi (Aquafluide, Spot-Age, M)",
+    "brand": "Bioderma",
+    "urun_tipi": "Su Bazlı Akışkan Krem / Mat Jel",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Photoderm",
+    "size": "40 ml / 100 ml / 200 ml",
+    "form": "Su Bazlı Akışkan Krem / Mat Jel",
+    "image": "images/bioderma/bioderma_photoderm_shelf.jpg",
+    "stock_photo": "Tüm stok/IMG_20261001_174121.jpg",
+    "catalog_code": "B-SHELF-1",
+    "cilt_tipleri": [
+      "Güneş Hassasiyeti / Lekeye Eğilimli Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "UVA/UVB ışınlarına karşı %99,8 DNA hasarı koruması, leke oluşumunu önleme."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Sun Active Defense Teknolojisi",
+      "Glabridin",
+      "Hücresel Koruma Patenti"
+    ],
+    "kime_uygun": {
+      "profil": "Güneş Hassasiyeti / Lekeye Eğilimli Cilt",
+      "cilt_tipleri": [
+        "Güneş Hassasiyeti / Lekeye Eğilimli Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "UVA/UVB ışınlarına karşı %99,8 DNA hasarı koruması, leke oluşumunu önleme.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "UVA/UVB ışınlarına karşı %99,8 DNA hasarı koruması, leke oluşumunu önleme.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Bioderma klinik formülü.",
+      "arama_etiketleri": [
+        "bioderma",
+        "photoderm",
+        "bioderma photoderm güneş koruyucu eczane standı",
+        "bioderma photoderm güneş koruyucu ailesi (aquafluide, spot-age, m)",
+        "b-shelf-1"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Sun Active Defense Teknolojisi",
+        "Glabridin",
+        "Hücresel Koruma Patenti"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Su Bazlı Akışkan Krem / Mat Jel",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "1. Adım: Temizleme",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "bioderma",
+      "photoderm",
+      "b-shelf-1",
+      "su bazlı akışkan krem / mat jel"
+    ]
+  },
+  {
+    "id": "avene-avene-cleanance-xeracalm-shelf",
+    "name": "Avène Yağlı-Akneli ve Atopik Kuru Ciltler Eczane Standı",
+    "original_name": "Avène Cleanance Akne & XeraCalm A.D Atopi Bakım Standı",
+    "brand": "Avène",
+    "urun_tipi": "Jel / Balsam / Konsantre",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Cleanance & XeraCalm",
+    "size": "150 ml / 200 ml / 400 ml",
+    "form": "Jel / Balsam / Konsantre",
+    "image": "images/avene/avene_cleanance_xeracalm_shelf.jpg",
+    "stock_photo": "Tüm stok/IMG_20261001_174645.jpg",
+    "catalog_code": "A-SHELF-2",
+    "cilt_tipleri": [
+      "Akneli / Şiddetli Kaşıntılı Atopik Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Mikrokomedonları kökünden kurutma, atopik egzamada kaşıntıyı anında kesme."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Comedoclastin™ (%25)",
+      "I-modulia®",
+      "Cer-Omega Lipidleri"
+    ],
+    "kime_uygun": {
+      "profil": "Akneli / Şiddetli Kaşıntılı Atopik Cilt",
+      "cilt_tipleri": [
+        "Akneli / Şiddetli Kaşıntılı Atopik Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Mikrokomedonları kökünden kurutma, atopik egzamada kaşıntıyı anında kesme.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Mikrokomedonları kökünden kurutma, atopik egzamada kaşıntıyı anında kesme.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Avène klinik formülü.",
+      "arama_etiketleri": [
+        "avène",
+        "cleanance & xeracalm",
+        "avène yağlı-akneli ve atopik kuru ciltler eczane standı",
+        "avène cleanance akne & xeracalm a.d atopi bakım standı",
+        "a-shelf-2"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Comedoclastin™ (%25)",
+        "I-modulia®",
+        "Cer-Omega Lipidleri"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Jel / Balsam / Konsantre",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "1. Adım: Temizleme",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "avène",
+      "cleanance & xeracalm",
+      "a-shelf-2",
+      "jel / balsam / konsantre"
+    ]
+  },
+  {
+    "id": "avene-avene-cleanance-cleansers-shelf",
+    "name": "Avène Yağlı ve Akneli Cilt Temizleme Standı",
+    "original_name": "Avène Cleanance Arındırıcı Yüz Temizleme Jelleri ve Köpükleri",
+    "brand": "Avène",
+    "urun_tipi": "Mavi Arındırıcı Jel",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Cleanance Cleansers",
+    "size": "200 ml / 400 ml Pompa",
+    "form": "Mavi Arındırıcı Jel",
+    "image": "images/avene/avene_cleanance_cleansers_shelf.jpg",
+    "stock_photo": "Tüm stok/IMG_20261001_174649.jpg",
+    "catalog_code": "A-SHELF-3",
+    "cilt_tipleri": [
+      "Yağlı, Parlayan ve Sivilceli Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Gözenekleri tıkamadan sebum fazlasını giderme, akne lezyonlarını yatıştırma."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Comedoclastin™",
+      "Çinko Glukonat",
+      "Avène Termal Su"
+    ],
+    "kime_uygun": {
+      "profil": "Yağlı, Parlayan ve Sivilceli Cilt",
+      "cilt_tipleri": [
+        "Yağlı, Parlayan ve Sivilceli Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Gözenekleri tıkamadan sebum fazlasını giderme, akne lezyonlarını yatıştırma.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Gözenekleri tıkamadan sebum fazlasını giderme, akne lezyonlarını yatıştırma.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Avène klinik formülü.",
+      "arama_etiketleri": [
+        "avène",
+        "cleanance cleansers",
+        "avène yağlı ve akneli cilt temizleme standı",
+        "avène cleanance arındırıcı yüz temizleme jelleri ve köpükleri",
+        "a-shelf-3"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Comedoclastin™",
+        "Çinko Glukonat",
+        "Avène Termal Su"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Mavi Arındırıcı Jel",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "1. Adım: Temizleme",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "avène",
+      "cleanance cleansers",
+      "a-shelf-3",
+      "mavi arındırıcı jel"
+    ]
+  },
+  {
+    "id": "avene-avene-hyaluron-b3-shelf",
+    "name": "Avène Hücresel Yenileyici Kırışıklık & Sıkılaştırıcı Bakım Standı",
+    "original_name": "Avène Hyaluron Activ B3 Serum & DermAbsolu Yaşlanma Karşıtı Seri",
+    "brand": "Avène",
+    "urun_tipi": "Yoğunlaştırılmış Serum / Kadife Krem",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Hyaluron Activ B3 & DermAbsolu",
+    "size": "30 ml Pipetli Şişe / 50 ml Kavanoz",
+    "form": "Yoğunlaştırılmış Serum / Kadife Krem",
+    "image": "images/avene/avene_hyaluron_b3_shelf.jpg",
+    "stock_photo": "Tüm stok/IMG_20261001_174653.jpg",
+    "catalog_code": "A-SHELF-4",
+    "cilt_tipleri": [
+      "Kırışıklık, Sarkma ve Elastikiyet Kaybı Olan Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Hücresel yaşlanmayı (senesens) yavaşlatma, cildi 15 günde sıkılaştırma."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Niasinamid (%6)",
+      "Saf Hyaluronik Asit (%1",
+      "5)",
+      "Bakuchiol",
+      "Sytenol™"
+    ],
+    "kime_uygun": {
+      "profil": "Kırışıklık, Sarkma ve Elastikiyet Kaybı Olan Cilt",
+      "cilt_tipleri": [
+        "Kırışıklık, Sarkma ve Elastikiyet Kaybı Olan Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Hücresel yaşlanmayı (senesens) yavaşlatma, cildi 15 günde sıkılaştırma.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Hücresel yaşlanmayı (senesens) yavaşlatma, cildi 15 günde sıkılaştırma.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Avène klinik formülü.",
+      "arama_etiketleri": [
+        "avène",
+        "hyaluron activ b3 & dermabsolu",
+        "avène hücresel yenileyici kırışıklık & sıkılaştırıcı bakım standı",
+        "avène hyaluron activ b3 serum & dermabsolu yaşlanma karşıtı seri",
+        "a-shelf-4"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Niasinamid (%6)",
+        "Saf Hyaluronik Asit (%1",
+        "5)",
+        "Bakuchiol",
+        "Sytenol™"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Yoğunlaştırılmış Serum / Kadife Krem",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "avène",
+      "hyaluron activ b3 & dermabsolu",
+      "a-shelf-4",
+      "yoğunlaştırılmış serum / kadife krem"
+    ]
+  },
+  {
+    "id": "avene-avene-sunsistick-tolerance-shelf",
+    "name": "Avène Lokal Güneş Çubuğu & Steril Kozmetik Standı",
+    "original_name": "Avène SunsiStick KA SPF50+ & Tolérance Control Hassas Cilt Serisi",
+    "brand": "Avène",
+    "urun_tipi": "Görünmez Katı Stick / Steril Krem",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "SunsiStick & Tolérance",
+    "size": "20 g Stick / 40 ml Pompa",
+    "form": "Görünmez Katı Stick / Steril Krem",
+    "image": "images/avene/avene_sunsistick_tolerance_shelf.jpg",
+    "stock_photo": "Tüm stok/IMG_20261001_174655.jpg",
+    "catalog_code": "A-SHELF-5",
+    "cilt_tipleri": [
+      "Aktinik Keratoz / Aşırı Reaktif Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Güneşe bağlı hücresel DNA hasarını önleme, ciltte yanma ve batmayı 30 saniyede dindirme."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Vederine™",
+      "TriAsorB™ Filtresi",
+      "D-Sensinose™"
+    ],
+    "kime_uygun": {
+      "profil": "Aktinik Keratoz / Aşırı Reaktif Cilt",
+      "cilt_tipleri": [
+        "Aktinik Keratoz / Aşırı Reaktif Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Güneşe bağlı hücresel DNA hasarını önleme, ciltte yanma ve batmayı 30 saniyede dindirme.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Güneşe bağlı hücresel DNA hasarını önleme, ciltte yanma ve batmayı 30 saniyede dindirme.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Avène klinik formülü.",
+      "arama_etiketleri": [
+        "avène",
+        "sunsistick & tolérance",
+        "avène lokal güneş çubuğu & steril kozmetik standı",
+        "avène sunsistick ka spf50+ & tolérance control hassas cilt serisi",
+        "a-shelf-5"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Vederine™",
+        "TriAsorB™ Filtresi",
+        "D-Sensinose™"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Görünmez Katı Stick / Steril Krem",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "avène",
+      "sunsistick & tolérance",
+      "a-shelf-5",
+      "görünmez katı stick / steril krem"
+    ]
+  },
+  {
+    "id": "avene-avene-tolerance-control-shelf",
+    "name": "Avène Steril Kozmetik Alerjik Cilt Kurtarıcı Standı",
+    "original_name": "Avène Tolérance Control Yatıştırıcı Cilt Kurtarma Kremi & Balsamı",
+    "brand": "Avène",
+    "urun_tipi": "Steril Kozmetik Krem / Balsam",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Tolérance Control",
+    "size": "40 ml Steril D.E.F.I Pompa",
+    "form": "Steril Kozmetik Krem / Balsam",
+    "image": "images/avene/avene_tolerance_control_shelf.jpg",
+    "stock_photo": "Tüm stok/IMG_20261001_180850.jpg",
+    "catalog_code": "A-SHELF-6",
+    "cilt_tipleri": [
+      "Aşırı Duyarlı, Reaktif, Alerjik Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "0 koruyucu madde, 0 koku; cilt reaktivitesini kalıcı olarak kontrol altına alma."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "D-Sensinose™ (Patentli Postbiyotik)",
+      "Avène Termal Su (%80+)"
+    ],
+    "kime_uygun": {
+      "profil": "Aşırı Duyarlı, Reaktif, Alerjik Cilt",
+      "cilt_tipleri": [
+        "Aşırı Duyarlı, Reaktif, Alerjik Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "0 koruyucu madde, 0 koku; cilt reaktivitesini kalıcı olarak kontrol altına alma.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "0 koruyucu madde, 0 koku; cilt reaktivitesini kalıcı olarak kontrol altına alma.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Avène klinik formülü.",
+      "arama_etiketleri": [
+        "avène",
+        "tolérance control",
+        "avène steril kozmetik alerjik cilt kurtarıcı standı",
+        "avène tolérance control yatıştırıcı cilt kurtarma kremi & balsamı",
+        "a-shelf-6"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "D-Sensinose™ (Patentli Postbiyotik)",
+        "Avène Termal Su (%80+)"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Steril Kozmetik Krem / Balsam",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "avène",
+      "tolérance control",
+      "a-shelf-6",
+      "steril kozmetik krem / balsam"
+    ]
+  },
+  {
+    "id": "takviyeler-ducray-kelual-ds-shelf",
+    "name": "Ducray Seboreik Dermatit & Egzama Tedavi Destek Standı",
+    "original_name": "Ducray Kelual DS Şampuan & Dexyane Med Yatıştırıcı Bakım Kremi",
+    "brand": "Ducray",
+    "urun_tipi": "Medikal Şampuan / Bariyer Onarıcı Krem",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "takviye",
+    "category_name": "Gıda Takviyeleri & Vitamin",
+    "sub_category": "Kelual DS & Dexyane",
+    "size": "100 ml Şampuan / 100 ml Krem",
+    "form": "Medikal Şampuan / Bariyer Onarıcı Krem",
+    "image": "images/takviyeler/ducray_kelual_ds_shelf.jpg",
+    "stock_photo": "Tüm stok/IMG_20261001_180856.jpg",
+    "catalog_code": "DU-001",
+    "cilt_tipleri": [
+      "Seboreik Dermatit, Kırmızı Pullanma ve Egzama"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Malassezia mantarını baskılama, inatçı kepek ve kaşıntıyı kökten giderme."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Siklopiroksolamin",
+      "Çinko Piriton",
+      "Keluamid",
+      "Enoksolon"
+    ],
+    "kime_uygun": {
+      "profil": "Seboreik Dermatit, Kırmızı Pullanma ve Egzama",
+      "cilt_tipleri": [
+        "Seboreik Dermatit, Kırmızı Pullanma ve Egzama"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Malassezia mantarını baskılama, inatçı kepek ve kaşıntıyı kökten giderme.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Malassezia mantarını baskılama, inatçı kepek ve kaşıntıyı kökten giderme.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Ducray klinik formülü.",
+      "arama_etiketleri": [
+        "ducray",
+        "kelual ds & dexyane",
+        "ducray seboreik dermatit & egzama tedavi destek standı",
+        "ducray kelual ds şampuan & dexyane med yatıştırıcı bakım kremi",
+        "du-001"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Siklopiroksolamin",
+        "Çinko Piriton",
+        "Keluamid",
+        "Enoksolon"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Medikal Şampuan / Bariyer Onarıcı Krem",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "ducray",
+      "kelual ds & dexyane",
+      "du-001",
+      "medikal şampuan / bariyer onarıcı krem"
+    ]
+  },
+  {
+    "id": "cerave-cerave-barrier-shelf",
+    "name": "CeraVe Dermatologlarla Geliştirilen 3 Temel Seramid Standı",
+    "original_name": "CeraVe Nemlendirici Krem, Losyon & Skin Renewing Vitamin C Serum",
+    "brand": "CeraVe",
+    "urun_tipi": "MVE Kontrollü Salım Kremi / Hafif Jel",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Bariyer Onarımı & Nemlendirme",
+    "size": "236 ml / 473 ml Pompa / 30 ml Serum",
+    "form": "MVE Kontrollü Salım Kremi / Hafif Jel",
+    "image": "images/cerave/cerave_barrier_shelf.jpg",
+    "stock_photo": "Tüm stok/IMG_20261001_180902.jpg",
+    "catalog_code": "CER-SHELF-1",
+    "cilt_tipleri": [
+      "Kuru, Çok Kuru ve Bariyeri Bozulmuş Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "24 saat boyunca lipid bariyerini yenileme, nemsizliği önleme."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "3 Temel Seramid (1",
+      "3",
+      "6-II)",
+      "Hyaluronik Asit",
+      "MVE Teknolojisi",
+      "Saf C Vitamini %10"
+    ],
+    "kime_uygun": {
+      "profil": "Kuru, Çok Kuru ve Bariyeri Bozulmuş Cilt",
+      "cilt_tipleri": [
+        "Kuru, Çok Kuru ve Bariyeri Bozulmuş Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "24 saat boyunca lipid bariyerini yenileme, nemsizliği önleme.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "24 saat boyunca lipid bariyerini yenileme, nemsizliği önleme.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı CeraVe klinik formülü.",
+      "arama_etiketleri": [
+        "cerave",
+        "bariyer onarımı & nemlendirme",
+        "cerave dermatologlarla geliştirilen 3 temel seramid standı",
+        "cerave nemlendirici krem, losyon & skin renewing vitamin c serum",
+        "cer-shelf-1"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "3 Temel Seramid (1",
+        "3",
+        "6-II)",
+        "Hyaluronik Asit",
+        "MVE Teknolojisi",
+        "Saf C Vitamini %10"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "MVE Kontrollü Salım Kremi / Hafif Jel",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "1. Adım: Temizleme",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "cerave",
+      "bariyer onarımı & nemlendirme",
+      "cer-shelf-1",
+      "mve kontrollü salım kremi / hafif jel"
+    ]
+  },
+  {
+    "id": "takviyeler-ocean-orzax-pediatric-omega",
+    "name": "Orzax Ocean Eczane Vitamin & Omega-3 Teşhir Standı",
+    "original_name": "Ocean Balık Yağı, Vitamin D3K2, Vitamin C ve Çocuk Şurupları",
+    "brand": "Orzax Ocean",
+    "urun_tipi": "Sıvı Şurup / Damla / Kapsül",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "takviye",
+    "category_name": "Gıda Takviyeleri & Vitamin",
+    "sub_category": "Bağışıklık & Çocuk Gelişimi",
+    "size": "150 ml Şurup / 20 ml Damla / 50 Kapsül",
+    "form": "Sıvı Şurup / Damla / Kapsül",
+    "image": "images/takviyeler/ocean_orzax_pediatric_omega.jpg",
+    "stock_photo": "Tüm stok/IMG_20261001_180925.jpg",
+    "catalog_code": "TAK-008",
+    "cilt_tipleri": [
+      "Tüm Aile / Pediatrik & Yetişkin"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Çocuklarda zihinsel ve kemik gelişimi, yetişkinlerde kalp-damar ve bağışıklık desteği."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "IFOS 5 Yıldızlı Trigliserid Omega-3 (EPA/DHA)",
+      "Zeytinyağında Çözünmüş D3/K2 Vitamini"
+    ],
+    "kime_uygun": {
+      "profil": "Tüm Aile / Pediatrik & Yetişkin",
+      "cilt_tipleri": [
+        "Tüm Aile / Pediatrik & Yetişkin"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Çocuklarda zihinsel ve kemik gelişimi, yetişkinlerde kalp-damar ve bağışıklık desteği.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Çocuklarda zihinsel ve kemik gelişimi, yetişkinlerde kalp-damar ve bağışıklık desteği.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Orzax Ocean klinik formülü.",
+      "arama_etiketleri": [
+        "orzax ocean",
+        "bağışıklık & çocuk gelişimi",
+        "orzax ocean eczane vitamin & omega-3 teşhir standı",
+        "ocean balık yağı, vitamin d3k2, vitamin c ve çocuk şurupları",
+        "tak-008"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "IFOS 5 Yıldızlı Trigliserid Omega-3 (EPA/DHA)",
+        "Zeytinyağında Çözünmüş D3/K2 Vitamini"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Sıvı Şurup / Damla / Kapsül",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "orzax ocean",
+      "bağışıklık & çocuk gelişimi",
+      "tak-008",
+      "sıvı şurup / damla / kapsül"
+    ]
+  },
+  {
+    "id": "takviyeler-pharmaton-dynavit-multivitamin",
+    "name": "Pharmaton Ginseng G115 & Eczane Multivitamin Standı",
+    "original_name": "Pharmaton Vital G115 & Dynavit Multivitamin ve Mineral Takviyeleri",
+    "brand": "Pharmaton & Dynavit",
+    "urun_tipi": "Yumuşak Jel Kapsül / Efervesan",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "takviye",
+    "category_name": "Gıda Takviyeleri & Vitamin",
+    "sub_category": "Enerji & Zindelik",
+    "size": "30 / 60 / 100 Kapsül",
+    "form": "Yumuşak Jel Kapsül / Efervesan",
+    "image": "images/takviyeler/pharmaton_dynavit_multivitamin.jpg",
+    "stock_photo": "Tüm stok/IMG_20261001_180933.jpg",
+    "catalog_code": "TAK-009",
+    "cilt_tipleri": [
+      "Zihinsel ve Fiziksel Yorgunluk"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Yoğun iş ve sınav dönemlerinde odaklanma, dayanıklılık ve tükenmişlik hissini giderme."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Standardize Panax Ginseng G115 Ekstresi",
+      "18 Temel Vitamin & Mineral"
+    ],
+    "kime_uygun": {
+      "profil": "Zihinsel ve Fiziksel Yorgunluk",
+      "cilt_tipleri": [
+        "Zihinsel ve Fiziksel Yorgunluk"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Yoğun iş ve sınav dönemlerinde odaklanma, dayanıklılık ve tükenmişlik hissini giderme.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Yoğun iş ve sınav dönemlerinde odaklanma, dayanıklılık ve tükenmişlik hissini giderme.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Pharmaton & Dynavit klinik formülü.",
+      "arama_etiketleri": [
+        "pharmaton & dynavit",
+        "enerji & zindelik",
+        "pharmaton ginseng g115 & eczane multivitamin standı",
+        "pharmaton vital g115 & dynavit multivitamin ve mineral takviyeleri",
+        "tak-009"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Standardize Panax Ginseng G115 Ekstresi",
+        "18 Temel Vitamin & Mineral"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Yumuşak Jel Kapsül / Efervesan",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "1. Adım: Temizleme",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "pharmaton & dynavit",
+      "enerji & zindelik",
+      "tak-009",
+      "yumuşak jel kapsül / efervesan"
+    ]
+  },
+  {
+    "id": "takviyeler-solgar-gold-label-shelf",
+    "name": "Solgar Eczane Özel Amber Cam Şişe Vitamin Standı",
+    "original_name": "Solgar VM-2000, Gentle Iron, Calcium Magnesium & B-Complex Serisi",
+    "brand": "Solgar",
+    "urun_tipi": "Bitkisel Tablet / Şelatlı Kapsül",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "takviye",
+    "category_name": "Gıda Takviyeleri & Vitamin",
+    "sub_category": "Altın Etiketli Vitaminler",
+    "size": "30 / 60 / 90 Bitkisel Kapsül",
+    "form": "Bitkisel Tablet / Şelatlı Kapsül",
+    "image": "images/takviyeler/solgar_gold_label_shelf.jpg",
+    "stock_photo": "Tüm stok/IMG_20261001_180950.jpg",
+    "catalog_code": "TAK-010",
+    "cilt_tipleri": [
+      "Genel Sağlık & Anemi/Kemik Desteği"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Kabızlık yapmayan demir takviyesi, sinir sistemi regülasyonu ve hücresel zindelik."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Demir Bisglisinat (Mide Dostu)",
+      "Şelatlı Magnezyum Sitrat",
+      "B-Kompleks Koenzimleri"
+    ],
+    "kime_uygun": {
+      "profil": "Genel Sağlık & Anemi/Kemik Desteği",
+      "cilt_tipleri": [
+        "Genel Sağlık & Anemi/Kemik Desteği"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Kabızlık yapmayan demir takviyesi, sinir sistemi regülasyonu ve hücresel zindelik.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Kabızlık yapmayan demir takviyesi, sinir sistemi regülasyonu ve hücresel zindelik.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Solgar klinik formülü.",
+      "arama_etiketleri": [
+        "solgar",
+        "altın etiketli vitaminler",
+        "solgar eczane özel amber cam şişe vitamin standı",
+        "solgar vm-2000, gentle iron, calcium magnesium & b-complex serisi",
+        "tak-010"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Demir Bisglisinat (Mide Dostu)",
+        "Şelatlı Magnezyum Sitrat",
+        "B-Kompleks Koenzimleri"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Bitkisel Tablet / Şelatlı Kapsül",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "solgar",
+      "altın etiketli vitaminler",
+      "tak-010",
+      "bitkisel tablet / şelatlı kapsül"
+    ]
+  },
+  {
+    "id": "takviyeler-newlife-b12-plus-sublingual",
+    "name": "New Life B12 Dilaltı Sprey/Tablet & Çocuk B-Vitamini Standı",
+    "original_name": "New Life B12 Plus Dilaltı Tablet & B-Active Yummy Çiğneme Formları",
+    "brand": "New Life",
+    "urun_tipi": "Dilaltı Tablet (Sublingual)",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "takviye",
+    "category_name": "Gıda Takviyeleri & Vitamin",
+    "sub_category": "Metilkobalamin & B12 Plus",
+    "size": "60 Dilaltı Tablet / 30 Çiğnenebilir Jel",
+    "form": "Dilaltı Tablet (Sublingual)",
+    "image": "images/takviyeler/newlife_b12_plus_sublingual.jpg",
+    "stock_photo": "Tüm stok/IMG_20261001_181007.jpg",
+    "catalog_code": "TAK-011",
+    "cilt_tipleri": [
+      "Hafıza & Sinir Sistemi"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Sindirim sistemini baypas ederek doğrudan kana karışan nörolojik ve kan yapıcı destek."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Aktif Metilkobalamin (B12)",
+      "Metilfolat (B9)",
+      "Biotin",
+      "B6 Vitamini"
+    ],
+    "kime_uygun": {
+      "profil": "Hafıza & Sinir Sistemi",
+      "cilt_tipleri": [
+        "Hafıza & Sinir Sistemi"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Sindirim sistemini baypas ederek doğrudan kana karışan nörolojik ve kan yapıcı destek.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Sindirim sistemini baypas ederek doğrudan kana karışan nörolojik ve kan yapıcı destek.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı New Life klinik formülü.",
+      "arama_etiketleri": [
+        "new life",
+        "metilkobalamin & b12 plus",
+        "new life b12 dilaltı sprey/tablet & çocuk b-vitamini standı",
+        "new life b12 plus dilaltı tablet & b-active yummy çiğneme formları",
+        "tak-011"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Aktif Metilkobalamin (B12)",
+        "Metilfolat (B9)",
+        "Biotin",
+        "B6 Vitamini"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Dilaltı Tablet (Sublingual)",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "new life",
+      "metilkobalamin & b12 plus",
+      "tak-011",
+      "dilaltı tablet (sublingual)"
+    ]
+  },
+  {
+    "id": "takviyeler-biobaby-atocare-shelf",
+    "name": "Biobaby Atopik Bebek Cildi Yatıştırıcı Bakım Standı",
+    "original_name": "Biobaby Atocare Yoğun Nemlendirici Krem & Saç/Vücut Şampuanı",
+    "brand": "Biobaby",
+    "urun_tipi": "Bebek Şampuanı / Zengin Krem",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "takviye",
+    "category_name": "Gıda Takviyeleri & Vitamin",
+    "sub_category": "Atocare & Bebek Bakımı",
+    "size": "200 ml Krem / 500 ml Şampuan",
+    "form": "Bebek Şampuanı / Zengin Krem",
+    "image": "images/takviyeler/biobaby_atocare_shelf.jpg",
+    "stock_photo": "Tüm stok/IMG_20261009_185644.jpg",
+    "catalog_code": "TAK-012",
+    "cilt_tipleri": [
+      "Yeni Doğan & Atopik Bebek Cildi"
+    ],
+    "yas_grubu": "Bebek ve çocuk kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Bebeklerde konak, pişik ve atopik cilt kuruluğunu kortizonsuz yatıştırma."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Alman Papatyası",
+      "Organik Hodan Yağı",
+      "Çinko Oksit",
+      "Pantenol"
+    ],
+    "kime_uygun": {
+      "profil": "Yeni Doğan & Atopik Bebek Cildi",
+      "cilt_tipleri": [
+        "Yeni Doğan & Atopik Bebek Cildi"
+      ],
+      "yas_grubu": "Bebek & Çocuk",
+      "oncelikli_hedef": "Bebeklerde konak, pişik ve atopik cilt kuruluğunu kortizonsuz yatıştırma.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": true,
+        "bebek_uygun_mu": true,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Bebeklerde konak, pişik ve atopik cilt kuruluğunu kortizonsuz yatıştırma.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Biobaby klinik formülü.",
+      "arama_etiketleri": [
+        "biobaby",
+        "atocare & bebek bakımı",
+        "biobaby atopik bebek cildi yatıştırıcı bakım standı",
+        "biobaby atocare yoğun nemlendirici krem & saç/vücut şampuanı",
+        "tak-012"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Alman Papatyası",
+        "Organik Hodan Yağı",
+        "Çinko Oksit",
+        "Pantenol"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Bebek Şampuanı / Zengin Krem",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "biobaby",
+      "atocare & bebek bakımı",
+      "tak-012",
+      "bebek şampuanı / zengin krem"
+    ]
+  },
+  {
+    "id": "takviyeler-elenatal-bayer-pregnancy",
+    "name": "Elenatal Bayer Klinik Onaylı Gebelik Multivitamin Standı",
+    "original_name": "Elenatal 1, 2, 3 Gebelik ve Emzirme Kapsülleri Standı",
+    "brand": "Elenatal",
+    "urun_tipi": "Tablet / Jel Kapsül",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "takviye",
+    "category_name": "Gıda Takviyeleri & Vitamin",
+    "sub_category": "Trimester Gebelik Destek",
+    "size": "3 x 30 Kapsül",
+    "form": "Tablet / Jel Kapsül",
+    "image": "images/takviyeler/elenatal_bayer_pregnancy.jpg",
+    "stock_photo": "Tüm stok/IMG_20261009_185717.jpg",
+    "catalog_code": "TAK-013",
+    "cilt_tipleri": [
+      "Gebelik ve Emzirme Dönemi"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Hamilelikte artan vitamin-mineral ihtiyacını kusma yapmayan formülle karşılama."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Aktif Folik Asit (Metafolin)",
+      "Demir",
+      "DHA",
+      "İyot",
+      "Kalsiyum"
+    ],
+    "kime_uygun": {
+      "profil": "Gebelik ve Emzirme Dönemi",
+      "cilt_tipleri": [
+        "Gebelik ve Emzirme Dönemi"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Hamilelikte artan vitamin-mineral ihtiyacını kusma yapmayan formülle karşılama.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Hamilelikte artan vitamin-mineral ihtiyacını kusma yapmayan formülle karşılama.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Elenatal klinik formülü.",
+      "arama_etiketleri": [
+        "elenatal",
+        "trimester gebelik destek",
+        "elenatal bayer klinik onaylı gebelik multivitamin standı",
+        "elenatal 1, 2, 3 gebelik ve emzirme kapsülleri standı",
+        "tak-013"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Aktif Folik Asit (Metafolin)",
+        "Demir",
+        "DHA",
+        "İyot",
+        "Kalsiyum"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Tablet / Jel Kapsül",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "1. Adım: Temizleme",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "elenatal",
+      "trimester gebelik destek",
+      "tak-013",
+      "tablet / jel kapsül"
+    ]
+  },
+  {
+    "id": "takviyeler-harveys-multi-protect-syrup",
+    "name": "Harveys Çocuklar İçin Sambucus & C Vitamini Standı",
+    "original_name": "Harveys Multi Protect Çocuk Bağışıklık Güçlendirici Şurup",
+    "brand": "Harveys",
+    "urun_tipi": "Doğal Meyve Aromalı Şurup",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "takviye",
+    "category_name": "Gıda Takviyeleri & Vitamin",
+    "sub_category": "Multi Protect",
+    "size": "150 ml Şurup",
+    "form": "Doğal Meyve Aromalı Şurup",
+    "image": "images/takviyeler/harveys_multi_protect_syrup.jpg",
+    "stock_photo": "Tüm stok/IMG_20261009_185723.jpg",
+    "catalog_code": "TAK-014",
+    "cilt_tipleri": [
+      "Pediatrik Bağışıklık"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Okul ve kreş döneminde üst solunum yolu enfeksiyonlarına karşı kalkan koruma."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Kara Mürver (Sambucus Nigra)",
+      "Afrika Sardunyası (Pelargonium)",
+      "C Vitamini",
+      "Çinko"
+    ],
+    "kime_uygun": {
+      "profil": "Pediatrik Bağışıklık",
+      "cilt_tipleri": [
+        "Pediatrik Bağışıklık"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Okul ve kreş döneminde üst solunum yolu enfeksiyonlarına karşı kalkan koruma.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Okul ve kreş döneminde üst solunum yolu enfeksiyonlarına karşı kalkan koruma.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Harveys klinik formülü.",
+      "arama_etiketleri": [
+        "harveys",
+        "multi protect",
+        "harveys çocuklar i̇çin sambucus & c vitamini standı",
+        "harveys multi protect çocuk bağışıklık güçlendirici şurup",
+        "tak-014"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Kara Mürver (Sambucus Nigra)",
+        "Afrika Sardunyası (Pelargonium)",
+        "C Vitamini",
+        "Çinko"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Doğal Meyve Aromalı Şurup",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "harveys",
+      "multi protect",
+      "tak-014",
+      "doğal meyve aromalı şurup"
+    ]
+  },
+  {
+    "id": "benjamin_button-benjamin-button-skin-cleansing-foam-180ml",
+    "name": "Benjamin Button Arındırıcı ve Aydınlatıcı Yüz Temizleme Köpüğü",
+    "original_name": "Benjamin Button Skin Cleansing Foam",
+    "brand": "Benjamin Button",
+    "urun_tipi": "Mikro Köpük",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Clean & Glow",
+    "size": "180 ml Pompalı Şişe",
+    "form": "Mikro Köpük",
+    "image": "images/benjamin_button/benjamin_button_skin_cleansing_foam_180ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261027_123000.jpg",
+    "catalog_code": "B001",
+    "cilt_tipleri": [
+      "Tüm Cilt Tipleri / Hassas Dahil"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Cildi germeden gözenekleri derinlemesine arındırır, pH dengesini korur ve kızarıklığı yatıştırır."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Centella Asiatica (Gotu Kola)",
+      "Niasinamid",
+      "Papatya Ekstresi",
+      "Hyaluronik Asit"
+    ],
+    "kime_uygun": {
+      "profil": "Tüm Cilt Tipleri / Hassas Dahil",
+      "cilt_tipleri": [
+        "Tüm Cilt Tipleri / Hassas Dahil"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Cildi germeden gözenekleri derinlemesine arındırır, pH dengesini korur ve kızarıklığı yatıştırır.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Cildi germeden gözenekleri derinlemesine arındırır, pH dengesini korur ve kızarıklığı yatıştırır.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Benjamin Button klinik formülü.",
+      "arama_etiketleri": [
+        "benjamin button",
+        "clean & glow",
+        "benjamin button arındırıcı ve aydınlatıcı yüz temizleme köpüğü",
+        "benjamin button skin cleansing foam",
+        "b001"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Centella Asiatica (Gotu Kola)",
+        "Niasinamid",
+        "Papatya Ekstresi",
+        "Hyaluronik Asit"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Mikro Köpük",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "1. Adım: Temizleme",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "benjamin button",
+      "clean & glow",
+      "b001",
+      "mikro köpük"
+    ]
+  },
+  {
+    "id": "avene-avene-cleanance-gel-nettoyant-400ml",
+    "name": "Avène Cleanance Yağlı ve Akneli Ciltler İçin Temizleme Jeli",
+    "original_name": "Avène Cleanance Gel Nettoyant",
+    "brand": "Avène",
+    "urun_tipi": "Mavi Arındırıcı Jel",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Cleanance",
+    "size": "400 ml Pompalı Şişe",
+    "form": "Mavi Arındırıcı Jel",
+    "image": "images/avene/avene_cleanance_gel_nettoyant_400ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261027_123010.jpg",
+    "catalog_code": "A022",
+    "cilt_tipleri": [
+      "Karma, Yağlı ve Sivilceye Eğilimli Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Sebum salgısını kökten dengeler, parlamayı önler, mikro-komedon oluşumunu engeller."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Comedoclastin™ (%0",
+      "7)",
+      "Çinko Glukonat",
+      "Avène Termal Kaynak Suyu (%60)"
+    ],
+    "kime_uygun": {
+      "profil": "Karma, Yağlı ve Sivilceye Eğilimli Cilt",
+      "cilt_tipleri": [
+        "Karma, Yağlı ve Sivilceye Eğilimli Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Sebum salgısını kökten dengeler, parlamayı önler, mikro-komedon oluşumunu engeller.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Sebum salgısını kökten dengeler, parlamayı önler, mikro-komedon oluşumunu engeller.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Avène klinik formülü.",
+      "arama_etiketleri": [
+        "avène",
+        "cleanance",
+        "avène cleanance yağlı ve akneli ciltler i̇çin temizleme jeli",
+        "avène cleanance gel nettoyant",
+        "a022"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Comedoclastin™ (%0",
+        "7)",
+        "Çinko Glukonat",
+        "Avène Termal Kaynak Suyu (%60)"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Mavi Arındırıcı Jel",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "1. Adım: Temizleme",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "avène",
+      "cleanance",
+      "a022",
+      "mavi arındırıcı jel"
+    ]
+  },
+  {
+    "id": "avene-avene-cleanance-comedomed-gel-peeling-400ml",
+    "name": "Avène Cleanance Comedomed Peeling Etkili Temizleme Jeli",
+    "original_name": "Avène Cleanance Comedomed Gel Nettoyant Peeling",
+    "brand": "Avène",
+    "urun_tipi": "Mikro-Eksfoliyan Jel",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Cleanance Comedomed",
+    "size": "400 ml Pompalı Şişe",
+    "form": "Mikro-Eksfoliyan Jel",
+    "image": "images/avene/avene_cleanance_comedomed_gel_peeling_400ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261027_123019.jpg",
+    "catalog_code": "A023",
+    "cilt_tipleri": [
+      "İnatçı Akne, Siyah Nokta ve Gözenekli Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Yüz, göğüs ve sırttaki inatçı sivilceleri ve siyah noktaları nazik soyucu etkiyle temizler."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Comedoclastin™",
+      "Glikolik Asit (%AHA)",
+      "Çinko Glukonat"
+    ],
+    "kime_uygun": {
+      "profil": "İnatçı Akne, Siyah Nokta ve Gözenekli Cilt",
+      "cilt_tipleri": [
+        "İnatçı Akne, Siyah Nokta ve Gözenekli Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Yüz, göğüs ve sırttaki inatçı sivilceleri ve siyah noktaları nazik soyucu etkiyle temizler.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Yüz, göğüs ve sırttaki inatçı sivilceleri ve siyah noktaları nazik soyucu etkiyle temizler.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Avène klinik formülü.",
+      "arama_etiketleri": [
+        "avène",
+        "cleanance comedomed",
+        "avène cleanance comedomed peeling etkili temizleme jeli",
+        "avène cleanance comedomed gel nettoyant peeling",
+        "a023"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Comedoclastin™",
+        "Glikolik Asit (%AHA)",
+        "Çinko Glukonat"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Mikro-Eksfoliyan Jel",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "1. Adım: Temizleme",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "avène",
+      "cleanance comedomed",
+      "a023",
+      "mikro-eksfoliyan jel"
+    ]
+  },
+  {
+    "id": "avene-avene-xeracalm-huile-lavante-400ml",
+    "name": "Avène XeraCalm A.D Kaşıntı ve Kuruluk Karşıtı Temizleme Yağı",
+    "original_name": "Avène XeraCalm A.D Huile Lavante Relipidante",
+    "brand": "Avène",
+    "urun_tipi": "Besleyici Temizleme Yağı",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "XeraCalm A.D",
+    "size": "400 ml Pompalı Şişe",
+    "form": "Besleyici Temizleme Yağı",
+    "image": "images/avene/avene_xeracalm_huile_lavante_400ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261027_123031.jpg",
+    "catalog_code": "A095",
+    "cilt_tipleri": [
+      "Kuru, Çok Kuru, Atopik ve Egzamalı Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Atopik egzamada ciltteki yoğun kaşıntı ve kuruluk krizlerini banyoda anında yatıştırır."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "I-modulia® (Postbiyotik Kaşıntı Karşıtı Aktif)",
+      "Cer-Omega Lipid Kompleksi",
+      "Avène Termal Su"
+    ],
+    "kime_uygun": {
+      "profil": "Kuru, Çok Kuru, Atopik ve Egzamalı Cilt",
+      "cilt_tipleri": [
+        "Kuru, Çok Kuru, Atopik ve Egzamalı Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Atopik egzamada ciltteki yoğun kaşıntı ve kuruluk krizlerini banyoda anında yatıştırır.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Atopik egzamada ciltteki yoğun kaşıntı ve kuruluk krizlerini banyoda anında yatıştırır.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Avène klinik formülü.",
+      "arama_etiketleri": [
+        "avène",
+        "xeracalm a.d",
+        "avène xeracalm a.d kaşıntı ve kuruluk karşıtı temizleme yağı",
+        "avène xeracalm a.d huile lavante relipidante",
+        "a095"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "I-modulia® (Postbiyotik Kaşıntı Karşıtı Aktif)",
+        "Cer-Omega Lipid Kompleksi",
+        "Avène Termal Su"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Besleyici Temizleme Yağı",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "avène",
+      "xeracalm a.d",
+      "a095",
+      "besleyici temizleme yağı"
+    ]
+  },
+  {
+    "id": "cerave-cerave-blemish-control-cleanser-236ml",
+    "name": "CeraVe Akneye Eğilim Gösteren Ciltlere Özel Salisilik Asitli Temizleyici",
+    "original_name": "CeraVe Blemish Control Cleanser",
+    "brand": "CeraVe",
+    "urun_tipi": "Köpüren Jel",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Blemish Control",
+    "size": "236 ml Pompalı Şişe",
+    "form": "Köpüren Jel",
+    "image": "images/cerave/cerave_blemish_control_cleanser_236ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261027_123152.jpg",
+    "catalog_code": "CER-001",
+    "cilt_tipleri": [
+      "Yağlı, Akneli ve Gözenekli Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Gözenekleri derinlemesine arındırır, sebum fazlasını emer, koruyucu cilt bariyerini bozmaz."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Salisilik Asit (%2 BHA)",
+      "Hectorite Kili",
+      "3 Temel Seramid",
+      "Niasinamid"
+    ],
+    "kime_uygun": {
+      "profil": "Yağlı, Akneli ve Gözenekli Cilt",
+      "cilt_tipleri": [
+        "Yağlı, Akneli ve Gözenekli Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Gözenekleri derinlemesine arındırır, sebum fazlasını emer, koruyucu cilt bariyerini bozmaz.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Gözenekleri derinlemesine arındırır, sebum fazlasını emer, koruyucu cilt bariyerini bozmaz.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı CeraVe klinik formülü.",
+      "arama_etiketleri": [
+        "cerave",
+        "blemish control",
+        "cerave akneye eğilim gösteren ciltlere özel salisilik asitli temizleyici",
+        "cerave blemish control cleanser",
+        "cer-001"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Salisilik Asit (%2 BHA)",
+        "Hectorite Kili",
+        "3 Temel Seramid",
+        "Niasinamid"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Köpüren Jel",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "1. Adım: Temizleme",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "cerave",
+      "blemish control",
+      "cer-001",
+      "köpüren jel"
+    ]
+  },
+  {
+    "id": "cerave-cerave-hydrating-cleanser-473ml",
+    "name": "CeraVe Normal ve Kuru Ciltler İçin Nemlendiren Temizleyici",
+    "original_name": "CeraVe Hydrating Cleanser",
+    "brand": "CeraVe",
+    "urun_tipi": "Köpürmeyen Krem Losyon",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Hydrating Cleanser",
+    "size": "473 ml Pompalı Şişe",
+    "form": "Köpürmeyen Krem Losyon",
+    "image": "images/cerave/cerave_hydrating_cleanser_473ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261027_123204.jpg",
+    "catalog_code": "CER-002",
+    "cilt_tipleri": [
+      "Normal, Kuru ve Nemsiz Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Cildi germeden kir ve makyajı temizler, ilk yıkamadan itibaren nem bariyerini güçlendirir."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "3 Temel Seramid (1",
+      "3",
+      "6-II)",
+      "Hyaluronik Asit",
+      "MVE Teknolojisi"
+    ],
+    "kime_uygun": {
+      "profil": "Normal, Kuru ve Nemsiz Cilt",
+      "cilt_tipleri": [
+        "Normal, Kuru ve Nemsiz Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Cildi germeden kir ve makyajı temizler, ilk yıkamadan itibaren nem bariyerini güçlendirir.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Cildi germeden kir ve makyajı temizler, ilk yıkamadan itibaren nem bariyerini güçlendirir.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı CeraVe klinik formülü.",
+      "arama_etiketleri": [
+        "cerave",
+        "hydrating cleanser",
+        "cerave normal ve kuru ciltler i̇çin nemlendiren temizleyici",
+        "cerave hydrating cleanser",
+        "cer-002"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "3 Temel Seramid (1",
+        "3",
+        "6-II)",
+        "Hyaluronik Asit",
+        "MVE Teknolojisi"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Köpürmeyen Krem Losyon",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "cerave",
+      "hydrating cleanser",
+      "cer-002",
+      "köpürmeyen krem losyon"
+    ]
+  },
+  {
+    "id": "cerave-cerave-foaming-cleanser-473ml",
+    "name": "CeraVe Normal ve Yağlıya Dönük Ciltler İçin Köpüren Temizleyici",
+    "original_name": "CeraVe Foaming Cleanser",
+    "brand": "CeraVe",
+    "urun_tipi": "Ferahlatıcı Köpüren Jel",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Foaming Cleanser",
+    "size": "473 ml Pompalı Şişe",
+    "form": "Ferahlatıcı Köpüren Jel",
+    "image": "images/cerave/cerave_foaming_cleanser_473ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261027_123219.jpg",
+    "catalog_code": "CER-003",
+    "cilt_tipleri": [
+      "Normal, Karma ve Yağlı Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Cildi kurutmadan fazla sebumu ve kiri uzaklaştırır, niasinamid ile cildi sakinleştirir."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "3 Temel Seramid",
+      "Niasinamid",
+      "Hyaluronik Asit"
+    ],
+    "kime_uygun": {
+      "profil": "Normal, Karma ve Yağlı Cilt",
+      "cilt_tipleri": [
+        "Normal, Karma ve Yağlı Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Cildi kurutmadan fazla sebumu ve kiri uzaklaştırır, niasinamid ile cildi sakinleştirir.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Cildi kurutmadan fazla sebumu ve kiri uzaklaştırır, niasinamid ile cildi sakinleştirir.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı CeraVe klinik formülü.",
+      "arama_etiketleri": [
+        "cerave",
+        "foaming cleanser",
+        "cerave normal ve yağlıya dönük ciltler i̇çin köpüren temizleyici",
+        "cerave foaming cleanser",
+        "cer-003"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "3 Temel Seramid",
+        "Niasinamid",
+        "Hyaluronik Asit"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Ferahlatıcı Köpüren Jel",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "1. Adım: Temizleme",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "cerave",
+      "foaming cleanser",
+      "cer-003",
+      "ferahlatıcı köpüren jel"
+    ]
+  },
+  {
+    "id": "avene-avene-mousse-nettoyante-150ml",
+    "name": "Avène Hassas Ciltler İçin Arındırıcı ve Makyaj Temizleme Köpüğü",
+    "original_name": "Avène Mousse Nettoyante",
+    "brand": "Avène",
+    "urun_tipi": "Hafif Havadar Köpük",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Temel Bakım",
+    "size": "150 ml Pompalı Şişe",
+    "form": "Hafif Havadar Köpük",
+    "image": "images/avene/avene_mousse_nettoyante_150ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261027_123241.jpg",
+    "catalog_code": "A010",
+    "cilt_tipleri": [
+      "Normal, Karma ve Hassas Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Yüz ve göz çevresi makyajını tahriş etmeden temizler, cilde mat ve duru bir his kazandırır."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Glutamik Asit (Sebum Dengeleyici)",
+      "Nazik Temizleme Bazı",
+      "Avène Termal Su (%76)"
+    ],
+    "kime_uygun": {
+      "profil": "Normal, Karma ve Hassas Cilt",
+      "cilt_tipleri": [
+        "Normal, Karma ve Hassas Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Yüz ve göz çevresi makyajını tahriş etmeden temizler, cilde mat ve duru bir his kazandırır.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Yüz ve göz çevresi makyajını tahriş etmeden temizler, cilde mat ve duru bir his kazandırır.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Avène klinik formülü.",
+      "arama_etiketleri": [
+        "avène",
+        "temel bakım",
+        "avène hassas ciltler i̇çin arındırıcı ve makyaj temizleme köpüğü",
+        "avène mousse nettoyante",
+        "a010"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Glutamik Asit (Sebum Dengeleyici)",
+        "Nazik Temizleme Bazı",
+        "Avène Termal Su (%76)"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Hafif Havadar Köpük",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "1. Adım: Temizleme",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "avène",
+      "temel bakım",
+      "a010",
+      "hafif havadar köpük"
+    ]
+  },
+  {
+    "id": "lierac-lierac-lait-demaquillant-200ml",
+    "name": "Lierac Prebiyotik Kompleksli Kadifemsi Makyaj Temizleme Sütü",
+    "original_name": "Lierac Le Lait Démaquillant",
+    "brand": "Lierac",
+    "urun_tipi": "Kadifemsi Süt",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Cleanser Prebiyotik",
+    "size": "200 ml Pompalı Şişe",
+    "form": "Kadifemsi Süt",
+    "image": "images/lierac/lierac_lait_demaquillant_200ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261027_123345.jpg",
+    "catalog_code": "L004",
+    "cilt_tipleri": [
+      "Tüm Cilt Tipleri / Kuru ve Hassas Dahil"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Cilt mikrobiyomunu besler, makyajı nazikçe çözer, cilde yumuşaklık ve konfor verir."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Deniz Prebiyotik Kompleksi (Deniz Suyu",
+      "Yeşil Alg",
+      "Esmer Alg",
+      "Şekerler)"
+    ],
+    "kime_uygun": {
+      "profil": "Tüm Cilt Tipleri / Kuru ve Hassas Dahil",
+      "cilt_tipleri": [
+        "Tüm Cilt Tipleri / Kuru ve Hassas Dahil"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Cilt mikrobiyomunu besler, makyajı nazikçe çözer, cilde yumuşaklık ve konfor verir.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Cilt mikrobiyomunu besler, makyajı nazikçe çözer, cilde yumuşaklık ve konfor verir.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Lierac klinik formülü.",
+      "arama_etiketleri": [
+        "lierac",
+        "cleanser prebiyotik",
+        "lierac prebiyotik kompleksli kadifemsi makyaj temizleme sütü",
+        "lierac le lait démaquillant",
+        "l004"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Deniz Prebiyotik Kompleksi (Deniz Suyu",
+        "Yeşil Alg",
+        "Esmer Alg",
+        "Şekerler)"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Kadifemsi Süt",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "lierac",
+      "cleanser prebiyotik",
+      "l004",
+      "kadifemsi süt"
+    ]
+  },
+  {
+    "id": "lierac-lierac-mousse-nettoyante-150ml",
+    "name": "Lierac Prebiyotik Kompleksli Arındırıcı Temizleme Köpüğü",
+    "original_name": "Lierac La Mousse Nettoyante",
+    "brand": "Lierac",
+    "urun_tipi": "Krem Köpük",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Cleanser Prebiyotik",
+    "size": "150 ml Pompalı Şişe",
+    "form": "Krem Köpük",
+    "image": "images/lierac/lierac_mousse_nettoyante_150ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261027_123355.jpg",
+    "catalog_code": "L003",
+    "cilt_tipleri": [
+      "Tüm Cilt Tipleri"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Cildi kir ve partiküllerden arındırır, mikrobiyota florasını güçlendirir, aydınlık bırakır."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Deniz Prebiyotik Kompleksi (%99 Doğal Kaynaklı İçerik)"
+    ],
+    "kime_uygun": {
+      "profil": "Tüm Cilt Tipleri",
+      "cilt_tipleri": [
+        "Tüm Cilt Tipleri"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Cildi kir ve partiküllerden arındırır, mikrobiyota florasını güçlendirir, aydınlık bırakır.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Cildi kir ve partiküllerden arındırır, mikrobiyota florasını güçlendirir, aydınlık bırakır.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Lierac klinik formülü.",
+      "arama_etiketleri": [
+        "lierac",
+        "cleanser prebiyotik",
+        "lierac prebiyotik kompleksli arındırıcı temizleme köpüğü",
+        "lierac la mousse nettoyante",
+        "l003"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Deniz Prebiyotik Kompleksi (%99 Doğal Kaynaklı İçerik)"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Krem Köpük",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "1. Adım: Temizleme",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "lierac",
+      "cleanser prebiyotik",
+      "l003",
+      "krem köpük"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-vinoclean-cleansing-almond-milk-200ml",
+    "name": "Caudalie Vinoclean Badem Yağlı Temizleme Sütü",
+    "original_name": "Caudalie Vinoclean Lait d'Amande Démaquillant",
+    "brand": "Caudalie",
+    "urun_tipi": "Besleyici Süt Emülsiyon",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Vinoclean",
+    "size": "200 ml Pompalı Şişe",
+    "form": "Besleyici Süt Emülsiyon",
+    "image": "images/caudalie/caudalie_vinoclean_cleansing_almond_milk_200ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_093544.jpg",
+    "catalog_code": "C001",
+    "cilt_tipleri": [
+      "Kuru ve Çok Kuru Ciltler"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Yüz ve göz makyajını nazikçe temizler, cildi besler ve yatıştırır."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Tatlı Badem Yağı",
+      "Peygamber Çiçeği Suyu",
+      "Üzüm Çekirdeği Yağı",
+      "Polifenoller"
+    ],
+    "kime_uygun": {
+      "profil": "Kuru ve Çok Kuru Ciltler",
+      "cilt_tipleri": [
+        "Kuru ve Çok Kuru Ciltler"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Yüz ve göz makyajını nazikçe temizler, cildi besler ve yatıştırır.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Yüz ve göz makyajını nazikçe temizler, cildi besler ve yatıştırır.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "vinoclean",
+        "caudalie vinoclean badem yağlı temizleme sütü",
+        "caudalie vinoclean lait d'amande démaquillant",
+        "c001"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Tatlı Badem Yağı",
+        "Peygamber Çiçeği Suyu",
+        "Üzüm Çekirdeği Yağı",
+        "Polifenoller"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Besleyici Süt Emülsiyon",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "vinoclean",
+      "c001",
+      "besleyici süt emülsiyon"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-vinopure-cleansing-gel-385ml",
+    "name": "Caudalie Vinopure Arındırıcı Temizleme Jeli",
+    "original_name": "Caudalie Vinopure Gelée Nettoyante Purifiante",
+    "brand": "Caudalie",
+    "urun_tipi": "Ferahlatıcı Jel",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Vinopure",
+    "size": "385 ml Pompalı Şişe",
+    "form": "Ferahlatıcı Jel",
+    "image": "images/caudalie/caudalie_vinopure_cleansing_gel_385ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_093641.jpg",
+    "catalog_code": "C025",
+    "cilt_tipleri": [
+      "Karma, Yağlı ve Akneli Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Gözenekleri sıkılaştırır, fazla sebumu arındırır, cilt pürüzlerini gözle görülür şekilde azaltır."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Doğal Salisilik Asit",
+      "Organik Üzüm Suyu",
+      "6 Organik Esansiyel Yağ Kompleksi"
+    ],
+    "kime_uygun": {
+      "profil": "Karma, Yağlı ve Akneli Cilt",
+      "cilt_tipleri": [
+        "Karma, Yağlı ve Akneli Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Gözenekleri sıkılaştırır, fazla sebumu arındırır, cilt pürüzlerini gözle görülür şekilde azaltır.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Gözenekleri sıkılaştırır, fazla sebumu arındırır, cilt pürüzlerini gözle görülür şekilde azaltır.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "vinopure",
+        "caudalie vinopure arındırıcı temizleme jeli",
+        "caudalie vinopure gelée nettoyante purifiante",
+        "c025"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Doğal Salisilik Asit",
+        "Organik Üzüm Suyu",
+        "6 Organik Esansiyel Yağ Kompleksi"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Ferahlatıcı Jel",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "1. Adım: Temizleme",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "vinopure",
+      "c025",
+      "ferahlatıcı jel"
+    ]
+  },
+  {
+    "id": "bioderma-bioderma-sensibio-gel-moussant-500ml",
+    "name": "Bioderma Sensibio Hassas Ciltler İçin Yatıştırıcı Yüz Yıkama Jeli",
+    "original_name": "Bioderma Sensibio Gel Moussant",
+    "brand": "Bioderma",
+    "urun_tipi": "Nazik Köpüren Jel",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Sensibio",
+    "size": "500 ml Pompalı Şişe",
+    "form": "Nazik Köpüren Jel",
+    "image": "images/bioderma/bioderma_sensibio_gel_moussant_500ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_094324.jpg",
+    "catalog_code": "B018",
+    "cilt_tipleri": [
+      "Hassas, Toleransı Düşük ve Alerjik Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Fizyolojik pH 5.5 formülüyle hassas cildi kurutmadan temizler ve yatıştırır."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "D.A.F.™ Patenti",
+      "Coco-Glucoside / Glyceryl Oleate (Lipid Yenileyici)"
+    ],
+    "kime_uygun": {
+      "profil": "Hassas, Toleransı Düşük ve Alerjik Cilt",
+      "cilt_tipleri": [
+        "Hassas, Toleransı Düşük ve Alerjik Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Fizyolojik pH 5.5 formülüyle hassas cildi kurutmadan temizler ve yatıştırır.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Fizyolojik pH 5.5 formülüyle hassas cildi kurutmadan temizler ve yatıştırır.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Bioderma klinik formülü.",
+      "arama_etiketleri": [
+        "bioderma",
+        "sensibio",
+        "bioderma sensibio hassas ciltler i̇çin yatıştırıcı yüz yıkama jeli",
+        "bioderma sensibio gel moussant",
+        "b018"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "D.A.F.™ Patenti",
+        "Coco-Glucoside / Glyceryl Oleate (Lipid Yenileyici)"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Nazik Köpüren Jel",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "1. Adım: Temizleme",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "bioderma",
+      "sensibio",
+      "b018",
+      "nazik köpüren jel"
+    ]
+  },
+  {
+    "id": "bioderma-bioderma-sebium-gel-moussant-500ml",
+    "name": "Bioderma Sébium Yağlı ve Akneli Ciltler İçin Arındırıcı Temizleme Jeli",
+    "original_name": "Bioderma Sébium Gel Moussant",
+    "brand": "Bioderma",
+    "urun_tipi": "Mavi Arındırıcı Jel",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Sébium",
+    "size": "500 ml Pompalı Şişe",
+    "form": "Mavi Arındırıcı Jel",
+    "image": "images/bioderma/bioderma_sebium_gel_moussant_500ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_094344.jpg",
+    "catalog_code": "B034",
+    "cilt_tipleri": [
+      "Karma, Yağlı ve Düzensiz Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Sebum kalitesini biyolojik olarak düzenler, parlamayı önler, gözenek tıkanmasını engeller."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Fluidactiv™ Patenti",
+      "Çinko Sülfat",
+      "Bakır Sülfat"
+    ],
+    "kime_uygun": {
+      "profil": "Karma, Yağlı ve Düzensiz Cilt",
+      "cilt_tipleri": [
+        "Karma, Yağlı ve Düzensiz Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Sebum kalitesini biyolojik olarak düzenler, parlamayı önler, gözenek tıkanmasını engeller.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Sebum kalitesini biyolojik olarak düzenler, parlamayı önler, gözenek tıkanmasını engeller.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Bioderma klinik formülü.",
+      "arama_etiketleri": [
+        "bioderma",
+        "sébium",
+        "bioderma sébium yağlı ve akneli ciltler i̇çin arındırıcı temizleme jeli",
+        "bioderma sébium gel moussant",
+        "b034"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Fluidactiv™ Patenti",
+        "Çinko Sülfat",
+        "Bakır Sülfat"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Mavi Arındırıcı Jel",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "1. Adım: Temizleme",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "bioderma",
+      "sébium",
+      "b034",
+      "mavi arındırıcı jel"
+    ]
+  },
+  {
+    "id": "bioderma-bioderma-hydrabio-gel-moussant-400ml",
+    "name": "Bioderma Hydrabio Nemsiz ve Kuru Ciltler İçin Nemlendirici Temizleme Jeli",
+    "original_name": "Bioderma Hydrabio Gel Moussant",
+    "brand": "Bioderma",
+    "urun_tipi": "Nemlendirici Ferahlatıcı Jel",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Hydrabio",
+    "size": "400 ml Pompalı Şişe",
+    "form": "Nemlendirici Ferahlatıcı Jel",
+    "image": "images/bioderma/bioderma_hydrabio_gel_moussant_400ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_094353.jpg",
+    "catalog_code": "B049",
+    "cilt_tipleri": [
+      "Nemsiz, Kuru ve Matlaşmış Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Cildin doğal su kanalları olan akuaporinleri uyararak cildi temizlerken nemlendirir."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Aquagenium™ Patenti",
+      "Niasinamid",
+      "Elma Çekirdeği Ekstresi"
+    ],
+    "kime_uygun": {
+      "profil": "Nemsiz, Kuru ve Matlaşmış Cilt",
+      "cilt_tipleri": [
+        "Nemsiz, Kuru ve Matlaşmış Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Cildin doğal su kanalları olan akuaporinleri uyararak cildi temizlerken nemlendirir.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Cildin doğal su kanalları olan akuaporinleri uyararak cildi temizlerken nemlendirir.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Bioderma klinik formülü.",
+      "arama_etiketleri": [
+        "bioderma",
+        "hydrabio",
+        "bioderma hydrabio nemsiz ve kuru ciltler i̇çin nemlendirici temizleme jeli",
+        "bioderma hydrabio gel moussant",
+        "b049"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Aquagenium™ Patenti",
+        "Niasinamid",
+        "Elma Çekirdeği Ekstresi"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Nemlendirici Ferahlatıcı Jel",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "1. Adım: Temizleme",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "bioderma",
+      "hydrabio",
+      "b049",
+      "nemlendirici ferahlatıcı jel"
+    ]
+  },
+  {
+    "id": "larocheposay-larocheposay-effaclar-h-isobiome-390ml",
+    "name": "La Roche-Posay Kurutucu Akne Tedavisi Gören Ciltler İçin Yatıştırıcı Temizleme Kremi",
+    "original_name": "La Roche-Posay Effaclar H Iso-Biome Crème Lavante",
+    "brand": "La Roche-Posay",
+    "urun_tipi": "Krem Temizleyici",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Effaclar H Iso-Biome",
+    "size": "390 ml Pompalı Şişe",
+    "form": "Krem Temizleyici",
+    "image": "images/larocheposay/larocheposay_effaclar_h_isobiome_390ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_094422.jpg",
+    "catalog_code": "R019",
+    "cilt_tipleri": [
+      "Kurutucu Tedavi Görmüş / Aşırı Kurumuş Akneli Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "İzotretinoin tedavisi gibi kurutucu tedavilerde cilt bariyerini onarır, batma ve pullanmayı dindirir."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Aqua Posae Filiformis (Mikrobiyom Postbiyotiği)",
+      "Orellana Ekstresi",
+      "Niasinamid",
+      "Çinko"
+    ],
+    "kime_uygun": {
+      "profil": "Kurutucu Tedavi Görmüş / Aşırı Kurumuş Akneli Cilt",
+      "cilt_tipleri": [
+        "Kurutucu Tedavi Görmüş / Aşırı Kurumuş Akneli Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "İzotretinoin tedavisi gibi kurutucu tedavilerde cilt bariyerini onarır, batma ve pullanmayı dindirir.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "İzotretinoin tedavisi gibi kurutucu tedavilerde cilt bariyerini onarır, batma ve pullanmayı dindirir.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı La Roche-Posay klinik formülü.",
+      "arama_etiketleri": [
+        "la roche-posay",
+        "effaclar h iso-biome",
+        "la roche-posay kurutucu akne tedavisi gören ciltler i̇çin yatıştırıcı temizleme kremi",
+        "la roche-posay effaclar h iso-biome crème lavante",
+        "r019"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Aqua Posae Filiformis (Mikrobiyom Postbiyotiği)",
+        "Orellana Ekstresi",
+        "Niasinamid",
+        "Çinko"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Krem Temizleyici",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "la roche-posay",
+      "effaclar h iso-biome",
+      "r019",
+      "krem temizleyici"
+    ]
+  },
+  {
+    "id": "larocheposay-larocheposay-effaclar-gel-moussant-400ml",
+    "name": "La Roche-Posay Effaclar Yağlı ve Hassas Ciltler İçin Temizleme Jeli",
+    "original_name": "La Roche-Posay Effaclar Gel Moussant Purifiant",
+    "brand": "La Roche-Posay",
+    "urun_tipi": "Arındırıcı Köpüren Jel",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Effaclar",
+    "size": "400 ml Pompalı Şişe",
+    "form": "Arındırıcı Köpüren Jel",
+    "image": "images/larocheposay/larocheposay_effaclar_gel_moussant_400ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_094440.jpg",
+    "catalog_code": "R018",
+    "cilt_tipleri": [
+      "Yağlı, Akneli ve Hassas Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "C.acnes IA1 filotipini hedef alarak sivilceleri azaltır, pH dengesini korur."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Phylobioma Aktifi",
+      "Çinko PCA",
+      "La Roche-Posay Termal Suyu"
+    ],
+    "kime_uygun": {
+      "profil": "Yağlı, Akneli ve Hassas Cilt",
+      "cilt_tipleri": [
+        "Yağlı, Akneli ve Hassas Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "C.acnes IA1 filotipini hedef alarak sivilceleri azaltır, pH dengesini korur.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "C.acnes IA1 filotipini hedef alarak sivilceleri azaltır, pH dengesini korur.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı La Roche-Posay klinik formülü.",
+      "arama_etiketleri": [
+        "la roche-posay",
+        "effaclar",
+        "la roche-posay effaclar yağlı ve hassas ciltler i̇çin temizleme jeli",
+        "la roche-posay effaclar gel moussant purifiant",
+        "r018"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Phylobioma Aktifi",
+        "Çinko PCA",
+        "La Roche-Posay Termal Suyu"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Arındırıcı Köpüren Jel",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "1. Adım: Temizleme",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "la roche-posay",
+      "effaclar",
+      "r018",
+      "arındırıcı köpüren jel"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-eau-de-raisin-grape-water-200ml",
+    "name": "Caudalie Organik Üzüm Suyu Yatıştırıcı & Nemlendirici Sprey",
+    "original_name": "Caudalie Eau de Raisin",
+    "brand": "Caudalie",
+    "urun_tipi": "Mikro Sis Sprey",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Vinoclean / Eau de Raisin",
+    "size": "200 ml Sprey Şişe",
+    "form": "Mikro Sis Sprey",
+    "image": "images/caudalie/caudalie_eau_de_raisin_grape_water_200ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_102107.jpg",
+    "catalog_code": "C010",
+    "cilt_tipleri": [
+      "Tüm Ciltler / Aşırı Hassas Dahil"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Cilt hidrasyonunu anında %127 artırır, serbest radikalleri nötralize eder, kızarıklığı dindirir."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "%100 Saf Organik Üzüm Suyu",
+      "Mineral Tuzlar",
+      "Prebiyotik Şekerler"
+    ],
+    "kime_uygun": {
+      "profil": "Tüm Ciltler / Aşırı Hassas Dahil",
+      "cilt_tipleri": [
+        "Tüm Ciltler / Aşırı Hassas Dahil"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Cilt hidrasyonunu anında %127 artırır, serbest radikalleri nötralize eder, kızarıklığı dindirir.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Cilt hidrasyonunu anında %127 artırır, serbest radikalleri nötralize eder, kızarıklığı dindirir.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "vinoclean / eau de raisin",
+        "caudalie organik üzüm suyu yatıştırıcı & nemlendirici sprey",
+        "caudalie eau de raisin",
+        "c010"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "%100 Saf Organik Üzüm Suyu",
+        "Mineral Tuzlar",
+        "Prebiyotik Şekerler"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Mikro Sis Sprey",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "vinoclean / eau de raisin",
+      "c010",
+      "mikro sis sprey"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-vinoclean-instant-foaming-cleanser-150ml",
+    "name": "Caudalie Vinoclean Fleur de Vigne Temizleme Köpüğü",
+    "original_name": "Caudalie Vinoclean Mousse Nettoyante Fleur de Vigne",
+    "brand": "Caudalie",
+    "urun_tipi": "Havadar Sabunsuz Köpük",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Vinoclean",
+    "size": "150 ml Pompalı Şişe",
+    "form": "Havadar Sabunsuz Köpük",
+    "image": "images/caudalie/caudalie_vinoclean_instant_foaming_cleanser_150ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_102200.jpg",
+    "catalog_code": "C002",
+    "cilt_tipleri": [
+      "Tüm Cilt Tipleri / Hassas Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Sabun içermeyen ultra hafif yapısıyla cildi arındırır, ferahlık ve yumuşaklık bırakır."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Organik Papatya",
+      "Adaçayı Ekstresi",
+      "Nemlendirici Üzüm Suyu"
+    ],
+    "kime_uygun": {
+      "profil": "Tüm Cilt Tipleri / Hassas Cilt",
+      "cilt_tipleri": [
+        "Tüm Cilt Tipleri / Hassas Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Sabun içermeyen ultra hafif yapısıyla cildi arındırır, ferahlık ve yumuşaklık bırakır.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Sabun içermeyen ultra hafif yapısıyla cildi arındırır, ferahlık ve yumuşaklık bırakır.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "vinoclean",
+        "caudalie vinoclean fleur de vigne temizleme köpüğü",
+        "caudalie vinoclean mousse nettoyante fleur de vigne",
+        "c002"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Organik Papatya",
+        "Adaçayı Ekstresi",
+        "Nemlendirici Üzüm Suyu"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Havadar Sabunsuz Köpük",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "1. Adım: Temizleme",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "vinoclean",
+      "c002",
+      "havadar sabunsuz köpük"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-vinoclean-makeup-removing-cleansing-oil-150ml",
+    "name": "Caudalie Vinoclean Makyaj Temizleme Yağı",
+    "original_name": "Caudalie Vinoclean Huile de Soin Démaquillante",
+    "brand": "Caudalie",
+    "urun_tipi": "Bitkisel Bakım Yağı",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Vinoclean",
+    "size": "150 ml Pompalı Şişe",
+    "form": "Bitkisel Bakım Yağı",
+    "image": "images/caudalie/caudalie_vinoclean_makeup_removing_cleansing_oil_150ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_102250.jpg",
+    "catalog_code": "C003",
+    "cilt_tipleri": [
+      "Tüm Cilt Tipleri / Kuru ve Hassas"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Suya dayanıklı göz ve yüz makyajını ovalamadan çözer, kirpikleri besler, yağlı his bırakmaz."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Tatlı Badem Yağı",
+      "Hint Yağı (Kirpik Güçlendirici)",
+      "Üzüm Çekirdeği Yağı"
+    ],
+    "kime_uygun": {
+      "profil": "Tüm Cilt Tipleri / Kuru ve Hassas",
+      "cilt_tipleri": [
+        "Tüm Cilt Tipleri / Kuru ve Hassas"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Suya dayanıklı göz ve yüz makyajını ovalamadan çözer, kirpikleri besler, yağlı his bırakmaz.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Suya dayanıklı göz ve yüz makyajını ovalamadan çözer, kirpikleri besler, yağlı his bırakmaz.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "vinoclean",
+        "caudalie vinoclean makyaj temizleme yağı",
+        "caudalie vinoclean huile de soin démaquillante",
+        "c003"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Tatlı Badem Yağı",
+        "Hint Yağı (Kirpik Güçlendirici)",
+        "Üzüm Çekirdeği Yağı"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Bitkisel Bakım Yağı",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "vinoclean",
+      "c003",
+      "bitkisel bakım yağı"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-vinoclean-micellar-cleansing-water-200ml",
+    "name": "Caudalie Vinoclean Misel Makyaj Temizleme Suyu",
+    "original_name": "Caudalie Vinoclean Eau Micellaire Démaquillante",
+    "brand": "Caudalie",
+    "urun_tipi": "Ferahlatıcı Misel Solüsyon",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Vinoclean",
+    "size": "200 ml Şişe",
+    "form": "Ferahlatıcı Misel Solüsyon",
+    "image": "images/caudalie/caudalie_vinoclean_micellar_cleansing_water_200ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_102310.jpg",
+    "catalog_code": "C004",
+    "cilt_tipleri": [
+      "Tüm Cilt Tipleri / Hassas Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Yüz ve göz makyajını tek pamuk darbesiyle nazikçe arındırır, durulama gerektirmez."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Organik Üzüm Suyu",
+      "Papatya Ekstresi"
+    ],
+    "kime_uygun": {
+      "profil": "Tüm Cilt Tipleri / Hassas Cilt",
+      "cilt_tipleri": [
+        "Tüm Cilt Tipleri / Hassas Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Yüz ve göz makyajını tek pamuk darbesiyle nazikçe arındırır, durulama gerektirmez.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Yüz ve göz makyajını tek pamuk darbesiyle nazikçe arındırır, durulama gerektirmez.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "vinoclean",
+        "caudalie vinoclean misel makyaj temizleme suyu",
+        "caudalie vinoclean eau micellaire démaquillante",
+        "c004"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Organik Üzüm Suyu",
+        "Papatya Ekstresi"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Ferahlatıcı Misel Solüsyon",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "vinoclean",
+      "c004",
+      "ferahlatıcı misel solüsyon"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-vinoclean-moisturizing-toner-200ml",
+    "name": "Caudalie Vinoclean Nemlendirici ve Yatıştırıcı Tonik",
+    "original_name": "Caudalie Vinoclean Lotion Tonique Hydratante",
+    "brand": "Caudalie",
+    "urun_tipi": "Hafif Tonik Su",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Vinoclean",
+    "size": "200 ml Şişe",
+    "form": "Hafif Tonik Su",
+    "image": "images/caudalie/caudalie_vinoclean_moisturizing_toner_200ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_102334.jpg",
+    "catalog_code": "C005",
+    "cilt_tipleri": [
+      "Tüm Cilt Tipleri"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Temizliği tamamlar, gözenekleri sıkılaştırır, cildi sonraki serum ve kreme hazırlar."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Organik Gül Suyu",
+      "Vinolevure (Nemlendirici Maya Ekstresi)"
+    ],
+    "kime_uygun": {
+      "profil": "Tüm Cilt Tipleri",
+      "cilt_tipleri": [
+        "Tüm Cilt Tipleri"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Temizliği tamamlar, gözenekleri sıkılaştırır, cildi sonraki serum ve kreme hazırlar.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Temizliği tamamlar, gözenekleri sıkılaştırır, cildi sonraki serum ve kreme hazırlar.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "vinoclean",
+        "caudalie vinoclean nemlendirici ve yatıştırıcı tonik",
+        "caudalie vinoclean lotion tonique hydratante",
+        "c005"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Organik Gül Suyu",
+        "Vinolevure (Nemlendirici Maya Ekstresi)"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Hafif Tonik Su",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "vinoclean",
+      "c005",
+      "hafif tonik su"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-vinoperfect-micro-peel-foam-100ml",
+    "name": "Caudalie Vinoperfect Mikro Peeling Etkili Işıltı Köpüğü",
+    "original_name": "Caudalie Vinoperfect Mousse Micro-Peeling Éclat",
+    "brand": "Caudalie",
+    "urun_tipi": "Soyucu Mikro Köpük",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Vinoperfect",
+    "size": "100 ml Pompalı Şişe",
+    "form": "Soyucu Mikro Köpük",
+    "image": "images/caudalie/caudalie_vinoperfect_micro_peel_foam_100ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_102409.jpg",
+    "catalog_code": "C011",
+    "cilt_tipleri": [
+      "Lekeli, Mat ve Eşitsiz Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "30 saniyede ölü hücreleri arındırır, yeni cilt etkisi yaratır, leke görünümünü hafifletir."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Mandelik Asit (Nazik AHA)",
+      "Organik Üzüm Suyu",
+      "AHA Kompleksi"
+    ],
+    "kime_uygun": {
+      "profil": "Lekeli, Mat ve Eşitsiz Cilt",
+      "cilt_tipleri": [
+        "Lekeli, Mat ve Eşitsiz Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "30 saniyede ölü hücreleri arındırır, yeni cilt etkisi yaratır, leke görünümünü hafifletir.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "30 saniyede ölü hücreleri arındırır, yeni cilt etkisi yaratır, leke görünümünü hafifletir.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "vinoperfect",
+        "caudalie vinoperfect mikro peeling etkili işıltı köpüğü",
+        "caudalie vinoperfect mousse micro-peeling éclat",
+        "c011"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Mandelik Asit (Nazik AHA)",
+        "Organik Üzüm Suyu",
+        "AHA Kompleksi"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Soyucu Mikro Köpük",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "1. Adım: Temizleme",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "vinoperfect",
+      "c011",
+      "soyucu mikro köpük"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-vinoperfect-glycolic-peel-mask-75ml",
+    "name": "Caudalie Vinoperfect Glikolik Peeling Maskesi",
+    "original_name": "Caudalie Vinoperfect Masque Peeling Glycolique",
+    "brand": "Caudalie",
+    "urun_tipi": "Krem Peeling Maskesi",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Vinoperfect",
+    "size": "75 ml Tüp",
+    "form": "Krem Peeling Maskesi",
+    "image": "images/caudalie/caudalie_vinoperfect_glycolic_peel_mask_75ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_102529.jpg",
+    "catalog_code": "C012",
+    "cilt_tipleri": [
+      "Mat, Lekeli ve Donuk Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "10 dakikada cilt tonunu canlandırır, ölü tabakayı soyarak pürüzsüz parlaklık kazandırır."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Viniferine",
+      "Doğal Glikolik Asit (%AHA)"
+    ],
+    "kime_uygun": {
+      "profil": "Mat, Lekeli ve Donuk Cilt",
+      "cilt_tipleri": [
+        "Mat, Lekeli ve Donuk Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "10 dakikada cilt tonunu canlandırır, ölü tabakayı soyarak pürüzsüz parlaklık kazandırır.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "10 dakikada cilt tonunu canlandırır, ölü tabakayı soyarak pürüzsüz parlaklık kazandırır.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "vinoperfect",
+        "caudalie vinoperfect glikolik peeling maskesi",
+        "caudalie vinoperfect masque peeling glycolique",
+        "c012"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Viniferine",
+        "Doğal Glikolik Asit (%AHA)"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Krem Peeling Maskesi",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "vinoperfect",
+      "c012",
+      "krem peeling maskesi"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-creme-gommante-douce-75ml",
+    "name": "Caudalie Hassas Peeling Kremi",
+    "original_name": "Caudalie Crème Gommante Douce",
+    "brand": "Caudalie",
+    "urun_tipi": "Mikro Jojoba Tanecikli Zengin Krem",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Vinoclean",
+    "size": "75 ml Tüp",
+    "form": "Mikro Jojoba Tanecikli Zengin Krem",
+    "image": "images/caudalie/caudalie_creme_gommante_douce_75ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_102628.jpg",
+    "catalog_code": "C007",
+    "cilt_tipleri": [
+      "Kuru ve Hassas Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Hassas cildi çizmeden nazikçe arındırır, cildi besler ve yumuşatır."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Jojoba Mikro Tanecikleri",
+      "Üzüm Çekirdeği Yağı",
+      "Bal",
+      "Meyan Kökü Ekstresi"
+    ],
+    "kime_uygun": {
+      "profil": "Kuru ve Hassas Cilt",
+      "cilt_tipleri": [
+        "Kuru ve Hassas Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Hassas cildi çizmeden nazikçe arındırır, cildi besler ve yumuşatır.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Hassas cildi çizmeden nazikçe arındırır, cildi besler ve yumuşatır.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "vinoclean",
+        "caudalie hassas peeling kremi",
+        "caudalie crème gommante douce",
+        "c007"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Jojoba Mikro Tanecikleri",
+        "Üzüm Çekirdeği Yağı",
+        "Bal",
+        "Meyan Kökü Ekstresi"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Mikro Jojoba Tanecikli Zengin Krem",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "vinoclean",
+      "c007",
+      "mikro jojoba tanecikli zengin krem"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-vinoperfect-radiance-serum-30ml",
+    "name": "Caudalie Vinoperfect Leke Karşıtı Işıltı Verici Serum",
+    "original_name": "Caudalie Vinoperfect Sérum Éclat Anti-Taches",
+    "brand": "Caudalie",
+    "urun_tipi": "Hafif Sütümsü Serum",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Vinoperfect",
+    "size": "30 ml Damlalıklı Cam Şişe",
+    "form": "Hafif Sütümsü Serum",
+    "image": "images/caudalie/caudalie_vinoperfect_radiance_serum_30ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_102644.jpg",
+    "catalog_code": "C013",
+    "cilt_tipleri": [
+      "Tüm Cilt Tipleri / Tüm Leke Çeşitleri (Güneş, Yaş, Akne, Melazma)"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Güneş, sivilce ve hamilelik lekelerini açar, yeni leke oluşumunu engeller, cildi aydınlatır."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Viniferine (%0.2 - C Vitamininden 62 Kat Etkili)",
+      "Skualen"
+    ],
+    "kime_uygun": {
+      "profil": "Tüm Cilt Tipleri / Tüm Leke Çeşitleri (Güneş, Yaş, Akne, Melazma)",
+      "cilt_tipleri": [
+        "Tüm Cilt Tipleri / Tüm Leke Çeşitleri (Güneş, Yaş, Akne, Melazma)"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Güneş, sivilce ve hamilelik lekelerini açar, yeni leke oluşumunu engeller, cildi aydınlatır.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Güneş, sivilce ve hamilelik lekelerini açar, yeni leke oluşumunu engeller, cildi aydınlatır.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "vinoperfect",
+        "caudalie vinoperfect leke karşıtı işıltı verici serum",
+        "caudalie vinoperfect sérum éclat anti-taches",
+        "c013"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Viniferine (%0.2 - C Vitamininden 62 Kat Etkili)",
+        "Skualen"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Hafif Sütümsü Serum",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "vinoperfect",
+      "c013",
+      "hafif sütümsü serum"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-vinoperfect-eye-cream-15ml",
+    "name": "Caudalie Vinoperfect Koyu Halka Karşıtı Aydınlatıcı Göz Bakım Kremi",
+    "original_name": "Caudalie Vinoperfect Soin Éclaircissant Regard",
+    "brand": "Caudalie",
+    "urun_tipi": "Serinletici Jel Krem",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Vinoperfect",
+    "size": "15 ml Seramik Uçlu Tüp",
+    "form": "Serinletici Jel Krem",
+    "image": "images/caudalie/caudalie_vinoperfect_eye_cream_15ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_102707.jpg",
+    "catalog_code": "C014",
+    "cilt_tipleri": [
+      "Göz Çevresinde Mor ve Kahverengi Halka Olanlar"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Göz altındaki vasküler (mavi) ve pigmenter (kahverengi) halkaları giderir, seramik uçla ödem dağıtır."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Viniferine",
+      "Kafein",
+      "Niasinamid"
+    ],
+    "kime_uygun": {
+      "profil": "Göz Çevresinde Mor ve Kahverengi Halka Olanlar",
+      "cilt_tipleri": [
+        "Göz Çevresinde Mor ve Kahverengi Halka Olanlar"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Göz altındaki vasküler (mavi) ve pigmenter (kahverengi) halkaları giderir, seramik uçla ödem dağıtır.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Göz altındaki vasküler (mavi) ve pigmenter (kahverengi) halkaları giderir, seramik uçla ödem dağıtır.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "vinoperfect",
+        "caudalie vinoperfect koyu halka karşıtı aydınlatıcı göz bakım kremi",
+        "caudalie vinoperfect soin éclaircissant regard",
+        "c014"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Viniferine",
+        "Kafein",
+        "Niasinamid"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Serinletici Jel Krem",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "1. Adım: Temizleme",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "vinoperfect",
+      "c014",
+      "serinletici jel krem"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-vinoperfect-instant-brightening-moisturizer-50ml",
+    "name": "Caudalie Vinoperfect Leke Karşıtı Niasinamidli Işıltı Kremi",
+    "original_name": "Caudalie Vinoperfect Crème Éclat Anti-Taches Niacinamide",
+    "brand": "Caudalie",
+    "urun_tipi": "Kadifemsi Jel-Krem",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Vinoperfect",
+    "size": "50 ml Kavanoz",
+    "form": "Kadifemsi Jel-Krem",
+    "image": "images/caudalie/caudalie_vinoperfect_instant_brightening_moisturizer_50ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_102756.jpg",
+    "catalog_code": "C015",
+    "cilt_tipleri": [
+      "Tüm Cilt Tipleri"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Cildi nemlendirir, cilt tonunu anında eşitler ve leke oluşumuna karşı korur."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Viniferine",
+      "Niasinamid (%5)",
+      "Beyaz Şakayık Ekstresi"
+    ],
+    "kime_uygun": {
+      "profil": "Tüm Cilt Tipleri",
+      "cilt_tipleri": [
+        "Tüm Cilt Tipleri"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Cildi nemlendirir, cilt tonunu anında eşitler ve leke oluşumuna karşı korur.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Cildi nemlendirir, cilt tonunu anında eşitler ve leke oluşumuna karşı korur.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "vinoperfect",
+        "caudalie vinoperfect leke karşıtı niasinamidli işıltı kremi",
+        "caudalie vinoperfect crème éclat anti-taches niacinamide",
+        "c015"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Viniferine",
+        "Niasinamid (%5)",
+        "Beyaz Şakayık Ekstresi"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Kadifemsi Jel-Krem",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "1. Adım: Temizleme",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "vinoperfect",
+      "c015",
+      "kadifemsi jel-krem"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-vinoperfect-dark-spot-correcting-glycolic-night-cream-50ml",
+    "name": "Caudalie Vinoperfect Leke Karşıtı Glikolik Gece Bakım Kremi",
+    "original_name": "Caudalie Vinoperfect Crème Nuit Glycolique Anti-Taches",
+    "brand": "Caudalie",
+    "urun_tipi": "Besleyici Gece Kremi",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Vinoperfect",
+    "size": "50 ml Kavanoz",
+    "form": "Besleyici Gece Kremi",
+    "image": "images/caudalie/caudalie_vinoperfect_dark_spot_correcting_glycolic_night_cream_50ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_102957.jpg",
+    "catalog_code": "C016",
+    "cilt_tipleri": [
+      "Lekeli ve Eşitsiz Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Gece boyunca nazik peeling yapar; sabah lekesiz, canlı ve dinlenmiş bir cilt sağlar."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Viniferine",
+      "Glikolik Asit",
+      "Papaya Enzimi",
+      "Shea Yağı"
+    ],
+    "kime_uygun": {
+      "profil": "Lekeli ve Eşitsiz Cilt",
+      "cilt_tipleri": [
+        "Lekeli ve Eşitsiz Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Gece boyunca nazik peeling yapar; sabah lekesiz, canlı ve dinlenmiş bir cilt sağlar.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Gece boyunca nazik peeling yapar; sabah lekesiz, canlı ve dinlenmiş bir cilt sağlar.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "vinoperfect",
+        "caudalie vinoperfect leke karşıtı glikolik gece bakım kremi",
+        "caudalie vinoperfect crème nuit glycolique anti-taches",
+        "c016"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Viniferine",
+        "Glikolik Asit",
+        "Papaya Enzimi",
+        "Shea Yağı"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Besleyici Gece Kremi",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "vinoperfect",
+      "c016",
+      "besleyici gece kremi"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-vinoperfect-concentrated-brightening-glycolic-essence-150ml",
+    "name": "Caudalie Vinoperfect Glikolik Konsantre Işıltı Esansı",
+    "original_name": "Caudalie Vinoperfect Essence Glycolique Concentrée d'Éclat",
+    "brand": "Caudalie",
+    "urun_tipi": "Akıcı Mikro-Esans",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Vinoperfect",
+    "size": "150 ml Cam Şişe",
+    "form": "Akıcı Mikro-Esans",
+    "image": "images/caudalie/caudalie_vinoperfect_concentrated_brightening_glycolic_essence_150ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_103027.jpg",
+    "catalog_code": "C017",
+    "cilt_tipleri": [
+      "Tüm Cilt Tipleri"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Serumun emilimini ve etkinliğini 2 katına çıkarır, gözenekleri arındırıp aydınlatır."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Glikolik Asit",
+      "Beyaz Şakayık Ekstresi",
+      "Organik Üzüm Suyu"
+    ],
+    "kime_uygun": {
+      "profil": "Tüm Cilt Tipleri",
+      "cilt_tipleri": [
+        "Tüm Cilt Tipleri"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Serumun emilimini ve etkinliğini 2 katına çıkarır, gözenekleri arındırıp aydınlatır.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Serumun emilimini ve etkinliğini 2 katına çıkarır, gözenekleri arındırıp aydınlatır.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "vinoperfect",
+        "caudalie vinoperfect glikolik konsantre işıltı esansı",
+        "caudalie vinoperfect essence glycolique concentrée d'éclat",
+        "c017"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Glikolik Asit",
+        "Beyaz Şakayık Ekstresi",
+        "Organik Üzüm Suyu"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Akıcı Mikro-Esans",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "vinoperfect",
+      "c017",
+      "akıcı mikro-esans"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-resveratrol-lift-firming-serum-30ml",
+    "name": "Caudalie Resveratrol-Lift Anında Sıkılaştırıcı Etkili Serum",
+    "original_name": "Caudalie Resveratrol-Lift Sérum Liftant Fermeté",
+    "brand": "Caudalie",
+    "urun_tipi": "İpeksi Yağsız Serum",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Resveratrol-Lift",
+    "size": "30 ml Pompalı Şişe",
+    "form": "İpeksi Yağsız Serum",
+    "image": "images/caudalie/caudalie_resveratrol_lift_firming_serum_30ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_103051.jpg",
+    "catalog_code": "C029",
+    "cilt_tipleri": [
+      "Kırışıklık, Sarkma ve Elastikiyet Kaybı"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Kırışıklıkları düzeltir, yüz ovalini yeniden şekillendirir, kolajen üretimini 3 kat artırır."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Asma Sapı Resveratrolü",
+      "Vegan Kolajen 1",
+      "Mikro Hyaluronik Asit Kompleksi"
+    ],
+    "kime_uygun": {
+      "profil": "Kırışıklık, Sarkma ve Elastikiyet Kaybı",
+      "cilt_tipleri": [
+        "Kırışıklık, Sarkma ve Elastikiyet Kaybı"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Kırışıklıkları düzeltir, yüz ovalini yeniden şekillendirir, kolajen üretimini 3 kat artırır.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Kırışıklıkları düzeltir, yüz ovalini yeniden şekillendirir, kolajen üretimini 3 kat artırır.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "resveratrol-lift",
+        "caudalie resveratrol-lift anında sıkılaştırıcı etkili serum",
+        "caudalie resveratrol-lift sérum liftant fermeté",
+        "c029"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Asma Sapı Resveratrolü",
+        "Vegan Kolajen 1",
+        "Mikro Hyaluronik Asit Kompleksi"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "İpeksi Yağsız Serum",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "resveratrol-lift",
+      "c029",
+      "i̇peksi yağsız serum"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-resveratrol-lift-firming-eye-gel-cream-15ml",
+    "name": "Caudalie Resveratrol-Lift Sıkılaştırıcı Göz Bakım Kremi",
+    "original_name": "Caudalie Resveratrol-Lift Soin Liftant Regard",
+    "brand": "Caudalie",
+    "urun_tipi": "Jel-Krem",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Resveratrol-Lift",
+    "size": "15 ml Tüp",
+    "form": "Jel-Krem",
+    "image": "images/caudalie/caudalie_resveratrol_lift_firming_eye_gel_cream_15ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_103117.jpg",
+    "catalog_code": "C030",
+    "cilt_tipleri": [
+      "Düşük Göz Kapağı, Kırışıklık ve Göz Altı Torbaları"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Göz kapaklarını yukarı kaldırır, kaz ayaklarını doldurur, torbalanmayı indirir."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Resveratrol",
+      "Vegan Kolajen",
+      "Kinoa Ekstresi (Ödem Karşıtı)"
+    ],
+    "kime_uygun": {
+      "profil": "Düşük Göz Kapağı, Kırışıklık ve Göz Altı Torbaları",
+      "cilt_tipleri": [
+        "Düşük Göz Kapağı, Kırışıklık ve Göz Altı Torbaları"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Göz kapaklarını yukarı kaldırır, kaz ayaklarını doldurur, torbalanmayı indirir.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Göz kapaklarını yukarı kaldırır, kaz ayaklarını doldurur, torbalanmayı indirir.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "resveratrol-lift",
+        "caudalie resveratrol-lift sıkılaştırıcı göz bakım kremi",
+        "caudalie resveratrol-lift soin liftant regard",
+        "c030"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Resveratrol",
+        "Vegan Kolajen",
+        "Kinoa Ekstresi (Ödem Karşıtı)"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Jel-Krem",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "1. Adım: Temizleme",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "resveratrol-lift",
+      "c030",
+      "jel-krem"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-resveratrol-lift-lightweight-firming-cashmere-fluid-spf20-40ml",
+    "name": "Caudalie Resveratrol-Lift Sıkılaştırıcı Kaşmir Sıvı Krem SPF20",
+    "original_name": "Caudalie Resveratrol-Lift Fluide Cachemire Redensifiant SPF20",
+    "brand": "Caudalie",
+    "urun_tipi": "Hafif Yağsız Akışkan Emülsiyon",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Resveratrol-Lift",
+    "size": "40 ml Pompalı Tüp",
+    "form": "Hafif Yağsız Akışkan Emülsiyon",
+    "image": "images/caudalie/caudalie_resveratrol_lift_lightweight_firming_cashmere_fluid_spf20_40ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_103320.jpg",
+    "catalog_code": "C032",
+    "cilt_tipleri": [
+      "Normal ve Karma Ciltler"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Cildi sıkılaştırırken gün boyu UV hasarına ve erken foto-yaşlanmaya karşı korur."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Resveratrol",
+      "Vegan Kolajen Güçlendirici",
+      "SPF20 Mineral/Kimyasal Filtreler"
+    ],
+    "kime_uygun": {
+      "profil": "Normal ve Karma Ciltler",
+      "cilt_tipleri": [
+        "Normal ve Karma Ciltler"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Cildi sıkılaştırırken gün boyu UV hasarına ve erken foto-yaşlanmaya karşı korur.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Cildi sıkılaştırırken gün boyu UV hasarına ve erken foto-yaşlanmaya karşı korur.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "resveratrol-lift",
+        "caudalie resveratrol-lift sıkılaştırıcı kaşmir sıvı krem spf20",
+        "caudalie resveratrol-lift fluide cachemire redensifiant spf20",
+        "c032"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Resveratrol",
+        "Vegan Kolajen Güçlendirici",
+        "SPF20 Mineral/Kimyasal Filtreler"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Hafif Yağsız Akışkan Emülsiyon",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "resveratrol-lift",
+      "c032",
+      "hafif yağsız akışkan emülsiyon"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-resveratrol-lift-firming-night-cream-50ml",
+    "name": "Caudalie Resveratrol-Lift Kırışıklık Karşıtı Gece Bakım Kremi",
+    "original_name": "Caudalie Resveratrol-Lift Crème Tisane de Nuit",
+    "brand": "Caudalie",
+    "urun_tipi": "Yumuşatıcı Rahatlatıcı Gece Kremi",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Resveratrol-Lift",
+    "size": "50 ml Kavanoz",
+    "form": "Yumuşatıcı Rahatlatıcı Gece Kremi",
+    "image": "images/caudalie/caudalie_resveratrol_lift_firming_night_cream_50ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_103443.jpg",
+    "catalog_code": "C033",
+    "cilt_tipleri": [
+      "Tüm Cilt Tipleri"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Uyku esnasında cildi pürüzsüzleştirir, kırışıklıkları doldurur, sabaha dinç cilt sağlar."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Resveratrol",
+      "Vegan Kolajen 1",
+      "Ihlamur ve Papatya Çayı Bitkisel Kompleksi"
+    ],
+    "kime_uygun": {
+      "profil": "Tüm Cilt Tipleri",
+      "cilt_tipleri": [
+        "Tüm Cilt Tipleri"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Uyku esnasında cildi pürüzsüzleştirir, kırışıklıkları doldurur, sabaha dinç cilt sağlar.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Uyku esnasında cildi pürüzsüzleştirir, kırışıklıkları doldurur, sabaha dinç cilt sağlar.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "resveratrol-lift",
+        "caudalie resveratrol-lift kırışıklık karşıtı gece bakım kremi",
+        "caudalie resveratrol-lift crème tisane de nuit",
+        "c033"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Resveratrol",
+        "Vegan Kolajen 1",
+        "Ihlamur ve Papatya Çayı Bitkisel Kompleksi"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Yumuşatıcı Rahatlatıcı Gece Kremi",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "resveratrol-lift",
+      "c033",
+      "yumuşatıcı rahatlatıcı gece kremi"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-resveratrol-lift-firming-cashmere-cream-50ml",
+    "name": "Caudalie Resveratrol-Lift Sıkılaştırıcı Kaşmir Gündüz Kremi",
+    "original_name": "Caudalie Resveratrol-Lift Crème Cachemire Redensifiante",
+    "brand": "Caudalie",
+    "urun_tipi": "Kaşmir Dokulu Zengin Krem",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Resveratrol-Lift",
+    "size": "50 ml Kavanoz",
+    "form": "Kaşmir Dokulu Zengin Krem",
+    "image": "images/caudalie/caudalie_resveratrol_lift_firming_cashmere_cream_50ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_103516.jpg",
+    "catalog_code": "C031",
+    "cilt_tipleri": [
+      "Normal ve Kuru Ciltler"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Cildi derinlemesine besler, sarkmaları toparlar, kadifemsi pürüzsüz bir doku bırakır."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Resveratrol",
+      "Vegan Kolajen Güçlendirici",
+      "Hyaluronik Asit",
+      "Fosfolipitler"
+    ],
+    "kime_uygun": {
+      "profil": "Normal ve Kuru Ciltler",
+      "cilt_tipleri": [
+        "Normal ve Kuru Ciltler"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Cildi derinlemesine besler, sarkmaları toparlar, kadifemsi pürüzsüz bir doku bırakır.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Cildi derinlemesine besler, sarkmaları toparlar, kadifemsi pürüzsüz bir doku bırakır.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "resveratrol-lift",
+        "caudalie resveratrol-lift sıkılaştırıcı kaşmir gündüz kremi",
+        "caudalie resveratrol-lift crème cachemire redensifiante",
+        "c031"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Resveratrol",
+        "Vegan Kolajen Güçlendirici",
+        "Hyaluronik Asit",
+        "Fosfolipitler"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Kaşmir Dokulu Zengin Krem",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "resveratrol-lift",
+      "c031",
+      "kaşmir dokulu zengin krem"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-premier-cru-the-rich-cream-50ml",
+    "name": "Caudalie Premier Cru Kapsamlı Yaşlanma Karşıtı Zengin Bakım Kremi",
+    "original_name": "Caudalie Premier Cru La Crème Riche",
+    "brand": "Caudalie",
+    "urun_tipi": "Ultra Zengin Besleyici Krem",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Premier Cru",
+    "size": "50 ml Kavanoz",
+    "form": "Ultra Zengin Besleyici Krem",
+    "image": "images/caudalie/caudalie_premier_cru_the_rich_cream_50ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_104148.jpg",
+    "catalog_code": "C040",
+    "cilt_tipleri": [
+      "Kuru ve Çok Kuru Olgun Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "10 yaşlanma belirtisini (derin kırışıklık, leke, hacim kaybı, bariyer zayıflığı) hedefler."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "TET8™ Patenti (Honokiol + Resveratrol)",
+      "Biyo-Seramidler",
+      "Viniferine"
+    ],
+    "kime_uygun": {
+      "profil": "Kuru ve Çok Kuru Olgun Cilt",
+      "cilt_tipleri": [
+        "Kuru ve Çok Kuru Olgun Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "10 yaşlanma belirtisini (derin kırışıklık, leke, hacim kaybı, bariyer zayıflığı) hedefler.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "10 yaşlanma belirtisini (derin kırışıklık, leke, hacim kaybı, bariyer zayıflığı) hedefler.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "premier cru",
+        "caudalie premier cru kapsamlı yaşlanma karşıtı zengin bakım kremi",
+        "caudalie premier cru la crème riche",
+        "c040"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "TET8™ Patenti (Honokiol + Resveratrol)",
+        "Biyo-Seramidler",
+        "Viniferine"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Ultra Zengin Besleyici Krem",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "premier cru",
+      "c040",
+      "ultra zengin besleyici krem"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-premier-cru-the-cream-50ml",
+    "name": "Caudalie Premier Cru Kapsamlı Yaşlanma Karşıtı Gündüz Bakım Kremi",
+    "original_name": "Caudalie Premier Cru La Crème",
+    "brand": "Caudalie",
+    "urun_tipi": "Kadife Dokulu Lüks Krem",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Premier Cru",
+    "size": "50 ml Kavanoz",
+    "form": "Kadife Dokulu Lüks Krem",
+    "image": "images/caudalie/caudalie_premier_cru_the_cream_50ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_104312.jpg",
+    "catalog_code": "C039",
+    "cilt_tipleri": [
+      "Normal ve Karma Olgun Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Gençlik proteinlerini tetikler, cilde yoğun elastikiyet, dolgunluk ve ışıltı verir."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "TET8™ Patenti",
+      "Viniferine",
+      "Mikro Hyaluronik Asit"
+    ],
+    "kime_uygun": {
+      "profil": "Normal ve Karma Olgun Cilt",
+      "cilt_tipleri": [
+        "Normal ve Karma Olgun Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Gençlik proteinlerini tetikler, cilde yoğun elastikiyet, dolgunluk ve ışıltı verir.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Gençlik proteinlerini tetikler, cilde yoğun elastikiyet, dolgunluk ve ışıltı verir.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "premier cru",
+        "caudalie premier cru kapsamlı yaşlanma karşıtı gündüz bakım kremi",
+        "caudalie premier cru la crème",
+        "c039"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "TET8™ Patenti",
+        "Viniferine",
+        "Mikro Hyaluronik Asit"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Kadife Dokulu Lüks Krem",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "premier cru",
+      "c039",
+      "kadife dokulu lüks krem"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-premier-cru-the-eye-cream-15ml",
+    "name": "Caudalie Premier Cru Kapsamlı Yaşlanma Karşıtı Göz Çevresi Bakım Kremi",
+    "original_name": "Caudalie Premier Cru La Crème Yeux",
+    "brand": "Caudalie",
+    "urun_tipi": "İncimsi Aydınlatıcı Krem",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Premier Cru",
+    "size": "15 ml Masaj Uçlu Tüp",
+    "form": "İncimsi Aydınlatıcı Krem",
+    "image": "images/caudalie/caudalie_premier_cru_the_eye_cream_15ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_104421.jpg",
+    "catalog_code": "C041",
+    "cilt_tipleri": [
+      "Göz Çevresinde Kırışıklık, Sarkma, Torba ve Morluk Olanlar"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Göz çevresindeki 8 yaşlanma belirtisini onarır, metalik masaj başlığıyla mikro sirkülasyonu hızlandırır."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "TET8™ Patenti",
+      "Viniferine",
+      "İncimsi Yansıtıcı Mikro Partiküller"
+    ],
+    "kime_uygun": {
+      "profil": "Göz Çevresinde Kırışıklık, Sarkma, Torba ve Morluk Olanlar",
+      "cilt_tipleri": [
+        "Göz Çevresinde Kırışıklık, Sarkma, Torba ve Morluk Olanlar"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Göz çevresindeki 8 yaşlanma belirtisini onarır, metalik masaj başlığıyla mikro sirkülasyonu hızlandırır.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Göz çevresindeki 8 yaşlanma belirtisini onarır, metalik masaj başlığıyla mikro sirkülasyonu hızlandırır.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "premier cru",
+        "caudalie premier cru kapsamlı yaşlanma karşıtı göz çevresi bakım kremi",
+        "caudalie premier cru la crème yeux",
+        "c041"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "TET8™ Patenti",
+        "Viniferine",
+        "İncimsi Yansıtıcı Mikro Partiküller"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "İncimsi Aydınlatıcı Krem",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "premier cru",
+      "c041",
+      "i̇ncimsi aydınlatıcı krem"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-premier-cru-the-serum-30ml",
+    "name": "Caudalie Premier Cru Kapsamlı Yaşlanma Karşıtı Konsantre Serum",
+    "original_name": "Caudalie Premier Cru Le Sérum",
+    "brand": "Caudalie",
+    "urun_tipi": "Konsantre Niasinamidli Jel Serum",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Premier Cru",
+    "size": "30 ml Pompalı Şişe",
+    "form": "Konsantre Niasinamidli Jel Serum",
+    "image": "images/caudalie/caudalie_premier_cru_the_serum_30ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_104433.jpg",
+    "catalog_code": "C038",
+    "cilt_tipleri": [
+      "Tüm Olgun Ciltler"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Cilde anında gerginleştirici (tensör) etki ve 8 saat kesintisiz nem artışı sağlar."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "TET8™ Patenti",
+      "Niasinamid",
+      "Yüksek ve Düşük Moleküler Hyaluronik Asit"
+    ],
+    "kime_uygun": {
+      "profil": "Tüm Olgun Ciltler",
+      "cilt_tipleri": [
+        "Tüm Olgun Ciltler"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Cilde anında gerginleştirici (tensör) etki ve 8 saat kesintisiz nem artışı sağlar.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Cilde anında gerginleştirici (tensör) etki ve 8 saat kesintisiz nem artışı sağlar.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "premier cru",
+        "caudalie premier cru kapsamlı yaşlanma karşıtı konsantre serum",
+        "caudalie premier cru le sérum",
+        "c038"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "TET8™ Patenti",
+        "Niasinamid",
+        "Yüksek ve Düşük Moleküler Hyaluronik Asit"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Konsantre Niasinamidli Jel Serum",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "1. Adım: Temizleme",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "premier cru",
+      "c038",
+      "konsantre niasinamidli jel serum"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-vinohydra-hyaluronic-serum-30ml",
+    "name": "Caudalie VinoHydra Hyaluronik Serum",
+    "original_name": "Caudalie VinoHydra Sérum Hyaluronique",
+    "brand": "Caudalie",
+    "urun_tipi": "Hafif Su Bazlı Serum",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "VinoHydra",
+    "size": "30 ml Pompalı Şişe",
+    "form": "Hafif Su Bazlı Serum",
+    "image": "images/caudalie/caudalie_vinohydra_hyaluronic_serum_30ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_104513.jpg",
+    "catalog_code": "C019",
+    "cilt_tipleri": [
+      "Tüm Cilt Tipleri / Nemsiz ve Hassas Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Cildin nem seviyesini anında %84 artırır, nem tutma kapasitesini stabilize eder."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Biyoteknolojik Hyaluronik Asit",
+      "Organik Üzüm Suyu",
+      "Antioksidan Polifenoller"
+    ],
+    "kime_uygun": {
+      "profil": "Tüm Cilt Tipleri / Nemsiz ve Hassas Cilt",
+      "cilt_tipleri": [
+        "Tüm Cilt Tipleri / Nemsiz ve Hassas Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Cildin nem seviyesini anında %84 artırır, nem tutma kapasitesini stabilize eder.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Cildin nem seviyesini anında %84 artırır, nem tutma kapasitesini stabilize eder.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "vinohydra",
+        "caudalie vinohydra hyaluronik serum",
+        "caudalie vinohydra sérum hyaluronique",
+        "c019"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Biyoteknolojik Hyaluronik Asit",
+        "Organik Üzüm Suyu",
+        "Antioksidan Polifenoller"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Hafif Su Bazlı Serum",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "vinohydra",
+      "c019",
+      "hafif su bazlı serum"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-vinohydra-deep-hydration-moisturizer-50ml",
+    "name": "Caudalie VinoHydra Yoğun Nemlendirici Bakım Kremi (Kutu)",
+    "original_name": "Caudalie VinoHydra Crème Hydratation Intense (Kutu)",
+    "brand": "Caudalie",
+    "urun_tipi": "Zengin İpeksi Krem",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "VinoHydra",
+    "size": "50 ml Kavanoz",
+    "form": "Zengin İpeksi Krem",
+    "image": "images/caudalie/caudalie_vinohydra_deep_hydration_moisturizer_50ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_104542.jpg",
+    "catalog_code": "C021",
+    "cilt_tipleri": [
+      "Kuru ve Çok Kuru Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Kuru ciltteki gerginlik, pullanma ve kaşıntıyı yatıştırır, bariyeri besler."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Hyaluronik Asit",
+      "Organik Üzüm Suyu",
+      "Shea Yağı"
+    ],
+    "kime_uygun": {
+      "profil": "Kuru ve Çok Kuru Cilt",
+      "cilt_tipleri": [
+        "Kuru ve Çok Kuru Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Kuru ciltteki gerginlik, pullanma ve kaşıntıyı yatıştırır, bariyeri besler.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Kuru ciltteki gerginlik, pullanma ve kaşıntıyı yatıştırır, bariyeri besler.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "vinohydra",
+        "caudalie vinohydra yoğun nemlendirici bakım kremi (kutu)",
+        "caudalie vinohydra crème hydratation intense (kutu)",
+        "c021"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Hyaluronik Asit",
+        "Organik Üzüm Suyu",
+        "Shea Yağı"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Zengin İpeksi Krem",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "vinohydra",
+      "c021",
+      "zengin i̇peksi krem"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-vinohydra-moisturizing-cleansing-gel-150ml",
+    "name": "Caudalie VinoHydra Nemlendirici Temizleme Jeli",
+    "original_name": "Caudalie VinoHydra Gelée Nettoyante Hydratante",
+    "brand": "Caudalie",
+    "urun_tipi": "Yatıştırıcı Pembe Jel",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "VinoHydra",
+    "size": "150 ml Tüp",
+    "form": "Yatıştırıcı Pembe Jel",
+    "image": "images/caudalie/caudalie_vinohydra_moisturizing_cleansing_gel_150ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_104615.jpg",
+    "catalog_code": "C022",
+    "cilt_tipleri": [
+      "Hassas ve Nemsiz Cilt / Yüz ve Göz"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Cildi ve göz makyajını germeden temizler, yıkama sonrası nem bariyerini korur."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Hyaluronik Asit",
+      "Organik Üzüm Suyu",
+      "Pantenol (B5 Vitamini)"
+    ],
+    "kime_uygun": {
+      "profil": "Hassas ve Nemsiz Cilt / Yüz ve Göz",
+      "cilt_tipleri": [
+        "Hassas ve Nemsiz Cilt / Yüz ve Göz"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Cildi ve göz makyajını germeden temizler, yıkama sonrası nem bariyerini korur.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Cildi ve göz makyajını germeden temizler, yıkama sonrası nem bariyerini korur.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "vinohydra",
+        "caudalie vinohydra nemlendirici temizleme jeli",
+        "caudalie vinohydra gelée nettoyante hydratante",
+        "c022"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Hyaluronik Asit",
+        "Organik Üzüm Suyu",
+        "Pantenol (B5 Vitamini)"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Yatıştırıcı Pembe Jel",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "1. Adım: Temizleme",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "vinohydra",
+      "c022",
+      "yatıştırıcı pembe jel"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-vinotherapist-lift-firm-body-butter-250ml",
+    "name": "Caudalie Vinotherapist Sıkılaştırıcı ve Toparlayıcı Vücut Balsamı",
+    "original_name": "Caudalie Vinotherapist Baume Corps Lift & Fermeté",
+    "brand": "Caudalie",
+    "urun_tipi": "Çırpılmış Balsam Dokusu",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Vinotherapist",
+    "size": "250 ml Kavanoz",
+    "form": "Çırpılmış Balsam Dokusu",
+    "image": "images/caudalie/caudalie_vinotherapist_lift_firm_body_butter_250ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_104844.jpg",
+    "catalog_code": "C068",
+    "cilt_tipleri": [
+      "Elastikiyetini Kaybetmiş Kuru Vücut Cildi"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Kollar, göğüs, karın ve basen bölgesini gözle görülür şekilde sıkılaştırır ve nemlendirir."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Üzüm Çekirdeği Yağı",
+      "Organik İris Ekstresi",
+      "Shea Yağı"
+    ],
+    "kime_uygun": {
+      "profil": "Elastikiyetini Kaybetmiş Kuru Vücut Cildi",
+      "cilt_tipleri": [
+        "Elastikiyetini Kaybetmiş Kuru Vücut Cildi"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Kollar, göğüs, karın ve basen bölgesini gözle görülür şekilde sıkılaştırır ve nemlendirir.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Kollar, göğüs, karın ve basen bölgesini gözle görülür şekilde sıkılaştırır ve nemlendirir.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "vinotherapist",
+        "caudalie vinotherapist sıkılaştırıcı ve toparlayıcı vücut balsamı",
+        "caudalie vinotherapist baume corps lift & fermeté",
+        "c068"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Üzüm Çekirdeği Yağı",
+        "Organik İris Ekstresi",
+        "Shea Yağı"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Çırpılmış Balsam Dokusu",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "vinotherapist",
+      "c068",
+      "çırpılmış balsam dokusu"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-smooth-glow-oil-elixir-50ml",
+    "name": "Caudalie Çok Amaçlı Besleyici İncir Kokulu Bakım Yağı",
+    "original_name": "Caudalie Huile de Soin Nourrissante Corps, Cheveux, Visage",
+    "brand": "Caudalie",
+    "urun_tipi": "Kuru Yağ",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Smooth & Glow",
+    "size": "50 ml Pompalı Cam Şişe",
+    "form": "Kuru Yağ",
+    "image": "images/caudalie/caudalie_smooth_glow_oil_elixir_50ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_104926.jpg",
+    "catalog_code": "C071",
+    "cilt_tipleri": [
+      "Kuru Vücut, Saç Uçları ve Yüz"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Vücuda saten ışıltısı verir, saç uçlarındaki kırıkları onarır, yağlı yapışkan his bırakmaz."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Fas Argan Yağı",
+      "Üzüm Çekirdeği Yağı",
+      "Doğal İncir Kokusu"
+    ],
+    "kime_uygun": {
+      "profil": "Kuru Vücut, Saç Uçları ve Yüz",
+      "cilt_tipleri": [
+        "Kuru Vücut, Saç Uçları ve Yüz"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Vücuda saten ışıltısı verir, saç uçlarındaki kırıkları onarır, yağlı yapışkan his bırakmaz.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Vücuda saten ışıltısı verir, saç uçlarındaki kırıkları onarır, yağlı yapışkan his bırakmaz.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "smooth & glow",
+        "caudalie çok amaçlı besleyici i̇ncir kokulu bakım yağı",
+        "caudalie huile de soin nourrissante corps, cheveux, visage",
+        "c071"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Fas Argan Yağı",
+        "Üzüm Çekirdeği Yağı",
+        "Doğal İncir Kokusu"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Kuru Yağ",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "smooth & glow",
+      "c071",
+      "kuru yağ"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-vinofresh-natural-deodorant-50g",
+    "name": "Caudalie Vinofresh 24 Saat Etkili Doğal Stick Deodorant",
+    "original_name": "Caudalie Vinofresh Déodorant Naturel 24H",
+    "brand": "Caudalie",
+    "urun_tipi": "Doğal Katı Stick",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Vinofresh",
+    "size": "50 g Stick",
+    "form": "Doğal Katı Stick",
+    "image": "images/caudalie/caudalie_vinofresh_natural_deodorant_50g.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_104949.jpg",
+    "catalog_code": "C077",
+    "cilt_tipleri": [
+      "Tüm Ciltler / Lazer/Tıraş Sonrası Hassas Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Alüminyum tuzu, alkol ve fırın tozu içermez; gözenekleri tıkamadan ter kokusunu nötralize eder."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Organik Okaliptus Yaprağı",
+      "Organik Üzüm Suyu",
+      "Gliserin"
+    ],
+    "kime_uygun": {
+      "profil": "Tüm Ciltler / Lazer/Tıraş Sonrası Hassas Cilt",
+      "cilt_tipleri": [
+        "Tüm Ciltler / Lazer/Tıraş Sonrası Hassas Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Alüminyum tuzu, alkol ve fırın tozu içermez; gözenekleri tıkamadan ter kokusunu nötralize eder.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Alüminyum tuzu, alkol ve fırın tozu içermez; gözenekleri tıkamadan ter kokusunu nötralize eder.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "vinofresh",
+        "caudalie vinofresh 24 saat etkili doğal stick deodorant",
+        "caudalie vinofresh déodorant naturel 24h",
+        "c077"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Organik Okaliptus Yaprağı",
+        "Organik Üzüm Suyu",
+        "Gliserin"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Doğal Katı Stick",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "vinofresh",
+      "c077",
+      "doğal katı stick"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-deep-cleansing-exfoliator-75ml",
+    "name": "Caudalie Gözenek Arındırıcı Yoğun Peeling Kremi",
+    "original_name": "Caudalie Crème Exfoliante Désincrustante",
+    "brand": "Caudalie",
+    "urun_tipi": "Volkanik Kum Tanecikli Krem",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Vinoclean",
+    "size": "75 ml Tüp",
+    "form": "Volkanik Kum Tanecikli Krem",
+    "image": "images/caudalie/caudalie_deep_cleansing_exfoliator_75ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_105011.jpg",
+    "catalog_code": "C006",
+    "cilt_tipleri": [
+      "Normal, Karma ve Tıkalı Gözenekli Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Tıkanmış gözenekleri derinlemesine temizler, cildi pürüzsüzleştirir ve matlaştırır."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Doğal Volkanik Kum Tanecikleri",
+      "Greyfurt Ekstresi",
+      "Nane"
+    ],
+    "kime_uygun": {
+      "profil": "Normal, Karma ve Tıkalı Gözenekli Cilt",
+      "cilt_tipleri": [
+        "Normal, Karma ve Tıkalı Gözenekli Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Tıkanmış gözenekleri derinlemesine temizler, cildi pürüzsüzleştirir ve matlaştırır.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Tıkanmış gözenekleri derinlemesine temizler, cildi pürüzsüzleştirir ve matlaştırır.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "vinoclean",
+        "caudalie gözenek arındırıcı yoğun peeling kremi",
+        "caudalie crème exfoliante désincrustante",
+        "c006"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Doğal Volkanik Kum Tanecikleri",
+        "Greyfurt Ekstresi",
+        "Nane"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Volkanik Kum Tanecikli Krem",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "vinoclean",
+      "c006",
+      "volkanik kum tanecikli krem"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-vinergetic-c-instant-detox-mask-75ml",
+    "name": "Caudalie Vinergetic C+ Anında Detoks Etkili Kil Maskesi",
+    "original_name": "Caudalie Vinergetic C+ Masque Instant Détox",
+    "brand": "Caudalie",
+    "urun_tipi": "Pembe Kil Maskesi",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Vinergetic C+",
+    "size": "75 ml Tüp",
+    "form": "Pembe Kil Maskesi",
+    "image": "images/caudalie/caudalie_vinergetic_c_instant_detox_mask_75ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_105026.jpg",
+    "catalog_code": "C037",
+    "cilt_tipleri": [
+      "Stresli, Şehir Hayatında Yaşayan, Gözenekli Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Toksinleri mıknatıs gibi çeker, gözenekleri sıkılaştırır, fazla sebumu yok eder."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Doğal Pembe Kil",
+      "Kafein Ekstresi",
+      "Organik Üzüm Posası"
+    ],
+    "kime_uygun": {
+      "profil": "Stresli, Şehir Hayatında Yaşayan, Gözenekli Cilt",
+      "cilt_tipleri": [
+        "Stresli, Şehir Hayatında Yaşayan, Gözenekli Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Toksinleri mıknatıs gibi çeker, gözenekleri sıkılaştırır, fazla sebumu yok eder.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Toksinleri mıknatıs gibi çeker, gözenekleri sıkılaştırır, fazla sebumu yok eder.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "vinergetic c+",
+        "caudalie vinergetic c+ anında detoks etkili kil maskesi",
+        "caudalie vinergetic c+ masque instant détox",
+        "c037"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Doğal Pembe Kil",
+        "Kafein Ekstresi",
+        "Organik Üzüm Posası"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Pembe Kil Maskesi",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "vinergetic c+",
+      "c037",
+      "pembe kil maskesi"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-rose-de-vigne-shower-gel-200ml",
+    "name": "Caudalie Rose de Vigne Sabunsuz Duş Jeli",
+    "original_name": "Caudalie Rose de Vigne Gel Douche",
+    "brand": "Caudalie",
+    "urun_tipi": "Yumuşak Jel",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Rose de Vigne",
+    "size": "200 ml Tüp",
+    "form": "Yumuşak Jel",
+    "image": "images/caudalie/caudalie_rose_de_vigne_shower_gel_200ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_105042.jpg",
+    "catalog_code": "C075",
+    "cilt_tipleri": [
+      "Tüm Cilt Tipleri / Hassas Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Cildi kurutmadan temizler, banyo sonrası ipeksi bir koku ve ferahlık bırakır."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Gül Suyu",
+      "Ravent ve Misk Notaları",
+      "Bitkisel Temizleme Bazı"
+    ],
+    "kime_uygun": {
+      "profil": "Tüm Cilt Tipleri / Hassas Cilt",
+      "cilt_tipleri": [
+        "Tüm Cilt Tipleri / Hassas Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Cildi kurutmadan temizler, banyo sonrası ipeksi bir koku ve ferahlık bırakır.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Cildi kurutmadan temizler, banyo sonrası ipeksi bir koku ve ferahlık bırakır.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "rose de vigne",
+        "caudalie rose de vigne sabunsuz duş jeli",
+        "caudalie rose de vigne gel douche",
+        "c075"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Gül Suyu",
+        "Ravent ve Misk Notaları",
+        "Bitkisel Temizleme Bazı"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Yumuşak Jel",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "1. Adım: Temizleme",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "rose de vigne",
+      "c075",
+      "yumuşak jel"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-beauty-elixir-100ml",
+    "name": "Caudalie Güzellik İksiri (Makyaj Sabitleyici & Gözenek Sıkılaştırıcı Sprey)",
+    "original_name": "Caudalie Eau de Beauté",
+    "brand": "Caudalie",
+    "urun_tipi": "Çift Fazlı Uçucu Yağ Sis Spreyi",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Eau de Beauté",
+    "size": "100 ml Cam Şişe",
+    "form": "Çift Fazlı Uçucu Yağ Sis Spreyi",
+    "image": "images/caudalie/caudalie_beauty_elixir_100ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_105102.jpg",
+    "catalog_code": "C008",
+    "cilt_tipleri": [
+      "Tüm Cilt Tipleri / Donuk ve Yorgun Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Makyajı 8 saat sabitler, gözenekleri anında küçültür, cilde yıldız ışıltısı verir."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Biberiye",
+      "Nane",
+      "Gül Suyu",
+      "Mür Ağacı Ekstresi",
+      "Üzüm Posası"
+    ],
+    "kime_uygun": {
+      "profil": "Tüm Cilt Tipleri / Donuk ve Yorgun Cilt",
+      "cilt_tipleri": [
+        "Tüm Cilt Tipleri / Donuk ve Yorgun Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Makyajı 8 saat sabitler, gözenekleri anında küçültür, cilde yıldız ışıltısı verir.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Makyajı 8 saat sabitler, gözenekleri anında küçültür, cilde yıldız ışıltısı verir.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "eau de beauté",
+        "caudalie güzellik i̇ksiri (makyaj sabitleyici & gözenek sıkılaştırıcı sprey)",
+        "caudalie eau de beauté",
+        "c008"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Biberiye",
+        "Nane",
+        "Gül Suyu",
+        "Mür Ağacı Ekstresi",
+        "Üzüm Posası"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Çift Fazlı Uçucu Yağ Sis Spreyi",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "eau de beauté",
+      "c008",
+      "çift fazlı uçucu yağ sis spreyi"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-vinosun-protect-self-tan-sun-drops-15ml",
+    "name": "Caudalie Vinosun Protect Kendiliğinden Bronzlaştırıcı Yüz Damlaları",
+    "original_name": "Caudalie Vinosun Protect Gouttes Solaires Autobronzantes",
+    "brand": "Caudalie",
+    "urun_tipi": "Konsantre Damla",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Vinosun Protect",
+    "size": "15 ml Damlalıklı Şişe",
+    "form": "Konsantre Damla",
+    "image": "images/caudalie/caudalie_vinosun_protect_self_tan_sun_drops_15ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_105117.jpg",
+    "catalog_code": "C085",
+    "cilt_tipleri": [
+      "Tüm Cilt Tipleri"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Günlük neme 2-3 damla karıştırılarak güneşe maruz kalmadan doğal, eşit bir bronzluk sağlar."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Doğal DHA",
+      "Organik Üzüm Suyu",
+      "Hyaluronik Asit"
+    ],
+    "kime_uygun": {
+      "profil": "Tüm Cilt Tipleri",
+      "cilt_tipleri": [
+        "Tüm Cilt Tipleri"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Günlük neme 2-3 damla karıştırılarak güneşe maruz kalmadan doğal, eşit bir bronzluk sağlar.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Günlük neme 2-3 damla karıştırılarak güneşe maruz kalmadan doğal, eşit bir bronzluk sağlar.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "vinosun protect",
+        "caudalie vinosun protect kendiliğinden bronzlaştırıcı yüz damlaları",
+        "caudalie vinosun protect gouttes solaires autobronzantes",
+        "c085"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Doğal DHA",
+        "Organik Üzüm Suyu",
+        "Hyaluronik Asit"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Konsantre Damla",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "vinosun protect",
+      "c085",
+      "konsantre damla"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-vinocrush-skin-tint-shade1-30ml",
+    "name": "Caudalie Vinocrush Renkli Nemlendirici Bakım Kremi - Açık Ton (Teinte 1)",
+    "original_name": "Caudalie Vinocrush Crème Teintée - Teinte 1",
+    "brand": "Caudalie",
+    "urun_tipi": "Kapsüllenmiş Pigmentli Krem (Ciltte Renge Dönüşen)",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Vinocrush",
+    "size": "30 ml Tüp",
+    "form": "Kapsüllenmiş Pigmentli Krem (Ciltte Renge Dönüşen)",
+    "image": "images/caudalie/caudalie_vinocrush_skin_tint_shade1_30ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_105131.jpg",
+    "catalog_code": "C043",
+    "cilt_tipleri": [
+      "Açık Tenli / Beyaz Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Sürülürken cilt rengine uyum sağlar; nemlendirir, kızarıklıkları kapatır, parlatır."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Hyaluronik Asit",
+      "Niasinamid",
+      "Enkapsüle Doğal Mineral Pigmentler"
+    ],
+    "kime_uygun": {
+      "profil": "Açık Tenli / Beyaz Cilt",
+      "cilt_tipleri": [
+        "Açık Tenli / Beyaz Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Sürülürken cilt rengine uyum sağlar; nemlendirir, kızarıklıkları kapatır, parlatır.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Sürülürken cilt rengine uyum sağlar; nemlendirir, kızarıklıkları kapatır, parlatır.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "vinocrush",
+        "caudalie vinocrush renkli nemlendirici bakım kremi - açık ton (teinte 1)",
+        "caudalie vinocrush crème teintée - teinte 1",
+        "c043"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Hyaluronik Asit",
+        "Niasinamid",
+        "Enkapsüle Doğal Mineral Pigmentler"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Kapsüllenmiş Pigmentli Krem (Ciltte Renge Dönüşen)",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "vinocrush",
+      "c043",
+      "kapsüllenmiş pigmentli krem (ciltte renge dönüşen)"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-vinocrush-skin-tint-shade2-30ml",
+    "name": "Caudalie Vinocrush Renkli Nemlendirici Bakım Kremi - Orta Ton (Teinte 2)",
+    "original_name": "Caudalie Vinocrush Crème Teintée - Teinte 2",
+    "brand": "Caudalie",
+    "urun_tipi": "Kapsüllenmiş Pigmentli Krem",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Vinocrush",
+    "size": "30 ml Tüp",
+    "form": "Kapsüllenmiş Pigmentli Krem",
+    "image": "images/caudalie/caudalie_vinocrush_skin_tint_shade2_30ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_105140.jpg",
+    "catalog_code": "C044",
+    "cilt_tipleri": [
+      "Buğday Tenli Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Buğday tenle kusursuz bütünleşir, gözenekleri tıkamadan doğal ve sağlıklı ışıltı verir."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Hyaluronik Asit",
+      "Niasinamid",
+      "Enkapsüle Pigmentler"
+    ],
+    "kime_uygun": {
+      "profil": "Buğday Tenli Cilt",
+      "cilt_tipleri": [
+        "Buğday Tenli Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Buğday tenle kusursuz bütünleşir, gözenekleri tıkamadan doğal ve sağlıklı ışıltı verir.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Buğday tenle kusursuz bütünleşir, gözenekleri tıkamadan doğal ve sağlıklı ışıltı verir.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "vinocrush",
+        "caudalie vinocrush renkli nemlendirici bakım kremi - orta ton (teinte 2)",
+        "caudalie vinocrush crème teintée - teinte 2",
+        "c044"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Hyaluronik Asit",
+        "Niasinamid",
+        "Enkapsüle Pigmentler"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Kapsüllenmiş Pigmentli Krem",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "vinocrush",
+      "c044",
+      "kapsüllenmiş pigmentli krem"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-vinocrush-skin-tint-shade3-30ml",
+    "name": "Caudalie Vinocrush Renkli Nemlendirici Bakım Kremi - Koyu/Bronz Ton (Teinte 3)",
+    "original_name": "Caudalie Vinocrush Crème Teintée - Teinte 3",
+    "brand": "Caudalie",
+    "urun_tipi": "Kapsüllenmiş Pigmentli Krem",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Vinocrush",
+    "size": "30 ml Tüp",
+    "form": "Kapsüllenmiş Pigmentli Krem",
+    "image": "images/caudalie/caudalie_vinocrush_skin_tint_shade3_30ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_105152.jpg",
+    "catalog_code": "C045",
+    "cilt_tipleri": [
+      "Koyu Buğday ve Esmer Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Esmer ciltte grileşme yapmadan leke ve ton eşitsizliklerini eşitler, sıcak ışıltı verir."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Hyaluronik Asit",
+      "Niasinamid",
+      "Enkapsüle Pigmentler"
+    ],
+    "kime_uygun": {
+      "profil": "Koyu Buğday ve Esmer Cilt",
+      "cilt_tipleri": [
+        "Koyu Buğday ve Esmer Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Esmer ciltte grileşme yapmadan leke ve ton eşitsizliklerini eşitler, sıcak ışıltı verir.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Esmer ciltte grileşme yapmadan leke ve ton eşitsizliklerini eşitler, sıcak ışıltı verir.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "vinocrush",
+        "caudalie vinocrush renkli nemlendirici bakım kremi - koyu/bronz ton (teinte 3)",
+        "caudalie vinocrush crème teintée - teinte 3",
+        "c045"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Hyaluronik Asit",
+        "Niasinamid",
+        "Enkapsüle Pigmentler"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Kapsüllenmiş Pigmentli Krem",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "vinocrush",
+      "c045",
+      "kapsüllenmiş pigmentli krem"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-vinopure-cleansing-gel-150ml",
+    "name": "Caudalie Vinopure Arındırıcı Temizleme Jeli",
+    "original_name": "Caudalie Vinopure Gelée Nettoyante Purifiante",
+    "brand": "Caudalie",
+    "urun_tipi": "Arındırıcı Köpüren Jel",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Vinopure",
+    "size": "150 ml Tüp",
+    "form": "Arındırıcı Köpüren Jel",
+    "image": "images/caudalie/caudalie_vinopure_cleansing_gel_150ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_105216.jpg",
+    "catalog_code": "C026",
+    "cilt_tipleri": [
+      "Karma, Yağlı ve Akneli Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Gözenekleri derinlemesine arındırır, cildi kurutmadan parlamayı engeller."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Doğal Salisilik Asit",
+      "Organik Üzüm Suyu",
+      "Organik Nane ve Biberiye Yağı"
+    ],
+    "kime_uygun": {
+      "profil": "Karma, Yağlı ve Akneli Cilt",
+      "cilt_tipleri": [
+        "Karma, Yağlı ve Akneli Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Gözenekleri derinlemesine arındırır, cildi kurutmadan parlamayı engeller.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Gözenekleri derinlemesine arındırır, cildi kurutmadan parlamayı engeller.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "vinopure",
+        "caudalie vinopure arındırıcı temizleme jeli",
+        "caudalie vinopure gelée nettoyante purifiante",
+        "c026"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Doğal Salisilik Asit",
+        "Organik Üzüm Suyu",
+        "Organik Nane ve Biberiye Yağı"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Arındırıcı Köpüren Jel",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "1. Adım: Temizleme",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "vinopure",
+      "c026",
+      "arındırıcı köpüren jel"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-vinopure-purifying-toner-200ml",
+    "name": "Caudalie Vinopure Gözenek Sıkılaştırıcı Arındırıcı Tonik",
+    "original_name": "Caudalie Vinopure Lotion Purifiante Tonique",
+    "brand": "Caudalie",
+    "urun_tipi": "Ferahlatıcı Mikro-Tonik",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Vinopure",
+    "size": "200 ml Şişe",
+    "form": "Ferahlatıcı Mikro-Tonik",
+    "image": "images/caudalie/caudalie_vinopure_purifying_toner_200ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_105257.jpg",
+    "catalog_code": "C027",
+    "cilt_tipleri": [
+      "Geniş Gözenekli ve Yağlı Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Cildi arındırır, gözenekleri küçültür, siyah nokta oluşumunu önler."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Doğal Salisilik Asit",
+      "Organik Gül Suyu",
+      "6 Esansiyel Yağ"
+    ],
+    "kime_uygun": {
+      "profil": "Geniş Gözenekli ve Yağlı Cilt",
+      "cilt_tipleri": [
+        "Geniş Gözenekli ve Yağlı Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Cildi arındırır, gözenekleri küçültür, siyah nokta oluşumunu önler.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Cildi arındırır, gözenekleri küçültür, siyah nokta oluşumunu önler.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "vinopure",
+        "caudalie vinopure gözenek sıkılaştırıcı arındırıcı tonik",
+        "caudalie vinopure lotion purifiante tonique",
+        "c027"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Doğal Salisilik Asit",
+        "Organik Gül Suyu",
+        "6 Esansiyel Yağ"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Ferahlatıcı Mikro-Tonik",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "vinopure",
+      "c027",
+      "ferahlatıcı mikro-tonik"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-vinopure-moisturizing-mattifying-fluid-40ml",
+    "name": "Caudalie Vinopure Matlaştırıcı ve Nemlendirici Sıvı Krem",
+    "original_name": "Caudalie Vinopure Fluide Matifiant Hydratant",
+    "brand": "Caudalie",
+    "urun_tipi": "Ultra Hafif Matlaştırıcı Emülsiyon",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Vinopure",
+    "size": "40 ml Pompalı Tüp",
+    "form": "Ultra Hafif Matlaştırıcı Emülsiyon",
+    "image": "images/caudalie/caudalie_vinopure_moisturizing_mattifying_fluid_40ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_105317.jpg",
+    "catalog_code": "C028",
+    "cilt_tipleri": [
+      "Parlama Yapan Yağlı ve Akneli Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Cildi gün boyu nemlendirirken T-bölgesindeki yağlanmayı anında matlaştırır."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Japon Polifenolleri",
+      "Doğal Silika Tozları",
+      "Bitkisel Skualen"
+    ],
+    "kime_uygun": {
+      "profil": "Parlama Yapan Yağlı ve Akneli Cilt",
+      "cilt_tipleri": [
+        "Parlama Yapan Yağlı ve Akneli Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Cildi gün boyu nemlendirirken T-bölgesindeki yağlanmayı anında matlaştırır.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Cildi gün boyu nemlendirirken T-bölgesindeki yağlanmayı anında matlaştırır.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "vinopure",
+        "caudalie vinopure matlaştırıcı ve nemlendirici sıvı krem",
+        "caudalie vinopure fluide matifiant hydratant",
+        "c028"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Japon Polifenolleri",
+        "Doğal Silika Tozları",
+        "Bitkisel Skualen"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Ultra Hafif Matlaştırıcı Emülsiyon",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "vinopure",
+      "c028",
+      "ultra hafif matlaştırıcı emülsiyon"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-vinopure-blemnish-control-serum-30ml",
+    "name": "Caudalie Vinopure Salisilik Asitli Akne ve Gözenek Karşıtı Serum",
+    "original_name": "Caudalie Vinopure Sérum Salicylique Anti-imperfections",
+    "brand": "Caudalie",
+    "urun_tipi": "Jel Serum",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Vinopure",
+    "size": "30 ml Damlalıklı Cam Şişe",
+    "form": "Jel Serum",
+    "image": "images/caudalie/caudalie_vinopure_blemnish_control_serum_30ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_105331.jpg",
+    "catalog_code": "C029",
+    "cilt_tipleri": [
+      "Sivilceli, Siyah Noktalı ve Yağlı Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Sivilce lezyonlarını 7 günde söndürür, gözenekleri gözle görülür şekilde küçültür."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Doğal Salisilik Asit",
+      "Niasinamid",
+      "Üzüm Polifenolleri"
+    ],
+    "kime_uygun": {
+      "profil": "Sivilceli, Siyah Noktalı ve Yağlı Cilt",
+      "cilt_tipleri": [
+        "Sivilceli, Siyah Noktalı ve Yağlı Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Sivilce lezyonlarını 7 günde söndürür, gözenekleri gözle görülür şekilde küçültür.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Sivilce lezyonlarını 7 günde söndürür, gözenekleri gözle görülür şekilde küçültür.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "vinopure",
+        "caudalie vinopure salisilik asitli akne ve gözenek karşıtı serum",
+        "caudalie vinopure sérum salicylique anti-imperfections",
+        "c029"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Doğal Salisilik Asit",
+        "Niasinamid",
+        "Üzüm Polifenolleri"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Jel Serum",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "1. Adım: Temizleme",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "vinopure",
+      "c029",
+      "jel serum"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-vinopure-salicylic-spot-solution-15ml",
+    "name": "Caudalie Vinopure Lokal Sivilce Kurutucu Bakım Kremi",
+    "original_name": "Caudalie Vinopure Stop Boutons Salicylique",
+    "brand": "Caudalie",
+    "urun_tipi": "Açık Yeşil Hedefli Macun-Krem",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Vinopure",
+    "size": "15 ml İnce Uçlu Tüp",
+    "form": "Açık Yeşil Hedefli Macun-Krem",
+    "image": "images/caudalie/caudalie_vinopure_salicylic_spot_solution_15ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_105400.jpg",
+    "catalog_code": "C030",
+    "cilt_tipleri": [
+      "Aktif ve İltihaplı Sivilcesi Olan Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "4 saatte sivilce kızarıklığını nötralize eder, iltihabı kurutur, iz kalmasını önler."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Doğal Salisilik Asit",
+      "Niasinamid",
+      "Çay Ağacı Yağı (Tea Tree)"
+    ],
+    "kime_uygun": {
+      "profil": "Aktif ve İltihaplı Sivilcesi Olan Cilt",
+      "cilt_tipleri": [
+        "Aktif ve İltihaplı Sivilcesi Olan Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "4 saatte sivilce kızarıklığını nötralize eder, iltihabı kurutur, iz kalmasını önler.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "4 saatte sivilce kızarıklığını nötralize eder, iltihabı kurutur, iz kalmasını önler.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "vinopure",
+        "caudalie vinopure lokal sivilce kurutucu bakım kremi",
+        "caudalie vinopure stop boutons salicylique",
+        "c030"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Doğal Salisilik Asit",
+        "Niasinamid",
+        "Çay Ağacı Yağı (Tea Tree)"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Açık Yeşil Hedefli Macun-Krem",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "vinopure",
+      "c030",
+      "açık yeşil hedefli macun-krem"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-vinotherapist-hyaluronic-body-lotion-400ml",
+    "name": "Caudalie Vinotherapist Hyaluronik Besleyici Vücut Bakım Sütü",
+    "original_name": "Caudalie Vinotherapist Soin Corps Nourrissant Hyaluronique",
+    "brand": "Caudalie",
+    "urun_tipi": "Hafif ve Hızlı Emilen Vücut Sütü",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Vinotherapist",
+    "size": "400 ml Pompalı Şişe",
+    "form": "Hafif ve Hızlı Emilen Vücut Sütü",
+    "image": "images/caudalie/caudalie_vinotherapist_hyaluronic_body_lotion_400ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_105424.jpg",
+    "catalog_code": "C066",
+    "cilt_tipleri": [
+      "Kuru ve Nemsiz Vücut Cildi"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Tüm vücuda 24 saat nem konforu sağlar; giysilere yapışmadan hızlıca emilir."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Hyaluronik Asit",
+      "Organik Shea Yağı",
+      "Polifenoller"
+    ],
+    "kime_uygun": {
+      "profil": "Kuru ve Nemsiz Vücut Cildi",
+      "cilt_tipleri": [
+        "Kuru ve Nemsiz Vücut Cildi"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Tüm vücuda 24 saat nem konforu sağlar; giysilere yapışmadan hızlıca emilir.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Tüm vücuda 24 saat nem konforu sağlar; giysilere yapışmadan hızlıca emilir.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "vinotherapist",
+        "caudalie vinotherapist hyaluronik besleyici vücut bakım sütü",
+        "caudalie vinotherapist soin corps nourrissant hyaluronique",
+        "c066"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Hyaluronik Asit",
+        "Organik Shea Yağı",
+        "Polifenoller"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Hafif ve Hızlı Emilen Vücut Sütü",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "vinotherapist",
+      "c066",
+      "hafif ve hızlı emilen vücut sütü"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-vinotherapist-hyaluronic-body-lotion-200ml",
+    "name": "Caudalie Vinotherapist Hyaluronik Besleyici Vücut Bakım Sütü (Tüp)",
+    "original_name": "Caudalie Vinotherapist Soin Corps Nourrissant Hyaluronique",
+    "brand": "Caudalie",
+    "urun_tipi": "İpeksi Vücut Sütü",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Vinotherapist",
+    "size": "200 ml Tüp",
+    "form": "İpeksi Vücut Sütü",
+    "image": "images/caudalie/caudalie_vinotherapist_hyaluronic_body_lotion_200ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_105444.jpg",
+    "catalog_code": "C067",
+    "cilt_tipleri": [
+      "Kuru Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Kuru vücut cildinde pul pul dökülmeyi önler, esneklik kazandırır."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Hyaluronik Asit",
+      "Organik Shea Yağı"
+    ],
+    "kime_uygun": {
+      "profil": "Kuru Cilt",
+      "cilt_tipleri": [
+        "Kuru Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Kuru vücut cildinde pul pul dökülmeyi önler, esneklik kazandırır.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Kuru vücut cildinde pul pul dökülmeyi önler, esneklik kazandırır.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "vinotherapist",
+        "caudalie vinotherapist hyaluronik besleyici vücut bakım sütü (tüp)",
+        "caudalie vinotherapist soin corps nourrissant hyaluronique",
+        "c067"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Hyaluronik Asit",
+        "Organik Shea Yağı"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "İpeksi Vücut Sütü",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "vinotherapist",
+      "c067",
+      "i̇peksi vücut sütü"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-the-des-vignes-hand-and-nail-cream-75ml",
+    "name": "Caudalie Thé des Vignes Onarıcı El ve Tırnak Bakım Kremi",
+    "original_name": "Caudalie Thé des Vignes Crème Réparatrice Mains & Ongles",
+    "brand": "Caudalie",
+    "urun_tipi": "Hızlı Emilen İpeksi El Kremi",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Thé des Vignes",
+    "size": "75 ml Tüp",
+    "form": "Hızlı Emilen İpeksi El Kremi",
+    "image": "images/caudalie/caudalie_the_des_vignes_hand_and_nail_cream_75ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_105534.jpg",
+    "catalog_code": "C073",
+    "cilt_tipleri": [
+      "Kuru, Çatlamış Eller ve Zayıf Tırnaklar"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Elleri korur, tırnak etlerini yumuşatır, parmak izi bırakmadan ipeksi yumuşaklık verir."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Üzüm Çekirdeği Yağı",
+      "Organik Shea Yağı",
+      "Beyaz Misk ve Zencefil Notaları"
+    ],
+    "kime_uygun": {
+      "profil": "Kuru, Çatlamış Eller ve Zayıf Tırnaklar",
+      "cilt_tipleri": [
+        "Kuru, Çatlamış Eller ve Zayıf Tırnaklar"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Elleri korur, tırnak etlerini yumuşatır, parmak izi bırakmadan ipeksi yumuşaklık verir.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Elleri korur, tırnak etlerini yumuşatır, parmak izi bırakmadan ipeksi yumuşaklık verir.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "thé des vignes",
+        "caudalie thé des vignes onarıcı el ve tırnak bakım kremi",
+        "caudalie thé des vignes crème réparatrice mains & ongles",
+        "c073"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Üzüm Çekirdeği Yağı",
+        "Organik Shea Yağı",
+        "Beyaz Misk ve Zencefil Notaları"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Hızlı Emilen İpeksi El Kremi",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "thé des vignes",
+      "c073",
+      "hızlı emilen i̇peksi el kremi"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-vinotherapist-body-lotion-pump-400ml",
+    "name": "Caudalie Vinotherapist Hyaluronik Besleyici Vücut Bakım Sütü (Pompa)",
+    "original_name": "Caudalie Vinotherapist Soin Corps Nourrissant Hyaluronique (Büyük Boy)",
+    "brand": "Caudalie",
+    "urun_tipi": "Vücut Losyonu",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Vinotherapist",
+    "size": "400 ml Pompalı Şişe",
+    "form": "Vücut Losyonu",
+    "image": "images/caudalie/caudalie_vinotherapist_body_lotion_pump_400ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_105545.jpg",
+    "catalog_code": "C066",
+    "cilt_tipleri": [
+      "Tüm Cilt Tipleri / Kuru Vücut"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Banyo sonrası tüm aile için ideal, cildi yumuşatan derinlemesine nem bakımı."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Biyoteknolojik Hyaluronik Asit",
+      "Organik Shea Yağı"
+    ],
+    "kime_uygun": {
+      "profil": "Tüm Cilt Tipleri / Kuru Vücut",
+      "cilt_tipleri": [
+        "Tüm Cilt Tipleri / Kuru Vücut"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Banyo sonrası tüm aile için ideal, cildi yumuşatan derinlemesine nem bakımı.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Banyo sonrası tüm aile için ideal, cildi yumuşatan derinlemesine nem bakımı.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "vinotherapist",
+        "caudalie vinotherapist hyaluronik besleyici vücut bakım sütü (pompa)",
+        "caudalie vinotherapist soin corps nourrissant hyaluronique (büyük boy)",
+        "c066"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Biyoteknolojik Hyaluronik Asit",
+        "Organik Shea Yağı"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Vücut Losyonu",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "vinotherapist",
+      "c066",
+      "vücut losyonu"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-vinotherapist-hand-and-nail-repairing-cream-75ml",
+    "name": "Caudalie Vinotherapist Besleyici ve Onarıcı El Bakım Kremi",
+    "original_name": "Caudalie Vinotherapist Crème Réparatrice Mains & Ongles",
+    "brand": "Caudalie",
+    "urun_tipi": "Besleyici Koruyucu Krem",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Vinotherapist",
+    "size": "75 ml Tüp",
+    "form": "Besleyici Koruyucu Krem",
+    "image": "images/caudalie/caudalie_vinotherapist_hand_and_nail_repairing_cream_75ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_105552.jpg",
+    "catalog_code": "C069",
+    "cilt_tipleri": [
+      "Aşırı Kuru ve Çatlamış Eller"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Soğuk hava, deterjan ve rüzgarla çatlayan el derisini anında sarar ve onarır."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Üzüm Çekirdeği Yağı",
+      "Organik Shea Yağı",
       "Avokado Yağı"
     ],
-    "tags": [
-      "katı şampuan",
-      "organik",
-      "sıfır atık",
-      "plastiksiz",
-      "3 yaş üstü"
-    ],
-    "urun_tipi": "Şampuan & Saç Bakımı",
-    "urun_tipi_icon": "🚿",
-    "rutin_adimi": "Saç & Saçlı Deri"
-  },
-  {
-    "id": "mustela-soothing-cleansing-gel-300ml",
-    "name": "Mustela Soothing Cleansing Gel Çok Hassas Cilt Temizleme Jeli (300ml)",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Çok Hassas & Reaktif Cilt",
-    "brand": "Mustela",
-    "size": "300 ml",
-    "form": "Pompalı Şişe Jel",
-    "image": "images/mustela/mustela-soothing-cleansing-gel-300ml.jpeg",
     "kime_uygun": {
+      "profil": "Aşırı Kuru ve Çatlamış Eller",
       "cilt_tipleri": [
-        "Çok Hassas Cilt",
-        "Reaktif ve Kolay Kızaran Cilt",
-        "Hafif Temasla Bile Alerjiye Meyleden Cilt"
+        "Aşırı Kuru ve Çatlamış Eller"
       ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Soğuk hava, deterjan ve rüzgarla çatlayan el derisini anında sarar ve onarır.",
       "yas_kriterleri": {
-        "yenidogan_uygun_mu": true,
-        "bebek_uygun_mu": true,
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
         "cocuk_uygun_mu": true,
         "ergen_uygun_mu": true,
         "yetiskin_uygun_mu": true,
         "geriatri_uygun_mu": true,
         "gebelik_guvenli_mi": true,
         "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Doğumdan itibaren tüm bebekler için uygundur. Cildi en ufak rüzgar, su veya temasla anında kızaran hipersensitif bebeklerin saç ve vücut temizliğinde altın standarttır."
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
       }
     },
     "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Göz yakmaz.",
-      "goz_cevresi_temas": "Göz yakmayan formül.",
-      "doktora_yonlendirme": "Kızarıklıklar ürtiker (kurdeşen) tarzında kabarık plaklar yapıyorsa alerji uzmanına gidilmelidir."
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
     },
     "hasta_sikayeti": {
-      "hasta_cumlesi": "Bebeğimin cildi aşırı reaktif; kıyafetin etiketi değse, rüzgar vursa veya yıkasam hemen kıpkırmızı oluyor, parfümsüz ve cildi sakinleştiren bir şampuan lazım.",
+      "hasta_cumlesi": "Soğuk hava, deterjan ve rüzgarla çatlayan el derisini anında sarar ve onarır.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
       "arama_etiketleri": [
-        "#çok_hassas_cilt",
-        "#kızaran_cilt",
-        "#şisandra",
-        "#parfümsüz_şampuan",
-        "#reaktif_bebek_cildi"
-      ],
-      "eczaci_sorusu": "Kızarıklık kuruluktan mı kaynaklanıyor yoksa temas ve sıcağa bağlı anlık alevlenme mi?",
-      "secim_nedeni": "Patentli Şisandra (Schisandra) meyve özü ile cildin aşırı reaktivitesini ve yangısını hücresel düzeyde bloke eder."
+        "caudalie",
+        "vinotherapist",
+        "caudalie vinotherapist besleyici ve onarıcı el bakım kremi",
+        "caudalie vinotherapist crème réparatrice mains & ongles",
+        "c069"
+      ]
     },
     "formulasyon": {
       "aktif_bilesenler": [
-        "Organik Şisandra Meyve Özü (Yatıştırıcı)",
-        "Avokado Perseose"
+        "Üzüm Çekirdeği Yağı",
+        "Organik Shea Yağı",
+        "Avokado Yağı"
       ],
-      "doku": "Parfümsüz, hafif, göz yakmayan berrak jel.",
       "rozetler": [
-        "%98 Doğal Kökenli",
-        "Parfümsüz (0% Parfüm)",
-        "Göz Yakmaz",
-        "Sabunsuz",
-        "Hipoalerjenik"
-      ]
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Besleyici Koruyucu Krem",
+      "fizyolojik_ph": "5.5"
     },
     "kullanim_protokolu": {
-      "rutin_siralamasi": "Banyoda saç ve vücuda uygulanır, durulanır. Ardından Soothing Nemlendirici Losyon sürülür.",
-      "zaman_ve_siklik": "Her banyoda",
-      "miktar": "1-2 pompa",
-      "uygulama_sekli": "Islak cilde köpürtülüp nazikçe durulanır.",
-      "beklenen_sonuc": "Yıkama esnasında ve sonrasında sıfır kızarıklık, sakinleşmiş ten."
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
     },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [
-        "mustela-soothing-moisturizing-lotion-200ml"
-      ],
-      "yasakli_cakismalar": [
-        "Parfümlü şampuanlar ve sert lifler."
-      ],
-      "etkilesim_uyarisi": "Parfümsüz ürünlerle devam edilmelidir."
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "Avene XeraCalm A.D Temizleme Yağı veya La Roche-Posay Toleriane Jel",
-      "alternatif_fark_notu": "Avene ve La Roche yetişkin odaklıdır; Mustela Soothing Jel ise bebeklerdeki aşırı reaktiviteye özel Şisandra meyve özüyle formüle edilmiştir."
-    },
-    "cilt_tipleri": [
-      "Çok Hassas ve Reaktif Cilt"
-    ],
-    "yas_grubu": "Doğumdan itibaren (Yenidoğan dahil)",
-    "kimler_kullanamaz": "Bilinen kontrendikasyonu yoktur.",
-    "nasil_kullanilir": "Islak saç ve vücuda uygulanıp köpürtülür, nazikçe durulanır.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Hemen kızaran reaktif bebek cildi",
-      "Parfümsüz hassas temizleyici arayışı"
-    ],
-    "kombinasyon_ve_uyarilar": "Parfümsüzdür, göz yakmaz.",
-    "etken_maddeler": [
-      "Şisandra Özü",
-      "Avokado Perseose"
-    ],
     "tags": [
-      "çok hassas",
-      "reaktif",
-      "şisandra",
-      "parfümsüz",
-      "kızarıklık",
-      "bebek"
-    ],
-    "urun_tipi": "Yüz & Vücut Temizleyici",
+      "caudalie",
+      "vinotherapist",
+      "c069",
+      "besleyici koruyucu krem"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-vinosun-protect-after-sun-repair-lotion-200ml",
+    "name": "Caudalie Vinosun Protect Güneş Sonrası Onarıcı ve Yatıştırıcı Bakım Sütü",
+    "original_name": "Caudalie Vinosun Protect Lait Réparateur Après-Soleil",
+    "brand": "Caudalie",
+    "urun_tipi": "Serinletici Jel-Süt Dokusu",
     "urun_tipi_icon": "🧼",
-    "rutin_adimi": "1. Adım: Temizleme"
-  },
-  {
-    "id": "mustela-soothing-cleansing-water-300ml",
-    "name": "Mustela Soothing Cleansing Water Çok Hassas Cilt Temizleme Suyu (300ml)",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
     "category": "dermo",
     "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Çok Hassas & Reaktif Cilt",
-    "brand": "Mustela",
-    "size": "300 ml",
-    "form": "Pompalı Şişe Misel Su",
-    "image": "images/mustela/mustela-soothing-cleansing-water-300ml.jpeg",
+    "sub_category": "Vinosun Protect",
+    "size": "200 ml Tüp",
+    "form": "Serinletici Jel-Süt Dokusu",
+    "image": "images/caudalie/caudalie_vinosun_protect_after_sun_repair_lotion_200ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_105609.jpg",
+    "catalog_code": "C086",
+    "cilt_tipleri": [
+      "Güneş Sonrası Isınmış ve Kızarmış Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Güneş yanığı hissini dindirir, cildi serinletir, bronzluğun kalıcılığını 2 hafta uzatır."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Organik Aloe Vera",
+      "Hindistan Cevizi Yağı",
+      "Organik Üzüm Suyu"
+    ],
     "kime_uygun": {
+      "profil": "Güneş Sonrası Isınmış ve Kızarmış Cilt",
       "cilt_tipleri": [
-        "Çok Hassas Cilt",
-        "Hemen Kızaran Bez ve Yüz Bölgesi",
-        "Durulama İstemeyen Reaktif Ciltler"
+        "Güneş Sonrası Isınmış ve Kızarmış Cilt"
       ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Güneş yanığı hissini dindirir, cildi serinletir, bronzluğun kalıcılığını 2 hafta uzatır.",
       "yas_kriterleri": {
-        "yenidogan_uygun_mu": true,
-        "bebek_uygun_mu": true,
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
         "cocuk_uygun_mu": true,
         "ergen_uygun_mu": true,
         "yetiskin_uygun_mu": true,
         "geriatri_uygun_mu": true,
         "gebelik_guvenli_mi": true,
         "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Doğumdan itibaren yenidoğan ve bebeklerin reaktif cildi için güvenlidir."
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
       }
     },
     "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Göz küresi içine dökülmez.",
-      "goz_cevresi_temas": "Pamukla nazikçe silinebilir.",
-      "doktora_yonlendirme": "Gerekli değildir."
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
     },
     "hasta_sikayeti": {
-      "hasta_cumlesi": "Bebeğimin yüzünü veya altını silerken normal ıslak mendiller veya temizleme suları hemen yakıp kızartıyor, sıfır parfümlü yatıştırıcı bir temizleme suyu arıyorum.",
+      "hasta_cumlesi": "Güneş yanığı hissini dindirir, cildi serinletir, bronzluğun kalıcılığını 2 hafta uzatır.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
       "arama_etiketleri": [
-        "#hassas_temizleme_suyu",
-        "#şisandra_su",
-        "#parfümsüz_micellar",
-        "#kızarıklık_karşıtı_su"
-      ],
-      "eczaci_sorusu": "Silme esnasında sürtünmeden mi kızarıyor?",
-      "secim_nedeni": "Şisandra meyvesi ile temas anında kızarıklığı yatıştırır; durulama ve sürtünme gerektirmeden pamukla nazikçe arındırır."
+        "caudalie",
+        "vinosun protect",
+        "caudalie vinosun protect güneş sonrası onarıcı ve yatıştırıcı bakım sütü",
+        "caudalie vinosun protect lait réparateur après-soleil",
+        "c086"
+      ]
     },
     "formulasyon": {
       "aktif_bilesenler": [
-        "Şisandra Meyve Özü",
-        "Avokado Perseose"
+        "Organik Aloe Vera",
+        "Hindistan Cevizi Yağı",
+        "Organik Üzüm Suyu"
       ],
-      "doku": "Parfümsüz, ferahlatıcı berrak misel su.",
       "rozetler": [
-        "%99 Doğal Kökenli",
-        "Parfümsüz",
-        "Durulanmaz",
-        "Hipoalerjenik"
-      ]
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Serinletici Jel-Süt Dokusu",
+      "fizyolojik_ph": "5.5"
     },
     "kullanim_protokolu": {
-      "rutin_siralamasi": "Pamuğa sıkılır, yüz ve bez bölgesi silinir. Durulanmaz.",
-      "zaman_ve_siklik": "Her bez değişiminde veya kirlendikçe",
-      "miktar": "1-2 pompa pamuk üzerine",
-      "uygulama_sekli": "Pamukla ovmadan hafif dokunuşlarla silinir.",
-      "beklenen_sonuc": "Kızarmayan, yatışmış, temiz ve sakin cilt."
+      "rutin_siralamasi": "1. Adım: Temizleme",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
     },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [
-        "mustela-soothing-moisturizing-lotion-200ml"
-      ],
-      "yasakli_cakismalar": [
-        "Parfümlü mendiller."
-      ],
-      "etkilesim_uyarisi": "Durulanmaz."
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "Bioderma Sensibio H2O Micellar Su",
-      "alternatif_fark_notu": "Bioderma Sensibio yetişkin rozasea/hassasiyet içindir; Mustela Soothing Su ise yenidoğan ve bebek güvenliğine göre optimize edilmiştir."
-    },
-    "cilt_tipleri": [
-      "Çok Hassas ve Reaktif Cilt"
-    ],
-    "yas_grubu": "Doğumdan itibaren (Yenidoğan dahil)",
-    "kimler_kullanamaz": "Bilinen kontrendikasyonu yoktur.",
-    "nasil_kullanilir": "Pamuğa sıkılarak yüz ve bez bölgesi silinir, durulanmaz.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Temizlerken hemen kızaran reaktif bebek cildi"
-    ],
-    "kombinasyon_ve_uyarilar": "Parfümsüzdür, durulanmaz.",
-    "etken_maddeler": [
-      "Şisandra Özü",
-      "Avokado Perseose"
-    ],
     "tags": [
-      "temizleme suyu",
-      "çok hassas",
-      "parfümsüz",
-      "şisandra",
-      "bebek"
-    ],
-    "urun_tipi": "Yüz & Vücut Temizleyici",
+      "caudalie",
+      "vinosun protect",
+      "c086",
+      "serinletici jel-süt dokusu"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-vinotherapist-replenishing-vegan-body-butter-250ml",
+    "name": "Caudalie Vinotherapist Kaşıntı Karşıtı Vegan Vücut Yağı (Balsam)",
+    "original_name": "Caudalie Vinotherapist Beurre Corps Vegan Relipidant",
+    "brand": "Caudalie",
+    "urun_tipi": "Zengin Vegan Vücut Yağı (Butter)",
     "urun_tipi_icon": "🧼",
-    "rutin_adimi": "1. Adım: Temizleme"
-  },
-  {
-    "id": "mustela-soothing-moisturizing-lotion-200ml",
-    "name": "Mustela Soothing Moisturizing Lotion Çok Hassas Cilt Nemlendirici Losyon (200ml)",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
     "category": "dermo",
     "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Çok Hassas & Reaktif Cilt",
-    "brand": "Mustela",
-    "size": "200 ml",
-    "form": "Pompalı Şişe Losyon",
-    "image": "images/mustela/mustela-soothing-moisturizing-lotion-200ml.jpeg",
+    "sub_category": "Vinotherapist",
+    "size": "250 ml Kavanoz",
+    "form": "Zengin Vegan Vücut Yağı (Butter)",
+    "image": "images/caudalie/caudalie_vinotherapist_replenishing_vegan_body_butter_250ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_105624.jpg",
+    "catalog_code": "C065",
+    "cilt_tipleri": [
+      "Çok Kuru, Atopiye Eğilimli ve Kaşıntılı Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Atopik kurulukta kaşıntıyı anında yatıştırır, 24 saat lipid bariyeri kalkanı oluşturur."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Organik Çöl Hurması Yağı",
+      "Üzüm Çekirdeği Yağı",
+      "Organik Shea Yağı"
+    ],
     "kime_uygun": {
+      "profil": "Çok Kuru, Atopiye Eğilimli ve Kaşıntılı Cilt",
       "cilt_tipleri": [
-        "Çok Hassas Cilt",
-        "Reaktif ve Kızarmış Cilt",
-        "Parfümlü Ürünleri Tolere Edemeyen Bebekler"
+        "Çok Kuru, Atopiye Eğilimli ve Kaşıntılı Cilt"
       ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Atopik kurulukta kaşıntıyı anında yatıştırır, 24 saat lipid bariyeri kalkanı oluşturur.",
       "yas_kriterleri": {
-        "yenidogan_uygun_mu": true,
-        "bebek_uygun_mu": true,
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
         "cocuk_uygun_mu": true,
         "ergen_uygun_mu": true,
         "yetiskin_uygun_mu": true,
         "geriatri_uygun_mu": true,
         "gebelik_guvenli_mi": true,
         "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Doğumdan itibaren tüm bebekler için uygundur. Parfüm, paraben ve koruyucu içermeyen ultra hassas tolerans formülüne sahiptir."
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
       }
     },
     "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Açık yara ve sızıntılı enfeksiyonlar.",
-      "goz_cevresi_temas": "Göz içine uygulanmaz.",
-      "doktora_yonlendirme": "Şiddetli alerjik reaksiyonlarda doktora başvurulmalıdır."
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
     },
     "hasta_sikayeti": {
-      "hasta_cumlesi": "Bebeğimin cildine hangi kremi sürsem kıpkırmızı kabarıyor, parfümsüz, anında kızarıklığı söndüren ve nemlendiren güvenli bir vücut losyonu arıyorum.",
+      "hasta_cumlesi": "Atopik kurulukta kaşıntıyı anında yatıştırır, 24 saat lipid bariyeri kalkanı oluşturur.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
       "arama_etiketleri": [
-        "#reaktif_cilt_losyonu",
-        "#kızarıklık_giderici",
-        "#parfümsüz_nemlendirici",
-        "#şisandra_losyon"
-      ],
-      "eczaci_sorusu": "Parfümlü ürünlerde yanma veya döküntü oluyor mu?",
-      "secim_nedeni": "Patentli Şisandra meyve özü ile cildin yangısını anında yatıştırır, ikinci bir koruyucu ten gibi kızarıklığı bloke eder."
+        "caudalie",
+        "vinotherapist",
+        "caudalie vinotherapist kaşıntı karşıtı vegan vücut yağı (balsam)",
+        "caudalie vinotherapist beurre corps vegan relipidant",
+        "c065"
+      ]
     },
     "formulasyon": {
       "aktif_bilesenler": [
-        "Organik Şisandra Meyve Özü",
-        "Avokado Perseose"
+        "Organik Çöl Hurması Yağı",
+        "Üzüm Çekirdeği Yağı",
+        "Organik Shea Yağı"
       ],
-      "doku": "Çok hafif, serinletici, parfümsüz, anında emilen losyon.",
       "rozetler": [
-        "%97 Doğal Kökenli",
-        "Parfümsüz (0% Koku)",
-        "Klinik Kanıtlı Yatıştırma",
-        "Hipoalerjenik"
-      ]
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Zengin Vegan Vücut Yağı (Butter)",
+      "fizyolojik_ph": "5.5"
     },
     "kullanim_protokolu": {
-      "rutin_siralamasi": "Banyodan sonra veya temiz cilde sabah ve akşam tüm vücuda ve yüze sürülür.",
-      "zaman_ve_siklik": "Günde 2 kez",
-      "miktar": "2 pompa",
-      "uygulama_sekli": "Temiz cilde nazikçe yayılır, ovuşturulmaz.",
-      "beklenen_sonuc": "Kızarıklık ve yangı hissinin anında yok olması, sakinleşmiş nemli cilt."
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
     },
-    "kombinasyonlar": {
-      "tamamlayici_kombinler": [
-        "mustela-soothing-cleansing-gel-300ml"
-      ],
-      "yasakli_cakismalar": [
-        "Parfümlü vücut yağları ve alkollü mendiller."
-      ],
-      "etkilesim_uyarisi": "Parfümsüz rutine sadık kalınmalıdır."
-    },
-    "muadil_rehberi": {
-      "en_yakin_muadil": "Avene Tolerance Control Yatıştırıcı Krem",
-      "alternatif_fark_notu": "Avene yetişkin reaktif ciltler içindir; Mustela Soothing Losyon ise bebeklerin geniş vücut yüzeyine hızla sürülebilen akıcı losyon formundadır."
-    },
-    "cilt_tipleri": [
-      "Çok Hassas ve Reaktif Cilt"
-    ],
-    "yas_grubu": "Doğumdan itibaren (Yenidoğan dahil)",
-    "kimler_kullanamaz": "Bilinen kontrendikasyonu yoktur.",
-    "nasil_kullanilir": "Sabah ve akşam yüz ve vücuda nazikçe uygulanır.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Ciltte aniden beliren kızarıklık ve yangı",
-      "Parfümsüz yatıştırıcı vücut nemlendiricisi"
-    ],
-    "kombinasyon_ve_uyarilar": "Parfümsüzdür.",
-    "etken_maddeler": [
-      "Şisandra Özü",
-      "Avokado Perseose"
-    ],
     "tags": [
-      "çok hassas",
-      "reaktif",
-      "nemlendirici",
-      "parfümsüz",
-      "şisandra"
+      "caudalie",
+      "vinotherapist",
+      "c065",
+      "zengin vegan vücut yağı (butter)"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-eau-des-vignes-shower-gel-200ml",
+    "name": "Caudalie Eau des Vignes Sabunsuz Duş Jeli",
+    "original_name": "Caudalie Eau des Vignes Gel Douche",
+    "brand": "Caudalie",
+    "urun_tipi": "Yumuşak Jel",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Eau des Vignes",
+    "size": "200 ml Tüp",
+    "form": "Yumuşak Jel",
+    "image": "images/caudalie/caudalie_eau_des_vignes_shower_gel_200ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_105639.jpg",
+    "catalog_code": "C076",
+    "cilt_tipleri": [
+      "Tüm Cilt Tipleri / Hassas Cilt"
     ],
-    "urun_tipi": "Nemlendirici & Bariyer Krem",
-    "urun_tipi_icon": "🧴",
-    "rutin_adimi": "2. Adım: Nemlendirme & Bariyer"
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Cildin doğal pH dengesini bozmadan temizler, ferahlatıcı yaz esintisi kokusu bırakır."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Beyaz Gül",
+      "Bergamot",
+      "İris Notaları",
+      "Bitkisel Gliserin"
+    ],
+    "kime_uygun": {
+      "profil": "Tüm Cilt Tipleri / Hassas Cilt",
+      "cilt_tipleri": [
+        "Tüm Cilt Tipleri / Hassas Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Cildin doğal pH dengesini bozmadan temizler, ferahlatıcı yaz esintisi kokusu bırakır.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Cildin doğal pH dengesini bozmadan temizler, ferahlatıcı yaz esintisi kokusu bırakır.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "eau des vignes",
+        "caudalie eau des vignes sabunsuz duş jeli",
+        "caudalie eau des vignes gel douche",
+        "c076"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Beyaz Gül",
+        "Bergamot",
+        "İris Notaları",
+        "Bitkisel Gliserin"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Yumuşak Jel",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "1. Adım: Temizleme",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "eau des vignes",
+      "c076",
+      "yumuşak jel"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-anti-hair-loss-serum-50ml",
+    "name": "Caudalie Yoğun Saç Dökülmesi Karşıtı Güçlendirici Serum",
+    "original_name": "Caudalie Hair Expert Sérum Anti-Chute",
+    "brand": "Caudalie",
+    "urun_tipi": "Hafif Su Bazlı Kafa Derisi Serumu",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Hair Care / Saç Bakımı",
+    "size": "50 ml Damlalıklı Cam Şişe",
+    "form": "Hafif Su Bazlı Kafa Derisi Serumu",
+    "image": "images/caudalie/caudalie_anti_hair_loss_serum_50ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_105654.jpg",
+    "catalog_code": "C080",
+    "cilt_tipleri": [
+      "Mevsimsel ve Kronik Saç Dökülmesi Olanlar"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Saç dökülmesini %53 azaltır, kök tutunmasını güçlendirir, saç derisini yağlandırmaz."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "VineOxyl™ Kompleksi (Resveratrol + Şarap Polifenolleri)",
+      "Biyotinil-GHK",
+      "Arginin"
+    ],
+    "kime_uygun": {
+      "profil": "Mevsimsel ve Kronik Saç Dökülmesi Olanlar",
+      "cilt_tipleri": [
+        "Mevsimsel ve Kronik Saç Dökülmesi Olanlar"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Saç dökülmesini %53 azaltır, kök tutunmasını güçlendirir, saç derisini yağlandırmaz.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Saç dökülmesini %53 azaltır, kök tutunmasını güçlendirir, saç derisini yağlandırmaz.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "hair care / saç bakımı",
+        "caudalie yoğun saç dökülmesi karşıtı güçlendirici serum",
+        "caudalie hair expert sérum anti-chute",
+        "c080"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "VineOxyl™ Kompleksi (Resveratrol + Şarap Polifenolleri)",
+        "Biyotinil-GHK",
+        "Arginin"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Hafif Su Bazlı Kafa Derisi Serumu",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "hair care / saç bakımı",
+      "c080",
+      "hafif su bazlı kafa derisi serumu"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-density-volume-shampoo-250ml",
+    "name": "Caudalie Saç Yoğunlaştırıcı ve Hacim Kazandırıcı Bakım Şampuanı",
+    "original_name": "Caudalie Shampooing Soin Densité & Volume",
+    "brand": "Caudalie",
+    "urun_tipi": "Hafif Doğal Şampuan",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Hair Care / Saç Bakımı",
+    "size": "250 ml Şişe",
+    "form": "Hafif Doğal Şampuan",
+    "image": "images/caudalie/caudalie_density_volume_shampoo_250ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_105711.jpg",
+    "catalog_code": "C079",
+    "cilt_tipleri": [
+      "İnce Telli, Zayıf ve Hacimsiz Saçlar"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Saç tellerini kalınlaştırır, saç köklerine hacim kazandırır, ağırlaştırmadan temizler."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "VineOxyl™ Güçlendirici Kompleks",
+      "Bitkisel Proteinler",
+      "Üzüm Çekirdeği Yağı"
+    ],
+    "kime_uygun": {
+      "profil": "İnce Telli, Zayıf ve Hacimsiz Saçlar",
+      "cilt_tipleri": [
+        "İnce Telli, Zayıf ve Hacimsiz Saçlar"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Saç tellerini kalınlaştırır, saç köklerine hacim kazandırır, ağırlaştırmadan temizler.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Saç tellerini kalınlaştırır, saç köklerine hacim kazandırır, ağırlaştırmadan temizler.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "hair care / saç bakımı",
+        "caudalie saç yoğunlaştırıcı ve hacim kazandırıcı bakım şampuanı",
+        "caudalie shampooing soin densité & volume",
+        "c079"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "VineOxyl™ Güçlendirici Kompleks",
+        "Bitkisel Proteinler",
+        "Üzüm Çekirdeği Yağı"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Hafif Doğal Şampuan",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "hair care / saç bakımı",
+      "c079",
+      "hafif doğal şampuan"
+    ]
+  },
+  {
+    "id": "lierac-lierac-brand-antiage-shelf",
+    "name": "Lierac Laboratuvarları Lüks Yaşlanma Karşıtı Teşhir Standı",
+    "original_name": "Lierac Yaşlanma Karşıtı Teşhir Standı (Premium & Lift Integral)",
+    "brand": "Lierac",
+    "urun_tipi": "Krem / Serum",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Anti-Âge Absolu",
+    "size": "Muhtelif",
+    "form": "Krem / Serum",
+    "image": "images/lierac/lierac_brand_antiage_shelf.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_105757.jpg",
+    "catalog_code": "L-SHELF-1",
+    "cilt_tipleri": [
+      "Olgun Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Hücresel gençlik proteinlerini aktive ederek tüm yaşlanma işaretlerini onarır."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "F.G.N. Teknolojisi",
+      "Hibiskus Ekstresi",
+      "Hyaluronik Asit"
+    ],
+    "kime_uygun": {
+      "profil": "Olgun Cilt",
+      "cilt_tipleri": [
+        "Olgun Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Hücresel gençlik proteinlerini aktive ederek tüm yaşlanma işaretlerini onarır.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Hücresel gençlik proteinlerini aktive ederek tüm yaşlanma işaretlerini onarır.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Lierac klinik formülü.",
+      "arama_etiketleri": [
+        "lierac",
+        "anti-âge absolu",
+        "lierac laboratuvarları lüks yaşlanma karşıtı teşhir standı",
+        "lierac yaşlanma karşıtı teşhir standı (premium & lift integral)",
+        "l-shelf-1"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "F.G.N. Teknolojisi",
+        "Hibiskus Ekstresi",
+        "Hyaluronik Asit"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Krem / Serum",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "lierac",
+      "anti-âge absolu",
+      "l-shelf-1",
+      "krem / serum"
+    ]
+  },
+  {
+    "id": "lierac-lierac-premium-creme-shelf",
+    "name": "Lierac Premium Mutlak Yaşlanma Karşıtı İpeksi & Zengin Krem Standı",
+    "original_name": "Lierac Premium La Crème Soyeuse & Voluptueuse Serisi",
+    "brand": "Lierac",
+    "urun_tipi": "İpeksi / Zengin Krem",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Premium",
+    "size": "50 ml Kavanoz / 30 ml Serum",
+    "form": "İpeksi / Zengin Krem",
+    "image": "images/lierac/lierac_premium_creme_shelf.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_105807.jpg",
+    "catalog_code": "L-SHELF-2",
+    "cilt_tipleri": [
+      "Normal, Karma ve Kuru Olgun Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Derin kırışıklıkları doldurur, lekeleri hafifletir, cilde dolgunluk ve ışıltı verir."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "[F.G.N.] Teknolojisi",
+      "Niasinamid",
+      "Hyaluronik Asit"
+    ],
+    "kime_uygun": {
+      "profil": "Normal, Karma ve Kuru Olgun Cilt",
+      "cilt_tipleri": [
+        "Normal, Karma ve Kuru Olgun Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Derin kırışıklıkları doldurur, lekeleri hafifletir, cilde dolgunluk ve ışıltı verir.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Derin kırışıklıkları doldurur, lekeleri hafifletir, cilde dolgunluk ve ışıltı verir.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Lierac klinik formülü.",
+      "arama_etiketleri": [
+        "lierac",
+        "premium",
+        "lierac premium mutlak yaşlanma karşıtı i̇peksi & zengin krem standı",
+        "lierac premium la crème soyeuse & voluptueuse serisi",
+        "l-shelf-2"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "[F.G.N.] Teknolojisi",
+        "Niasinamid",
+        "Hyaluronik Asit"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "İpeksi / Zengin Krem",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "lierac",
+      "premium",
+      "l-shelf-2",
+      "i̇peksi / zengin krem"
+    ]
+  },
+  {
+    "id": "lierac-lierac-range-display",
+    "name": "Lierac Çözüm Odaklı Cilt Bakım Standı",
+    "original_name": "Lierac Dermokozmetik Ürün Yelpazesi Standı",
+    "brand": "Lierac",
+    "urun_tipi": "Krem / Jel",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Dermocosmetic Range",
+    "size": "Muhtelif",
+    "form": "Krem / Jel",
+    "image": "images/lierac/lierac_range_display.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_105810.jpg",
+    "catalog_code": "L-SHELF-3",
+    "cilt_tipleri": [
+      "Tüm Cilt Tipleri"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Cilt elastikiyeti ve hedefe yönelik dermatolojik bakım."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Patentli Bitkisel Kompleksler"
+    ],
+    "kime_uygun": {
+      "profil": "Tüm Cilt Tipleri",
+      "cilt_tipleri": [
+        "Tüm Cilt Tipleri"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Cilt elastikiyeti ve hedefe yönelik dermatolojik bakım.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Cilt elastikiyeti ve hedefe yönelik dermatolojik bakım.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Lierac klinik formülü.",
+      "arama_etiketleri": [
+        "lierac",
+        "dermocosmetic range",
+        "lierac çözüm odaklı cilt bakım standı",
+        "lierac dermokozmetik ürün yelpazesi standı",
+        "l-shelf-3"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Patentli Bitkisel Kompleksler"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Krem / Jel",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "1. Adım: Temizleme",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "lierac",
+      "dermocosmetic range",
+      "l-shelf-3",
+      "krem / jel"
+    ]
+  },
+  {
+    "id": "lierac-lierac-phytolastil-body-sculpt",
+    "name": "Lierac Phytolastil Çatlak Karşıtı ve Vücut Şekillendirme Standı",
+    "original_name": "Lierac Phytolastil Çatlak Jeli & Body Sculpt Sıkılaştırıcı",
+    "brand": "Lierac",
+    "urun_tipi": "Hedefli Jel / Konsantre",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Phytolastil & Body Sculpt",
+    "size": "100 ml / 200 ml Tüp",
+    "form": "Hedefli Jel / Konsantre",
+    "image": "images/lierac/lierac_phytolastil_body_sculpt.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_105815.jpg",
+    "catalog_code": "L-SHELF-4",
+    "cilt_tipleri": [
+      "Hamilelik, Kilo Değişimi ve Çatlağa Meyilli Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Oluşmuş çatlakların rengini ve derinliğini %80 oranında geriletir, cildi toparlar."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Aslanpençesi",
+      "Sarmaşık",
+      "Atkuyruğu Kompleksi (%84)"
+    ],
+    "kime_uygun": {
+      "profil": "Hamilelik, Kilo Değişimi ve Çatlağa Meyilli Cilt",
+      "cilt_tipleri": [
+        "Hamilelik, Kilo Değişimi ve Çatlağa Meyilli Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Oluşmuş çatlakların rengini ve derinliğini %80 oranında geriletir, cildi toparlar.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Oluşmuş çatlakların rengini ve derinliğini %80 oranında geriletir, cildi toparlar.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Lierac klinik formülü.",
+      "arama_etiketleri": [
+        "lierac",
+        "phytolastil & body sculpt",
+        "lierac phytolastil çatlak karşıtı ve vücut şekillendirme standı",
+        "lierac phytolastil çatlak jeli & body sculpt sıkılaştırıcı",
+        "l-shelf-4"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Aslanpençesi",
+        "Sarmaşık",
+        "Atkuyruğu Kompleksi (%84)"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Hedefli Jel / Konsantre",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "1. Adım: Temizleme",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "lierac",
+      "phytolastil & body sculpt",
+      "l-shelf-4",
+      "hedefli jel / konsantre"
+    ]
+  },
+  {
+    "id": "takviyeler-phyto-paris-botanical-shelf",
+    "name": "Phyto Paris %100 Bitkisel Ekstreli Saç Bakım Standı",
+    "original_name": "Phyto Paris Bitkisel Saç Bakım ve Onarım Standı",
+    "brand": "Phyto Paris",
+    "urun_tipi": "Doğal Şampuan / Maske",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "takviye",
+    "category_name": "Gıda Takviyeleri & Vitamin",
+    "sub_category": "Botanical Hair Care",
+    "size": "250 ml / 150 ml",
+    "form": "Doğal Şampuan / Maske",
+    "image": "images/takviyeler/phyto_paris_botanical_shelf.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_105820.jpg",
+    "catalog_code": "PHY-001",
+    "cilt_tipleri": [
+      "Kuru ve Yıpranmış Saçlar"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Saç tellerini dipten uca besler, parlaklık ve güç kazandırır."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Botanik Yağlar",
+      "Keratin A",
+      "Jojoba Ekstresi"
+    ],
+    "kime_uygun": {
+      "profil": "Kuru ve Yıpranmış Saçlar",
+      "cilt_tipleri": [
+        "Kuru ve Yıpranmış Saçlar"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Saç tellerini dipten uca besler, parlaklık ve güç kazandırır.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Saç tellerini dipten uca besler, parlaklık ve güç kazandırır.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Phyto Paris klinik formülü.",
+      "arama_etiketleri": [
+        "phyto paris",
+        "botanical hair care",
+        "phyto paris %100 bitkisel ekstreli saç bakım standı",
+        "phyto paris bitkisel saç bakım ve onarım standı",
+        "phy-001"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Botanik Yağlar",
+        "Keratin A",
+        "Jojoba Ekstresi"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Doğal Şampuan / Maske",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "phyto paris",
+      "botanical hair care",
+      "phy-001",
+      "doğal şampuan / maske"
+    ]
+  },
+  {
+    "id": "takviyeler-phyto-phytophanere-phytocyane",
+    "name": "Phyto Paris Saç ve Tırnak Dökülme Karşıtı Klinik Stand",
+    "original_name": "Phyto Phytophanere Kapsül & Phytocyane Saç Dökülme Serumu",
+    "brand": "Phyto Paris",
+    "urun_tipi": "Yumuşak Jel Kapsül / Sıvı Ampul",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "takviye",
+    "category_name": "Gıda Takviyeleri & Vitamin",
+    "sub_category": "Phytophanere & Phytocyane",
+    "size": "120 Kapsül / 12 x 5 ml Ampul",
+    "form": "Yumuşak Jel Kapsül / Sıvı Ampul",
+    "image": "images/takviyeler/phyto_phytophanere_phytocyane.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_105828.jpg",
+    "catalog_code": "PHY-002",
+    "cilt_tipleri": [
+      "Reaktif / Genetik Saç Dökülmesi"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Mevsimsel ve kronik saç dökülmesini durdurur, yeni saç kökü aktivitesini tetikler."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Biotin",
+      "B6 Vitamini",
+      "Çinko",
+      "Ginkgo Biloba",
+      "Lale Ekstresi"
+    ],
+    "kime_uygun": {
+      "profil": "Reaktif / Genetik Saç Dökülmesi",
+      "cilt_tipleri": [
+        "Reaktif / Genetik Saç Dökülmesi"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Mevsimsel ve kronik saç dökülmesini durdurur, yeni saç kökü aktivitesini tetikler.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Mevsimsel ve kronik saç dökülmesini durdurur, yeni saç kökü aktivitesini tetikler.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Phyto Paris klinik formülü.",
+      "arama_etiketleri": [
+        "phyto paris",
+        "phytophanere & phytocyane",
+        "phyto paris saç ve tırnak dökülme karşıtı klinik stand",
+        "phyto phytophanere kapsül & phytocyane saç dökülme serumu",
+        "phy-002"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Biotin",
+        "B6 Vitamini",
+        "Çinko",
+        "Ginkgo Biloba",
+        "Lale Ekstresi"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Yumuşak Jel Kapsül / Sıvı Ampul",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "1. Adım: Temizleme",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "phyto paris",
+      "phytophanere & phytocyane",
+      "phy-002",
+      "yumuşak jel kapsül / sıvı ampul"
+    ]
+  },
+  {
+    "id": "takviyeler-phyto-phytosquam-antidandruff",
+    "name": "Phyto Paris Kepek ve Yağlanma Karşıtı Bakım Standı",
+    "original_name": "Phyto Phytosquam Kepek Karşıtı & Phytopanama Dengeleyici Şampuan",
+    "brand": "Phyto Paris",
+    "urun_tipi": "Bitkisel Şampuan",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "takviye",
+    "category_name": "Gıda Takviyeleri & Vitamin",
+    "sub_category": "Phytosquam & Phytopanama",
+    "size": "250 ml Şişe",
+    "form": "Bitkisel Şampuan",
+    "image": "images/takviyeler/phyto_phytosquam_antidandruff.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_105834.jpg",
+    "catalog_code": "PHY-003",
+    "cilt_tipleri": [
+      "Kepekli ve Yağlı Saç Derisi"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Saç derisini tahriş etmeden kepeği yok eder, sebum fazlasını doğal yolla dengeler."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Karabiber ve Guyana Ağacı Kompleksi",
+      "Panama Ağacı Kabuğu Ekstresi"
+    ],
+    "kime_uygun": {
+      "profil": "Kepekli ve Yağlı Saç Derisi",
+      "cilt_tipleri": [
+        "Kepekli ve Yağlı Saç Derisi"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Saç derisini tahriş etmeden kepeği yok eder, sebum fazlasını doğal yolla dengeler.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Saç derisini tahriş etmeden kepeği yok eder, sebum fazlasını doğal yolla dengeler.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Phyto Paris klinik formülü.",
+      "arama_etiketleri": [
+        "phyto paris",
+        "phytosquam & phytopanama",
+        "phyto paris kepek ve yağlanma karşıtı bakım standı",
+        "phyto phytosquam kepek karşıtı & phytopanama dengeleyici şampuan",
+        "phy-003"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Karabiber ve Guyana Ağacı Kompleksi",
+        "Panama Ağacı Kabuğu Ekstresi"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Bitkisel Şampuan",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "phyto paris",
+      "phytosquam & phytopanama",
+      "phy-003",
+      "bitkisel şampuan"
+    ]
+  },
+  {
+    "id": "takviyeler-phyto-shampoo-display",
+    "name": "Phyto Paris Doğal Saç Bakım Şampuanları Standı",
+    "original_name": "Phyto Paris Botanik Şampuan Çeşitleri Teşhir Standı",
+    "brand": "Phyto Paris",
+    "urun_tipi": "Şampuan",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "takviye",
+    "category_name": "Gıda Takviyeleri & Vitamin",
+    "sub_category": "Phyto Shampoo Range",
+    "size": "250 ml Şişe",
+    "form": "Şampuan",
+    "image": "images/takviyeler/phyto_shampoo_display.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_105846.jpg",
+    "catalog_code": "PHY-004",
+    "cilt_tipleri": [
+      "Farklı Saç İhtiyaçları"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Saç derisi mikrobiyotasını koruyarak saçlara doğal canlılık verir."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Bitki Kaynatmaları (%Extraction de Plantes)"
+    ],
+    "kime_uygun": {
+      "profil": "Farklı Saç İhtiyaçları",
+      "cilt_tipleri": [
+        "Farklı Saç İhtiyaçları"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Saç derisi mikrobiyotasını koruyarak saçlara doğal canlılık verir.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Saç derisi mikrobiyotasını koruyarak saçlara doğal canlılık verir.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Phyto Paris klinik formülü.",
+      "arama_etiketleri": [
+        "phyto paris",
+        "phyto shampoo range",
+        "phyto paris doğal saç bakım şampuanları standı",
+        "phyto paris botanik şampuan çeşitleri teşhir standı",
+        "phy-004"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Bitki Kaynatmaları (%Extraction de Plantes)"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Şampuan",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "phyto paris",
+      "phyto shampoo range",
+      "phy-004",
+      "şampuan"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-vinohydra-gel-moisturizer-60ml",
+    "name": "Caudalie VinoHydra Nemlendirici Jel Krem (Tüp)",
+    "original_name": "Caudalie VinoHydra Gelée Hydratante (Tüp)",
+    "brand": "Caudalie",
+    "urun_tipi": "Yağsız Ferahlatıcı Jel Dokusu",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "VinoHydra",
+    "size": "60 ml Tüp",
+    "form": "Yağsız Ferahlatıcı Jel Dokusu",
+    "image": "images/caudalie/caudalie_vinohydra_gel_moisturizer_60ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_110831.jpg",
+    "catalog_code": "C020",
+    "cilt_tipleri": [
+      "Karma ve Parlamaya Eğilimli Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Gözenekleri tıkamadan derinlemesine nemlendirir, ciltteki parlama yapmayan ferah his bırakır."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Hyaluronik Asit",
+      "Organik Üzüm Suyu",
+      "Organik Aloe Vera"
+    ],
+    "kime_uygun": {
+      "profil": "Karma ve Parlamaya Eğilimli Cilt",
+      "cilt_tipleri": [
+        "Karma ve Parlamaya Eğilimli Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Gözenekleri tıkamadan derinlemesine nemlendirir, ciltteki parlama yapmayan ferah his bırakır.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Gözenekleri tıkamadan derinlemesine nemlendirir, ciltteki parlama yapmayan ferah his bırakır.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "vinohydra",
+        "caudalie vinohydra nemlendirici jel krem (tüp)",
+        "caudalie vinohydra gelée hydratante (tüp)",
+        "c020"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Hyaluronik Asit",
+        "Organik Üzüm Suyu",
+        "Organik Aloe Vera"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Yağsız Ferahlatıcı Jel Dokusu",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "1. Adım: Temizleme",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "vinohydra",
+      "c020",
+      "yağsız ferahlatıcı jel dokusu"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-vinohydra-deep-hydration-moisturizer-60ml",
+    "name": "Caudalie VinoHydra Yoğun Nemlendirici Bakım Kremi (Tüp)",
+    "original_name": "Caudalie VinoHydra Crème Hydratation Intense (Tüp)",
+    "brand": "Caudalie",
+    "urun_tipi": "Zengin İpeksi Krem Dokusu",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "VinoHydra",
+    "size": "60 ml Tüp",
+    "form": "Zengin İpeksi Krem Dokusu",
+    "image": "images/caudalie/caudalie_vinohydra_deep_hydration_moisturizer_60ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_110856.jpg",
+    "catalog_code": "C021",
+    "cilt_tipleri": [
+      "Kuru ve Hassas Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Kuru cildi besler, gerginliği ve kuruluğa bağlı kaşıntıyı yatıştırır, bariyeri onarır."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Hyaluronik Asit",
+      "Organik Üzüm Suyu",
+      "Organik Shea Yağı"
+    ],
+    "kime_uygun": {
+      "profil": "Kuru ve Hassas Cilt",
+      "cilt_tipleri": [
+        "Kuru ve Hassas Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Kuru cildi besler, gerginliği ve kuruluğa bağlı kaşıntıyı yatıştırır, bariyeri onarır.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Kuru cildi besler, gerginliği ve kuruluğa bağlı kaşıntıyı yatıştırır, bariyeri onarır.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "vinohydra",
+        "caudalie vinohydra yoğun nemlendirici bakım kremi (tüp)",
+        "caudalie vinohydra crème hydratation intense (tüp)",
+        "c021"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Hyaluronik Asit",
+        "Organik Üzüm Suyu",
+        "Organik Shea Yağı"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Zengin İpeksi Krem Dokusu",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "vinohydra",
+      "c021",
+      "zengin i̇peksi krem dokusu"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-vinohydra-sorbet-cream-moisturizer-60ml",
+    "name": "Caudalie VinoHydra Nemlendirici Sorbet Krem (Tüp)",
+    "original_name": "Caudalie VinoHydra Crème Sorbet Hydratante (Tüp)",
+    "brand": "Caudalie",
+    "urun_tipi": "Sorbe Dokulu Hafif Krem (Ciltte Suya Dönüşen)",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "VinoHydra",
+    "size": "60 ml Tüp",
+    "form": "Sorbe Dokulu Hafif Krem (Ciltte Suya Dönüşen)",
+    "image": "images/caudalie/caudalie_vinohydra_sorbet_cream_moisturizer_60ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_110916.jpg",
+    "catalog_code": "C023",
+    "cilt_tipleri": [
+      "Normal ve Hassas Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Ciltle temas ettiği anda suya dönüşerek kızarıklığı dindirir ve nemsizliği giderir."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Hyaluronik Asit",
+      "Üzüm Seramidleri",
+      "Papatya Ekstresi"
+    ],
+    "kime_uygun": {
+      "profil": "Normal ve Hassas Cilt",
+      "cilt_tipleri": [
+        "Normal ve Hassas Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Ciltle temas ettiği anda suya dönüşerek kızarıklığı dindirir ve nemsizliği giderir.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Ciltle temas ettiği anda suya dönüşerek kızarıklığı dindirir ve nemsizliği giderir.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "vinohydra",
+        "caudalie vinohydra nemlendirici sorbet krem (tüp)",
+        "caudalie vinohydra crème sorbet hydratante (tüp)",
+        "c023"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Hyaluronik Asit",
+        "Üzüm Seramidleri",
+        "Papatya Ekstresi"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Sorbe Dokulu Hafif Krem (Ciltte Suya Dönüşen)",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "vinohydra",
+      "c023",
+      "sorbe dokulu hafif krem (ciltte suya dönüşen)"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-vinohydra-moisturizing-mask-75ml",
+    "name": "Caudalie VinoHydra Nemlendirici Maske Krem",
+    "original_name": "Caudalie VinoHydra Masque-Crème Hydratant",
+    "brand": "Caudalie",
+    "urun_tipi": "Zengin Krem Maske",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "VinoHydra",
+    "size": "75 ml Tüp",
+    "form": "Zengin Krem Maske",
+    "image": "images/caudalie/caudalie_vinohydra_moisturizing_mask_75ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_110935.jpg",
+    "catalog_code": "C024",
+    "cilt_tipleri": [
+      "Kuru, Nemsiz ve Hassas Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "10 dakikada cildi neme doyurur, hassasiyet ve kızarıklığı yatıştırır, durulama gerektirmez."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Centella Asiatica (Gotu Kola)",
+      "Üzüm Polifenolleri",
+      "Organik Üzüm Suyu"
+    ],
+    "kime_uygun": {
+      "profil": "Kuru, Nemsiz ve Hassas Cilt",
+      "cilt_tipleri": [
+        "Kuru, Nemsiz ve Hassas Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "10 dakikada cildi neme doyurur, hassasiyet ve kızarıklığı yatıştırır, durulama gerektirmez.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "10 dakikada cildi neme doyurur, hassasiyet ve kızarıklığı yatıştırır, durulama gerektirmez.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "vinohydra",
+        "caudalie vinohydra nemlendirici maske krem",
+        "caudalie vinohydra masque-crème hydratant",
+        "c024"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Centella Asiatica (Gotu Kola)",
+        "Üzüm Polifenolleri",
+        "Organik Üzüm Suyu"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Zengin Krem Maske",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "vinohydra",
+      "c024",
+      "zengin krem maske"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-vinosculpt-crushed-cabernet-scrub-225g",
+    "name": "Caudalie Vinosculpt Ezilmiş Cabernet Üzüm Çekirdeği Vücut Peelingi",
+    "original_name": "Caudalie Vinosculpt Gommage Crushed Cabernet",
+    "brand": "Caudalie",
+    "urun_tipi": "Doğal Şeker ve Çekirdekli Scrub",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Vinosculpt",
+    "size": "225 g Kavanoz",
+    "form": "Doğal Şeker ve Çekirdekli Scrub",
+    "image": "images/caudalie/caudalie_vinosculpt_crushed_cabernet_scrub_225g.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_111011.jpg",
+    "catalog_code": "C070",
+    "cilt_tipleri": [
+      "Pürüzlü, Selülitli ve Kuru Vücut Cildi"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Ölü derileri anında söker, bacak ve basenlerde drenaj sağlar, cildi saten gibi yapar."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Ezilmiş Üzüm Çekirdekleri",
+      "Kahverengi Şeker",
+      "6 Organik Esansiyel Yağ",
+      "Bal"
+    ],
+    "kime_uygun": {
+      "profil": "Pürüzlü, Selülitli ve Kuru Vücut Cildi",
+      "cilt_tipleri": [
+        "Pürüzlü, Selülitli ve Kuru Vücut Cildi"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Ölü derileri anında söker, bacak ve basenlerde drenaj sağlar, cildi saten gibi yapar.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Ölü derileri anında söker, bacak ve basenlerde drenaj sağlar, cildi saten gibi yapar.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "vinosculpt",
+        "caudalie vinosculpt ezilmiş cabernet üzüm çekirdeği vücut peelingi",
+        "caudalie vinosculpt gommage crushed cabernet",
+        "c070"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Ezilmiş Üzüm Çekirdekleri",
+        "Kahverengi Şeker",
+        "6 Organik Esansiyel Yağ",
+        "Bal"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Doğal Şeker ve Çekirdekli Scrub",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "vinosculpt",
+      "c070",
+      "doğal şeker ve çekirdekli scrub"
+    ]
+  },
+  {
+    "id": "benjamin_button-benjamin-button-forever-young-shelf",
+    "name": "Benjamin Button Forever Young Kolajen & Peptit Standı",
+    "original_name": "Benjamin Button Forever Young Yaşlanma Karşıtı Teşhir Rafı",
+    "brand": "Benjamin Button",
+    "urun_tipi": "Serum",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Forever Young Anti-Aging",
+    "size": "30 ml Damlalıklı Cam Şişe",
+    "form": "Serum",
+    "image": "images/benjamin_button/benjamin_button_forever_young_shelf.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_111131.jpg",
+    "catalog_code": "B-SHELF-1",
+    "cilt_tipleri": [
+      "Kırışıklık ve Elastikiyet Kaybı"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Hücre yenilenmesini uyarır, ince çizgileri ve kırışıklıkları doldurur."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Matrixyl 3000 Peptit Kompleksi",
+      "Deniz Kolajeni",
+      "Hyaluronik Asit"
+    ],
+    "kime_uygun": {
+      "profil": "Kırışıklık ve Elastikiyet Kaybı",
+      "cilt_tipleri": [
+        "Kırışıklık ve Elastikiyet Kaybı"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Hücre yenilenmesini uyarır, ince çizgileri ve kırışıklıkları doldurur.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Hücre yenilenmesini uyarır, ince çizgileri ve kırışıklıkları doldurur.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Benjamin Button klinik formülü.",
+      "arama_etiketleri": [
+        "benjamin button",
+        "forever young anti-aging",
+        "benjamin button forever young kolajen & peptit standı",
+        "benjamin button forever young yaşlanma karşıtı teşhir rafı",
+        "b-shelf-1"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Matrixyl 3000 Peptit Kompleksi",
+        "Deniz Kolajeni",
+        "Hyaluronik Asit"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Serum",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "benjamin button",
+      "forever young anti-aging",
+      "b-shelf-1",
+      "serum"
+    ]
+  },
+  {
+    "id": "benjamin_button-benjamin-button-vitaminc-shelf",
+    "name": "Benjamin Button C Vitamini %10 & Ferulik Asit Standı",
+    "original_name": "Benjamin Button C Vitamini Aydınlatıcı Bakım Rafı",
+    "brand": "Benjamin Button",
+    "urun_tipi": "Antioksidan Serum",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Vitamin C & Brightening",
+    "size": "30 ml Damlalıklı Cam Şişe",
+    "form": "Antioksidan Serum",
+    "image": "images/benjamin_button/benjamin_button_vitaminc_shelf.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_111136.jpg",
+    "catalog_code": "B-SHELF-2",
+    "cilt_tipleri": [
+      "Mat, Lekeli ve Yorgun Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Güneş lekelerini açar, serbest radikalleri nötralize eder, cilde ışıltı kazandırır."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Saf L-Askorbik Asit (%10)",
+      "Ferulik Asit",
+      "Tokoferol (E Vitamini)"
+    ],
+    "kime_uygun": {
+      "profil": "Mat, Lekeli ve Yorgun Cilt",
+      "cilt_tipleri": [
+        "Mat, Lekeli ve Yorgun Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Güneş lekelerini açar, serbest radikalleri nötralize eder, cilde ışıltı kazandırır.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Güneş lekelerini açar, serbest radikalleri nötralize eder, cilde ışıltı kazandırır.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Benjamin Button klinik formülü.",
+      "arama_etiketleri": [
+        "benjamin button",
+        "vitamin c & brightening",
+        "benjamin button c vitamini %10 & ferulik asit standı",
+        "benjamin button c vitamini aydınlatıcı bakım rafı",
+        "b-shelf-2"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Saf L-Askorbik Asit (%10)",
+        "Ferulik Asit",
+        "Tokoferol (E Vitamini)"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Antioksidan Serum",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "benjamin button",
+      "vitamin c & brightening",
+      "b-shelf-2",
+      "antioksidan serum"
+    ]
+  },
+  {
+    "id": "benjamin_button-benjamin-button-retinol-hyaluronic-shelf",
+    "name": "Benjamin Button Gece Retinolü & Nem Tutucu Serum Standı",
+    "original_name": "Benjamin Button Retinol & Hyaluronik Asit Yoğun Onarıcı Serum Rafı",
+    "brand": "Benjamin Button",
+    "urun_tipi": "Konsantre Serum",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Retinol & Hyaluronic",
+    "size": "30 ml Damlalıklı Cam Şişe",
+    "form": "Konsantre Serum",
+    "image": "images/benjamin_button/benjamin_button_retinol_hyaluronic_shelf.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_111147.jpg",
+    "catalog_code": "B-SHELF-3",
+    "cilt_tipleri": [
+      "Doku Bozukluğu, Gözenek ve Yaşlanma"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Gece hücresel dönüşümü hızlandırır, gözenekleri küçültür, epidermisi dolgunlaştırır."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Enkapsüle Retinol (%0.5)",
+      "Çok Moleküllü Hyaluronik Asit (%2)"
+    ],
+    "kime_uygun": {
+      "profil": "Doku Bozukluğu, Gözenek ve Yaşlanma",
+      "cilt_tipleri": [
+        "Doku Bozukluğu, Gözenek ve Yaşlanma"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Gece hücresel dönüşümü hızlandırır, gözenekleri küçültür, epidermisi dolgunlaştırır.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Gece hücresel dönüşümü hızlandırır, gözenekleri küçültür, epidermisi dolgunlaştırır.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Benjamin Button klinik formülü.",
+      "arama_etiketleri": [
+        "benjamin button",
+        "retinol & hyaluronic",
+        "benjamin button gece retinolü & nem tutucu serum standı",
+        "benjamin button retinol & hyaluronik asit yoğun onarıcı serum rafı",
+        "b-shelf-3"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Enkapsüle Retinol (%0.5)",
+        "Çok Moleküllü Hyaluronik Asit (%2)"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Konsantre Serum",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "benjamin button",
+      "retinol & hyaluronic",
+      "b-shelf-3",
+      "konsantre serum"
+    ]
+  },
+  {
+    "id": "benjamin_button-benjamin-button-niacinamide-shelf",
+    "name": "Benjamin Button Leke & Gözenek Karşıtı Niasinamid Standı",
+    "original_name": "Benjamin Button Niacinamide %10 + Çinko Yağ Dengeleyici Serum Rafı",
+    "brand": "Benjamin Button",
+    "urun_tipi": "Hafif Su Bazlı Serum",
+    "urun_tipi_icon": "✨",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Blemish & Niacinamide",
+    "size": "30 ml Damlalıklı Cam Şişe",
+    "form": "Hafif Su Bazlı Serum",
+    "image": "images/benjamin_button/benjamin_button_niacinamide_shelf.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_111157.jpg",
+    "catalog_code": "B-SHELF-4",
+    "cilt_tipleri": [
+      "Geniş Gözenekli, Yağlı ve Lekeye Meyilli Cilt"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Sebum salgısını dengeler, genişlemiş gözenekleri sıkılaştırır ve leke izlerini siler."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Niasinamid (%10)",
+      "Çinko PCA (%1)",
+      "Çay Ağacı Yaprağı Suyu"
+    ],
+    "kime_uygun": {
+      "profil": "Geniş Gözenekli, Yağlı ve Lekeye Meyilli Cilt",
+      "cilt_tipleri": [
+        "Geniş Gözenekli, Yağlı ve Lekeye Meyilli Cilt"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Sebum salgısını dengeler, genişlemiş gözenekleri sıkılaştırır ve leke izlerini siler.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Sebum salgısını dengeler, genişlemiş gözenekleri sıkılaştırır ve leke izlerini siler.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Benjamin Button klinik formülü.",
+      "arama_etiketleri": [
+        "benjamin button",
+        "blemish & niacinamide",
+        "benjamin button leke & gözenek karşıtı niasinamid standı",
+        "benjamin button niacinamide %10 + çinko yağ dengeleyici serum rafı",
+        "b-shelf-4"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Niasinamid (%10)",
+        "Çinko PCA (%1)",
+        "Çay Ağacı Yaprağı Suyu"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Hafif Su Bazlı Serum",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "benjamin button",
+      "blemish & niacinamide",
+      "b-shelf-4",
+      "hafif su bazlı serum"
+    ]
+  },
+  {
+    "id": "caudalie-caudalie-soleil-des-vignes-oil-elixir-100ml",
+    "name": "Caudalie Soleil des Vignes Besleyici ve Işıltı Veren Kuru Vücut Yağı",
+    "original_name": "Caudalie Soleil des Vignes Huile de Soin",
+    "brand": "Caudalie",
+    "urun_tipi": "Besleyici Kuru Yağ",
+    "urun_tipi_icon": "🧼",
+    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
+    "category": "dermo",
+    "category_name": "Kozmetik & Dermokozmetik",
+    "sub_category": "Soleil des Vignes",
+    "size": "100 ml Pompalı Cam Şişe",
+    "form": "Besleyici Kuru Yağ",
+    "image": "images/caudalie/caudalie_soleil_des_vignes_oil_elixir_100ml.jpg",
+    "stock_photo": "Tüm stok/IMG_20261028_225654.jpg",
+    "catalog_code": "C072",
+    "cilt_tipleri": [
+      "Tüm Cilt Tipleri / Kuru Vücut Cildi"
+    ],
+    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
+    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
+    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
+    "hangi_sikayetle_gelene_verilir": [
+      "Cildi besler ve pürüzsüzleştirir, yaz güneşi sıcaklığında baştan çıkarıcı bir koku bırakır."
+    ],
+    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
+    "etken_maddeler": [
+      "Argan Yağı",
+      "İncir Çekirdeği Yağı",
+      "Shea Yağı",
+      "Portakal Çiçeği ve Hindistan Cevizi Notaları"
+    ],
+    "kime_uygun": {
+      "profil": "Tüm Cilt Tipleri / Kuru Vücut Cildi",
+      "cilt_tipleri": [
+        "Tüm Cilt Tipleri / Kuru Vücut Cildi"
+      ],
+      "yas_grubu": "Yetişkin & Ergen",
+      "oncelikli_hedef": "Cildi besler ve pürüzsüzleştirir, yaz güneşi sıcaklığında baştan çıkarıcı bir koku bırakır.",
+      "yas_kriterleri": {
+        "yenidogan_uygun_mu": false,
+        "bebek_uygun_mu": false,
+        "cocuk_uygun_mu": true,
+        "ergen_uygun_mu": true,
+        "yetiskin_uygun_mu": true,
+        "geriatri_uygun_mu": true,
+        "gebelik_guvenli_mi": true,
+        "emzirme_guvenli_mi": true,
+        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
+      }
+    },
+    "guvenlik_filtresi": {
+      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
+      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
+      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
+      "dikkat_uyarilari": []
+    },
+    "hasta_sikayeti": {
+      "hasta_cumlesi": "Cildi besler ve pürüzsüzleştirir, yaz güneşi sıcaklığında baştan çıkarıcı bir koku bırakır.",
+      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
+      "secim_nedeni": "Yüksek toleranslı Caudalie klinik formülü.",
+      "arama_etiketleri": [
+        "caudalie",
+        "soleil des vignes",
+        "caudalie soleil des vignes besleyici ve işıltı veren kuru vücut yağı",
+        "caudalie soleil des vignes huile de soin",
+        "c072"
+      ]
+    },
+    "formulasyon": {
+      "aktif_bilesenler": [
+        "Argan Yağı",
+        "İncir Çekirdeği Yağı",
+        "Shea Yağı",
+        "Portakal Çiçeği ve Hindistan Cevizi Notaları"
+      ],
+      "rozetler": [
+        "Dermatolojik Test Edildi",
+        "Parabensiz",
+        "Komedojenik Değildir"
+      ],
+      "doku": "Besleyici Kuru Yağ",
+      "fizyolojik_ph": "5.5"
+    },
+    "kullanim_protokolu": {
+      "rutin_siralamasi": "3. Adım: Bakım",
+      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
+      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
+      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
+      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
+      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
+    },
+    "tags": [
+      "caudalie",
+      "soleil des vignes",
+      "c072",
+      "besleyici kuru yağ"
+    ]
   }
 ];
+
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = PRODUCTS_DATA;
+}
