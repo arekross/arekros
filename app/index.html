@@ -1,87 +1,89 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="tr" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>arekros — Klinik Dermokozmetik & Danışmanlık Konsolu</title>
-  <meta name="description" content="arekros: Yüksek hızlı profesyonel klinik dermokozmetik danışmanlık konsolu ve yapay zeka ambalaj stüdyosu.">
+  <title>arekros — Minimalist Klinik Atlas & Dermokozmetik Konsolu</title>
+  <meta name="description" content="arekros: Apple Health & Notion estetiğinde minimalist klinik dermokozmetik danışmanlık atlası ve akıllı çalışma masası.">
   <meta name="referrer" content="no-referrer">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="app-container">
+  <div class="atlas-app">
 
     <!-- ========================================================
-         ÜST NAVBAR (AREKROS LOGO + ŞABLON GEÇİŞİ + DURUM + STÜDYO)
+         1. MINIMALIST ÜST NAVBAR (APPLE HEALTH & NOTION ESTETİĞİ)
          ======================================================== -->
-    <header class="navbar">
-      <div class="navbar-left">
-        <div class="brand-badge" title="arekros Klinik Portalı">
-          <div class="brand-icon">◈</div>
-          <div class="brand-text-group">
-            <h1 class="brand-title">arekros</h1>
-            <span class="brand-tag">Klinik Danışmanlık Konsolu</span>
+    <header class="atlas-header">
+      <div class="header-left">
+        <div class="brand-monogram">
+          <span class="brand-logo-icon">◈</span>
+          <div class="brand-text">
+            <span class="brand-name">arekros</span>
+            <span class="brand-subtitle">Klinik Atlas & Danışmanlık</span>
           </div>
         </div>
       </div>
 
-      <!-- Şablon / Görünüm Değiştirici (Template Mode Switcher) -->
-      <div class="navbar-center">
-        <div class="view-mode-switcher">
-          <button type="button" class="mode-tab-btn active" data-mode="workstation" id="btnModeWorkstation">
-            <span class="tab-icon">🩺</span>
-            <span>Klinik Çalışma Masası</span>
+      <!-- Orta: Şablon Seçici (Atlas vs Vitrin) -->
+      <div class="header-center">
+        <div class="segmented-control">
+          <button type="button" class="segment-btn active" data-mode="workstation" id="btnModeWorkstation">
+            <span class="seg-icon">📖</span>
+            <span>Klinik Atlas</span>
           </button>
-          <button type="button" class="mode-tab-btn" data-mode="grid" id="btnModeGrid">
-            <span class="tab-icon">🎴</span>
+          <button type="button" class="segment-btn" data-mode="grid" id="btnModeGrid">
+            <span class="seg-icon">🎴</span>
             <span>Vitrin Kataloğu</span>
           </button>
         </div>
       </div>
 
-      <!-- Sağ Aksiyonlar: Stüdyo Düğmesi & Yeni Ürün Ekle -->
-      <div class="navbar-right">
-        <button type="button" class="server-toggle-pill active" id="headerServerToggleBtn" title="Tıkla: Stüdyo Motorunu Aç/Kapat (Kısayol: SUPER+E)">
-          <span class="toggle-indicator"></span>
-          <span id="headerToggleText">Stüdyo: AÇIK</span>
+      <!-- Sağ: Tema Değiştirici + Akıllı Ekleme -->
+      <div class="header-right">
+        <!-- Aydınlık / Karanlık Tema Anahtarı -->
+        <button type="button" class="theme-toggle-btn" id="btnThemeToggle" title="Temayı Değiştir (Açık / Koyu)">
+          <span class="theme-icon" id="themeIcon">☀️</span>
+          <span class="theme-label" id="themeLabel">Açık Mod</span>
         </button>
 
-        <button type="button" class="btn-primary-studio" id="btnOpenUnifiedStudio">
-          <span class="btn-icon">⚡</span>
-          <span>Yeni Ürün Ekle</span>
+        <!-- Akıllı Ürün Ekle Butonu -->
+        <button type="button" class="btn-primary-action" id="btnOpenUnifiedStudio">
+          <span class="action-icon">📸</span>
+          <span>Akıllı Ürün Ekle</span>
         </button>
       </div>
     </header>
 
     <!-- ========================================================
-         ŞABLON 1: KLİNİK ÇALIŞMA MASASI (SPLIT WORKSTATION ŞABLONU)
+         2. ŞABLON 1: KLİNİK ATLAS (WORKSTATION KONSEP A)
          ======================================================== -->
-    <div class="workstation-container" id="viewWorkstation">
+    <main class="atlas-workstation" id="viewWorkstation">
       
-      <!-- Sol Panel: Hızlı Ürün Gezgini & Filtreleme -->
-      <aside class="workstation-sidebar">
-        <!-- Arama Çubuğu -->
-        <div class="sidebar-search-box">
-          <span class="search-icon">🔍</span>
+      <!-- Sol Panel: Atlas Gezgini & Filtreleme -->
+      <aside class="atlas-sidebar">
+        <!-- Hızlı Arama Kutusu -->
+        <div class="atlas-search-card">
+          <span class="search-symbol">🔍</span>
           <input 
             type="text" 
             id="wsSearchInput" 
-            placeholder="Hızlı arama (ürün, etken madde, şikayet)..."
+            placeholder="Ürün, etken madde veya danışan şikayeti ara..." 
             autocomplete="off"
           >
-          <button type="button" class="btn-clear-search" id="btnWsClearSearch" style="display: none;">✕</button>
-          <span class="search-kbd">Ctrl+K</span>
+          <button type="button" class="btn-clear-input" id="btnWsClearSearch" style="display: none;">✕</button>
+          <kbd class="search-shortcut">Ctrl+K</kbd>
         </div>
 
-        <!-- Marka & Rutin Açılır Filtreleri -->
-        <div class="sidebar-filters">
-          <div class="filter-dropdown-wrap">
-            <label>Marka:</label>
-            <select id="wsBrandSelect" class="styled-select">
+        <!-- Marka & Rutin Açılır Seçicileri -->
+        <div class="atlas-filter-stack">
+          <div class="filter-select-group">
+            <label class="filter-label" for="wsBrandSelect">Marka</label>
+            <select id="wsBrandSelect" class="atlas-select">
               <option value="all">Tüm Markalar</option>
               <option value="Avène">Avène</option>
               <option value="CeraVe">CeraVe</option>
@@ -95,414 +97,486 @@
             </select>
           </div>
 
-          <div class="filter-dropdown-wrap">
-            <label>Rutin:</label>
-            <select id="wsRoutineSelect" class="styled-select">
+          <div class="filter-select-group">
+            <label class="filter-label" for="wsRoutineSelect">Rutin Adımı</label>
+            <select id="wsRoutineSelect" class="atlas-select">
               <option value="all">Tüm Rutinler</option>
-              <option value="Yüz & Vücut Temizleyici">🧼 Temizleyiciler</option>
-              <option value="Serum & Konsantre Bakım">💧 Serumlar</option>
-              <option value="Nemlendirici & Bariyer Krem">🧴 Nemlendiriciler & Kremler</option>
-              <option value="Özel & SOS Onarıcı">🩹 SOS & Onarıcılar</option>
-              <option value="Şampuan & Saç Bakımı">🚿 Şampuan & Saç</option>
-              <option value="Gıda Takviyesi & Vitamin">💊 Takviye & Vitamin</option>
+              <option value="Yüz & Vücut Temizleyici">🧼 1. Temizleyiciler</option>
+              <option value="Serum & Konsantre Bakım">💧 2. Serum & Hedef Bakım</option>
+              <option value="Nemlendirici & Bariyer Krem">🧴 3. Nemlendiriciler & Bariyer</option>
+              <option value="Özel & SOS Onarıcı">🩹 4. SOS & Onarıcılar</option>
+              <option value="Şampuan & Saç Bakımı">🚿 Saç & Banyo</option>
+              <option value="Gıda Takviyesi & Vitamin">💊 Takviye & Vitaminler</option>
             </select>
           </div>
         </div>
 
-        <div class="sidebar-count-bar">
-          <span id="wsCountBadge" class="highlight-count">61 Ürün Hazır</span>
-          <span class="nav-hint">↑ / ↓ Gezin</span>
+        <!-- Ürün Sayacı & Klavye İpucu -->
+        <div class="atlas-sidebar-meta">
+          <span id="wsCountBadge" class="count-pill">61 Ürün Hazır</span>
+          <span class="keyboard-tip">↑ / ↓ Gezin</span>
         </div>
 
-        <!-- Kaydırılabilir Dikey Ürün Listesi -->
-        <div class="sidebar-product-list" id="wsProductList">
-          <!-- Javascript tarafından anında oluşturulur -->
+        <!-- Kaydırılabilir Ürün Listesi -->
+        <div class="atlas-product-list" id="wsProductList">
+          <!-- Dinamik olarak JS tarafından doldurulur -->
         </div>
       </aside>
 
-      <!-- Sağ / Merkez Alan: Devasa Klinik Sahne (Excalidraw Çizimi Mimarisi) -->
-      <section class="workstation-stage" id="wsStage">
-        <!-- Stage Üst Kontrol Barı -->
-        <div class="stage-control-bar">
-          <div class="stage-nav-buttons">
-            <button type="button" class="btn-stage-nav" id="btnWsPrev" title="Önceki Ürün (Sol Ok)">← Önceki</button>
-            <button type="button" class="btn-stage-nav" id="btnWsNext" title="Sonraki Ürün (Sağ Ok)">Sonraki →</button>
+      <!-- Sağ / Merkez Alan: Minimalist Çalışma & Öğrenme Masası -->
+      <section class="atlas-stage" id="wsStage">
+        
+        <!-- Sahne Üst Barı: Başlık, Rozetler ve Hızlı Kontroller -->
+        <div class="stage-nav-strip">
+          <div class="stage-arrow-nav">
+            <button type="button" class="btn-arrow" id="btnWsPrev" title="Önceki Ürün (Sol Ok)">← Önceki</button>
+            <button type="button" class="btn-arrow" id="btnWsNext" title="Sonraki Ürün (Sağ Ok)">Sonraki →</button>
           </div>
 
-          <div class="stage-prod-header">
-            <h2 id="stageProdTitle" class="stage-title">Ürün Adı</h2>
-            <div class="stage-badges">
-              <span class="badge-pill brand" id="stageBrandBadge">Marka</span>
-              <span class="badge-pill type" id="stageTypeBadge">Ürün Tipi</span>
-              <span class="badge-pill subcat" id="stageSubcatBadge">Alt Kategori</span>
-              <span class="badge-pill size" id="stageSizeBadge">Boyut</span>
+          <div class="stage-identity">
+            <h1 id="stageProdTitle" class="stage-product-title">Ürün Adı Yükleniyor...</h1>
+            <div class="stage-badge-row">
+              <span class="atlas-tag brand" id="stageBrandBadge">Marka</span>
+              <span class="atlas-tag type" id="stageTypeBadge">Ürün Tipi</span>
+              <span class="atlas-tag subcat" id="stageSubcatBadge">Alt Kategori</span>
+              <span class="atlas-tag size" id="stageSizeBadge">Boyut</span>
             </div>
           </div>
 
-          <div class="stage-actions">
-            <button type="button" class="btn-copy-note" id="btnWsCopyNote" title="Danışan tavsiye notunu panoya kopyala">
-              📋 Danışan Notunu Kopyala
+          <div class="stage-quick-actions">
+            <button type="button" class="btn-copy-prescription" id="btnWsCopyNote" title="Danışan kullanım notunu panoya kopyala">
+              <span>📋 Danışan Notunu Kopyala</span>
             </button>
           </div>
         </div>
 
-        <!-- 3 Sütunlu İnteraktif Klinik Konsol -->
-        <div class="stage-grid">
+        <!-- 2 Sütunlu Minimalist Atlas Yerleşimi -->
+        <div class="atlas-main-split">
           
-          <!-- Sol Kolon: Blok 1 & Blok 2 -->
-          <div class="stage-col">
-            <!-- BLOK 1: KİME UYGUN? & YAŞ MATRİSİ -->
-            <div class="clinical-box block-1">
-              <div class="box-header">
-                <span class="box-icon">🎯</span>
-                <h3>1. Kime Uygun? & Yaş Matrisi</h3>
+          <!-- Sol Sütun: Dev 4K Ambalaj Sahnesi & Hızlı Künye -->
+          <div class="split-left-visual">
+            <div class="hero-packshot-card">
+              <div class="packshot-canvas">
+                <img id="stageProductImg" src="" alt="Ürün Ambalajı">
+                <button type="button" class="packshot-zoom-trigger" id="btnStageZoom" title="Yüksek Çözünürlükte İncele">
+                  <span>🔍 Büyüt</span>
+                </button>
               </div>
-              <div class="box-content">
-                <div class="section-sub-label">Cilt Tipleri & Durumu:</div>
-                <div id="stageCiltTipleri" class="pills-flex-wrap"></div>
-
-                <div class="section-sub-label" style="margin-top:0.75rem;">🔬 Yaş & Fizyolojik Dönem Filtresi:</div>
-                <div id="stageYasMatrisi" class="age-matrix-grid"></div>
-
-                <div class="section-sub-label" style="margin-top:0.75rem;">📋 Klinik Yaş & Bariyer Değerlendirmesi:</div>
-                <div id="stageYasAciklama" class="clinical-quote-box info"></div>
+              <div class="packshot-footer">
+                <span class="packshot-origin-badge" id="stageImageBadge">Resmi Stüdyo Ambalajı</span>
               </div>
             </div>
 
-            <!-- BLOK 2: GÜVENLİK FİLTRESİ -->
-            <div class="clinical-box warning block-2">
-              <div class="box-header">
-                <span class="box-icon">⚠️</span>
-                <h3>2. Güvenlik Filtresi & Kimler Kullanamaz?</h3>
+            <!-- Hızlı Prospektüs Özeti -->
+            <div class="quick-summary-card">
+              <div class="summary-item">
+                <span class="sum-label">Rutindeki Yeri:</span>
+                <span class="sum-value" id="stageRutinSira">1. Adım</span>
               </div>
-              <div class="box-content">
-                <div class="section-sub-label">Kontrendikasyonlar:</div>
-                <div id="stageKontrendikasyon" class="clinical-quote-box danger"></div>
-
-                <div class="section-sub-label" style="margin-top:0.75rem;">Göz Çevresi & Mukoza:</div>
-                <div id="stageGozCevresi" class="clinical-quote-box warning"></div>
-
-                <div class="section-sub-label" style="margin-top:0.75rem;">Hekime Sevk Kriteri:</div>
-                <div id="stageDoktoraYonlendir" class="clinical-quote-box alert"></div>
+              <div class="summary-item">
+                <span class="sum-label">Doku & Form:</span>
+                <span class="sum-value" id="stageDoku">Hafif doku</span>
+              </div>
+              <div class="summary-item">
+                <span class="sum-label">pH Düzeyi:</span>
+                <span class="sum-value" id="stagePh">Ciltle Uyumlu</span>
               </div>
             </div>
           </div>
 
-          <!-- Orta Kolon: Dev Ambalaj + Blok 3 & Blok 4 -->
-          <div class="stage-col stage-col-center">
-            <!-- Büyük 4:3 Stüdyo Ambalaj Sahnesi -->
-            <div class="stage-hero-image-wrap">
-              <img id="stageProductImg" src="" alt="Ürün Ambalajı">
-              <div class="hero-image-zoom-overlay" id="btnStageZoom" title="Fotoğrafı Büyüt">
-                🔍 Büyüt (Yüksek Çözünürlük)
-              </div>
-              <div class="hero-image-badge" id="stageImageBadge">Resmi Stüdyo Ambalajı</div>
+          <!-- Sağ Sütun: 3 Odaklı Çalışma Konsolu (Sekmeli Notion/Apple Mimarisi) -->
+          <div class="split-right-console">
+            
+            <!-- Konsol Sekmeleri -->
+            <div class="console-tab-bar">
+              <button type="button" class="console-tab active" data-tab="danismanlik" id="tabBtnDanismanlik">
+                <span>📋 Klinik Danışmanlık</span>
+              </button>
+              <button type="button" class="console-tab" data-tab="hafiza" id="tabBtnHafiza">
+                <span>🧠 Hafıza & Çalışma Kartı</span>
+              </button>
+              <button type="button" class="console-tab" data-tab="kaynak" id="tabBtnKaynak">
+                <span>📖 Eczane Eğitim Kaynağı</span>
+              </button>
             </div>
 
-            <!-- BLOK 3: HASTA ŞİKAYETİ & DANIŞMANLIK -->
-            <div class="clinical-box block-3">
-              <div class="box-header">
-                <span class="box-icon">💬</span>
-                <h3>3. Danışan Şikayeti & Eczacı Danışmanlığı</h3>
+            <!-- ==============================================
+                 SEKME 1: KLİNİK DANIŞMANLIK (HASTA BAŞINDA DANIŞMANLIK)
+                 ============================================== -->
+            <div class="console-tab-pane active" id="paneDanismanlik">
+              
+              <!-- 1. Vurgulu Danışan Şikayeti Çağrısı (Notion Callout) -->
+              <div class="notion-callout primary">
+                <div class="callout-icon">💬</div>
+                <div class="callout-body">
+                  <div class="callout-title">Danışan Ne Derse Bu Ürün Verilir?</div>
+                  <p class="callout-quote" id="stageHastaSikayeti">"Cildimde kuruluk ve hassasiyet var..."</p>
+                </div>
               </div>
-              <div class="box-content">
-                <div class="section-sub-label">Hangi Cümleyle Gelene Verilir?:</div>
-                <div id="stageHastaSikayeti" class="clinical-quote-box primary"></div>
 
-                <div class="section-sub-label" style="margin-top:0.75rem;">Eczacının Soracağı Anahtar Soru:</div>
-                <div id="stageEczaciSorusu" class="clinical-quote-box info"></div>
+              <!-- Eczacının Sorusu & Ürün Seçim Nedeni -->
+              <div class="consultation-qa-grid">
+                <div class="qa-card question">
+                  <div class="qa-header">
+                    <span class="qa-icon">🩺</span>
+                    <span class="qa-title">Eczacının Soracağı Anahtar Soru</span>
+                  </div>
+                  <p class="qa-text" id="stageEczaciSorusu">Şikayetin ne zamandır devam ettiğini sorgulayınız.</p>
+                </div>
 
-                <div class="section-sub-label" style="margin-top:0.75rem;">Ürünün Seçilme Nedeni:</div>
-                <div id="stageSecimNedeni" class="clinical-quote-box success"></div>
+                <div class="qa-card reason">
+                  <div class="qa-header">
+                    <span class="qa-icon">💡</span>
+                    <span class="qa-title">Neden Bu Ürün Tercih Edilmeli?</span>
+                  </div>
+                  <p class="qa-text" id="stageSecimNedeni">Bariyeri onaran yüksek toleranslı formülasyon.</p>
+                </div>
               </div>
+
+              <!-- 2. Kime Uygun? & Yaş Matrisi -->
+              <div class="atlas-card-section">
+                <div class="section-title-row">
+                  <span class="sec-icon">🎯</span>
+                  <h3 class="sec-heading">Kime Uygun? & Fizyolojik Dönem Uygunluğu</h3>
+                </div>
+                <div class="cilt-tipleri-wrap" id="stageCiltTipleri"></div>
+                
+                <div class="age-matrix-pills" id="stageYasMatrisi"></div>
+
+                <div class="clinical-note-box" id="stageYasAciklama"></div>
+              </div>
+
+              <!-- 3. Güvenlik Filtresi & Kontrendikasyonlar -->
+              <div class="atlas-card-section warning-border">
+                <div class="section-title-row">
+                  <span class="sec-icon">⚠️</span>
+                  <h3 class="sec-heading">Güvenlik Filtresi: Kimler Kullanamaz?</h3>
+                </div>
+                <div class="safety-grid">
+                  <div class="safety-cell danger">
+                    <span class="cell-label">Kontrendikasyonlar:</span>
+                    <p id="stageKontrendikasyon" class="cell-desc"></p>
+                  </div>
+                  <div class="safety-cell warning">
+                    <span class="cell-label">Göz Çevresi & Mukoza:</span>
+                    <p id="stageGozCevresi" class="cell-desc"></p>
+                  </div>
+                  <div class="safety-cell alert">
+                    <span class="cell-label">Hekime Sevk Kriteri:</span>
+                    <p id="stageDoktoraYonlendir" class="cell-desc"></p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 4. Kullanım Protokolü & Uygulama -->
+              <div class="atlas-card-section">
+                <div class="section-title-row">
+                  <span class="sec-icon">⏱️</span>
+                  <h3 class="sec-heading">Kullanım Protokolü & Beklenen Sonuç</h3>
+                </div>
+                <div class="protocol-grid">
+                  <div class="protocol-cell">
+                    <span class="proto-label">Zaman & Sıklık:</span>
+                    <p id="stageZamanSiklik" class="proto-desc"></p>
+                  </div>
+                  <div class="protocol-cell">
+                    <span class="proto-label">Uygulama Şekli & Etki:</span>
+                    <p id="stageUygulamaSekli" class="proto-desc"></p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 5. Formülasyon, Aktifler ve Rozetler -->
+              <div class="atlas-card-section">
+                <div class="section-title-row">
+                  <span class="sec-icon">🧪</span>
+                  <h3 class="sec-heading">Formülasyon & Öne Çıkan Aktifler</h3>
+                </div>
+                <div class="actives-flex" id="stageAktifBilesenler"></div>
+                <div class="badges-flex" id="stageKlinikRozetler"></div>
+              </div>
+
+              <!-- 6. Kombinasyon & Muadil Rehberi -->
+              <div class="atlas-card-section">
+                <div class="section-title-row">
+                  <span class="sec-icon">🔄</span>
+                  <h3 class="sec-heading">Kombinasyon & Muadil Rehberi</h3>
+                </div>
+                <div class="duo-grid">
+                  <div class="duo-box safe">
+                    <span class="duo-label">Birlikte Güvenle Önerilebilecekler:</span>
+                    <p id="stageKombinasyonOneri"></p>
+                  </div>
+                  <div class="duo-box alt">
+                    <span class="duo-label">En Yakın Alternatif / Muadil:</span>
+                    <p id="stageMuadilOneri"></p>
+                  </div>
+                </div>
+              </div>
+
             </div>
 
-            <!-- BLOK 4: FORMÜLASYON & AKTİFLER -->
-            <div class="clinical-box block-4">
-              <div class="box-header">
-                <span class="box-icon">🧪</span>
-                <h3>4. Formülasyon & Aktif Bileşenler</h3>
-              </div>
-              <div class="box-content">
-                <div class="section-sub-label">Öne Çıkan Aktif Maddeler:</div>
-                <div id="stageAktifBilesenler" class="pills-flex-wrap"></div>
+            <!-- ==============================================
+                 SEKME 2: HAFIZA & ÇALIŞMA KARTI (FLASHCARD / QUIZ MODU)
+                 ============================================== -->
+            <div class="console-tab-pane" id="paneHafiza" style="display: none;">
+              <div class="flashcard-container">
+                <div class="flashcard-intro">
+                  <h3>🧠 Görsel Ezberleme & Öğrenme Modu</h3>
+                  <p>Bu ürün hakkındaki bilgilerini test et. Ambalajı incele, soruyu cevapla ve kartı çevirerek kontrol et.</p>
+                </div>
 
-                <div class="section-sub-label" style="margin-top:0.75rem;">Klinik Rozetler:</div>
-                <div id="stageKlinikRozetler" class="pills-flex-wrap"></div>
+                <div class="interactive-flashcard" id="flashcardBox">
+                  <!-- Kart Ön Yüzü -->
+                  <div class="flashcard-side flashcard-front">
+                    <div class="fc-badge">GÖRSEL SORU</div>
+                    <div class="fc-image-wrap">
+                      <img id="fcImg" src="" alt="Soru Ambalajı">
+                    </div>
+                    <h2 class="fc-question-title" id="fcQuestionTitle">Bu ürün hangi durumda danışana tavsiye edilir?</h2>
+                    <p class="fc-hint">İpucu: Marka ve formülasyon özelliklerini hatırla.</p>
+                    <button type="button" class="btn-flip-card" id="btnFlipCard">
+                      <span>Cevabı Göster (Kartı Çevir) 🔄</span>
+                    </button>
+                  </div>
 
-                <div class="section-sub-label" style="margin-top:0.75rem;">Doku & pH:</div>
-                <div class="meta-inline-row">
-                  <span id="stageDoku" class="meta-pill">Doku</span>
-                  <span id="stagePh" class="meta-pill">pH</span>
+                  <!-- Kart Arka Yüzü -->
+                  <div class="flashcard-side flashcard-back">
+                    <div class="fc-badge answer">ÖĞRENME BİLGİSİ</div>
+                    <h3 class="fc-prod-name" id="fcProdName">Ürün Adı</h3>
+                    
+                    <div class="fc-answer-block">
+                      <strong>💬 Danışan Şikayeti:</strong>
+                      <p id="fcComplaint"></p>
+                    </div>
+
+                    <div class="fc-answer-block">
+                      <strong>🧪 Öne Çıkan Aktifler:</strong>
+                      <p id="fcActives"></p>
+                    </div>
+
+                    <div class="fc-answer-block">
+                      <strong>⚠️ Önemli Güvenlik Sınırı:</strong>
+                      <p id="fcSafety"></p>
+                    </div>
+
+                    <div class="fc-answer-block">
+                      <strong>🧴 Kullanım Kuralı:</strong>
+                      <p id="fcProtocol"></p>
+                    </div>
+
+                    <div class="fc-review-buttons">
+                      <button type="button" class="btn-fc-check" id="btnFcKnown">✓ Öğrendim / Biliyorum</button>
+                      <button type="button" class="btn-fc-again" id="btnFcAgain">🔄 Tekrar Göster</button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Çalışma İstatistik Rozeti -->
+                <div class="flashcard-stats-pill">
+                  <span id="fcStatsText">Çalışılan Ürün: 1 / 61</span>
                 </div>
               </div>
             </div>
+
+            <!-- ==============================================
+                 SEKME 3: ECZANE EĞİTİM REHBERİ (PDF KAYNAKLARI)
+                 ============================================== -->
+            <div class="console-tab-pane" id="paneKaynak" style="display: none;">
+              <div class="training-ref-container">
+                <div class="ref-guide-card">
+                  <div class="ref-guide-header">
+                    <span class="ref-icon">📑</span>
+                    <div>
+                      <h3 class="ref-title">Eczane Dermokozmetik Eğitim Kılavuzu</h3>
+                      <span class="ref-subtitle">Emre Ege Eczanesi Resmi Ürün Eğitimi Verileri</span>
+                    </div>
+                  </div>
+                  
+                  <div class="ref-content-body">
+                    <div class="ref-section">
+                      <h4>📌 Ürünün Resmi Eğitim Özeti</h4>
+                      <div class="ref-text-box" id="refDocSummary">
+                        Bu ürünün klinik danışmanlık künyesi, eczane eğitim el kitabındaki endikasyon, kontrendikasyon ve etken madde standartlarına göre hazırlanmıştır.
+                      </div>
+                    </div>
+
+                    <div class="ref-section">
+                      <h4>📚 İlgili Eğitim Dokümanı</h4>
+                      <div class="ref-doc-badge" id="refDocBadge">
+                        <span>📄 Emre_Ege_Eczanesi_Egitim_Rehberi.pdf</span>
+                      </div>
+                    </div>
+
+                    <div class="ref-section">
+                      <h4>💡 Eczacı Pratik Notu</h4>
+                      <div class="ref-tip-box" id="refPharmacistTip">
+                        Danışana verirken kullanım sıklığını ve güneş koruyucu ihtiyacını mutlaka sözlü olarak teyit ediniz.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========================================================
+         3. ŞABLON 2: VİTRİN KATALOĞU (GRID GÖRÜNÜMÜ)
+         ======================================================== -->
+    <section class="atlas-grid-view" id="viewGrid" style="display: none;">
+      <!-- Filtre Çipleri -->
+      <div class="grid-filter-toolbar">
+        <div class="brand-chips-scroll" id="brandFilterRow">
+          <button type="button" class="filter-chip active" data-brand="all">Tüm Markalar</button>
+          <button type="button" class="filter-chip" data-brand="Avène">Avène</button>
+          <button type="button" class="filter-chip" data-brand="CeraVe">CeraVe</button>
+          <button type="button" class="filter-chip" data-brand="Mustela">Mustela</button>
+          <button type="button" class="filter-chip" data-brand="Bioderma">Bioderma</button>
+          <button type="button" class="filter-chip" data-brand="La Roche-Posay">La Roche-Posay</button>
+          <button type="button" class="filter-chip" data-brand="Caudalie">Caudalie</button>
+          <button type="button" class="filter-chip" data-brand="Ducray">Ducray</button>
+          <button type="button" class="filter-chip" data-brand="Ocean">Ocean</button>
+          <button type="button" class="filter-chip" data-brand="Sensodyne">Sensodyne</button>
+        </div>
+
+        <div class="routine-chips-scroll" id="routineFilterRow">
+          <button type="button" class="filter-chip active" data-routine="all">Tüm Rutinler</button>
+          <button type="button" class="filter-chip" data-routine="Yüz & Vücut Temizleyici">Temizleyiciler</button>
+          <button type="button" class="filter-chip" data-routine="Serum & Konsantre Bakım">Serumlar</button>
+          <button type="button" class="filter-chip" data-routine="Nemlendirici & Bariyer Krem">Nemlendiriciler & Kremler</button>
+          <button type="button" class="filter-chip" data-routine="Özel & SOS Onarıcı">SOS & Onarıcılar</button>
+          <button type="button" class="filter-chip" data-routine="Şampuan & Saç Bakımı">Şampuan & Saç</button>
+          <button type="button" class="filter-chip" data-routine="Gıda Takviyesi & Vitamin">Takviye & Vitamin</button>
+        </div>
+      </div>
+
+      <!-- Kart Izgarası -->
+      <div class="atlas-catalog-grid" id="catalogProductGrid">
+        <!-- JS Tarafından kartlar oluşturulur -->
+      </div>
+    </section>
+
+    <!-- ========================================================
+         4. AKILLI ÜRÜN YÜKLEME & DOĞRULAMA MODALI (GÜVEN SKORLU)
+         ======================================================== -->
+    <div class="atlas-modal" id="unifiedStudioModal" aria-hidden="true" role="dialog">
+      <div class="modal-card">
+        <!-- Modal Başlığı -->
+        <div class="modal-head">
+          <div class="head-text">
+            <h2>📸 Akıllı Ürün Tanıma & Ekleme Stüdyosu</h2>
+            <p>Eczane rafı veya masa fotoğrafını yükleyin; sistem net olanları onaylar, okunamayanları uyarır.</p>
+          </div>
+          <button type="button" class="btn-close-modal" id="btnCloseUnifiedStudio">&times;</button>
+        </div>
+
+        <!-- Sekmeler: Toplu Raf/Masa vs Tekil Arama -->
+        <div class="modal-tab-row">
+          <button type="button" class="mod-tab-btn active" data-tab="shelf" id="tabModShelf">
+            <span>📸 Eczane Rafı / Masa Fotoğrafı (Toplu)</span>
+          </button>
+          <button type="button" class="mod-tab-btn" data-tab="single" id="tabModSingle">
+            <span>🔍 Webden İsimle Tekil Ürün Ekle</span>
+          </button>
+        </div>
+
+        <!-- Sekme 1: Toplu Tanıma & Doğrulama Ekranı -->
+        <div class="modal-body-pane" id="tabPaneShelf">
+          
+          <!-- Adım 1: Fotoğraf Yükleme -->
+          <div class="wizard-step" id="wizardStepUpload">
+            <div class="upload-dropzone" id="shelfDropZone">
+              <div class="drop-icon">📸</div>
+              <h3>Raf veya Toplu Masa Fotoğrafını Sürükleyip Bırakın</h3>
+              <p>Tek karede 5-10 ürün veya tüm rafı yükleyebilirsiniz.</p>
+              <button type="button" class="btn-browse-file" id="btnShelfBrowse">
+                <span>📁 Dosya Seç</span>
+              </button>
+              <input type="file" id="shelfFileInput" accept="image/*" style="display: none;">
+            </div>
+
+            <div class="sample-actions-row">
+              <span class="sample-label">Veya Hazır Rafla Test Et:</span>
+              <button type="button" class="btn-sample-shelf" id="btnSampleAvene">⚡ Avène Rafını Tara (8 Ürün)</button>
+              <button type="button" class="btn-sample-shelf" id="btnSampleCerave">⚡ CeraVe Rafını Tara (8 Ürün)</button>
+            </div>
           </div>
 
-          <!-- Sağ Kolon: Blok 5 & Blok 6 & Blok 7 -->
-          <div class="stage-col">
-            <!-- BLOK 5: KULLANIM PROTOKOLÜ -->
-            <div class="clinical-box block-5">
-              <div class="box-header">
-                <span class="box-icon">⏱️</span>
-                <h3>5. Kullanım Protokolü & Rutin</h3>
-              </div>
-              <div class="box-content">
-                <div class="section-sub-label">Rutindeki Sırası:</div>
-                <div id="stageRutinSira" class="routine-order-badge"></div>
-
-                <div class="section-sub-label" style="margin-top:0.75rem;">Zaman & Sıklık:</div>
-                <div id="stageZamanSiklik" class="clinical-quote-box info"></div>
-
-                <div class="section-sub-label" style="margin-top:0.75rem;">Uygulama Şekli & Beklenen Sonuç:</div>
-                <div id="stageUygulamaSekli" class="clinical-quote-box"></div>
+          <!-- Adım 2: Akıllı Tanıma & Doğrulama (Confidence Review) -->
+          <div class="wizard-step" id="wizardStepReview" style="display: none;">
+            <div class="review-status-banner">
+              <span class="status-icon">🔍</span>
+              <div>
+                <h4 id="reviewStatusTitle">Görsel Analiz Edildi</h4>
+                <p id="reviewStatusSubtitle">Tespit edilen ürünlerin doğruluk durumu aşağıda listelenmiştir.</p>
               </div>
             </div>
 
-            <!-- BLOK 6: KOMBİNASYON & ETKİLEŞİMLER -->
-            <div class="clinical-box block-6">
-              <div class="box-header">
-                <span class="box-icon">🤝</span>
-                <h3>6. Kombinasyon & Etkileşimler</h3>
-              </div>
-              <div class="box-content">
-                <div class="section-sub-label">Birlikte Güvenle Önerilebilecekler:</div>
-                <div id="stageTamamlayici" class="pills-flex-wrap"></div>
-
-                <div class="section-sub-label" style="margin-top:0.75rem;">Çakışan & Birlikte Kullanılmayacaklar:</div>
-                <div id="stageYasakliCakisma" class="pills-flex-wrap danger"></div>
-              </div>
+            <!-- Algılanan Ürünler Listesi (Güven Rozetleriyle) -->
+            <div class="detected-items-flow" id="detectedProductsList">
+              <!-- JS tarafından dinamik doldurulur -->
             </div>
 
-            <!-- BLOK 7: MUADİL REHBERİ -->
-            <div class="clinical-box block-7">
-              <div class="box-header">
-                <span class="box-icon">🔄</span>
-                <h3>7. Muadil Rehberi</h3>
-              </div>
-              <div class="box-content">
-                <div class="section-sub-label">En Yakın Eşdeğer / Alternatif:</div>
-                <div id="stageEnYakinMuadil" class="clinical-quote-box success"></div>
+            <!-- Eylem Butonları -->
+            <div class="review-action-bar">
+              <button type="button" class="btn-secondary-action" id="btnWizardBackUpload">← Yeni Fotoğraf Yükle</button>
+              <button type="button" class="btn-primary-action" id="btnFetchOfficialImages">
+                <span>🌐 Resmi Sitelerden 4K Ambalajları Getir & Ekle</span>
+              </button>
+            </div>
+          </div>
 
-                <div class="section-sub-label" style="margin-top:0.75rem;">Fark & Üstünlük Notu:</div>
-                <div id="stageMuadilFark" class="clinical-quote-box"></div>
-              </div>
+          <!-- Adım 3: Resmi Ambalaj Seçimi & Onay -->
+          <div class="wizard-step" id="wizardStepPackshots" style="display: none;">
+            <div class="packshot-step-header">
+              <h3 id="currentReviewItemTitle">1. Ürün: Resmi Ambalaj Seçimi</h3>
+              <p>Resmi marka web sitelerinden çekilen en yüksek kaliteli ambalajı seçin.</p>
+            </div>
+
+            <div class="packshots-candidate-grid" id="packshotCandidatesGrid"></div>
+
+            <div class="wizard-nav-controls">
+              <button type="button" class="btn-arrow" id="btnWizardPrevItem">← Önceki Ürün</button>
+              <button type="button" class="btn-primary-action" id="btnWizardConfirmItem">Bu Ambalajı Kataloğa Ekle & İlerle →</button>
             </div>
           </div>
 
         </div>
-      </section>
 
+        <!-- Sekme 2: Webden İsimle Tekil Arama -->
+        <div class="modal-body-pane" id="tabPaneSingle" style="display: none;">
+          <div class="single-search-box">
+            <input type="text" id="singleProductNameInput" placeholder="Örn: Caudalie Vinoperfect Leke Serumu 30ml..." class="atlas-input">
+            <button type="button" class="btn-primary-action" id="btnSearchSingleProduct">
+              <span>Ara & Resmi Ambalajı Bul</span>
+            </button>
+          </div>
+
+          <div id="singleResultsContainer" class="single-results-flow" style="display: none;"></div>
+        </div>
+
+      </div>
     </div>
 
     <!-- ========================================================
-         ŞABLON 2: VİTRİN KATALOĞU (GRID VIEW MODU)
+         5. YÜKSEK ÇÖZÜNÜRLÜK LIGHTBOX
          ======================================================== -->
-    <div class="grid-mode-container" id="viewGrid" style="display: none;">
-      <!-- Marka & Rutin Barı -->
-      <div class="filter-wrapper">
-        <div class="filter-scroll-container">
-          <div class="filter-chips-row" id="brandFilterRow">
-            <button class="filter-chip active" data-brand="all">Tüm Markalar</button>
-            <button class="filter-chip" data-brand="Avène">Avène</button>
-            <button class="filter-chip" data-brand="CeraVe">CeraVe</button>
-            <button class="filter-chip" data-brand="Mustela">Mustela</button>
-            <button class="filter-chip" data-brand="Bioderma">Bioderma</button>
-            <button class="filter-chip" data-brand="La Roche-Posay">La Roche-Posay</button>
-            <button class="filter-chip" data-brand="Caudalie">Caudalie</button>
-            <button class="filter-chip" data-brand="Ducray">Ducray</button>
-            <button class="filter-chip" data-brand="Ocean">Ocean</button>
-            <button class="filter-chip" data-brand="Sensodyne">Sensodyne</button>
-          </div>
-        </div>
-
-        <div class="routine-pills-row" id="routineFilterRow">
-          <button class="routine-pill active" data-type="all">Tüm Rutinler</button>
-          <button class="routine-pill" data-type="Yüz & Vücut Temizleyici">🧼 Temizleyiciler</button>
-          <button class="routine-pill" data-type="Serum & Konsantre Bakım">💧 Serumlar</button>
-          <button class="routine-pill" data-type="Nemlendirici & Bariyer Krem">🧴 Nemlendiriciler & Kremler</button>
-          <button class="routine-pill" data-type="Özel & SOS Onarıcı">🩹 SOS & Onarıcılar</button>
-          <button class="routine-pill" data-type="Şampuan & Saç Bakımı">🚿 Şampuan & Saç</button>
-          <button class="routine-pill" data-type="Gıda Takviyesi & Vitamin">💊 Takviye & Vitamin</button>
-        </div>
+    <div class="atlas-lightbox" id="imageLightbox" aria-hidden="true">
+      <div class="lightbox-overlay" id="lightboxOverlay"></div>
+      <div class="lightbox-dialog">
+        <button type="button" class="lightbox-close" id="btnCloseLightbox">&times;</button>
+        <img id="lightboxImg" src="" alt="Büyük Ürün Ambalajı">
+        <div class="lightbox-caption" id="lightboxCaption"></div>
       </div>
-
-      <div class="catalog-header-bar">
-        <div class="catalog-count-pill" id="catalogCountPill">61 Ürün Hazır</div>
-        <div class="catalog-filter-info" id="catalogFilterInfo"></div>
-      </div>
-
-      <div class="catalog-grid" id="catalogProductGrid"></div>
     </div>
 
   </div>
 
-  <!-- ========================================================
-       TEK BİRLEŞİK STÜDYO MODALI (YENİ ÜRÜN EKLEME)
-       ======================================================== -->
-  <div class="unified-studio-modal" id="unifiedStudioModal" aria-hidden="true" role="dialog">
-    <div class="studio-window">
-      <!-- Modal Header -->
-      <div class="studio-header">
-        <div class="studio-header-title">
-          <h2>✨ arekros Ambalaj & Ürün Stüdyosu</h2>
-          <span class="studio-subtitle">0.7s AI Arka Plan Temizleme & Otomatik 7 Blok Klinik Künye</span>
-        </div>
-        <button class="btn-close-modal" id="btnCloseUnifiedStudio">&times;</button>
-      </div>
-
-      <!-- Sekme Seçimi (Tabs Segmented Control) -->
-      <div class="studio-tabs-bar">
-        <button type="button" class="studio-tab-btn active" data-tab="shelf">
-          <span>📸 Eczane Rafından Otomatik Ekle (Toplu Tarama)</span>
-        </button>
-        <button type="button" class="studio-tab-btn" data-tab="single">
-          <span>🔍 Webden İsimle Tekil Ürün Ekle</span>
-        </button>
-      </div>
-
-      <div class="studio-content">
-
-        <!-- SEKME 1: RAFTAN SIRALI EKLEME AKIŞI -->
-        <div class="studio-tab-pane active" id="tabPaneShelf">
-          
-          <!-- Adım 1: Raf Yükleme / Dropzone -->
-          <div class="shelf-step" id="wizardStepUpload">
-            <div class="shelf-dropzone-box" id="shelfDropzone">
-              <div class="drop-icon">📸</div>
-              <h3>Raf veya Toplu Ürün Fotoğrafını Sürükleyip Bırakın</h3>
-              <p>veya bilgisayarınızdan dosya seçin (Avène, CeraVe, Mustela, Bioderma vb.)</p>
-              <input type="file" id="shelfFileInput" accept="image/*" style="display: none;">
-              <button type="button" class="btn-file-browse" id="btnBrowseShelfFile">📁 Fotoğraf Seç</button>
-            </div>
-
-            <div class="sample-divider"><span>VEYA HAZIR RAF FOTOĞRAFIYLA TEST ET</span></div>
-
-            <div class="sample-actions-row">
-              <button type="button" class="btn-sample-action avene" id="btnLoadSampleAvene">
-                ⚡ Avène Rafını Tara (8 Ürün)
-              </button>
-              <button type="button" class="btn-sample-action cerave" id="btnLoadSampleShelf">
-                ⚡ CeraVe Rafını Tara (8 Ürün)
-              </button>
-            </div>
-
-            <!-- OCR Yükleniyor Göstergesi -->
-            <div class="scanning-indicator" id="shelfScanningState" style="display: none;">
-              <div class="spinner-neon"></div>
-              <h4>🔍 Fotoğraf Taranıyor & Ürünler Çıkarılıyor...</h4>
-              <p>Yapay zeka ile marka ve Türkçe ambalajlar eşleştiriliyor.</p>
-            </div>
-          </div>
-
-          <!-- Adım 2: Tespit Edilen Ürünleri İnceleme & Düzenleme -->
-          <div class="shelf-step" id="wizardStepReview" style="display: none;">
-            <div class="review-top-bar">
-              <div class="review-shelf-preview">
-                <img id="reviewShelfThumb" src="" alt="Raf Önizleme">
-                <span class="badge-brand" id="reviewDetectedBrand">Avène</span>
-              </div>
-              <div class="review-title-info">
-                <h3>📋 Raftan <span id="reviewCountBadge" class="highlight-cyan">8 Ürün</span> Tespit Edildi</h3>
-                <p>İsimleri dilediğiniz gibi düzenleyebilir, istemediğinizi silebilir veya yeni ürün ekleyebilirsiniz.</p>
-              </div>
-            </div>
-
-            <div class="detected-items-list" id="detectedProductsList"></div>
-
-            <div class="add-extra-item-row">
-              <input type="text" id="inputNewDetectedItem" placeholder="+ Rafta eksik kalan ürün adını Türkçe yazın...">
-              <button type="button" class="btn-add-extra" id="btnAddDetectedItem">+ Listeye Ekle</button>
-            </div>
-
-            <div class="review-actions-bar">
-              <button type="button" class="btn-step-back" id="btnBackToUpload">⏮️ Yeni Fotoğraf Seç</button>
-              <button type="button" class="btn-step-next" id="btnStartPackshots">
-                🚀 Türkçe Resmi Ambalaj Aramasını Başlat (<span id="btnStartCount">8</span> Ürün) ➔
-              </button>
-            </div>
-          </div>
-
-          <!-- Adım 3: Sıralı Ambalaj Seçimi (Packshot Grid) -->
-          <div class="shelf-step" id="wizardStepPackshots" style="display: none;">
-            <div class="packshots-topbar">
-              <button type="button" class="btn-subtle-back" id="btnBackToReview">⏮️ Listeye Dön</button>
-              <div class="wizard-queue-chips" id="wizardQueueChips"></div>
-            </div>
-
-            <div class="active-product-summary">
-              <div class="active-prod-info">
-                <span class="queue-tag" id="wizardQueueTag">Raf Ürünü 1/8</span>
-                <h3 class="active-prod-title" id="wizardActiveName">Ürün Adı</h3>
-                <div class="active-prod-badges">
-                  <span class="badge-pill type" id="wizardActiveType">🧼 Temizleyici</span>
-                  <span class="badge-pill brand" id="wizardActiveBrand">Marka</span>
-                  <span class="badge-pill size" id="wizardActiveSize">Boyut</span>
-                </div>
-              </div>
-              <button type="button" class="btn-skip-item" id="btnWizardSkip">Bu Ürünü Atla ⏭️</button>
-            </div>
-
-            <div class="packshot-selection-header">
-              <h4>🖼️ En Beğendiğiniz Resmi Ambalajı Seçin (İncelemek için Büyütebilirsiniz):</h4>
-            </div>
-
-            <div class="loading-state" id="wizardLoading" style="display: none;">
-              <div class="spinner-small"></div>
-              <span>Resmi stüdyo fotoğrafları taranıyor...</span>
-            </div>
-
-            <div class="wizard-packshot-grid" id="wizardPackshotGrid"></div>
-          </div>
-
-        </div>
-
-        <!-- SEKME 2: WEBDEN TEKİL ÜRÜN ARAMA & EKLEME -->
-        <div class="studio-tab-pane" id="tabPaneSingle" style="display: none;">
-          <div class="single-search-box">
-            <label>Eklemek İstediğiniz Ürünün Adını Yazın:</label>
-            <div class="search-action-row">
-              <input type="text" id="singleSearchInput" placeholder="Örn: Caudalie Vinosun Protect SPF50+, Bioderma Sensibio H2O 500ml...">
-              <button type="button" class="btn-single-search" id="btnSingleSearch">
-                🔍 Görselleri Getir (8 Seçenek)
-              </button>
-            </div>
-          </div>
-
-          <div class="loading-state" id="singleLoading" style="display: none;">
-            <div class="spinner-small"></div>
-            <span>Resmi marka ve eczane kaynakları taranıyor...</span>
-          </div>
-
-          <!-- 8'li Görsel Galerisi -->
-          <div class="single-gallery-container" id="singleGalleryContainer" style="display: none;">
-            <div class="gallery-info-title">👇 Beğendiğiniz ambalaj fotoğrafına tıklayın:</div>
-            <div class="wizard-packshot-grid" id="singleGalleryGrid"></div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <!-- ========================================================
-       LIGHTBOX BÜYÜTME MODALI
-       ======================================================== -->
-  <div class="lightbox-modal" id="lightboxModal" aria-hidden="true">
-    <button class="btn-close-lightbox" id="btnCloseLightbox" title="Kapat">&times;</button>
-    <div class="lightbox-content">
-      <img class="lightbox-img" id="lightboxImg" src="" alt="Büyük Görsel">
-      <div class="lightbox-caption" id="lightboxCaption">Ürün Adı</div>
-      <button type="button" class="btn-lightbox-select" id="btnLightboxSelect" style="display: none;">
-        ✓ Bu Ambalajı Seç & Stüdyo Fonuna Dönüştür
-      </button>
-    </div>
-  </div>
-
-  <!-- Toast Bildirimi -->
-  <div class="toast-notification" id="toastNotification"></div>
-
-  <!-- Scriptler -->
+  <!-- Ürün Veri Kaynağı & Uygulama Mantığı -->
   <script src="data/products.js"></script>
   <script src="app.js"></script>
 </body>
