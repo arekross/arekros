@@ -1,6 +1,6 @@
 // Arekros Verified Dermocosmetics & Pharmacy Catalog
 // Generated Automatically from 119 Stock Items Audit
-const PRODUCTS_DATA = [
+window.PRODUCTS_DATA = [
   {
     "id": "takviyeler-voonka-one-and-only-multivitamin",
     "name": "Voonka One & Only Kadın/Erkek Multivitamin & Günlük Bağışıklık Destek Standı",
@@ -11588,6 +11588,9 @@ const PRODUCTS_DATA = [
   }
 ];
 
+var PRODUCTS_DATA = typeof window !== 'undefined' ? window.PRODUCTS_DATA : [];
+
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = PRODUCTS_DATA;
 }
+

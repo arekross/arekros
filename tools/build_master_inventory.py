@@ -2359,7 +2359,7 @@ def update_products_database():
     print(f"[OK] Saved {len(new_products_list)} products to {json_path}")
     
     # Save products.js
-    js_content = f"// Arekros Verified Dermocosmetics & Pharmacy Catalog\n// Generated Automatically from 119 Stock Items Audit\nconst PRODUCTS_DATA = {json.dumps(new_products_list, indent=2, ensure_ascii=False)};\n\nif (typeof module !== 'undefined' && module.exports) {{\n    module.exports = PRODUCTS_DATA;\n}}\n"
+    js_content = f"// Arekros Verified Dermocosmetics & Pharmacy Catalog\n// Generated Automatically from 119 Stock Items Audit\nwindow.PRODUCTS_DATA = {json.dumps(new_products_list, indent=2, ensure_ascii=False)};\n\nvar PRODUCTS_DATA = typeof window !== 'undefined' ? window.PRODUCTS_DATA : [];\n\nif (typeof module !== 'undefined' && module.exports) {{\n    module.exports = PRODUCTS_DATA;\n}}\n"
     with open(js_path, 'w', encoding='utf-8') as f:
         f.write(js_content)
     print(f"[OK] Saved products.js successfully")

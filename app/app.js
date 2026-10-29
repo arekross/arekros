@@ -47,11 +47,12 @@
     if (el) el.textContent = text || '';
   }
 
-  // --- 1. VERİ HAZIRLIĞI & ZENGİNLEŞTİRME ---
   function getEffectiveProducts() {
     let base = [];
     if (typeof window.PRODUCTS_DATA !== 'undefined' && Array.isArray(window.PRODUCTS_DATA)) {
       base = window.PRODUCTS_DATA;
+    } else if (typeof PRODUCTS_DATA !== 'undefined' && Array.isArray(PRODUCTS_DATA)) {
+      base = PRODUCTS_DATA;
     }
     
     try {
