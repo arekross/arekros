@@ -15,9 +15,11 @@ scratch/
 *.log
 /tmp/
 
-# Raw phone photos (uncompressed camera archives)
+# Raw phone photos & local bulk downloads
 ürünler/
 Tüm stok/
+Solgar_Urun_Fotograflari/
+urun_gorselleri/
 
 # System files
 .DS_Store
