@@ -5,7 +5,13 @@
   <meta http-equiv="refresh" content="0; url=app/">
   <title>arekros — Yönlendiriliyor...</title>
   <script>
-    window.location.replace("app/");
+    (function() {
+      var path = window.location.pathname;
+      if (!path.endsWith('/')) {
+        path += '/';
+      }
+      window.location.replace(window.location.origin + path + 'app/');
+    })();
   </script>
 </head>
 <body style="background:#0a0d14; color:#94a3b8; font-family:sans-serif; display:flex; align-items:center; justify-content:center; height:100vh; margin:0;">
