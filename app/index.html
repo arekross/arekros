@@ -27,7 +27,13 @@
       </div>
 
       <div class="header-actions">
-        <span class="live-count-badge" id="liveCountBadge">254 Ürün</span>
+        <button type="button" class="btn-primary-action" id="btnOpenAddModal" title="Yeni Ürün Ekle">
+          <span>➕</span>
+          <span class="btn-text">Ekle</span>
+        </button>
+        <button type="button" class="icon-btn" id="btnOpenSettings" aria-label="Ayarlar ve Senkronizasyon" title="Ayarlar & Senkronizasyon">
+          <span>⚙️</span>
+        </button>
         <button type="button" class="theme-btn" id="themeToggleBtn" aria-label="Temayı Değiştir" title="Açık / Koyu Tema">
           <span id="themeIcon">☀️</span>
         </button>
@@ -79,7 +85,10 @@
       
       <!-- Aktif Filtre Bilgi Satırı -->
       <div class="filter-status-row">
-        <span class="status-text" id="statusText">Tüm ürünler gösteriliyor</span>
+        <div class="status-left">
+          <span class="live-count-badge" id="liveCountBadge">254 Ürün</span>
+          <span class="status-text" id="statusText">Tüm ürünler gösteriliyor</span>
+        </div>
         <button type="button" class="reset-filter-btn" id="resetFilterBtn" style="display: none;">Filtreleri Temizle</button>
       </div>
 
@@ -140,11 +149,15 @@
           <!-- Cilt Tipleri & Yaş Grubu Çipleri -->
         </div>
 
-        <!-- Danışan Bilgi Notunu Kopyala Butonu -->
+        <!-- Danışan Notu Kopyala & Düzenle Butonları -->
         <div class="copy-action-box">
           <button type="button" class="btn-copy-note" id="btnCopyNote">
             <span class="copy-icon">📋</span>
-            <span id="copyBtnText">Danışan Notunu Kopyala (WhatsApp / SMS)</span>
+            <span id="copyBtnText">Notu Kopyala</span>
+          </button>
+          <button type="button" class="btn-edit-product" id="btnEditCurrentProduct" title="Bu Ürünün Bilgilerini Düzenle">
+            <span>✏️</span>
+            <span>Düzenle</span>
           </button>
         </div>
 
@@ -195,7 +208,203 @@
   </div>
 
   <!-- ========================================================
-       5. YÜKSEK ÇÖZÜNÜRLÜK FOTOĞRAF LIGHTBOX (BÜYÜTÜCÜ)
+       5. ÜRÜN EKLE / DÜZENLE MODAL FORMU (EDITOR BOTTOM SHEET)
+       ======================================================== -->
+  <div class="modal-backdrop editor-backdrop" id="editorModalBackdrop">
+    <div class="detail-sheet editor-sheet" id="editorSheet" role="dialog" aria-modal="true" aria-labelledby="editorSheetTitle">
+      
+      <div class="sheet-handle-bar">
+        <span class="sheet-handle"></span>
+      </div>
+
+      <button type="button" class="modal-close-btn" id="editorCloseBtn" aria-label="Kapat">✕</button>
+
+      <form id="productEditForm" class="editor-form">
+        <div class="editor-header">
+          <h2 class="editor-title" id="editorSheetTitle">Yeni Ürün Ekle</h2>
+          <p class="editor-subtitle">Ürün bilgilerini doldurun veya telefonunuzdan fotoğraf çekin.</p>
+        </div>
+
+        <div class="sheet-scroll-body editor-scroll-body">
+          <input type="hidden" id="formProductId">
+
+          <!-- Fotoğraf Yükleme Alanı -->
+          <div class="form-group photo-upload-group">
+            <label class="form-label">Ürün Fotoğrafı</label>
+            <div class="photo-dropzone" id="photoDropzone">
+              <input type="file" id="formPhotoInput" accept="image/*" capture="environment" style="display: none;">
+              <div class="photo-preview-wrap" id="photoPreviewWrap" style="display: none;">
+                <img id="formPhotoPreview" src="" alt="Önizleme">
+                <button type="button" class="btn-remove-photo" id="btnRemovePhoto" title="Fotoğrafı Kaldır">✕</button>
+              </div>
+              <div class="photo-prompt" id="photoPrompt">
+                <span class="photo-icon">📸</span>
+                <span class="photo-prompt-text">Fotoğraf Çek veya Galeriden Seç</span>
+                <span class="photo-prompt-sub">Otomatik sıkıştırılarak optimize edilir</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ürün Adı -->
+          <div class="form-group">
+            <label class="form-label" for="formProductName">Ürün Adı <span class="required">*</span></label>
+            <input type="text" id="formProductName" class="form-input" placeholder="Örn: Cleanance Comedomed Serum" required>
+          </div>
+
+          <!-- Marka & Boyut -->
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="formProductBrand">Marka <span class="required">*</span></label>
+              <input type="text" id="formProductBrand" class="form-input" list="brandListOptions" placeholder="Örn: Avène" required>
+              <datalist id="brandListOptions"></datalist>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="formProductSize">Boyut / Form</label>
+              <input type="text" id="formProductSize" class="form-input" placeholder="Örn: 30 ml, 60 Kapsül">
+            </div>
+          </div>
+
+          <!-- Rutin & Yaş Grubu -->
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="formProductRoutine">Rutin / Adım</label>
+              <input type="text" id="formProductRoutine" class="form-input" placeholder="Örn: Serum, Nemlendirici">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="formProductAgeGroup">Yaş Grubu</label>
+              <input type="text" id="formProductAgeGroup" class="form-input" placeholder="Örn: Yetişkin, Bebek">
+            </div>
+          </div>
+
+          <!-- Hedef Cilt Tipleri -->
+          <div class="form-group">
+            <label class="form-label" for="formProductSkinTypes">Cilt Tipleri (Virgülle ayırın)</label>
+            <input type="text" id="formProductSkinTypes" class="form-input" placeholder="Örn: Hassas, Yağlı, Akneye Eğilimli">
+          </div>
+
+          <!-- Şikayetler (Danışan Ne Derse Verilir) -->
+          <div class="form-group">
+            <label class="form-label" for="formProductComplaints">Danışan Ne Derse Verilir? (Her satıra bir şikayet)</label>
+            <textarea id="formProductComplaints" class="form-textarea" rows="3" placeholder="Sivilce ve siyah noktalarımdan kurtulmak istiyorum&#10;Gözeneklerim çok belirgin"></textarea>
+          </div>
+
+          <!-- Nasıl Kullanılır -->
+          <div class="form-group">
+            <label class="form-label" for="formProductUsage">Nasıl Kullanılır?</label>
+            <textarea id="formProductUsage" class="form-textarea" rows="3" placeholder="Sabah ve akşam temizlenmiş cilde nazikçe masaj yaparak uygulayınız."></textarea>
+          </div>
+
+          <!-- Öne Çıkan Aktifler -->
+          <div class="form-group">
+            <label class="form-label" for="formProductActives">Öne Çıkan Aktifler (Virgülle ayırın)</label>
+            <input type="text" id="formProductActives" class="form-input" placeholder="Örn: Niasinamid, Hyaluronik Asit">
+          </div>
+
+          <!-- Güvenlik / Kimler Kullanamaz -->
+          <div class="form-group">
+            <label class="form-label" for="formProductWarnings">Güvenlik / Kimler Kullanamaz?</label>
+            <textarea id="formProductWarnings" class="form-textarea" rows="2" placeholder="Göz ile temasından kaçınınız."></textarea>
+          </div>
+        </div>
+
+        <!-- Butonlar -->
+        <div class="editor-actions-bar">
+          <button type="button" class="btn-danger-outline" id="btnDeleteProduct" style="display:none;">🗑️ Sil</button>
+          <div class="actions-right">
+            <button type="button" class="btn-cancel" id="btnCancelEditor">Vazgeç</button>
+            <button type="submit" class="btn-save" id="btnSaveProduct">💾 Kaydet</button>
+          </div>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+  <!-- ========================================================
+       6. AYARLAR VE GITHUB BULUT SENKRONİZASYONU
+       ======================================================== -->
+  <div class="modal-backdrop settings-backdrop" id="settingsModalBackdrop">
+    <div class="detail-sheet settings-sheet" id="settingsSheet" role="dialog" aria-modal="true" aria-labelledby="settingsSheetTitle">
+      
+      <div class="sheet-handle-bar">
+        <span class="sheet-handle"></span>
+      </div>
+
+      <button type="button" class="modal-close-btn" id="settingsCloseBtn" aria-label="Kapat">✕</button>
+
+      <div class="settings-content">
+        <div class="editor-header">
+          <h2 class="editor-title" id="settingsSheetTitle">⚙️ Ayarlar & Senkronizasyon</h2>
+          <p class="editor-subtitle">Telefondan yaptığınız eklemeleri yedekleyin veya doğrudan canlıya aktarın.</p>
+        </div>
+
+        <div class="sheet-scroll-body">
+          
+          <!-- Bölüm 1: GitHub Canlı Senkronizasyon -->
+          <div class="settings-card">
+            <div class="settings-card-header">
+              <span class="settings-card-icon">☁️</span>
+              <div>
+                <h4>GitHub Canlı Senkronizasyon</h4>
+                <p>PC'ye ihtiyaç duymadan telefonunuzdan canlı siteyi güncelleyin.</p>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="githubTokenInput">GitHub Personal Access Token (repo yetkisi)</label>
+              <input type="password" id="githubTokenInput" class="form-input" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx">
+              <span class="form-hint">Token telefonunuzda güvenle saklanır, dışarıya aktarılmaz.</span>
+            </div>
+
+            <button type="button" class="btn-sync-github" id="btnSyncGithub">
+              <span>🚀 GitHub'a Gönder ve Canlıya Al</span>
+            </button>
+            <div class="sync-status-msg" id="syncStatusMsg"></div>
+          </div>
+
+          <!-- Bölüm 2: Yedek Alma & Dışa Aktarma -->
+          <div class="settings-card">
+            <div class="settings-card-header">
+              <span class="settings-card-icon">📥</span>
+              <div>
+                <h4>Yedekleme & Dışa Aktar</h4>
+                <p>Mevcut tüm ürünleri dosya olarak kaydedin veya panoya kopyalayın.</p>
+              </div>
+            </div>
+
+            <div class="settings-btn-grid">
+              <button type="button" class="btn-setting-action" id="btnDownloadJson">
+                <span>📦 JSON İndir</span>
+              </button>
+              <button type="button" class="btn-setting-action" id="btnCopyJson">
+                <span>📋 Panoya Kopyala</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Bölüm 3: Sıfırlama -->
+          <div class="settings-card danger-card">
+            <div class="settings-card-header">
+              <span class="settings-card-icon">⚠️</span>
+              <div>
+                <h4>Orijinale Dön</h4>
+                <p>Yalnızca yerel cihazınızdaki değişiklikleri sıfırlar, orijinal 254 ürüne döner.</p>
+              </div>
+            </div>
+
+            <button type="button" class="btn-danger-outline" id="btnResetLocalData">
+              <span>🔄 Yerel Değişiklikleri Sıfırla</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ========================================================
+       7. YÜKSEK ÇÖZÜNÜRLÜK FOTOĞRAF LIGHTBOX (BÜYÜTÜCÜ)
        ======================================================== -->
   <div class="lightbox-backdrop" id="lightboxBackdrop" style="display: none;">
     <button type="button" class="lightbox-close" id="lightboxCloseBtn">✕</button>
