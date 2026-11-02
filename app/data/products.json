@@ -2758,7 +2758,8 @@
       "caudalie",
       "gıda takviyesi & vitamin",
       "tablet / kapsül"
-    ]
+    ],
+    "kimler_icemez": "🚨 İlaç Etkileşimleri:\n• Kan Sulandırıcılar (Warfarin, Heparin, Plavix, Aspirin) ve Ağrı Kesiciler (İbuprofen): Fibrinolitik etki kanama riskini artırır; cerrahi operasyondan 10 gün önce kesilmelidir.\n• Ananas Alerjisi olanlar Bromelain kullanmamalıdır."
   },
   {
     "id": "caudalie-resveratrol-lift-firming-eye-gel-cream-15-ml",
@@ -2793,7 +2794,8 @@
       "caudalie",
       "gıda takviyesi & vitamin",
       "tablet / kapsül"
-    ]
+    ],
+    "kimler_icemez": "🚨 İlaç Etkileşimleri:\n• Kan Sulandırıcılar (Warfarin, Heparin, Plavix, Aspirin) ve Ağrı Kesiciler (İbuprofen): Fibrinolitik etki kanama riskini artırır; cerrahi operasyondan 10 gün önce kesilmelidir.\n• Ananas Alerjisi olanlar Bromelain kullanmamalıdır."
   },
   {
     "id": "caudalie-resveratrol-lift-firming-night-cream-50-ml",
@@ -2828,7 +2830,8 @@
       "caudalie",
       "gıda takviyesi & vitamin",
       "tablet / kapsül"
-    ]
+    ],
+    "kimler_icemez": "🚨 İlaç Etkileşimleri:\n• Kan Sulandırıcılar (Warfarin, Heparin, Plavix, Aspirin) ve Ağrı Kesiciler (İbuprofen): Fibrinolitik etki kanama riskini artırır; cerrahi operasyondan 10 gün önce kesilmelidir.\n• Ananas Alerjisi olanlar Bromelain kullanmamalıdır."
   },
   {
     "id": "caudalie-resveratrol-lift-instant-firming-serum-30-ml",
@@ -2863,7 +2866,8 @@
       "caudalie",
       "gıda takviyesi & vitamin",
       "tablet / kapsül"
-    ]
+    ],
+    "kimler_icemez": "🚨 İlaç Etkileşimleri:\n• Kan Sulandırıcılar (Warfarin, Heparin, Plavix, Aspirin) ve Ağrı Kesiciler (İbuprofen): Fibrinolitik etki kanama riskini artırır; cerrahi operasyondan 10 gün önce kesilmelidir.\n• Ananas Alerjisi olanlar Bromelain kullanmamalıdır."
   },
   {
     "id": "caudalie-resveratrol-lift-lightweight-firming-cashmere-cream-40-ml",
@@ -2898,7 +2902,8 @@
       "caudalie",
       "gıda takviyesi & vitamin",
       "tablet / kapsül"
-    ]
+    ],
+    "kimler_icemez": "🚨 İlaç Etkileşimleri:\n• Kan Sulandırıcılar (Warfarin, Heparin, Plavix, Aspirin) ve Ağrı Kesiciler (İbuprofen): Fibrinolitik etki kanama riskini artırır; cerrahi operasyondan 10 gün önce kesilmelidir.\n• Ananas Alerjisi olanlar Bromelain kullanmamalıdır."
   },
   {
     "id": "caudalie-rose-de-vigne-gel-douche-shower-gel-200-ml",
@@ -4875,7 +4880,7 @@
     ],
     "ideal_kilo_araligi": "Yetişkinler",
     "kimler_icebilir": "Ödem problemi yaşayanlar, estetik/burun ameliyatı sonrası şişlikleri olanlar, selülit ve lenf drenaj desteği arayanlar.",
-    "kimler_icemez": "Ananas alerjisi olanlar, aktif mide ülseri olanlar, kan sulandırıcı (Coumadin) kullananlar.",
+    "kimler_icemez": "🚨 İlaç Etkileşimleri:\n• Kan Sulandırıcılar (Warfarin, Heparin, Plavix, Aspirin) ve Ağrı Kesiciler (İbuprofen): Fibrinolitik etki kanama riskini artırır; cerrahi operasyondan 10 gün önce kesilmelidir.\n• Ananas Alerjisi olanlar Bromelain kullanmamalıdır.",
     "ne_ise_yarar": "Ananas sapından elde edilen proteolitik enzimdir. İnflamatuvar bradikinin ve prostaglandinleri parçalayarak dokulardaki fazla suyun ve ödemin lenfatik drenajla atılmasını sağlar.",
     "sgk_karsilastirmasi_ve_nis_bilgi": "🏆 NİŞ BİLGİ: Aç karnına alındığında kana geçip ödem söktürür; tok karnına alınırsa midedeki proteinleri sindirir. Ödem için MUTLAKA aç karnına alınmalıdır!"
   },
@@ -4949,7 +4954,7 @@
     ],
     "ideal_kilo_araligi": "Yetişkinler",
     "kimler_icebilir": "Anti-aging (hücresel gençleşme), damar elastikiyeti, karaciğer detoksu ve serbest radikallere karşı hücresel koruma arayanlar.",
-    "kimler_icemez": "Hormon duyarlı kanser öyküsü olanlar, kan sulandırıcı kullananlar (doktora danışmalı).",
+    "kimler_icemez": "🚨 İlaç Etkileşimleri:\n• Kan Sulandırıcılar (Warfarin, Heparin, Plavix, Aspirin) ve Ağrı Kesiciler (İbuprofen): Fibrinolitik etki kanama riskini artırır; cerrahi operasyondan 10 gün önce kesilmelidir.\n• Ananas Alerjisi olanlar Bromelain kullanmamalıdır.",
     "ne_ise_yarar": "Trans-resveratrol, uzun ömür genleri olarak bilinen 'SIRT1 (Sirtuin)' enzimlerini aktive eder. Mitokondri hasarını önler ve damar çeperlerindeki nitrik oksit (NO) üretimini artırarak damarları genç tutar.",
     "sgk_karsilastirmasi_ve_nis_bilgi": "🏆 NİŞ BİLGİ (Trans-Resveratrol Saflığı): Sıradan üzüm çekirdeği tozlarında aktif resveratrol oranı %1'in altındadır. INFINITY Resveratrol standardize %98 saf 'Trans' izomer formundadır ve hücre içine doğrudan nüfuz eder."
   },
@@ -6378,7 +6383,7 @@
     ],
     "ideal_kilo_araligi": "Yetişkin erkekler",
     "kimler_icebilir": "Erkek tipi genetik saç dökülmesi (Androgenetik alopesi), saç tellerinde incelme ve tepe açılması yaşayan erkekler.",
-    "kimler_icemez": "Kadınlar (Erkek formülüdür, Saw Palmetto içerir), 18 yaş altı.",
+    "kimler_icemez": "🚨 ÇOK ÖNEMLİ LABORATUVAR & İLAÇ ETKİLEŞİMİ:\n• Yüksek Doz Biotin (B7 Vitamini) Etkileşimi: Ürünün içindeki yüksek doz biotin, kan tahlillerinde hormon testlerini (özellikle Tiroid TSH, serbest T3, serbest T4) ve Kalp Krizi belirteci olan Troponin testini laboratuvarda YANILTICI DERECEDE HATALI çıkarabilir!\n• Kan tahlili yaptırmadan en az 48 saat (tercihen 3 gün) önce biotin takviyesi kesilmelidir.",
     "ne_ise_yarar": "Saw Palmetto (Cüce Palmiye) ekstresi saç köklerini öldüren DHT (Dihidrotestosteron) hormonunu bloke eder. Biotin, Çinko ve At kuyruğu silisyumu saç tellerinin çapını kalınlaştırır.",
     "sgk_karsilastirmasi_ve_nis_bilgi": "🏆 NİŞ FARMAKOLOJİK BİLGİ (Saw Palmetto vs. Finasterid): Reçeteli finasterid ilacı libido kaybı yapabilirken; standardize Saw Palmetto doğal 5-alfa redüktaz inhibitörüdür, hormonal yan etki yapmadan saç folikülünü DHT saldırısından korur."
   },
@@ -6421,7 +6426,7 @@
     ],
     "ideal_kilo_araligi": "Yetişkin kadınlar",
     "kimler_icebilir": "Mevsimsel, stres veya doğum sonrası yoğun saç dökülmesi yaşayan, tırnakları kırılan ve saçları cansızlaşan kadınlar.",
-    "kimler_icemez": "İçeriğindeki vitaminlere alerjisi olanlar.",
+    "kimler_icemez": "🚨 ÇOK ÖNEMLİ LABORATUVAR & İLAÇ ETKİLEŞİMİ:\n• Yüksek Doz Biotin (B7 Vitamini) Etkileşimi: Ürünün içindeki yüksek doz biotin, kan tahlillerinde hormon testlerini (özellikle Tiroid TSH, serbest T3, serbest T4) ve Kalp Krizi belirteci olan Troponin testini laboratuvarda YANILTICI DERECEDE HATALI çıkarabilir!\n• Kan tahlili yaptırmadan en az 48 saat (tercihen 3 gün) önce biotin takviyesi kesilmelidir.",
     "ne_ise_yarar": "Kadın tipi telogen effluvium dökülmelerinde saç folikülünün anagen (büyüme) fazını uzatır. Keratin sentezini uyararak saç kökünü besler.",
     "sgk_karsilastirmasi_ve_nis_bilgi": "🏆 NİŞ BİLGİ: Demir eksikliği anemisi olan kadınlarda demir takviyesiyle birlikte kullanıldığında saç dökülmesini 3 haftada durdurur."
   },
@@ -7010,6 +7015,50 @@
     ]
   },
   {
+    "id": "solgar-gentle-iron-17mg",
+    "name": "Solgar Gentle Iron 17 mg (Demir Bisglisinat) Bitkisel Kapsül",
+    "brand": "Solgar",
+    "size": "90 Bitkisel Kapsül",
+    "rutin_adimi": "Gıda Takviyesi (Günde 1 Kapsül - Yemekle Birlikte)",
+    "sub_category": "Demir Takviyesi & Kan Yapıcı",
+    "category_name": "Gıda Takviyesi & Vitamin",
+    "yas_grubu": "12+ Yaş & Yetişkin",
+    "cilt_tipleri": [
+      "Tüm Cilt Tipleri",
+      "Solgun & Cansız Cilt",
+      "Yorgun Görünüm"
+    ],
+    "hangi_sikayetle_gelene_verilir": [
+      "Sürekli halsizim, merdiven çıkarken nefes nefese kalıyorum, tahlilde ferritinim ve hemoglobinim dipte çıktı",
+      "Devletin verdiği demir hapı (Ferro Sanol / Maltofer) midemi kavuruyor, şiddetli kabızlık ve bulantı yapıyor, içemiyorum",
+      "Aşırı saç dökülmem var, tırnaklarım kaşık gibi çukurlaşıp hemen kırılıyor",
+      "Sabahları hiç dinlenememiş gibi uyanıyorum, ellerim ve ayaklarım buz kesiyor"
+    ],
+    "nasil_kullanilir": "Günde 1 bitkisel kapsül, tercihen yemek zamanı bol su veya C vitamini içeren taze sıkılmış portakal suyu ile yutulur. Emilimi artırmak için çay, kahve ve sütten en az 2 saat uzakta alınmalıdır.",
+    "etken_maddeler": [
+      "Demir (Demir Bisglisinat Şelatı) 17 mg (%121 BRD)"
+    ],
+    "ne_ise_yarar": "Kırmızı kan hücreleri ve hemoglobinin normal oluşumuna, dokulara oksijen taşınmasına, hücresel enerji üretimine ve bağışıklık fonksiyonuna katkıda bulunur. Demir eksikliği anemisine bağlı kronik bitkinlik, saç dökülmesi, soluk ten ve sürekli üşüme şikayetlerini ortadan kaldırır.",
+    "sgk_karsilastirmasi_ve_nis_bilgi": "💡 SGK (Devlet İlacı) vs. Eczane Şelatlı Demir Farkı:\n• Devlet İlaçları (Ferro Sanol Duodenal, Maltofer, Ferplex): İnorganik demir sülfat / demir hidroksit içerir. Mide asidinde serbest demir iyonu (Fe2+) açığa çıkarır; serbest demir mide mukozasını tahriş eder, reflü, mide krampı, metalik tat, siyah dışkı ve inatçı kabızlık yapar. Hastaların %50'si bu yan etkiler yüzünden tedaviyi yarıda bırakır.\n• Eczane Takviyesi (Solgar Gentle Iron): \"Demir Bisglisinat\" formundadır. Demir atomu 2 adet glisin amino asidi ile kıskaçlanmıştır (şelat). Mide asidinden etkilenmeden intakt (bütün) halde ince bağırsağa geçer ve aminoasit kanallarından emilir. Mideyi yakmaz, kabızlık yapmaz ve biyoyararlanımı klasik demir sülfata göre 4 kat daha yüksektir.",
+    "kimler_icebilir": "12 yaşını doldurmuş ve 40 kg üzerindeki gençler, ferritin/demir düşüklüğü olan yetişkinler, gebeler (hekim önerisiyle), yoğun adet kanaması olan kadınlar, sporcular ve vejetaryenler/veganlar.",
+    "ideal_kilo_araligi": "12+ Yaş ve Yetişkinler (40 kg üzeri)",
+    "kimler_icemez": "🚨 ÇOK KRİTİK İLAÇ ETKİLEŞİMİ - GUATR / TİROİD İLAÇLARI (Levotiron, Euthyrox, Tefor):\nDemir, levotiroksin (tiroid hormonu) moleküllerine bağırsakta kuvvetle bağlanarak çözünmeyen şelat kompleksi oluşturur ve tiroid ilacının emilimini %90 oranında engeller. Tiroid ilacı kesinlikle sabah aç karna içilmeli; DEMİR HAPINI İSE MUTLAKA EN AZ 4 SAAT SONRA (öğlen veya akşam tok karna) almalıdır! Asla aynı saatte yutulmaz.\n\n⚠️ Diğer Kritik İlaç Etkileşimleri:\n• Mide Koruyucular (PPI - Lansor, Nexium, Pantpas, Rennie, Talcid): Mide asidini sıfırladığı için demir emilimini bozar; araya en az 2 saat konmalıdır.\n• Antibiyotikler (Florokinolonlar - Cipro, Avelox ve Tetrasiklinler): Demir ile çakışır, antibiyotiğin etkisini yok eder; en az 3 saat ara verilmelidir.\n• Çay, Kahve, Süt ve Yoğurt: İçerdikleri tanen ve kalsiyum demiri çöktürür; demir takviyesinden 2 saat önce ve sonra tüketilmemelidir (Tercihen C vitamini / taze portakal suyu ile alınmalıdır).\n• Hemokromatozis (demir depolama hastalığı) ve Talasemi (Akdeniz anemisi) olanlar hekim kontrolü olmadan kesinlikle içmemelidir.",
+    "kimler_kullanamaz": "12 yaş altı çocuklar ve hemokromatozis hastaları kullanmamalıdır.",
+    "image": "tum_urunler/solgar_gentle_iron_17_mg.jpg",
+    "tags": [
+      "demir",
+      "iron",
+      "gentle iron",
+      "ferritin",
+      "kansızlık",
+      "anemi",
+      "kan yapıcı",
+      "solgar",
+      "takviye",
+      "vitamin"
+    ]
+  },
+  {
     "id": "solgar-magnesium-citrate-60-tablet",
     "name": "Solgar - Magnesium Citrate 60 Tablet",
     "original_name": "- Magnesium Citrate 60 Tablet",
@@ -7044,7 +7093,7 @@
     ],
     "ideal_kilo_araligi": "40 kg üzeri (Yetişkin dozu)",
     "kimler_icebilir": "Kas krampları, huzursuz bacak, kabızlık eşlik eden kas spazmları ve spor sonrası laktik asit birikimi yaşayanlar.",
-    "kimler_icemez": "İleri derece böbrek yetmezliği olanlar, myastenia gravis hastaları, aktif ishal atağı yaşayanlar.",
+    "kimler_icemez": "🚨 İlaç Etkileşimleri & Kontrendikasyonlar:\n• Antibiyotikler (Florokinolonlar - Cipro, Avelox ve Tetrasiklin / Doksisiklin): Magnezyum antibiyotiğe bağlanarak emilimini engeller; aralarında en az 3 saat mesafe bırakılmalıdır.\n• Guatr / Tiroid İlaçları (Levotiron, Euthyrox): Magnezyum tiroid hormonunun emilimini azaltır; sabah tiroid ilacından en az 4 saat sonra (tercihen akşam) alınmalıdır.\n• Tansiyon İlaçları (Kalsiyum Kanal Blokerleri): Magnezyum tansiyon düşürücü etkiyi potansiyalize edebilir, hekim kontrolü gerekir.\n• İleri Derece Böbrek Yetmezliği: Kreatinin klerensi düşük hastalarda magnezyum birikimi (toksisite) riski nedeniyle kullanılmaz.",
     "ne_ise_yarar": "Magnezyum sitrat, magnezyum mineralinin sitrik asit ile şelatlandığı organik formdur. Kasların gevşemesini sağlar, krampları önler, bağırsak peristaltizmini hafifçe uyararak kabızlığı giderir ve enerji metabolizmasında 300'den fazla enzimi aktive eder.",
     "sgk_karsilastirmasi_ve_nis_bilgi": "🏆 NİŞ FARMAKOLOJİK BİLGİ (Sitrat vs. Oksit / Magvital): Reçeteyle devletin ödediği Magvital, Magnorm vb. toz ve hapların içeriği genellikle 'Magnezyum Oksit'tir. Magnezyum oksitin biyoyararlanımı yalnızca %4'tür! Yani aldığınız magnezyumun %96'sı kana geçmeden bağırsakta kalır, suyu içine çeker ve şiddetli ishal yapar ama kas krampına fayda sağlamaz. Solgar Magnezyum Sitrat ise %30-35 yüksek emilime sahiptir; kas dokusuna ve hücre içine hızla geçer."
   },
@@ -7122,7 +7171,7 @@
     ],
     "ideal_kilo_araligi": "40 kg üzeri",
     "kimler_icebilir": "Hafıza bulanıklığı, unutkanlık, kronik yorgunluk, ellerde ayaklarda karıncalanma yaşayanlar, metformin (şeker ilacı) veya mide koruyucu (lansoprazol/pantoprazol) kullananlar.",
-    "kimler_icemez": "12 yaş altı çocuklar (hekim yazmadıkça 1000 mcg verilmez), Leber optik atrofisi olanlar.",
+    "kimler_icemez": "🚨 İlaç Etkileşimleri & Önemli Uyarılar:\n• Metformin (Glifor, Matofin - Diyabet İlacı) & Mide Koruyucular (PPI - Lansor, Nexium, Pantpas): Bu ilaçları uzun süre kullananlarda kalsiyuma bağımlı B12 emilimi bozulur ve nöropati gelişir. Bu hastalar mutlaka yutulan tablet yerine DİLALTI (sublingual) metilkobalamin formu kullanmalıdır.\n• Kloramfenikol (Antibiyotik): B12'nin kan hücresi yapıcı etkisini zayıflatabilir.\n• Leber Hastalığı (Herediter Optik Nöropati): Siyanokobalamin optik sinir hasarını hızlandırır; sadece Metilkobalamin formu tercih edilmelidir.",
     "ne_ise_yarar": "Kırmızı kan hücresi (eritrosit) oluşumunu destekleyerek megaloblastik anemiyi engeller. Sinir kılıflarını (miyelin) onararak nöropatik ağrıları ve unutkanlığı giderir. Homosistein düzeyini düşürerek damar sağlığını korur.",
     "sgk_karsilastirmasi_ve_nis_bilgi": "🏆 NİŞ FARMAKOLOJİK BİLGİ (Benexol B12 vs. Eczane Formu): Mide koruyucu (PPI) veya şeker ilacı (Metformin) kullananlarda midede 'İntrensek Faktör' üretimi çöker; bu nedenle yutulan Benexol hapları mideden emilemez. Solgar Dilaltı formu ise ağız mukozasından mideye uğramadan emildiği için gastriti veya mide koruyucu kullanımı olanlarda dahi %100 kana geçer."
   },
@@ -7527,7 +7576,7 @@
     ],
     "ideal_kilo_araligi": "45 kg üzeri",
     "kimler_icebilir": "Kalp-damar sağlığını korumak, kolesterol dengesini sağlamak ve hafızasını güçlendirmek isteyenler.",
-    "kimler_icemez": "Kanama diyatezi olanlar, operasyon öncesi hastalar.",
+    "kimler_icemez": "🚨 İlaç Etkileşimleri & Kontrendikasyonlar:\n• Kan Sulandırıcılar (Coumadin / Warfarin, Plavix, Coraspin, Eliquis, Xarelto): Yüksek doz omega-3 (günde 1000 mg üzeri) trombosit fonksiyonunu etkileyip kanama zamanını uzatabilir ve INR değerini artırabilir; hekim bilgisiyle kullanılmalıdır.\n• Ameliyat / Cerrahi Operasyonlar: Planlı ameliyatlardan en az 1 hafta önce yüksek doz omega-3 takviyesi kesilmelidir.\n• Ağır Balık / Deniz Ürünü Alerjisi olan bireyler hekim onayı olmadan tüketmemelidir.",
     "ne_ise_yarar": "Trigliserit formda yüksek EPA ve DHA sunarak damar endotelini korur, pıhtılaşma eğilimini dengeler.",
     "sgk_karsilastirmasi_ve_nis_bilgi": "🏆 NİŞ FARMAKOLOJİK BİLGİ: Doğal trigliserit formdadır, mideyi rahatsız etmez ve emilimi sentetik etil esterlere kıyasla 3 kat yüksektir."
   },
@@ -7568,7 +7617,7 @@
     ],
     "ideal_kilo_araligi": "Yetişkinler",
     "kimler_icebilir": "Özellikle zihinsel performans, hafıza, Alzheimer koruması, yoğun sınav dönemi ve göz kuruluğu yaşayanlar (DHA beyin ve retina için asıl maddedir).",
-    "kimler_icemez": "Balık alerjisi olanlar.",
+    "kimler_icemez": "🚨 İlaç Etkileşimleri & Kontrendikasyonlar:\n• Kan Sulandırıcılar (Coumadin / Warfarin, Plavix, Coraspin, Eliquis, Xarelto): Yüksek doz omega-3 (günde 1000 mg üzeri) trombosit fonksiyonunu etkileyip kanama zamanını uzatabilir ve INR değerini artırabilir; hekim bilgisiyle kullanılmalıdır.\n• Ameliyat / Cerrahi Operasyonlar: Planlı ameliyatlardan en az 1 hafta önce yüksek doz omega-3 takviyesi kesilmelidir.\n• Ağır Balık / Deniz Ürünü Alerjisi olan bireyler hekim onayı olmadan tüketmemelidir.",
     "ne_ise_yarar": "Yüksek DHA konsantrasyonuyla beyin nöron zarlarını onarır ve sinaptik iletim hızını artırır.",
     "sgk_karsilastirmasi_ve_nis_bilgi": "🏆 NİŞ BİLGİ: EPA kalp ve damar için ön plandayken, DHA doğrudan beyin ve göz retinası için kritiktir."
   },
@@ -7608,7 +7657,7 @@
     ],
     "ideal_kilo_araligi": "Yetişkinler",
     "kimler_icebilir": "Göz kuruluğu, ağız kuruluğu, menopoz sonrası vajinal kuruluk ve şiddetli cilt kuruluğu yaşayanlar.",
-    "kimler_icemez": "Kır iğdesi meyvesine alerjisi olanlar.",
+    "kimler_icemez": "🚨 İlaç Etkileşimleri & Kontrendikasyonlar:\n• Kan Sulandırıcılar (Coumadin / Warfarin, Plavix, Coraspin, Eliquis, Xarelto): Yüksek doz omega-3 (günde 1000 mg üzeri) trombosit fonksiyonunu etkileyip kanama zamanını uzatabilir ve INR değerini artırabilir; hekim bilgisiyle kullanılmalıdır.\n• Ameliyat / Cerrahi Operasyonlar: Planlı ameliyatlardan en az 1 hafta önce yüksek doz omega-3 takviyesi kesilmelidir.\n• Ağır Balık / Deniz Ürünü Alerjisi olan bireyler hekim onayı olmadan tüketmemelidir.",
     "ne_ise_yarar": "Kır iğdesi (Sea Buckthorn) yağından elde edilen Palmitoleik asittir (Omega-7). Vücudun tüm iç ve dış mukoza zarlarının (göz, ağız, vajina, bağırsak) doğal nem dengesini içeriden hücresel olarak onarır.",
     "sgk_karsilastirmasi_ve_nis_bilgi": "🏆 NİŞ FARMAKOLOJİK BİLGİ: Dışarıdan sürülen damlalar veya kremler geçici rahatlama sağlarken, Omega-7 meibomian göz bezlerini ve vajinal mukozayı içeriden doğal lipid tabakasıyla besler."
   },
@@ -9069,7 +9118,7 @@
     ],
     "ideal_kilo_araligi": "45 kg üzeri yetişkinler",
     "kimler_icebilir": "Yüksek trigliserit, kalp-damar tıkanıklığı riski, kuru göz sendromu, eklem romatizması veya zihinsel odaklanma desteği arayan yetişkinler.",
-    "kimler_icemez": "Kanama bozukluğu olanlar, ameliyata girecek olanlar (ameliyattan 1 hafta önce kesilmelidir), kan sulandırıcı (Varfarin/Coumadin) yüksek doz kullananlar hekim onayıyla almalıdır.",
+    "kimler_icemez": "🚨 İlaç Etkileşimleri & Kontrendikasyonlar:\n• Kan Sulandırıcılar (Coumadin / Warfarin, Plavix, Coraspin, Eliquis, Xarelto): Yüksek doz omega-3 (günde 1000 mg üzeri) trombosit fonksiyonunu etkileyip kanama zamanını uzatabilir ve INR değerini artırabilir; hekim bilgisiyle kullanılmalıdır.\n• Ameliyat / Cerrahi Operasyonlar: Planlı ameliyatlardan en az 1 hafta önce yüksek doz omega-3 takviyesi kesilmelidir.\n• Ağır Balık / Deniz Ürünü Alerjisi olan bireyler hekim onayı olmadan tüketmemelidir.",
     "ne_ise_yarar": "Yüksek konsantrasyonda EPA (504 mg) ve DHA (378 mg) içerir. Damar içi aterom plaklarının oluşumunu yavaşlatır, trigliserit seviyesini düşürür, beyin fonksiyonlarını güçlendirir ve eklem inflamasyonunu azaltır.",
     "sgk_karsilastirmasi_ve_nis_bilgi": "🏆 NİŞ FARMAKOLOJİK BİLGİ (Yüksek Konsantre EPA/DHA vs. Sıradan Balık Yağı): Sıradan market balık yağlarında 1000 mg kapsülün sadece 300 mg'ı aktif omegadır, kalan 700 mg'ı gereksiz doymuş balık yağıdır. Solgar 950 mg'da ise tek bir kapsülde tam 950 mg saf aktif Omega-3 bulunur; soğuk su derin deniz balıklarından moleküler distilasyonla cıva ve ağır metallerden arındırılarak üretilmiştir."
   },
@@ -9086,7 +9135,7 @@
     "yas_grubu": "Çocuk (4-10 Yaş)",
     "ideal_kilo_araligi": "16 - 35 kg (4-10 Yaş persantil normu)",
     "kimler_icebilir": "4 yaş ve üzeri tüm çocuklar, dikkat eksikliği ve ders odaklanması desteği arayan okul çağı öğrencileri.",
-    "kimler_icemez": "Balık ve deniz ürünlerine karşı şiddetli anafilaktik alerjisi olan çocuklar.",
+    "kimler_icemez": "🚨 İlaç Etkileşimleri & Kontrendikasyonlar:\n• Kan Sulandırıcılar (Coumadin / Warfarin, Plavix, Coraspin, Eliquis, Xarelto): Yüksek doz omega-3 (günde 1000 mg üzeri) trombosit fonksiyonunu etkileyip kanama zamanını uzatabilir ve INR değerini artırabilir; hekim bilgisiyle kullanılmalıdır.\n• Ameliyat / Cerrahi Operasyonlar: Planlı ameliyatlardan en az 1 hafta önce yüksek doz omega-3 takviyesi kesilmelidir.\n• Ağır Balık / Deniz Ürünü Alerjisi olan bireyler hekim onayı olmadan tüketmemelidir.",
     "cilt_tipleri": [
       "Tüm Beden",
       "Hücre Zarı & Beyin Gelişimi"
@@ -9121,7 +9170,7 @@
     "yas_grubu": "12 Yaş Üstü & Yetişkin",
     "ideal_kilo_araligi": "40 kg üzeri (Yetişkin dozu)",
     "kimler_icebilir": "Unutkanlık, odaklanma güçlüğü, sabah yorgunluğu, el-ayak uyuşması/karıncalanması olanlar ve vegan/vejetaryenler.",
-    "kimler_icemez": "12 yaş altı çocuklar (hekim önermedikçe 1000 mcg yüksek B12 dozu verilmez).",
+    "kimler_icemez": "🚨 İlaç Etkileşimleri & Önemli Uyarılar:\n• Metformin (Glifor, Matofin - Diyabet İlacı) & Mide Koruyucular (PPI - Lansor, Nexium, Pantpas): Bu ilaçları uzun süre kullananlarda kalsiyuma bağımlı B12 emilimi bozulur ve nöropati gelişir. Bu hastalar mutlaka yutulan tablet yerine DİLALTI (sublingual) metilkobalamin formu kullanmalıdır.\n• Kloramfenikol (Antibiyotik): B12'nin kan hücresi yapıcı etkisini zayıflatabilir.\n• Leber Hastalığı (Herediter Optik Nöropati): Siyanokobalamin optik sinir hasarını hızlandırır; sadece Metilkobalamin formu tercih edilmelidir.",
     "cilt_tipleri": [
       "Hücre Enerjisi",
       "Sinir Sistemi"
@@ -9154,7 +9203,7 @@
     "yas_grubu": "12 Yaş Üstü & Yetişkin",
     "ideal_kilo_araligi": "40 kg üzeri yetişkinler",
     "kimler_icebilir": "Yoğun çalışanlar, sınav dönemindeki öğrenciler (12 yaş üstü), sabahları tükenmiş uyananlar, fiziksel ve zihinsel bitkinlik yaşayanlar.",
-    "kimler_icemez": "12 yaş altı çocuklar, kontrolsüz hipertansiyonu (yüksek tansiyon) olanlar, gebeler ve emziren kadınlar.",
+    "kimler_icemez": "🚨 İlaç Etkileşimleri & Kontrendikasyonlar:\n• Hipertansiyon & Aritmi İlaçları: Standartlaştırılmış G115 Ginseng sempatik sinir sistemini aktive ederek kan basıncını yükseltebilir ve taşikardiyi tetikleyebilir; kontrolsüz yüksek tansiyonu olanlara verilmez.\n• Diyabet İlaçları (İnsülin, Oral Antidiyabetikler): Ginseng kan şekerini düşürebilir (hipoglisemi riski).\n• Kan Sulandırıcılar: Kanama riskini artırabilir.\n• Gece Geç Saatlerde: Uykusuzluk yapabileceğinden akşam veya gece alınmamalı, sabah tok karna içilmelidir.\n• 12 yaş altı çocuklara yetişkin multivitamin formülü verilmez.",
     "cilt_tipleri": [
       "Fiziksel Güç",
       "Zihinsel Performans"
@@ -9193,7 +9242,7 @@
     "yas_grubu": "12 Yaş Üstü & Yetişkin",
     "ideal_kilo_araligi": "40 kg üzeri yetişkinler",
     "kimler_icebilir": "Gün boyu aktif kalanlar, spor yapanlar, 30 yaş üstü hücresel yaşlanmayı ve yorgunluğu önlemek isteyen yetişkinler.",
-    "kimler_icemez": "12 yaş altı çocuklar, böbrek yetmezliği olanlar (yüksek mineral yükü nedeniyle).",
+    "kimler_icemez": "🚨 İlaç Etkileşimleri & Kontrendikasyonlar:\n• Kan Sulandırıcı (Coumadin / Warfarin): İçerdiği K vitamini Warfarin'in etkisini nötralize ederek pıhtılaşma riskini artırır; Coumadin kullananlar hekime danışmadan almamalıdır.\n• Guatr / Tiroid İlaçları (Levotiron): İçerdiği demir ve kalsiyum tiroid ilacı emilimini bozar; sabah tiroid ilacından en az 4 saat sonra alınmalıdır.\n• Böbrek Taşı Öyküsü olanlarda yüksek doz kalsiyum/D vitamini hekim gözetiminde verilmelidir.",
     "cilt_tipleri": [
       "Hücresel Mitokondri",
       "Canlılık"
@@ -9226,7 +9275,7 @@
     "yas_grubu": "Yetişkin (Hamilelik & Emzirme)",
     "ideal_kilo_araligi": "Yetişkin kadınlar",
     "kimler_icebilir": "Hamilelik planlayan kadınlar, 1., 2. ve 3. trimesterdeki gebeler ve emziren anneler.",
-    "kimler_icemez": "Erkekler, çocuklar ve demir yükleme hastalığı (hemokromatozis) olanlar.",
+    "kimler_icemez": "🚨 İlaç Etkileşimleri & Dikkat Edilmesi Gerekenler:\n• Tiroid İlaçları (Levotiron, Euthyrox): Gebelerde sık görülen hipotiroidi tedavisinde sabah aç karna tiroid ilacı içildikten sonra Elenatal EN AZ 4 SAAT SONRA (öğlen/akşam) alınmalıdır; içerdiği demir ve kalsiyum ilacın emilimini sıfırlar!\n• Antasitler ve Mide Koruyucular ile araya 2 saat konmalıdır.",
     "cilt_tipleri": [
       "Gebelikte Fetal Gelişim",
       "Anne Sağlığı"

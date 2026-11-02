@@ -579,8 +579,9 @@ body {
   cursor: pointer;
 }
 
-/* ── 4. Ürün Detay Modalı / Bottom Sheet ── */
-.detail-modal-backdrop {
+/* ── 4. Ürün Detay Modalı / Bottom Sheet & Genel Modal Backdrop ── */
+.detail-modal-backdrop,
+.modal-backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -594,12 +595,15 @@ body {
   align-items: flex-end;
   opacity: 0;
   visibility: hidden;
+  pointer-events: none;
   transition: opacity 0.25s ease, visibility 0.25s ease;
 }
 
-.detail-modal-backdrop.active {
+.detail-modal-backdrop.active,
+.modal-backdrop.active {
   opacity: 1;
   visibility: visible;
+  pointer-events: auto;
 }
 
 .detail-sheet {
@@ -617,13 +621,15 @@ body {
   overflow: hidden;
 }
 
-.detail-modal-backdrop.active .detail-sheet {
+.detail-modal-backdrop.active .detail-sheet,
+.modal-backdrop.active .detail-sheet {
   transform: translateY(0);
 }
 
 /* Masaüstü Modalı */
 @media (min-width: 768px) {
-  .detail-modal-backdrop {
+  .detail-modal-backdrop,
+  .modal-backdrop {
     align-items: center;
     justify-content: center;
     padding: 20px;
@@ -637,7 +643,8 @@ body {
     transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
-  .detail-modal-backdrop.active .detail-sheet {
+  .detail-modal-backdrop.active .detail-sheet,
+  .modal-backdrop.active .detail-sheet {
     transform: scale(1);
   }
 
@@ -967,6 +974,8 @@ body {
 .warning-text {
   color: #b45309;
   font-weight: 600;
+  white-space: pre-line;
+  line-height: 1.5;
 }
 
 [data-theme="dark"] .warning-text {
@@ -1456,6 +1465,7 @@ body {
   color: #78350f;
   font-weight: 600;
   line-height: 1.5;
+  white-space: pre-line;
 }
 
 [data-theme="dark"] .sgk-text {

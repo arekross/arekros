@@ -65,6 +65,7 @@
     modalWeightNormVal: document.getElementById('modalWeightNormVal'),
     modalWhoCannotBlock: document.getElementById('modalWhoCannotBlock'),
     modalWhoCannotText: document.getElementById('modalWhoCannotText'),
+    modalWarningBlock: document.getElementById('modalWarningBlock'),
     modalWarningText: document.getElementById('modalWarningText'),
     btnCopyNote: document.getElementById('btnCopyNote'),
     copyBtnText: document.getElementById('copyBtnText'),
@@ -380,7 +381,7 @@
       if (text.includes('göz') || text.includes('yeux') || text.includes('eye')) routineCounts['Göz Çevresi']++;
       if (text.includes('bebek') || text.includes('baby') || text.includes('vücut') || text.includes('body')) routineCounts['Vücut & Bebek']++;
       if (text.includes('şampuan') || text.includes('saç') || text.includes('shampoo') || text.includes('hair')) routineCounts['Saç Bakımı']++;
-      if (text.includes('tablet') || text.includes('kapsül') || text.includes('takviye') || text.includes('vitamin') || text.includes('omega') || text.includes('kolajen') || text.includes('damla') || text.includes('şurup') || text.includes('folat') || text.includes('magnezyum') || text.includes('ginseng') || text.includes('b12')) routineCounts['Takviye Edici Gıda']++;
+      if (text.includes('tablet') || text.includes('kapsül') || text.includes('takviye') || text.includes('vitamin') || text.includes('omega') || text.includes('kolajen') || text.includes('damla') || text.includes('şurup') || text.includes('folat') || text.includes('magnezyum') || text.includes('ginseng') || text.includes('b12') || text.includes('demir') || text.includes('iron') || text.includes('ferritin')) routineCounts['Takviye Edici Gıda']++;
     });
 
     const categories = [
@@ -446,7 +447,8 @@
           const isSup = pRutin.includes('takviye') || pRutin.includes('vitamin') || pRutin.includes('tablet') || 
                         pRutin.includes('kapsül') || pRutin.includes('omega') || pRutin.includes('kolajen') || 
                         pRutin.includes('damla') || pRutin.includes('şurup') || pRutin.includes('folat') || 
-                        pRutin.includes('magnezyum') || pRutin.includes('ginseng') || pRutin.includes('b12');
+                        pRutin.includes('magnezyum') || pRutin.includes('ginseng') || pRutin.includes('b12') ||
+                        pRutin.includes('demir') || pRutin.includes('iron') || pRutin.includes('ferritin');
           if (!isSup) return false;
         } else {
           let targetWord = routine.toLowerCase();
@@ -473,8 +475,11 @@
         const sgkMatch = (p.sgk_karsilastirmasi_ve_nis_bilgi || '').toLowerCase().includes(q);
         const ageMatch = (p.yas_grubu || '').toLowerCase().includes(q);
         const whoCanMatch = (p.kimler_icebilir || '').toLowerCase().includes(q);
+        const contraindicationMatch = (p.kimler_icemez || '').toLowerCase().includes(q);
+        const warningsMatch = (p.kimler_kullanamaz || '').toLowerCase().includes(q);
         
-        if (!nameMatch && !brandMatch && !activesMatch && !tagsMatch && !complaintMatch && !benefitMatch && !sgkMatch && !ageMatch && !whoCanMatch) {
+        if (!nameMatch && !brandMatch && !activesMatch && !tagsMatch && !complaintMatch && 
+            !benefitMatch && !sgkMatch && !ageMatch && !whoCanMatch && !contraindicationMatch && !warningsMatch) {
           return false;
         }
       }
@@ -840,19 +845,25 @@
       }
     }
 
-    // 7. Kimler İçemez & İlaç Etkileşimleri
-    if (el.modalWhoCannotBlock) {
-      if (product.kimler_icemez) {
+    // 7. Kimler İçemez & İlaç Etkileşimleri (Tekil ve Düzenli Gösterim)
+    // Asla alt alta iki tane mükerrer uyarı kutusu çıkmamalı!
+    if (product.kimler_icemez) {
+      if (el.modalWhoCannotBlock) {
         el.modalWhoCannotBlock.style.display = 'block';
         if (el.modalWhoCannotText) el.modalWhoCannotText.textContent = product.kimler_icemez;
-      } else {
+      }
+      if (el.modalWarningBlock) {
+        el.modalWarningBlock.style.display = 'none';
+      }
+    } else {
+      if (el.modalWhoCannotBlock) {
         el.modalWhoCannotBlock.style.display = 'none';
       }
-    }
-
-    // 8. Güvenlik & Kimler Kullanamaz
-    if (el.modalWarningText) {
-      el.modalWarningText.textContent = product.kimler_kullanamaz || 'İçeriğindeki etken maddelere karşı hassasiyeti olanlar kullanmamalıdır.';
+      if (el.modalWarningBlock) {
+        const warning = product.kimler_kullanamaz || 'İçeriğindeki etken maddelere karşı hassasiyeti olanlar kullanmamalıdır.';
+        if (el.modalWarningText) el.modalWarningText.textContent = warning;
+        el.modalWarningBlock.style.display = 'block';
+      }
     }
 
     // Modalı Göster
@@ -890,8 +901,7 @@
       p.kimler_icebilir ? `👥 *Kimler İçebilir:* ${p.kimler_icebilir}` : '',
       p.ideal_kilo_araligi ? `⚖️ *Kilo & Yaş Persantil Normu:* ${p.ideal_kilo_araligi}` : '',
       actives ? `🧪 *Öne Çıkan Aktifler:* ${actives}` : '',
-      p.kimler_icemez ? `🚫 *Kimler İçemez / Etkileşimler:* ${p.kimler_icemez}` : '',
-      p.kimler_kullanamaz ? `⚠️ *Önemli Uyarı:* ${p.kimler_kullanamaz}` : '',
+      p.kimler_icemez ? `🚫 *Kimler İçemez & İlaç Etkileşimleri:*\n${p.kimler_icemez}` : (p.kimler_kullanamaz ? `⚠️ *Önemli Uyarı:* ${p.kimler_kullanamaz}` : ''),
       '',
       `_Sağlıklı günler dileriz._`
     ].filter(Boolean).join('\n');
