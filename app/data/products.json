@@ -207,43 +207,6 @@
     ]
   },
   {
-    "id": "av-ne-cleanance-aqua-gel-matifiant-mattifying-aqua-gel-50-ml",
-    "name": "Avène Cleanance Aqua-Gel Matifiant Mattifying Aqua-Gel 50 ml",
-    "original_name": "Cleanance Aqua-Gel Matifiant Mattifying Aqua-Gel 50 ml",
-    "brand": "Avène",
-    "urun_tipi": "Nemlendirici Krem / Emülsiyon",
-    "urun_tipi_icon": "🧴",
-    "rutin_adimi": "Nemlendirici & Bariyer Krem",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Günlük Cilt Nemlendirme",
-    "size": "50 ml",
-    "form": "Nemlendirici Krem / Emülsiyon",
-    "image": "tum_urunler/Avene Cleanance Aqua-Gel Matifiant Mattifying Aqua-Gel 50 ml (1).jpg",
-    "cilt_tipleri": [
-      "Yağlı Cilt",
-      "Karma Cilt",
-      "Akneye Meyilli Cilt"
-    ],
-    "yas_grubu": "Yetişkinler ve Gençler (12+ yaş)",
-    "kimler_kullanamaz": "İçeriğindeki etken maddelere karşı bilinen alerjisi olanlar kullanmamalıdır.",
-    "nasil_kullanilir": "Temizlenmiş cilde sabah ve/veya akşam nazik dairesel hareketlerle masaj yaparak uygulayınız.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Cildimde tekrarlayan sivilceler, siyah noktalar ve parlama var.",
-      "Gözeneklerimin tıkalı ve belirgin olmasından şikayetçiyim.",
-      "Sivilce sonrası kalan kırmızı/kahverengi lekeleri gidermek istiyorum."
-    ],
-    "kombinasyon_ve_uyarilar": "Daha yüksek verim için temizleme ve nemlendirme rutininizle entegre ediniz.",
-    "etken_maddeler": [
-      "Dermatolojik Olarak Test Edilmiş Patentli Aktif Kompleks"
-    ],
-    "tags": [
-      "avène",
-      "nemlendirici & bariyer krem",
-      "nemlendirici krem / emülsiyon"
-    ]
-  },
-  {
     "id": "av-ne-cleanance-comedomed-gel-nettoyant-peeling-400-ml",
     "name": "Avène Cleanance Comedomed Gel Nettoyant Peeling 400 ml",
     "original_name": "Avène Cleanance Comedomed Gel Nettoyant Peeling",
@@ -257,103 +220,6 @@
     "size": "400 ml",
     "form": "Mikro-Eksfoliyan Jel",
     "image": "tum_urunler/Avene Cleanance Comedomed Gel Nettoyant Peeling 400 ml.jpg",
-    "stock_photo": "Tüm stok/IMG_20261027_123019.jpg",
-    "catalog_code": "A023",
-    "cilt_tipleri": [
-      "İnatçı Akne, Siyah Nokta ve Gözenekli Cilt"
-    ],
-    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
-    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
-    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Yüz, göğüs ve sırttaki inatçı sivilceleri ve siyah noktaları nazik soyucu etkiyle temizler."
-    ],
-    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
-    "etken_maddeler": [
-      "Comedoclastin™",
-      "Glikolik Asit (%AHA)",
-      "Çinko Glukonat"
-    ],
-    "kime_uygun": {
-      "profil": "İnatçı Akne, Siyah Nokta ve Gözenekli Cilt",
-      "cilt_tipleri": [
-        "İnatçı Akne, Siyah Nokta ve Gözenekli Cilt"
-      ],
-      "yas_grubu": "Yetişkin & Ergen",
-      "oncelikli_hedef": "Yüz, göğüs ve sırttaki inatçı sivilceleri ve siyah noktaları nazik soyucu etkiyle temizler.",
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": false,
-        "bebek_uygun_mu": false,
-        "cocuk_uygun_mu": true,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
-      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
-      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
-      "dikkat_uyarilari": []
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Yüz, göğüs ve sırttaki inatçı sivilceleri ve siyah noktaları nazik soyucu etkiyle temizler.",
-      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
-      "secim_nedeni": "Yüksek toleranslı Avène klinik formülü.",
-      "arama_etiketleri": [
-        "avène",
-        "cleanance comedomed",
-        "avène cleanance comedomed peeling etkili temizleme jeli",
-        "avène cleanance comedomed gel nettoyant peeling",
-        "a023"
-      ]
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "Comedoclastin™",
-        "Glikolik Asit (%AHA)",
-        "Çinko Glukonat"
-      ],
-      "rozetler": [
-        "Dermatolojik Test Edildi",
-        "Parabensiz",
-        "Komedojenik Değildir"
-      ],
-      "doku": "Mikro-Eksfoliyan Jel",
-      "fizyolojik_ph": "5.5"
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "1. Adım: Temizleme",
-      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
-      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
-      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
-      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
-      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
-    },
-    "tags": [
-      "avène",
-      "cleanance comedomed",
-      "a023",
-      "mikro-eksfoliyan jel"
-    ]
-  },
-  {
-    "id": "av-ne-cleanance-comedomed-gel-nettoyant-peeling-cleansing-gel-400-ml",
-    "name": "Avène Cleanance Comedomed Gel Nettoyant Peeling Cleansing Gel 400 ml",
-    "original_name": "Avène Cleanance Comedomed Gel Nettoyant Peeling",
-    "brand": "Avène",
-    "urun_tipi": "Mikro-Eksfoliyan Jel",
-    "urun_tipi_icon": "🧼",
-    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Cleanance Comedomed",
-    "size": "400 ml",
-    "form": "Mikro-Eksfoliyan Jel",
-    "image": "tum_urunler/Avene Cleanance Comedomed Gel Nettoyant Peeling Cleansing Gel 400 ml.jpg",
     "stock_photo": "Tüm stok/IMG_20261027_123019.jpg",
     "catalog_code": "A023",
     "cilt_tipleri": [
@@ -525,105 +391,6 @@
     "size": "400 ml",
     "form": "Mavi Arındırıcı Jel",
     "image": "tum_urunler/Avene Cleanance Gel Nettoyant 400 ml.jpg",
-    "stock_photo": "Tüm stok/IMG_20261027_123010.jpg",
-    "catalog_code": "A022",
-    "cilt_tipleri": [
-      "Karma, Yağlı ve Sivilceye Eğilimli Cilt"
-    ],
-    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
-    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
-    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Sebum salgısını kökten dengeler, parlamayı önler, mikro-komedon oluşumunu engeller."
-    ],
-    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
-    "etken_maddeler": [
-      "Comedoclastin™ (%0",
-      "7)",
-      "Çinko Glukonat",
-      "Avène Termal Kaynak Suyu (%60)"
-    ],
-    "kime_uygun": {
-      "profil": "Karma, Yağlı ve Sivilceye Eğilimli Cilt",
-      "cilt_tipleri": [
-        "Karma, Yağlı ve Sivilceye Eğilimli Cilt"
-      ],
-      "yas_grubu": "Yetişkin & Ergen",
-      "oncelikli_hedef": "Sebum salgısını kökten dengeler, parlamayı önler, mikro-komedon oluşumunu engeller.",
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": false,
-        "bebek_uygun_mu": false,
-        "cocuk_uygun_mu": true,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
-      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
-      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
-      "dikkat_uyarilari": []
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Sebum salgısını kökten dengeler, parlamayı önler, mikro-komedon oluşumunu engeller.",
-      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
-      "secim_nedeni": "Yüksek toleranslı Avène klinik formülü.",
-      "arama_etiketleri": [
-        "avène",
-        "cleanance",
-        "avène cleanance yağlı ve akneli ciltler i̇çin temizleme jeli",
-        "avène cleanance gel nettoyant",
-        "a022"
-      ]
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "Comedoclastin™ (%0",
-        "7)",
-        "Çinko Glukonat",
-        "Avène Termal Kaynak Suyu (%60)"
-      ],
-      "rozetler": [
-        "Dermatolojik Test Edildi",
-        "Parabensiz",
-        "Komedojenik Değildir"
-      ],
-      "doku": "Mavi Arındırıcı Jel",
-      "fizyolojik_ph": "5.5"
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "1. Adım: Temizleme",
-      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
-      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
-      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
-      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
-      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
-    },
-    "tags": [
-      "avène",
-      "cleanance",
-      "a022",
-      "mavi arındırıcı jel"
-    ]
-  },
-  {
-    "id": "av-ne-cleanance-gel-nettoyant-cleansing-gel-400-ml",
-    "name": "Avène Cleanance Gel Nettoyant Cleansing Gel 400 ml",
-    "original_name": "Avène Cleanance Gel Nettoyant",
-    "brand": "Avène",
-    "urun_tipi": "Mavi Arındırıcı Jel",
-    "urun_tipi_icon": "🧼",
-    "rutin_adimi": "1. Adım: Temizleme & Arındırma",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Cleanance",
-    "size": "400 ml",
-    "form": "Mavi Arındırıcı Jel",
-    "image": "tum_urunler/Avene Cleanance Gel Nettoyant Cleansing Gel 400 ml.jpg",
     "stock_photo": "Tüm stok/IMG_20261027_123010.jpg",
     "catalog_code": "A022",
     "cilt_tipleri": [
@@ -1518,41 +1285,6 @@
     ]
   },
   {
-    "id": "av-ne-les-essentiels-creme-nutritive-revitalisante-50-ml-2",
-    "name": "Avène Les Essentiels Creme Nutritive Revitalisante 50 ml",
-    "original_name": "Les Essentiels Creme Nutritive Revitalisante 50 ml",
-    "brand": "Avène",
-    "urun_tipi": "Nemlendirici Krem / Emülsiyon",
-    "urun_tipi_icon": "🧴",
-    "rutin_adimi": "Nemlendirici & Bariyer Krem",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Günlük Cilt Nemlendirme",
-    "size": "50 ml",
-    "form": "Nemlendirici Krem / Emülsiyon",
-    "image": "tum_urunler/Avene Les Essentiels Creme Nutritive Revitalisante 50 ml (2).jpg",
-    "cilt_tipleri": [
-      "Kuru Cilt",
-      "Çok Kuru Cilt",
-      "Atopik Cilt"
-    ],
-    "yas_grubu": "Yetişkinler ve Gençler (12+ yaş)",
-    "kimler_kullanamaz": "İçeriğindeki etken maddelere karşı bilinen alerjisi olanlar kullanmamalıdır.",
-    "nasil_kullanilir": "Temizlenmiş cilde sabah ve/veya akşam nazik dairesel hareketlerle masaj yaparak uygulayınız.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Avène Les Essentiels Creme Nutritive Revitalisante 50 ml kullanımına uygun cilt veya saç ihtiyacı"
-    ],
-    "kombinasyon_ve_uyarilar": "Daha yüksek verim için temizleme ve nemlendirme rutininizle entegre ediniz.",
-    "etken_maddeler": [
-      "Dermatolojik Olarak Test Edilmiş Patentli Aktif Kompleks"
-    ],
-    "tags": [
-      "avène",
-      "nemlendirici & bariyer krem",
-      "nemlendirici krem / emülsiyon"
-    ]
-  },
-  {
     "id": "av-ne-mousse-nettoyante-cleansing-foam-150-ml",
     "name": "Avène Mousse Nettoyante Cleansing Foam 150 ml",
     "original_name": "Avène Mousse Nettoyante",
@@ -2099,103 +1831,6 @@
       "avène",
       "gıda takviyesi & vitamin",
       "tablet / kapsül"
-    ]
-  },
-  {
-    "id": "av-ne-xeracalm-a-d-huile-lavante-relipidante-cleansing-oil-400-ml",
-    "name": "Avène XeraCalm A.D Huile Lavante Relipidante Cleansing Oil 400 ml",
-    "original_name": "Avène XeraCalm A.D Huile Lavante Relipidante",
-    "brand": "Avène",
-    "urun_tipi": "Besleyici Temizleme Yağı",
-    "urun_tipi_icon": "🧼",
-    "rutin_adimi": "3. Adım: Hedefe Yönelik Serum & Bakım",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "XeraCalm A.D",
-    "size": "400 ml",
-    "form": "Besleyici Temizleme Yağı",
-    "image": "tum_urunler/Avene XeraCalm A.D Huile Lavante Relipidante Cleansing Oil 400 ml.jpg",
-    "stock_photo": "Tüm stok/IMG_20261027_123031.jpg",
-    "catalog_code": "A095",
-    "cilt_tipleri": [
-      "Kuru, Çok Kuru, Atopik ve Egzamalı Cilt"
-    ],
-    "yas_grubu": "Ergen ve yetişkin kullanımı için uygundur.",
-    "kimler_kullanamaz": "İçeriğindeki aktif bileşenlere karşı bilinen aşırı duyarlılığı olanlar kullanmamalıdır.",
-    "nasil_kullanilir": "Temiz cilde yeterli miktarda nazikçe masaj yaparak uygulayınız.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Atopik egzamada ciltteki yoğun kaşıntı ve kuruluk krizlerini banyoda anında yatıştırır."
-    ],
-    "kombinasyon_ve_uyarilar": "Gündüz kullanımında güneş koruyucu ile desteklenmesi önerilir.",
-    "etken_maddeler": [
-      "I-modulia® (Postbiyotik Kaşıntı Karşıtı Aktif)",
-      "Cer-Omega Lipid Kompleksi",
-      "Avène Termal Su"
-    ],
-    "kime_uygun": {
-      "profil": "Kuru, Çok Kuru, Atopik ve Egzamalı Cilt",
-      "cilt_tipleri": [
-        "Kuru, Çok Kuru, Atopik ve Egzamalı Cilt"
-      ],
-      "yas_grubu": "Yetişkin & Ergen",
-      "oncelikli_hedef": "Atopik egzamada ciltteki yoğun kaşıntı ve kuruluk krizlerini banyoda anında yatıştırır.",
-      "yas_kriterleri": {
-        "yenidogan_uygun_mu": false,
-        "bebek_uygun_mu": false,
-        "cocuk_uygun_mu": true,
-        "ergen_uygun_mu": true,
-        "yetiskin_uygun_mu": true,
-        "geriatri_uygun_mu": true,
-        "gebelik_guvenli_mi": true,
-        "emzirme_guvenli_mi": true,
-        "yas_aciklama_detay": "Klinik tolerans testlerinden geçmiştir."
-      }
-    },
-    "guvenlik_filtresi": {
-      "kontrendikasyonlar": "Açık yaralara veya enfekte dokulara doğrudan uygulanmaz.",
-      "goz_cevresi_temas": "Göz içine doğrudan temastan kaçınınız. Temas halinde bol su ile durulayınız.",
-      "doktora_yonlendirme": "2 haftayı geçen inatçı reaksiyonlarda dermatoloğa danışınız.",
-      "dikkat_uyarilari": []
-    },
-    "hasta_sikayeti": {
-      "hasta_cumlesi": "Atopik egzamada ciltteki yoğun kaşıntı ve kuruluk krizlerini banyoda anında yatıştırır.",
-      "eczaci_sorusu": "Şikayetiniz ne kadar süredir devam ediyor ve hangi ürünleri kullanıyorsunuz?",
-      "secim_nedeni": "Yüksek toleranslı Avène klinik formülü.",
-      "arama_etiketleri": [
-        "avène",
-        "xeracalm a.d",
-        "avène xeracalm a.d kaşıntı ve kuruluk karşıtı temizleme yağı",
-        "avène xeracalm a.d huile lavante relipidante",
-        "a095"
-      ]
-    },
-    "formulasyon": {
-      "aktif_bilesenler": [
-        "I-modulia® (Postbiyotik Kaşıntı Karşıtı Aktif)",
-        "Cer-Omega Lipid Kompleksi",
-        "Avène Termal Su"
-      ],
-      "rozetler": [
-        "Dermatolojik Test Edildi",
-        "Parabensiz",
-        "Komedojenik Değildir"
-      ],
-      "doku": "Besleyici Temizleme Yağı",
-      "fizyolojik_ph": "5.5"
-    },
-    "kullanim_protokolu": {
-      "rutin_siralamasi": "3. Adım: Bakım",
-      "zaman_ve_siklik": "Günde 1-2 kez (Sabah ve/veya Akşam)",
-      "miktar": "Yeterli miktar (1-2 pompa veya nohut büyüklüğü)",
-      "uygulama_sekli": "Temizlenmiş cilde nazik dairesel hareketlerle masaj yapılarak uygulanır.",
-      "beklenen_sonuc": "Düzenli kullanımda klinik iyileşme ve bariyer güçlenmesi.",
-      "saklama_kosullari": "25°C altındaki oda sıcaklığında saklayınız."
-    },
-    "tags": [
-      "avène",
-      "xeracalm a.d",
-      "a095",
-      "besleyici temizleme yağı"
     ]
   },
   {
@@ -3396,39 +3031,6 @@
     ]
   },
   {
-    "id": "caudalie-serum-capillaire-anti-chute-50-ml",
-    "name": "Caudalie Serum Capillaire Anti-chute 50 ml",
-    "original_name": "Serum Capillaire Anti-chute 50 ml",
-    "brand": "Caudalie",
-    "urun_tipi": "Saç Serumu / Losyon",
-    "urun_tipi_icon": "🧴",
-    "rutin_adimi": "Şampuan & Saç Bakımı",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Saç ve Saç Derisi Bakımı",
-    "size": "50 ml",
-    "form": "Saç Serumu / Losyon",
-    "image": "tum_urunler/Caudalie Serum Capillaire Anti-chute 50 ml.jpg",
-    "cilt_tipleri": [
-      "Tüm Cilt Tipleri"
-    ],
-    "yas_grubu": "Yetişkinler ve Gençler (12+ yaş)",
-    "kimler_kullanamaz": "İçeriğindeki etken maddelere karşı bilinen alerjisi olanlar kullanmamalıdır.",
-    "nasil_kullanilir": "Islak saç derisine masaj yaparak uygulayınız, 2-3 dakika etki etmesini bekledikten sonra bol ılık su ile durulayınız.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Caudalie Serum Capillaire Anti-chute 50 ml kullanımına uygun cilt veya saç ihtiyacı"
-    ],
-    "kombinasyon_ve_uyarilar": "Daha yüksek verim için temizleme ve nemlendirme rutininizle entegre ediniz.",
-    "etken_maddeler": [
-      "Organik Üzüm Suyu & Polifenoller"
-    ],
-    "tags": [
-      "caudalie",
-      "şampuan & saç bakımı",
-      "saç serumu / losyon"
-    ]
-  },
-  {
     "id": "caudalie-soleil-des-vignes-oil-elixir-100-ml",
     "name": "Caudalie Soleil des Vignes Oil Elixir 100 ml",
     "original_name": "Soleil des Vignes Oil Elixir 100 ml",
@@ -4376,39 +3978,6 @@
     ]
   },
   {
-    "id": "caudalie-vinopure-purifying-gel-cleanser-385-ml-2",
-    "name": "Caudalie Vinopure Purifying Gel Cleanser 385 ml",
-    "original_name": "Vinopure Purifying Gel Cleanser 385 ml",
-    "brand": "Caudalie",
-    "urun_tipi": "Yüz Temizleme Jeli / Köpüğü",
-    "urun_tipi_icon": "🧴",
-    "rutin_adimi": "Yüz & Vücut Temizleyici",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Cilt Temizliği & Arındırma",
-    "size": "385 ml",
-    "form": "Yüz Temizleme Jeli / Köpüğü",
-    "image": "tum_urunler/Caudalie Vinopure Purifying Gel Cleanser 385 ml (2).jpg",
-    "cilt_tipleri": [
-      "Tüm Cilt Tipleri"
-    ],
-    "yas_grubu": "Yetişkinler ve Gençler (12+ yaş)",
-    "kimler_kullanamaz": "İçeriğindeki etken maddelere karşı bilinen alerjisi olanlar kullanmamalıdır.",
-    "nasil_kullanilir": "Ilık su ile nemlendirilmiş cilde dairesel hareketlerle köpürterek uygulayınız, ardından bol su ile durulayınız.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Caudalie Vinopure Purifying Gel Cleanser 385 ml kullanımına uygun cilt veya saç ihtiyacı"
-    ],
-    "kombinasyon_ve_uyarilar": "Daha yüksek verim için temizleme ve nemlendirme rutininizle entegre ediniz.",
-    "etken_maddeler": [
-      "Organik Üzüm Suyu & Polifenoller"
-    ],
-    "tags": [
-      "caudalie",
-      "yüz & vücut temizleyici",
-      "yüz temizleme jeli / köpüğü"
-    ]
-  },
-  {
     "id": "caudalie-vinopure-purifying-toner-400-ml",
     "name": "Caudalie Vinopure Purifying Toner 400 ml",
     "original_name": "Vinopure Purifying Toner 400 ml",
@@ -4854,43 +4423,6 @@
     ]
   },
   {
-    "id": "av-ne-cleanance-comedomed-laktik-ve-suksinik-asit-i-ceren-arindirici-peeling-etkili-temizleme-jeli",
-    "name": "Avène Cleanance Comedomed Laktik ve Süksinik Asit İçeren Arındırıcı, Peeling Etkili Temizleme Jeli",
-    "original_name": "Cleanance Comedomed Laktik ve Süksinik Asit İçeren Arındırıcı, Peeling Etkili Temizleme Jeli",
-    "brand": "Avène",
-    "urun_tipi": "Yüz Temizleme Jeli / Köpüğü",
-    "urun_tipi_icon": "🧴",
-    "rutin_adimi": "Yüz & Vücut Temizleyici",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Cilt Temizliği & Arındırma",
-    "size": "",
-    "form": "Yüz Temizleme Jeli / Köpüğü",
-    "image": "tum_urunler/Cleanance Comedomed Laktik ve Süksinik Asit İçeren Arındırıcı, Peeling Etkili Temizleme Jeli.jpg",
-    "cilt_tipleri": [
-      "Yağlı Cilt",
-      "Karma Cilt",
-      "Akneye Meyilli Cilt"
-    ],
-    "yas_grubu": "Yetişkinler ve Gençler (12+ yaş)",
-    "kimler_kullanamaz": "Göz kapağı ve dudak mukozasına temasından kaçınılmalıdır. Uygulama süresince güneş koruyucu şarttır.",
-    "nasil_kullanilir": "Ilık su ile nemlendirilmiş cilde dairesel hareketlerle köpürterek uygulayınız, ardından bol su ile durulayınız.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Cildimde tekrarlayan sivilceler, siyah noktalar ve parlama var.",
-      "Gözeneklerimin tıkalı ve belirgin olmasından şikayetçiyim.",
-      "Sivilce sonrası kalan kırmızı/kahverengi lekeleri gidermek istiyorum."
-    ],
-    "kombinasyon_ve_uyarilar": "Daha yüksek verim için temizleme ve nemlendirme rutininizle entegre ediniz.",
-    "etken_maddeler": [
-      "Dermatolojik Olarak Test Edilmiş Patentli Aktif Kompleks"
-    ],
-    "tags": [
-      "avène",
-      "yüz & vücut temizleyici",
-      "yüz temizleme jeli / köpüğü"
-    ]
-  },
-  {
     "id": "dexeryl-huile-lavante-200-ml-crema-emolliente-250-g-set",
     "name": "Dexeryl Huile Lavante 200 ml & Crema Emolliente 250 g Set",
     "original_name": "Huile Lavante 200 ml & Crema Emolliente 250 g Set",
@@ -5278,28 +4810,35 @@
     "category": "dermo",
     "category_name": "Kozmetik & Dermokozmetik",
     "sub_category": "Takviye Edici Gıda",
-    "size": "",
-    "form": "Tablet / Kapsül",
+    "size": "60 Kapsül",
+    "form": "Kapsül",
     "image": "tum_urunler/INFINITY BerberiQ.png",
     "cilt_tipleri": [
       "Tüm Cilt Tipleri"
     ],
-    "yas_grubu": "Yetişkinler ve Gençler (12+ yaş)",
+    "yas_grubu": "18 Yaş Üstü Yetişkin",
     "kimler_kullanamaz": "İçeriğindeki etken maddelere karşı bilinen alerjisi olanlar kullanmamalıdır.",
-    "nasil_kullanilir": "Yetişkinler için tercihen yemek zamanı günde 1 tablet/kapsül bol su ile tüketilmesi tavsiye edilir.",
+    "nasil_kullanilir": "Günde 2 kapsül, ana yemeklerden (öğle ve akşam) 15-20 dakika önce 1 bardak su ile alınır.",
     "hangi_sikayetle_gelene_verilir": [
       "Günlük vitamin, mineral ve besin desteğine ihtiyaç duyuyorum.",
       "Bağışıklık sistemimi, enerji seviyemi ve cilt sağlığımı içeriden desteklemek istiyorum."
     ],
     "kombinasyon_ve_uyarilar": "Daha yüksek verim için temizleme ve nemlendirme rutininizle entegre ediniz.",
     "etken_maddeler": [
-      "Dermatolojik Olarak Test Edilmiş Patentli Aktif Kompleks"
+      "Berberis Aristata Kök Ekstresi (%97 Berberin HCL 500 mg)",
+      "Koenzim Q10",
+      "Krom Pikolinat"
     ],
     "tags": [
       "infinity",
       "gıda takviyesi & vitamin",
       "tablet / kapsül"
-    ]
+    ],
+    "ideal_kilo_araligi": "Yetişkinler (Özellikle insülin direnci ve göbek bölgesi yağlanması olanlar)",
+    "kimler_icebilir": "İnsülin direnci, tip 2 diyabet eğilimi, tatlı krizleri, karaciğer yağlanması ve kilo vermekte zorlananlar.",
+    "kimler_icemez": "18 yaş altı, gebeler, emzirenler ve hipoglisemi (ani şeker düşmesi) yaşayanlar.",
+    "ne_ise_yarar": "Berberin hidroklorür, hücresel düzeyde AMPK (hücresel enerji sensörü) enzimini aktive eder. Hücrelerin glukoz alımını insülinden bağımsız olarak artırarak kan şekerini dengeler ve tatlı krizlerini keser.",
+    "sgk_karsilastirmasi_ve_nis_bilgi": "🏆 NİŞ FARMAKOLOJİK BİLGİ (Berberin vs. Metformin): Klinik çalışmalarda Berberin'in HbA1c ve açlık kan şekerini düşürme mekanizmasının metformin ilacıyla neredeyse eşdeğer olduğu gösterilmiştir. Karaciğerde yağ üretimini (lipogenez) baskılar."
   },
   {
     "id": "infinity-bromelain",
@@ -5312,28 +4851,33 @@
     "category": "dermo",
     "category_name": "Kozmetik & Dermokozmetik",
     "sub_category": "Takviye Edici Gıda",
-    "size": "",
-    "form": "Tablet / Kapsül",
+    "size": "60 Kapsül",
+    "form": "Kapsül",
     "image": "tum_urunler/INFINITY Bromelain.jpeg",
     "cilt_tipleri": [
       "Tüm Cilt Tipleri"
     ],
-    "yas_grubu": "Yetişkinler ve Gençler (12+ yaş)",
+    "yas_grubu": "12 Yaş Üstü & Yetişkin",
     "kimler_kullanamaz": "İçeriğindeki etken maddelere karşı bilinen alerjisi olanlar kullanmamalıdır.",
-    "nasil_kullanilir": "Yetişkinler için tercihen yemek zamanı günde 1 tablet/kapsül bol su ile tüketilmesi tavsiye edilir.",
+    "nasil_kullanilir": "Ödem ve şişlik için: Öğün aralarında AÇ KARNINA günde 1-2 kapsül bol su ile. Sindirimi rahatlatmak için: Yemek ortasında.",
     "hangi_sikayetle_gelene_verilir": [
       "Günlük vitamin, mineral ve besin desteğine ihtiyaç duyuyorum.",
       "Bağışıklık sistemimi, enerji seviyemi ve cilt sağlığımı içeriden desteklemek istiyorum."
     ],
     "kombinasyon_ve_uyarilar": "Daha yüksek verim için temizleme ve nemlendirme rutininizle entegre ediniz.",
     "etken_maddeler": [
-      "Dermatolojik Olarak Test Edilmiş Patentli Aktif Kompleks"
+      "Standardize Bromelain (2400 GDU/g yüksek enzim aktivitesi)"
     ],
     "tags": [
       "infinity",
       "gıda takviyesi & vitamin",
       "tablet / kapsül"
-    ]
+    ],
+    "ideal_kilo_araligi": "Yetişkinler",
+    "kimler_icebilir": "Ödem problemi yaşayanlar, estetik/burun ameliyatı sonrası şişlikleri olanlar, selülit ve lenf drenaj desteği arayanlar.",
+    "kimler_icemez": "Ananas alerjisi olanlar, aktif mide ülseri olanlar, kan sulandırıcı (Coumadin) kullananlar.",
+    "ne_ise_yarar": "Ananas sapından elde edilen proteolitik enzimdir. İnflamatuvar bradikinin ve prostaglandinleri parçalayarak dokulardaki fazla suyun ve ödemin lenfatik drenajla atılmasını sağlar.",
+    "sgk_karsilastirmasi_ve_nis_bilgi": "🏆 NİŞ BİLGİ: Aç karnına alındığında kana geçip ödem söktürür; tok karnına alınırsa midedeki proteinleri sindirir. Ödem için MUTLAKA aç karnına alınmalıdır!"
   },
   {
     "id": "infinity-clarity",
@@ -5380,28 +4924,34 @@
     "category": "dermo",
     "category_name": "Kozmetik & Dermokozmetik",
     "sub_category": "Takviye Edici Gıda",
-    "size": "",
-    "form": "Tablet / Kapsül",
+    "size": "60 Kapsül",
+    "form": "Kapsül",
     "image": "tum_urunler/INFINITY Resveratrol.png",
     "cilt_tipleri": [
       "Tüm Cilt Tipleri"
     ],
-    "yas_grubu": "Yetişkinler ve Gençler (12+ yaş)",
+    "yas_grubu": "Yetişkin",
     "kimler_kullanamaz": "İçeriğindeki etken maddelere karşı bilinen alerjisi olanlar kullanmamalıdır.",
-    "nasil_kullanilir": "Yetişkinler için tercihen yemek zamanı günde 1 tablet/kapsül bol su ile tüketilmesi tavsiye edilir.",
+    "nasil_kullanilir": "Günde 1 kapsül, tercihen sabah kahvaltısıyla birlikte.",
     "hangi_sikayetle_gelene_verilir": [
       "Günlük vitamin, mineral ve besin desteğine ihtiyaç duyuyorum.",
       "Bağışıklık sistemimi, enerji seviyemi ve cilt sağlığımı içeriden desteklemek istiyorum."
     ],
     "kombinasyon_ve_uyarilar": "Daha yüksek verim için temizleme ve nemlendirme rutininizle entegre ediniz.",
     "etken_maddeler": [
-      "Dermatolojik Olarak Test Edilmiş Patentli Aktif Kompleks"
+      "Standartlaştırılmış Trans-Resveratrol (250 mg)",
+      "Piperin (Karabiber Ekstresi - Biyoyararlanımı 10 kat artırır)"
     ],
     "tags": [
       "infinity",
       "gıda takviyesi & vitamin",
       "tablet / kapsül"
-    ]
+    ],
+    "ideal_kilo_araligi": "Yetişkinler",
+    "kimler_icebilir": "Anti-aging (hücresel gençleşme), damar elastikiyeti, karaciğer detoksu ve serbest radikallere karşı hücresel koruma arayanlar.",
+    "kimler_icemez": "Hormon duyarlı kanser öyküsü olanlar, kan sulandırıcı kullananlar (doktora danışmalı).",
+    "ne_ise_yarar": "Trans-resveratrol, uzun ömür genleri olarak bilinen 'SIRT1 (Sirtuin)' enzimlerini aktive eder. Mitokondri hasarını önler ve damar çeperlerindeki nitrik oksit (NO) üretimini artırarak damarları genç tutar.",
+    "sgk_karsilastirmasi_ve_nis_bilgi": "🏆 NİŞ BİLGİ (Trans-Resveratrol Saflığı): Sıradan üzüm çekirdeği tozlarında aktif resveratrol oranı %1'in altındadır. INFINITY Resveratrol standardize %98 saf 'Trans' izomer formundadır ve hücre içine doğrudan nüfuz eder."
   },
   {
     "id": "infinity-soothe",
@@ -6756,40 +6306,6 @@
     ]
   },
   {
-    "id": "lierac-sunissime-le-fluide-veloute-solaire-visage-spf50-40-ml-2",
-    "name": "Lierac Sunissime Le Fluide Veloute Solaire Visage SPF50+ 40 ml",
-    "original_name": "Sunissime Le Fluide Veloute Solaire Visage SPF50+ 40 ml",
-    "brand": "Lierac",
-    "urun_tipi": "Akışkan Güneş Sıvısı (Fluid)",
-    "urun_tipi_icon": "🧴",
-    "rutin_adimi": "Güneş Koruması",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Güneş & UV Koruması",
-    "size": "40 ml",
-    "form": "Akışkan Güneş Sıvısı (Fluid)",
-    "image": "tum_urunler/Lierac Sunissime Le Fluide Veloute Solaire Visage SPF50+ 40 ml (2).jpg",
-    "cilt_tipleri": [
-      "Tüm Cilt Tipleri"
-    ],
-    "yas_grubu": "Yetişkinler ve Gençler (12+ yaş)",
-    "kimler_kullanamaz": "İçeriğindeki etken maddelere karşı bilinen alerjisi olanlar kullanmamalıdır.",
-    "nasil_kullanilir": "Güneşe çıkmadan 20 dakika önce yüz ve boyun bölgesine eşit miktarda uygulayınız. 2 saatte bir veya yüzme/terleme sonrasında yenileyiniz.",
-    "hangi_sikayetle_gelene_verilir": [
-      "Güneşin zararlı UVA/UVB ışınlarına karşı yüksek koruma arıyorum.",
-      "Güneş kremlerinin yüzümde beyazlık veya parlama bırakmasını istemiyorum."
-    ],
-    "kombinasyon_ve_uyarilar": "Daha yüksek verim için temizleme ve nemlendirme rutininizle entegre ediniz.",
-    "etken_maddeler": [
-      "F.G.N. Teknolojisi / Hyalu-3 Konsantresi"
-    ],
-    "tags": [
-      "lierac",
-      "güneş koruması",
-      "akışkan güneş sıvısı (fluid)"
-    ]
-  },
-  {
     "id": "lierac-sunissime-le-sorbet-apres-soleil-visage-50-ml",
     "name": "Lierac Sunissime Le Sorbet Apres-Soleil Visage 50 ml",
     "original_name": "Sunissime Le Sorbet Apres-Soleil Visage 50 ml",
@@ -6833,28 +6349,38 @@
     "category": "dermo",
     "category_name": "Kozmetik & Dermokozmetik",
     "sub_category": "Takviye Edici Gıda",
-    "size": "",
-    "form": "Tablet / Kapsül",
+    "size": "60 Kapsül",
+    "form": "Kapsül",
     "image": "tum_urunler/NutraFarm Medobyocomplex-M Biotin.jpeg",
     "cilt_tipleri": [
       "Tüm Cilt Tipleri"
     ],
-    "yas_grubu": "Yetişkinler ve Gençler (12+ yaş)",
+    "yas_grubu": "Erkek Yetişkin",
     "kimler_kullanamaz": "İçeriğindeki etken maddelere karşı bilinen alerjisi olanlar kullanmamalıdır.",
-    "nasil_kullanilir": "Yetişkinler için tercihen yemek zamanı günde 1 tablet/kapsül bol su ile tüketilmesi tavsiye edilir.",
+    "nasil_kullanilir": "Günde 2 kapsül, sabah ve akşam yemeklerden sonra bol su ile.",
     "hangi_sikayetle_gelene_verilir": [
       "Günlük vitamin, mineral ve besin desteğine ihtiyaç duyuyorum.",
       "Bağışıklık sistemimi, enerji seviyemi ve cilt sağlığımı içeriden desteklemek istiyorum."
     ],
     "kombinasyon_ve_uyarilar": "Daha yüksek verim için temizleme ve nemlendirme rutininizle entegre ediniz.",
     "etken_maddeler": [
-      "Dermatolojik Olarak Test Edilmiş Patentli Aktif Kompleks"
+      "Saw Palmetto Ekstresi",
+      "Biotin (5000 mcg)",
+      "At Kuyruğu Ekstresi (Doğal Silisyum)",
+      "Çinko",
+      "L-Sistin",
+      "B5 Vitamini"
     ],
     "tags": [
       "nutrafarm",
       "gıda takviyesi & vitamin",
       "tablet / kapsül"
-    ]
+    ],
+    "ideal_kilo_araligi": "Yetişkin erkekler",
+    "kimler_icebilir": "Erkek tipi genetik saç dökülmesi (Androgenetik alopesi), saç tellerinde incelme ve tepe açılması yaşayan erkekler.",
+    "kimler_icemez": "Kadınlar (Erkek formülüdür, Saw Palmetto içerir), 18 yaş altı.",
+    "ne_ise_yarar": "Saw Palmetto (Cüce Palmiye) ekstresi saç köklerini öldüren DHT (Dihidrotestosteron) hormonunu bloke eder. Biotin, Çinko ve At kuyruğu silisyumu saç tellerinin çapını kalınlaştırır.",
+    "sgk_karsilastirmasi_ve_nis_bilgi": "🏆 NİŞ FARMAKOLOJİK BİLGİ (Saw Palmetto vs. Finasterid): Reçeteli finasterid ilacı libido kaybı yapabilirken; standardize Saw Palmetto doğal 5-alfa redüktaz inhibitörüdür, hormonal yan etki yapmadan saç folikülünü DHT saldırısından korur."
   },
   {
     "id": "nutrafarm-medobiocomplex-w",
@@ -6867,28 +6393,37 @@
     "category": "dermo",
     "category_name": "Kozmetik & Dermokozmetik",
     "sub_category": "Takviye Edici Gıda",
-    "size": "",
-    "form": "Tablet / Kapsül",
+    "size": "60 Kapsül",
+    "form": "Kapsül",
     "image": "tum_urunler/Nutrafarm Medobiocomplex-W.webp",
     "cilt_tipleri": [
       "Tüm Cilt Tipleri"
     ],
-    "yas_grubu": "Yetişkinler ve Gençler (12+ yaş)",
+    "yas_grubu": "Kadın Yetişkin",
     "kimler_kullanamaz": "İçeriğindeki etken maddelere karşı bilinen alerjisi olanlar kullanmamalıdır.",
-    "nasil_kullanilir": "Yetişkinler için tercihen yemek zamanı günde 1 tablet/kapsül bol su ile tüketilmesi tavsiye edilir.",
+    "nasil_kullanilir": "Günde 2 kapsül yemeklerden sonra.",
     "hangi_sikayetle_gelene_verilir": [
       "Günlük vitamin, mineral ve besin desteğine ihtiyaç duyuyorum.",
       "Bağışıklık sistemimi, enerji seviyemi ve cilt sağlığımı içeriden desteklemek istiyorum."
     ],
     "kombinasyon_ve_uyarilar": "Daha yüksek verim için temizleme ve nemlendirme rutininizle entegre ediniz.",
     "etken_maddeler": [
-      "Dermatolojik Olarak Test Edilmiş Patentli Aktif Kompleks"
+      "Biotin (5000 mcg)",
+      "L-Sistin & L-Metiyonin (Keratin Yapıtaşları)",
+      "Çinko",
+      "Folik Asit",
+      "B3 & B5 Vitaminleri"
     ],
     "tags": [
       "nutrafarm",
       "gıda takviyesi & vitamin",
       "tablet / kapsül"
-    ]
+    ],
+    "ideal_kilo_araligi": "Yetişkin kadınlar",
+    "kimler_icebilir": "Mevsimsel, stres veya doğum sonrası yoğun saç dökülmesi yaşayan, tırnakları kırılan ve saçları cansızlaşan kadınlar.",
+    "kimler_icemez": "İçeriğindeki vitaminlere alerjisi olanlar.",
+    "ne_ise_yarar": "Kadın tipi telogen effluvium dökülmelerinde saç folikülünün anagen (büyüme) fazını uzatır. Keratin sentezini uyararak saç kökünü besler.",
+    "sgk_karsilastirmasi_ve_nis_bilgi": "🏆 NİŞ BİLGİ: Demir eksikliği anemisi olan kadınlarda demir takviyesiyle birlikte kullanıldığında saç dökülmesini 3 haftada durdurur."
   },
   {
     "id": "phyto-paris-douceur-lait-demelant-express-detangling-milk-150-ml",
@@ -7486,27 +7021,32 @@
     "category_name": "Kozmetik & Dermokozmetik",
     "sub_category": "Takviye Edici Gıda",
     "size": "60 Tablet",
-    "form": "Tablet / Kapsül",
+    "form": "Tablet",
     "image": "tum_urunler/Solgar - Magnesium Citrate 60 Tablet.jpeg",
     "cilt_tipleri": [
       "Tüm Cilt Tipleri"
     ],
-    "yas_grubu": "Yetişkinler ve Gençler (12+ yaş)",
+    "yas_grubu": "12 Yaş Üstü & Yetişkin",
     "kimler_kullanamaz": "İçeriğindeki etken maddelere karşı bilinen alerjisi olanlar kullanmamalıdır.",
-    "nasil_kullanilir": "Yetişkinler için tercihen yemek zamanı günde 1 tablet/kapsül bol su ile tüketilmesi tavsiye edilir.",
+    "nasil_kullanilir": "Günde 1-2 tablet, akşam yemeğinden sonra veya yatmadan 1-2 saat önce bol su ile alınır. Tiroid ilacı (Levotiron), demir hapı veya antibiyotik (kinolon/tetrasiklin) kullanılıyorsa aralarında en az 3-4 saat bırakılmalıdır!",
     "hangi_sikayetle_gelene_verilir": [
       "Günlük vitamin, mineral ve besin desteğine ihtiyaç duyuyorum.",
       "Bağışıklık sistemimi, enerji seviyemi ve cilt sağlığımı içeriden desteklemek istiyorum."
     ],
     "kombinasyon_ve_uyarilar": "Daha yüksek verim için temizleme ve nemlendirme rutininizle entegre ediniz.",
     "etken_maddeler": [
-      "Dermatolojik Olarak Test Edilmiş Patentli Aktif Kompleks"
+      "Magnezyum Sitrat (Elemental Magnezyum 200-400 mg)"
     ],
     "tags": [
       "solgar",
       "gıda takviyesi & vitamin",
       "tablet / kapsül"
-    ]
+    ],
+    "ideal_kilo_araligi": "40 kg üzeri (Yetişkin dozu)",
+    "kimler_icebilir": "Kas krampları, huzursuz bacak, kabızlık eşlik eden kas spazmları ve spor sonrası laktik asit birikimi yaşayanlar.",
+    "kimler_icemez": "İleri derece böbrek yetmezliği olanlar, myastenia gravis hastaları, aktif ishal atağı yaşayanlar.",
+    "ne_ise_yarar": "Magnezyum sitrat, magnezyum mineralinin sitrik asit ile şelatlandığı organik formdur. Kasların gevşemesini sağlar, krampları önler, bağırsak peristaltizmini hafifçe uyararak kabızlığı giderir ve enerji metabolizmasında 300'den fazla enzimi aktive eder.",
+    "sgk_karsilastirmasi_ve_nis_bilgi": "🏆 NİŞ FARMAKOLOJİK BİLGİ (Sitrat vs. Oksit / Magvital): Reçeteyle devletin ödediği Magvital, Magnorm vb. toz ve hapların içeriği genellikle 'Magnezyum Oksit'tir. Magnezyum oksitin biyoyararlanımı yalnızca %4'tür! Yani aldığınız magnezyumun %96'sı kana geçmeden bağırsakta kalır, suyu içine çeker ve şiddetli ishal yapar ama kas krampına fayda sağlamaz. Solgar Magnezyum Sitrat ise %30-35 yüksek emilime sahiptir; kas dokusuna ve hücre içine hızla geçer."
   },
   {
     "id": "solgar-l-carnitine-500mg-30-tablet",
@@ -7520,27 +7060,32 @@
     "category_name": "Kozmetik & Dermokozmetik",
     "sub_category": "Takviye Edici Gıda",
     "size": "30 Tablet",
-    "form": "Tablet / Kapsül",
+    "form": "Tablet",
     "image": "tum_urunler/Solgar L-Carnitine 500mg 30 Tablet.jpg",
     "cilt_tipleri": [
       "Tüm Cilt Tipleri"
     ],
-    "yas_grubu": "Yetişkinler ve Gençler (12+ yaş)",
+    "yas_grubu": "12 Yaş Üstü & Yetişkin",
     "kimler_kullanamaz": "İçeriğindeki etken maddelere karşı bilinen alerjisi olanlar kullanmamalıdır.",
-    "nasil_kullanilir": "Yetişkinler için tercihen yemek zamanı günde 1 tablet/kapsül bol su ile tüketilmesi tavsiye edilir.",
+    "nasil_kullanilir": "Spordan / antrenmandan 30-45 dakika önce aç karnına 1-2 tablet bol su ile alınır. Spor yapılmayan günlerde sabah aç karnına alınabilir.",
     "hangi_sikayetle_gelene_verilir": [
       "Günlük vitamin, mineral ve besin desteğine ihtiyaç duyuyorum.",
       "Bağışıklık sistemimi, enerji seviyemi ve cilt sağlığımı içeriden desteklemek istiyorum."
     ],
     "kombinasyon_ve_uyarilar": "Daha yüksek verim için temizleme ve nemlendirme rutininizle entegre ediniz.",
     "etken_maddeler": [
-      "Dermatolojik Olarak Test Edilmiş Patentli Aktif Kompleks"
+      "Serbest Form L-Karnitin (500 mg)"
     ],
     "tags": [
       "solgar",
       "gıda takviyesi & vitamin",
       "tablet / kapsül"
-    ]
+    ],
+    "ideal_kilo_araligi": "Yetişkinler (50 kg üzeri)",
+    "kimler_icebilir": "Spor ve kardiyo yapanlar, yağ yakımını ve enerji üretimini hızlandırmak isteyenler, sperm hareketliliği desteği arayan erkekler.",
+    "kimler_icemez": "Epilepsi (sara) hastaları (nöbet eşiğini düşürebilir), tiroid hormonu düşük olanlar (L-karnitin tiroid hormonlarının hücreye girişini yavaşlatabilir).",
+    "ne_ise_yarar": "Uzun zincirli serbest yağ asitlerini hücrenin enerji fabrikası olan mitokondri membranından içeri taşır (karnitin mekiği). Yağların yakılarak ATP enerjisine dönüşmesini sağlar.",
+    "sgk_karsilastirmasi_ve_nis_bilgi": "🏆 NİŞ FARMAKOLOJİK BİLGİ: Karnitin tek başına otururken yağ yakmaz; mutlaka aerobik hareket veya kalori açığıyla birlikte mitokondriye yağ asidi pompalamalıdır."
   },
   {
     "id": "solgar-vitamin-b-12-1000mcg-100-tablet",
@@ -7554,27 +7099,32 @@
     "category_name": "Kozmetik & Dermokozmetik",
     "sub_category": "Takviye Edici Gıda",
     "size": "100 Tablet",
-    "form": "Tablet / Kapsül",
+    "form": "Dilaltı / Çiğneme Tableti",
     "image": "tum_urunler/Solgar Vitamin B-12 1000mcg 100 Tablet.jpg",
     "cilt_tipleri": [
       "Tüm Cilt Tipleri"
     ],
-    "yas_grubu": "Yetişkinler ve Gençler (12+ yaş)",
+    "yas_grubu": "12 Yaş Üstü & Yetişkin",
     "kimler_kullanamaz": "İçeriğindeki etken maddelere karşı bilinen alerjisi olanlar kullanmamalıdır.",
-    "nasil_kullanilir": "Yetişkinler için tercihen yemek zamanı günde 1 tablet/kapsül bol su ile tüketilmesi tavsiye edilir.",
+    "nasil_kullanilir": "Günde 1 tablet, tercihen sabah kahvaltısından sonra dil altında eritilerek veya çiğnenerek alınır.",
     "hangi_sikayetle_gelene_verilir": [
       "Günlük vitamin, mineral ve besin desteğine ihtiyaç duyuyorum.",
       "Bağışıklık sistemimi, enerji seviyemi ve cilt sağlığımı içeriden desteklemek istiyorum."
     ],
     "kombinasyon_ve_uyarilar": "Daha yüksek verim için temizleme ve nemlendirme rutininizle entegre ediniz.",
     "etken_maddeler": [
-      "Dermatolojik Olarak Test Edilmiş Patentli Aktif Kompleks"
+      "Siyanokobalamin / Kobalamin (1000 mcg)"
     ],
     "tags": [
       "solgar",
       "gıda takviyesi & vitamin",
       "tablet / kapsül"
-    ]
+    ],
+    "ideal_kilo_araligi": "40 kg üzeri",
+    "kimler_icebilir": "Hafıza bulanıklığı, unutkanlık, kronik yorgunluk, ellerde ayaklarda karıncalanma yaşayanlar, metformin (şeker ilacı) veya mide koruyucu (lansoprazol/pantoprazol) kullananlar.",
+    "kimler_icemez": "12 yaş altı çocuklar (hekim yazmadıkça 1000 mcg verilmez), Leber optik atrofisi olanlar.",
+    "ne_ise_yarar": "Kırmızı kan hücresi (eritrosit) oluşumunu destekleyerek megaloblastik anemiyi engeller. Sinir kılıflarını (miyelin) onararak nöropatik ağrıları ve unutkanlığı giderir. Homosistein düzeyini düşürerek damar sağlığını korur.",
+    "sgk_karsilastirmasi_ve_nis_bilgi": "🏆 NİŞ FARMAKOLOJİK BİLGİ (Benexol B12 vs. Eczane Formu): Mide koruyucu (PPI) veya şeker ilacı (Metformin) kullananlarda midede 'İntrensek Faktör' üretimi çöker; bu nedenle yutulan Benexol hapları mideden emilemez. Solgar Dilaltı formu ise ağız mukozasından mideye uğramadan emildiği için gastriti veya mide koruyucu kullanımı olanlarda dahi %100 kana geçer."
   },
   {
     "id": "solgar-vitamin-c-1000-mg-90-tablet",
@@ -7588,27 +7138,33 @@
     "category_name": "Kozmetik & Dermokozmetik",
     "sub_category": "Takviye Edici Gıda",
     "size": "90 Tablet",
-    "form": "Tablet / Kapsül",
+    "form": "Tablet",
     "image": "tum_urunler/Solgar Vitamin C 1000 Mg 90 Tablet.jpg",
     "cilt_tipleri": [
       "Tüm Cilt Tipleri"
     ],
-    "yas_grubu": "Yetişkinler ve Gençler (12+ yaş)",
+    "yas_grubu": "12 Yaş Üstü & Yetişkin",
     "kimler_kullanamaz": "İçeriğindeki etken maddelere karşı bilinen alerjisi olanlar kullanmamalıdır.",
-    "nasil_kullanilir": "Yetişkinler için tercihen yemek zamanı günde 1 tablet/kapsül bol su ile tüketilmesi tavsiye edilir.",
+    "nasil_kullanilir": "Günde 1 tablet, tercihen sabah veya öğle yemeğinden sonra bol su ile içilir. Gece geç saatte alınırsa idrar sıklığını artırabilir.",
     "hangi_sikayetle_gelene_verilir": [
       "Günlük vitamin, mineral ve besin desteğine ihtiyaç duyuyorum.",
       "Bağışıklık sistemimi, enerji seviyemi ve cilt sağlığımı içeriden desteklemek istiyorum."
     ],
     "kombinasyon_ve_uyarilar": "Daha yüksek verim için temizleme ve nemlendirme rutininizle entegre ediniz.",
     "etken_maddeler": [
-      "C Vitamini (Askorbik Asit / Glukozit)"
+      "L-Askorbik Asit (1000 mg)",
+      "Kuşburnu Ekstresi (Rose Hips)"
     ],
     "tags": [
       "solgar",
       "gıda takviyesi & vitamin",
       "tablet / kapsül"
-    ]
+    ],
+    "ideal_kilo_araligi": "40 kg üzeri",
+    "kimler_icebilir": "Bağışıklığını güçlendirmek isteyenler, sigara içenler (sigara C vitaminini hızla tüketir), demir ilacıyla emilimi artırmak isteyenler ve kollajen takviyesi kullananlar.",
+    "kimler_icemez": "Aktif böbrek taşı (özellikle kalsiyum oksalat taşı) öyküsü olanlar, talasemi veya hemokromatozis hastaları.",
+    "ne_ise_yarar": "Güçlü bir antioksidandır. Kollajen sentezinde lizin ve prolin amino asitlerinin hidroksilasyonu için zorunlu kofaktördür. Demir mineralini Fe3+ formundan Fe2+ emilebilir forma çevirir.",
+    "sgk_karsilastirmasi_ve_nis_bilgi": "🏆 NİŞ FARMAKOLOJİK BİLGİ (Kuşburnu / Bioflavonoid Sinerjisi): Yalnızca saf askorbik asit alındığında vücut bunu hızla böbrekten atar. Solgar C Vitamini içerisindeki doğal 'Kuşburnu (Rose Hips)' bioflavonoidleri sayesinde C vitamininin hücre içi kalıcılığı ve biyoyararlanımı 2 katına çıkar."
   },
   {
     "id": "tresan-6-bitki-kepek-karsiti-sampuan",
@@ -7823,28 +7379,39 @@
     "category": "dermo",
     "category_name": "Kozmetik & Dermokozmetik",
     "sub_category": "Takviye Edici Gıda",
-    "size": "",
-    "form": "Tablet / Kapsül",
+    "size": "30 Saşe",
+    "form": "Toz Saşe",
     "image": "tum_urunler/Voonka Beauty Collagen Plus Hidrolize Kollajen Tip 1 - Tip 3 Ananas Aromalı.jpg",
     "cilt_tipleri": [
       "Tüm Cilt Tipleri"
     ],
-    "yas_grubu": "Yetişkinler ve Gençler (12+ yaş)",
+    "yas_grubu": "Yetişkin (25 Yaş Üstü)",
     "kimler_kullanamaz": "İçeriğindeki etken maddelere karşı bilinen alerjisi olanlar kullanmamalıdır.",
-    "nasil_kullanilir": "Yetişkinler için tercihen yemek zamanı günde 1 tablet/kapsül bol su ile tüketilmesi tavsiye edilir.",
+    "nasil_kullanilir": "Günde 1 saşe, 1 bardak (200 ml) oda sıcaklığındaki suya karıştırılarak içilir. Emilimin en yüksek olduğu zaman: Gece yatmadan önce veya sabah aç karnına. 8-12 haftalık kür halinde kullanılmalıdır.",
     "hangi_sikayetle_gelene_verilir": [
       "Günlük vitamin, mineral ve besin desteğine ihtiyaç duyuyorum.",
       "Bağışıklık sistemimi, enerji seviyemi ve cilt sağlığımı içeriden desteklemek istiyorum."
     ],
     "kombinasyon_ve_uyarilar": "Daha yüksek verim için temizleme ve nemlendirme rutininizle entegre ediniz.",
     "etken_maddeler": [
-      "Hidrolize Kolajen Peptitleri"
+      "Hidrolize Kollajen Peptitleri Tip 1 & Tip 3 (10.000 mg)",
+      "C Vitamini",
+      "Hyaluronik Asit",
+      "Çinko",
+      "Biotin",
+      "Bakır",
+      "Selenyum"
     ],
     "tags": [
       "voonka",
       "gıda takviyesi & vitamin",
       "tablet / kapsül"
-    ]
+    ],
+    "ideal_kilo_araligi": "Yetişkinler",
+    "kimler_icebilir": "25 yaşından sonra azalan kollajen üretimini telafi etmek, cilt elastikiyetini artırmak, kırışıklıkları doldurmak ve saç/tırnakları güçlendirmek isteyen kadın ve erkekler.",
+    "kimler_icemez": "18 yaş altı ergenler, gebeler ve emziren anneler (hekim önerisi olmadan).",
+    "ne_ise_yarar": "2000 Dalton molekül ağırlığında Tip 1 ve Tip 3 hidrolize balık/sığır kollajen peptitleri içerir. Dermal fibroblast hücrelerini uyararak cildin kendi hyaluronik asit ve kollajenini üretmesini tetikler.",
+    "sgk_karsilastirmasi_ve_nis_bilgi": "🏆 NİŞ FARMAKOLOJİK BİLGİ (Dalton Büyüklüğü): Klasik kemik suyu veya jelatin içindeki kollajen 300.000 Dalton büyüklüğündedir ve bağırsaktan emilemez, midede parçalanır. Voonka Beauty Collagen enzimatik hidrolizle 2000 Daltona küçültülmüş peptittir; kana hızla karışıp doğrudan dermise taşınır. İçeriğindeki C vitamini kollajenin vücutta çapraz bağlanması için zorunludur."
   },
   {
     "id": "voonka-max-glucomannan",
@@ -7892,27 +7459,36 @@
     "category_name": "Kozmetik & Dermokozmetik",
     "sub_category": "Takviye Edici Gıda",
     "size": "90 Tablet",
-    "form": "Tablet / Kapsül",
+    "form": "Tablet",
     "image": "tum_urunler/Voonka Multi Collagen Tip 1-2-3 90 tb.jpg",
     "cilt_tipleri": [
       "Tüm Cilt Tipleri"
     ],
-    "yas_grubu": "Yetişkinler ve Gençler (12+ yaş)",
+    "yas_grubu": "Yetişkin",
     "kimler_kullanamaz": "İçeriğindeki etken maddelere karşı bilinen alerjisi olanlar kullanmamalıdır.",
-    "nasil_kullanilir": "Yetişkinler için tercihen yemek zamanı günde 1 tablet/kapsül bol su ile tüketilmesi tavsiye edilir.",
+    "nasil_kullanilir": "Günde 2-3 tablet, tercihen yemeklerden sonra bol su ile.",
     "hangi_sikayetle_gelene_verilir": [
       "Günlük vitamin, mineral ve besin desteğine ihtiyaç duyuyorum.",
       "Bağışıklık sistemimi, enerji seviyemi ve cilt sağlığımı içeriden desteklemek istiyorum."
     ],
     "kombinasyon_ve_uyarilar": "Daha yüksek verim için temizleme ve nemlendirme rutininizle entegre ediniz.",
     "etken_maddeler": [
-      "Hidrolize Kolajen Peptitleri"
+      "Hidrolize Tip 1 Kollajen",
+      "Hidrolize Tip 2 Kollajen (Eklem Kıkırdağı)",
+      "Hidrolize Tip 3 Kollajen",
+      "C Vitamini",
+      "Hyaluronik Asit"
     ],
     "tags": [
       "voonka",
       "gıda takviyesi & vitamin",
       "tablet / kapsül"
-    ]
+    ],
+    "ideal_kilo_araligi": "Yetişkinler",
+    "kimler_icebilir": "Hem cilt sarkması hem de diz/eklem kireçlenmesi, kıkırdak aşınması ve çıtırtısı yaşayan 40 yaş üstü bireyler.",
+    "kimler_icemez": "Deniz ve tavuk ürünlerine şiddetli alerjisi olanlar.",
+    "ne_ise_yarar": "Tip 1 ve 3 cildi gerginleştirip kırışıklığı açarken; Tip 2 kollajen eklem kıkırdak matriksini onarır ve sinovyal eklem sıvısını artırarak sürtünmeyi önler.",
+    "sgk_karsilastirmasi_ve_nis_bilgi": "🏆 NİŞ FARMAKOLOJİK BİLGİ: Tip 1-3 cildi, Tip 2 ise eklemleri onarır. İkisinin bir arada olması eklem sıvısını ve cilt elastikiyetini eş zamanlı onarır."
   },
   {
     "id": "voonka-omega-3-975",
@@ -7925,28 +7501,35 @@
     "category": "dermo",
     "category_name": "Kozmetik & Dermokozmetik",
     "sub_category": "Takviye Edici Gıda",
-    "size": "",
-    "form": "Tablet / Kapsül",
+    "size": "60 Softgel",
+    "form": "Softgel",
     "image": "tum_urunler/Voonka Omega 3 975.jpg",
     "cilt_tipleri": [
       "Tüm Cilt Tipleri"
     ],
-    "yas_grubu": "Yetişkinler ve Gençler (12+ yaş)",
+    "yas_grubu": "12 Yaş Üstü & Yetişkin",
     "kimler_kullanamaz": "İçeriğindeki etken maddelere karşı bilinen alerjisi olanlar kullanmamalıdır.",
-    "nasil_kullanilir": "Yetişkinler için tercihen yemek zamanı günde 1 tablet/kapsül bol su ile tüketilmesi tavsiye edilir.",
+    "nasil_kullanilir": "Günde 1-2 softgel, mutlaka yağlı yemeklerin ortasında.",
     "hangi_sikayetle_gelene_verilir": [
       "Günlük vitamin, mineral ve besin desteğine ihtiyaç duyuyorum.",
       "Bağışıklık sistemimi, enerji seviyemi ve cilt sağlığımı içeriden desteklemek istiyorum."
     ],
     "kombinasyon_ve_uyarilar": "Daha yüksek verim için temizleme ve nemlendirme rutininizle entegre ediniz.",
     "etken_maddeler": [
-      "Omega-3 EPA & DHA Yağ Asitleri"
+      "Toplam Balık Yağı (1200 mg)",
+      "EPA (585 mg)",
+      "DHA (390 mg)"
     ],
     "tags": [
       "voonka",
       "gıda takviyesi & vitamin",
       "tablet / kapsül"
-    ]
+    ],
+    "ideal_kilo_araligi": "45 kg üzeri",
+    "kimler_icebilir": "Kalp-damar sağlığını korumak, kolesterol dengesini sağlamak ve hafızasını güçlendirmek isteyenler.",
+    "kimler_icemez": "Kanama diyatezi olanlar, operasyon öncesi hastalar.",
+    "ne_ise_yarar": "Trigliserit formda yüksek EPA ve DHA sunarak damar endotelini korur, pıhtılaşma eğilimini dengeler.",
+    "sgk_karsilastirmasi_ve_nis_bilgi": "🏆 NİŞ FARMAKOLOJİK BİLGİ: Doğal trigliserit formdadır, mideyi rahatsız etmez ve emilimi sentetik etil esterlere kıyasla 3 kat yüksektir."
   },
   {
     "id": "voonka-omega-3-dha-max",
@@ -7959,28 +7542,35 @@
     "category": "dermo",
     "category_name": "Kozmetik & Dermokozmetik",
     "sub_category": "Takviye Edici Gıda",
-    "size": "",
-    "form": "Tablet / Kapsül",
+    "size": "30 Softgel",
+    "form": "Softgel",
     "image": "tum_urunler/Voonka Omega 3 DHA Max.jpg",
     "cilt_tipleri": [
       "Tüm Cilt Tipleri"
     ],
-    "yas_grubu": "Yetişkinler ve Gençler (12+ yaş)",
+    "yas_grubu": "12 Yaş Üstü & Yetişkin",
     "kimler_kullanamaz": "İçeriğindeki etken maddelere karşı bilinen alerjisi olanlar kullanmamalıdır.",
-    "nasil_kullanilir": "Yetişkinler için tercihen yemek zamanı günde 1 tablet/kapsül bol su ile tüketilmesi tavsiye edilir.",
+    "nasil_kullanilir": "Günde 1 softgel kahvaltı veya akşam yemeği ortasında.",
     "hangi_sikayetle_gelene_verilir": [
       "Günlük vitamin, mineral ve besin desteğine ihtiyaç duyuyorum.",
       "Bağışıklık sistemimi, enerji seviyemi ve cilt sağlığımı içeriden desteklemek istiyorum."
     ],
     "kombinasyon_ve_uyarilar": "Daha yüksek verim için temizleme ve nemlendirme rutininizle entegre ediniz.",
     "etken_maddeler": [
-      "Omega-3 EPA & DHA Yağ Asitleri"
+      "DHA (Yüksek Doz 500+ mg)",
+      "EPA",
+      "Doğal Trigliserit Balık Yağı"
     ],
     "tags": [
       "voonka",
       "gıda takviyesi & vitamin",
       "tablet / kapsül"
-    ]
+    ],
+    "ideal_kilo_araligi": "Yetişkinler",
+    "kimler_icebilir": "Özellikle zihinsel performans, hafıza, Alzheimer koruması, yoğun sınav dönemi ve göz kuruluğu yaşayanlar (DHA beyin ve retina için asıl maddedir).",
+    "kimler_icemez": "Balık alerjisi olanlar.",
+    "ne_ise_yarar": "Yüksek DHA konsantrasyonuyla beyin nöron zarlarını onarır ve sinaptik iletim hızını artırır.",
+    "sgk_karsilastirmasi_ve_nis_bilgi": "🏆 NİŞ BİLGİ: EPA kalp ve damar için ön plandayken, DHA doğrudan beyin ve göz retinası için kritiktir."
   },
   {
     "id": "voonka-omega-7",
@@ -7993,28 +7583,34 @@
     "category": "dermo",
     "category_name": "Kozmetik & Dermokozmetik",
     "sub_category": "Takviye Edici Gıda",
-    "size": "",
-    "form": "Tablet / Kapsül",
+    "size": "30 Kapsül",
+    "form": "Yumuşak Kapsül",
     "image": "tum_urunler/Voonka Omega 7.jpg",
     "cilt_tipleri": [
       "Tüm Cilt Tipleri"
     ],
-    "yas_grubu": "Yetişkinler ve Gençler (12+ yaş)",
+    "yas_grubu": "Yetişkin",
     "kimler_kullanamaz": "İçeriğindeki etken maddelere karşı bilinen alerjisi olanlar kullanmamalıdır.",
-    "nasil_kullanilir": "Yetişkinler için tercihen yemek zamanı günde 1 tablet/kapsül bol su ile tüketilmesi tavsiye edilir.",
+    "nasil_kullanilir": "Günde 1 kapsül yemeklerle birlikte.",
     "hangi_sikayetle_gelene_verilir": [
       "Günlük vitamin, mineral ve besin desteğine ihtiyaç duyuyorum.",
       "Bağışıklık sistemimi, enerji seviyemi ve cilt sağlığımı içeriden desteklemek istiyorum."
     ],
     "kombinasyon_ve_uyarilar": "Daha yüksek verim için temizleme ve nemlendirme rutininizle entegre ediniz.",
     "etken_maddeler": [
-      "Omega-3 EPA & DHA Yağ Asitleri"
+      "Kır İğdesi Yağı (Sea Buckthorn Oil)",
+      "Palmitoleik Asit (Omega-7 500 mg)"
     ],
     "tags": [
       "voonka",
       "gıda takviyesi & vitamin",
       "tablet / kapsül"
-    ]
+    ],
+    "ideal_kilo_araligi": "Yetişkinler",
+    "kimler_icebilir": "Göz kuruluğu, ağız kuruluğu, menopoz sonrası vajinal kuruluk ve şiddetli cilt kuruluğu yaşayanlar.",
+    "kimler_icemez": "Kır iğdesi meyvesine alerjisi olanlar.",
+    "ne_ise_yarar": "Kır iğdesi (Sea Buckthorn) yağından elde edilen Palmitoleik asittir (Omega-7). Vücudun tüm iç ve dış mukoza zarlarının (göz, ağız, vajina, bağırsak) doğal nem dengesini içeriden hücresel olarak onarır.",
+    "sgk_karsilastirmasi_ve_nis_bilgi": "🏆 NİŞ FARMAKOLOJİK BİLGİ: Dışarıdan sürülen damlalar veya kremler geçici rahatlama sağlarken, Omega-7 meibomian göz bezlerini ve vajinal mukozayı içeriden doğal lipid tabakasıyla besler."
   },
   {
     "id": "voonka-one-only-dbtc",
@@ -8116,39 +7712,6 @@
       "voonka",
       "gıda takviyesi & vitamin",
       "tablet / kapsül"
-    ]
-  },
-  {
-    "id": "cerave-kopuren-temizleyici-473-ml-pompali-sise",
-    "name": "CeraVe Kopuren Temizleyici 473 Ml Pompali Sise",
-    "original_name": "Kopuren Temizleyici 473 Ml Pompali Sise",
-    "brand": "CeraVe",
-    "urun_tipi": "Yüz Temizleme Jeli / Köpüğü",
-    "urun_tipi_icon": "🧴",
-    "rutin_adimi": "Yüz & Vücut Temizleyici",
-    "category": "dermo",
-    "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Cilt Temizliği & Arındırma",
-    "size": "",
-    "form": "Yüz Temizleme Jeli / Köpüğü",
-    "image": "tum_urunler/cerave-cerave-kopuren-temizleyici-473-ml-pompali-sise.jpeg",
-    "cilt_tipleri": [
-      "Tüm Cilt Tipleri"
-    ],
-    "yas_grubu": "Yetişkinler ve Gençler (12+ yaş)",
-    "kimler_kullanamaz": "İçeriğindeki etken maddelere karşı bilinen alerjisi olanlar kullanmamalıdır.",
-    "nasil_kullanilir": "Ilık su ile nemlendirilmiş cilde dairesel hareketlerle köpürterek uygulayınız, ardından bol su ile durulayınız.",
-    "hangi_sikayetle_gelene_verilir": [
-      "CeraVe Kopuren Temizleyici 473 Ml Pompali Sise kullanımına uygun cilt veya saç ihtiyacı"
-    ],
-    "kombinasyon_ve_uyarilar": "Daha yüksek verim için temizleme ve nemlendirme rutininizle entegre ediniz.",
-    "etken_maddeler": [
-      "Dermatolojik Olarak Test Edilmiş Patentli Aktif Kompleks"
-    ],
-    "tags": [
-      "cerave",
-      "yüz & vücut temizleyici",
-      "yüz temizleme jeli / köpüğü"
     ]
   },
   {
@@ -9478,29 +9041,280 @@
     "category": "dermo",
     "category_name": "Kozmetik & Dermokozmetik",
     "sub_category": "Takviye Edici Gıda",
-    "size": "",
-    "form": "Tablet / Kapsül",
+    "size": "50 Softgel",
+    "form": "Yumuşak Kapsül (Softgel)",
     "image": "tum_urunler/solgar omega 3 950 mg fish oil.jpg",
     "cilt_tipleri": [
       "Yağlı Cilt",
       "Karma Cilt",
       "Akneye Meyilli Cilt"
     ],
-    "yas_grubu": "Yetişkinler ve Gençler (12+ yaş)",
+    "yas_grubu": "12 Yaş Üstü & Yetişkin",
     "kimler_kullanamaz": "İçeriğindeki etken maddelere karşı bilinen alerjisi olanlar kullanmamalıdır.",
-    "nasil_kullanilir": "Yetişkinler için tercihen yemek zamanı günde 1 tablet/kapsül bol su ile tüketilmesi tavsiye edilir.",
+    "nasil_kullanilir": "Günde 1-2 softgel, mutlaka yağlı bir öğün (kahvaltı veya akşam yemeği) ortasında 1 bardak su ile alınmalıdır. Aç karnına alınırsa safra salgılanmadığı için emilmez ve çöpe gider!",
     "hangi_sikayetle_gelene_verilir": [
       "Günlük vitamin, mineral ve besin desteğine ihtiyaç duyuyorum.",
       "Bağışıklık sistemimi, enerji seviyemi ve cilt sağlığımı içeriden desteklemek istiyorum."
     ],
     "kombinasyon_ve_uyarilar": "Daha yüksek verim için temizleme ve nemlendirme rutininizle entegre ediniz.",
     "etken_maddeler": [
-      "Omega-3 EPA & DHA Yağ Asitleri"
+      "Toplam Omega-3 (950 mg)",
+      "EPA (504 mg)",
+      "DHA (378 mg)"
     ],
     "tags": [
       "solgar",
       "gıda takviyesi & vitamin",
       "tablet / kapsül"
-    ]
+    ],
+    "ideal_kilo_araligi": "45 kg üzeri yetişkinler",
+    "kimler_icebilir": "Yüksek trigliserit, kalp-damar tıkanıklığı riski, kuru göz sendromu, eklem romatizması veya zihinsel odaklanma desteği arayan yetişkinler.",
+    "kimler_icemez": "Kanama bozukluğu olanlar, ameliyata girecek olanlar (ameliyattan 1 hafta önce kesilmelidir), kan sulandırıcı (Varfarin/Coumadin) yüksek doz kullananlar hekim onayıyla almalıdır.",
+    "ne_ise_yarar": "Yüksek konsantrasyonda EPA (504 mg) ve DHA (378 mg) içerir. Damar içi aterom plaklarının oluşumunu yavaşlatır, trigliserit seviyesini düşürür, beyin fonksiyonlarını güçlendirir ve eklem inflamasyonunu azaltır.",
+    "sgk_karsilastirmasi_ve_nis_bilgi": "🏆 NİŞ FARMAKOLOJİK BİLGİ (Yüksek Konsantre EPA/DHA vs. Sıradan Balık Yağı): Sıradan market balık yağlarında 1000 mg kapsülün sadece 300 mg'ı aktif omegadır, kalan 700 mg'ı gereksiz doymuş balık yağıdır. Solgar 950 mg'da ise tek bir kapsülde tam 950 mg saf aktif Omega-3 bulunur; soğuk su derin deniz balıklarından moleküler distilasyonla cıva ve ağır metallerden arındırılarak üretilmiştir."
+  },
+  {
+    "id": "sup_ocean_pediatric_omega",
+    "name": "Ocean Portakal & Tutti Frutti Balık Yağı Şurubu (IFOS 5 Yıldız / Doğal Trigliserit)",
+    "brand": "Orzax Ocean",
+    "form": "Şurup",
+    "size": "150 ml",
+    "category_name": "Takviye Edici Gıda",
+    "sub_category": "Pediatrik Omega-3 & Balık Yağı",
+    "rutin_adimi": "Gıda Takviyesi (Günde 1 Ölçek)",
+    "image": "tum_urunler/ocean_orzax_pediatric_omega.jpg",
+    "yas_grubu": "Çocuk (4-10 Yaş)",
+    "ideal_kilo_araligi": "16 - 35 kg (4-10 Yaş persantil normu)",
+    "kimler_icebilir": "4 yaş ve üzeri tüm çocuklar, dikkat eksikliği ve ders odaklanması desteği arayan okul çağı öğrencileri.",
+    "kimler_icemez": "Balık ve deniz ürünlerine karşı şiddetli anafilaktik alerjisi olan çocuklar.",
+    "cilt_tipleri": [
+      "Tüm Beden",
+      "Hücre Zarı & Beyin Gelişimi"
+    ],
+    "hangi_sikayetle_gelene_verilir": [
+      "Çocuğum derse odaklanamıyor, dikkat eksikliği ve unutkanlık var",
+      "Balık yemeyen çocuğuma beyin ve göz gelişimi için balık yağı istiyorum",
+      "Bağışıklığını destekleyecek, kokusuz, içimi kolay şurup arıyorum"
+    ],
+    "ne_ise_yarar": "Beyin hücre zarlarının %60'ını oluşturan DHA ve sinir iletimini destekleyen EPA yağ asitleri içerir. Çocuklarda nörolojik gelişim, retina/göz sağlığı, hafıza, öğrenme hızı ve bilişsel odaklanmayı artırır.",
+    "nasil_kullanilir": "Günde 1 tatlı kaşığı (5 ml). Aç karnına verilmemelidir! Safra ve lipaz enzimlerinin salgılanıp emilimin tam olması için mutlaka kahvaltı veya akşam yemeği ortasında tok karnına verilmelidir.",
+    "sgk_karsilastirmasi_ve_nis_bilgi": "🏆 NİŞ FARMAKOLOJİK BİLGİ (Trigliserit TG vs. Etil Ester EE): Devlet hastanelerinde yazılan veya ucuz market balık yağları sentetik 'Etil Ester (EE)' formundadır; alkol bağı taşır, emilimi zayıftır ve çocukta balık kokulu geğirme yapar. Ocean Balık Yağı ise 'Doğal Trigliserit (TG)' formundadır; anne sütündeki doğal yağ yapısındadır ve biyoyararlanımı 3 kat daha yüksektir. Ayrıca bağımsız Kanada IFOS laboratuvarı tarafından 5 Yıldız onaylıdır (ağır metal, cıva, kurşun ve PCB sıfırdır).",
+    "etken_maddeler": [
+      "Doğal Trigliserit Balık Yağı",
+      "Total Omega-3 (1480 mg)",
+      "EPA (740 mg)",
+      "DHA (470 mg)",
+      "E Vitamini"
+    ],
+    "kimler_kullanamaz": "Balık alerjisi olanlar."
+  },
+  {
+    "id": "sup_newlife_b12_sublingual",
+    "name": "New Life B12 Plus Dilaltı Metilkobalamin & Folat & Biotin Tablet",
+    "brand": "New Life",
+    "form": "Dilaltı Tablet",
+    "size": "60 Dilaltı Tablet",
+    "category_name": "Takviye Edici Gıda",
+    "sub_category": "Sinir Sistemi & Enerji",
+    "rutin_adimi": "Gıda Takviyesi (Günde 1 Dilaltı Tablet)",
+    "image": "tum_urunler/newlife_b12_plus_sublingual.jpg",
+    "yas_grubu": "12 Yaş Üstü & Yetişkin",
+    "ideal_kilo_araligi": "40 kg üzeri (Yetişkin dozu)",
+    "kimler_icebilir": "Unutkanlık, odaklanma güçlüğü, sabah yorgunluğu, el-ayak uyuşması/karıncalanması olanlar ve vegan/vejetaryenler.",
+    "kimler_icemez": "12 yaş altı çocuklar (hekim önermedikçe 1000 mcg yüksek B12 dozu verilmez).",
+    "cilt_tipleri": [
+      "Hücre Enerjisi",
+      "Sinir Sistemi"
+    ],
+    "hangi_sikayetle_gelene_verilir": [
+      "Kafamı toparlayamıyorum, isimleri unutuyorum ve sabahları çok yorgun kalkıyorum",
+      "Elimde ayağımda karıncalanma ve uyuşma oluyor",
+      "Kan tahlilimde B12 değerim düşük çıktı, iğne vurulmadan yükseltmek istiyorum"
+    ],
+    "ne_ise_yarar": "Sinir liflerinin etrafını saran miyelin kılıfını onarır, sinir iletimini hızlandırır. Metiyonin sentaz enzimiyle homosisteini düşürerek damar tıkanıklığı ve felç riskini azaltır. DNA ve kırmızı kan hücresi sentezini destekler.",
+    "nasil_kullanilir": "Günde 1 tablet, sabah veya öğle yemeğinden sonra dil altına konarak tamamen erimesi beklenir. Yutulmamalı ve su ile içilmemelidir! Dil altındaki zengin kılcal damar yatağından (sublingual venler) doğrudan emilir.",
+    "sgk_karsilastirmasi_ve_nis_bilgi": "🏆 NİŞ FARMAKOLOJİK BİLGİ (Benexol B12 / Dodex vs. Metilkobalamin): Devletin ödediği Benexol B12 ve Dodex sentetik 'Siyanokobalamin' formudur; kimyasal yapısında siyanür molekülü taşır ve vücut bunu kullanamaz; önce karaciğerde metilasyondan geçirip aktif forma çevirmek zorundadır. Ancak Türk toplumunun %40'ında MTHFR gen polimorfizmi vardır ve karaciğer bu dönüşümü yapamaz! Ayrıca yutulan B12'nin emilmesi için mide asidi ve 'İntrensek Faktör' şarttır; gastriti olanlarda emilmeden dışkıyla atılır. New Life B12 ise 'Metilkobalamin' aktif koenzim formudur; karaciğere ve mide asidine gerek duymadan dil altından doğrudan kana karışır, etkisi 5 kat daha hızlıdır!",
+    "etken_maddeler": [
+      "Metilkobalamin (Aktif B12 - 1000 mcg)",
+      "Aktif Folat (L-Metilfolat - 400 mcg)",
+      "Biotin (D-Biotin - 400 mcg)"
+    ],
+    "kimler_kullanamaz": "İçeriğindeki vitaminlere aşırı duyarlılığı olanlar."
+  },
+  {
+    "id": "sup_pharmaton_vital_g115",
+    "name": "Pharmaton Vital G115 Standartlaştırılmış Ginseng & Multivitamin",
+    "brand": "Pharmaton",
+    "form": "Kapsül",
+    "size": "60 Kapsül",
+    "category_name": "Takviye Edici Gıda",
+    "sub_category": "Enerji & Kronik Yorgunluk",
+    "rutin_adimi": "Gıda Takviyesi (Günde 1 Kapsül - Sabah)",
+    "image": "tum_urunler/pharmaton_dynavit_multivitamin.jpg",
+    "yas_grubu": "12 Yaş Üstü & Yetişkin",
+    "ideal_kilo_araligi": "40 kg üzeri yetişkinler",
+    "kimler_icebilir": "Yoğun çalışanlar, sınav dönemindeki öğrenciler (12 yaş üstü), sabahları tükenmiş uyananlar, fiziksel ve zihinsel bitkinlik yaşayanlar.",
+    "kimler_icemez": "12 yaş altı çocuklar, kontrolsüz hipertansiyonu (yüksek tansiyon) olanlar, gebeler ve emziren kadınlar.",
+    "cilt_tipleri": [
+      "Fiziksel Güç",
+      "Zihinsel Performans"
+    ],
+    "hangi_sikayetle_gelene_verilir": [
+      "Kronik yorgunum, gün ortasında enerjim tükeniyor, uykumu alamıyorum",
+      "İş yerinde dikkatim dağılıyor, performansımı toparlayacak vitamin istiyorum",
+      "Mevsim geçişlerinde sürekli hasta oluyorum ve halsiz düşüyorum"
+    ],
+    "ne_ise_yarar": "Klinik patentli G115 Panax Ginseng özütü hücre içine oksijen taşınmasını ve mitokondriyal ATP üretimini hızlandırır. 18 temel vitamin ve mineral içeriğiyle laktik asit birikimini geciktirerek yorgunluk hissini ortadan kaldırır.",
+    "nasil_kullanilir": "Günde 1 kapsül, sabah kahvaltısı ortasında veya hemen sonrasında 1 büyük bardak su ile yutulmalıdır. Akşam saatlerinde alınmamalıdır (Ginseng canlandırıcı etki yaparak uykusuzluk yapabilir). 3 ay düzenli kullanımdan sonra 2-3 hafta ara verilmesi önerilir.",
+    "sgk_karsilastirmasi_ve_nis_bilgi": "🏆 NİŞ FARMAKOLOJİK BİLGİ (Kore Ginsengi G115 Standardizasyonu): Sıradan multivitaminlerde ya da aktarlardaki ginseng tozlarında aktif 'Ginsanozit' oranı belirsizdir ve çoğu zaman etkisizdir. Pharmaton'daki G115 özütü, her kapsülde tam %4 standart ginsanozit garantisi sunan dünyadaki tek klinik patentli formdur. Vücudun kortizol stres yanıtını dengeler ve bağışıklık T-hücrelerini aktive eder.",
+    "etken_maddeler": [
+      "G115 Standart Panax Ginseng Ekstresi (40 mg)",
+      "A Vitamini",
+      "B Kompleks (B1, B2, B6, B12)",
+      "C Vitamini",
+      "D3",
+      "Demir",
+      "Çinko",
+      "Magnezyum",
+      "Kalsiyum"
+    ],
+    "kimler_kullanamaz": "Yüksek tansiyon hastaları, 12 yaş altı çocuklar, gebeler."
+  },
+  {
+    "id": "sup_supradyn_all_day_q10",
+    "name": "Supradyn All Day Koenzim Q10 & 13 Vitamin 9 Mineral Film Tablet",
+    "brand": "Supradyn",
+    "form": "Tablet",
+    "size": "60 Film Tablet",
+    "category_name": "Takviye Edici Gıda",
+    "sub_category": "Günlük Canlılık & Antioksidan",
+    "rutin_adimi": "Gıda Takviyesi (Günde 1 Tablet - Sabah)",
+    "image": "tum_urunler/supradyn_all_day_q10.jpg",
+    "yas_grubu": "12 Yaş Üstü & Yetişkin",
+    "ideal_kilo_araligi": "40 kg üzeri yetişkinler",
+    "kimler_icebilir": "Gün boyu aktif kalanlar, spor yapanlar, 30 yaş üstü hücresel yaşlanmayı ve yorgunluğu önlemek isteyen yetişkinler.",
+    "kimler_icemez": "12 yaş altı çocuklar, böbrek yetmezliği olanlar (yüksek mineral yükü nedeniyle).",
+    "cilt_tipleri": [
+      "Hücresel Mitokondri",
+      "Canlılık"
+    ],
+    "hangi_sikayetle_gelene_verilir": [
+      "Gün boyu dinamik kalmak istiyorum ama öğleden sonra çöküyorum",
+      "Hem vitamin ihtiyacımı karşılasın hem de cildime ve enerjime iyi gelsin",
+      "Beslenmem düzensiz, vücudumun tüm vitamin-mineral eksiğini kapatmak istiyorum"
+    ],
+    "ne_ise_yarar": "Koenzim Q10 hücrelerimizin enerji santrali olan mitokondrilerin temel kofaktörüdür. Kalp kası ve çizgili kasların oksijenli solunumla enerji üretmesini sağlar. 13 vitamin ve 9 mineralle birlikte bağışıklık ve metabolizmayı tam destekler.",
+    "nasil_kullanilir": "Günde 1 film tablet, sabah kahvaltısından sonra tok karnına 1 bardak su ile yutulur.",
+    "sgk_karsilastirmasi_ve_nis_bilgi": "🏆 NİŞ FARMAKOLOJİK BİLGİ (Koenzim Q10 Sinerjisi): Yaş ilerledikçe (özellikle 30 yaşından sonra) vücudun doğal Koenzim Q10 üretimi %50'ye varan oranda düşer; kolesterol ilacı (statin) kullananlarda ise Q10 üretimi tamamen bloke olur ve şiddetli kas ağrısı başlar. Supradyn All Day, Q10 ile B vitaminlerini bir araya getirerek hücrede Krebs döngüsünü maksimum hızda çalıştırır.",
+    "etken_maddeler": [
+      "Koenzim Q10 (4.5 mg)",
+      "13 Vitamin (A, B1, B2, B6, B12, C, D, E, K, Folik Asit, Biotin, Niasin, Pantotenik Asit)",
+      "9 Mineral (Kalsiyum, Magnezyum, Demir, Çinko, Bakır, Manganez, İyot, Selenyum, Molibden)"
+    ],
+    "kimler_kullanamaz": "12 yaş altı çocuklar, ileri derece böbrek hastaları."
+  },
+  {
+    "id": "sup_elenatal_pregnancy",
+    "name": "Elenatal 1 / Elenatal 2 Metafolin (Aktif Folat) & Omega-3 DHA Gebelik Kompleksi",
+    "brand": "Elenatal",
+    "form": "Kapsül / Tablet",
+    "size": "30 Kapsül",
+    "category_name": "Takviye Edici Gıda",
+    "sub_category": "Anne & Bebek / Prenatal",
+    "rutin_adimi": "Gıda Takviyesi (Günde 1 Kapsül)",
+    "image": "tum_urunler/elenatal_bayer_pregnancy.jpg",
+    "yas_grubu": "Yetişkin (Hamilelik & Emzirme)",
+    "ideal_kilo_araligi": "Yetişkin kadınlar",
+    "kimler_icebilir": "Hamilelik planlayan kadınlar, 1., 2. ve 3. trimesterdeki gebeler ve emziren anneler.",
+    "kimler_icemez": "Erkekler, çocuklar ve demir yükleme hastalığı (hemokromatozis) olanlar.",
+    "cilt_tipleri": [
+      "Gebelikte Fetal Gelişim",
+      "Anne Sağlığı"
+    ],
+    "hangi_sikayetle_gelene_verilir": [
+      "Hamile kalmayı planlıyorum, bebeğimin omurga gelişimi için hangi folik asidi almalıyım?",
+      "Doktorum gebelik multivitamini önerdi, bebeğimin beyin gelişimini destekleyecek güvenli ürün arıyorum",
+      "Klasik demir ve vitamin hapları midemi çok bulandırıyor"
+    ],
+    "ne_ise_yarar": "Bebeğin omurilik kapanması (nöral tüp defektini önleme), beyin ve göz dokularının inşası için gereklidir. Annenin gebelikte kan yapımını artırır, saç dökülmesi ve kemik kalsiyum kaybını engeller.",
+    "nasil_kullanilir": "Günde 1 kapsül/tablet, tercihen öğle yemeği sırasında bol su ile alınır.",
+    "sgk_karsilastirmasi_ve_nis_bilgi": "🏆 NİŞ FARMAKOLOJİK BİLGİ (Folik Asit vs. Metafolin / Aktif L-Metilfolat): Sağlık ocaklarında veya reçetede yazılan klasik 'Folik Asit' sentetiktir ve vücutta aktifleşebilmesi için MTHFR enzim basamağına ihtiyaç duyar. Kadınların %40-50'sinde bu genetik enzim yavaştır ve sentetik folik asit kanda birikip (unmetabolized folic acid) bebeğe fayda sağlamaz! Elenatal'daki 'Metafolin', enzime ihtiyaç duymayan doğrudan biyoaktif L-Metilfolattır; plasentadan hızla bebeğe geçer ve nöral tüpü tam korur.",
+    "etken_maddeler": [
+      "Metafolin (Aktif Folat 400 mcg)",
+      "DHA (Fetal Beyin Gelişimi İçin 200 mg)",
+      "Demir",
+      "İyot (Fetal Zeka İçin)",
+      "D3 Vitamini",
+      "Çinko"
+    ],
+    "kimler_kullanamaz": "Hemokromatozis (demir birikimi) hastaları."
+  },
+  {
+    "id": "sup_harveys_multi_protect",
+    "name": "Harvey's Multi Protect Kara Mürver & Beta Glukan Pediatrik Çocuk Şurubu",
+    "brand": "Harveys",
+    "form": "Şurup",
+    "size": "150 ml",
+    "category_name": "Takviye Edici Gıda",
+    "sub_category": "Pediatrik Bağışıklık Güçlendirici",
+    "rutin_adimi": "Gıda Takviyesi (Günde 1 Ölçek)",
+    "image": "tum_urunler/harveys_multi_protect_syrup.jpg",
+    "yas_grubu": "Çocuk (4-10 Yaş)",
+    "ideal_kilo_araligi": "16 - 32 kg (4-10 Yaş normal persantil normu)",
+    "kimler_icebilir": "Kreşe ve ilkokula giden, sık sık nezle, grip, üst solunum yolu enfeksiyonu geçiren ve iştahsız çocuklar.",
+    "kimler_icemez": "1 yaş altı bebekler, otoimmün hastalığı olanlar (aşırı bağışıklık uyarılmaması gerekenler).",
+    "cilt_tipleri": [
+      "Solunum Yolu Mukozası",
+      "Bağışıklık Kalkanı"
+    ],
+    "hangi_sikayetle_gelene_verilir": [
+      "Çocuğum kreşe başladığından beri 2 haftada bir hasta oluyor",
+      "Antibiyotik kullanmadan önce doğal bağışıklık şurubu vermek istiyorum",
+      "Boğaz enfeksiyonu ve öksürüğe karşı koruyucu vitamin arıyorum"
+    ],
+    "ne_ise_yarar": "Kara mürver (Sambucus nigra) virüslerin hücre içine girişini sağlayan hemaglutinin reseptörlerini bloke eder. Beta Glukan 1,3/1,6 makrofaj beyaz kan hücrelerini aktive ederek enfeksiyon süresini ve sıklığını %60 azaltır.",
+    "nasil_kullanilir": "4-10 yaş grubu çocuklar için günde 1 ölçek (5 ml); hastalık dönemlerinde günde 2 ölçek (sabah-akşam). Aç veya tok verilebilir, tatlı meyve aromalıdır.",
+    "sgk_karsilastirmasi_ve_nis_bilgi": "🏆 NİŞ FARMAKOLOJİK BİLGİ (Standardize Kara Mürver vs. Sıradan C Vitamini): C vitamini tek başına virüsün hücreye girmesini önleyemez. Standardize Kara Mürver antosiyaninleri ise influenza ve soğuk algınlığı virüslerinin yüzeyindeki tutunma kancalarına yapışarak virüsün çoğalmasını fiziksel olarak durdurur.",
+    "etken_maddeler": [
+      "Kara Mürver Ekstresi (Sambucus Nigra)",
+      "Beta Glukan (1,3/1,6)",
+      "C Vitamini",
+      "Çinko",
+      "Propolis"
+    ],
+    "kimler_kullanamaz": "Bal veya arı ürünlerine aşırı duyarlılığı olanlar."
+  },
+  {
+    "id": "sup_baybay_pediatric_drops",
+    "name": "BayBay Gece Rahatlama & Uyku Destek Pediatrik Bitkisel Damla",
+    "brand": "BayBay",
+    "form": "Damla",
+    "size": "50 ml",
+    "category_name": "Takviye Edici Gıda",
+    "sub_category": "Pediatrik Uyku & Huzursuzluk",
+    "rutin_adimi": "Gıda Takviyesi (Gece Yatmadan Önce)",
+    "image": "tum_urunler/baybay_harveys_pediatric.jpg",
+    "yas_grubu": "Bebek & Çocuk (1-10 Yaş)",
+    "ideal_kilo_araligi": "10 - 30 kg",
+    "kimler_icebilir": "Gece sık uyanan, diş çıkarma döneminde huzursuz olan, uykuya dalmakta zorlanan bebek ve çocuklar.",
+    "kimler_icemez": "Alerjik bünyeli bebeklerde bitki ekstrelerine karşı hekime danışılmalıdır.",
+    "cilt_tipleri": [
+      "Sinir Sistemi Rahatlama",
+      "Derin Uyku"
+    ],
+    "hangi_sikayetle_gelene_verilir": [
+      "Bebeğim/çocuğum gece saat başı uyanıyor, uykuya dalarken çok ağlıyor",
+      "Diş çıkarma sancısından dolayı geceleri çok huzursuz",
+      "Kimyasal uyku ilacı değil, tamamen doğal bitkisel damla arıyorum"
+    ],
+    "ne_ise_yarar": "Melisa (Oğul otu), Ihlamur ve Mayıs Papatyası ekstreleri santral sinir sisteminde GABA reseptörlerine hafifçe bağlanarak doğal bir gevşeme ve uyku kalitesi sağlar. Gaz sancısını hafifletir, bağımlılık yapmaz.",
+    "nasil_kullanilir": "Gece yatmadan 30-40 dakika önce 10-15 damla doğrudan ağıza damlatılarak veya ılık su/süt/ıhlamur içerisine karıştırılarak verilir.",
+    "sgk_karsilastirmasi_ve_nis_bilgi": "🏆 NİŞ FARMAKOLOJİK BİLGİ (Doğal Bitkisel GABA vs. Antihistaminik Sedatifler): Eski dönemde bazı hekimlerin çocuk uyutmak için yazdığı alerji şurupları (antihistaminikler) santral sinir sistemini uyuşturur, REM uykusunu bozar ve gündüz sersemlik yapar. BayBay damla sentetik kimyasal içermez; melatonin döngüsünü bozmadan biyolojik derin uykuyu destekler.",
+    "etken_maddeler": [
+      "Melisa Yaprağı Ekstresi (Melissa Officinalis)",
+      "Mayıs Papatyası Ekstresi (Matricaria Chamomilla)",
+      "Ihlamur Çiçeği Ekstresi (Tilia Cordata)"
+    ],
+    "kimler_kullanamaz": "Papatyagiller ailesine alerjisi olanlar."
   }
 ]

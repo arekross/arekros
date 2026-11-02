@@ -38,6 +38,7 @@
     // Üst Butonlar
     btnOpenAddModal: document.getElementById('btnOpenAddModal'),
     btnOpenSettings: document.getElementById('btnOpenSettings'),
+    btnOpenWeightRef: document.getElementById('btnOpenWeightRef'),
 
     // Detay Modalı
     modalBackdrop: document.getElementById('detailModalBackdrop'),
@@ -54,10 +55,27 @@
     modalComplaintList: document.getElementById('modalComplaintList'),
     modalUsageText: document.getElementById('modalUsageText'),
     modalActivesWrap: document.getElementById('modalActivesWrap'),
+    modalBenefitBlock: document.getElementById('modalBenefitBlock'),
+    modalBenefitText: document.getElementById('modalBenefitText'),
+    modalSgkCompareBlock: document.getElementById('modalSgkCompareBlock'),
+    modalSgkCompareText: document.getElementById('modalSgkCompareText'),
+    modalWhoCanBlock: document.getElementById('modalWhoCanBlock'),
+    modalWhoCanText: document.getElementById('modalWhoCanText'),
+    modalWeightNormCallout: document.getElementById('modalWeightNormCallout'),
+    modalWeightNormVal: document.getElementById('modalWeightNormVal'),
+    modalWhoCannotBlock: document.getElementById('modalWhoCannotBlock'),
+    modalWhoCannotText: document.getElementById('modalWhoCannotText'),
     modalWarningText: document.getElementById('modalWarningText'),
     btnCopyNote: document.getElementById('btnCopyNote'),
     copyBtnText: document.getElementById('copyBtnText'),
     btnEditCurrentProduct: document.getElementById('btnEditCurrentProduct'),
+
+    // Yaş & Kilo Persantil Dozaj Rehberi Modalı
+    weightRefModalBackdrop: document.getElementById('weightRefModalBackdrop'),
+    weightRefSheet: document.getElementById('weightRefSheet'),
+    weightRefCloseBtn: document.getElementById('weightRefCloseBtn'),
+    weightRefSearchInput: document.getElementById('weightRefSearchInput'),
+    persantilTableBody: document.getElementById('persantilTableBody'),
 
     // Editör Modalı (Ürün Ekle / Düzenle)
     editorModalBackdrop: document.getElementById('editorModalBackdrop'),
@@ -362,19 +380,19 @@
       if (text.includes('göz') || text.includes('yeux') || text.includes('eye')) routineCounts['Göz Çevresi']++;
       if (text.includes('bebek') || text.includes('baby') || text.includes('vücut') || text.includes('body')) routineCounts['Vücut & Bebek']++;
       if (text.includes('şampuan') || text.includes('saç') || text.includes('shampoo') || text.includes('hair')) routineCounts['Saç Bakımı']++;
-      if (text.includes('tablet') || text.includes('kapsül') || text.includes('takviye') || text.includes('vitamin') || text.includes('omega') || text.includes('kolajen')) routineCounts['Takviye Edici Gıda']++;
+      if (text.includes('tablet') || text.includes('kapsül') || text.includes('takviye') || text.includes('vitamin') || text.includes('omega') || text.includes('kolajen') || text.includes('damla') || text.includes('şurup') || text.includes('folat') || text.includes('magnezyum') || text.includes('ginseng') || text.includes('b12')) routineCounts['Takviye Edici Gıda']++;
     });
 
     const categories = [
       { id: 'all', label: 'Tüm Rutinler', count: routineCounts['all'], icon: '✨' },
+      { id: 'all_supplements', label: 'Takviye & Vitamin', count: routineCounts['Takviye Edici Gıda'], icon: '💊' },
       { id: 'Temizleyici', label: 'Temizleme', count: routineCounts['Temizleyici'], icon: '🫧' },
       { id: 'Serum', label: 'Serum & Bakım', count: routineCounts['Serum'], icon: '🧪' },
       { id: 'Nemlendirici', label: 'Nemlendirici', count: routineCounts['Nemlendirici'], icon: '💧' },
       { id: 'Güneş Koruması', label: 'Güneş (SPF)', count: routineCounts['Güneş Koruması'], icon: '☀️' },
       { id: 'Göz Çevresi', label: 'Göz Çevresi', count: routineCounts['Göz Çevresi'], icon: '👁️' },
       { id: 'Saç Bakımı', label: 'Saç & Şampuan', count: routineCounts['Saç Bakımı'], icon: '💇' },
-      { id: 'Vücut & Bebek', label: 'Bebek & Vücut', count: routineCounts['Vücut & Bebek'], icon: '👶' },
-      { id: 'Takviye Edici Gıda', label: 'Takviye & Vitamin', count: routineCounts['Takviye Edici Gıda'], icon: '💊' }
+      { id: 'Vücut & Bebek', label: 'Bebek & Vücut', count: routineCounts['Vücut & Bebek'], icon: '👶' }
     ];
 
     let html = '';
@@ -424,16 +442,23 @@
       // Rutin Filtresi
       if (routine !== 'all') {
         const pRutin = `${p.rutin_adimi || ''} ${p.sub_category || ''} ${p.name || ''}`.toLowerCase();
-        let targetWord = routine.toLowerCase();
-        if (targetWord === 'temizleyici') targetWord = 'temiz';
-        else if (targetWord === 'güneş koruması') targetWord = 'güneş';
-        else if (targetWord === 'göz çevresi') targetWord = 'göz';
-        else if (targetWord === 'vücut & bebek') targetWord = 'bebek';
-        else if (targetWord === 'saç bakımı') targetWord = 'saç';
-        else if (targetWord === 'takviye edici gıda') targetWord = 'tablet';
+        if (routine === 'all_supplements' || routine === 'Takviye Edici Gıda') {
+          const isSup = pRutin.includes('takviye') || pRutin.includes('vitamin') || pRutin.includes('tablet') || 
+                        pRutin.includes('kapsül') || pRutin.includes('omega') || pRutin.includes('kolajen') || 
+                        pRutin.includes('damla') || pRutin.includes('şurup') || pRutin.includes('folat') || 
+                        pRutin.includes('magnezyum') || pRutin.includes('ginseng') || pRutin.includes('b12');
+          if (!isSup) return false;
+        } else {
+          let targetWord = routine.toLowerCase();
+          if (targetWord === 'temizleyici') targetWord = 'temiz';
+          else if (targetWord === 'güneş koruması') targetWord = 'güneş';
+          else if (targetWord === 'göz çevresi') targetWord = 'göz';
+          else if (targetWord === 'vücut & bebek') targetWord = 'bebek';
+          else if (targetWord === 'saç bakımı') targetWord = 'saç';
 
-        if (!pRutin.includes(targetWord) && !pRutin.includes(routine.toLowerCase())) {
-          return false;
+          if (!pRutin.includes(targetWord) && !pRutin.includes(routine.toLowerCase())) {
+            return false;
+          }
         }
       }
 
@@ -444,8 +469,12 @@
         const activesMatch = (p.etken_maddeler || []).some(a => a.toLowerCase().includes(q));
         const tagsMatch = (p.tags || []).some(t => t.toLowerCase().includes(q));
         const complaintMatch = (p.hangi_sikayetle_gelene_verilir || []).some(c => c.toLowerCase().includes(q));
+        const benefitMatch = (p.ne_ise_yarar || '').toLowerCase().includes(q);
+        const sgkMatch = (p.sgk_karsilastirmasi_ve_nis_bilgi || '').toLowerCase().includes(q);
+        const ageMatch = (p.yas_grubu || '').toLowerCase().includes(q);
+        const whoCanMatch = (p.kimler_icebilir || '').toLowerCase().includes(q);
         
-        if (!nameMatch && !brandMatch && !activesMatch && !tagsMatch && !complaintMatch) {
+        if (!nameMatch && !brandMatch && !activesMatch && !tagsMatch && !complaintMatch && !benefitMatch && !sgkMatch && !ageMatch && !whoCanMatch) {
           return false;
         }
       }
@@ -557,6 +586,129 @@
     });
   }
 
+  // --- YAŞ & KİLO PERSANTİL DOZAJ REHBERİ VERİSİ ---
+  const PERSANTIL_DATA = [
+    {
+      yas: '0 - 1 Yaş (Bebek)',
+      kiloAraligi: '3.5 - 11.5 kg',
+      ortalamaKilo: '7.5 - 10 kg',
+      guvenliForm: 'Damla (Damlatıcı ile) veya Sıvı Şurup',
+      kural: 'Kapsül/tablet kesinlikle verilmez (aspirasyon riski). D3 vitamini 400 IU damla standarttır.'
+    },
+    {
+      yas: '1 - 3 Yaş (Oyun Çocuğu)',
+      kiloAraligi: '9.0 - 16.5 kg',
+      ortalamaKilo: '12 - 14 kg',
+      guvenliForm: 'Sıvı Şurup, Damla, Saşe (su/yoğurda karışan)',
+      kural: 'Tatlandırılmış aromalı şurup/damla. Balık yağı şurup formunda (Ocean vb.) tok karna verilir.'
+    },
+    {
+      yas: '4 - 6 Yaş (Örn: 5 Yaş)',
+      kiloAraligi: '14.0 - 24.0 kg',
+      ortalamaKilo: '18.5 kg',
+      guvenliForm: 'Çiğneme Jeli / Tableti, Şurup, Saşe',
+      kural: '5 yaşındaki çocuğun normal kabul edilen ortalama kilosu 18.5 kg\'dır (15-22 kg bandı). Yetişkin tableti yutamaz.'
+    },
+    {
+      yas: '7 - 9 Yaş (Okul Çağı)',
+      kiloAraligi: '19.0 - 35.0 kg',
+      ortalamaKilo: '25 - 28 kg',
+      guvenliForm: 'Çiğneme Formu, Şurup, Saşe',
+      kural: 'Okul dönemi odaklanma ve bağışıklık desteği. 30 kg altı çocuklara yetişkin dozu verilmez.'
+    },
+    {
+      yas: '10 - 12 Yaş (Ergenlik Öncesi)',
+      kiloAraligi: '28.0 - 50.0 kg',
+      ortalamaKilo: '36 - 40 kg',
+      guvenliForm: 'Çiğneme Tableti, Küçük Kapsül veya Şurup',
+      kural: '12 yaş sınırı. 40 kg altındaki persantil gerisi çocuklara yetişkin takviyesi verilmez, pediatrik doz sürdürülür.'
+    },
+    {
+      yas: '12+ Yaş & Genç (13 - 17 Yaş)',
+      kiloAraligi: '42.0 - 70.0 kg',
+      ortalamaKilo: '52 - 58 kg',
+      guvenliForm: 'Kapsül, Tablet, Saşe, Efervesan',
+      kural: '12 yaş üzeri ve 40 kg üzerindeki bireyler yetişkin takviye dozlarını güvenle kullanabilir.'
+    },
+    {
+      yas: 'Yetişkin (18 - 65 Yaş)',
+      kiloAraligi: '50.0 - 90.0 kg',
+      ortalamaKilo: '65 - 75 kg',
+      guvenliForm: 'Kapsül, Tablet, Efervesan, Saşe, Flakon',
+      kural: 'Standart yetişkin dozu. Tiroid ilacı (Levotiron), kan sulandırıcı (Coumadin) ve tansiyon ilaçlarıyla araya 2-4 saat mesafe konmalıdır.'
+    },
+    {
+      yas: '65+ Yaş (Geriatrik)',
+      kiloAraligi: '50.0 - 85.0 kg',
+      ortalamaKilo: '65 - 70 kg',
+      guvenliForm: 'Yutması Kolay Küçük Kapsül, Damla, Dilaltı, Saşe',
+      kural: 'Polifarmasi (çoklu ilaç) ve azalan böbrek fonksiyonu göz önüne alınarak magnezyum oksit yerine bisglisinat tercih edilir.'
+    }
+  ];
+
+  function renderPersantilTable(filterText = '') {
+    if (!el.persantilTableBody) return;
+    const q = (filterText || '').trim().toLowerCase();
+
+    const rows = PERSANTIL_DATA.filter(item => {
+      if (!q) return true;
+      return item.yas.toLowerCase().includes(q) ||
+             item.kiloAraligi.toLowerCase().includes(q) ||
+             item.ortalamaKilo.toLowerCase().includes(q) ||
+             item.guvenliForm.toLowerCase().includes(q) ||
+             item.kural.toLowerCase().includes(q);
+    });
+
+    if (rows.length === 0) {
+      el.persantilTableBody.innerHTML = `
+        <tr>
+          <td colspan="4" style="text-align:center; padding: 24px; color: var(--text-tertiary);">
+            Aramanızla eşleşen yaş veya kilo normu bulunamadı.
+          </td>
+        </tr>
+      `;
+      return;
+    }
+
+    el.persantilTableBody.innerHTML = rows.map(r => {
+      const isHighlighted = q && (r.yas.toLowerCase().includes(q) || r.kural.toLowerCase().includes(q));
+      return `
+        <tr class="${isHighlighted ? 'highlight-row' : ''}">
+          <td>
+            <div class="table-age-cell">
+              <strong>${escapeHtml(r.yas)}</strong>
+              <small>${escapeHtml(r.kural)}</small>
+            </div>
+          </td>
+          <td><span class="table-range-badge">${escapeHtml(r.kiloAraligi)}</span></td>
+          <td><strong style="color: var(--brand-primary);">${escapeHtml(r.ortalamaKilo)}</strong></td>
+          <td><span class="table-form-badge">${escapeHtml(r.guvenliForm)}</span></td>
+        </tr>
+      `;
+    }).join('');
+  }
+
+  function openWeightRefModal(targetHighlight = '') {
+    if (el.weightRefSearchInput) {
+      el.weightRefSearchInput.value = targetHighlight || '';
+    }
+    renderPersantilTable(targetHighlight || '');
+
+    if (el.weightRefModalBackdrop) {
+      el.weightRefModalBackdrop.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeWeightRefModal() {
+    if (el.weightRefModalBackdrop) {
+      el.weightRefModalBackdrop.classList.remove('active');
+      if (!el.modalBackdrop?.classList.contains('active') && !el.editorModalBackdrop?.classList.contains('active')) {
+        document.body.style.overflow = '';
+      }
+    }
+  }
+
   // --- ÜRÜN DETAY MODALI ---
   function openDetailModal(product) {
     if (!product) return;
@@ -580,11 +732,11 @@
     if (el.modalProductTitle) el.modalProductTitle.textContent = product.name;
     if (el.modalSubcatText) el.modalSubcatText.textContent = product.sub_category || product.category_name || '';
 
-    // Hızlı Çipler (Cilt Tipleri & Yaş Grubu)
+    // Hızlı Çipler (Cilt Tipleri & Yaş Grubu - Yaş Çipi Tıklanabilir)
     if (el.modalQuickChips) {
       let chipsHtml = '';
       if (product.yas_grubu) {
-        chipsHtml += `<span class="quick-chip">👥 ${escapeHtml(product.yas_grubu)}</span>`;
+        chipsHtml += `<button type="button" class="quick-chip age-ref-chip" data-age="${escapeHtml(product.yas_grubu)}" title="Bu yaş grubu için persantil kilo ve dozaj tablosunu gör">👥 ${escapeHtml(product.yas_grubu)} <span class="chip-action-hint">⚖️ Tablo</span></button>`;
       }
       if (Array.isArray(product.cilt_tipleri)) {
         product.cilt_tipleri.forEach(ct => {
@@ -592,6 +744,16 @@
         });
       }
       el.modalQuickChips.innerHTML = chipsHtml;
+
+      const ageBtn = el.modalQuickChips.querySelector('.age-ref-chip');
+      if (ageBtn) {
+        ageBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          const targetAge = ageBtn.getAttribute('data-age') || '';
+          openWeightRefModal(targetAge);
+        });
+      }
     }
 
     // 1. Danışan Ne Derse Bu Ürün Verilir?
@@ -608,7 +770,7 @@
       `).join('');
     }
 
-    // 2. Nasıl Kullanılır?
+    // 2. Nasıl ve Ne Zaman Kullanılır?
     if (el.modalUsageText) {
       el.modalUsageText.textContent = product.nasil_kullanilir || 'Temizlenmiş cilde nazik dairesel hareketlerle uygulayınız.';
     }
@@ -624,7 +786,71 @@
       `).join('');
     }
 
-    // 4. Güvenlik & Kimler Kullanamaz
+    // 4. Ne İşe Yarar? (Klinik & Fizyolojik Etki)
+    if (el.modalBenefitBlock) {
+      if (product.ne_ise_yarar) {
+        el.modalBenefitBlock.style.display = 'block';
+        if (el.modalBenefitText) el.modalBenefitText.textContent = product.ne_ise_yarar;
+      } else {
+        el.modalBenefitBlock.style.display = 'none';
+      }
+    }
+
+    // 5. SGK vs Eczane Takviyesi Niş Karşılaştırma
+    if (el.modalSgkCompareBlock) {
+      if (product.sgk_karsilastirmasi_ve_nis_bilgi) {
+        el.modalSgkCompareBlock.style.display = 'block';
+        if (el.modalSgkCompareText) el.modalSgkCompareText.textContent = product.sgk_karsilastirmasi_ve_nis_bilgi;
+      } else {
+        el.modalSgkCompareBlock.style.display = 'none';
+      }
+    }
+
+    // 6. Kimler İçebilir & İdeal Kilo / Yaş Sınırı
+    if (el.modalWhoCanBlock) {
+      const hasWhoCan = Boolean(product.kimler_icebilir);
+      const hasWeightNorm = Boolean(product.ideal_kilo_araligi);
+
+      if (hasWhoCan || hasWeightNorm) {
+        el.modalWhoCanBlock.style.display = 'block';
+        if (el.modalWhoCanText) {
+          el.modalWhoCanText.textContent = product.kimler_icebilir || '';
+          el.modalWhoCanText.style.display = hasWhoCan ? 'block' : 'none';
+        }
+        if (el.modalWeightNormCallout) {
+          if (hasWeightNorm) {
+            el.modalWeightNormCallout.style.display = 'flex';
+            if (el.modalWeightNormVal) {
+              el.modalWeightNormVal.innerHTML = `${escapeHtml(product.ideal_kilo_araligi)} <button type="button" class="btn-callout-link">Rehberi Aç ↗</button>`;
+              const linkBtn = el.modalWeightNormVal.querySelector('.btn-callout-link');
+              if (linkBtn) {
+                linkBtn.addEventListener('click', (e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  openWeightRefModal(product.yas_grubu || '');
+                });
+              }
+            }
+          } else {
+            el.modalWeightNormCallout.style.display = 'none';
+          }
+        }
+      } else {
+        el.modalWhoCanBlock.style.display = 'none';
+      }
+    }
+
+    // 7. Kimler İçemez & İlaç Etkileşimleri
+    if (el.modalWhoCannotBlock) {
+      if (product.kimler_icemez) {
+        el.modalWhoCannotBlock.style.display = 'block';
+        if (el.modalWhoCannotText) el.modalWhoCannotText.textContent = product.kimler_icemez;
+      } else {
+        el.modalWhoCannotBlock.style.display = 'none';
+      }
+    }
+
+    // 8. Güvenlik & Kimler Kullanamaz
     if (el.modalWarningText) {
       el.modalWarningText.textContent = product.kimler_kullanamaz || 'İçeriğindeki etken maddelere karşı hassasiyeti olanlar kullanmamalıdır.';
     }
@@ -652,12 +878,19 @@
     const note = [
       `*${p.name}*`,
       p.size ? `📦 Boyut / Form: ${p.size}` : '',
-      `🧴 Rutin: ${p.rutin_adimi || p.sub_category || 'Bakım'}`,
+      `🧴 Rutin / Kategori: ${p.rutin_adimi || p.sub_category || 'Bakım/Takviye'}`,
       '',
-      `🩺 *Nasıl Kullanılır:*`,
-      `${p.nasil_kullanilir || 'Temiz cilde günde 1-2 kez nazikçe masaj yaparak uygulayınız.'}`,
+      p.ne_ise_yarar ? `🎯 *Ne İşe Yarar:* ${p.ne_ise_yarar}` : '',
       '',
+      `🩺 *Nasıl ve Ne Zaman Kullanılır:*`,
+      `${p.nasil_kullanilir || 'Önerilen dozda düzenli olarak kullanınız.'}`,
+      '',
+      p.sgk_karsilastirmasi_ve_nis_bilgi ? `💡 *SGK / Devlet İlacı Farkı (Niş Bilgi):*\n${p.sgk_karsilastirmasi_ve_nis_bilgi}` : '',
+      '',
+      p.kimler_icebilir ? `👥 *Kimler İçebilir:* ${p.kimler_icebilir}` : '',
+      p.ideal_kilo_araligi ? `⚖️ *Kilo & Yaş Persantil Normu:* ${p.ideal_kilo_araligi}` : '',
       actives ? `🧪 *Öne Çıkan Aktifler:* ${actives}` : '',
+      p.kimler_icemez ? `🚫 *Kimler İçemez / Etkileşimler:* ${p.kimler_icemez}` : '',
       p.kimler_kullanamaz ? `⚠️ *Önemli Uyarı:* ${p.kimler_kullanamaz}` : '',
       '',
       `_Sağlıklı günler dileriz._`
@@ -824,7 +1057,10 @@
       .map(s => s.trim())
       .filter(Boolean);
 
+    const existing = isEdit ? state.products.find(p => p.id === id) : null;
+
     const productData = {
+      ...(existing || {}),
       id: id || ('custom_' + Date.now()),
       name: name,
       brand: brand,
@@ -837,7 +1073,7 @@
       nasil_kullanilir: el.formProductUsage.value.trim(),
       etken_maddeler: etken_maddeler,
       kimler_kullanamaz: el.formProductWarnings.value.trim(),
-      image: currentEditingPhoto || 'images/placeholder.png'
+      image: currentEditingPhoto || (existing ? existing.image : 'images/placeholder.png')
     };
 
     StorageManager.saveProduct(productData, isEdit);
@@ -1132,6 +1368,24 @@
       el.btnResetLocalData.addEventListener('click', handleResetLocalData);
     }
 
+    // Yaş & Kilo Persantil Rehberi Olayları
+    if (el.btnOpenWeightRef) {
+      el.btnOpenWeightRef.addEventListener('click', () => openWeightRefModal(''));
+    }
+    if (el.weightRefCloseBtn) {
+      el.weightRefCloseBtn.addEventListener('click', closeWeightRefModal);
+    }
+    if (el.weightRefModalBackdrop) {
+      el.weightRefModalBackdrop.addEventListener('click', (e) => {
+        if (e.target === el.weightRefModalBackdrop) closeWeightRefModal();
+      });
+    }
+    if (el.weightRefSearchInput) {
+      el.weightRefSearchInput.addEventListener('input', (e) => {
+        renderPersantilTable(e.target.value);
+      });
+    }
+
     // Lightbox Kapatma
     if (el.lightboxCloseBtn) el.lightboxCloseBtn.addEventListener('click', closeLightbox);
     if (el.lightboxBackdrop) {
@@ -1145,6 +1399,8 @@
       if (e.key === 'Escape') {
         if (el.lightboxBackdrop && el.lightboxBackdrop.style.display === 'flex') {
           closeLightbox();
+        } else if (el.weightRefModalBackdrop && el.weightRefModalBackdrop.classList.contains('active')) {
+          closeWeightRefModal();
         } else if (el.editorModalBackdrop && el.editorModalBackdrop.classList.contains('active')) {
           closeEditorModal();
         } else if (el.settingsModalBackdrop && el.settingsModalBackdrop.classList.contains('active')) {

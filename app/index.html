@@ -31,6 +31,10 @@
           <span>➕</span>
           <span class="btn-text">Ekle</span>
         </button>
+        <button type="button" class="btn-weight-ref" id="btnOpenWeightRef" title="Pediatrik & Yetişkin Yaş-Kilo Rehberi">
+          <span>⚖️</span>
+          <span class="btn-text">Yaş-Kilo</span>
+        </button>
         <button type="button" class="icon-btn" id="btnOpenSettings" aria-label="Ayarlar ve Senkronizasyon" title="Ayarlar & Senkronizasyon">
           <span>⚙️</span>
         </button>
@@ -191,8 +195,51 @@
             <div class="actives-tags-wrap" id="modalActivesWrap"></div>
           </div>
 
-          <!-- 4. Güvenlik & Dikkat Edilmesi Gerekenler -->
-          <div class="detail-block warning-block">
+          <!-- 4. Ne İşe Yarar? (Klinik & Fizyolojik Etki) -->
+          <div class="detail-block benefit-block" id="modalBenefitBlock" style="display: none;">
+            <div class="block-header">
+              <span class="block-icon">🎯</span>
+              <h4>Ne İşe Yarar? (Klinik & Fizyolojik Etki)</h4>
+            </div>
+            <p class="block-text" id="modalBenefitText"></p>
+          </div>
+
+          <!-- 5. SGK (Devlet) vs. Eczane Takviyesi Niş Karşılaştırma -->
+          <div class="detail-block sgk-compare-block" id="modalSgkCompareBlock" style="display: none;">
+            <div class="block-header">
+              <span class="block-icon">💡</span>
+              <h4>Devlet İlacı (SGK) vs. Eczane Takviyesi (Niş Bilgi)</h4>
+            </div>
+            <p class="block-text sgk-text" id="modalSgkCompareText"></p>
+          </div>
+
+          <!-- 6. Kimler İçebilir? (Yaş & Doz Kriteri) -->
+          <div class="detail-block who-can-block" id="modalWhoCanBlock" style="display: none;">
+            <div class="block-header">
+              <span class="block-icon">👥</span>
+              <h4>Kimler İçebilir? (Yaş & Doz Kriteri)</h4>
+            </div>
+            <p class="block-text" id="modalWhoCanText"></p>
+            <div class="weight-norm-callout" id="modalWeightNormCallout" style="display: none;">
+              <span class="norm-icon">⚖️</span>
+              <div>
+                <span class="norm-title">Yaş-Kilo Persantil Normu:</span>
+                <span class="norm-val" id="modalWeightNormVal"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. Kimler İçemez & İlaç Etkileşimleri (12 Yaş / Tiroid / Kan Sulandırıcı) -->
+          <div class="detail-block contraindication-block" id="modalWhoCannotBlock" style="display: none;">
+            <div class="block-header">
+              <span class="block-icon">🚫</span>
+              <h4>Kimler İçemez & İlaç Etkileşimleri</h4>
+            </div>
+            <p class="block-text warning-text" id="modalWhoCannotText"></p>
+          </div>
+
+          <!-- 8. Genel Güvenlik & Dikkat Edilmesi Gerekenler -->
+          <div class="detail-block warning-block" id="modalWarningBlock">
             <div class="block-header">
               <span class="block-icon">⚠️</span>
               <h4>Güvenlik Sınırı & Kimler Kullanamaz?</h4>
@@ -200,6 +247,68 @@
             <p class="block-text warning-text" id="modalWarningText"></p>
           </div>
 
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ========================================================
+       5. YAŞ & KİLO PERSANTİL VE DOZAJ REFERANS REHBERİ
+       ======================================================== -->
+  <div class="modal-backdrop weight-ref-backdrop" id="weightRefModalBackdrop">
+    <div class="detail-sheet weight-ref-sheet" id="weightRefSheet" role="dialog" aria-modal="true" aria-labelledby="weightRefTitle">
+      
+      <div class="sheet-handle-bar">
+        <span class="sheet-handle"></span>
+      </div>
+
+      <button type="button" class="modal-close-btn" id="weightRefCloseBtn" aria-label="Kapat">✕</button>
+
+      <div class="editor-header">
+        <h2 class="editor-title" id="weightRefTitle">⚖️ Yaş & Kilo Persantil Dozaj Rehberi</h2>
+        <p class="editor-subtitle">DSÖ & Sağlık Bakanlığı Persantil Normları ve Pediatrik Güvenlik Sınırları</p>
+      </div>
+
+      <div class="sheet-scroll-body">
+        
+        <!-- Kritik Eczacılık Kuralları Kartı -->
+        <div class="rules-card">
+          <div class="rule-item">
+            <span class="rule-badge danger">🚨 12 Yaş Kuralı:</span>
+            <p>12 yaş altı çocuklara yetişkin takviyeleri/hapları verilmez. Karaciğer ve böbrek enzimleri yüksek dozu tolere edemez; çocuk şurubu, damlası veya çiğneme formu verilmelidir.</p>
+          </div>
+          <div class="rule-item">
+            <span class="rule-badge warning">⚖️ 40 kg Eşiği:</span>
+            <p>12 yaşından büyük olsa dahi kilosu 40 kg altında olan persantil gerisi çocuklarda yetişkin dozu yerine çocuk dozu veya hekim kontrolünde yarı doz uygulanır.</p>
+          </div>
+          <div class="rule-item">
+            <span class="rule-badge info">💊 Yutma Refleksi:</span>
+            <p>0-3 yaş yalnızca damla/sıvı; 4-10 yaş çiğneme tableti veya şurup; 11+ yaş su ile küçük kapsül/tablet yutabilir.</p>
+          </div>
+        </div>
+
+        <!-- Hızlı Filtre Arama -->
+        <div class="persantil-search-box">
+          <input type="text" id="weightRefSearchInput" class="form-input" placeholder="🔍 Yaş veya kilo ara (örn: 5 yaş, 12 yaş, 20 kg)...">
+        </div>
+
+        <!-- Persantil Tablosu -->
+        <div class="persantil-table-wrap">
+          <table class="persantil-table">
+            <thead>
+              <tr>
+                <th>Yaş Grubu</th>
+                <th>Normal Kilo (3-97P)</th>
+                <th>Ortalama (50P)</th>
+                <th>Güvenli Takviye Formu</th>
+              </tr>
+            </thead>
+            <tbody id="persantilTableBody">
+              <!-- JS tarafından dinamik doldurulur -->
+            </tbody>
+          </table>
         </div>
 
       </div>
