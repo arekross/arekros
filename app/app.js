@@ -67,8 +67,6 @@
     modalWhoCannotText: document.getElementById('modalWhoCannotText'),
     modalWarningBlock: document.getElementById('modalWarningBlock'),
     modalWarningText: document.getElementById('modalWarningText'),
-    btnCopyNote: document.getElementById('btnCopyNote'),
-    copyBtnText: document.getElementById('copyBtnText'),
     btnEditCurrentProduct: document.getElementById('btnEditCurrentProduct'),
 
     // Yaş & Kilo Persantil Dozaj Rehberi Modalı
@@ -893,57 +891,7 @@
     }
   }
 
-  // --- DANIŞAN KULLANIM NOTUNU KOPYALA ---
-  function copyProductNote() {
-    const p = state.selectedProduct;
-    if (!p) return;
 
-    const isHair = Boolean(p.is_hair) || (p.rutin_adimi && p.rutin_adimi.toLowerCase().includes('saç')) || ['Phyto Paris', 'Tresan'].includes(p.brand);
-    const isSup = Boolean(p.is_supplement) || Boolean(p.sgk_karsilastirmasi_ve_nis_bilgi);
-
-    const typeList = (isHair && Array.isArray(p.sac_tipleri) && p.sac_tipleri.length > 0)
-      ? p.sac_tipleri
-      : (Array.isArray(p.cilt_tipleri) ? p.cilt_tipleri : []);
-
-    const typeLabel = isHair ? '💇 *Saç & Saç Derisi Tipi:*' : (isSup ? '🎯 *Hedef Sistem / Alan:*' : '💧 *Cilt Tipi:*');
-    const typeLine = typeList.length > 0 ? `${typeLabel} ${typeList.join(', ')}` : '';
-
-    const actives = (p.etken_maddeler || []).join(', ');
-    const note = [
-      `*${p.name}*`,
-      p.size ? `📦 Boyut / Form: ${p.size}` : '',
-      `🧴 Rutin / Kategori: ${p.rutin_adimi || p.sub_category || (isHair ? 'Saç & Saç Derisi Bakımı' : (isSup ? 'Gıda Takviyesi' : 'Cilt Bakımı'))}`,
-      typeLine,
-      '',
-      p.ne_ise_yarar ? `🎯 *Ne İşe Yarar:* ${p.ne_ise_yarar}` : '',
-      '',
-      `🩺 *Nasıl ve Ne Zaman Kullanılır:*`,
-      `${p.nasil_kullanilir || 'Önerilen dozda düzenli olarak kullanınız.'}`,
-      '',
-      p.sgk_karsilastirmasi_ve_nis_bilgi ? `💡 *SGK / Devlet İlacı Farkı (Niş Bilgi):*\n${p.sgk_karsilastirmasi_ve_nis_bilgi}` : '',
-      '',
-      p.kimler_icebilir ? `👥 *Kimler İçebilir:* ${p.kimler_icebilir}` : '',
-      p.ideal_kilo_araligi ? `⚖️ *Kilo & Yaş Persantil Normu:* ${p.ideal_kilo_araligi}` : '',
-      actives ? `🧪 *Öne Çıkan Aktifler:* ${actives}` : '',
-      p.kimler_icemez ? `🚫 *Kimler İçemez & İlaç Etkileşimleri:*\n${p.kimler_icemez}` : (p.kimler_kullanamaz ? `⚠️ *Önemli Uyarı:* ${p.kimler_kullanamaz}` : ''),
-      '',
-      `_Sağlıklı günler dileriz._`
-    ].filter(Boolean).join('\n');
-
-    navigator.clipboard.writeText(note).then(() => {
-      showToast('📋 Danışan kullanım notu kopyalandı!');
-      if (el.copyBtnText) {
-        const orig = el.copyBtnText.textContent;
-        el.copyBtnText.textContent = '✓ Kopyalandı!';
-        setTimeout(() => {
-          el.copyBtnText.textContent = orig;
-        }, 1800);
-      }
-    }).catch(err => {
-      console.warn('Clipboard error:', err);
-      showToast('Kopyalama başarısız oldu.');
-    });
-  }
 
   // --- FOTOĞRAF YÜKLEYİCİ VE CANVAS SIKIŞTIRMA ---
   function setupPhotoUploader() {
@@ -1390,9 +1338,6 @@
     }
     if (el.modalImgFrame) {
       el.modalImgFrame.addEventListener('click', openLightbox);
-    }
-    if (el.btnCopyNote) {
-      el.btnCopyNote.addEventListener('click', copyProductNote);
     }
     if (el.btnEditCurrentProduct) {
       el.btnEditCurrentProduct.addEventListener('click', () => {

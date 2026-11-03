@@ -5478,19 +5478,22 @@
     "rutin_adimi": "Gıda Takviyesi & Vitamin",
     "category": "dermo",
     "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Takviye Edici Gıda",
+    "sub_category": "İnsülin Duyarlılığı & Hücresel Enerji (Berberin & Koenzim Q10)",
     "size": "60 Kapsül",
     "form": "Kapsül",
     "image": "tum_urunler/INFINITY BerberiQ.png",
     "cilt_tipleri": [
-      "Tüm Cilt Tipleri"
+      "İnsülin Direnci",
+      "Glukoz & Karaciğer Yağlanması",
+      "Metabolizma"
     ],
     "yas_grubu": "18 Yaş Üstü Yetişkin",
     "kimler_kullanamaz": "İçeriğindeki etken maddelere karşı bilinen alerjisi olanlar kullanmamalıdır.",
     "nasil_kullanilir": "Günde 2 kapsül, ana yemeklerden (öğle ve akşam) 15-20 dakika önce 1 bardak su ile alınır.",
     "hangi_sikayetle_gelene_verilir": [
-      "Günlük vitamin, mineral ve besin desteğine ihtiyaç duyuyorum.",
-      "Bağışıklık sistemimi, enerji seviyemi ve cilt sağlığımı içeriden desteklemek istiyorum."
+      "İnsülin direncim var, yemekten sonra gözüm kararıyor ve canım çılgın gibi tatlı çekiyor.",
+      "Karaciğerimde yağlanma ve bel çevremde inatçı yağlanma var; kan şekerimi ve metabolizmamı dengeleyecek takviye arıyorum.",
+      "Açlık kan şekerim yüksek seyrediyor, metformin kullanmadan önce doğal berberin ile düşürmek istiyorum."
     ],
     "kombinasyon_ve_uyarilar": "Daha yüksek verim için temizleme ve nemlendirme rutininizle entegre ediniz.",
     "etken_maddeler": [
@@ -5521,19 +5524,22 @@
     "rutin_adimi": "Gıda Takviyesi & Vitamin",
     "category": "dermo",
     "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Takviye Edici Gıda",
+    "sub_category": "Medikal Ödem Atıcı & Proteolitik Enzim (Bromelain 2400 GDU)",
     "size": "60 Kapsül",
     "form": "Kapsül",
     "image": "tum_urunler/INFINITY Bromelain.jpeg",
     "cilt_tipleri": [
-      "Tüm Cilt Tipleri"
+      "Ödem & Şişkinlik",
+      "Post-Op / Ameliyat Sonrası",
+      "Lenfatik Drenaj"
     ],
     "yas_grubu": "12 Yaş Üstü & Yetişkin",
     "kimler_kullanamaz": "İçeriğindeki etken maddelere karşı bilinen alerjisi olanlar kullanmamalıdır.",
     "nasil_kullanilir": "Ödem ve şişlik için: Öğün aralarında AÇ KARNINA günde 1-2 kapsül bol su ile. Sindirimi rahatlatmak için: Yemek ortasında.",
     "hangi_sikayetle_gelene_verilir": [
-      "Günlük vitamin, mineral ve besin desteğine ihtiyaç duyuyorum.",
-      "Bağışıklık sistemimi, enerji seviyemi ve cilt sağlığımı içeriden desteklemek istiyorum."
+      "Vücudumda aşırı ödem var, sabahları parmaklarım ve göz kapaklarım şiş uyanıyorum.",
+      "Yeni burun / liposuction ameliyatı oldum, doktorum morluk ve ödemlerin çabuk inmesi için bromelain önerdi.",
+      "Diyetteyim ama tartıdaki kilo gitmiyor, inatçı lenfatik ödemi ve şişkinliği sökecek güçlü bir takviye istiyorum."
     ],
     "kombinasyon_ve_uyarilar": "Daha yüksek verim için temizleme ve nemlendirme rutininizle entegre ediniz.",
     "etken_maddeler": [
@@ -5609,19 +5615,22 @@
     "rutin_adimi": "Gıda Takviyesi & Vitamin",
     "category": "dermo",
     "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Takviye Edici Gıda",
+    "sub_category": "Hücresel Gençleşme & Vasküler Longevity (Trans-Resveratrol)",
     "size": "60 Kapsül",
     "form": "Kapsül",
     "image": "tum_urunler/INFINITY Resveratrol.png",
     "cilt_tipleri": [
-      "Tüm Cilt Tipleri"
+      "Hücresel Yaşlanma Karşıtı",
+      "Damar Sağlığı & Kalp",
+      "Antioksidan"
     ],
     "yas_grubu": "Yetişkin",
     "kimler_kullanamaz": "İçeriğindeki etken maddelere karşı bilinen alerjisi olanlar kullanmamalıdır.",
     "nasil_kullanilir": "Günde 1 kapsül, tercihen sabah kahvaltısıyla birlikte.",
     "hangi_sikayetle_gelene_verilir": [
-      "Günlük vitamin, mineral ve besin desteğine ihtiyaç duyuyorum.",
-      "Bağışıklık sistemimi, enerji seviyemi ve cilt sağlığımı içeriden desteklemek istiyorum."
+      "Damar sertliğinden ve kalp-damar yaşlanmasından korunmak için en güçlü antioksidanı kullanmak istiyorum.",
+      "Cildimde hücresel düzeyde kolajen yıkımı ve erken yaşlanma belirtileri başladı, içeriden hücresel gençleşme kürü arıyorum.",
+      "Sirtuin (uzun ömür / longevity) genlerini aktive eden kaliteli bir trans-resveratrol takviyesi istiyorum."
     ],
     "kombinasyon_ve_uyarilar": "Daha yüksek verim için temizleme ve nemlendirme rutininizle entegre ediniz.",
     "etken_maddeler": [
@@ -7225,19 +7234,22 @@
     "rutin_adimi": "Gıda Takviyesi & Vitamin",
     "category": "dermo",
     "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Takviye Edici Gıda",
+    "sub_category": "Erkek Tipi Saç Dökülmesi & Saç Kökü Güçlendirici Biotin",
     "size": "60 Kapsül",
     "form": "Kapsül",
     "image": "tum_urunler/NutraFarm Medobyocomplex-M Biotin.jpeg",
     "cilt_tipleri": [
-      "Tüm Cilt Tipleri"
+      "Erkek Tipi Saç Dökülmesi",
+      "Saç Ekimi Sonrası Destek",
+      "Zayıf Saç Kökleri"
     ],
     "yas_grubu": "Erkek Yetişkin",
     "kimler_kullanamaz": "İçeriğindeki etken maddelere karşı bilinen alerjisi olanlar kullanmamalıdır.",
     "nasil_kullanilir": "Günde 2 kapsül, sabah ve akşam yemeklerden sonra bol su ile.",
     "hangi_sikayetle_gelene_verilir": [
-      "Günlük vitamin, mineral ve besin desteğine ihtiyaç duyuyorum.",
-      "Bağışıklık sistemimi, enerji seviyemi ve cilt sağlığımı içeriden desteklemek istiyorum."
+      "Erkek tipi saç dökülmem var, tepe ve şakak bölgelerim açılıyor, saç köklerimi içeriden besleyecek hap arıyorum.",
+      "Saç ekimi yaptırdım, ekilen köklerin hızlı ve gür tutunması için doktorum biotin ve saw palmetto takviyesi almamı söyledi.",
+      "Saçlarım çok inceldi ve cansızlaştı, kökünden kopup dökülüyor."
     ],
     "kombinasyon_ve_uyarilar": "Daha yüksek verim için temizleme ve nemlendirme rutininizle entegre ediniz.",
     "etken_maddeler": [
@@ -7271,19 +7283,22 @@
     "rutin_adimi": "Gıda Takviyesi & Vitamin",
     "category": "dermo",
     "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Takviye Edici Gıda",
+    "sub_category": "Kadın Saç & Tırnak Canlandırıcı Biotin & Keratin Kompleksi",
     "size": "60 Kapsül",
     "form": "Kapsül",
     "image": "tum_urunler/Nutrafarm Medobiocomplex-W.webp",
     "cilt_tipleri": [
-      "Tüm Cilt Tipleri"
+      "Kadın Saç Dökülmesi",
+      "Kırılgan & Soyulan Tırnaklar",
+      "Cansız Saç Boyları"
     ],
     "yas_grubu": "Kadın Yetişkin",
     "kimler_kullanamaz": "İçeriğindeki etken maddelere karşı bilinen alerjisi olanlar kullanmamalıdır.",
     "nasil_kullanilir": "Günde 2 kapsül yemeklerden sonra.",
     "hangi_sikayetle_gelene_verilir": [
-      "Günlük vitamin, mineral ve besin desteğine ihtiyaç duyuyorum.",
-      "Bağışıklık sistemimi, enerji seviyemi ve cilt sağlığımı içeriden desteklemek istiyorum."
+      "Saçlarım tutam tutam dökülüyor, banyodan sonra lavabo saçla doluyor.",
+      "Tırnaklarım kat kat soyulup kırılıyor, saçlarım bir türlü uzamıyor ve çok cansız.",
+      "Doğum ve yoğun stres sonrası saçlarımın yarısını kaybettim, kadınlara özel saç vitamini kürü yapmak istiyorum."
     ],
     "kombinasyon_ve_uyarilar": "Daha yüksek verim için temizleme ve nemlendirme rutininizle entegre ediniz.",
     "etken_maddeler": [
@@ -8132,19 +8147,22 @@
     "rutin_adimi": "Gıda Takviyesi & Vitamin",
     "category": "dermo",
     "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Takviye Edici Gıda",
+    "sub_category": "Yüksek Emilimli Magnezyum Sitrat (Kas & Bağırsak Desteği)",
     "size": "60 Tablet",
     "form": "Tablet",
     "image": "tum_urunler/Solgar - Magnesium Citrate 60 Tablet.jpeg",
     "cilt_tipleri": [
-      "Tüm Cilt Tipleri"
+      "Kas Krampları & Spazm",
+      "Huzursuz Bacak",
+      "Kabızlık & Bağırsak"
     ],
     "yas_grubu": "12 Yaş Üstü & Yetişkin",
     "kimler_kullanamaz": "İçeriğindeki etken maddelere karşı bilinen alerjisi olanlar kullanmamalıdır.",
     "nasil_kullanilir": "Günde 1-2 tablet, akşam yemeğinden sonra veya yatmadan 1-2 saat önce bol su ile alınır. Tiroid ilacı (Levotiron), demir hapı veya antibiyotik (kinolon/tetrasiklin) kullanılıyorsa aralarında en az 3-4 saat bırakılmalıdır!",
     "hangi_sikayetle_gelene_verilir": [
-      "Günlük vitamin, mineral ve besin desteğine ihtiyaç duyuyorum.",
-      "Bağışıklık sistemimi, enerji seviyemi ve cilt sağlığımı içeriden desteklemek istiyorum."
+      "Geceleri uykumdan sıçrayarak bacaklarıma giren kramplarla uyanıyorum.",
+      "Hem kronik kabızlığım var hem de kaslarım sürekli gergin ve ağrıyor; bağırsaklarımı da yumuşatacak sitrat formu magnezyum arıyorum.",
+      "Yoğun spor sonrası kas ağrılarım geçmiyor ve kendimi sürekli yorgun hissediyorum."
     ],
     "kombinasyon_ve_uyarilar": "Daha yüksek verim için temizleme ve nemlendirme rutininizle entegre ediniz.",
     "etken_maddeler": [
@@ -8173,19 +8191,22 @@
     "rutin_adimi": "Gıda Takviyesi & Vitamin",
     "category": "dermo",
     "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Takviye Edici Gıda",
+    "sub_category": "Yağ Asidi Taşıyıcı & Mitokondriyal Enerji (L-Karnitin)",
     "size": "30 Tablet",
     "form": "Tablet",
     "image": "tum_urunler/Solgar L-Carnitine 500mg 30 Tablet.jpg",
     "cilt_tipleri": [
-      "Tüm Cilt Tipleri"
+      "Yağ Yakımı & Kilo",
+      "Kardiyo Performansı",
+      "Hücresel Enerji"
     ],
     "yas_grubu": "12 Yaş Üstü & Yetişkin",
     "kimler_kullanamaz": "İçeriğindeki etken maddelere karşı bilinen alerjisi olanlar kullanmamalıdır.",
     "nasil_kullanilir": "Spordan / antrenmandan 30-45 dakika önce aç karnına 1-2 tablet bol su ile alınır. Spor yapılmayan günlerde sabah aç karnına alınabilir.",
     "hangi_sikayetle_gelene_verilir": [
-      "Günlük vitamin, mineral ve besin desteğine ihtiyaç duyuyorum.",
-      "Bağışıklık sistemimi, enerji seviyemi ve cilt sağlığımı içeriden desteklemek istiyorum."
+      "Kardiyo ve fitness yapıyorum, antrenmanda yağ yakımını hızlandırıp ter atmak istiyorum.",
+      "Diyet yaparken enerjim düşüyor, yağların yakılarak hücresel enerjiye dönüşmesini destekleyecek takviye arıyorum.",
+      "Sporda dayanıklılığımı artırmak ve antrenman sonrası kas yorgunluğumu geciktirmek istiyorum."
     ],
     "kombinasyon_ve_uyarilar": "Daha yüksek verim için temizleme ve nemlendirme rutininizle entegre ediniz.",
     "etken_maddeler": [
@@ -8214,19 +8235,22 @@
     "rutin_adimi": "Gıda Takviyesi & Vitamin",
     "category": "dermo",
     "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Takviye Edici Gıda",
+    "sub_category": "Sinir Sistemi & Nörolojik Enerji (B12 Vitamini 1000 mcg)",
     "size": "100 Tablet",
     "form": "Dilaltı / Çiğneme Tableti",
     "image": "tum_urunler/Solgar Vitamin B-12 1000mcg 100 Tablet.jpg",
     "cilt_tipleri": [
-      "Tüm Cilt Tipleri"
+      "Hafıza & Beyin Sisi",
+      "El-Ayak Uyuşması",
+      "B12 Eksikliği"
     ],
     "yas_grubu": "12 Yaş Üstü & Yetişkin",
     "kimler_kullanamaz": "İçeriğindeki etken maddelere karşı bilinen alerjisi olanlar kullanmamalıdır.",
     "nasil_kullanilir": "Günde 1 tablet, tercihen sabah kahvaltısından sonra dil altında eritilerek veya çiğnenerek alınır.",
     "hangi_sikayetle_gelene_verilir": [
-      "Günlük vitamin, mineral ve besin desteğine ihtiyaç duyuyorum.",
-      "Bağışıklık sistemimi, enerji seviyemi ve cilt sağlığımı içeriden desteklemek istiyorum."
+      "Sürekli dalgınım, eşyaları nereye koyduğumu unutuyorum, zihnimde sis var.",
+      "Ellerimde ve ayaklarımda uyuşma, karıncalanma hissediyorum; kan tahlilimde B12 seviyem çok düşük çıktı.",
+      "Sabahları 10 saat uyusam bile yataktan pestil gibi kalkıyorum, kronik yorgunluğum geçmiyor."
     ],
     "kombinasyon_ve_uyarilar": "Daha yüksek verim için temizleme ve nemlendirme rutininizle entegre ediniz.",
     "etken_maddeler": [
@@ -8255,19 +8279,22 @@
     "rutin_adimi": "Gıda Takviyesi & Vitamin",
     "category": "dermo",
     "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Takviye Edici Gıda",
+    "sub_category": "Yüksek Doz Antioksidan & Kolajen Sentezi (C Vitamini + Kuşburnu)",
     "size": "90 Tablet",
     "form": "Tablet",
     "image": "tum_urunler/Solgar Vitamin C 1000 Mg 90 Tablet.jpg",
     "cilt_tipleri": [
-      "Tüm Cilt Tipleri"
+      "Akut Bağışıklık Savunması",
+      "Antioksidan",
+      "Kolajen Desteği"
     ],
     "yas_grubu": "12 Yaş Üstü & Yetişkin",
     "kimler_kullanamaz": "İçeriğindeki etken maddelere karşı bilinen alerjisi olanlar kullanmamalıdır.",
     "nasil_kullanilir": "Günde 1 tablet, tercihen sabah veya öğle yemeğinden sonra bol su ile içilir. Gece geç saatte alınırsa idrar sıklığını artırabilir.",
     "hangi_sikayetle_gelene_verilir": [
-      "Günlük vitamin, mineral ve besin desteğine ihtiyaç duyuyorum.",
-      "Bağışıklık sistemimi, enerji seviyemi ve cilt sağlığımı içeriden desteklemek istiyorum."
+      "Bağışıklığım çöktü, burnum akıyor ve boğazım gıcıklanıyor; gribi ilerlemeden yüksek doz C vitaminiyle kesmek istiyorum.",
+      "Cildim sigaradan ve güneşten çok matlaştı, kolajen üretimini destekleyecek yüksek doz antioksidan C vitamini arıyorum.",
+      "Demir eksikliği ilacımın emilimini artırmak için yanında içebileceğim kaliteli bir C vitamini istiyorum."
     ],
     "kombinasyon_ve_uyarilar": "Daha yüksek verim için temizleme ve nemlendirme rutininizle entegre ediniz.",
     "etken_maddeler": [
@@ -8564,19 +8591,22 @@
     "rutin_adimi": "Gıda Takviyesi & Vitamin",
     "category": "dermo",
     "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Takviye Edici Gıda",
+    "sub_category": "Cilt Elastikiyeti & Kırışıklık Karşıtı Balık Kolajeni (Tip 1 & 3)",
     "size": "30 Saşe",
     "form": "Toz Saşe",
     "image": "tum_urunler/Voonka Beauty Collagen Plus Hidrolize Kollajen Tip 1 - Tip 3 Ananas Aromalı.jpg",
     "cilt_tipleri": [
-      "Tüm Cilt Tipleri"
+      "Cilt Sarkması & Elastikiyet Kaybı",
+      "Derin Çizgiler",
+      "Nem ve Işıltı"
     ],
     "yas_grubu": "Yetişkin (25 Yaş Üstü)",
     "kimler_kullanamaz": "İçeriğindeki etken maddelere karşı bilinen alerjisi olanlar kullanmamalıdır.",
     "nasil_kullanilir": "Günde 1 saşe, 1 bardak (200 ml) oda sıcaklığındaki suya karıştırılarak içilir. Emilimin en yüksek olduğu zaman: Gece yatmadan önce veya sabah aç karnına. 8-12 haftalık kür halinde kullanılmalıdır.",
     "hangi_sikayetle_gelene_verilir": [
-      "Günlük vitamin, mineral ve besin desteğine ihtiyaç duyuyorum.",
-      "Bağışıklık sistemimi, enerji seviyemi ve cilt sağlığımı içeriden desteklemek istiyorum."
+      "Yüzümde elastikiyet kaybı ve sarkma başladı, cildimin elastikiyetini ve nemini içeriden artırmak istiyorum.",
+      "Kırışıklıklarım derinleşti, içimi lezzetli ve kokusuz balık kolajeni kürü yapmak istiyorum.",
+      "Cildim kurudu, soldu; hem saçlarıma hem tırnaklarıma hem cildime iyi gelecek zengin bir kolajen arıyorum."
     ],
     "kombinasyon_ve_uyarilar": "Daha yüksek verim için temizleme ve nemlendirme rutininizle entegre ediniz.",
     "etken_maddeler": [
@@ -8655,19 +8685,22 @@
     "rutin_adimi": "Gıda Takviyesi & Vitamin",
     "category": "dermo",
     "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Takviye Edici Gıda",
+    "sub_category": "Komple Eklem Kıkırdağı & Cilt Desteği (Tip 1, 2, 3 Kolajen)",
     "size": "90 Tablet",
     "form": "Tablet",
     "image": "tum_urunler/Voonka Multi Collagen Tip 1-2-3 90 tb.jpg",
     "cilt_tipleri": [
-      "Tüm Cilt Tipleri"
+      "Eklem ve Kıkırdak Sağlığı",
+      "Diz Ağrısı & Çıtırtı",
+      "Cilt Sıkılığı"
     ],
     "yas_grubu": "Yetişkin",
     "kimler_kullanamaz": "İçeriğindeki etken maddelere karşı bilinen alerjisi olanlar kullanmamalıdır.",
     "nasil_kullanilir": "Günde 2-3 tablet, tercihen yemeklerden sonra bol su ile.",
     "hangi_sikayetle_gelene_verilir": [
-      "Günlük vitamin, mineral ve besin desteğine ihtiyaç duyuyorum.",
-      "Bağışıklık sistemimi, enerji seviyemi ve cilt sağlığımı içeriden desteklemek istiyorum."
+      "Hem diz kapaklarımdan ve eklemlerimden çıtırtı sesleri geliyor hem de cildimde kırışıklıklar arttı.",
+      "Merdiven inerken dizlerim sızlıyor, eklem kıkırdağı (Tip 2) ve cilt elastikiyetini (Tip 1-3) aynı anda içeren hepsi bir arada tablet istiyorum.",
+      "Toz kolajen içemiyorum, pratikçe yutabileceğim tablet formda eklem ve cilt kolajeni arıyorum."
     ],
     "kombinasyon_ve_uyarilar": "Daha yüksek verim için temizleme ve nemlendirme rutininizle entegre ediniz.",
     "etken_maddeler": [
@@ -8700,19 +8733,22 @@
     "rutin_adimi": "Gıda Takviyesi & Vitamin",
     "category": "dermo",
     "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Takviye Edici Gıda",
+    "sub_category": "Kardiyovasküler & Kolesterol Dengeleyici Balık Yağı (Yüksek EPA)",
     "size": "60 Softgel",
     "form": "Softgel",
     "image": "tum_urunler/Voonka Omega 3 975.jpg",
     "cilt_tipleri": [
-      "Tüm Cilt Tipleri"
+      "Kalp & Damar Sağlığı",
+      "Trigliserid Dengesi",
+      "Anti-Enflamatuar"
     ],
     "yas_grubu": "12 Yaş Üstü & Yetişkin",
     "kimler_kullanamaz": "İçeriğindeki etken maddelere karşı bilinen alerjisi olanlar kullanmamalıdır.",
     "nasil_kullanilir": "Günde 1-2 softgel, mutlaka yağlı yemeklerin ortasında.",
     "hangi_sikayetle_gelene_verilir": [
-      "Günlük vitamin, mineral ve besin desteğine ihtiyaç duyuyorum.",
-      "Bağışıklık sistemimi, enerji seviyemi ve cilt sağlığımı içeriden desteklemek istiyorum."
+      "Kandaki trigliserid ve kolesterol değerlerim yüksek çıktı, kardiyovasküler kalp sağlığımı korumak istiyorum.",
+      "Haftada hiç balık tüketmiyorum, yüksek EPA oranlı damar dostu omega-3 balık yağı takviyesi arıyorum.",
+      "Gözlerimde kuruluk ve eklemlerimde sabah tutukluğu var, anti-enflamatuar destek istiyorum."
     ],
     "kombinasyon_ve_uyarilar": "Daha yüksek verim için temizleme ve nemlendirme rutininizle entegre ediniz.",
     "etken_maddeler": [
@@ -8743,19 +8779,22 @@
     "rutin_adimi": "Gıda Takviyesi & Vitamin",
     "category": "dermo",
     "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Takviye Edici Gıda",
+    "sub_category": "Beyin Fonksiyonları, Odaklanma & Retina Desteği (DHA Max)",
     "size": "30 Softgel",
     "form": "Softgel",
     "image": "tum_urunler/Voonka Omega 3 DHA Max.jpg",
     "cilt_tipleri": [
-      "Tüm Cilt Tipleri"
+      "Hafıza & Beyin Performansı",
+      "Göz Kuruluğu & Retina",
+      "Zihinsel Odak"
     ],
     "yas_grubu": "12 Yaş Üstü & Yetişkin",
     "kimler_kullanamaz": "İçeriğindeki etken maddelere karşı bilinen alerjisi olanlar kullanmamalıdır.",
     "nasil_kullanilir": "Günde 1 softgel kahvaltı veya akşam yemeği ortasında.",
     "hangi_sikayetle_gelene_verilir": [
-      "Günlük vitamin, mineral ve besin desteğine ihtiyaç duyuyorum.",
-      "Bağışıklık sistemimi, enerji seviyemi ve cilt sağlığımı içeriden desteklemek istiyorum."
+      "Ders çalışırken ve iş hayatında odaklanamıyorum, hafızamı güçlendirecek beyin odaklı yüksek DHA balık yağı istiyorum.",
+      "Göz kuruluğum var ve ekran başında gözlerim çabuk yoruluyor, retina ve beyin sağlığımı destekleyecek formül arıyorum.",
+      "Hafıza bulanıklığı ve unutkanlık yaşıyorum, standart balık yağı değil beyin için yüksek DHA içerenini istiyorum."
     ],
     "kombinasyon_ve_uyarilar": "Daha yüksek verim için temizleme ve nemlendirme rutininizle entegre ediniz.",
     "etken_maddeler": [
@@ -8786,19 +8825,22 @@
     "rutin_adimi": "Gıda Takviyesi & Vitamin",
     "category": "dermo",
     "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Takviye Edici Gıda",
+    "sub_category": "İç Mukoza Nemlendirici & Göz-Vajinal Kuruluk Desteği (Omega 7)",
     "size": "30 Kapsül",
     "form": "Yumuşak Kapsül",
     "image": "tum_urunler/Voonka Omega 7.jpg",
     "cilt_tipleri": [
-      "Tüm Cilt Tipleri"
+      "Göz & Ağız Kuruluğu",
+      "Menopoz Vajinal Kuruluk",
+      "Mukoza Zar Sağlığı"
     ],
     "yas_grubu": "Yetişkin",
     "kimler_kullanamaz": "İçeriğindeki etken maddelere karşı bilinen alerjisi olanlar kullanmamalıdır.",
     "nasil_kullanilir": "Günde 1 kapsül yemeklerle birlikte.",
     "hangi_sikayetle_gelene_verilir": [
-      "Günlük vitamin, mineral ve besin desteğine ihtiyaç duyuyorum.",
-      "Bağışıklık sistemimi, enerji seviyemi ve cilt sağlığımı içeriden desteklemek istiyorum."
+      "Gözlerimde, ağzımda ve cildimde aşırı kuruluk var; hiçbir damla ve krem içten gelen kuruluğu çözmüyor.",
+      "Menopoz dönemindeyim, vajinal kuruluk ve mukoza zarı kuruluğu çekiyorum, içeriden mukoza nemlendirici takviye arıyorum.",
+      "Mide ve bağırsak mukozam tahriş oluyor, cildime ve sindirim mukozama nem sağlayacak doğal Omega-7 arıyorum."
     ],
     "kombinasyon_ve_uyarilar": "Daha yüksek verim için temizleme ve nemlendirme rutininizle entegre ediniz.",
     "etken_maddeler": [
@@ -10506,21 +10548,22 @@
     "rutin_adimi": "Gıda Takviyesi & Vitamin",
     "category": "dermo",
     "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Takviye Edici Gıda",
+    "sub_category": "Altın Standart Kardiyovasküler Konsantre Balık Yağı (950 mg Aktif Omega-3)",
     "size": "50 Softgel",
     "form": "Yumuşak Kapsül (Softgel)",
     "image": "tum_urunler/solgar omega 3 950 mg fish oil.jpg",
     "cilt_tipleri": [
-      "Yağlı Cilt",
-      "Karma Cilt",
-      "Akneye Meyilli Cilt"
+      "Kardiyovasküler Koruma",
+      "Yüksek Trigliserid",
+      "Damar Endoteli"
     ],
     "yas_grubu": "12 Yaş Üstü & Yetişkin",
     "kimler_kullanamaz": "İçeriğindeki etken maddelere karşı bilinen alerjisi olanlar kullanmamalıdır.",
     "nasil_kullanilir": "Günde 1-2 softgel, mutlaka yağlı bir öğün (kahvaltı veya akşam yemeği) ortasında 1 bardak su ile alınmalıdır. Aç karnına alınırsa safra salgılanmadığı için emilmez ve çöpe gider!",
     "hangi_sikayetle_gelene_verilir": [
-      "Günlük vitamin, mineral ve besin desteğine ihtiyaç duyuyorum.",
-      "Bağışıklık sistemimi, enerji seviyemi ve cilt sağlığımı içeriden desteklemek istiyorum."
+      "Kardiyoloğum damar sağlığım ve yüksek trigliseridim için yüksek konsantrasyonda saf omega-3 önerdi.",
+      "Piyasadaki zayıf balık yağlarından istemiyorum, tek kapsülde 950 mg saf aktif EPA/DHA içeren altın standart balık yağı arıyorum.",
+      "Kalp krizi riskini azaltmak, tansiyon ve damar elastikiyetini korumak için en saf moleküler distile omega-3'ü istiyorum."
     ],
     "kombinasyon_ve_uyarilar": "Daha yüksek verim için temizleme ve nemlendirme rutininizle entegre ediniz.",
     "etken_maddeler": [
@@ -10585,7 +10628,7 @@
     "form": "Dilaltı Tablet",
     "size": "60 Dilaltı Tablet",
     "category_name": "Takviye Edici Gıda",
-    "sub_category": "Sinir Sistemi & Enerji",
+    "sub_category": "Sinir Sistemi & Nörolojik Enerji (B12 Vitamini 1000 mcg)",
     "rutin_adimi": "Gıda Takviyesi (Günde 1 Dilaltı Tablet)",
     "image": "tum_urunler/newlife_b12_plus_sublingual.jpg",
     "yas_grubu": "12 Yaş Üstü & Yetişkin",
@@ -10593,13 +10636,14 @@
     "kimler_icebilir": "Unutkanlık, odaklanma güçlüğü, sabah yorgunluğu, el-ayak uyuşması/karıncalanması olanlar ve vegan/vejetaryenler.",
     "kimler_icemez": "🚨 İlaç Etkileşimleri & Önemli Uyarılar:\n• Metformin (Glifor, Matofin - Diyabet İlacı) & Mide Koruyucular (PPI - Lansor, Nexium, Pantpas): Bu ilaçları uzun süre kullananlarda kalsiyuma bağımlı B12 emilimi bozulur ve nöropati gelişir. Bu hastalar mutlaka yutulan tablet yerine DİLALTI (sublingual) metilkobalamin formu kullanmalıdır.\n• Kloramfenikol (Antibiyotik): B12'nin kan hücresi yapıcı etkisini zayıflatabilir.\n• Leber Hastalığı (Herediter Optik Nöropati): Siyanokobalamin optik sinir hasarını hızlandırır; sadece Metilkobalamin formu tercih edilmelidir.",
     "cilt_tipleri": [
-      "Hücre Enerjisi",
-      "Sinir Sistemi"
+      "Hafıza & Beyin Sisi",
+      "El-Ayak Uyuşması",
+      "B12 Eksikliği"
     ],
     "hangi_sikayetle_gelene_verilir": [
-      "Kafamı toparlayamıyorum, isimleri unutuyorum ve sabahları çok yorgun kalkıyorum",
-      "Elimde ayağımda karıncalanma ve uyuşma oluyor",
-      "Kan tahlilimde B12 değerim düşük çıktı, iğne vurulmadan yükseltmek istiyorum"
+      "Sürekli dalgınım, eşyaları nereye koyduğumu unutuyorum, zihnimde sis var.",
+      "Ellerimde ve ayaklarımda uyuşma, karıncalanma hissediyorum; kan tahlilimde B12 seviyem çok düşük çıktı.",
+      "Sabahları 10 saat uyusam bile yataktan pestil gibi kalkıyorum, kronik yorgunluğum geçmiyor."
     ],
     "ne_ise_yarar": "Sinir liflerinin etrafını saran miyelin kılıfını onarır, sinir iletimini hızlandırır. Metiyonin sentaz enzimiyle homosisteini düşürerek damar tıkanıklığı ve felç riskini azaltır. DNA ve kırmızı kan hücresi sentezini destekler.",
     "nasil_kullanilir": "Günde 1 tablet, sabah veya öğle yemeğinden sonra dil altına konarak tamamen erimesi beklenir. Yutulmamalı ve su ile içilmemelidir! Dil altındaki zengin kılcal damar yatağından (sublingual venler) doğrudan emilir.",

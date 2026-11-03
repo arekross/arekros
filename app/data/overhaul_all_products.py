@@ -156,6 +156,141 @@ def enrich_product(p):
             p['kimler_icemez'] = "Taşikardi veya kontrolsüz yüksek tansiyonu olanlar, gebe ve emzirenler. Kan sulandırıcı (Warfarin/Klopidogrel) ve MAO inhibitörü antidepresan kullananlar hekime danışmalıdır."
             p['ideal_kilo_araligi'] = "Yetişkin normu (50 - 90 kg)"
 
+        elif 'infinity-berberiq' in nl or 'berberiq' in nl:
+            p['sub_category'] = "İnsülin Duyarlılığı & Hücresel Enerji (Berberin & Koenzim Q10)"
+            p['cilt_tipleri'] = ["İnsülin Direnci", "Glukoz & Karaciğer Yağlanması", "Metabolizma"]
+            p['hangi_sikayetle_gelene_verilir'] = [
+                "İnsülin direncim var, yemekten sonra gözüm kararıyor ve canım çılgın gibi tatlı çekiyor.",
+                "Karaciğerimde yağlanma ve bel çevremde inatçı yağlanma var; kan şekerimi ve metabolizmamı dengeleyecek takviye arıyorum.",
+                "Açlık kan şekerim yüksek seyrediyor, metformin kullanmadan önce doğal berberin ile düşürmek istiyorum."
+            ]
+
+        elif 'infinity-bromelain' in nl or 'bromelain' in nl:
+            p['sub_category'] = "Medikal Ödem Atıcı & Proteolitik Enzim (Bromelain 2400 GDU)"
+            p['cilt_tipleri'] = ["Ödem & Şişkinlik", "Post-Op / Ameliyat Sonrası", "Lenfatik Drenaj"]
+            p['hangi_sikayetle_gelene_verilir'] = [
+                "Vücudumda aşırı ödem var, sabahları parmaklarım ve göz kapaklarım şiş uyanıyorum.",
+                "Yeni burun / liposuction ameliyatı oldum, doktorum morluk ve ödemlerin çabuk inmesi için bromelain önerdi.",
+                "Diyetteyim ama tartıdaki kilo gitmiyor, inatçı lenfatik ödemi ve şişkinliği sökecek güçlü bir takviye istiyorum."
+            ]
+
+        elif 'infinity-resveratrol' in nl or 'resveratrol' in nl:
+            p['sub_category'] = "Hücresel Gençleşme & Vasküler Longevity (Trans-Resveratrol)"
+            p['cilt_tipleri'] = ["Hücresel Yaşlanma Karşıtı", "Damar Sağlığı & Kalp", "Antioksidan"]
+            p['hangi_sikayetle_gelene_verilir'] = [
+                "Damar sertliğinden ve kalp-damar yaşlanmasından korunmak için en güçlü antioksidanı kullanmak istiyorum.",
+                "Cildimde hücresel düzeyde kolajen yıkımı ve erken yaşlanma belirtileri başladı, içeriden hücresel gençleşme kürü arıyorum.",
+                "Sirtuin (uzun ömür / longevity) genlerini aktive eden kaliteli bir trans-resveratrol takviyesi istiyorum."
+            ]
+
+        elif 'nutrafarm-medobyocomplex-m-biotin' in nl or ('medobyocomplex-m' in nl or 'medobiocomplex-m' in nl):
+            p['sub_category'] = "Erkek Tipi Saç Dökülmesi & Saç Kökü Güçlendirici Biotin"
+            p['cilt_tipleri'] = ["Erkek Tipi Saç Dökülmesi", "Saç Ekimi Sonrası Destek", "Zayıf Saç Kökleri"]
+            p['hangi_sikayetle_gelene_verilir'] = [
+                "Erkek tipi saç dökülmem var, tepe ve şakak bölgelerim açılıyor, saç köklerimi içeriden besleyecek hap arıyorum.",
+                "Saç ekimi yaptırdım, ekilen köklerin hızlı ve gür tutunması için doktorum biotin ve saw palmetto takviyesi almamı söyledi.",
+                "Saçlarım çok inceldi ve cansızlaştı, kökünden kopup dökülüyor."
+            ]
+
+        elif 'nutrafarm-medobiocomplex-w' in nl or 'medobiocomplex-w' in nl:
+            p['sub_category'] = "Kadın Saç & Tırnak Canlandırıcı Biotin & Keratin Kompleksi"
+            p['cilt_tipleri'] = ["Kadın Saç Dökülmesi", "Kırılgan & Soyulan Tırnaklar", "Cansız Saç Boyları"]
+            p['hangi_sikayetle_gelene_verilir'] = [
+                "Saçlarım tutam tutam dökülüyor, banyodan sonra lavabo saçla doluyor.",
+                "Tırnaklarım kat kat soyulup kırılıyor, saçlarım bir türlü uzamıyor ve çok cansız.",
+                "Doğum ve yoğun stres sonrası saçlarımın yarısını kaybettim, kadınlara özel saç vitamini kürü yapmak istiyorum."
+            ]
+
+        elif 'magnesium-citrate' in nl:
+            p['sub_category'] = "Yüksek Emilimli Magnezyum Sitrat (Kas & Bağırsak Desteği)"
+            p['cilt_tipleri'] = ["Kas Krampları & Spazm", "Huzursuz Bacak", "Kabızlık & Bağırsak"]
+            p['hangi_sikayetle_gelene_verilir'] = [
+                "Geceleri uykumdan sıçrayarak bacaklarıma giren kramplarla uyanıyorum.",
+                "Hem kronik kabızlığım var hem de kaslarım sürekli gergin ve ağrıyor; bağırsaklarımı da yumuşatacak sitrat formu magnezyum arıyorum.",
+                "Yoğun spor sonrası kas ağrılarım geçmiyor ve kendimi sürekli yorgun hissediyorum."
+            ]
+
+        elif 'l-carnitine' in nl:
+            p['sub_category'] = "Yağ Asidi Taşıyıcı & Mitokondriyal Enerji (L-Karnitin)"
+            p['cilt_tipleri'] = ["Yağ Yakımı & Kilo", "Kardiyo Performansı", "Hücresel Enerji"]
+            p['hangi_sikayetle_gelene_verilir'] = [
+                "Kardiyo ve fitness yapıyorum, antrenmanda yağ yakımını hızlandırıp ter atmak istiyorum.",
+                "Diyet yaparken enerjim düşüyor, yağların yakılarak hücresel enerjiye dönüşmesini destekleyecek takviye arıyorum.",
+                "Sporda dayanıklılığımı artırmak ve antrenman sonrası kas yorgunluğumu geciktirmek istiyorum."
+            ]
+
+        elif 'b-12' in nl or 'b12' in nl:
+            p['sub_category'] = "Sinir Sistemi & Nörolojik Enerji (B12 Vitamini 1000 mcg)"
+            p['cilt_tipleri'] = ["Hafıza & Beyin Sisi", "El-Ayak Uyuşması", "B12 Eksikliği"]
+            p['hangi_sikayetle_gelene_verilir'] = [
+                "Sürekli dalgınım, eşyaları nereye koyduğumu unutuyorum, zihnimde sis var.",
+                "Ellerimde ve ayaklarımda uyuşma, karıncalanma hissediyorum; kan tahlilimde B12 seviyem çok düşük çıktı.",
+                "Sabahları 10 saat uyusam bile yataktan pestil gibi kalkıyorum, kronik yorgunluğum geçmiyor."
+            ]
+
+        elif 'solgar' in nl and ('vitamin-c' in nl or 'vitamin c' in nl):
+            p['sub_category'] = "Yüksek Doz Antioksidan & Kolajen Sentezi (C Vitamini + Kuşburnu)"
+            p['cilt_tipleri'] = ["Akut Bağışıklık Savunması", "Antioksidan", "Kolajen Desteği"]
+            p['hangi_sikayetle_gelene_verilir'] = [
+                "Bağışıklığım çöktü, burnum akıyor ve boğazım gıcıklanıyor; gribi ilerlemeden yüksek doz C vitaminiyle kesmek istiyorum.",
+                "Cildim sigaradan ve güneşten çok matlaştı, kolajen üretimini destekleyecek yüksek doz antioksidan C vitamini arıyorum.",
+                "Demir eksikliği ilacımın emilimini artırmak için yanında içebileceğim kaliteli bir C vitamini istiyorum."
+            ]
+
+        elif 'beauty-collagen' in nl or ('beauty' in nl and 'collagen' in nl):
+            p['sub_category'] = "Cilt Elastikiyeti & Kırışıklık Karşıtı Balık Kolajeni (Tip 1 & 3)"
+            p['cilt_tipleri'] = ["Cilt Sarkması & Elastikiyet Kaybı", "Derin Çizgiler", "Nem ve Işıltı"]
+            p['hangi_sikayetle_gelene_verilir'] = [
+                "Yüzümde elastikiyet kaybı ve sarkma başladı, cildimin elastikiyetini ve nemini içeriden artırmak istiyorum.",
+                "Kırışıklıklarım derinleşti, içimi lezzetli ve kokusuz balık kolajeni kürü yapmak istiyorum.",
+                "Cildim kurudu, soldu; hem saçlarıma hem tırnaklarıma hem cildime iyi gelecek zengin bir kolajen arıyorum."
+            ]
+
+        elif 'multi-collagen' in nl or ('multi' in nl and 'collagen' in nl):
+            p['sub_category'] = "Komple Eklem Kıkırdağı & Cilt Desteği (Tip 1, 2, 3 Kolajen)"
+            p['cilt_tipleri'] = ["Eklem ve Kıkırdak Sağlığı", "Diz Ağrısı & Çıtırtı", "Cilt Sıkılığı"]
+            p['hangi_sikayetle_gelene_verilir'] = [
+                "Hem diz kapaklarımdan ve eklemlerimden çıtırtı sesleri geliyor hem de cildimde kırışıklıklar arttı.",
+                "Merdiven inerken dizlerim sızlıyor, eklem kıkırdağı (Tip 2) ve cilt elastikiyetini (Tip 1-3) aynı anda içeren hepsi bir arada tablet istiyorum.",
+                "Toz kolajen içemiyorum, pratikçe yutabileceğim tablet formda eklem ve cilt kolajeni arıyorum."
+            ]
+
+        elif 'voonka-omega-3-975' in nl or ('975' in nl and 'voonka' in nl):
+            p['sub_category'] = "Kardiyovasküler & Kolesterol Dengeleyici Balık Yağı (Yüksek EPA)"
+            p['cilt_tipleri'] = ["Kalp & Damar Sağlığı", "Trigliserid Dengesi", "Anti-Enflamatuar"]
+            p['hangi_sikayetle_gelene_verilir'] = [
+                "Kandaki trigliserid ve kolesterol değerlerim yüksek çıktı, kardiyovasküler kalp sağlığımı korumak istiyorum.",
+                "Haftada hiç balık tüketmiyorum, yüksek EPA oranlı damar dostu omega-3 balık yağı takviyesi arıyorum.",
+                "Gözlerimde kuruluk ve eklemlerimde sabah tutukluğu var, anti-enflamatuar destek istiyorum."
+            ]
+
+        elif 'dha-max' in nl or 'dha max' in nl:
+            p['sub_category'] = "Beyin Fonksiyonları, Odaklanma & Retina Desteği (DHA Max)"
+            p['cilt_tipleri'] = ["Hafıza & Beyin Performansı", "Göz Kuruluğu & Retina", "Zihinsel Odak"]
+            p['hangi_sikayetle_gelene_verilir'] = [
+                "Ders çalışırken ve iş hayatında odaklanamıyorum, hafızamı güçlendirecek beyin odaklı yüksek DHA balık yağı istiyorum.",
+                "Göz kuruluğum var ve ekran başında gözlerim çabuk yoruluyor, retina ve beyin sağlığımı destekleyecek formül arıyorum.",
+                "Hafıza bulanıklığı ve unutkanlık yaşıyorum, standart balık yağı değil beyin için yüksek DHA içerenini istiyorum."
+            ]
+
+        elif 'omega-7' in nl or 'omega 7' in nl:
+            p['sub_category'] = "İç Mukoza Nemlendirici & Göz-Vajinal Kuruluk Desteği (Omega 7)"
+            p['cilt_tipleri'] = ["Göz & Ağız Kuruluğu", "Menopoz Vajinal Kuruluk", "Mukoza Zar Sağlığı"]
+            p['hangi_sikayetle_gelene_verilir'] = [
+                "Gözlerimde, ağzımda ve cildimde aşırı kuruluk var; hiçbir damla ve krem içten gelen kuruluğu çözmüyor.",
+                "Menopoz dönemindeyim, vajinal kuruluk ve mukoza zarı kuruluğu çekiyorum, içeriden mukoza nemlendirici takviye arıyorum.",
+                "Mide ve bağırsak mukozam tahriş oluyor, cildime ve sindirim mukozama nem sağlayacak doğal Omega-7 arıyorum."
+            ]
+
+        elif ('solgar' in nl and '950' in nl) or 'solgar-omega-3-950-mg-fish-oil' in nl:
+            p['sub_category'] = "Altın Standart Kardiyovasküler Konsantre Balık Yağı (950 mg Aktif Omega-3)"
+            p['cilt_tipleri'] = ["Kardiyovasküler Koruma", "Yüksek Trigliserid", "Damar Endoteli"]
+            p['hangi_sikayetle_gelene_verilir'] = [
+                "Kardiyoloğum damar sağlığım ve yüksek trigliseridim için yüksek konsantrasyonda saf omega-3 önerdi.",
+                "Piyasadaki zayıf balık yağlarından istemiyorum, tek kapsülde 950 mg saf aktif EPA/DHA içeren altın standart balık yağı arıyorum.",
+                "Kalp krizi riskini azaltmak, tansiyon ve damar elastikiyetini korumak için en saf moleküler distile omega-3'ü istiyorum."
+            ]
+
         return p
 
     # --- 2. SAÇ & ŞAMPUAN ÜRÜNLERİ (Şampuan, Saç Kremi, Saç Serumu, Saç Yağı) ---
