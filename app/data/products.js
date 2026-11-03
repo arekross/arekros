@@ -5478,19 +5478,22 @@ const PRODUCTS_DATA = [
     "rutin_adimi": "Gıda Takviyesi & Vitamin",
     "category": "dermo",
     "category_name": "Kozmetik & Dermokozmetik",
-    "sub_category": "Gıda Takviyesi & Vitamin",
+    "sub_category": "İnsülin Duyarlılığı & Hücresel Enerji (Berberin & Koenzim Q10)",
     "size": "60 Kapsül",
     "form": "Kapsül",
     "image": "tum_urunler/INFINITY BerberiQ.png",
     "cilt_tipleri": [
-      "Tüm Cilt Tipleri"
+      "İnsülin Direnci",
+      "Glukoz & Karaciğer Yağlanması",
+      "Metabolizma"
     ],
     "yas_grubu": "18 Yaş Üstü Yetişkin",
     "kimler_kullanamaz": "İçeriğindeki etken maddelere karşı bilinen alerjisi olanlar kullanmamalıdır.",
     "nasil_kullanilir": "Günde 2 kapsül, ana yemeklerden (öğle ve akşam) 15-20 dakika önce 1 bardak su ile alınır.",
     "hangi_sikayetle_gelene_verilir": [
-      "Günlük vitamin, mineral ve besin desteğine ihtiyaç duyuyorum.",
-      "Bağışıklık sistemimi, enerji seviyemi ve cilt sağlığımı içeriden desteklemek istiyorum."
+      "İnsülin direncim var, yemekten sonra gözüm kararıyor ve canım çılgın gibi tatlı çekiyor.",
+      "Karaciğerimde yağlanma ve bel çevremde inatçı yağlanma var; kan şekerimi ve metabolizmamı dengeleyecek takviye arıyorum.",
+      "Açlık kan şekerim yüksek seyrediyor, metformin kullanmadan önce doğal berberin ile düşürmek istiyorum."
     ],
     "kombinasyon_ve_uyarilar": "Daha yüksek verim için temizleme ve nemlendirme rutininizle entegre ediniz.",
     "etken_maddeler": [
