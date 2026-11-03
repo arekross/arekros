@@ -375,6 +375,80 @@ body {
   text-decoration: underline;
 }
 
+/* Aktif Tıklanan Çip / Etiket Banner'ı */
+.active-tag-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.12), rgba(99, 102, 241, 0.1));
+  border: 1px solid rgba(14, 165, 233, 0.35);
+  border-radius: var(--radius-md);
+  padding: 8px 14px;
+  margin-bottom: 14px;
+  gap: 10px;
+  animation: fadeIn 0.2s ease-out;
+}
+
+[data-theme="dark"] .active-tag-banner {
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.22), rgba(99, 102, 241, 0.18));
+  border-color: rgba(56, 189, 248, 0.45);
+}
+
+.tag-banner-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.tag-banner-label {
+  color: var(--text-muted);
+}
+
+.tag-banner-value {
+  background: var(--brand-cyan);
+  color: #ffffff;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.2px;
+}
+
+.tag-banner-count {
+  color: var(--text-secondary);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.btn-clear-active-tag {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  color: var(--text-primary);
+  border-radius: 16px;
+  padding: 5px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.btn-clear-active-tag:hover {
+  background: #fee2e2;
+  border-color: #fca5a5;
+  color: #dc2626;
+  transform: translateY(-1px);
+}
+
+[data-theme="dark"] .btn-clear-active-tag:hover {
+  background: rgba(239, 68, 68, 0.2);
+  border-color: #ef4444;
+  color: #fca5a5;
+}
+
 /* 2 Sütunlu Mobil Izgara */
 .product-grid {
   display: grid;
@@ -815,6 +889,28 @@ body {
   color: var(--text-secondary);
   padding: 4px 10px;
   border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: inherit;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.quick-chip.tag-clickable {
+  cursor: pointer;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), filter var(--transition-fast), border-color var(--transition-fast);
+  user-select: none;
+}
+
+.quick-chip.tag-clickable:hover {
+  transform: translateY(-1.5px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+  filter: brightness(0.97);
+}
+
+.quick-chip.tag-clickable:active {
+  transform: scale(0.95);
 }
 
 .quick-chip.age-ref-chip {
@@ -1020,6 +1116,28 @@ body {
   color: var(--brand-cyan);
   padding: 3px 8px;
   border-radius: 6px;
+  font-family: inherit;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.active-tag.tag-clickable {
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  user-select: none;
+}
+
+.active-tag.tag-clickable:hover {
+  background: var(--brand-cyan);
+  color: #ffffff;
+  border-color: var(--brand-cyan);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(14, 165, 233, 0.35);
+}
+
+.active-tag.tag-clickable:active {
+  transform: scale(0.95);
 }
 
 /* ── 5. Lightbox & Toast ── */

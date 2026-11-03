@@ -285,11 +285,59 @@ def enrich_product(p):
         elif ('solgar' in nl and '950' in nl) or 'solgar-omega-3-950-mg-fish-oil' in nl:
             p['sub_category'] = "Altın Standart Kardiyovasküler Konsantre Balık Yağı (950 mg Aktif Omega-3)"
             p['cilt_tipleri'] = ["Kardiyovasküler Koruma", "Yüksek Trigliserid", "Damar Endoteli"]
+            p['form'] = "Yumuşak Kapsül (Softgel)"
             p['hangi_sikayetle_gelene_verilir'] = [
                 "Kardiyoloğum damar sağlığım ve yüksek trigliseridim için yüksek konsantrasyonda saf omega-3 önerdi.",
                 "Piyasadaki zayıf balık yağlarından istemiyorum, tek kapsülde 950 mg saf aktif EPA/DHA içeren altın standart balık yağı arıyorum.",
                 "Kalp krizi riskini azaltmak, tansiyon ve damar elastikiyetini korumak için en saf moleküler distile omega-3'ü istiyorum."
             ]
+
+        elif 'gentle-iron' in nl or 'gentle iron' in nl or 'demir bisglisinat' in nl:
+            p['sub_category'] = "Mide Dostu Demir Şelatı (Demir Bisglisinat 17 mg)"
+            p['cilt_tipleri'] = ["Demir Eksikliği & Anemi", "Düşük Ferritin", "Halsizlik & Yorgunluk"]
+            p['form'] = "Bitkisel Kapsül"
+
+        elif 'ocean_pediatric' in nl or 'ocean portakal' in nl:
+            p['sub_category'] = "Pediatrik Doğal Trigliserit Balık Yağı (IFOS 5 Yıldız)"
+            p['cilt_tipleri'] = ["Beyin ve Retina Gelişimi", "Çocuk Bilişsel Gelişim", "Dikkat & Konsantrasyon"]
+            p['form'] = "Şurup"
+
+        elif 'pharmaton' in nl:
+            p['sub_category'] = "Standardize Panax Ginseng G115 & Multivitamin Kompleksi"
+            p['cilt_tipleri'] = ["Kronik Yorgunluk & Zindelik", "Zihinsel Konsantrasyon", "Mevsim Geçişleri"]
+            p['form'] = "Kapsül"
+
+        elif 'supradyn' in nl:
+            p['sub_category'] = "Mitokondriyal Koenzim Q10 & 13 Vitamin Kompleksi"
+            p['cilt_tipleri'] = ["Mitokondriyal Hücresel Enerji", "Gün Boyu Zindelik", "Multivitamin Desteği"]
+            p['form'] = "Tablet"
+
+        elif 'elenatal' in nl:
+            p['sub_category'] = "Prenatal Aktif Folat (Metafolin) & Fetal Gelişim"
+            p['cilt_tipleri'] = ["Gebelikte Fetal Nörolojik Gelişim", "Anne & Bebek Sağlığı", "Plasenta Desteği"]
+            p['form'] = "Kapsül / Tablet"
+
+        elif 'harveys' in nl:
+            p['sub_category'] = "Pediatrik İmmün Kalkan (Kara Mürver & Beta Glukan)"
+            p['cilt_tipleri'] = ["Solunum Yolu Bağışıklığı", "Kış Hastalıklarından Korunma", "Çocuk Bağışıklık Kalkanı"]
+            p['form'] = "Şurup"
+
+        elif 'baybay' in nl:
+            p['sub_category'] = "Pediatrik Bitkisel Gece Rahatlama & Uyku Damlası"
+            p['cilt_tipleri'] = ["Pediatrik Uyku Düzeni", "Gaz & Huzursuzluk Rahatlatma", "Sinir Sistemi Sakinleştirme"]
+            p['form'] = "Damla"
+
+        elif 'newlife' in nl or 'new life' in nl:
+            p['sub_category'] = "Sinir Sistemi & Nörolojik Enerji (Dilaltı Aktif B12 + Folat)"
+            p['cilt_tipleri'] = ["Hafıza & Beyin Sisi", "El-Ayak Uyuşması", "B12 Eksikliği"]
+            p['form'] = "Dilaltı Tablet"
+
+        # Cilt tipi kontrolü: Takviyelerde cilt tipi kalıplarını temizle
+        if p.get('cilt_tipleri'):
+            cleaned_targets = [ct for ct in p['cilt_tipleri'] if ct not in ['Tüm Cilt Tipleri', 'Tüm Beden', 'Solgun & Cansız Cilt', 'Yorgun Görünüm']]
+            if not cleaned_targets:
+                cleaned_targets = ["Hücresel Destek & Zindelik"]
+            p['cilt_tipleri'] = cleaned_targets
 
         return p
 

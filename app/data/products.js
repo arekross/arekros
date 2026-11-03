@@ -8097,13 +8097,13 @@ const PRODUCTS_DATA = [
     "brand": "Solgar",
     "size": "90 Bitkisel Kapsül",
     "rutin_adimi": "Gıda Takviyesi (Günde 1 Kapsül - Yemekle Birlikte)",
-    "sub_category": "Demir Takviyesi & Kan Yapıcı",
+    "sub_category": "Mide Dostu Demir Şelatı (Demir Bisglisinat 17 mg)",
     "category_name": "Gıda Takviyesi & Vitamin",
     "yas_grubu": "12+ Yaş & Yetişkin",
     "cilt_tipleri": [
-      "Tüm Cilt Tipleri",
-      "Solgun & Cansız Cilt",
-      "Yorgun Görünüm"
+      "Demir Eksikliği & Anemi",
+      "Düşük Ferritin",
+      "Halsizlik & Yorgunluk"
     ],
     "hangi_sikayetle_gelene_verilir": [
       "Sürekli halsizim, merdiven çıkarken nefes nefese kalıyorum, tahlilde ferritinim ve hemoglobinim dipte çıktı",
@@ -8135,7 +8135,8 @@ const PRODUCTS_DATA = [
       "vitamin"
     ],
     "is_hair": false,
-    "is_supplement": true
+    "is_supplement": true,
+    "form": "Bitkisel Kapsül"
   },
   {
     "id": "solgar-magnesium-citrate-60-tablet",
@@ -10591,7 +10592,7 @@ const PRODUCTS_DATA = [
     "form": "Şurup",
     "size": "150 ml",
     "category_name": "Takviye Edici Gıda",
-    "sub_category": "Pediatrik Omega-3 & Balık Yağı",
+    "sub_category": "Pediatrik Doğal Trigliserit Balık Yağı (IFOS 5 Yıldız)",
     "rutin_adimi": "Gıda Takviyesi (Günde 1 Ölçek)",
     "image": "tum_urunler/ocean_orzax_pediatric_omega.jpg",
     "yas_grubu": "Çocuk (4-10 Yaş)",
@@ -10599,8 +10600,9 @@ const PRODUCTS_DATA = [
     "kimler_icebilir": "4 yaş ve üzeri tüm çocuklar, dikkat eksikliği ve ders odaklanması desteği arayan okul çağı öğrencileri.",
     "kimler_icemez": "🚨 İlaç Etkileşimleri & Kontrendikasyonlar:\n• Kan Sulandırıcılar (Coumadin / Warfarin, Plavix, Coraspin, Eliquis, Xarelto): Yüksek doz omega-3 (günde 1000 mg üzeri) trombosit fonksiyonunu etkileyip kanama zamanını uzatabilir ve INR değerini artırabilir; hekim bilgisiyle kullanılmalıdır.\n• Ameliyat / Cerrahi Operasyonlar: Planlı ameliyatlardan en az 1 hafta önce yüksek doz omega-3 takviyesi kesilmelidir.\n• Ağır Balık / Deniz Ürünü Alerjisi olan bireyler hekim onayı olmadan tüketmemelidir.",
     "cilt_tipleri": [
-      "Tüm Beden",
-      "Hücre Zarı & Beyin Gelişimi"
+      "Beyin ve Retina Gelişimi",
+      "Çocuk Bilişsel Gelişim",
+      "Dikkat & Konsantrasyon"
     ],
     "hangi_sikayetle_gelene_verilir": [
       "Çocuğum derse odaklanamıyor, dikkat eksikliği ve unutkanlık var",
@@ -10664,7 +10666,7 @@ const PRODUCTS_DATA = [
     "form": "Kapsül",
     "size": "60 Kapsül",
     "category_name": "Takviye Edici Gıda",
-    "sub_category": "Enerji & Kronik Yorgunluk",
+    "sub_category": "Standardize Panax Ginseng G115 & Multivitamin Kompleksi",
     "rutin_adimi": "Gıda Takviyesi (Günde 1 Kapsül - Sabah)",
     "image": "tum_urunler/pharmaton_dynavit_multivitamin.jpg",
     "yas_grubu": "12 Yaş Üstü & Yetişkin",
@@ -10672,8 +10674,9 @@ const PRODUCTS_DATA = [
     "kimler_icebilir": "Yoğun çalışanlar, sınav dönemindeki öğrenciler (12 yaş üstü), sabahları tükenmiş uyananlar, fiziksel ve zihinsel bitkinlik yaşayanlar.",
     "kimler_icemez": "🚨 İlaç Etkileşimleri & Kontrendikasyonlar:\n• Hipertansiyon & Aritmi İlaçları: Standartlaştırılmış G115 Ginseng sempatik sinir sistemini aktive ederek kan basıncını yükseltebilir ve taşikardiyi tetikleyebilir; kontrolsüz yüksek tansiyonu olanlara verilmez.\n• Diyabet İlaçları (İnsülin, Oral Antidiyabetikler): Ginseng kan şekerini düşürebilir (hipoglisemi riski).\n• Kan Sulandırıcılar: Kanama riskini artırabilir.\n• Gece Geç Saatlerde: Uykusuzluk yapabileceğinden akşam veya gece alınmamalı, sabah tok karna içilmelidir.\n• 12 yaş altı çocuklara yetişkin multivitamin formülü verilmez.",
     "cilt_tipleri": [
-      "Fiziksel Güç",
-      "Zihinsel Performans"
+      "Kronik Yorgunluk & Zindelik",
+      "Zihinsel Konsantrasyon",
+      "Mevsim Geçişleri"
     ],
     "hangi_sikayetle_gelene_verilir": [
       "Kronik yorgunum, gün ortasında enerjim tükeniyor, uykumu alamıyorum",
@@ -10705,7 +10708,7 @@ const PRODUCTS_DATA = [
     "form": "Tablet",
     "size": "60 Film Tablet",
     "category_name": "Takviye Edici Gıda",
-    "sub_category": "Günlük Canlılık & Antioksidan",
+    "sub_category": "Mitokondriyal Koenzim Q10 & 13 Vitamin Kompleksi",
     "rutin_adimi": "Gıda Takviyesi (Günde 1 Tablet - Sabah)",
     "image": "tum_urunler/supradyn_all_day_q10.jpg",
     "yas_grubu": "12 Yaş Üstü & Yetişkin",
@@ -10713,8 +10716,9 @@ const PRODUCTS_DATA = [
     "kimler_icebilir": "Gün boyu aktif kalanlar, spor yapanlar, 30 yaş üstü hücresel yaşlanmayı ve yorgunluğu önlemek isteyen yetişkinler.",
     "kimler_icemez": "🚨 İlaç Etkileşimleri & Kontrendikasyonlar:\n• Kan Sulandırıcı (Coumadin / Warfarin): İçerdiği K vitamini Warfarin'in etkisini nötralize ederek pıhtılaşma riskini artırır; Coumadin kullananlar hekime danışmadan almamalıdır.\n• Guatr / Tiroid İlaçları (Levotiron): İçerdiği demir ve kalsiyum tiroid ilacı emilimini bozar; sabah tiroid ilacından en az 4 saat sonra alınmalıdır.\n• Böbrek Taşı Öyküsü olanlarda yüksek doz kalsiyum/D vitamini hekim gözetiminde verilmelidir.",
     "cilt_tipleri": [
-      "Hücresel Mitokondri",
-      "Canlılık"
+      "Mitokondriyal Hücresel Enerji",
+      "Gün Boyu Zindelik",
+      "Multivitamin Desteği"
     ],
     "hangi_sikayetle_gelene_verilir": [
       "Gün boyu dinamik kalmak istiyorum ama öğleden sonra çöküyorum",
@@ -10740,7 +10744,7 @@ const PRODUCTS_DATA = [
     "form": "Kapsül / Tablet",
     "size": "30 Kapsül",
     "category_name": "Takviye Edici Gıda",
-    "sub_category": "Anne & Bebek / Prenatal",
+    "sub_category": "Prenatal Aktif Folat (Metafolin) & Fetal Gelişim",
     "rutin_adimi": "Gıda Takviyesi (Günde 1 Kapsül)",
     "image": "tum_urunler/elenatal_bayer_pregnancy.jpg",
     "yas_grubu": "Yetişkin (Hamilelik & Emzirme)",
@@ -10748,8 +10752,9 @@ const PRODUCTS_DATA = [
     "kimler_icebilir": "Hamilelik planlayan kadınlar, 1., 2. ve 3. trimesterdeki gebeler ve emziren anneler.",
     "kimler_icemez": "🚨 İlaç Etkileşimleri & Dikkat Edilmesi Gerekenler:\n• Tiroid İlaçları (Levotiron, Euthyrox): Gebelerde sık görülen hipotiroidi tedavisinde sabah aç karna tiroid ilacı içildikten sonra Elenatal EN AZ 4 SAAT SONRA (öğlen/akşam) alınmalıdır; içerdiği demir ve kalsiyum ilacın emilimini sıfırlar!\n• Antasitler ve Mide Koruyucular ile araya 2 saat konmalıdır.",
     "cilt_tipleri": [
-      "Gebelikte Fetal Gelişim",
-      "Anne Sağlığı"
+      "Gebelikte Fetal Nörolojik Gelişim",
+      "Anne & Bebek Sağlığı",
+      "Plasenta Desteği"
     ],
     "hangi_sikayetle_gelene_verilir": [
       "Hamile kalmayı planlıyorum, bebeğimin omurga gelişimi için hangi folik asidi almalıyım?",
@@ -10778,7 +10783,7 @@ const PRODUCTS_DATA = [
     "form": "Şurup",
     "size": "150 ml",
     "category_name": "Takviye Edici Gıda",
-    "sub_category": "Pediatrik Bağışıklık Güçlendirici",
+    "sub_category": "Pediatrik İmmün Kalkan (Kara Mürver & Beta Glukan)",
     "rutin_adimi": "Gıda Takviyesi (Günde 1 Ölçek)",
     "image": "tum_urunler/harveys_multi_protect_syrup.jpg",
     "yas_grubu": "Çocuk (4-10 Yaş)",
@@ -10786,8 +10791,9 @@ const PRODUCTS_DATA = [
     "kimler_icebilir": "Kreşe ve ilkokula giden, sık sık nezle, grip, üst solunum yolu enfeksiyonu geçiren ve iştahsız çocuklar.",
     "kimler_icemez": "1 yaş altı bebekler, otoimmün hastalığı olanlar (aşırı bağışıklık uyarılmaması gerekenler).",
     "cilt_tipleri": [
-      "Solunum Yolu Mukozası",
-      "Bağışıklık Kalkanı"
+      "Solunum Yolu Bağışıklığı",
+      "Kış Hastalıklarından Korunma",
+      "Çocuk Bağışıklık Kalkanı"
     ],
     "hangi_sikayetle_gelene_verilir": [
       "Çocuğum kreşe başladığından beri 2 haftada bir hasta oluyor",
@@ -10815,7 +10821,7 @@ const PRODUCTS_DATA = [
     "form": "Damla",
     "size": "50 ml",
     "category_name": "Takviye Edici Gıda",
-    "sub_category": "Pediatrik Uyku & Huzursuzluk",
+    "sub_category": "Pediatrik Bitkisel Gece Rahatlama & Uyku Damlası",
     "rutin_adimi": "Gıda Takviyesi (Gece Yatmadan Önce)",
     "image": "tum_urunler/baybay_harveys_pediatric.jpg",
     "yas_grubu": "Bebek & Çocuk (1-10 Yaş)",
@@ -10823,8 +10829,9 @@ const PRODUCTS_DATA = [
     "kimler_icebilir": "Gece sık uyanan, diş çıkarma döneminde huzursuz olan, uykuya dalmakta zorlanan bebek ve çocuklar.",
     "kimler_icemez": "Alerjik bünyeli bebeklerde bitki ekstrelerine karşı hekime danışılmalıdır.",
     "cilt_tipleri": [
-      "Sinir Sistemi Rahatlama",
-      "Derin Uyku"
+      "Pediatrik Uyku Düzeni",
+      "Gaz & Huzursuzluk Rahatlatma",
+      "Sinir Sistemi Sakinleştirme"
     ],
     "hangi_sikayetle_gelene_verilir": [
       "Bebeğim/çocuğum gece saat başı uyanıyor, uykuya dalarken çok ağlıyor",

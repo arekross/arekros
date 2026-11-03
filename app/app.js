@@ -16,6 +16,7 @@
     activeBrand: 'all',
     activeRoutine: 'all',
     searchQuery: '',
+    activeTagFilter: null, // { label: string, type: string }
     
     currentTheme: localStorage.getItem('arekros_theme') || 'light'
   };
@@ -34,6 +35,12 @@
     themeToggleBtn: document.getElementById('themeToggleBtn'),
     themeIcon: document.getElementById('themeIcon'),
     btnEmptyReset: document.getElementById('btnEmptyReset'),
+
+    // Aktif Etiket Banner Elemanları
+    activeTagBanner: document.getElementById('activeTagBanner'),
+    activeTagValue: document.getElementById('activeTagValue'),
+    activeTagCount: document.getElementById('activeTagCount'),
+    btnClearActiveTag: document.getElementById('btnClearActiveTag'),
 
     // Üst Butonlar
     btnOpenAddModal: document.getElementById('btnOpenAddModal'),
@@ -355,52 +362,169 @@
     });
   }
 
+  // --- TÜRKÇE KARAKTER VE ARAMA NORMALİZASYONU ---
+  function normalizeTurkish(str) {
+    if (!str) return '';
+    return String(str)
+      .toLowerCase()
+      .replace(/ğ/g, 'g')
+      .replace(/ü/g, 'u')
+      .replace(/ş/g, 's')
+      .replace(/ı/g, 'i')
+      .replace(/ö/g, 'o')
+      .replace(/ç/g, 'c')
+      .trim();
+  }
+
+  // --- BİREBİR KATEGORİ / RUTİN EŞLEŞTİRİCİSİ (HEM BUTON HEM FİLTRE ORTAK KULLANIR) ---
+  function matchesRoutine(p, catId) {
+    if (!catId || catId === 'all') return true;
+    const isSup = Boolean(p.is_supplement) || Boolean(p.sgk_karsilastirmasi_ve_nis_bilgi) || (p.category_name === 'Takviye Edici Gıda') || (p.category === 'takviye');
+    const isHair = Boolean(p.is_hair) || ['Phyto Paris', 'Tresan'].includes(p.brand);
+    const text = `${p.rutin_adimi || ''} ${p.sub_category || ''} ${p.name || ''} ${p.category_name || ''}`.toLowerCase();
+
+    if (catId === 'all_supplements' || catId === 'Takviye Edici Gıda') {
+      return isSup || ['takviye', 'vitamin', 'omega', 'kolajen', 'magnezyum', 'b12', 'demir', 'ginseng', 'şurup', 'kapsül', 'tablet', 'damla'].some(w => text.includes(w));
+    }
+    if (catId === 'Saç Bakımı') {
+      return isHair || ['şampuan', 'saç', 'shampoo', 'hair', 'scalp', 'kepek', 'antichute', 'anti-chute'].some(w => text.includes(w));
+    }
+    if (catId === 'Temizleyici') {
+      return ['temizle', 'jel', 'köpük', 'foam', 'cleanser', 'mousse', 'peeling'].some(w => text.includes(w));
+    }
+    if (catId === 'Serum') {
+      return ['serum', 'konsantre', 'ampul', 'concentrate'].some(w => text.includes(w));
+    }
+    if (catId === 'Nemlendirici') {
+      return ['nemlendir', 'krem', 'cream', 'losyon', 'lotion', 'balm', 'emülsiyon', 'fluide', 'nutritive', 'riche'].some(w => text.includes(w));
+    }
+    if (catId === 'Güneş Koruması') {
+      return ['güneş', 'spf', 'sun', 'uv', 'solar', 'solaire', 'mineral'].some(w => text.includes(w));
+    }
+    if (catId === 'Göz Çevresi') {
+      return ['göz', 'yeux', 'eye', 'regard'].some(w => text.includes(w));
+    }
+    if (catId === 'Vücut & Bebek') {
+      return ['bebek', 'baby', 'vücut', 'body', 'çocuk', 'enfant', 'xeracalm', 'dexeryl', 'lipikar', 'atoderm'].some(w => text.includes(w));
+    }
+    return text.includes(catId.toLowerCase());
+  }
+
+  // --- İNTERAKTİF ÇİP & ETİKET EŞLEŞTİRME ---
+  function productMatchesTag(p, tagFilter) {
+    if (!tagFilter || !tagFilter.label) return true;
+    const normTag = normalizeTurkish(tagFilter.label);
+    const activesList = Array.isArray(p.etken_maddeler) ? p.etken_maddeler : [];
+    const skinList = Array.isArray(p.cilt_tipleri) ? p.cilt_tipleri : [];
+    const hairList = Array.isArray(p.sac_tipleri) ? p.sac_tipleri : [];
+    const tagsList = Array.isArray(p.tags) ? p.tags : [];
+
+    if (activesList.some(a => {
+      const na = normalizeTurkish(a);
+      return na.includes(normTag) || normTag.includes(na);
+    })) return true;
+
+    if (skinList.some(s => {
+      const ns = normalizeTurkish(s);
+      return ns.includes(normTag) || normTag.includes(ns);
+    })) return true;
+
+    if (hairList.some(h => {
+      const nh = normalizeTurkish(h);
+      return nh.includes(normTag) || normTag.includes(nh);
+    })) return true;
+
+    if (tagsList.some(t => {
+      const nt = normalizeTurkish(t);
+      return nt.includes(normTag) || normTag.includes(nt);
+    })) return true;
+
+    if (tagFilter.type === 'age' || normTag.includes('yas')) {
+      const ny = normalizeTurkish(p.yas_grubu || '');
+      if (ny && (ny.includes(normTag) || normTag.includes(ny))) return true;
+    }
+
+    if (tagFilter.type === 'form') {
+      const nf = normalizeTurkish(p.form || '');
+      if (nf && (nf.includes(normTag) || normTag.includes(nf))) return true;
+    }
+
+    // Kelime parçalarına göre akıllı tarama
+    const tokens = normTag.replace(/[^a-z0-9]/g, ' ').split(/\s+/).filter(w => w.length >= 3);
+    if (tokens.length > 0) {
+      const fullText = normalizeTurkish([
+        p.name,
+        p.brand,
+        p.sub_category,
+        p.rutin_adimi,
+        p.form,
+        p.ne_ise_yarar,
+        p.yas_grubu,
+        activesList.join(' '),
+        skinList.join(' '),
+        hairList.join(' '),
+        tagsList.join(' ')
+      ].filter(Boolean).join(' '));
+
+      if (tokens.every(tok => fullText.includes(tok))) return true;
+
+      const priorityWords = ['b12', 'magnezyum', 'demir', 'folat', 'ginseng', 'bromelain', 'resveratrol', 'glucomannan', 'berberin', 'kolajen', 'collagen', 'omega', 'biotin', 'cilt', 'leke', 'akne', 'sivilce', 'kepek', 'dokulme', 'atopik', 'retinol', 'niasinamid', 'seramid', 'hyaluronik'];
+      if (tokens.some(tok => priorityWords.includes(tok) && fullText.includes(tok))) {
+        return true;
+      }
+    }
+
+    return false;
+  }
+
+  // --- İNTERAKTİF ETİKET FİLTRESİ BAŞLAT / KALDIR ---
+  function filterByTag(tagValue, tagType) {
+    if (!tagValue) return;
+    state.activeTagFilter = { label: tagValue, type: tagType || 'general' };
+    state.activeBrand = 'all';
+    state.activeRoutine = 'all';
+    state.searchQuery = '';
+    if (el.searchInput) el.searchInput.value = '';
+    if (el.clearSearchBtn) el.clearSearchBtn.style.display = 'none';
+
+    closeDetailModal();
+    updateBrandChipsActive();
+    updateRoutineChipsActive();
+    applyFilter();
+
+    if (el.activeTagBanner) {
+      el.activeTagBanner.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  }
+
+  function clearActiveTagFilter() {
+    state.activeTagFilter = null;
+    applyFilter();
+  }
+
   function renderRoutineChips() {
     if (!el.routineChipsTrack) return;
 
-    const routineCounts = {
-      'all': state.products.length,
-      'Temizleyici': 0,
-      'Serum': 0,
-      'Nemlendirici': 0,
-      'Güneş Koruması': 0,
-      'Göz Çevresi': 0,
-      'Vücut & Bebek': 0,
-      'Saç Bakımı': 0,
-      'Takviye Edici Gıda': 0
-    };
-
-    state.products.forEach(p => {
-      const text = `${p.rutin_adimi || ''} ${p.sub_category || ''} ${p.name || ''}`.toLowerCase();
-      if (text.includes('temizle') || text.includes('jel') || text.includes('köpük') || text.includes('foam') || text.includes('cleanser')) routineCounts['Temizleyici']++;
-      if (text.includes('serum') || text.includes('konsantre') || text.includes('ampul')) routineCounts['Serum']++;
-      if (text.includes('nemlendir') || text.includes('krem') || text.includes('cream') || text.includes('lotion') || text.includes('losyon') || text.includes('balm')) routineCounts['Nemlendirici']++;
-      if (text.includes('güneş') || text.includes('spf') || text.includes('sun') || text.includes('uv')) routineCounts['Güneş Koruması']++;
-      if (text.includes('göz') || text.includes('yeux') || text.includes('eye')) routineCounts['Göz Çevresi']++;
-      if (text.includes('bebek') || text.includes('baby') || text.includes('vücut') || text.includes('body')) routineCounts['Vücut & Bebek']++;
-      if (text.includes('şampuan') || text.includes('saç') || text.includes('shampoo') || text.includes('hair')) routineCounts['Saç Bakımı']++;
-      if (text.includes('tablet') || text.includes('kapsül') || text.includes('takviye') || text.includes('vitamin') || text.includes('omega') || text.includes('kolajen') || text.includes('damla') || text.includes('şurup') || text.includes('folat') || text.includes('magnezyum') || text.includes('ginseng') || text.includes('b12') || text.includes('demir') || text.includes('iron') || text.includes('ferritin')) routineCounts['Takviye Edici Gıda']++;
-    });
-
     const categories = [
-      { id: 'all', label: 'Tüm Rutinler', count: routineCounts['all'], icon: '✨' },
-      { id: 'all_supplements', label: 'Takviye & Vitamin', count: routineCounts['Takviye Edici Gıda'], icon: '💊' },
-      { id: 'Temizleyici', label: 'Temizleme', count: routineCounts['Temizleyici'], icon: '🫧' },
-      { id: 'Serum', label: 'Serum & Bakım', count: routineCounts['Serum'], icon: '🧪' },
-      { id: 'Nemlendirici', label: 'Nemlendirici', count: routineCounts['Nemlendirici'], icon: '💧' },
-      { id: 'Güneş Koruması', label: 'Güneş (SPF)', count: routineCounts['Güneş Koruması'], icon: '☀️' },
-      { id: 'Göz Çevresi', label: 'Göz Çevresi', count: routineCounts['Göz Çevresi'], icon: '👁️' },
-      { id: 'Saç Bakımı', label: 'Saç & Şampuan', count: routineCounts['Saç Bakımı'], icon: '💇' },
-      { id: 'Vücut & Bebek', label: 'Bebek & Vücut', count: routineCounts['Vücut & Bebek'], icon: '👶' }
+      { id: 'all', label: 'Tüm Rutinler', icon: '✨' },
+      { id: 'all_supplements', label: 'Takviye & Vitamin', icon: '💊' },
+      { id: 'Temizleyici', label: 'Temizleme', icon: '🫧' },
+      { id: 'Serum', label: 'Serum & Bakım', icon: '🧪' },
+      { id: 'Nemlendirici', label: 'Nemlendirici', icon: '💧' },
+      { id: 'Güneş Koruması', label: 'Güneş (SPF)', icon: '☀️' },
+      { id: 'Göz Çevresi', label: 'Göz Çevresi', icon: '👁️' },
+      { id: 'Saç Bakımı', label: 'Saç & Şampuan', icon: '💇' },
+      { id: 'Vücut & Bebek', label: 'Bebek & Vücut', icon: '👶' }
     ];
 
     let html = '';
     categories.forEach(cat => {
+      const count = state.products.filter(p => matchesRoutine(p, cat.id)).length;
       const isActive = state.activeRoutine === cat.id;
       html += `
         <button type="button" class="filter-chip ${isActive ? 'active' : ''}" data-routine="${cat.id}">
           <span>${cat.icon} ${cat.label}</span>
-          <span class="chip-count">(${cat.count})</span>
+          <span class="chip-count">(${count})</span>
         </button>
       `;
     });
@@ -428,58 +552,50 @@
 
   // --- FİLTRELEME MANTIĞI ---
   function applyFilter() {
-    const q = state.searchQuery.toLowerCase().trim();
+    const q = normalizeTurkish(state.searchQuery);
     const brand = state.activeBrand.toLowerCase();
     const routine = state.activeRoutine;
 
     state.filteredProducts = state.products.filter(p => {
-      // Marka Filtresi
+      // 1. Marka Filtresi
       if (brand !== 'all' && (p.brand || '').toLowerCase() !== brand) {
         return false;
       }
 
-      // Rutin Filtresi
-      if (routine !== 'all') {
-        const pRutin = `${p.rutin_adimi || ''} ${p.sub_category || ''} ${p.name || ''}`.toLowerCase();
-        if (routine === 'all_supplements' || routine === 'Takviye Edici Gıda') {
-          const isSup = pRutin.includes('takviye') || pRutin.includes('vitamin') || pRutin.includes('tablet') || 
-                        pRutin.includes('kapsül') || pRutin.includes('omega') || pRutin.includes('kolajen') || 
-                        pRutin.includes('damla') || pRutin.includes('şurup') || pRutin.includes('folat') || 
-                        pRutin.includes('magnezyum') || pRutin.includes('ginseng') || pRutin.includes('b12') ||
-                        pRutin.includes('demir') || pRutin.includes('iron') || pRutin.includes('ferritin');
-          if (!isSup) return false;
-        } else {
-          let targetWord = routine.toLowerCase();
-          if (targetWord === 'temizleyici') targetWord = 'temiz';
-          else if (targetWord === 'güneş koruması') targetWord = 'güneş';
-          else if (targetWord === 'göz çevresi') targetWord = 'göz';
-          else if (targetWord === 'vücut & bebek') targetWord = 'bebek';
-          else if (targetWord === 'saç bakımı') targetWord = 'saç';
-
-          if (!pRutin.includes(targetWord) && !pRutin.includes(routine.toLowerCase())) {
-            return false;
-          }
-        }
+      // 2. Rutin Filtresi (Sayım fonksiyonuyla 100% eşleşir)
+      if (routine !== 'all' && !matchesRoutine(p, routine)) {
+        return false;
       }
 
-      // Arama Filtresi
+      // 3. Tıklanan Çip / Etiket Filtresi
+      if (state.activeTagFilter && !productMatchesTag(p, state.activeTagFilter)) {
+        return false;
+      }
+
+      // 4. Arama Filtresi (Normalize edilmiş zengin arama)
       if (q) {
-        const nameMatch = (p.name || '').toLowerCase().includes(q);
-        const brandMatch = (p.brand || '').toLowerCase().includes(q);
-        const activesMatch = (p.etken_maddeler || []).some(a => a.toLowerCase().includes(q));
-        const tagsMatch = (p.tags || []).some(t => t.toLowerCase().includes(q));
-        const complaintMatch = (p.hangi_sikayetle_gelene_verilir || []).some(c => c.toLowerCase().includes(q));
-        const benefitMatch = (p.ne_ise_yarar || '').toLowerCase().includes(q);
-        const sgkMatch = (p.sgk_karsilastirmasi_ve_nis_bilgi || '').toLowerCase().includes(q);
-        const ageMatch = (p.yas_grubu || '').toLowerCase().includes(q);
-        const whoCanMatch = (p.kimler_icebilir || '').toLowerCase().includes(q);
-        const contraindicationMatch = (p.kimler_icemez || '').toLowerCase().includes(q);
-        const warningsMatch = (p.kimler_kullanamaz || '').toLowerCase().includes(q);
-        
-        if (!nameMatch && !brandMatch && !activesMatch && !tagsMatch && !complaintMatch && 
-            !benefitMatch && !sgkMatch && !ageMatch && !whoCanMatch && !contraindicationMatch && !warningsMatch) {
-          return false;
-        }
+        const fullSearchField = normalizeTurkish([
+          p.name,
+          p.brand,
+          p.sub_category,
+          p.rutin_adimi,
+          p.form,
+          p.yas_grubu,
+          p.ne_ise_yarar,
+          p.sgk_karsilastirmasi_ve_nis_bilgi,
+          p.kimler_icebilir,
+          p.kimler_icemez,
+          p.kimler_kullanamaz,
+          (p.etken_maddeler || []).join(' '),
+          (p.cilt_tipleri || []).join(' '),
+          (p.sac_tipleri || []).join(' '),
+          (p.tags || []).join(' '),
+          (p.hangi_sikayetle_gelene_verilir || []).join(' ')
+        ].filter(Boolean).join(' '));
+
+        const qTokens = q.replace(/[^a-z0-9]/g, ' ').split(/\s+/).filter(w => w.length > 0);
+        const match = qTokens.every(tok => fullSearchField.includes(tok));
+        if (!match) return false;
       }
 
       return true;
@@ -487,6 +603,19 @@
 
     renderGrid();
     updateStatusRow();
+    updateActiveTagBanner();
+  }
+
+  function updateActiveTagBanner() {
+    if (!el.activeTagBanner) return;
+
+    if (state.activeTagFilter) {
+      el.activeTagBanner.style.display = 'flex';
+      if (el.activeTagValue) el.activeTagValue.textContent = state.activeTagFilter.label;
+      if (el.activeTagCount) el.activeTagCount.textContent = `(${state.filteredProducts.length} ürün)`;
+    } else {
+      el.activeTagBanner.style.display = 'none';
+    }
   }
 
   function updateStatusRow() {
@@ -497,7 +626,7 @@
       el.liveCountBadge.textContent = `${count} / ${total} Ürün`;
     }
 
-    const hasFilter = state.activeBrand !== 'all' || state.activeRoutine !== 'all' || state.searchQuery.length > 0;
+    const hasFilter = state.activeBrand !== 'all' || state.activeRoutine !== 'all' || state.searchQuery.length > 0 || Boolean(state.activeTagFilter);
 
     if (el.resetFilterBtn) {
       el.resetFilterBtn.style.display = hasFilter ? 'inline-block' : 'none';
@@ -510,6 +639,7 @@
         let parts = [];
         if (state.activeBrand !== 'all') parts.push(state.activeBrand);
         if (state.activeRoutine !== 'all') parts.push(state.activeRoutine);
+        if (state.activeTagFilter) parts.push(`Etiket: "${state.activeTagFilter.label}"`);
         if (state.searchQuery) parts.push(`"${state.searchQuery}"`);
         el.statusText.textContent = `${parts.join(' + ')} için ${count} sonuç bulundu`;
       }
@@ -520,6 +650,7 @@
     state.activeBrand = 'all';
     state.activeRoutine = 'all';
     state.searchQuery = '';
+    state.activeTagFilter = null;
     if (el.searchInput) el.searchInput.value = '';
     if (el.clearSearchBtn) el.clearSearchBtn.style.display = 'none';
 
@@ -735,15 +866,20 @@
     if (el.modalProductTitle) el.modalProductTitle.textContent = product.name;
     if (el.modalSubcatText) el.modalSubcatText.textContent = product.sub_category || product.category_name || '';
 
-    // Hızlı Çipler (Saç / Cilt Tipleri & Yaş Grubu - Yaş Çipi Tıklanabilir)
+    // Hızlı Çipler (İnteraktif Tıklanabilir Rozetler)
     if (el.modalQuickChips) {
       let chipsHtml = '';
       if (product.yas_grubu) {
-        chipsHtml += `<button type="button" class="quick-chip age-ref-chip" data-age="${escapeHtml(product.yas_grubu)}" title="Bu yaş grubu için persantil kilo ve dozaj tablosunu gör">👥 ${escapeHtml(product.yas_grubu)} <span class="chip-action-hint">⚖️ Tablo</span></button>`;
+        chipsHtml += `<button type="button" class="quick-chip age-chip tag-clickable" data-tag="${escapeHtml(product.yas_grubu)}" data-type="age" title="Tüm ${escapeHtml(product.yas_grubu)} ürünlerini filtrele">👥 ${escapeHtml(product.yas_grubu)}</button>`;
+        chipsHtml += `<button type="button" class="quick-chip age-ref-chip" data-age="${escapeHtml(product.yas_grubu)}" title="Bu yaş grubu için persantil kilo ve dozaj tablosunu gör">⚖️ Dozaj Tablosu</button>`;
       }
 
       const isHair = Boolean(product.is_hair) || (product.rutin_adimi && product.rutin_adimi.toLowerCase().includes('saç')) || ['Phyto Paris', 'Tresan'].includes(product.brand);
-      const isSup = Boolean(product.is_supplement) || Boolean(product.sgk_karsilastirmasi_ve_nis_bilgi);
+      const isSup = Boolean(product.is_supplement) || Boolean(product.sgk_karsilastirmasi_ve_nis_bilgi) || (product.category_name === 'Takviye Edici Gıda');
+
+      if (isSup && product.form) {
+        chipsHtml += `<button type="button" class="quick-chip supplement-chip tag-clickable" data-tag="${escapeHtml(product.form)}" data-type="form" title="Tüm ${escapeHtml(product.form)} formundaki takviyeleri filtrele">💊 ${escapeHtml(product.form)}</button>`;
+      }
 
       const typeList = (isHair && Array.isArray(product.sac_tipleri) && product.sac_tipleri.length > 0)
         ? product.sac_tipleri
@@ -751,25 +887,35 @@
 
       typeList.forEach(ct => {
         if (isHair) {
-          chipsHtml += `<span class="quick-chip hair-chip" title="Özel Saç & Saç Derisi Tipi">💇 ${escapeHtml(ct)}</span>`;
+          chipsHtml += `<button type="button" class="quick-chip hair-chip tag-clickable" data-tag="${escapeHtml(ct)}" data-type="hair" title="Tüm ${escapeHtml(ct)} saç ürünlerini filtrele">💇 ${escapeHtml(ct)}</button>`;
         } else if (isSup) {
-          chipsHtml += `<span class="quick-chip supplement-chip" title="Hedef Sistem / Alan">🎯 ${escapeHtml(ct)}</span>`;
+          chipsHtml += `<button type="button" class="quick-chip supplement-chip tag-clickable" data-tag="${escapeHtml(ct)}" data-type="supplement_target" title="Tüm ${escapeHtml(ct)} hedefine yönelik takviyeleri filtrele">🎯 ${escapeHtml(ct)}</button>`;
         } else {
-          chipsHtml += `<span class="quick-chip skin-chip" title="Cilt Tipi">💧 ${escapeHtml(ct)}</span>`;
+          chipsHtml += `<button type="button" class="quick-chip skin-chip tag-clickable" data-tag="${escapeHtml(ct)}" data-type="skin" title="Tüm ${escapeHtml(ct)} cilt ürünlerini filtrele">💧 ${escapeHtml(ct)}</button>`;
         }
       });
 
       el.modalQuickChips.innerHTML = chipsHtml;
 
-      const ageBtn = el.modalQuickChips.querySelector('.age-ref-chip');
-      if (ageBtn) {
-        ageBtn.addEventListener('click', (e) => {
+      const ageTableBtn = el.modalQuickChips.querySelector('.age-ref-chip');
+      if (ageTableBtn) {
+        ageTableBtn.addEventListener('click', (e) => {
           e.preventDefault();
           e.stopPropagation();
-          const targetAge = ageBtn.getAttribute('data-age') || '';
+          const targetAge = ageTableBtn.getAttribute('data-age') || '';
           openWeightRefModal(targetAge);
         });
       }
+
+      el.modalQuickChips.querySelectorAll('.tag-clickable').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          const tag = btn.getAttribute('data-tag');
+          const type = btn.getAttribute('data-type');
+          filterByTag(tag, type);
+        });
+      });
     }
 
     // 1. Danışan Ne Derse Bu Ürün Verilir?
@@ -791,15 +937,26 @@
       el.modalUsageText.textContent = product.nasil_kullanilir || 'Temizlenmiş cilde nazik dairesel hareketlerle uygulayınız.';
     }
 
-    // 3. Öne Çıkan Aktifler
+    // 3. Öne Çıkan Aktifler (İnteraktif Tıklanabilir Etiketler)
     if (el.modalActivesWrap) {
       const actives = Array.isArray(product.etken_maddeler) && product.etken_maddeler.length > 0
         ? product.etken_maddeler
         : ['Dermatolojik Olarak Test Edilmiş Patentli Formülasyon'];
 
       el.modalActivesWrap.innerHTML = actives.map(a => `
-        <span class="active-tag">${escapeHtml(a)}</span>
+        <button type="button" class="active-tag tag-clickable" data-tag="${escapeHtml(a)}" data-type="active" title="${escapeHtml(a)} içeren tüm ürünleri filtrele">
+          🔬 ${escapeHtml(a)}
+        </button>
       `).join('');
+
+      el.modalActivesWrap.querySelectorAll('.tag-clickable').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          const tag = btn.getAttribute('data-tag');
+          filterByTag(tag, 'active');
+        });
+      });
     }
 
     // 4. Ne İşe Yarar? (Klinik & Fizyolojik Etki)
@@ -1315,6 +1472,7 @@
     // Filtre sıfırla
     if (el.resetFilterBtn) el.resetFilterBtn.addEventListener('click', resetAllFilters);
     if (el.btnEmptyReset) el.btnEmptyReset.addEventListener('click', resetAllFilters);
+    if (el.btnClearActiveTag) el.btnClearActiveTag.addEventListener('click', clearActiveTagFilter);
 
     // Tema Değiştirici
     if (el.themeToggleBtn) {

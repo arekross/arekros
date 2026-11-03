@@ -96,6 +96,19 @@
         <button type="button" class="reset-filter-btn" id="resetFilterBtn" style="display: none;">Filtreleri Temizle</button>
       </div>
 
+      <!-- Tıklanan Çip / Etiket Aktif Filtre Banner'ı -->
+      <div class="active-tag-banner" id="activeTagBanner" style="display: none;">
+        <div class="tag-banner-content">
+          <span class="tag-banner-icon">🎯</span>
+          <span class="tag-banner-label">Filtrelenen Etiket:</span>
+          <span class="tag-banner-value" id="activeTagValue">B12</span>
+          <span class="tag-banner-count" id="activeTagCount"></span>
+        </div>
+        <button type="button" class="btn-clear-active-tag" id="btnClearActiveTag" aria-label="Etiket Filtresini Temizle">
+          <span>✕ Temizle</span>
+        </button>
+      </div>
+
       <!-- 2 Sütunlu Mobil Kart Izgarası -->
       <div class="product-grid" id="productGrid">
         <!-- JS tarafından ürün kartları buraya eklenir -->
