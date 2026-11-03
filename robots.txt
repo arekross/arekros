@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://arekross.github.io/arekros/sitemap.xml

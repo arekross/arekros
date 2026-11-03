@@ -1,0 +1,22 @@
+{
+  "name": "Eczacıdan Öneriler",
+  "short_name": "Eczacıdan",
+  "description": "Mobil Uyumlu Dermokozmetik, Saç Bakımı ve Gıda Takviyesi Klinik Danışmanlık Rehberi",
+  "start_url": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "images/placeholder.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/placeholder.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

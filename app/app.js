@@ -410,68 +410,157 @@
     return text.includes(catId.toLowerCase());
   }
 
-  // --- İNTERAKTİF ÇİP & ETİKET EŞLEŞTİRME ---
+  // --- İNTERAKTİF ÇİP & ETİKET EŞLEŞTİRME (TİPE ÖZEL VE STOPWORD FİLTRELİ) ---
+  const SKIN_STOPWORDS = new Set(['cilt', 'ciltler', 'cildi', 've', 'icin', 'tipi', 'tipleri', 'olan', 'ile', 'tum', 'meyilli', 'egilimli', 'karsi']);
+  const HAIR_STOPWORDS = new Set(['sac', 'saclar', 'derisi', 'icin', 'olan', 've', 'ile', 'tipi']);
+  const ACTIVE_UNITS = new Set(['mg', 'mcg', 'g', 'iu', 'vitamini', 'ekstresi', 'kompleksi', 'saf', 'aktif', 'yuksek', 'standart', 'standardize']);
+
   function productMatchesTag(p, tagFilter) {
     if (!tagFilter || !tagFilter.label) return true;
+    const tagType = tagFilter.type || 'general';
     const normTag = normalizeTurkish(tagFilter.label);
-    const activesList = Array.isArray(p.etken_maddeler) ? p.etken_maddeler : [];
-    const skinList = Array.isArray(p.cilt_tipleri) ? p.cilt_tipleri : [];
-    const hairList = Array.isArray(p.sac_tipleri) ? p.sac_tipleri : [];
-    const tagsList = Array.isArray(p.tags) ? p.tags : [];
 
-    if (activesList.some(a => {
-      const na = normalizeTurkish(a);
-      return na.includes(normTag) || normTag.includes(na);
-    })) return true;
+    // 1. ETKEN MADDE FİLTRESİ (Active Ingredient)
+    if (tagType === 'active') {
+      const actives = (p.etken_maddeler || []).map(normalizeTurkish);
+      const tags = (p.tags || []).map(normalizeTurkish);
+      const name = normalizeTurkish(p.name || '');
 
-    if (skinList.some(s => {
-      const ns = normalizeTurkish(s);
-      return ns.includes(normTag) || normTag.includes(ns);
-    })) return true;
+      for (let i = 0; i < actives.length; i++) {
+        if (normTag === actives[i] || (normTag.length > 3 && (actives[i].includes(normTag) || normTag.includes(actives[i])))) {
+          return true;
+        }
+      }
 
-    if (hairList.some(h => {
-      const nh = normalizeTurkish(h);
-      return nh.includes(normTag) || normTag.includes(nh);
-    })) return true;
+      const tokens = normTag.replace(/[^a-z0-9]/g, ' ').split(/\s+/).filter(w => w.length >= 2 && !ACTIVE_UNITS.has(w));
+      if (tokens.length > 0) {
+        const pool = `${actives.join(' ')} ${tags.join(' ')} ${name}`;
+        if (tokens.every(tok => pool.includes(tok))) return true;
 
-    if (tagsList.some(t => {
-      const nt = normalizeTurkish(t);
-      return nt.includes(normTag) || normTag.includes(nt);
-    })) return true;
-
-    if (tagFilter.type === 'age' || normTag.includes('yas')) {
-      const ny = normalizeTurkish(p.yas_grubu || '');
-      if (ny && (ny.includes(normTag) || normTag.includes(ny))) return true;
+        const keyActives = ['b12', 'magnezyum', 'demir', 'folat', 'ginseng', 'bromelain', 'resveratrol', 'glucomannan', 'berberin', 'kolajen', 'biotin', 'retinol', 'niasinamid', 'seramid', 'hyaluronik', 'salisilik', 'cinko'];
+        for (let j = 0; j < tokens.length; j++) {
+          if (keyActives.includes(tokens[j])) {
+            if (actives.some(a => a.includes(tokens[j])) || name.includes(tokens[j])) {
+              return true;
+            }
+          }
+        }
+      }
+      return false;
     }
 
-    if (tagFilter.type === 'form') {
-      const nf = normalizeTurkish(p.form || '');
-      if (nf && (nf.includes(normTag) || normTag.includes(nf))) return true;
-    }
+    // 2. CİLT TİPİ FİLTRESİ (Skin Type - Sadece klinik hedefe bakar, 'cilt' kelimesine aldanmaz)
+    if (tagType === 'skin') {
+      const skins = (p.cilt_tipleri || []).map(normalizeTurkish);
+      const sub = normalizeTurkish(p.sub_category || '');
 
-    // Kelime parçalarına göre akıllı tarama
-    const tokens = normTag.replace(/[^a-z0-9]/g, ' ').split(/\s+/).filter(w => w.length >= 3);
-    if (tokens.length > 0) {
-      const fullText = normalizeTurkish([
-        p.name,
-        p.brand,
-        p.sub_category,
-        p.rutin_adimi,
-        p.form,
-        p.ne_ise_yarar,
-        p.yas_grubu,
-        activesList.join(' '),
-        skinList.join(' '),
-        hairList.join(' '),
-        tagsList.join(' ')
-      ].filter(Boolean).join(' '));
+      for (let i = 0; i < skins.length; i++) {
+        if (normTag === skins[i] || (normTag.length > 4 && (normTag.includes(skins[i]) || skins[i].includes(normTag)))) {
+          return true;
+        }
+      }
 
-      if (tokens.every(tok => fullText.includes(tok))) return true;
+      const rawTokens = normTag.replace(/[^a-z0-9]/g, ' ').split(/\s+/).filter(w => w.length >= 3);
+      const meaningful = rawTokens.filter(w => !SKIN_STOPWORDS.has(w));
+      const targetTokens = meaningful.length > 0 ? meaningful : rawTokens;
 
-      const priorityWords = ['b12', 'magnezyum', 'demir', 'folat', 'ginseng', 'bromelain', 'resveratrol', 'glucomannan', 'berberin', 'kolajen', 'collagen', 'omega', 'biotin', 'cilt', 'leke', 'akne', 'sivilce', 'kepek', 'dokulme', 'atopik', 'retinol', 'niasinamid', 'seramid', 'hyaluronik'];
-      if (tokens.some(tok => priorityWords.includes(tok) && fullText.includes(tok))) {
+      const skinPool = `${skins.join(' ')} ${sub}`;
+      if (targetTokens.every(tok => skinPool.includes(tok))) {
         return true;
       }
+
+      // Klinik akıllı semantik haritalama
+      if (targetTokens.some(w => ['akne', 'sivilce', 'komedon', 'siyah'].some(k => w.includes(k)))) {
+        return skins.some(s => ['akne', 'sivilce', 'komedon', 'siyah nokta'].some(k => s.includes(k))) || sub.includes('akne') || sub.includes('sivilce');
+      }
+      if (targetTokens.some(w => ['roza', 'kizarik', 'rosacea', 'kuperoz'].some(k => w.includes(k)))) {
+        return skins.some(s => ['roza', 'kizarik', 'rosacea', 'kuperoz'].some(k => s.includes(k))) || sub.includes('kizarik') || sub.includes('roza');
+      }
+      if (targetTokens.some(w => ['leke', 'pigment', 'melazma'].some(k => w.includes(k)))) {
+        return skins.some(s => ['leke', 'pigment', 'ton esitsizligi', 'aydinlatici'].some(k => s.includes(k))) || sub.includes('leke');
+      }
+      if (targetTokens.some(w => ['atopik', 'egzama', 'kasinti'].some(k => w.includes(k)))) {
+        return skins.some(s => ['atopik', 'egzama', 'kasinti'].some(k => s.includes(k))) || sub.includes('atopik');
+      }
+      if (targetTokens.some(w => ['kuru', 'kuruluk', 'nemsiz'].some(k => w.includes(k))) && !targetTokens.some(w => ['akne', 'roza', 'leke'].some(k => w.includes(k)))) {
+        return skins.some(s => s.includes('kuru') || s.includes('nemsiz')) || sub.includes('kuru');
+      }
+      if (targetTokens.some(w => ['yagli', 'sebum', 'parlama', 'matlastirici'].some(k => w.includes(k)))) {
+        return skins.some(s => ['yagli', 'sebum', 'parlama', 'matlastirici'].some(k => s.includes(k))) || sub.includes('yagli');
+      }
+      if (targetTokens.some(w => ['hassas', 'reaktif', 'intolerant', 'alerjik'].some(k => w.includes(k)))) {
+        return skins.some(s => ['hassas', 'reaktif', 'intolerant', 'alerjik'].some(k => s.includes(k))) || sub.includes('hassas');
+      }
+      if (targetTokens.some(w => ['olgun', 'kirisik', 'yaslanma', 'elastikiyet'].some(k => w.includes(k)))) {
+        return skins.some(s => ['olgun', 'kirisik', 'yaslanma', 'elastikiyet', 'sarkma'].some(k => s.includes(k))) || sub.includes('kirisik') || sub.includes('anti-aging');
+      }
+      return false;
+    }
+
+    // 3. SAÇ TİPİ FİLTRESİ (Hair Type)
+    if (tagType === 'hair') {
+      const hairs = (p.sac_tipleri || []).map(normalizeTurkish);
+      const sub = normalizeTurkish(p.sub_category || '');
+      const rawTokens = normTag.replace(/[^a-z0-9]/g, ' ').split(/\s+/).filter(w => w.length >= 3 && !HAIR_STOPWORDS.has(w));
+      const hairPool = `${hairs.join(' ')} ${sub}`;
+
+      if (rawTokens.some(w => w.includes('kepek') || w.includes('seboreik'))) {
+        return hairs.some(h => h.includes('kepek') || h.includes('seboreik')) || hairPool.includes('kepek');
+      }
+      if (rawTokens.some(w => w.includes('dokul') || w.includes('antichute'))) {
+        return hairs.some(h => h.includes('dokul')) || hairPool.includes('dokul');
+      }
+      if (rawTokens.some(w => w.includes('yagli') || w.includes('sebore'))) {
+        return hairs.some(h => h.includes('yagli')) || hairPool.includes('yagli');
+      }
+      return hairs.some(h => rawTokens.every(tok => h.includes(tok)));
+    }
+
+    // 4. TAKVİYE HEDEF SİSTEM FİLTRESİ (Supplement Target)
+    if (tagType === 'supplement_target') {
+      const targets = (p.cilt_tipleri || []).map(normalizeTurkish);
+      const sub = normalizeTurkish(p.sub_category || '');
+      const rawTokens = normTag.replace(/[^a-z0-9]/g, ' ').split(/\s+/).filter(w => w.length >= 3 && !['ve', 'icin', 'olan', 'destegi', 'sagligi'].includes(w));
+      const pool = `${targets.join(' ')} ${sub}`;
+
+      if (rawTokens.some(w => w.includes('demir') || w.includes('ferritin') || w.includes('anemi'))) {
+        return pool.includes('demir') || pool.includes('ferritin') || pool.includes('anemi');
+      }
+      if (rawTokens.some(w => w.includes('insulin') || w.includes('seker') || w.includes('glukoz') || w.includes('diyabet'))) {
+        return pool.includes('insulin') || pool.includes('seker') || pool.includes('glukoz');
+      }
+      if (rawTokens.some(w => w.includes('odem') || w.includes('siskinlik') || w.includes('drenaj'))) {
+        return pool.includes('odem') || pool.includes('siskinlik') || pool.includes('drenaj');
+      }
+      if (rawTokens.some(w => w.includes('hafiza') || w.includes('beyin') || w.includes('sis'))) {
+        return pool.includes('hafiza') || pool.includes('beyin') || pool.includes('odak');
+      }
+      if (rawTokens.some(w => w.includes('kramp') || w.includes('kas') || w.includes('spazm'))) {
+        return pool.includes('kramp') || pool.includes('kas') || pool.includes('spazm');
+      }
+      if (rawTokens.length > 0) {
+        return rawTokens.every(tok => pool.includes(tok)) || targets.some(t => rawTokens.every(tok => t.includes(tok)));
+      }
+      return false;
+    }
+
+    // 5. YAŞ GRUBU FİLTRESİ (Age Group)
+    if (tagType === 'age' || normTag.includes('yas')) {
+      const ny = normalizeTurkish(p.yas_grubu || '');
+      return ny && (ny.includes(normTag) || normTag.includes(ny));
+    }
+
+    // 6. FORMÜLASYON FORMU FİLTRESİ (Form)
+    if (tagType === 'form') {
+      const nf = normalizeTurkish(p.form || '');
+      return nf && (nf.includes(normTag) || normTag.includes(nf));
+    }
+
+    // 7. GENEL YEDEK TARAMA (General Fallback)
+    const fallbackTokens = normTag.replace(/[^a-z0-9]/g, ' ').split(/\s+/).filter(w => w.length >= 3 && !SKIN_STOPWORDS.has(w));
+    if (fallbackTokens.length > 0) {
+      const pool = normalizeTurkish(`${p.name} ${p.brand} ${p.sub_category} ${(p.etken_maddeler || []).join(' ')}`);
+      return fallbackTokens.every(tok => pool.includes(tok));
     }
 
     return false;
