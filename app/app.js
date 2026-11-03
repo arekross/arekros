@@ -737,17 +737,30 @@
     if (el.modalProductTitle) el.modalProductTitle.textContent = product.name;
     if (el.modalSubcatText) el.modalSubcatText.textContent = product.sub_category || product.category_name || '';
 
-    // Hızlı Çipler (Cilt Tipleri & Yaş Grubu - Yaş Çipi Tıklanabilir)
+    // Hızlı Çipler (Saç / Cilt Tipleri & Yaş Grubu - Yaş Çipi Tıklanabilir)
     if (el.modalQuickChips) {
       let chipsHtml = '';
       if (product.yas_grubu) {
         chipsHtml += `<button type="button" class="quick-chip age-ref-chip" data-age="${escapeHtml(product.yas_grubu)}" title="Bu yaş grubu için persantil kilo ve dozaj tablosunu gör">👥 ${escapeHtml(product.yas_grubu)} <span class="chip-action-hint">⚖️ Tablo</span></button>`;
       }
-      if (Array.isArray(product.cilt_tipleri)) {
-        product.cilt_tipleri.forEach(ct => {
-          chipsHtml += `<span class="quick-chip">💧 ${escapeHtml(ct)}</span>`;
-        });
-      }
+
+      const isHair = Boolean(product.is_hair) || (product.rutin_adimi && product.rutin_adimi.toLowerCase().includes('saç')) || ['Phyto Paris', 'Tresan'].includes(product.brand);
+      const isSup = Boolean(product.is_supplement) || Boolean(product.sgk_karsilastirmasi_ve_nis_bilgi);
+
+      const typeList = (isHair && Array.isArray(product.sac_tipleri) && product.sac_tipleri.length > 0)
+        ? product.sac_tipleri
+        : (Array.isArray(product.cilt_tipleri) ? product.cilt_tipleri : []);
+
+      typeList.forEach(ct => {
+        if (isHair) {
+          chipsHtml += `<span class="quick-chip hair-chip" title="Özel Saç & Saç Derisi Tipi">💇 ${escapeHtml(ct)}</span>`;
+        } else if (isSup) {
+          chipsHtml += `<span class="quick-chip supplement-chip" title="Hedef Sistem / Alan">🎯 ${escapeHtml(ct)}</span>`;
+        } else {
+          chipsHtml += `<span class="quick-chip skin-chip" title="Cilt Tipi">💧 ${escapeHtml(ct)}</span>`;
+        }
+      });
+
       el.modalQuickChips.innerHTML = chipsHtml;
 
       const ageBtn = el.modalQuickChips.querySelector('.age-ref-chip');
@@ -765,7 +778,7 @@
     if (el.modalComplaintList) {
       const complaints = Array.isArray(product.hangi_sikayetle_gelene_verilir) && product.hangi_sikayetle_gelene_verilir.length > 0
         ? product.hangi_sikayetle_gelene_verilir
-        : [product.name + ' kullanımına uygun danışan şikayetlerinde tercih edilir.'];
+        : [product.name + ' için hekim ve eczacı danışmanlığı önerilir.'];
 
       el.modalComplaintList.innerHTML = complaints.map(c => `
         <div class="complaint-item">
@@ -885,11 +898,22 @@
     const p = state.selectedProduct;
     if (!p) return;
 
+    const isHair = Boolean(p.is_hair) || (p.rutin_adimi && p.rutin_adimi.toLowerCase().includes('saç')) || ['Phyto Paris', 'Tresan'].includes(p.brand);
+    const isSup = Boolean(p.is_supplement) || Boolean(p.sgk_karsilastirmasi_ve_nis_bilgi);
+
+    const typeList = (isHair && Array.isArray(p.sac_tipleri) && p.sac_tipleri.length > 0)
+      ? p.sac_tipleri
+      : (Array.isArray(p.cilt_tipleri) ? p.cilt_tipleri : []);
+
+    const typeLabel = isHair ? '💇 *Saç & Saç Derisi Tipi:*' : (isSup ? '🎯 *Hedef Sistem / Alan:*' : '💧 *Cilt Tipi:*');
+    const typeLine = typeList.length > 0 ? `${typeLabel} ${typeList.join(', ')}` : '';
+
     const actives = (p.etken_maddeler || []).join(', ');
     const note = [
       `*${p.name}*`,
       p.size ? `📦 Boyut / Form: ${p.size}` : '',
-      `🧴 Rutin / Kategori: ${p.rutin_adimi || p.sub_category || 'Bakım/Takviye'}`,
+      `🧴 Rutin / Kategori: ${p.rutin_adimi || p.sub_category || (isHair ? 'Saç & Saç Derisi Bakımı' : (isSup ? 'Gıda Takviyesi' : 'Cilt Bakımı'))}`,
+      typeLine,
       '',
       p.ne_ise_yarar ? `🎯 *Ne İşe Yarar:* ${p.ne_ise_yarar}` : '',
       '',
@@ -998,7 +1022,25 @@
       el.formProductSize.value = product.size || '';
       el.formProductRoutine.value = product.rutin_adimi || product.sub_category || '';
       el.formProductAgeGroup.value = product.yas_grubu || '';
-      el.formProductSkinTypes.value = Array.isArray(product.cilt_tipleri) ? product.cilt_tipleri.join(', ') : '';
+
+      const isHair = Boolean(product.is_hair) || ['Phyto Paris', 'Tresan'].includes(product.brand) || ((product.rutin_adimi || '').toLowerCase().includes('saç'));
+      const typeList = (isHair && Array.isArray(product.sac_tipleri) && product.sac_tipleri.length > 0)
+        ? product.sac_tipleri
+        : (Array.isArray(product.cilt_tipleri) ? product.cilt_tipleri : []);
+      el.formProductSkinTypes.value = typeList.join(', ');
+
+      const skinTypesLabel = document.getElementById('formProductSkinTypesLabel');
+      if (skinTypesLabel) {
+        skinTypesLabel.textContent = isHair
+          ? '💇 Saç & Saç Derisi Tipleri (Virgülle ayırın)'
+          : '💧 Cilt Tipleri veya Hedef Alan (Virgülle ayırın)';
+      }
+      if (el.formProductSkinTypes) {
+        el.formProductSkinTypes.placeholder = isHair
+          ? 'Örn: Yağlı Saç Derisi, Kepekli Saçlar, Dökülen Saçlar'
+          : 'Örn: Hassas, Yağlı, Akneye Eğilimli veya Kuru';
+      }
+
       el.formProductComplaints.value = Array.isArray(product.hangi_sikayetle_gelene_verilir) ? product.hangi_sikayetle_gelene_verilir.join('\n') : '';
       el.formProductUsage.value = product.nasil_kullanilir || '';
       el.formProductActives.value = Array.isArray(product.etken_maddeler) ? product.etken_maddeler.join(', ') : '';
@@ -1019,6 +1061,14 @@
       el.formProductId.value = '';
       currentEditingPhoto = '';
       hidePhotoPreview();
+
+      const skinTypesLabel = document.getElementById('formProductSkinTypesLabel');
+      if (skinTypesLabel) {
+        skinTypesLabel.textContent = '💧 Cilt Tipi veya 💇 Saç / Saç Derisi Tipi (Virgülle ayırın)';
+      }
+      if (el.formProductSkinTypes) {
+        el.formProductSkinTypes.placeholder = 'Örn: Yağlı Saç Derisi, Kepekli Saçlar veya Hassas Cilt';
+      }
 
       if (el.btnDeleteProduct) el.btnDeleteProduct.style.display = 'none';
     }
@@ -1068,6 +1118,13 @@
       .filter(Boolean);
 
     const existing = isEdit ? state.products.find(p => p.id === id) : null;
+    const routineVal = el.formProductRoutine.value.trim();
+    const isHair = Boolean(existing && existing.is_hair) ||
+      ['Phyto Paris', 'Tresan'].includes(brand) ||
+      routineVal.toLowerCase().includes('saç') ||
+      routineVal.toLowerCase().includes('şampuan') ||
+      name.toLowerCase().includes('şampuan') ||
+      name.toLowerCase().includes('saç');
 
     const productData = {
       ...(existing || {}),
@@ -1075,10 +1132,13 @@
       name: name,
       brand: brand,
       size: el.formProductSize.value.trim(),
-      rutin_adimi: el.formProductRoutine.value.trim() || 'Cilt Bakımı',
-      sub_category: el.formProductRoutine.value.trim() || 'Dermokozmetik',
+      rutin_adimi: routineVal || (isHair ? 'Şampuan & Saç Bakımı' : 'Cilt Bakımı'),
+      sub_category: routineVal || (isHair ? 'Saç & Saç Derisi Bakımı' : 'Dermokozmetik'),
       yas_grubu: el.formProductAgeGroup.value.trim(),
       cilt_tipleri: cilt_tipleri,
+      sac_tipleri: isHair ? cilt_tipleri : (existing ? existing.sac_tipleri : undefined),
+      is_hair: isHair,
+      is_supplement: Boolean(existing && existing.is_supplement),
       hangi_sikayetle_gelene_verilir: hangi_sikayetle_gelene_verilir,
       nasil_kullanilir: el.formProductUsage.value.trim(),
       etken_maddeler: etken_maddeler,

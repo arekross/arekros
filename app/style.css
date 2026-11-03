@@ -833,6 +833,45 @@ body {
   transform: translateY(-1px);
 }
 
+/* Saç ve Saç Derisi Çipi */
+.quick-chip.hair-chip {
+  background: #f5f3ff;
+  border-color: #ddd6fe;
+  color: #6d28d9;
+}
+
+[data-theme="dark"] .quick-chip.hair-chip {
+  background: rgba(139, 92, 246, 0.18);
+  border-color: rgba(167, 139, 250, 0.4);
+  color: #c4b5fd;
+}
+
+/* Gıda Takviyesi & Hedef Sistem Çipi */
+.quick-chip.supplement-chip {
+  background: #ecfdf5;
+  border-color: #a7f3d0;
+  color: #047857;
+}
+
+[data-theme="dark"] .quick-chip.supplement-chip {
+  background: rgba(16, 185, 129, 0.18);
+  border-color: rgba(52, 211, 153, 0.4);
+  color: #6ee7b7;
+}
+
+/* Cilt Bakımı Çipi */
+.quick-chip.skin-chip {
+  background: #eff6ff;
+  border-color: #bfdbfe;
+  color: #1d4ed8;
+}
+
+[data-theme="dark"] .quick-chip.skin-chip {
+  background: rgba(59, 130, 246, 0.18);
+  border-color: rgba(96, 165, 250, 0.4);
+  color: #93c5fd;
+}
+
 .chip-action-hint {
   font-size: 10px;
   background: #f59e0b;
