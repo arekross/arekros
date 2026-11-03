@@ -91,7 +91,10 @@
     productEditForm: document.getElementById('productEditForm'),
     formProductId: document.getElementById('formProductId'),
     photoDropzone: document.getElementById('photoDropzone'),
-    formPhotoInput: document.getElementById('formPhotoInput'),
+    formPhotoGalleryInput: document.getElementById('formPhotoGalleryInput'),
+    formPhotoCameraInput: document.getElementById('formPhotoCameraInput'),
+    btnPickGallery: document.getElementById('btnPickGallery'),
+    btnPickCamera: document.getElementById('btnPickCamera'),
     photoPreviewWrap: document.getElementById('photoPreviewWrap'),
     formPhotoPreview: document.getElementById('formPhotoPreview'),
     btnRemovePhoto: document.getElementById('btnRemovePhoto'),
@@ -1141,15 +1144,9 @@
 
   // --- FOTOĞRAF YÜKLEYİCİ VE CANVAS SIKIŞTIRMA ---
   function setupPhotoUploader() {
-    if (!el.photoDropzone || !el.formPhotoInput) return;
+    if (!el.photoDropzone) return;
 
-    el.photoDropzone.addEventListener('click', (e) => {
-      if (e.target.closest('#btnRemovePhoto')) return;
-      el.formPhotoInput.click();
-    });
-
-    el.formPhotoInput.addEventListener('change', (e) => {
-      const file = e.target.files && e.target.files[0];
+    function handleFile(file) {
       if (!file) return;
 
       const reader = new FileReader();
@@ -1179,13 +1176,47 @@
         img.src = evt.target.result;
       };
       reader.readAsDataURL(file);
+    }
+
+    if (el.btnPickGallery && el.formPhotoGalleryInput) {
+      el.btnPickGallery.addEventListener('click', (e) => {
+        e.stopPropagation();
+        el.formPhotoGalleryInput.click();
+      });
+    }
+
+    if (el.btnPickCamera && el.formPhotoCameraInput) {
+      el.btnPickCamera.addEventListener('click', (e) => {
+        e.stopPropagation();
+        el.formPhotoCameraInput.click();
+      });
+    }
+
+    el.photoDropzone.addEventListener('click', (e) => {
+      if (e.target.closest('#btnRemovePhoto') || e.target.closest('.btn-photo-pick')) return;
+      if (el.formPhotoGalleryInput) el.formPhotoGalleryInput.click();
     });
+
+    if (el.formPhotoGalleryInput) {
+      el.formPhotoGalleryInput.addEventListener('change', (e) => {
+        const file = e.target.files && e.target.files[0];
+        handleFile(file);
+      });
+    }
+
+    if (el.formPhotoCameraInput) {
+      el.formPhotoCameraInput.addEventListener('change', (e) => {
+        const file = e.target.files && e.target.files[0];
+        handleFile(file);
+      });
+    }
 
     if (el.btnRemovePhoto) {
       el.btnRemovePhoto.addEventListener('click', (e) => {
         e.stopPropagation();
         currentEditingPhoto = '';
-        el.formPhotoInput.value = '';
+        if (el.formPhotoGalleryInput) el.formPhotoGalleryInput.value = '';
+        if (el.formPhotoCameraInput) el.formPhotoCameraInput.value = '';
         hidePhotoPreview();
       });
     }
@@ -1201,6 +1232,8 @@
     if (el.formPhotoPreview) el.formPhotoPreview.src = '';
     if (el.photoPreviewWrap) el.photoPreviewWrap.style.display = 'none';
     if (el.photoPrompt) el.photoPrompt.style.display = 'flex';
+    if (el.formPhotoGalleryInput) el.formPhotoGalleryInput.value = '';
+    if (el.formPhotoCameraInput) el.formPhotoCameraInput.value = '';
   }
 
   // --- ÜRÜN EKLE / DÜZENLE MODALI ---

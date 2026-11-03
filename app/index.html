@@ -357,14 +357,23 @@
           <div class="form-group photo-upload-group">
             <label class="form-label">Ürün Fotoğrafı</label>
             <div class="photo-dropzone" id="photoDropzone">
-              <input type="file" id="formPhotoInput" accept="image/*" capture="environment" style="display: none;">
+              <input type="file" id="formPhotoGalleryInput" accept="image/*" style="display: none;">
+              <input type="file" id="formPhotoCameraInput" accept="image/*" capture="environment" style="display: none;">
               <div class="photo-preview-wrap" id="photoPreviewWrap" style="display: none;">
                 <img id="formPhotoPreview" src="" alt="Önizleme">
                 <button type="button" class="btn-remove-photo" id="btnRemovePhoto" title="Fotoğrafı Kaldır">✕</button>
               </div>
               <div class="photo-prompt" id="photoPrompt">
-                <span class="photo-icon">📸</span>
-                <span class="photo-prompt-text">Fotoğraf Çek veya Galeriden Seç</span>
+                <div class="photo-action-buttons">
+                  <button type="button" class="btn-photo-pick" id="btnPickGallery">
+                    <span class="photo-btn-icon">🖼️</span>
+                    <span class="photo-btn-label">Galeriden Seç</span>
+                  </button>
+                  <button type="button" class="btn-photo-pick" id="btnPickCamera">
+                    <span class="photo-btn-icon">📷</span>
+                    <span class="photo-btn-label">Fotoğraf Çek</span>
+                  </button>
+                </div>
                 <span class="photo-prompt-sub">Otomatik sıkıştırılarak optimize edilir</span>
               </div>
             </div>

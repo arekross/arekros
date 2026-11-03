@@ -1333,19 +1333,59 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4px;
+  gap: 8px;
   padding: 16px;
   text-align: center;
+  width: 100%;
 }
 
-.photo-icon {
-  font-size: 28px;
+.photo-action-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-.photo-prompt-text {
+.btn-photo-pick {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 8px 16px;
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
+  border: 1.5px solid var(--border-light);
+  border-radius: var(--radius-sm);
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  box-shadow: var(--shadow-sm);
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn-photo-pick:hover {
+  background-color: var(--brand-cyan-light);
+  border-color: var(--brand-cyan);
   color: var(--brand-cyan);
+}
+
+.btn-photo-pick:active {
+  transform: scale(0.97);
+}
+
+.photo-btn-icon {
+  font-size: 17px;
+  line-height: 1;
+}
+
+.photo-btn-label {
+  font-weight: 600;
+  font-size: 13px;
 }
 
 .photo-prompt-sub {
