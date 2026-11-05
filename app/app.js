@@ -91,6 +91,13 @@
     weightRefSearchInput: document.getElementById('weightRefSearchInput'),
     persantilTableBody: document.getElementById('persantilTableBody'),
 
+    // İnteraktif Dozaj & Persantil Hesaplayıcı
+    calcAgeInput: document.getElementById('calcAgeInput'),
+    calcAgeUnit: document.getElementById('calcAgeUnit'),
+    calcWeightInput: document.getElementById('calcWeightInput'),
+    calcMedSelect: document.getElementById('calcMedSelect'),
+    calcResultBox: document.getElementById('calcResultBox'),
+
     // Editör Modalı (Ürün Ekle / Düzenle)
     editorModalBackdrop: document.getElementById('editorModalBackdrop'),
     editorSheet: document.getElementById('editorSheet'),
@@ -823,6 +830,223 @@
     });
   }
 
+  // --- MODAL VE GEZİNME YÖNETİCİSİ (Z-INDEX & ÜST ÜSTE BİNME ÖNLEYİCİ) ---
+  function setActiveBottomTab(tabId) {
+    const tabs = document.querySelectorAll('.mobile-bottom-nav .nav-tab');
+    tabs.forEach(tab => {
+      tab.classList.toggle('active', tab.id === tabId);
+    });
+  }
+
+  function closeAllModals() {
+    if (el.modalBackdrop) el.modalBackdrop.classList.remove('active');
+    if (el.editorModalBackdrop) el.editorModalBackdrop.classList.remove('active');
+    if (el.settingsModalBackdrop) el.settingsModalBackdrop.classList.remove('active');
+    if (el.weightRefModalBackdrop) el.weightRefModalBackdrop.classList.remove('active');
+    if (el.lightboxBackdrop) el.lightboxBackdrop.style.display = 'none';
+    document.body.style.overflow = '';
+    setActiveBottomTab('tabCatalog');
+  }
+
+  // --- YAŞ & KİLO PERSANTİL DOZAJ HESAPLAMA MOTORU (WHO / TC SAĞLIK BAKANLIĞI STANDARTLARI) ---
+  const PERSANTIL_NORMS = [
+    { minMonth: 0, maxMonth: 1, label: '0 - 1 Aylık', minKg: 2.8, maxKg: 4.8, medianKg: 3.5 },
+    { minMonth: 2, maxMonth: 3, label: '2 - 3 Aylık', minKg: 4.2, maxKg: 7.2, medianKg: 5.6 },
+    { minMonth: 4, maxMonth: 6, label: '4 - 6 Aylık', minKg: 5.8, maxKg: 9.2, medianKg: 7.5 },
+    { minMonth: 7, maxMonth: 9, label: '7 - 9 Aylık', minKg: 7.0, maxKg: 10.8, medianKg: 8.8 },
+    { minMonth: 10, maxMonth: 12, label: '10 - 12 Aylık', minKg: 8.0, maxKg: 12.0, medianKg: 9.8 },
+    { minAge: 1, maxAge: 1, label: '1 Yaş', minKg: 8.5, maxKg: 12.5, medianKg: 10.2 },
+    { minAge: 2, maxAge: 2, label: '2 Yaş', minKg: 10.5, maxKg: 15.5, medianKg: 12.5 },
+    { minAge: 3, maxAge: 3, label: '3 Yaş', minKg: 12.0, maxKg: 18.0, medianKg: 14.5 },
+    { minAge: 4, maxAge: 4, label: '4 Yaş', minKg: 13.5, maxKg: 21.0, medianKg: 16.5 },
+    { minAge: 5, maxAge: 5, label: '5 Yaş', minKg: 15.0, maxKg: 23.5, medianKg: 18.5 },
+    { minAge: 6, maxAge: 6, label: '6 Yaş', minKg: 16.5, maxKg: 26.5, medianKg: 21.0 },
+    { minAge: 7, maxAge: 7, label: '7 Yaş', minKg: 18.5, maxKg: 30.0, medianKg: 23.5 },
+    { minAge: 8, maxAge: 8, label: '8 Yaş', minKg: 21.0, maxKg: 35.0, medianKg: 26.5 },
+    { minAge: 9, maxAge: 9, label: '9 Yaş', minKg: 23.5, maxKg: 40.0, medianKg: 30.0 },
+    { minAge: 10, maxAge: 10, label: '10 Yaş', minKg: 25.5, maxKg: 45.0, medianKg: 33.5 },
+    { minAge: 11, maxAge: 11, label: '11 Yaş', minKg: 28.5, maxKg: 50.0, medianKg: 37.5 },
+    { minAge: 12, maxAge: 12, label: '12 Yaş', minKg: 31.5, maxKg: 56.0, medianKg: 42.0 },
+    { minAge: 13, maxAge: 13, label: '13 Yaş', minKg: 35.0, maxKg: 62.0, medianKg: 47.0 },
+    { minAge: 14, maxAge: 14, label: '14 Yaş', minKg: 40.0, maxKg: 68.0, medianKg: 52.0 },
+    { minAge: 15, maxAge: 15, label: '15 Yaş', minKg: 45.0, maxKg: 74.0, medianKg: 56.0 },
+    { minAge: 16, maxAge: 17, label: '16 - 17 Yaş', minKg: 50.0, maxKg: 80.0, medianKg: 62.0 },
+    { minAge: 18, maxAge: 120, label: 'Yetişkin (18+ Yaş)', minKg: 50.0, maxKg: 90.0, medianKg: 70.0 }
+  ];
+
+  function getNormForAge(ageVal, unit) {
+    if (unit === 'month') {
+      const m = Math.max(0, Math.round(ageVal));
+      const found = PERSANTIL_NORMS.find(n => n.minMonth !== undefined && m >= n.minMonth && m <= n.maxMonth);
+      return found || PERSANTIL_NORMS[4];
+    }
+    const y = Math.max(0, parseFloat(ageVal) || 0);
+    const found = PERSANTIL_NORMS.find(n => n.minAge !== undefined && y >= n.minAge && y <= n.maxAge);
+    if (found) return found;
+    if (y < 1) return PERSANTIL_NORMS[0];
+    return PERSANTIL_NORMS[PERSANTIL_NORMS.length - 1];
+  }
+
+  function formatSpoon(ml) {
+    if (!ml || ml <= 0) return '0 ml';
+    const rounded = Math.round(ml * 10) / 10;
+    const spoonExact = rounded / 5; // 1 ölçek = 5 ml
+    
+    if (Math.abs(spoonExact - 0.5) < 0.08) return `½ Ölçek (${rounded} ml)`;
+    if (Math.abs(spoonExact - 1.0) < 0.08) return `1 Tam Ölçek (${rounded} ml)`;
+    if (Math.abs(spoonExact - 1.25) < 0.08) return `1 ve ¼ Ölçek (~${rounded} ml)`;
+    if (Math.abs(spoonExact - 1.5) < 0.08) return `1.5 Ölçek (1 Tam + Yarım = ${rounded} ml)`;
+    if (Math.abs(spoonExact - 1.75) < 0.08) return `1 ve ¾ Ölçek (~${rounded} ml)`;
+    if (Math.abs(spoonExact - 2.0) < 0.08) return `2 Tam Ölçek (${rounded} ml)`;
+    if (Math.abs(spoonExact - 2.5) < 0.08) return `2.5 Ölçek (2 Tam + Yarım = ${rounded} ml)`;
+    if (Math.abs(spoonExact - 3.0) < 0.08) return `3 Tam Ölçek (${rounded} ml)`;
+    if (Math.abs(spoonExact - 3.5) < 0.08) return `3.5 Ölçek (3 Tam + Yarım = ${rounded} ml)`;
+    if (Math.abs(spoonExact - 4.0) < 0.08) return `4 Tam Ölçek (${rounded} ml - Tavan Doz)`;
+    
+    const approx = (Math.round(spoonExact * 2) / 2).toFixed(1).replace('.0', '');
+    return `~${approx} Ölçek (${rounded} ml)`;
+  }
+
+  function calculateDosage() {
+    if (!el.calcResultBox) return;
+
+    const ageRaw = el.calcAgeInput ? parseFloat(el.calcAgeInput.value) : 5;
+    const age = isNaN(ageRaw) || ageRaw < 0 ? 5 : ageRaw;
+    const unit = el.calcAgeUnit ? el.calcAgeUnit.value : 'year';
+    const weightRaw = el.calcWeightInput ? parseFloat(el.calcWeightInput.value) : 20;
+    const weight = isNaN(weightRaw) || weightRaw <= 0 ? 20 : weightRaw;
+    const medKey = el.calcMedSelect ? el.calcMedSelect.value : 'ibuprofen_100';
+
+    const norm = getNormForAge(age, unit);
+    const ageDisplay = unit === 'month' ? `${Math.round(age)} Aylık Bebek` : `${age} Yaş`;
+
+    // Persantil Durumu
+    let normClass = 'normal';
+    let normBadgeText = `✅ Normal Persantil (${weight} kg)`;
+    let statusText = 'Normal gelişim bandında';
+    let weightAdvice = '';
+
+    if (weight < norm.minKg) {
+      normClass = 'underweight';
+      normBadgeText = `📉 Persantil Altı / Zayıf (${weight} kg)`;
+      statusText = 'Yaşıtlarına göre persantilin altında (zayıf)';
+      weightAdvice = `Danışan (${ageDisplay}) normal persantil aralığının (${norm.minKg} - ${norm.maxKg} kg) altında kaldığından, doz yaşa göre değil <strong>kesinlikle mevcut kilosu (${weight} kg)</strong> üzerinden verilmelidir. Aksi takdirde yaş dozu toksik/aşırı gelebilir.`;
+    } else if (weight > norm.maxKg) {
+      normClass = 'overweight';
+      normBadgeText = `📈 Persantil Üstü / Kilolu (${weight} kg)`;
+      statusText = 'Yaşıtlarına göre persantilin üstünde (iri gelişim/kilolu)';
+      weightAdvice = `Danışan (${ageDisplay}) persantil tavanının (${norm.maxKg} kg) üzerindedir. Yaş grubuna göre standart pediatrik doz verilirse kandaki ilaç seviyesi yetersiz kalır ve tedavi başarısız olur. Dozaj <strong>mevcut kilosu (${weight} kg)</strong> üzerinden hesaplanmıştır (ancak yetişkin güvenli tek doz tavanı aşılmamıştır).`;
+    } else {
+      normClass = 'normal';
+      normBadgeText = `✅ İdeal Persantilde (${weight} kg)`;
+      statusText = 'Normal persantil aralığında';
+      weightAdvice = `Danışanın kilosu (${weight} kg) yaşıtlarının normal persantil bandı (${norm.minKg} - ${norm.maxKg} kg, ort. ${norm.medianKg} kg) içerisindedir. Doz hesabı ${weight} kg üzerinden yapılmıştır.`;
+    }
+
+    // İlaç Dozaj Hesabı
+    let spoonDisplay = '';
+    let doseDetails = '';
+    let frequencyText = '';
+    let clinicalRule = '';
+
+    if (medKey === 'ibuprofen_100') {
+      // 10 mg / kg / doz. Konsantrasyon: 100 mg / 5 ml = 20 mg/ml
+      // ml = weight * 10 / 20 = weight * 0.5 ml
+      const targetMg = Math.min(weight * 10, 400); // Max tek doz: 400 mg
+      const ml = targetMg / 20;
+      spoonDisplay = formatSpoon(ml);
+      
+      const isAdultCap = targetMg >= 400;
+      doseDetails = `<strong>${targetMg.toFixed(0)} mg İbuprofen</strong> (~${ml.toFixed(1)} ml şurup). ` +
+        (isAdultCap ? `<span style="color:#b45309; font-weight:700;">(Tek doz tavanı olan 400 mg uygulanmıştır)</span>` : `(Standart 10 mg/kg pediatrik doz).`);
+      
+      frequencyText = 'Günde 3 - 4 kez (6 - 8 saat arayla), tok karnına.';
+      clinicalRule = weight >= 40 || (unit === 'year' && age >= 12)
+        ? `🚨 Danışan 12 yaş ve/veya 40 kg üzerinde olduğundan, yüksek şurup hacmi (${ml.toFixed(1)} ml = ${formatSpoon(ml)}) yerine 1 adet 400 mg film tablet forma geçilebilir. ${weightAdvice}`
+        : `💧 Tok karnına verilmeli ve bol su içirilmelidir. Ateş 6 saatten önce düşmezse parasetamol ile ardışık/dönüşümlü hekim kontrolünde planlanabilir. ${weightAdvice}`;
+
+    } else if (medKey === 'paracetamol_120') {
+      // 15 mg / kg / doz. Konsantrasyon: 120 mg / 5 ml = 24 mg/ml
+      const targetMg = Math.min(weight * 15, 500); // Max tek doz: 500 mg
+      const ml = targetMg / 24;
+      spoonDisplay = formatSpoon(ml);
+
+      doseDetails = `<strong>${targetMg.toFixed(0)} mg Parasetamol</strong> (~${ml.toFixed(1)} ml şurup). (15 mg/kg dozu).`;
+      frequencyText = '4 - 6 saatte bir (günde en fazla 4-5 kez), aç veya tok karnına.';
+      clinicalRule = weight > 13
+        ? `💡 Danışan 13 kg üzerinde olduğu için Calpol 120 yerine Calpol 6 Plus (250 mg / 5 ml) tercih edilirse içmesi gereken şurup miktarı yarı yarıya (${(targetMg / 50).toFixed(1)} ml'ye) düşer. ${weightAdvice}`
+        : `💧 En güvenli pediatrik ateş düşürücüdür. Dozlar arası en az 4 saat olmalıdır. ${weightAdvice}`;
+
+    } else if (medKey === 'paracetamol_250') {
+      // 15 mg / kg / doz. Konsantrasyon: 250 mg / 5 ml = 50 mg/ml
+      const targetMg = Math.min(weight * 15, 500);
+      const ml = targetMg / 50;
+      spoonDisplay = formatSpoon(ml);
+
+      doseDetails = `<strong>${targetMg.toFixed(0)} mg Parasetamol</strong> (~${ml.toFixed(1)} ml şurup). (15 mg/kg dozu).`;
+      frequencyText = '4 - 6 saatte bir (günde en fazla 4 kez).';
+      clinicalRule = (weight >= 40 || (unit === 'year' && age >= 12))
+        ? `💊 Danışan 40 kg ve/veya 12 yaş üzerinde olduğundan tercihen 1 adet 500 mg Parol tablet verilebilir. ${weightAdvice}`
+        : `💧 6 yaş ve üzeri çocuklarda yüksek hacimli şuruplardan kaçınmak için ideal konsantre formdur. ${weightAdvice}`;
+
+    } else if (medKey === 'amox_bid_200') {
+      // ~17.5 mg / kg / doz (günde 2 kez, 12 saatte bir). Konsantrasyon: 200 mg / 5 ml = 40 mg/ml
+      const targetMg = Math.min(weight * 17.5, 500);
+      const ml = targetMg / 40;
+      spoonDisplay = formatSpoon(ml);
+
+      doseDetails = `<strong>${targetMg.toFixed(0)} mg Amoksisilin</strong> (~${ml.toFixed(1)} ml şurup). Günde 2 kez (BID).`;
+      frequencyText = '12 saatte bir (sabah - akşam eşit aralıkla), yemek başlangıcında.';
+      clinicalRule = `🔬 Antibiyotik mutlaka hekim reçetesiyle kullanılmalı ve kutu bitene kadar kesilmemelidir. Mide rahatsızlığını önlemek için yemek başında verilmelidir. ${weightAdvice}`;
+
+    } else if (medKey === 'amox_bid_400') {
+      // ~17.5 mg / kg / doz (günde 2 kez, 12 saatte bir). Konsantrasyon: 400 mg / 5 ml = 80 mg/ml
+      const targetMg = Math.min(weight * 17.5, 1000);
+      const ml = targetMg / 80;
+      spoonDisplay = formatSpoon(ml);
+
+      doseDetails = `<strong>${targetMg.toFixed(0)} mg Amoksisilin</strong> (~${ml.toFixed(1)} ml şurup). Günde 2 kez (BID).`;
+      frequencyText = '12 saatte bir (sabah - akşam eşit aralıkla), yemek başlangıcında.';
+      clinicalRule = (weight >= 40 || (unit === 'year' && age >= 12))
+        ? `💊 Danışan 40 kg / 12 yaş üzerinde olduğundan 1000 mg BID tablet forma geçilebilir. ${weightAdvice}`
+        : `🔬 Kutu sulandırıldıktan sonra buzdolabında saklanmalı ve 7-10 gün içinde tüketilmelidir. ${weightAdvice}`;
+
+    } else {
+      // general_supplement
+      spoonDisplay = (unit === 'year' && age >= 11 && weight >= 40) ? '1 Standart Yetişkin Dozu' : 'Pediatrik / Bölünmüş Doz';
+      doseDetails = (unit === 'year' && age >= 11 && weight >= 40)
+        ? '<strong>11+ Yaş & 40+ kg:</strong> Yetişkin multivitamin, magnezyum ve omega-3 dozlarını güvenle kullanabilir.'
+        : `<strong>${ageDisplay} (${weight} kg):</strong> Çocuk çiğneme jeli, damla veya pediatrik sıvı takviye formları tercih edilmelidir.`;
+      frequencyText = 'Günde 1 kez, tok karnına (sabah veya öğlen).';
+      clinicalRule = `⚖️ 12 yaşından küçük ve 40 kg altındaki bireylerde yetişkin mega-doz (ör. 1000 mg C vitamini, 400 mg magnezyum malat) verilmez; kilo ve yaşa uygun formlar seçilmelidir. ${weightAdvice}`;
+    }
+
+    el.calcResultBox.innerHTML = `
+      <div class="calc-res-hero">
+        <div class="calc-dose-badge">
+          <span class="calc-dose-label">Tavsiye Edilen Tek Doz</span>
+          <span class="calc-dose-val">${spoonDisplay}</span>
+        </div>
+        <span class="calc-norm-pill ${normClass}">${normBadgeText}</span>
+      </div>
+
+      <div class="calc-res-details">
+        <div class="calc-detail-line">
+          <span>📏 <strong>Persantil Normu:</strong> ${norm.label} için ideal persantil bandı <strong>${norm.minKg} - ${norm.maxKg} kg</strong> (Ortalama: ${norm.medianKg} kg). Danışan: <strong>${weight} kg</strong> (${statusText}).</span>
+        </div>
+        <div class="calc-detail-line">
+          <span>💧 <strong>Hesaplanan Doz:</strong> ${doseDetails}</span>
+        </div>
+        <div class="calc-detail-line">
+          <span>⏰ <strong>Kullanım Sıklığı:</strong> ${frequencyText}</span>
+        </div>
+        <div class="calc-detail-line" style="color: #0369a1; font-weight: 500; background: rgba(2, 132, 199, 0.08); padding: 8px 10px; border-radius: 6px; margin-top: 4px; line-height: 1.5;">
+          <span>💡 <strong>Eczacı Kararı & Kuralı:</strong> ${clinicalRule}</span>
+        </div>
+      </div>
+    `;
+  }
+
   // --- YAŞ & KİLO PERSANTİL DOZAJ REHBERİ VERİSİ ---
   const PERSANTIL_DATA = [
     {
@@ -926,29 +1150,32 @@
   }
 
   function openWeightRefModal(targetHighlight = '') {
+    closeAllModals();
     if (el.weightRefSearchInput) {
       el.weightRefSearchInput.value = targetHighlight || '';
     }
+    calculateDosage();
     renderPersantilTable(targetHighlight || '');
 
     if (el.weightRefModalBackdrop) {
       el.weightRefModalBackdrop.classList.add('active');
       document.body.style.overflow = 'hidden';
     }
+    setActiveBottomTab('tabWeightRef');
   }
 
   function closeWeightRefModal() {
     if (el.weightRefModalBackdrop) {
       el.weightRefModalBackdrop.classList.remove('active');
-      if (!el.modalBackdrop?.classList.contains('active') && !el.editorModalBackdrop?.classList.contains('active')) {
-        document.body.style.overflow = '';
-      }
+      document.body.style.overflow = '';
+      setActiveBottomTab('tabCatalog');
     }
   }
 
   // --- ÜRÜN DETAY MODALI ---
   function openDetailModal(product) {
     if (!product) return;
+    closeAllModals();
     state.selectedProduct = product;
 
     // Görsel
@@ -1148,6 +1375,7 @@
     if (el.modalBackdrop) {
       el.modalBackdrop.classList.remove('active');
       document.body.style.overflow = '';
+      setActiveBottomTab('tabCatalog');
     }
   }
 
@@ -1253,6 +1481,7 @@
   // --- ÜRÜN EKLE / DÜZENLE MODALI ---
   function openEditorModal(product = null) {
     if (!el.editorModalBackdrop) return;
+    closeAllModals();
 
     if (product) {
       // DÜZENLEME MODU
@@ -1317,12 +1546,14 @@
     populateBrandDatalist();
     el.editorModalBackdrop.classList.add('active');
     document.body.style.overflow = 'hidden';
+    setActiveBottomTab('tabAddProduct');
   }
 
   function closeEditorModal() {
     if (el.editorModalBackdrop) {
       el.editorModalBackdrop.classList.remove('active');
       document.body.style.overflow = '';
+      setActiveBottomTab('tabCatalog');
     }
   }
 
@@ -1417,6 +1648,7 @@
   // --- AYARLAR VE GITHUB BULUT SENKRONİZASYONU ---
   function openSettingsModal() {
     if (!el.settingsModalBackdrop) return;
+    closeAllModals();
     if (el.githubTokenInput) {
       el.githubTokenInput.value = localStorage.getItem(StorageManager.KEYS.GH_TOKEN) || '';
     }
@@ -1426,12 +1658,14 @@
     }
     el.settingsModalBackdrop.classList.add('active');
     document.body.style.overflow = 'hidden';
+    setActiveBottomTab('tabSettings');
   }
 
   function closeSettingsModal() {
     if (el.settingsModalBackdrop) {
       el.settingsModalBackdrop.classList.remove('active');
       document.body.style.overflow = '';
+      setActiveBottomTab('tabCatalog');
     }
   }
 
@@ -1623,22 +1857,17 @@
       el.btnOpenSettings.addEventListener('click', openSettingsModal);
     }
 
-    // Mobil Alt Gezinme Barı (Bottom Nav)
-    function setActiveBottomTab(tabId) {
-      const tabs = document.querySelectorAll('.mobile-bottom-nav .nav-tab');
-      tabs.forEach(tab => {
-        tab.classList.toggle('active', tab.id === tabId);
-      });
-    }
-
+    // Mobil Alt Gezinme Barı (Bottom Nav) - Modalleri Üst Üste Binmeden Temiz Aç/Kapa
     if (el.tabCatalog) {
       el.tabCatalog.addEventListener('click', () => {
+        closeAllModals();
         setActiveBottomTab('tabCatalog');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       });
     }
     if (el.tabSearch) {
       el.tabSearch.addEventListener('click', () => {
+        closeAllModals();
         setActiveBottomTab('tabSearch');
         if (el.searchInput) {
           el.searchInput.focus();
@@ -1648,17 +1877,29 @@
     }
     if (el.tabAddProduct) {
       el.tabAddProduct.addEventListener('click', () => {
-        openEditorModal(null);
+        if (el.editorModalBackdrop && el.editorModalBackdrop.classList.contains('active')) {
+          closeEditorModal();
+        } else {
+          openEditorModal(null);
+        }
       });
     }
     if (el.tabWeightRef) {
       el.tabWeightRef.addEventListener('click', () => {
-        openWeightRefModal();
+        if (el.weightRefModalBackdrop && el.weightRefModalBackdrop.classList.contains('active')) {
+          closeWeightRefModal();
+        } else {
+          openWeightRefModal();
+        }
       });
     }
     if (el.tabSettings) {
       el.tabSettings.addEventListener('click', () => {
-        openSettingsModal();
+        if (el.settingsModalBackdrop && el.settingsModalBackdrop.classList.contains('active')) {
+          closeSettingsModal();
+        } else {
+          openSettingsModal();
+        }
       });
     }
 
@@ -1733,6 +1974,27 @@
         renderPersantilTable(e.target.value);
       });
     }
+
+    // Dozaj & Persantil Hesaplayıcı Olayları
+    if (el.calcAgeInput) el.calcAgeInput.addEventListener('input', calculateDosage);
+    if (el.calcAgeUnit) el.calcAgeUnit.addEventListener('change', calculateDosage);
+    if (el.calcWeightInput) el.calcWeightInput.addEventListener('input', calculateDosage);
+    if (el.calcMedSelect) el.calcMedSelect.addEventListener('change', calculateDosage);
+
+    const calcChips = document.querySelectorAll('.btn-calc-chip');
+    calcChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        calcChips.forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+        const age = chip.dataset.age;
+        const unit = chip.dataset.unit || 'year';
+        const w = chip.dataset.w;
+        if (el.calcAgeInput) el.calcAgeInput.value = age;
+        if (el.calcAgeUnit) el.calcAgeUnit.value = unit;
+        if (el.calcWeightInput) el.calcWeightInput.value = w;
+        calculateDosage();
+      });
+    });
 
     // Lightbox Kapatma
     if (el.lightboxCloseBtn) el.lightboxCloseBtn.addEventListener('click', closeLightbox);

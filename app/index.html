@@ -283,32 +283,95 @@
 
       <button type="button" class="modal-close-btn" id="weightRefCloseBtn" aria-label="Kapat">✕</button>
 
-      <div class="editor-header">
-        <h2 class="editor-title" id="weightRefTitle">⚖️ Yaş & Kilo Persantil Dozaj Rehberi</h2>
-        <p class="editor-subtitle">DSÖ & Sağlık Bakanlığı Persantil Normları ve Pediatrik Güvenlik Sınırları</p>
-      </div>
-
-      <div class="sheet-scroll-body">
+      <div class="sheet-scroll-body weight-ref-scroll-body">
         
+        <!-- Modal Başlık Alanı (Akıcı Kayar) -->
+        <div class="weight-ref-header">
+          <div class="weight-ref-title-badge">💊 Klinik Eczacılık Dozaj & Norm Motoru</div>
+          <h2 class="weight-ref-title" id="weightRefTitle">⚖️ Doz & Kilo Persantil Hesaplayıcı</h2>
+          <p class="weight-ref-subtitle">DSÖ Normları, Persantil Kilo Değerlendirmesi ve Kilosuna Göre Şurup / Ölçek Hesabı</p>
+        </div>
+
+        <!-- İnteraktif Dozaj & Kilo Hesaplama Aracı -->
+        <div class="calculator-card" id="doseCalculatorCard">
+          <div class="calc-section-title">
+            <span class="calc-title-icon">🎯</span>
+            <span class="calc-title-text">Danışan Bilgileri & Dozaj Hesabı</span>
+          </div>
+
+          <!-- Yaş & Birim Girişi -->
+          <div class="calc-input-row">
+            <div class="calc-field-group">
+              <label class="calc-label" for="calcAgeInput">Yaş</label>
+              <div class="calc-age-input-wrap">
+                <input type="number" id="calcAgeInput" class="calc-input" placeholder="Örn: 5" min="0" max="100" step="1" value="5">
+                <select id="calcAgeUnit" class="calc-select-unit">
+                  <option value="year" selected>Yaş</option>
+                  <option value="month">Aylık</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="calc-field-group">
+              <label class="calc-label" for="calcWeightInput">Mevcut Kilosu (kg) <span class="required">*</span></label>
+              <input type="number" id="calcWeightInput" class="calc-input" placeholder="Örn: 20" min="2" max="180" step="0.5" value="20">
+            </div>
+          </div>
+
+          <!-- Hızlı Yaş Seçim Çipleri -->
+          <div class="calc-quick-chips">
+            <span class="calc-chips-label">Hızlı Seç:</span>
+            <button type="button" class="btn-calc-chip" data-age="1" data-unit="year" data-w="10">1 Yaş (10 kg)</button>
+            <button type="button" class="btn-calc-chip active" data-age="5" data-unit="year" data-w="20">5 Yaş (20 kg)</button>
+            <button type="button" class="btn-calc-chip" data-age="10" data-unit="year" data-w="32">10 Yaş (32 kg)</button>
+            <button type="button" class="btn-calc-chip" data-age="15" data-unit="year" data-w="56">15 Yaş (56 kg)</button>
+            <button type="button" class="btn-calc-chip" data-age="30" data-unit="year" data-w="70">Yetişkin (70 kg)</button>
+          </div>
+
+          <!-- İlaç / Etken Madde Seçimi -->
+          <div class="calc-field-group" style="margin-top: 10px;">
+            <label class="calc-label" for="calcMedSelect">Hesaplanacak İlaç / Şurup</label>
+            <select id="calcMedSelect" class="calc-select">
+              <option value="ibuprofen_100" selected>İbuprofen Şurup (100 mg / 5 ml) — [Dolven, Ibufen, Pedifen]</option>
+              <option value="paracetamol_120">Parasetamol Şurup (120 mg / 5 ml) — [Calpol 120, Parol, Tylol]</option>
+              <option value="paracetamol_250">Parasetamol Şurup Forte (250 mg / 5 ml) — [Calpol 6 Plus]</option>
+              <option value="amox_bid_200">Amoksisilin BID (200 mg / 5 ml) — [Augmentin, Klamoks]</option>
+              <option value="amox_bid_400">Amoksisilin BID Forte (400 mg / 5 ml) — [Augmentin 400]</option>
+              <option value="general_supplement">Genel Gıda Takviyesi & Vitamin Güvenlik Sınırları</option>
+            </select>
+          </div>
+
+          <!-- Canlı Hesaplama Sonuç Kartı -->
+          <div class="calc-result-box" id="calcResultBox">
+            <!-- JS Tarafından dinamik doldurulur -->
+          </div>
+        </div>
+
         <!-- Kritik Eczacılık Kuralları Kartı -->
         <div class="rules-card">
           <div class="rule-item">
-            <span class="rule-badge danger">🚨 12 Yaş Kuralı:</span>
-            <p>12 yaş altı çocuklara yetişkin takviyeleri/hapları verilmez. Karaciğer ve böbrek enzimleri yüksek dozu tolere edemez; çocuk şurubu, damlası veya çiğneme formu verilmelidir.</p>
+            <span class="rule-badge danger">🚨 Kilo Kuralı:</span>
+            <p><strong>Çocuklarda doz yaşa göre değil, kilosuna (mg/kg/doz) göre hesaplanır!</strong> Kilosu yaşıtlarına göre fazla olan bir çocuğa düşük yaş dozu verilirse ilaç etki etmez; zayıf çocuğa yüksek yaş dozu verilirse toksisite oluşabilir.</p>
           </div>
           <div class="rule-item">
-            <span class="rule-badge warning">⚖️ 40 kg Eşiği:</span>
-            <p>12 yaşından büyük olsa dahi kilosu 40 kg altında olan persantil gerisi çocuklarda yetişkin dozu yerine çocuk dozu veya hekim kontrolünde yarı doz uygulanır.</p>
+            <span class="rule-badge warning">⚖️ 12 Yaş & 40 kg Eşiği:</span>
+            <p>12 yaş altı çocuklara yetişkin takviyesi/hapı verilmez; sıvı, damla veya çiğneme tableti tercih edilir. 12 yaşından büyük olsa bile 40 kg altındaki çocuklarda hekim kontrolünde doz ayarlanmalıdır.</p>
           </div>
           <div class="rule-item">
-            <span class="rule-badge info">💊 Yutma Refleksi:</span>
-            <p>0-3 yaş yalnızca damla/sıvı; 4-10 yaş çiğneme tableti veya şurup; 11+ yaş su ile küçük kapsül/tablet yutabilir.</p>
+            <span class="rule-badge info">💊 1 Ölçek = 5 ml:</span>
+            <p>Eczacılık standartlarında kutulardan çıkan 1 tam plastik ölçek kaşığı <strong>5 ml</strong>'ye eşittir. Yarım ölçek <strong>2.5 ml</strong>'dir.</p>
           </div>
+        </div>
+
+        <!-- Hızlı Tablo Arama & Başlık -->
+        <div class="table-section-header">
+          <h3>📊 DSÖ & Sağlık Bakanlığı Tam Persantil Tablosu</h3>
+          <p>Tüm yaş gruplarının 3-97 persantil aralıkları ve güvenli formları</p>
         </div>
 
         <!-- Hızlı Filtre Arama -->
         <div class="persantil-search-box">
-          <input type="text" id="weightRefSearchInput" class="form-input" placeholder="🔍 Yaş veya kilo ara (örn: 5 yaş, 12 yaş, 20 kg)...">
+          <input type="text" id="weightRefSearchInput" class="form-input" placeholder="🔍 Tabloda yaş veya kilo ara (örn: 5 yaş, 12 yaş, 20 kg)...">
         </div>
 
         <!-- Persantil Tablosu -->
