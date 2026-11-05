@@ -43,9 +43,17 @@
     btnClearActiveTag: document.getElementById('btnClearActiveTag'),
 
     // Üst Butonlar
+    headerCountPill: document.getElementById('headerCountPill'),
     btnOpenAddModal: document.getElementById('btnOpenAddModal'),
     btnOpenSettings: document.getElementById('btnOpenSettings'),
     btnOpenWeightRef: document.getElementById('btnOpenWeightRef'),
+
+    // Mobil Alt Gezinme Barı (Bottom Nav)
+    tabCatalog: document.getElementById('tabCatalog'),
+    tabSearch: document.getElementById('tabSearch'),
+    tabAddProduct: document.getElementById('tabAddProduct'),
+    tabWeightRef: document.getElementById('tabWeightRef'),
+    tabSettings: document.getElementById('tabSettings'),
 
     // Detay Modalı
     modalBackdrop: document.getElementById('detailModalBackdrop'),
@@ -717,6 +725,9 @@
     if (el.liveCountBadge) {
       el.liveCountBadge.textContent = `${count} / ${total} Ürün`;
     }
+    if (el.headerCountPill) {
+      el.headerCountPill.textContent = `${count} Ürün`;
+    }
 
     const hasFilter = state.activeBrand !== 'all' || state.activeRoutine !== 'all' || state.searchQuery.length > 0 || Boolean(state.activeTagFilter);
 
@@ -1153,24 +1164,27 @@
       reader.onload = function(evt) {
         const img = new Image();
         img.onload = function() {
-          const maxDim = 800;
-          let w = img.width;
-          let h = img.height;
-          if (w > maxDim || h > maxDim) {
-            if (w > h) {
-              h = Math.round((h * maxDim) / w);
-              w = maxDim;
-            } else {
-              w = Math.round((w * maxDim) / h);
-              h = maxDim;
-            }
-          }
+          const targetSize = 800;
           const canvas = document.createElement('canvas');
-          canvas.width = w;
-          canvas.height = h;
+          canvas.width = targetSize;
+          canvas.height = targetSize;
           const ctx = canvas.getContext('2d');
-          ctx.drawImage(img, 0, 0, w, h);
-          currentEditingPhoto = canvas.toDataURL('image/jpeg', 0.82);
+
+          // Stüdyo Standardı: Saf beyaz zemin ve 1:1 kare tuval
+          ctx.fillStyle = '#ffffff';
+          ctx.fillRect(0, 0, targetSize, targetSize);
+
+          // %10 Nefes alma payıyla tuvale tam ortala
+          const padding = Math.round(targetSize * 0.10);
+          const availSize = targetSize - (padding * 2);
+          const scale = Math.min(availSize / img.width, availSize / img.height);
+          const drawW = Math.round(img.width * scale);
+          const drawH = Math.round(img.height * scale);
+          const drawX = Math.round((targetSize - drawW) / 2);
+          const drawY = Math.round((targetSize - drawH) / 2);
+
+          ctx.drawImage(img, drawX, drawY, drawW, drawH);
+          currentEditingPhoto = canvas.toDataURL('image/jpeg', 0.86);
           showPhotoPreview(currentEditingPhoto);
         };
         img.src = evt.target.result;
@@ -1607,6 +1621,45 @@
     }
     if (el.btnOpenSettings) {
       el.btnOpenSettings.addEventListener('click', openSettingsModal);
+    }
+
+    // Mobil Alt Gezinme Barı (Bottom Nav)
+    function setActiveBottomTab(tabId) {
+      const tabs = document.querySelectorAll('.mobile-bottom-nav .nav-tab');
+      tabs.forEach(tab => {
+        tab.classList.toggle('active', tab.id === tabId);
+      });
+    }
+
+    if (el.tabCatalog) {
+      el.tabCatalog.addEventListener('click', () => {
+        setActiveBottomTab('tabCatalog');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    }
+    if (el.tabSearch) {
+      el.tabSearch.addEventListener('click', () => {
+        setActiveBottomTab('tabSearch');
+        if (el.searchInput) {
+          el.searchInput.focus();
+          el.searchInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      });
+    }
+    if (el.tabAddProduct) {
+      el.tabAddProduct.addEventListener('click', () => {
+        openEditorModal(null);
+      });
+    }
+    if (el.tabWeightRef) {
+      el.tabWeightRef.addEventListener('click', () => {
+        openWeightRefModal();
+      });
+    }
+    if (el.tabSettings) {
+      el.tabSettings.addEventListener('click', () => {
+        openSettingsModal();
+      });
     }
 
     // Detay Modalı Olayları

@@ -34,15 +34,16 @@
       </div>
 
       <div class="header-actions">
-        <button type="button" class="btn-primary-action" id="btnOpenAddModal" title="Yeni Ürün Ekle">
+        <span class="live-count-pill mobile-count-pill" id="headerCountPill">254 Ürün</span>
+        <button type="button" class="btn-primary-action desktop-only-btn" id="btnOpenAddModal" title="Yeni Ürün Ekle">
           <span>➕</span>
           <span class="btn-text">Ekle</span>
         </button>
-        <button type="button" class="btn-weight-ref" id="btnOpenWeightRef" title="Pediatrik & Yetişkin Yaş-Kilo Rehberi">
+        <button type="button" class="btn-weight-ref desktop-only-btn" id="btnOpenWeightRef" title="Pediatrik & Yetişkin Yaş-Kilo Rehberi">
           <span>⚖️</span>
           <span class="btn-text">Yaş-Kilo</span>
         </button>
-        <button type="button" class="icon-btn" id="btnOpenSettings" aria-label="Ayarlar ve Senkronizasyon" title="Ayarlar & Senkronizasyon">
+        <button type="button" class="icon-btn desktop-only-btn" id="btnOpenSettings" aria-label="Ayarlar ve Senkronizasyon" title="Ayarlar & Senkronizasyon">
           <span>⚙️</span>
         </button>
         <button type="button" class="theme-btn" id="themeToggleBtn" aria-label="Temayı Değiştir" title="Açık / Koyu Tema">
@@ -547,6 +548,34 @@
       <div class="lightbox-caption" id="lightboxCaption"></div>
     </div>
   </div>
+
+  <!-- ========================================================
+       8. MOBİL ALT GEZİNME ÇUBUĞU (BOTTOM NAVIGATION BAR)
+       ======================================================== -->
+  <nav class="mobile-bottom-nav" id="mobileBottomNav" aria-label="Mobil Gezinme Menüsü">
+    <button type="button" class="nav-tab active" id="tabCatalog" data-target="catalog" title="Katalog">
+      <span class="nav-tab-icon">🏠</span>
+      <span class="nav-tab-label">Katalog</span>
+    </button>
+    <button type="button" class="nav-tab" id="tabSearch" data-target="search" title="Ara & Filtrele">
+      <span class="nav-tab-icon">🔍</span>
+      <span class="nav-tab-label">Filtrele</span>
+    </button>
+    <button type="button" class="nav-tab nav-tab-action" id="tabAddProduct" data-target="add" title="Yeni Ürün Ekle">
+      <div class="nav-action-circle">
+        <span class="nav-action-icon">➕</span>
+      </div>
+      <span class="nav-tab-label">Ürün Ekle</span>
+    </button>
+    <button type="button" class="nav-tab" id="tabWeightRef" data-target="weight" title="Yaş-Kilo Rehberi">
+      <span class="nav-tab-icon">⚖️</span>
+      <span class="nav-tab-label">Yaş-Kilo</span>
+    </button>
+    <button type="button" class="nav-tab" id="tabSettings" data-target="settings" title="Ayarlar & Senkronizasyon">
+      <span class="nav-tab-icon">⚙️</span>
+      <span class="nav-tab-label">Ayarlar</span>
+    </button>
+  </nav>
 
   <!-- Kopyalandı Toast Bildirimi -->
   <div class="toast-notification" id="toastNotification">
