@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=2.3.0">
 </head>
 <body>
 
@@ -29,7 +29,7 @@
         <span class="brand-icon">✨</span>
         <div class="brand-info">
           <span class="brand-title">Dermokozmetik ve Takviye</span>
-          <span class="brand-tagline">Ürün Kataloğu</span>
+          <span class="brand-tagline">Ürün Kataloğu <span style="font-size:10px; font-weight:700; color:var(--brand-primary); background:rgba(2,132,199,0.12); padding:1px 5px; border-radius:6px; margin-left:4px;">v2.3</span></span>
         </div>
       </div>
 
@@ -595,6 +595,13 @@
             </button>
           </div>
 
+          <!-- Sürüm & Güncelleme Bilgisi -->
+          <div style="text-align: center; padding: 12px; font-size: 11px; color: var(--text-tertiary); display: flex; flex-direction: column; gap: 4px; border-top: 1px dashed var(--border-light); margin-top: 6px;">
+            <strong style="color: var(--brand-primary); font-size: 12px;">⚡ Dermokozmetik ve Takviye — v2.3.0 Canlı</strong>
+            <span>İnteraktif Dozaj & Persantil Hesaplayıcı Aktif</span>
+            <span>Son Güncelleme: 6 Kasım 2026</span>
+          </div>
+
         </div>
       </div>
 
@@ -646,8 +653,8 @@
     <span class="toast-msg">Danışan notu panoya kopyalandı!</span>
   </div>
 
-  <!-- Veri Kaynağı & Uygulama Mantığı -->
-  <script src="data/products.js"></script>
-  <script src="app.js"></script>
+  <!-- Veri Kaynağı & Uygulama Mantığı (Cache-Busting Sürüm Takibi) -->
+  <script src="data/products.js?v=2.3.0"></script>
+  <script src="app.js?v=2.3.0"></script>
 </body>
 </html>

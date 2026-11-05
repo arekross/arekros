@@ -2,7 +2,7 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=app/">
+  <meta http-equiv="refresh" content="0; url=app/?v=2.3.0">
   <title>Dermokozmetik ve Takviye</title>
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="64x64" href="app/favicon.png">
@@ -13,11 +13,11 @@
       if (!path.endsWith('/')) {
         path += '/';
       }
-      window.location.replace(window.location.origin + path + 'app/');
+      window.location.replace(window.location.origin + path + 'app/?v=' + Date.now());
     })();
   </script>
 </head>
 <body style="background:#0a0d14; color:#94a3b8; font-family:sans-serif; display:flex; align-items:center; justify-content:center; height:100vh; margin:0;">
-  <p>Dermokozmetik ve Takviye yükleniyor... <a href="app/" style="color:#00f2fe;">Buraya tıklayın</a></p>
+  <p>Dermokozmetik ve Takviye yükleniyor... <a href="app/?v=2.3.0" style="color:#00f2fe;">Buraya tıklayın</a></p>
 </body>
 </html>
